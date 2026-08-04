@@ -1,9 +1,19 @@
-# سیاست امنیتی
+# Security Policy
 
-نسخهٔ جاری شاخهٔ اصلی پروژه پشتیبانی می‌شود.
+## Supported Versions
 
-برای گزارش یک آسیب‌پذیری، پس از انتشار مخزن از بخش **Security → Report a vulnerability** در GitHub استفاده کنید و جزئیات سوءاستفاده را در Issue عمومی قرار ندهید. اگر گزارش خصوصی فعال نبود، یک Issue بدون جزئیات حساس باز کنید و درخواست مسیر ارتباط خصوصی بدهید.
+The current version on the default branch is supported.
 
-لینک پخش خاموش، محدودیت منطقه‌ای، CORS و ادعای مالکیت محتوا به‌تنهایی آسیب‌پذیری امنیتی موج محسوب نمی‌شوند. بااین‌حال، تزریق URL، اجرای اسکریپت، نشت داده، دورزدن محدودیت‌های رابط یا مشکلات کش و پروکسی باید خصوصی گزارش شوند.
+## Reporting a Vulnerability
 
-این مخزن پروکسی پخش آماده ندارد. هر پیاده‌سازی پروکسی باید allowlist میزبان، مسدودسازی IPهای خصوصی و metadata، اعتبارسنجی redirect، rate limit و کنترل دسترسی داشته باشد و هرگز URL دلخواه کاربر را مستقیماً دریافت نکند.
+Use **Security → Report a vulnerability** on GitHub to submit security reports privately. Do not disclose exploitation details in a public issue. If private vulnerability reporting is unavailable, open an issue without sensitive details and request a private communication channel.
+
+Please include the affected feature, reproduction steps, expected impact, browser or device information, and any relevant proof of concept. Allow reasonable time for investigation and remediation before public disclosure.
+
+## Security Scope
+
+An unavailable stream, regional restriction, CORS failure, or content ownership claim is not, by itself, a Mowj TV security vulnerability. URL injection, script execution, data exposure, interface restriction bypasses, and cache or proxy vulnerabilities should be reported privately.
+
+## Proxy Security
+
+This repository does not provide a ready-to-use streaming proxy. Any proxy implementation must enforce a host allowlist, block private and metadata IP ranges, validate every redirect, apply rate limits and access controls, and never accept an unrestricted user-supplied destination URL.

@@ -1,54 +1,56 @@
-# موج TV — Mowj TV
+# Mowj TV
+
+[Open the live app](https://meyshad.github.io/MowjTV/)
 
 موج یک رابط فارسی، استاتیک و سازگار با ریموت برای مرور و پخش شبکه‌های IPTV در مرورگر تلویزیون است. هستهٔ پروژه به بک‌اند، دیتابیس یا پروکسی نیاز ندارد و برای تلویزیون‌های Samsung، از جمله سری AU، بهینه شده است.
 
-> Mowj TV is a lightweight, RTL, remote-friendly IPTV web client. It does not host, restream or bundle television channels.
+> Mowj TV is a lightweight, RTL, remote-friendly IPTV web client. It does not host, restream, or bundle television channels.
 
-## امکانات
+## Features
 
-- جست‌وجو، دسته‌بندی، صفحه‌بندی و علاقه‌مندی‌ها
-- پخش HLS با پشتیبانی بومی مرورگر یا `hls.js`
-- کنترل کامل با ریموت، خروج از تمام‌صفحه با Back و تعویض شبکه با CH+/CH−
-- کنترل شناور تمام‌صفحه با دکمه‌های شبکهٔ قبلی و بعدی
-- سقف کیفیت خودکار ۴۸۰p، کاهش کیفیت هنگام کندی و اتصال مجدد خودکار
-- سنجش سبک دسترسی شبکه‌ها و کش محلی فهرست و تنظیمات
-- ساعت و تاریخ شمسی، تایمر خواب و رابط بهینه برای فاصلهٔ دید تلویزیون
+- Search, categories, pagination, and favorites
+- HLS playback through the browser's native support or `hls.js`
+- Full remote-control navigation, Back-to-exit fullscreen, and CH+/CH− channel switching
+- Auto-hiding fullscreen controls with previous and next channel buttons
+- Automatic 480p quality cap, adaptive quality reduction, and playback recovery
+- Lightweight stream availability checks with local caching for playlists and settings
+- Persian date and time, sleep timer, and a viewing-distance-friendly interface
 
-## اجرای سریع
+## Quick Start
 
-برای هاست استاتیک، فایل [`release/tv.zip`](./release/tv.zip) را در ریشهٔ عمومی هاست Extract کنید و مسیر `/tv/` را باز کنید. جزئیات بیشتر در [DEPLOY.md](./DEPLOY.md) آمده است.
+For conventional static hosting, extract [`release/tv.zip`](./release/tv.zip) into the public root of your server and open `/tv/`. See [DEPLOY.md](./DEPLOY.md) for detailed instructions.
 
-بدون مرحلهٔ build نیز می‌توانید محتوای `public/tv/` را مستقیماً روی یک وب‌سرور HTTPS قرار دهید. برای توسعهٔ محلی:
+You can also serve `public/tv/` directly from any HTTPS-enabled static web server without a build step. For local development:
 
 ```bash
 npm ci
 npm run dev
 ```
 
-اعتبارسنجی پروژه:
+To validate the project:
 
 ```bash
 npm test
 npm run lint
 ```
 
-## ساختار اصلی
+## Project Structure
 
-- `public/tv/`: نسخهٔ اصلی و مستقل رابط تلویزیون
-- `app/`: صفحهٔ ورودی که کاربر را به `/tv/` هدایت می‌کند
-- `tests/`: آزمون‌های ساخت، سازگاری و اندازهٔ خروجی
-- `release/`: بستهٔ آمادهٔ آپلود روی هاست
+- `public/tv/`: the primary, standalone TV interface
+- `app/`: the entry page that redirects visitors to `/tv/`
+- `tests/`: build, compatibility, behavior, and output-size checks
+- `release/`: the ready-to-upload hosting package
 
-## داده‌ها، حریم خصوصی و محدودیت‌ها
+## Data, Privacy, and Limitations
 
-فهرست‌ها هنگام اجرا از [IPTV-ORG](https://github.com/iptv-org/iptv) دریافت می‌شوند و پخش مستقیماً از میزبان هر شبکه انجام می‌شود؛ هیچ فایل ویدئویی در این مخزن یا هاست موج نگه‌داری نمی‌شود. نام‌ها، لوگوها و محتوای شبکه‌ها متعلق به صاحبان مربوطه‌اند.
+Channel lists are fetched at runtime from [IPTV-ORG](https://github.com/iptv-org/iptv), and playback connects directly to each channel's stream host. This repository and the Mowj TV website do not store video files. Channel names, logos, and programming remain the property of their respective owners.
 
-شبکه‌ها ممکن است به‌دلیل CORS، محدودیت منطقه‌ای، DRM، کدک ناسازگار، لینک HTTP یا خاموش بودن منبع پخش نشوند. علاقه‌مندی‌ها، نتیجهٔ سنجش و کش فهرست فقط در فضای ذخیره‌سازی همان مرورگر نگه‌داری می‌شوند، اما درخواست‌های CDN، فهرست و پخش، IP و مشخصات معمول مرورگر را برای میزبان‌های مربوطه آشکار می‌کنند.
+Streams may fail because of CORS restrictions, regional limitations, DRM, unsupported codecs, insecure HTTP sources, or unavailable upstream servers. Favorites, availability results, settings, and playlist caches stay in the current browser's local storage. Requests to CDNs, playlist providers, and stream hosts still expose the viewer's IP address and standard browser metadata to those services.
 
-این پروژه ابزار دورزدن DRM، پرداخت، احراز هویت یا محدودیت دسترسی نیست. فقط از شبکه‌هایی استفاده کنید که مجاز به مشاهدهٔ آن‌ها هستید. موج پروژه‌ای مستقل است و وابسته یا مورد تأیید Samsung یا IPTV-ORG نیست. توضیحات فنی پروکسی در [PROXY.md](./PROXY.md) صرفاً راهنمای امنیتی است و پروکسی آماده‌ای در پروژه وجود ندارد.
+Mowj TV does not bypass DRM, payments, authentication, or access restrictions. Only watch streams you are authorized to access. The project is independent and is not affiliated with or endorsed by Samsung or IPTV-ORG. [PROXY.md](./PROXY.md) provides security guidance only; the project does not include a ready-to-use streaming proxy.
 
-## مشارکت و مجوز
+## Contributing and License
 
-Issue و Pull Request خوش‌آمد است. پیش از ارسال تغییر، `npm test` و `npm run lint` را اجرا کنید. مشکلات امنیتی را مطابق [SECURITY.md](./SECURITY.md) گزارش دهید.
+Issues and pull requests are welcome. Run `npm test` and `npm run lint` before submitting a change. Report security concerns according to [SECURITY.md](./SECURITY.md).
 
-کد اصلی موج تحت مجوز [MIT](./LICENSE) منتشر می‌شود. مجوز و اعتبار اجزای بیرونی در [THIRD_PARTY_NOTICES.md](./THIRD_PARTY_NOTICES.md) آمده است.
+Mowj TV is released under the [MIT License](./LICENSE). Third-party licenses and attribution are listed in [THIRD_PARTY_NOTICES.md](./THIRD_PARTY_NOTICES.md).
