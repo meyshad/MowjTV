@@ -372,7 +372,15 @@ test("includes public repository documentation and licensing", async () => {
     readFile(new URL("../package.json", import.meta.url), "utf8"),
   ]);
 
-  assert.match(readme, /^# موج TV — Mowj TV/m);
+  assert.match(readme, /^# Mowj TV$/m);
+  assert.match(readme, /^## Features$/m);
+  assert.match(readme, /^## Quick Start$/m);
+  assert.equal(
+    readme.split("\n").filter((line) => /[\u0600-\u06ff]/.test(line)).length,
+    1,
+    "README should contain only the requested Persian introduction",
+  );
+  assert.doesNotMatch(security, /[\u0600-\u06ff]/);
   assert.match(readme, /IPTV-ORG/);
   assert.doesNotMatch(readme, /vinext-starter/);
   assert.match(license, /^MIT License/);
