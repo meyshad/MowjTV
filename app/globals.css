@@ -1,0 +1,70 @@
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  min-height: 100%;
+  margin: 0;
+  background: #060b13;
+  color: #f4f8fb;
+  font-family: Tahoma, Arial, sans-serif;
+}
+
+.launch-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.launch-page h1 {
+  margin: 22px 0 4px;
+  font-size: 42px;
+}
+
+.launch-page p {
+  color: #91a0b4;
+}
+
+.launch-page a {
+  margin-top: 12px;
+  padding: 12px 20px;
+  border-radius: 12px;
+  background: #70f0c1;
+  color: #052016;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.launch-mark {
+  width: 76px;
+  height: 76px;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  direction: ltr;
+  background: #70f0c1;
+}
+
+.launch-mark i {
+  width: 6px;
+  margin: 0 3px;
+  border-radius: 5px;
+  background: #07130f;
+}
+
+.launch-mark i:nth-child(1) {
+  height: 22px;
+}
+
+.launch-mark i:nth-child(2) {
+  height: 38px;
+}
+
+.launch-mark i:nth-child(3) {
+  height: 29px;
+}
