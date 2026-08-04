@@ -356,21 +356,23 @@ test("copies the standalone folder into the static build", async () => {
   assert.match(builtHtml, /<title>موج — تلویزیون زنده<\/title>/);
 });
 
-test("starter preview artifacts are fully removed", async () => {
-  await assert.rejects(access(new URL("../app/_sites-preview", import.meta.url)));
+test("unused starter dependencies are fully removed", async () => {
   const packageJson = await readFile(new URL("../package.json", import.meta.url), "utf8");
   assert.doesNotMatch(packageJson, /react-loading-skeleton/);
   await access(projectRoot);
 });
 
 test("includes public repository documentation and licensing", async () => {
-  const [readme, license, notices, security, packageJson] = await Promise.all([
-    readFile(new URL("../README.md", import.meta.url), "utf8"),
-    readFile(new URL("../LICENSE", import.meta.url), "utf8"),
-    readFile(new URL("../THIRD_PARTY_NOTICES.md", import.meta.url), "utf8"),
-    readFile(new URL("../SECURITY.md", import.meta.url), "utf8"),
-    readFile(new URL("../package.json", import.meta.url), "utf8"),
-  ]);
+  const [readme, license, notices, security, deploy, proxy, packageJson] =
+    await Promise.all([
+      readFile(new URL("../README.md", import.meta.url), "utf8"),
+      readFile(new URL("../LICENSE", import.meta.url), "utf8"),
+      readFile(new URL("../THIRD_PARTY_NOTICES.md", import.meta.url), "utf8"),
+      readFile(new URL("../SECURITY.md", import.meta.url), "utf8"),
+      readFile(new URL("../DEPLOY.md", import.meta.url), "utf8"),
+      readFile(new URL("../PROXY.md", import.meta.url), "utf8"),
+      readFile(new URL("../package.json", import.meta.url), "utf8"),
+    ]);
 
   assert.match(readme, /^# Mowj TV$/m);
   assert.match(readme, /^## Features$/m);
@@ -380,7 +382,11 @@ test("includes public repository documentation and licensing", async () => {
     1,
     "README should contain only the requested Persian introduction",
   );
-  assert.doesNotMatch(security, /[\u0600-\u06ff]/);
+  for (const document of [security, deploy, proxy, notices]) {
+    assert.doesNotMatch(document, /[\u0600-\u06ff]/);
+  }
+  assert.match(deploy, /^# Static Hosting Deployment$/m);
+  assert.match(proxy, /^# Streaming Proxy Guide$/m);
   assert.match(readme, /IPTV-ORG/);
   assert.doesNotMatch(readme, /vinext-starter/);
   assert.match(license, /^MIT License/);

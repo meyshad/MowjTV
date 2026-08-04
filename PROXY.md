@@ -1,45 +1,45 @@
-# راهنمای پروکسی پخش
+# Streaming Proxy Guide
 
-پروکسی را فقط برای محتوایی راه‌اندازی کنید که حق دسترسی و بازپخش آن را دارید. از آن برای دورزدن DRM، پرداخت، احراز هویت، محدودیت منطقه‌ای یا سایر کنترل‌های دسترسی استفاده نکنید و شرایط فعلی ارائه‌دهندهٔ هاست و منبع پخش را جداگانه بررسی کنید.
+Only deploy a proxy for content you are authorized to access and retransmit. Do not use it to bypass DRM, payments, authentication, regional restrictions, or other access controls. Review the current terms of both your hosting provider and the stream source before deployment.
 
-نسخه جدید سایت پیش از نیاز به پروکسی، منبع‌های جایگزین همان شبکه را از IPTV-ORG بررسی می‌کند. این راه سبک‌تر است و مصرف هاست شما را بالا نمی‌برد.
+Before a proxy is needed, Mowj TV checks alternative sources for the same channel from IPTV-ORG. This approach is lighter and does not consume bandwidth on your server.
 
-## پروکسی چه چیزهایی را حل می‌کند؟
+## What Can a Proxy Help With?
 
-- CORS نامناسب سرور شبکه
-- لینک HTTP داخل سایت HTTPS
-- بعضی محدودیت‌های IP، DNS، Referer یا User-Agent
-- محدودیت منطقه‌ای، فقط وقتی سرور پروکسی از منطقه مناسب به شبکه دسترسی داشته باشد
+- Incorrect or missing CORS headers on an upstream server
+- An HTTP stream embedded in an HTTPS website
+- Some IP, DNS, Referer, or User-Agent requirements
+- Regional availability, but only when the proxy server can legally access the stream from an eligible region
 
-پروکسی لینک مرده، DRM، کدک ناسازگار یا سرعت کم اینترنت را حل نمی‌کند. همچنین کیفیت 1080p را به 480p تبدیل نمی‌کند؛ تبدیل واقعی به FFmpeg و سرور قوی‌تر نیاز دارد.
+A proxy cannot repair an offline stream, remove DRM, add codec support, or improve the viewer's internet connection. It also does not convert 1080p video to 480p; real transcoding requires FFmpeg and substantially more server resources.
 
-## پیشنهاد مناسب
+## Recommended Approach
 
-برای مصرف شخصی، یک VPS کوچک با پروکسی محدود و allowlist بهترین انتخاب است. PHP روی هاست اشتراکی فقط زمانی مناسب است که شرکت هاست، streaming/proxy، اتصال خروجی cURL و مصرف پهنای باند آن را صریحاً مجاز اعلام کرده باشد.
+For personal use, the safest practical option is a small VPS running a private, allowlisted proxy. Shared-hosting PHP is suitable only when the provider explicitly permits streaming or proxy workloads, outbound cURL connections, and the expected bandwidth usage.
 
-Cloudflare Worker عمومی برای این کار پیشنهاد نمی‌شود؛ شرایط Self-Serve استفاده به شکل proxy service را محدود می‌کند و Cloudflare برای تحویل حجم بالای ویدئو سرویس‌های جداگانه معرفی کرده است:
+A public Cloudflare Worker is not recommended for this purpose. Cloudflare's Self-Serve terms restrict using the service as a general proxy, and Cloudflare provides separate products for high-volume video delivery:
 
 - https://www.cloudflare.com/terms/
 - https://developers.cloudflare.com/fundamentals/reference/policies-compliances/delivering-videos-with-cloudflare/
 
-## نکته امنیتی مهم
+## Critical Security Requirements
 
-نباید آدرسی شبیه این ساخته شود:
+Never expose an endpoint like this:
 
 ```text
 /proxy.php?url=https://anything.example/video.m3u8
 ```
 
-این مدل یک open proxy و مسیر حمله SSRF ایجاد می‌کند. پروکسی امن باید:
+That design creates an open proxy and an SSRF attack surface. A secure implementation must:
 
-- فقط شناسه شبکه از پیش تعریف‌شده بپذیرد؛
-- hostnameها را allowlist کند؛
-- URL قطعه‌های HLS را با توکن کوتاه‌عمر و امضای سرور تولید کند؛
-- IPهای local/private/metadata و redirectهای ناشناخته را رد کند؛
-- rate limit و دسترسی شخصی داشته باشد؛
-- master/media playlist، segment، key و init segment را درست بازنویسی کند؛
-- هدرهای Range و پاسخ‌های 206/416 را عبور دهد.
+- accept only predefined channel identifiers;
+- allowlist every permitted hostname;
+- generate rewritten HLS segment URLs with short-lived, server-signed tokens;
+- reject local, private, and metadata IP ranges as well as unapproved redirects;
+- enforce rate limits and private access controls;
+- correctly rewrite master and media playlists, segments, encryption keys, and initialization segments;
+- forward Range headers and preserve 206 and 416 responses.
 
-راهنمای امنیتی مرتبط: https://cheatsheetseries.owasp.org/cheatsheets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet.html
+Related security guidance: https://cheatsheetseries.owasp.org/cheatsheets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet.html
 
-برای ساخت مرحله بعد باید مشخص باشد هاست فعلی PHP و cURL دارد یا قرار است VPS جدا تهیه شود.
+Before implementing a proxy, determine whether the existing host supports PHP and cURL or whether a separate VPS will be used.
