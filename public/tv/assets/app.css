@@ -199,6 +199,17 @@ svg {
   opacity: 0.75;
 }
 
+.cats-label {
+  flex-shrink: 0;
+  align-self: center;
+  margin: 0 0.6rem 0 0.5rem;
+  padding-right: 0.6rem;
+  border-right: 1px solid var(--surface-2);
+  color: var(--muted);
+  font-size: 0.75rem;
+  white-space: nowrap;
+}
+
 .chip.is-active {
   background: var(--surface-2);
   color: var(--accent);
@@ -420,6 +431,21 @@ svg {
 .row.s-checking .dot { background: var(--warn); }
 .row.s-bad .row-name { opacity: 0.6; }
 
+/* Usually fails on this connection: sorted last and dimmed, but still readable when focused. */
+.row.is-dim .row-num,
+.row.is-dim .logo,
+.row.is-dim .row-copy,
+.row.is-dim .row-tag {
+  opacity: 0.42;
+}
+
+.row.is-dim:focus .row-num,
+.row.is-dim:focus .logo,
+.row.is-dim:focus .row-copy,
+.row.is-dim:focus .row-tag {
+  opacity: 1;
+}
+
 .row.is-playing .row-name {
   color: var(--accent);
   font-weight: 700;
@@ -461,11 +487,34 @@ svg {
 }
 
 .list-foot {
+  display: flex;
+  align-items: flex-start;
   flex-shrink: 0;
   min-height: 1.6rem;
   padding: 0.35rem 0.3rem 0;
   color: var(--muted);
   font-size: 0.75rem;
+}
+
+.list-foot-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.foot-btn {
+  flex-shrink: 0;
+  height: 2rem;
+  margin-right: 0.6rem;
+  padding: 0 0.8rem;
+  border-radius: 1rem;
+  background: var(--surface);
+  color: var(--text);
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+
+.foot-btn.is-busy {
+  color: var(--warn);
 }
 
 /* ---------- Player ---------- */
@@ -935,6 +984,7 @@ svg {
 /* ---------- Focus: one clear, high-contrast style everywhere ---------- */
 
 .chip:focus,
+.foot-btn:focus,
 .icon-btn:focus,
 .row:focus,
 .ctl:focus,
@@ -969,6 +1019,7 @@ svg {
 /* Mouse users get hover hints without stealing remote focus. */
 @media (hover: hover) and (pointer: fine) {
   .chip:hover,
+  .foot-btn:hover,
   .icon-btn:hover,
   .ctl:hover,
   .btn:hover,

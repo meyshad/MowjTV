@@ -52,7 +52,7 @@ test("ships a small standalone TV folder with CDN playback", async () => {
   for (const id of [
     "cats", "search", "list", "player", "video", "status", "retryBtn", "skipBtn", "osd", "numpad",
     "playBtn", "prevBtn", "nextBtn", "muteBtn", "volUpBtn", "volDownBtn", "qualityBtn", "favBtn",
-    "fullBtn", "qualityMenu", "helpModal", "sleepBtn", "clock",
+    "fullBtn", "qualityMenu", "helpModal", "sleepBtn", "clock", "scanBtn", "listFootText",
   ]) {
     assert.match(html, new RegExp(`id="${id}"`), `missing #${id}`);
   }
@@ -70,6 +70,13 @@ test("ships a small standalone TV folder with CDN playback", async () => {
   assert.match(script, /countries\/ir\.m3u/);
   assert.match(script, /countries\/tr\.m3u/);
   assert.match(script, /PROVINCIAL_NAMES/);
+  for (const playlist of [
+    "categories/music", "categories/movies", "categories/series", "regions/mideast", "regions/eas",
+    "regions/eur", "regions/amer",
+  ]) {
+    assert.match(script, new RegExp(`${playlist}\\.m3u`), `missing ${playlist} playlist`);
+  }
+  assert.match(script, /CATEGORY_GROUPS = \{ topic: "موضوع", region: "منطقه" \}/);
   assert.match(script, /"GZT\.tr": \["https:\/\/gzttv-live\.lg\.mncdn\.com\/gzttv-live\/gzttv\/playlist\.m3u8"\]/);
   assert.match(script, /CORS_LOCKED_HOSTS = \["ncdn\.telewebion\.ir"\]/);
   assert.doesNotMatch(script, /api\/streams\.json/, "the 4 MB streams index must not be downloaded");
@@ -82,6 +89,15 @@ test("ships a small standalone TV folder with CDN playback", async () => {
   assert.match(script, /LIST_FRESH_MS = 12 \* 3600 \* 1000/);
   assert.doesNotMatch(script, /setInterval\([^)]*probe/i, "no periodic background probing");
   assert.match(script, /PROBE_DWELL_MS = 900/);
+
+  // Playable-first ordering from this device's own results; checking a whole list is opt-in
+  assert.match(script, /function rankOf\(id\)/);
+  assert.match(script, /function orderChannels\(channels\)/);
+  assert.match(script, /state\.channels = orderChannels\(channels\)/);
+  assert.match(script, /\$\("scanBtn"\)\.addEventListener\("click", scan\.start\)/);
+  assert.equal(script.match(/scan\.start\b/g).length, 1, "the list check only runs when the user asks");
+  assert.match(script, /SCAN_CONCURRENCY = 2/);
+  assert.match(styles, /\.row\.is-dim/);
 
   // Retries are bounded
   assert.match(script, /RECONNECT_DELAYS = \[1000, 3000, 6000, 12000, 20000, 30000\]/);
