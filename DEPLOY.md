@@ -12,20 +12,22 @@ The site does not require PHP, a database, Node.js, or custom server configurati
 
 ## TV Remote Controls
 
-- Up/Down: move between channels
-- Enter: select and play a channel
-- Fullscreen: use the button below the player
-- Fullscreen controls appear over the video and automatically hide after a few seconds
-- Previous Channel/Next Channel: switch channels directly while in fullscreen
-- Back: exit fullscreen; outside fullscreen, the browser's normal Back behavior is preserved
-- Channel Up/Down: switch channels in fullscreen when the TV browser exposes these remote keys
+- Up/Down: move through the channel list; in fullscreen, previous/next channel
+- Left/Right: move between the list, the player, the controls and the category row
+- OK/Enter: play the focused channel; on the channel that is already playing, open fullscreen
+- 0-9: type a channel number to jump to it
+- CH+/CH-: next/previous channel
+- Play/Pause media keys: pause or resume (pausing stops all downloading)
+- Back: close a menu or dialog, or leave fullscreen; on the main screen the TV's normal Back behaviour is kept
 
 ## Playback Behavior
 
-Channel lists are provided by IPTV-ORG, while each stream is delivered by its own upstream host. A channel may fail because its stream is offline, region-restricted, blocked by CORS, or served over insecure HTTP. These are upstream limitations that a fully static site cannot bypass.
+Channel lists are provided by IPTV-ORG, while each stream is delivered by its own upstream host. A channel may fail because its stream is offline, region-restricted, blocked by CORS, or served over insecure HTTP. These are upstream limitations that a fully static site cannot bypass. Channels whose links can never work in a browser on an HTTPS site (HTTP-only links, hosts that only allow their own website through CORS, and links that need a custom Referer or User-Agent) are hidden, and the list footer shows how many were hidden.
 
-Availability checks run automatically and conservatively in the background. For large lists, Mowj TV checks no more than 40 channels per session and downloads only a small playlist file for each probe. Scanning pauses immediately when playback is struggling, the buffer is low, or the video stalls. Interrupted streams reconnect with increasing delays. In automatic quality mode, the player can lower its cap from 480p to 360p and then 240p when the source offers those variants.
+Automatic quality is capped at 480p. When a channel offers several renditions the player starts low and climbs to the cap only when the connection allows it, and it lowers the cap for the session after a long stall. Viewers can pick 720p or 1080p from the quality menu; the choice is saved and applied to every channel that offers it. Channels that only publish one high-quality rendition are marked as data-heavy.
 
-Downloaded playlists, including the large All Channels list, are stored in the TV browser's larger local database so that the most recent version can remain available during temporary connectivity problems. Up to six recently used categories are retained. The lighter playback-status cache has a controlled size to protect settings and favorites. Clearing browser data, resetting the TV, or severe storage pressure may remove these local caches.
+There is no background scanning. When the remote rests on a channel for about a second, a single small playlist request checks whether it answers; real playback results are remembered for a few hours. Failed sources fall through to the channel's other sources, reconnects use increasing delays and stop after a few attempts, and permanent errors such as 404 or 403 are never retried automatically.
+
+Downloaded playlists are kept in the browser's IndexedDB storage and reused for 12 hours without any network request. Clearing browser data removes them.
 
 Mowj TV does not host or restream video. Only watch streams you are authorized to access. See `README.md` and `THIRD_PARTY_NOTICES.md` for legal details and third-party attribution.
