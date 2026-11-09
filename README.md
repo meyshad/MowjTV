@@ -8,11 +8,12 @@
 
 ## Features
 
-- Category chips (Persian, provincial, Turkey, Middle East, news, sports, documentary, kids, movies, all) and a favorites list that needs no download
+- Category chips in three short groups: Persian (Persian, provincial), topics (news, sports, music, documentary, kids, movies and series) and regions (Turkey, Middle East, East Asia, Europe, Americas, all), plus a favorites list that needs no download
+- Playable-first lists: channels that played on this connection move to the top, and channels that usually fail here are dimmed, moved to the end and skipped by CH+/CH-
 - Full D-pad navigation with one high-contrast focus style, Back-key handling, number keys to jump to a channel, and CH+/CH- or Up/Down to zap in fullscreen
 - Data-saving playback: automatic quality is capped at 480p; a higher quality can be chosen from the quality menu and is remembered
 - Cautious adaptive bitrate tuned for slow, unstable connections, with bounded reconnects and no download while paused or hidden
-- Lazy availability check: one small request for the channel the remote rests on, never a background scan
+- Lazy availability check: one small request for the channel the remote rests on, and an opt-in "check channels" button that checks a whole list (a few KB per channel); never an automatic background scan
 - Channels a browser cannot play (HTTP-only, CORS-locked, or needing custom headers) are hidden instead of failing
 - Playlists are cached for 12 hours, so opening the app normally costs no playlist traffic
 - Responsive layout for TVs, desktops and phones
