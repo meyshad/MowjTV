@@ -1,0 +1,144 @@
+#!/usr/bin/env node
+/*
+ * Builds small, self-hosted channel logos for the main Mowj TV lists.
+ *
+ * Many IPTV-ORG logos live on hosts that are slow, rate-limited or unreachable
+ * for viewers (i.imgur.com answers 429 to whole regions), and the originals are
+ * often 50-200 KB each. This script downloads every logo once, shrinks it to a
+ * 96px WebP of 1-3 KB through the wsrv.nl image service, and writes:
+ *
+ *   public/tv/logos/<channel>.webp   the images, served with the site
+ *   public/tv/logos/sources.json     original URL per channel (to skip unchanged logos)
+ *   public/tv/assets/logos.js        the list of channels that have a local logo
+ *
+ * The app uses the local copy first and falls back to the original URL.
+ *
+ * usage: node scripts/build-logos.mjs [--force] [playlist-path ...]
+ *   default playlists: languages/fas countries/ir countries/tr
+ */
+import { mkdir, readFile, writeFile, readdir, unlink } from "node:fs/promises";
+
+const IPTV = "https://iptv-org.github.io/iptv/";
+const ROOT = new URL("../public/tv/", import.meta.url);
+const LOGO_DIR = new URL("logos/", ROOT);
+const SIZE = 96;
+const CONCURRENCY = 6;
+
+const args = process.argv.slice(2);
+const force = args.includes("--force");
+const playlists = args.filter((arg) => !arg.startsWith("--"));
+if (!playlists.length) playlists.push("languages/fas", "countries/ir", "countries/tr");
+
+// Same rule as the app: the part of tvg-id before "@" names the channel.
+const fileName = (base) => base.replace(/[^A-Za-z0-9._-]/g, "_");
+
+function parse(text) {
+  const out = [];
+  for (const line of text.split(/\r?\n/)) {
+    if (!line.startsWith("#EXTINF")) continue;
+    const id = (line.match(/tvg-id="([^"]*)"/) || [])[1] || "";
+    const logo = (line.match(/tvg-logo="([^"]*)"/) || [])[1] || "";
+    const base = id.split("@")[0];
+    if (base && /^https:\/\//.test(logo)) out.push({ base, logo });
+  }
+  return out;
+}
+
+function wsrv(url) {
+  const params = new URLSearchParams({
+    url,
+    w: String(SIZE),
+    h: String(SIZE),
+    fit: "inside",
+    we: "",          // never enlarge small logos
+    output: "webp",
+    q: "82",
+  });
+  return `https://wsrv.nl/?${params}`;
+}
+
+// i.imgur.com refuses many networks (including wsrv's); DuckDuckGo's image proxy still reaches it.
+const viaDuckDuckGo = (url) => `https://external-content.duckduckgo.com/iu/?u=${encodeURIComponent(url)}`;
+
+async function fetchImage(url) {
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), 30000);
+  try {
+    const response = await fetch(url, { signal: controller.signal, headers: { "User-Agent": "mowj-tv-logo-builder" } });
+    const type = response.headers.get("content-type") || "";
+    if (!response.ok || !type.startsWith("image/")) return null;
+    const bytes = Buffer.from(await response.arrayBuffer());
+    return bytes.length > 64 ? bytes : null;
+  } catch {
+    return null;
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
+async function main() {
+  await mkdir(LOGO_DIR, { recursive: true });
+  const sourcesUrl = new URL("sources.json", LOGO_DIR);
+  let sources = {};
+  try {
+    sources = JSON.parse(await readFile(sourcesUrl, "utf8"));
+  } catch {
+    sources = {};
+  }
+
+  const wanted = new Map();
+  for (const path of playlists) {
+    const response = await fetch(`${IPTV}${path}.m3u`);
+    if (!response.ok) throw new Error(`${path}: HTTP ${response.status}`);
+    for (const entry of parse(await response.text())) {
+      if (!wanted.has(entry.base)) wanted.set(entry.base, entry.logo);
+    }
+  }
+
+  const jobs = [...wanted].filter(([base, logo]) => force || sources[base] !== logo);
+  let done = 0;
+  const failed = [];
+  async function worker() {
+    while (jobs.length) {
+      const [base, logo] = jobs.shift();
+      const image = (await fetchImage(wsrv(logo))) || (await fetchImage(wsrv(viaDuckDuckGo(logo))));
+      done += 1;
+      if (image) {
+        await writeFile(new URL(`${fileName(base)}.webp`, LOGO_DIR), image);
+        sources[base] = logo;
+      } else {
+        failed.push(`${base} ${logo}`);
+        delete sources[base];
+      }
+      if (done % 50 === 0) console.log(`${done} logos processed`);
+    }
+  }
+  await Promise.all(Array.from({ length: CONCURRENCY }, worker));
+
+  // Drop logos of channels that left the playlists.
+  for (const base of Object.keys(sources)) {
+    if (!wanted.has(base)) delete sources[base];
+  }
+  const keep = new Set(Object.keys(sources).map((base) => `${fileName(base)}.webp`));
+  for (const file of await readdir(LOGO_DIR)) {
+    if (file.endsWith(".webp") && !keep.has(file)) await unlink(new URL(file, LOGO_DIR));
+  }
+
+  const ids = Object.keys(sources).sort();
+  const sorted = Object.fromEntries(ids.map((base) => [base, sources[base]]));
+  await writeFile(sourcesUrl, `${JSON.stringify(sorted, null, 1)}\n`);
+  const version = new Date().toISOString().slice(0, 10).replace(/-/g, "");
+  await writeFile(
+    new URL("assets/logos.js", ROOT),
+    "/* Generated by scripts/build-logos.mjs: channels with a small local logo in ../logos/. */\n" +
+      `window.MOWJ_LOGOS = { v: "${version}", ids: "${ids.join(" ")}" };\n`,
+  );
+
+  console.log(`${ids.length} local logos, ${failed.length} not available:`);
+  for (const line of failed) console.log(`  ${line}`);
+}
+
+main().catch((error) => {
+  console.error(error);
+  process.exit(1);
+});
