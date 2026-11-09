@@ -987,10 +987,18 @@
       }
       showStatus("در حال اتصال…", P.si ? "منبع جایگزین امتحان می‌شود" : P.channel.name, "busy");
       clearTimer("start");
-      P.timers.start = setTimeout(function () {
-        if (token !== P.token || P.started) return;
-        nextSource("timeout");
-      }, START_TIMEOUT_MS);
+      var armStart = function () {
+        P.timers.start = setTimeout(function () {
+          if (token !== P.token || P.started) return;
+          // Browsers hold back media in hidden pages; that is not the stream's fault.
+          if (document.visibilityState === "hidden") {
+            armStart();
+            return;
+          }
+          nextSource("timeout");
+        }, START_TIMEOUT_MS);
+      };
+      armStart();
 
       hlsReady(function (Hls) {
         if (token !== P.token) return;
@@ -2057,7 +2065,14 @@
       : state.channels.slice();
     $("count").textContent = fa(state.view.length);
     if (!state.view.length) {
-      showListMessage(query ? "شبکه‌ای پیدا نشد" : "این فهرست خالی است", query ? "عبارت دیگری را امتحان کن" : "", false);
+      if (query) showListMessage("شبکه‌ای پیدا نشد", "عبارت دیگری را امتحان کن", false);
+      else if (hiddenCount) {
+        showListMessage(
+          "شبکه‌های این دسته در مرورگر پخش نمی‌شوند",
+          fa(hiddenCount) + " شبکه فقط از سایت خود پخش‌کننده (مثلاً تلوبیون) یا با لینک ناامن پخش می‌شوند و منبع، پخش در سایت‌های دیگر را مسدود کرده است.",
+          false,
+        );
+      } else showListMessage("این فهرست خالی است", "", false);
       return;
     }
     setHidden($("listMsg"), true);
