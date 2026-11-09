@@ -10,18 +10,30 @@
 
   var IPTV = "https://iptv-org.github.io/iptv/";
 
+  /* Three short groups so the chip row stays easy to walk with a remote:
+   * Persian first, then topics, then regions. "note" marks the big downloads
+   * (IPTV-ORG serves the playlists uncompressed). */
+  var CATEGORY_GROUPS = { topic: "موضوع", region: "منطقه" };
+
   var CATEGORIES = [
     { key: "fav", title: "محبوب‌ها", favorites: true },
     { key: "fas", title: "فارسی", url: IPTV + "languages/fas.m3u" },
     { key: "provinces", title: "استانی", url: IPTV + "countries/ir.m3u", provincialOnly: true },
-    { key: "tr", title: "ترکیه", url: IPTV + "countries/tr.m3u" },
-    { key: "mideast", title: "خاورمیانه", url: IPTV + "regions/mideast.m3u" },
-    { key: "news", title: "خبری", url: IPTV + "categories/news.m3u" },
-    { key: "sports", title: "ورزشی", url: IPTV + "categories/sports.m3u" },
-    { key: "documentary", title: "مستند", url: IPTV + "categories/documentary.m3u" },
-    { key: "kids", title: "کودک", url: IPTV + "categories/kids.m3u" },
-    { key: "movies", title: "فیلم", url: IPTV + "categories/movies.m3u" },
-    { key: "all", title: "همه", url: IPTV + "index.m3u", note: "۲٫۶MB", timeout: 60000 },
+    { key: "news", group: "topic", title: "خبری", url: IPTV + "categories/news.m3u" },
+    { key: "sports", group: "topic", title: "ورزشی", url: IPTV + "categories/sports.m3u" },
+    { key: "music", group: "topic", title: "موسیقی", url: IPTV + "categories/music.m3u" },
+    { key: "documentary", group: "topic", title: "مستند", url: IPTV + "categories/documentary.m3u" },
+    { key: "kids", group: "topic", title: "کودک", url: IPTV + "categories/kids.m3u" },
+    {
+      key: "movies", group: "topic", title: "فیلم و سریال", cacheKey: "movies+series",
+      urls: [IPTV + "categories/movies.m3u", IPTV + "categories/series.m3u"],
+    },
+    { key: "tr", group: "region", title: "ترکیه", url: IPTV + "countries/tr.m3u" },
+    { key: "mideast", group: "region", title: "خاورمیانه", url: IPTV + "regions/mideast.m3u" },
+    { key: "eas", group: "region", title: "آسیای شرقی", url: IPTV + "regions/eas.m3u" },
+    { key: "eur", group: "region", title: "اروپا", url: IPTV + "regions/eur.m3u", note: "۱MB", timeout: 60000 },
+    { key: "amer", group: "region", title: "آمریکا", url: IPTV + "regions/amer.m3u", note: "۰٫۹MB", timeout: 60000 },
+    { key: "all", group: "region", title: "همه", url: IPTV + "index.m3u", note: "۲٫۶MB", timeout: 60000 },
   ];
 
   var PROVINCIAL_NAMES = {
@@ -94,6 +106,13 @@
   var PROBE_DWELL_MS = 900;                  // only probe a channel the user rests on
   var PROBE_TIMEOUT_MS = 6000;
   var PROBE_SESSION_LIMIT = 60;
+  var RANK_OK_MS = 14 * 24 * 3600 * 1000;    // a channel that played stays near the top for two weeks
+  var RANK_BAD_MS = 7 * 24 * 3600 * 1000;    // a hard failure (HTTP error) sinks it for a week
+  var RANK_REPEAT_FAIL_MS = 3 * 24 * 3600 * 1000; // repeated "no answer" sinks it for three days
+  var RANK_ONE_FAIL_MS = 6 * 3600 * 1000;    // a single "no answer" only for a few hours
+  var STATUS_MAX_ENTRIES = 1500;
+  var SCAN_CONCURRENCY = 2;
+  var SCAN_LIMIT = 200;                      // one "check" press probes at most this many channels
   var START_TIMEOUT_MS = 20000;              // per source, before trying the next one
   var RECONNECT_DELAYS = [1000, 3000, 6000, 12000, 20000, 30000];
   var AUTO_RETRY_DELAYS = [6000, 15000];     // after every source failed with a transient error
@@ -248,10 +267,13 @@
   /* ------------------------------------------------------------------ *
    * Channel status (results of real playback and of lazy probes)
    * code: 1 = works, 2 = broken (HTTP error), 3 = unreachable (maybe temporary)
+   * Stored per device as [code, time, consecutive failures, last success].
    * ------------------------------------------------------------------ */
 
   var statusMap = readJson(STATUS_KEY, {}) || {};
 
+  /* Short-lived status: drives the dot and the row text, and decides when a
+   * channel may be probed again. */
   function getStatus(id) {
     var rec = statusMap[id];
     if (!rec) return 0;
@@ -260,24 +282,58 @@
     return rec[0];
   }
 
+  /* Long-lived rank for ordering the list on this connection:
+   * 0 = played here recently, 1 = unknown, 2 = usually fails here (dimmed, sorted last). */
+  function rankOf(id) {
+    var rec = statusMap[id];
+    if (!rec) return 1;
+    var age = now() - rec[1];
+    var fails = rec[2] || 1;
+    var okAt = rec[3] || (rec[0] === 1 ? rec[1] : 0);
+    if (rec[0] === 1) return age < RANK_OK_MS ? 0 : 1;
+    if (rec[0] === 2) return age < RANK_BAD_MS ? 2 : 1;
+    if (fails >= 2) return age < RANK_REPEAT_FAIL_MS ? 2 : 1;
+    // One "no answer" after recent successes is probably a hiccup, not a dead channel.
+    if (okAt && now() - okAt < RANK_OK_MS) return 1;
+    return age < RANK_ONE_FAIL_MS ? 2 : 1;
+  }
+
   var statusSaveTimer = null;
   function setStatus(id, code) {
     if (!id) return;
-    statusMap[id] = [code, now()];
+    var old = statusMap[id] || [0, 0, 0, 0];
+    var okAt = old[3] || (old[0] === 1 ? old[1] : 0);
+    var fails = code === 1 ? 0 : old[0] && old[0] !== 1 ? (old[2] || 1) + 1 : 1;
+    statusMap[id] = [code, now(), fails, code === 1 ? now() : okAt];
     clearTimeout(statusSaveTimer);
     statusSaveTimer = setTimeout(function () {
       var keys = Object.keys(statusMap);
-      if (keys.length > 500) {
+      if (keys.length > STATUS_MAX_ENTRIES) {
         keys.sort(function (a, b) {
           return statusMap[a][1] - statusMap[b][1];
         });
-        keys.slice(0, keys.length - 500).forEach(function (key) {
+        keys.slice(0, keys.length - STATUS_MAX_ENTRIES).forEach(function (key) {
           delete statusMap[key];
         });
       }
       writeJson(STATUS_KEY, statusMap);
     }, 800);
     list.refreshRow(id);
+  }
+
+  /* Playable first, "usually fails here" last. Stable, so the playlist's own
+   * order is kept inside each group. Numbers follow the order on screen. */
+  function orderChannels(channels) {
+    var ranked = channels.map(function (channel, index) {
+      return { c: channel, r: rankOf(channel.id), i: index };
+    });
+    ranked.sort(function (a, b) {
+      return a.r - b.r || a.i - b.i;
+    });
+    return ranked.map(function (item, index) {
+      item.c.num = index + 1;
+      return item.c;
+    });
   }
 
   /* ------------------------------------------------------------------ *
@@ -369,6 +425,16 @@
     }, function (error) {
       clearTimeout(timer);
       throw error;
+    });
+  }
+
+  // A category may combine several playlists (e.g. movies + series); duplicates merge by tvg-id.
+  function fetchCategory(cat, reload) {
+    var urls = cat.urls || [cat.url];
+    return Promise.all(urls.map(function (url) {
+      return fetchText(url, cat.timeout || 25000, reload);
+    })).then(function (texts) {
+      return texts.join("\n");
     });
   }
 
@@ -511,9 +577,6 @@
         return a.name.localeCompare(b.name, "fa");
       });
     }
-    playable.forEach(function (channel, index) {
-      channel.num = index + 1;
-    });
     return playable;
   }
 
@@ -527,6 +590,7 @@
     view: [],
     query: "",
     loadToken: 0,
+    savedAt: 0,
     current: null,
   };
 
@@ -579,14 +643,16 @@
 
     function statusClass(channel) {
       var code = getStatus(channel.id);
-      if (probe.activeId === channel.id) return "s-checking";
-      return code === 1 ? "s-ok" : code ? "s-bad" : "";
+      var dim = rankOf(channel.id) === 2 ? " is-dim" : "";
+      if (probe.isChecking(channel.id)) return "s-checking" + dim;
+      return (code === 1 ? "s-ok" : code ? "s-bad" : "") + dim;
     }
 
     function metaText(channel) {
       var code = getStatus(channel.id);
       if (code === 2) return "فعلاً پخش نمی‌شود";
       if (code === 3) return "پاسخ نداد · شاید موقت";
+      if (rankOf(channel.id) === 2) return "معمولاً روی این اینترنت پخش نمی‌شود";
       var parts = [];
       if (channel.group) parts.push(channel.group);
       if (channel.part) parts.push("پخش غیرمداوم");
@@ -806,7 +872,21 @@
   var probe = (function () {
     var dwellTimer = null;
     var count = 0;
-    var api = { activeId: "" };
+    var checking = Object.create(null); // id -> AbortController
+    var api = {};
+
+    api.isChecking = function (id) {
+      return Boolean(checking[id]);
+    };
+
+    api.busy = function () {
+      return Object.keys(checking).length > 0;
+    };
+
+    api.canProbe = function (channel) {
+      var url = channel && channel.sources[0] && channel.sources[0].url;
+      return Boolean(url && /\.m3u8(?:$|[?#])/i.test(url) && typeof AbortController !== "undefined");
+    };
 
     api.cancelDwell = function () {
       clearTimeout(dwellTimer);
@@ -815,50 +895,193 @@
 
     api.schedule = function (channel) {
       api.cancelDwell();
-      if (!channel || api.activeId || count >= PROBE_SESSION_LIMIT) return;
-      if (getStatus(channel.id) || navigator.onLine === false) return;
-      if (typeof AbortController === "undefined") return;
+      if (!channel || api.busy() || count >= PROBE_SESSION_LIMIT) return;
+      if (getStatus(channel.id) || navigator.onLine === false || !api.canProbe(channel)) return;
       dwellTimer = setTimeout(function () {
         dwellTimer = null;
         if (!player.allowsBackgroundTraffic()) return;
-        run(channel);
+        count += 1;
+        api.check(channel);
       }, PROBE_DWELL_MS);
     };
 
-    function run(channel) {
-      var url = channel.sources[0] && channel.sources[0].url;
-      if (!url || !/\.m3u8(?:$|[?#])/i.test(url)) return;
-      count += 1;
-      api.activeId = channel.id;
-      list.refreshRow(channel.id);
+    api.abortAll = function () {
+      Object.keys(checking).forEach(function (id) {
+        checking[id].abort();
+      });
+    };
+
+    /* One small request for the channel's playlist (a few KB). Resolves with
+     * the stored code, or 0 when it was aborted. */
+    api.check = function (channel) {
+      if (!api.canProbe(channel) || checking[channel.id]) return Promise.resolve(0);
       var controller = new AbortController();
+      var timedOut = false;
+      checking[channel.id] = controller;
+      list.refreshRow(channel.id);
       var timer = setTimeout(function () {
+        timedOut = true;
         controller.abort();
       }, PROBE_TIMEOUT_MS);
       function done(code) {
         clearTimeout(timer);
-        api.activeId = "";
+        delete checking[channel.id];
         if (code) setStatus(channel.id, code);
         else list.refreshRow(channel.id);
+        return code;
       }
-      fetch(url, { credentials: "omit", cache: "no-store", signal: controller.signal })
+      return fetch(channel.sources[0].url, { credentials: "omit", cache: "no-store", signal: controller.signal })
         .then(function (response) {
-          if (!response.ok) {
-            done(response.status >= 400 && response.status < 500 ? 2 : 3);
-            return null;
-          }
+          // 408/429 mean "busy right now", not "gone"; they must not sink a channel for a week.
+          var hard = response.status >= 400 && response.status < 500 && response.status !== 408 && response.status !== 429;
+          if (!response.ok) return done(hard ? 2 : 3);
           return response.text().then(function (text) {
-            done(text.indexOf("#EXTM3U") !== -1 ? 1 : 2);
+            return done(text.indexOf("#EXTM3U") !== -1 ? 1 : 2);
           });
         })
         .catch(function () {
           // CORS refusals and network failures look identical from a browser.
-          done(3);
+          // A cancelled check (category change, playback started) records nothing.
+          return done(controller.signal.aborted && !timedOut ? 0 : 3);
         });
-    }
+    };
 
     return api;
   })();
+
+  /* ------------------------------------------------------------------ *
+   * "Check this list": an opt-in pass over the channels with no recent
+   * result, two small requests at a time, paused whenever playback needs
+   * the bandwidth. The list is re-ordered once, at the end.
+   * ------------------------------------------------------------------ */
+
+  var scan = (function () {
+    var queue = [];
+    var running = 0;
+    var active = false;
+    var checked = 0;
+    var total = 0;
+    var waitTimer = null;
+
+    function button() {
+      return $("scanBtn");
+    }
+
+    function label() {
+      var btn = button();
+      if (active) {
+        btn.textContent = "توقف بررسی " + fa(checked) + "/" + fa(total);
+      } else {
+        btn.textContent = "بررسی شبکه‌ها";
+      }
+      btn.classList.toggle("is-busy", active);
+    }
+
+    function candidates() {
+      return state.channels.filter(function (channel) {
+        return !getStatus(channel.id) && probe.canProbe(channel);
+      }).slice(0, SCAN_LIMIT);
+    }
+
+    function pump() {
+      if (!active) return;
+      clearTimeout(waitTimer);
+      if (navigator.onLine === false) {
+        stop();
+        return;
+      }
+      if (!player.allowsBackgroundTraffic()) {
+        waitTimer = setTimeout(pump, 3000);
+        return;
+      }
+      while (active && running < SCAN_CONCURRENCY && queue.length) {
+        var channel = queue.shift();
+        running += 1;
+        probe.check(channel).then(function () {
+          running -= 1;
+          checked += 1;
+          label();
+          if (!queue.length && !running) finish();
+          else pump();
+        });
+      }
+    }
+
+    function finish() {
+      var ok = 0;
+      var bad = 0;
+      state.channels.forEach(function (channel) {
+        var rank = rankOf(channel.id);
+        if (rank === 0) ok += 1;
+        else if (rank === 2) bad += 1;
+      });
+      active = false;
+      label();
+      resortKeepingFocus();
+      toast(fa(ok) + " شبکه پاسخ داد · " + fa(bad) + " شبکه به انتهای فهرست رفت");
+    }
+
+    function stop() {
+      if (!active) return;
+      active = false;
+      queue = [];
+      clearTimeout(waitTimer);
+      probe.abortAll();
+      label();
+    }
+
+    function start() {
+      if (active) {
+        stop();
+        resortKeepingFocus();
+        return;
+      }
+      if (navigator.onLine === false) {
+        toast("اینترنت وصل نیست");
+        return;
+      }
+      queue = candidates();
+      if (!queue.length) {
+        toast("همهٔ شبکه‌های این فهرست به‌تازگی بررسی شده‌اند");
+        return;
+      }
+      if (navigator.connection && navigator.connection.saveData) {
+        toast("حالت صرفه‌جویی داده روشن است؛ بررسی انجام نشد");
+        return;
+      }
+      active = true;
+      checked = 0;
+      running = 0;
+      total = queue.length;
+      label();
+      // A playlist request is a few kilobytes; tell the user what this costs.
+      toast("بررسی " + fa(total) + " شبکه · حدود " + fa(total * 3) + " کیلوبایت");
+      pump();
+    }
+
+    return {
+      start: start,
+      stop: stop,
+      active: function () {
+        return active;
+      },
+      refresh: label,
+    };
+  })();
+
+  // Re-order after the user asked for it, keeping the cursor on the same channel.
+  function resortKeepingFocus() {
+    var focusedId = state.view[list.getFocusIndex()] && state.view[list.getFocusIndex()].id;
+    var hadFocus = list.hasFocus();
+    state.channels = orderChannels(state.channels);
+    applyView(false);
+    var index = list.indexOfId(focusedId);
+    if (index >= 0) {
+      if (hadFocus) list.focus(index);
+      else list.reset(index);
+    }
+    updateFoot(null);
+  }
 
   /* ------------------------------------------------------------------ *
    * Player
@@ -1996,14 +2219,24 @@
   function renderCategories() {
     var nav = $("cats");
     nav.textContent = "";
+    var lastGroup = "";
     CATEGORIES.forEach(function (cat) {
       if (cat.favorites && !prefs.favorites.length) return;
+      if (cat.group && cat.group !== lastGroup) {
+        var label = document.createElement("span");
+        label.className = "cats-label";
+        label.setAttribute("aria-hidden", "true");
+        label.textContent = CATEGORY_GROUPS[cat.group];
+        nav.appendChild(label);
+      }
+      lastGroup = cat.group || "";
       var chip = document.createElement("button");
       chip.type = "button";
       chip.className = "chip" + (state.cat && state.cat.key === cat.key ? " is-active" : "");
       chip.setAttribute("data-nav", "");
       chip.setAttribute("data-cat", cat.key);
       chip.textContent = (cat.favorites ? "★ " : "") + cat.title;
+      if (cat.group) chip.setAttribute("aria-label", CATEGORY_GROUPS[cat.group] + ": " + cat.title);
       if (cat.note) {
         var small = document.createElement("small");
         small.textContent = cat.note;
@@ -2043,10 +2276,17 @@
   }
 
   function updateFoot(savedAt) {
-    var foot = $("listFoot");
+    var foot = $("listFootText");
     var parts = [];
+    if (savedAt === null) savedAt = state.savedAt;
+    else state.savedAt = savedAt;
+    var dimmed = 0;
+    state.channels.forEach(function (channel) {
+      if (rankOf(channel.id) === 2) dimmed += 1;
+    });
+    if (dimmed) parts.push(fa(dimmed) + " شبکهٔ کم‌رنگ این‌جا معمولاً پخش نمی‌شود");
     if (hiddenCount && state.cat && !state.cat.favorites) {
-      parts.push(fa(hiddenCount) + " شبکهٔ غیرقابل‌پخش در مرورگر (HTTP، قفل CORS یا سرآیند ویژه) پنهان شد");
+      parts.push(fa(hiddenCount) + " شبکهٔ غیرقابل‌پخش در مرورگر پنهان شد");
     }
     if (savedAt) {
       var hours = Math.floor((now() - savedAt) / 3600000);
@@ -2064,6 +2304,7 @@
         })
       : state.channels.slice();
     $("count").textContent = fa(state.view.length);
+    setHidden($("scanBtn"), !state.channels.length);
     if (!state.view.length) {
       if (query) showListMessage("شبکه‌ای پیدا نشد", "عبارت دیگری را امتحان کن", false);
       else if (hiddenCount) {
@@ -2103,7 +2344,8 @@
   }
 
   function setChannels(channels, keepFocus, savedAt) {
-    state.channels = channels;
+    scan.stop();
+    state.channels = orderChannels(channels);
     adoptPendingFavorites(channels);
     applyView(keepFocus);
     updateFoot(savedAt);
@@ -2124,16 +2366,13 @@
 
     if (cat.favorites) {
       hiddenCount = 0;
-      setChannels(prefs.favorites.map(function (channel, index) {
-        channel.num = index + 1;
-        return channel;
-      }), focusInList, 0);
+      setChannels(prefs.favorites.slice(), focusInList, 0);
       return Promise.resolve();
     }
 
     showListMessage("در حال دریافت فهرست «" + cat.title + "»…", "", false);
     $("count").textContent = "";
-    return cacheGet(cat.key).then(function (cached) {
+    return cacheGet(cat.cacheKey || cat.key).then(function (cached) {
       if (token !== state.loadToken) return null;
       var fresh = cached && cached.text && now() - cached.t < LIST_FRESH_MS;
       if (cached && cached.text) {
@@ -2144,10 +2383,10 @@
         if (!cached) showListMessage("اینترنت وصل نیست", "پس از اتصال دوباره تلاش کن", true);
         return null;
       }
-      return fetchText(cat.url, cat.timeout || 25000, forceRefresh).then(function (text) {
+      return fetchCategory(cat, forceRefresh).then(function (text) {
         if (token !== state.loadToken) return;
         if (text.indexOf("#EXTINF") === -1) throw new Error("bad playlist");
-        cachePut(cat.key, text);
+        cachePut(cat.cacheKey || cat.key, text);
         if (cached && cached.text === text) {
           updateFoot(now());
           return;
@@ -2200,6 +2439,10 @@
     var index = state.current ? list.indexOfId(state.current.id) : -1;
     if (index < 0) index = list.getFocusIndex() - (delta > 0 ? 1 : -1);
     var next = (index + delta + state.view.length) % state.view.length;
+    // CH+/CH- step over channels that usually fail here (unless every channel does).
+    for (var tries = 0; tries < state.view.length && rankOf(state.view[next].id) === 2; tries += 1) {
+      next = (next + delta + state.view.length) % state.view.length;
+    }
     var channel = state.view[next];
     player.play(channel);
     if (fullscreen.active) {
@@ -2512,6 +2755,7 @@
       if (direction === "down") {
         event.preventDefault();
         if (index < state.view.length - 1) list.focus(index + 1);
+        else if (isVisible($("scanBtn"))) $("scanBtn").focus();
         return;
       }
       if (direction === "up") {
@@ -2600,6 +2844,7 @@
     });
     $("favBtn").addEventListener("click", toggleFavorite);
     $("fullBtn").addEventListener("click", fullscreen.toggle);
+    $("scanBtn").addEventListener("click", scan.start);
     $("helpBtn").addEventListener("click", openHelp);
     $("helpClose").addEventListener("click", function () {
       layers.close("help");
