@@ -167,53 +167,73 @@ svg {
   margin-left: 0.4rem;
 }
 
-/* Every category stays on screen (two rows on a TV): nothing to scroll. */
+/* Every category stays on screen: Persian and topics on the first row,
+ * regions on the second. Nothing to scroll. */
 .cats {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  flex-direction: column;
   flex: 1;
   min-width: 0;
   padding: 0.3rem 0.2rem 0;
 }
 
-.cats::-webkit-scrollbar {
-  display: none;
+.cats-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .chip {
   flex-shrink: 0;
-  height: 2.5rem;
-  margin-left: 0.5rem;
+  height: 2.4rem;
+  margin-left: 0.45rem;
   margin-bottom: 0.45rem;
-  padding: 0 1rem;
-  border-radius: 1.25rem;
+  padding: 0 0.95rem;
+  border-radius: 1.2rem;
   background: var(--surface);
-  color: var(--muted);
-  font-size: 0.95rem;
+  color: var(--text);
+  font-size: 0.92rem;
   white-space: nowrap;
 }
 
+/* Download size of the big lists, as a quiet badge. */
 .chip small {
-  margin-right: 0.35rem;
-  font-size: 0.75em;
-  opacity: 0.75;
+  margin-right: 0.45rem;
+  padding: 0.05rem 0.4rem;
+  border-radius: 0.6rem;
+  background: var(--surface-2);
+  color: var(--muted);
+  font-size: 0.68em;
 }
 
 .cats-label {
   flex-shrink: 0;
-  margin: 0 0.6rem 0.45rem 0.5rem;
-  padding-right: 0.6rem;
-  border-right: 1px solid var(--surface-2);
+  width: 3.6rem;
+  margin: 0 0 0.45rem 0.45rem;
   color: var(--muted);
-  font-size: 0.75rem;
+  font-size: 0.78rem;
   white-space: nowrap;
 }
 
+/* A thin divider between the Persian lists and the topics. */
+.cats-sep {
+  flex-shrink: 0;
+  width: 1px;
+  height: 1.6rem;
+  margin: 0 0.35rem 0.45rem 0.8rem;
+  background: var(--muted);
+  opacity: 0.45;
+}
+
 .chip.is-active {
-  background: var(--surface-2);
-  color: var(--accent);
+  background: var(--accent);
+  color: var(--accent-ink);
   font-weight: 700;
+}
+
+.chip.is-active small {
+  background: rgba(0, 0, 0, 0.18);
+  color: inherit;
 }
 
 .top-actions {
@@ -1096,7 +1116,7 @@ svg {
     order: 3;
     width: 100%;
     flex: none;
-    flex-wrap: nowrap;
+    flex-direction: row;
     overflow-x: auto;
     overflow-y: hidden;
     scrollbar-width: none;
@@ -1105,6 +1125,18 @@ svg {
 
   .cats::-webkit-scrollbar {
     display: none;
+  }
+
+  .cats-row {
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+  }
+
+  .cats-label {
+    width: auto;
+    margin-right: 0.8rem;
+    padding-right: 0.8rem;
+    border-right: 1px solid var(--surface-2);
   }
 
   .main {

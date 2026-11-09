@@ -2291,27 +2291,39 @@
    * Categories, search and loading
    * ------------------------------------------------------------------ */
 
+  /* Two fixed rows on a TV: Persian lists and topics first, regions below.
+   * (Phones show both rows side by side in one swipeable strip.) */
   function renderCategories() {
     var nav = $("cats");
     nav.textContent = "";
+    var rows = { main: document.createElement("div"), region: document.createElement("div") };
+    rows.main.className = "cats-row";
+    rows.region.className = "cats-row";
     var lastGroup = "";
     CATEGORIES.forEach(function (cat) {
       if (cat.favorites && !prefs.favorites.length) return;
-      if (cat.group && cat.group !== lastGroup) {
-        var label = document.createElement("span");
-        label.className = "cats-label";
-        label.setAttribute("aria-hidden", "true");
-        label.textContent = CATEGORY_GROUPS[cat.group];
-        nav.appendChild(label);
+      var group = cat.group || "";
+      var row = group === "region" ? rows.region : rows.main;
+      if (group && group !== lastGroup) {
+        // Topics follow the Persian lists after a thin divider; the region row gets a label.
+        var mark = document.createElement("span");
+        mark.setAttribute("aria-hidden", "true");
+        if (row.childNodes.length) {
+          mark.className = "cats-sep";
+        } else {
+          mark.className = "cats-label";
+          mark.textContent = CATEGORY_GROUPS[group];
+        }
+        row.appendChild(mark);
       }
-      lastGroup = cat.group || "";
+      lastGroup = group;
       var chip = document.createElement("button");
       chip.type = "button";
       chip.className = "chip" + (state.cat && state.cat.key === cat.key ? " is-active" : "");
       chip.setAttribute("data-nav", "");
       chip.setAttribute("data-cat", cat.key);
       chip.textContent = (cat.favorites ? "★ " : "") + cat.title;
-      if (cat.group) chip.setAttribute("aria-label", CATEGORY_GROUPS[cat.group] + ": " + cat.title);
+      if (group) chip.setAttribute("aria-label", CATEGORY_GROUPS[group] + ": " + cat.title);
       if (cat.note) {
         var small = document.createElement("small");
         small.textContent = cat.note;
@@ -2320,8 +2332,10 @@
       chip.addEventListener("click", function () {
         loadCategory(cat.key, false);
       });
-      nav.appendChild(chip);
+      row.appendChild(chip);
     });
+    nav.appendChild(rows.main);
+    nav.appendChild(rows.region);
   }
 
   function showListMessage(title, text, withRetry) {
