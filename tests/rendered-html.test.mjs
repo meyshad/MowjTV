@@ -103,7 +103,8 @@ test("ships a small standalone TV folder with CDN playback", async () => {
   assert.match(script, /function turnPage\(delta\)/);
   assert.doesNotMatch(script, /scrollTop/, "the channel list must not rely on scrolling");
   assert.match(styles, /\.list \{[^}]*overflow: hidden;/);
-  assert.match(styles, /\.cats \{[^}]*flex-wrap: wrap;/);
+  assert.match(styles, /\.cats-row \{[^}]*flex-wrap: wrap;/);
+  assert.match(script, /group === "region" \? rows\.region : rows\.main/, "regions get their own row");
   assert.match(styles, /@media \(hover: hover\) \{/, "hover hints for TV pointers too");
 
   // Self-hosted logos, with the original URL as a fallback
