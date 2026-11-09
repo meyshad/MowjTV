@@ -8,9 +8,9 @@
     <meta name="description" content="تلویزیون زنده، سبک و کم‌مصرف، سازگار با ریموت تلویزیون" />
     <title>موج — تلویزیون زنده</title>
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
-    <link rel="stylesheet" href="./assets/app.css?v=20261109" />
+    <link rel="stylesheet" href="./assets/app.css?v=20261110" />
     <script defer src="https://cdn.jsdelivr.net/npm/hls.js@1.6.16/dist/hls.min.js" onerror="window.__hlsFallback=1"></script>
-    <script defer src="./assets/app.js?v=20261109"></script>
+    <script defer src="./assets/app.js?v=20261110"></script>
   </head>
   <body>
     <svg class="sprite" aria-hidden="true" focusable="false">
@@ -62,7 +62,11 @@
             <div class="list-spacer" id="listSpacer"></div>
           </div>
           <div class="list-msg is-hidden" id="listMsg" role="status"></div>
-          <div class="list-foot" id="listFoot"></div>
+          <div class="list-foot" id="listFoot">
+            <span class="list-foot-text" id="listFootText"></span>
+            <button class="foot-btn is-hidden" id="scanBtn" type="button" data-nav
+              title="یک درخواست کوچک برای هر شبکهٔ بررسی‌نشده؛ شبکه‌های قابل‌پخش بالا می‌روند">بررسی شبکه‌ها</button>
+          </div>
         </aside>
 
         <section class="stage" aria-label="پخش زنده">
@@ -131,7 +135,7 @@
           <dt>◀ ▶</dt><dd>جابه‌جایی بین فهرست، پخش‌کننده و دکمه‌ها</dd>
           <dt>OK</dt><dd>پخش شبکه · روی شبکهٔ در حال پخش: تمام‌صفحه</dd>
           <dt>۰–۹</dt><dd>رفتن مستقیم به شمارهٔ شبکه</dd>
-          <dt>CH+ CH−</dt><dd>شبکه بعد/قبل</dd>
+          <dt>CH+ CH−</dt><dd>شبکه بعد/قبل (از شبکه‌های کم‌رنگ رد می‌شود)</dd>
           <dt>Back</dt><dd>بستن پنجره یا خروج از تمام‌صفحه</dd>
         </dl>
         <p class="note">
@@ -139,6 +143,12 @@
           می‌توانی کیفیت بالاتر را انتخاب کنی و انتخابت ذخیره می‌شود. شبکه‌هایی
           که لینک ناامن (HTTP)، قفل CORS یا سرآیند ویژه دارند در مرورگر پخش نمی‌شوند و
           نمایش داده نمی‌شوند.
+        </p>
+        <p class="note">
+          شبکه‌هایی که روی اینترنت تو پخش شده‌اند بالای فهرست می‌آیند و آن‌هایی که معمولاً
+          پخش نمی‌شوند کم‌رنگ و در انتهای فهرست‌اند. این نتیجه فقط روی همین دستگاه ذخیره
+          می‌شود. دکمهٔ «بررسی شبکه‌ها» زیر فهرست، با یک درخواست کوچک برای هر شبکه
+          (چند کیلوبایت) کل فهرست را یک‌جا مرتب می‌کند.
         </p>
         <button class="btn primary" id="helpClose" type="button">متوجه شدم</button>
       </div>
