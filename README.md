@@ -10,6 +10,7 @@
 
 - Category chips in three short groups: Persian (Persian, provincial), topics (news, sports, music, documentary, kids, movies and series) and regions (Turkey, Middle East, East Asia, Europe, Americas, all), plus a favorites list that needs no download
 - Playable-first lists: channels that played on this connection move to the top, and channels that usually fail here are dimmed, moved to the end and skipped by CH+/CH-
+- Built for TV browsers: nothing scrolls inside the page; the channel list turns whole pages with large buttons (or by walking past the last row), and every category is visible at once, so both the D-pad and a remote-controlled pointer work well
 - Full D-pad navigation with one high-contrast focus style, Back-key handling, number keys to jump to a channel, and CH+/CH- or Up/Down to zap in fullscreen
 - Data-saving playback: automatic quality is capped at 480p; a higher quality can be chosen from the quality menu and is remembered
 - Cautious adaptive bitrate tuned for slow, unstable connections, with bounded reconnects and no download while paused or hidden

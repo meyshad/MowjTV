@@ -12,7 +12,8 @@ The site does not require PHP, a database, Node.js, or custom server configurati
 
 ## TV Remote Controls
 
-- Up/Down: move through the channel list; in fullscreen, previous/next channel
+- Up/Down: move through the channel list (walking past the first or last row turns the page); in fullscreen, previous/next channel
+- Page buttons under the list: show the previous or next page of channels; they also work with a TV pointer or a mouse wheel
 - Left/Right: move between the list, the player, the controls and the category row
 - OK/Enter: play the focused channel; on the channel that is already playing, open fullscreen
 - 0-9: type a channel number to jump to it

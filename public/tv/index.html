@@ -8,10 +8,10 @@
     <meta name="description" content="تلویزیون زنده، سبک و کم‌مصرف، سازگار با ریموت تلویزیون" />
     <title>موج — تلویزیون زنده</title>
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
-    <link rel="stylesheet" href="./assets/app.css?v=20261111" />
+    <link rel="stylesheet" href="./assets/app.css?v=20261113" />
     <script defer src="https://cdn.jsdelivr.net/npm/hls.js@1.6.16/dist/hls.min.js" onerror="window.__hlsFallback=1"></script>
-    <script defer src="./assets/logos.js?v=20261111"></script>
-    <script defer src="./assets/app.js?v=20261111"></script>
+    <script defer src="./assets/logos.js?v=20261113"></script>
+    <script defer src="./assets/app.js?v=20261113"></script>
   </head>
   <body>
     <svg class="sprite" aria-hidden="true" focusable="false">
@@ -59,8 +59,15 @@
               placeholder="جست‌وجوی شبکه…" aria-label="جست‌وجوی شبکه" enterkeyhint="search" />
             <span class="count" id="count"></span>
           </div>
-          <div class="list" id="list" role="listbox" aria-label="شبکه‌ها">
-            <div class="list-spacer" id="listSpacer"></div>
+          <div class="list" id="list" role="listbox" aria-label="شبکه‌ها"></div>
+          <div class="pager is-hidden" id="pager">
+            <button class="page-btn" id="pagePrev" type="button" data-nav aria-label="صفحهٔ قبل">
+              <svg aria-hidden="true"><use xlink:href="#i-up" /></svg><span>صفحهٔ قبل</span>
+            </button>
+            <span class="page-info" id="pageInfo"></span>
+            <button class="page-btn" id="pageNext" type="button" data-nav aria-label="صفحهٔ بعد">
+              <span>صفحهٔ بعد</span><svg aria-hidden="true"><use xlink:href="#i-down" /></svg>
+            </button>
           </div>
           <div class="list-msg is-hidden" id="listMsg" role="status"></div>
           <div class="list-foot" id="listFoot">
@@ -132,7 +139,7 @@
       <div class="card">
         <h2 id="helpTitle">راهنمای ریموت</h2>
         <dl class="keys">
-          <dt>▲ ▼</dt><dd>حرکت در فهرست · در تمام‌صفحه: شبکه قبل/بعد</dd>
+          <dt>▲ ▼</dt><dd>حرکت در فهرست (بعد از آخرین ردیف، صفحه عوض می‌شود) · در تمام‌صفحه: شبکه قبل/بعد</dd>
           <dt>◀ ▶</dt><dd>جابه‌جایی بین فهرست، پخش‌کننده و دکمه‌ها</dd>
           <dt>OK</dt><dd>پخش شبکه · روی شبکهٔ در حال پخش: تمام‌صفحه</dd>
           <dt>۰–۹</dt><dd>رفتن مستقیم به شمارهٔ شبکه</dd>
