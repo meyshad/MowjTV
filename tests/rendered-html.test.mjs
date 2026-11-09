@@ -52,7 +52,7 @@ test("ships a small standalone TV folder with CDN playback", async () => {
   for (const id of [
     "cats", "search", "list", "player", "video", "status", "retryBtn", "skipBtn", "osd", "numpad",
     "playBtn", "prevBtn", "nextBtn", "muteBtn", "volUpBtn", "volDownBtn", "qualityBtn", "favBtn",
-    "fullBtn", "qualityMenu", "helpModal", "sleepBtn", "clock", "scanBtn", "listFootText",
+    "fullBtn", "qualityMenu", "helpModal", "sleepBtn", "clock", "scanBtn", "listFootText", "pager", "pagePrev", "pageNext", "pageInfo",
   ]) {
     assert.match(html, new RegExp(`id="${id}"`), `missing #${id}`);
   }
@@ -98,6 +98,13 @@ test("ships a small standalone TV folder with CDN playback", async () => {
   assert.equal(script.match(/scan\.start\b/g).length, 1, "the list check only runs when the user asks");
   assert.match(script, /SCAN_CONCURRENCY = 2/);
   assert.match(styles, /\.row\.is-dim/);
+
+  // TV browsers: no box to scroll; the list turns pages and the categories wrap
+  assert.match(script, /function turnPage\(delta\)/);
+  assert.doesNotMatch(script, /scrollTop/, "the channel list must not rely on scrolling");
+  assert.match(styles, /\.list \{[^}]*overflow: hidden;/);
+  assert.match(styles, /\.cats \{[^}]*flex-wrap: wrap;/);
+  assert.match(styles, /@media \(hover: hover\) \{/, "hover hints for TV pointers too");
 
   // Self-hosted logos, with the original URL as a fallback
   assert.match(html, /<script defer src="\.\/assets\/logos\.js\?v=\d+"><\/script>\s*<script defer src="\.\/assets\/app\.js/);
