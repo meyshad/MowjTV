@@ -626,11 +626,9 @@
 
   var list = (function () {
     var el = $("list");
-    var spacer = $("listSpacer");
     var rows = Object.create(null); // index -> element
     var rowHeight = 0;
     var focusIndex = 0;
-    var renderQueued = false;
 
     function measure() {
       var probe = document.createElement("div");
@@ -674,7 +672,6 @@
       row.tabIndex = -1;
       row.setAttribute("role", "option");
       row.setAttribute("data-i", String(index));
-      row.style.top = index * rowHeight + "px";
 
       var num = document.createElement("span");
       num.className = "row-num";
@@ -708,18 +705,45 @@
       return row;
     }
 
-    function render() {
-      renderQueued = false;
+    /* Paged, not scrolled: TV browsers drive the page with a D-pad or a
+     * remote-controlled pointer, and both make scrolling a box inside the page
+     * hard. A page always shows whole rows; big buttons (and the mouse wheel)
+     * turn it, and walking past the last row turns it too. */
+    var page = 0;
+    var perPage = 1;
+    var pagePrev = $("pagePrev");
+    var pageNext = $("pageNext");
+    var pageInfo = $("pageInfo");
+    var pagerEl = $("pager");
+
+    function layout() {
       if (!rowHeight) measure();
+      perPage = Math.max(1, Math.floor((el.clientHeight || rowHeight * 8) / rowHeight));
+    }
+
+    function pageCount() {
+      return Math.max(1, Math.ceil(state.view.length / perPage));
+    }
+
+    function updatePager() {
+      var pages = pageCount();
+      setHidden(pagerEl, pages < 2 || el.classList.contains("is-hidden"));
+      pagePrev.classList.toggle("is-off", page === 0);
+      pageNext.classList.toggle("is-off", page >= pages - 1);
+      pagePrev.setAttribute("aria-disabled", page === 0 ? "true" : "false");
+      pageNext.setAttribute("aria-disabled", page >= pages - 1 ? "true" : "false");
+      pageInfo.textContent = "صفحهٔ " + fa(page + 1) + " از " + fa(pages);
+    }
+
+    function render() {
+      layout();
       var total = state.view.length;
-      spacer.style.height = total * rowHeight + "px";
-      var viewHeight = el.clientHeight || 600;
-      var first = Math.max(0, Math.floor(el.scrollTop / rowHeight) - 4);
-      var last = Math.min(total - 1, Math.ceil((el.scrollTop + viewHeight) / rowHeight) + 4);
+      page = Math.max(0, Math.min(page, pageCount() - 1));
+      var first = page * perPage;
+      var last = Math.min(total, first + perPage) - 1;
       Object.keys(rows).forEach(function (key) {
         var i = Number(key);
         if (i < first || i > last || !state.view[i]) {
-          if (rows[key] === document.activeElement) return; // keep the focused row alive
           el.removeChild(rows[key]);
           delete rows[key];
         }
@@ -729,13 +753,9 @@
           rows[i] = buildRow(i);
           el.appendChild(rows[i]);
         }
+        rows[i].style.top = (i - first) * rowHeight + "px";
       }
-    }
-
-    function queueRender() {
-      if (renderQueued) return;
-      renderQueued = true;
-      (window.requestAnimationFrame || setTimeout)(render);
+      updatePager();
     }
 
     function reset(keepIndex) {
@@ -743,24 +763,17 @@
         el.removeChild(rows[key]);
       });
       rows = Object.create(null);
+      layout();
       focusIndex = Math.max(0, Math.min(keepIndex || 0, state.view.length - 1));
-      el.scrollTop = Math.max(0, focusIndex * (rowHeight || 50) - (el.clientHeight || 400) / 2);
+      page = Math.floor(focusIndex / perPage);
       render();
-    }
-
-    function ensureVisible(index) {
-      var top = index * rowHeight;
-      var margin = rowHeight;
-      if (top - margin < el.scrollTop) el.scrollTop = Math.max(0, top - margin);
-      else if (top + rowHeight + margin > el.scrollTop + el.clientHeight) {
-        el.scrollTop = top + rowHeight + margin - el.clientHeight;
-      }
     }
 
     function focus(index) {
       if (!state.view.length) return false;
       focusIndex = Math.max(0, Math.min(index, state.view.length - 1));
-      ensureVisible(focusIndex);
+      layout();
+      page = Math.floor(focusIndex / perPage);
       render();
       var row = rows[focusIndex];
       if (row) {
@@ -770,6 +783,20 @@
           row.focus();
         }
       }
+      return true;
+    }
+
+    // Turn the page; the cursor keeps its slot when it was in the list.
+    function turnPage(delta) {
+      layout();
+      var target = page + delta;
+      if (target < 0 || target >= pageCount()) return false;
+      var slot = Math.max(0, focusIndex - page * perPage);
+      var inList = el.contains(document.activeElement);
+      page = target;
+      focusIndex = Math.min(state.view.length - 1, page * perPage + slot);
+      if (inList) focus(focusIndex);
+      else render();
       return true;
     }
 
@@ -787,10 +814,30 @@
       return -1;
     }
 
-    el.addEventListener("scroll", queueRender);
+    pagePrev.addEventListener("click", function () {
+      turnPage(-1);
+    });
+    pageNext.addEventListener("click", function () {
+      turnPage(1);
+    });
+
+    var wheelAt = 0;
+    el.addEventListener("wheel", function (event) {
+      event.preventDefault();
+      if (now() - wheelAt < 280 || !event.deltaY) return;
+      wheelAt = now();
+      turnPage(event.deltaY > 0 ? 1 : -1);
+    }, { passive: false });
+
+    var resizeTimer = null;
     window.addEventListener("resize", function () {
-      rowHeight = 0;
-      reset(focusIndex);
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(function () {
+        var hadFocus = el.contains(document.activeElement);
+        rowHeight = 0;
+        if (hadFocus) focus(focusIndex);
+        else reset(focusIndex);
+      }, 150);
     });
 
     el.addEventListener("click", function (event) {
@@ -838,6 +885,10 @@
         return focusIndex;
       },
       activate: activate,
+      turnPage: turnPage,
+      updatePager: function () {
+        updatePager();
+      },
       hasFocus: function () {
         return el.contains(document.activeElement);
       },
@@ -2297,6 +2348,7 @@
     }
     setHidden(box, false);
     setHidden(list.el, true);
+    list.updatePager();
   }
 
   function updateFoot(savedAt) {
@@ -2779,6 +2831,7 @@
       if (direction === "down") {
         event.preventDefault();
         if (index < state.view.length - 1) list.focus(index + 1);
+        else if (isVisible($("pager"))) $("pageNext").focus(); // the buttons right below the list
         else if (isVisible($("scanBtn"))) $("scanBtn").focus();
         return;
       }
