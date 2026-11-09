@@ -844,23 +844,47 @@
     };
   })();
 
+  /* Small local copies of the main lists' logos (scripts/build-logos.mjs).
+   * Many original logos sit on hosts that refuse or throttle viewers and weigh
+   * 50-200 KB; the local ones are 1-3 KB and come from the same site. */
+  var LOCAL_LOGOS = (function () {
+    var data = window.MOWJ_LOGOS || {};
+    var set = Object.create(null);
+    String(data.ids || "").split(" ").forEach(function (id) {
+      if (id) set[id] = true;
+    });
+    return { v: data.v || "", set: set };
+  })();
+
+  function localLogo(base) {
+    if (!base || !LOCAL_LOGOS.set[base]) return "";
+    return "logos/" + base.replace(/[^A-Za-z0-9._-]/g, "_") + ".webp?v=" + LOCAL_LOGOS.v;
+  }
+
   function paintLogo(container, channel) {
     container.textContent = "";
     var initial = document.createElement("span");
     initial.textContent = (channel.name || "؟").charAt(0).toUpperCase();
     container.appendChild(initial);
-    if (!channel.logo) return;
+    // Local copy first, then the original (older TVs without WebP still get a logo).
+    var urls = [];
+    var local = localLogo(channel.base);
+    if (local) urls.push(local);
+    if (channel.logo) urls.push(channel.logo);
+    if (!urls.length) return;
     var img = document.createElement("img");
     img.alt = "";
     img.decoding = "async";
     img.referrerPolicy = "no-referrer";
     img.onerror = function () {
-      if (img.parentNode) img.parentNode.removeChild(img);
+      urls.shift();
+      if (urls.length) img.src = urls[0];
+      else if (img.parentNode) img.parentNode.removeChild(img);
     };
     img.onload = function () {
       initial.style.visibility = "hidden";
     };
-    img.src = channel.logo;
+    img.src = urls[0];
     container.appendChild(img);
   }
 

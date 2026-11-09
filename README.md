@@ -16,6 +16,7 @@
 - Lazy availability check: one small request for the channel the remote rests on, and an opt-in "check channels" button that checks a whole list (a few KB per channel); never an automatic background scan
 - Channels a browser cannot play (HTTP-only, CORS-locked, or needing custom headers) are hidden instead of failing
 - Playlists are cached for 12 hours, so opening the app normally costs no playlist traffic
+- Small self-hosted logos (96px WebP, 1-3 KB each) for the Persian, provincial and Turkish lists, so logos show even where the original image hosts are blocked or throttled; other lists use the original logo
 - Responsive layout for TVs, desktops and phones
 
 ## Quick Start
@@ -41,6 +42,7 @@ npm run lint
 - `public/tv/`: the primary, standalone TV interface
 - `app/`: the entry page that redirects visitors to `/tv/`
 - `tests/`: build, compatibility, behavior, and output-size checks
+- `scripts/build-logos.mjs`: refreshes the self-hosted logos in `public/tv/logos/` (`node scripts/build-logos.mjs`)
 - `release/`: the ready-to-upload hosting package
 
 ## Data, Privacy, and Limitations

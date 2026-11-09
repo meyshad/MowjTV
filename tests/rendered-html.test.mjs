@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { access, readFile, stat } from "node:fs/promises";
+import { access, readdir, readFile, stat } from "node:fs/promises";
 import test from "node:test";
 
 const projectRoot = new URL("../", import.meta.url);
@@ -98,6 +98,19 @@ test("ships a small standalone TV folder with CDN playback", async () => {
   assert.equal(script.match(/scan\.start\b/g).length, 1, "the list check only runs when the user asks");
   assert.match(script, /SCAN_CONCURRENCY = 2/);
   assert.match(styles, /\.row\.is-dim/);
+
+  // Self-hosted logos, with the original URL as a fallback
+  assert.match(html, /<script defer src="\.\/assets\/logos\.js\?v=\d+"><\/script>\s*<script defer src="\.\/assets\/app\.js/);
+  assert.match(script, /window\.MOWJ_LOGOS/);
+  assert.match(script, /"logos\/" \+ base/);
+  const logos = await readFile(new URL("../public/tv/assets/logos.js", import.meta.url), "utf8");
+  const logoIds = logos.match(/ids: "([^"]*)"/)[1].split(" ");
+  assert.ok(logoIds.length > 200, "the main lists should have local logos");
+  for (const id of ["GZT.tr", "IranInternational.uk", "TehranTV.ir"]) {
+    if (logoIds.includes(id)) await access(new URL(`../public/tv/logos/${id}.webp`, import.meta.url));
+  }
+  const logoFiles = (await readdir(new URL("../public/tv/logos/", import.meta.url))).filter((f) => f.endsWith(".webp"));
+  assert.equal(logoFiles.length, logoIds.length, "every listed logo has a file and vice versa");
 
   // Retries are bounded
   assert.match(script, /RECONNECT_DELAYS = \[1000, 3000, 6000, 12000, 20000, 30000\]/);
