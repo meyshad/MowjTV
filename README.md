@@ -4,7 +4,7 @@
 
 موج یک رابط فارسی، استاتیک و سازگار با ریموت برای مرور و پخش شبکه‌های IPTV در مرورگر تلویزیون است. هستهٔ پروژه به بک‌اند، دیتابیس یا پروکسی نیاز ندارد و برای تلویزیون‌های Samsung، از جمله سری AU، بهینه شده است.
 
-> Mowj TV is a lightweight, RTL, remote-friendly IPTV web client. It does not host, restream, or bundle television channels.
+> Mowj TV is a lightweight, RTL, remote-friendly IPTV web client. It ships a snapshot of IPTV-ORG's public channel lists, but it does not host or restream any video.
 
 ## Features
 
@@ -15,14 +15,15 @@
 - Data-saving playback: automatic quality is capped at 480p; a higher quality can be chosen from the quality menu and is remembered
 - Cautious adaptive bitrate tuned for slow, unstable connections, with bounded reconnects and no download while paused or hidden
 - Lazy availability check: one small request for the channel the remote rests on, and an opt-in "check channels" button that checks a whole list (a few KB per channel); never an automatic background scan
-- Channels a browser cannot play (HTTP-only, CORS-locked, or needing custom headers) are hidden instead of failing
-- Playlists are cached for 12 hours, so opening the app normally costs no playlist traffic
-- Small self-hosted logos (96px WebP, 1-3 KB each) for the Persian, provincial and Turkish lists, so logos show even where the original image hosts are blocked or throttled; other lists use the original logo
+- Fully self-hosted: the page, hls.js, the font, the channel lists and 64px WebP logos (about 1-2 KB each) all load from the host the package is uploaded to; only the video streams come from each channel's own server
+- Channels a browser cannot play (HTTP-only, CORS-locked, or needing custom headers) are removed when the package is built, which keeps the bundled lists small
+- Channel lists are cached for 12 hours, so opening the app normally costs no list traffic
+- `npm run refresh-data` (and a weekly GitHub Action) refreshes the lists and logos and rebuilds the package
 - Responsive layout for TVs, desktops and phones
 
 ## Quick Start
 
-For conventional static hosting, extract [`release/tv.zip`](./release/tv.zip) into the public root of your server and open `/tv/`. See [DEPLOY.md](./DEPLOY.md) for detailed instructions.
+For conventional static hosting, extract [`release/tv.zip`](./release/tv.zip) into the public root of your server (for example `public_html`) and open `/tv/`; the domain root also redirects there. See [DEPLOY.md](./DEPLOY.md) for detailed instructions, or [DEPLOY.fa.md](./DEPLOY.fa.md) for steps in Persian.
 
 You can also serve `public/tv/` directly from any HTTPS-enabled static web server without a build step. For local development:
 
@@ -43,14 +44,15 @@ npm run lint
 - `public/tv/`: the primary, standalone TV interface
 - `app/`: the entry page that redirects visitors to `/tv/`
 - `tests/`: build, compatibility, behavior, and output-size checks
-- `scripts/build-logos.mjs`: refreshes the self-hosted logos in `public/tv/logos/` (`node scripts/build-logos.mjs`)
+- `scripts/build-data.mjs`: downloads the IPTV-ORG playlists, keeps browser-playable channels in `public/tv/data/` and builds the logos in `public/tv/logos/`
+- `scripts/build-release.mjs`: builds `release/` (the site, a root redirect to `tv/`, and `tv.zip`)
 - `release/`: the ready-to-upload hosting package
 
 ## Data, Privacy, and Limitations
 
-Channel lists are fetched at runtime from [IPTV-ORG](https://github.com/iptv-org/iptv), and playback connects directly to each channel's stream host. This repository and the Mowj TV website do not store video files. Channel names, logos, and programming remain the property of their respective owners.
+Channel lists come from [IPTV-ORG](https://github.com/iptv-org/iptv) and are bundled when the package is built; playback connects directly to each channel's stream host. This repository and the Mowj TV website do not store video files. Channel names, logos, and programming remain the property of their respective owners.
 
-Streams may fail because of CORS restrictions, regional limitations, DRM, unsupported codecs, insecure HTTP sources, or unavailable upstream servers. Favorites, availability results, settings, and playlist caches stay in the current browser's local storage. Requests to CDNs, playlist providers, and stream hosts still expose the viewer's IP address and standard browser metadata to those services.
+Streams may fail because of CORS restrictions, regional limitations, DRM, unsupported codecs, insecure HTTP sources, or unavailable upstream servers. Favorites, availability results, settings, and playlist caches stay in the current browser's local storage. The app makes no requests to CDNs or playlist providers; requests to stream hosts still expose the viewer's IP address and standard browser metadata to those services.
 
 Mowj TV does not bypass DRM, payments, authentication, or access restrictions. Only watch streams you are authorized to access. The project is independent and is not affiliated with or endorsed by Samsung or IPTV-ORG. [PROXY.md](./PROXY.md) provides security guidance only; the project does not include a ready-to-use streaming proxy.
 
