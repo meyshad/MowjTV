@@ -1,0 +1,1763 @@
+#EXTM3U x-mowj-hidden="342"
+#EXTINF:-1 tvg-id="00sReplay.us@SD" tvg-logo="logos/00sReplay.us-452093.webp" group-title="Movies",00s Replay
+https://jmp2.uk/plu-62ba60f059624e000781c436.m3u8
+#EXTINF:-1 tvg-id="24HourFreeMovies.us@SD" tvg-logo="logos/24HourFreeMovies.us-7289a4.webp" group-title="Movies",24 Hour Free Movies (720p)
+https://d1j2u714xk898n.cloudfront.net/scheduler/scheduleMaster/145.m3u8
+#EXTINF:-1 tvg-id="30ATVClassicMovies.us@SD" tvg-logo="" group-title="Movies",30A TV Classic Movies (720p)
+https://30a-tv.com/feeds/pzaz/30atvmovies.m3u8
+#EXTINF:-1 tvg-id="50CentAction.us@SD" tvg-logo="logos/50CentAction.us-0ce129.webp" group-title="Movies;Series",50 Cent Action (720p)
+https://jmp2.uk/plu-68487fb3f212bedacf5a53e3.m3u8
+#EXTINF:-1 tvg-id="70sCinema.us@SD" tvg-logo="logos/70sCinema.us-113edc.webp" group-title="Movies",70s Cinema
+https://jmp2.uk/plu-5f4d878d3d19b30007d2e782.m3u8
+#EXTINF:-1 tvg-id="80sRewind.us@SD" tvg-logo="logos/80sRewind.us-688124.webp" group-title="Movies",80s Rewind
+https://jmp2.uk/plu-5ca525b650be2571e3943c63.m3u8
+#EXTINF:-1 tvg-id="90sThrowback.us@SD" tvg-logo="logos/90sThrowback.us-d56565.webp" group-title="Movies",90s Throwback
+https://jmp2.uk/plu-5f4d86f519358a00072b978e.m3u8
+#EXTINF:-1 tvg-id="AndTV.in@International" tvg-logo="logos/AndTV.in-4d5a7a.webp" group-title="Movies",&TV International (1080p)
+https://amg01117-amg01117c1-amgplt0029.playout.now3.amagi.tv/playlist/amg01117-amg01117c1-amgplt0029/playlist.m3u8
+#EXTINF:-1 tvg-id="PlusMaisUm.br@HD" tvg-logo="logos/PlusMaisUm.br-3d1c10.webp" group-title="Entertainment;General;Movies;Music",+MaisUm (720p)
+https://stream.ichibansys.com:3230/hybrid/play.m3u8
+#EXTINF:-1 tvg-id="ABNBibleMoviesChannel.us@SD" tvg-logo="logos/ABNBibleMoviesChannel.us-7c62fd.webp" group-title="Movies;Religious",ABN Bible Movies Channel (720p)
+https://mediaserver.abnvideos.com/streams/abnbiblemovies.m3u8
+#EXTINF:-1 tvg-id="AdrenalinaPuraTV.us@SD" tvg-logo="logos/AdrenalinaPuraTV.us-16144f.webp" group-title="Movies",Adrenalina Pura TV (720p)
+https://jmp2.uk/plu-61b793ccf571b80007b7a610.m3u8
+#EXTINF:-1 tvg-id="AdrenalinaPuraTV.us@Brazil" tvg-logo="logos/AdrenalinaPuraTV.us-16144f.webp" group-title="Movies",Adrenalina Pura TV Brazil
+https://jmp2.uk/plu-61b790b985706b00072cb797.m3u8
+#EXTINF:-1 tvg-id="AfghanNobelMovies.ca@SD" tvg-logo="logos/AfghanNobelMovies.ca-c052e2.webp" group-title="Movies",Afghan Nobel Movies (720p)
+https://live.relentlessinnovations.net:1936/afghannobel/afghannobel/playlist.m3u8
+#EXTINF:-1 tvg-id="Aflam.sa@SD" tvg-logo="logos/Aflam.sa-271921.webp" group-title="Movies",Aflam (1080p)
+https://shd-amg-fast.edgenextcdn.net/tx001/playlist.m3u8
+#EXTINF:-1 tvg-id="AfraFilm.ir@SD" tvg-logo="" group-title="Movies",Afra Film
+https://afrafhls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="AlankarTV.in@SD" tvg-logo="logos/AlankarTV.in-ba1e23.webp" group-title="Movies",Alankar TV (720p)
+https://livetv.tarangplus.in/alankar-origin/live/playlist.m3u8
+#EXTINF:-1 tvg-id="AlloCine.cm@SD" tvg-logo="logos/AlloCine.cm-506dde.webp" group-title="Movies",Allo Cine (1080p)
+https://d1yl6bf4hrzbr0.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-5km3zs4zs9sp0/allo.m3u8
+#EXTINF:-1 tvg-id="alphaCinema.ru@HD" tvg-logo="logos/alphaCinema.ru-3f637f.webp" group-title="Comedy;Family;Movies",alpha Cinema (1080p)
+https://live.15plusmg.ru/memfs/b389173a-df4e-4171-8904-e249893e71eb.m3u8
+#EXTINF:-1 tvg-id="AlternaTV.ar@SD" tvg-logo="" group-title="Culture;Documentary;Entertainment;General;Movies;Music",AlternaTV (720p) [Not 24/7]
+https://tv.alterna.ar/stream/hls/live.m3u8
+#EXTINF:-1 tvg-id="ARTFLIXMovieClassics.us@SD" tvg-logo="logos/ARTFLIXMovieClassics.us-0869ab.webp" group-title="Classic;Movies",ARTFLIX Movie Classics (720p)
+https://amogonetworx-artflix-1-nl.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="AsianetMovies.in@SD" tvg-logo="logos/AsianetMovies.in-d6e936.webp" group-title="Movies",Asianet Movies (396p)
+https://da86m1sqpm3o0.cloudfront.net/28072023/smil:asianetmovies.smil/chunklist_b1928000.m3u8
+#EXTINF:-1 tvg-id="AuroraMediaFilms.gt@SD" tvg-logo="logos/AuroraMediaFilms.gt-d7dbb7.webp" group-title="Movies",Aurora Media Films (720p)
+https://cdn.streamhispanatv.net:3417/live/auroramflive.m3u8
+#EXTINF:-1 tvg-id="B4UBhojpuri.in@SD" tvg-logo="logos/B4UBhojpuri.in-c9dc8b.webp" group-title="Movies",B4U Bhojpuri (1080p)
+https://cdnb4u.wiseplayout.com/B4U_Bhojpuri/master.m3u8
+#EXTINF:-1 tvg-id="B4UBhojpuri.in@Plus" tvg-logo="logos/B4UBhojpuri.in-c9dc8b.webp" group-title="Movies",B4U Bhojpuri Plus (1080p)
+https://cc-t2mudtkmuz4wb.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-t2mudtkmuz4wb/B4U_Bhojpuri/master.m3u8
+#EXTINF:-1 tvg-id="B4UKadak.in@SD" tvg-logo="logos/B4UKadak.in-ebb3da.webp" group-title="Movies",B4U Kadak (1080p)
+https://amg00877-b4unew-amg00877c4-xiaomi-in-5473.playouts.now.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="B4UMovies.in@India" tvg-logo="logos/B4UMovies.in-c1a5a9.webp" group-title="Movies",B4U Movies (1080p)
+https://amg00877-b4unew-amg00877c2-xiaomi-in-5489.playouts.now.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="BattlestarGalactica.us@SD" tvg-logo="logos/BattlestarGalactica.us-cff751.webp" group-title="Movies;Series",Battlestar Galactica
+https://jmp2.uk/plu-69d7ebff029c431826bd328e.m3u8
+#EXTINF:-1 tvg-id="BETCinema.us@SD" tvg-logo="logos/BETCinema.us-2e8349.webp" group-title="Movies",BET Cinema
+https://jmp2.uk/plu-58af4c093a41ca9d4ecabe96.m3u8
+#EXTINF:-1 tvg-id="BETComedyMovies.us@SD" tvg-logo="logos/BETComedyMovies.us-cb450d.webp" group-title="Movies",BET Comedy Movies
+https://jmp2.uk/plu-68c32d88f56983aba40052bd.m3u8
+#EXTINF:-1 tvg-id="BETVisionaries.us@SD" tvg-logo="logos/BETVisionaries.us-024cce.webp" group-title="Movies",BET Visionaries
+https://jmp2.uk/plu-663946c1b18d700008d9c168.m3u8
+#EXTINF:-1 tvg-id="BhojpuriCinema.in@SD" tvg-logo="logos/BhojpuriCinema.in-878bd8.webp" group-title="Movies",Bhojpuri Cinema (720p)
+https://live-bhojpuri.akamaized.net/liveabr/playlist.m3u8
+#EXTINF:-1 tvg-id="BIZCinema.uz@SD" tvg-logo="logos/BIZCinema.uz-bd6feb.webp" group-title="Movies",BIZ Cinema (1080p)
+https://fl.biztv.media/cinema_720_EMfSyXgoRdiIHgldXTZICucKTIeCKO/index.m3u8
+#EXTINF:-1 tvg-id="Bollygold.in@HD" tvg-logo="logos/Bollygold.in-29576f.webp" group-title="Movies",Bollygold (1080p)
+https://jmp2.uk/stvp-IN4000600Q
+#EXTINF:-1 tvg-id="BollywoodClassic.ro@Romania" tvg-logo="logos/BollywoodClassic.ro-15f133.webp" group-title="Classic;Movies",Bollywood Classic Romania (576p)
+https://hls02ns.antenaplay.ro/hls/bollywood-sd/index.m3u8
+#EXTINF:-1 tvg-id="BollywoodHD.ro@Russia" tvg-logo="logos/BollywoodHD.ro-e29ca0.webp" group-title="Movies",Bollywood HD Russia (576p)
+https://xykt-fix.github.io/cinerama_edge01/hls/BOLLYWOOD_RU/Movie009.m3u8
+#EXTINF:-1 tvg-id="Bonanza.us@SD" tvg-logo="logos/Bonanza.us-de05f6.webp" group-title="Movies;Series",Bonanza
+https://jmp2.uk/plu-68e9913c4a666b9054849832.m3u8
+#EXTINF:-1 tvg-id="Bonanza.us@CA" tvg-logo="logos/Bonanza.us-de05f6.webp" group-title="Movies;Series",Bonanza CA
+https://jmp2.uk/plu-696e647b07ea70192d49f6a5.m3u8
+#EXTINF:-1 tvg-id="Boreal.do@SD" tvg-logo="logos/Boreal.do-27e1db.webp" group-title="Movies",Boreal (720p) [Not 24/7]
+https://edge.essastream.com/borealtelevision/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-id="BravoFarsiTV.ir@SD" tvg-logo="logos/BravoFarsiTV.ir-13094a.webp" group-title="Movies",Bravo Farsi TV (360p)
+https://bravoohls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="CafeFilm.ir@SD" tvg-logo="" group-title="Movies",Cafe Film
+https://cafefhls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="CanalCineDios.co@SD" tvg-logo="logos/CanalCineDios.co-3c3aaf.webp" group-title="Movies",Canal Cine Dios
+https://canal.mediaserver.com.co/live/cinedios.m3u8
+#EXTINF:-1 tvg-id="CCTV6.cn@SD" tvg-logo="logos/CCTV6.cn-1f9777.webp" group-title="Movies",CCTV-6 [Geo-blocked]
+https://live.eac-news.com/CCTV/streams/cctv6.m3u8
+#EXTINF:-1 tvg-id="Charge.us@SD" tvg-logo="" group-title="Movies",Charge! (1080p)
+https://fast-channels.sinclairstoryline.com/CHARGE/index.m3u8
+#EXTINF:-1 tvg-id="CINDIETV.br@HD" tvg-logo="" group-title="Movies",CINDIE TV (1080p)
+https://cc-hqw8u5r1nshjc.akamaized.net/scheduler/scheduleMaster/352.m3u8
+#EXTINF:-1 tvg-id="Cine34.it@SD" tvg-logo="logos/Cine34.it-a2719c.webp" group-title="Movies",Cine34 [Geo-blocked]
+https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(b6)/index.m3u8
+#EXTINF:-1 tvg-id="Cine34.it@HD" tvg-logo="logos/Cine34.it-a2719c.webp" group-title="Movies",Cine34 HD (1080p)
+https://live02-seg.msf.cdn.mediaset.net/live/ch-b6/b6-clr.isml/index.m3u8
+#EXTINF:-1 tvg-id="Cine666byPlutoTV.de@FR" tvg-logo="logos/Cine666byPlutoTV.de-76991b.webp" group-title="Movies",Cine 666 by Pluto TV
+https://jmp2.uk/plu-6823648580b2665220d9e69a.m3u8
+#EXTINF:-1 tvg-id="CineActionbyPlutoTV.de@FR" tvg-logo="logos/CineActionbyPlutoTV.de-800ce7.webp" group-title="Movies",Cine Action by Pluto TV
+https://jmp2.uk/plu-5f8ed1ff5c39700007e2204a.m3u8
+#EXTINF:-1 tvg-id="CineAdrenalina.us@SD" tvg-logo="logos/CineAdrenalina.us-50be09.webp" group-title="Movies",Cine Adrenalina
+https://jmp2.uk/plu-5d8d164d92e97a5e107638d2.m3u8
+#EXTINF:-1 tvg-id="CineAmor.us@SD" tvg-logo="logos/CineAmor.us-87dbc4.webp" group-title="Movies",Cine Amor
+https://jmp2.uk/plu-5f5136317aedfb0007016f93.m3u8
+#EXTINF:-1 tvg-id="CinebyPlutoTV.de@FR" tvg-logo="logos/CinebyPlutoTV.de-5eaa3f.webp" group-title="Movies",Cine by Pluto TV
+https://jmp2.uk/plu-5f8ed0f17564a300082b676a.m3u8
+#EXTINF:-1 tvg-id="CineCatastrophebyPlutoTV.de@FR" tvg-logo="logos/CineCatastrophebyPlutoTV.de-6c80b1.webp" group-title="Movies",Cine Catastrophe by Pluto TV
+https://jmp2.uk/plu-65a69ef53af63d000825e0ee.m3u8
+#EXTINF:-1 tvg-id="CinedAsiebyPlutoTV.de@FR" tvg-logo="logos/CinedAsiebyPlutoTV.de-043290.webp" group-title="Movies",Cine d'Asie by Pluto TV
+https://jmp2.uk/plu-62f3e2d000418d00070f7dbc.m3u8
+#EXTINF:-1 tvg-id="CineFriki.es@SD" tvg-logo="logos/CineFriki.es-f483b0.webp" group-title="Movies",Cine Friki (1080p)
+https://d2mr4fu91mjx9m.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-rb0tx75ojbc5u/CineFriki_ES.m3u8
+#EXTINF:-1 tvg-id="CineHorreurbyPlutoTV.de@FR" tvg-logo="logos/CineHorreurbyPlutoTV.de-fa9c23.webp" group-title="Movies",Cine Horreur by Pluto TV
+https://jmp2.uk/plu-66e1978babec540008ce41ac.m3u8
+#EXTINF:-1 tvg-id="CineNanar.fr@SD" tvg-logo="logos/CineNanar.fr-e68a8a.webp" group-title="Movies",Cine Nanar (1080p)
+https://zylo-cinenanar-rakuten.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="CinePremiere.us@SD" tvg-logo="logos/CinePremiere.us-b5f06d.webp" group-title="Movies",Cine Premiere
+https://jmp2.uk/plu-5cf968040ab7d8f181e6a68b.m3u8
+#EXTINF:-1 tvg-id="CineRetrobyPlutoTV.de@FR" tvg-logo="logos/CineRetrobyPlutoTV.de-eb7d84.webp" group-title="Movies",Cine Retro by Pluto TV
+https://jmp2.uk/plu-5f8ed168f72fcd0007e56269.m3u8
+#EXTINF:-1 tvg-id="CineRomancebyPlutoTV.de@FR" tvg-logo="logos/CineRomancebyPlutoTV.de-b49a50.webp" group-title="Movies",Cine Romance by Pluto TV
+https://jmp2.uk/plu-60812fc8539963000707d1e1.m3u8
+#EXTINF:-1 tvg-id="CineRomantico.us@SD" tvg-logo="logos/CineRomantico.us-decc2a.webp" group-title="Movies",Cine Romantico (720p)
+https://d1si3n1st4nkgb.cloudfront.net/10502/88886011/hls/master.m3u8?ads.xumo_channelId=88886011
+#EXTINF:-1 tvg-id="CineSciFibyPlutoTV.de@FR" tvg-logo="logos/CineSciFibyPlutoTV.de-c1f603.webp" group-title="Movies",Cine Sci-Fi by Pluto TV
+https://jmp2.uk/plu-60c34592c911890007f29a73.m3u8
+#EXTINF:-1 tvg-id="CineTerror.us@US" tvg-logo="logos/CineTerror.us-b33659.webp" group-title="Movies",Cine Terror
+https://jmp2.uk/plu-5d8d180092e97a5e107638d3.m3u8
+#EXTINF:-1 tvg-id="CineTerror.us@BR" tvg-logo="logos/CineTerror.us-b33659.webp" group-title="Movies",Cine Terror BR
+https://jmp2.uk/plu-5f12111c9e6c2c00078ef3bb.m3u8
+#EXTINF:-1 tvg-id="CineTerror.us@LatAm" tvg-logo="logos/CineTerror.us-b33659.webp" group-title="Movies",Cine Terror LatAm
+https://jmp2.uk/plu-5dcddf1ed95e740009fef7ab.m3u8
+#EXTINF:-1 tvg-id="CineThrillersbyPlutoTV.de@FR" tvg-logo="logos/CineThrillersbyPlutoTV.de-e352b4.webp" group-title="Movies",Cine Thrillers by Pluto TV
+https://jmp2.uk/plu-60c3472a51a2050008dad272.m3u8
+#EXTINF:-1 tvg-id="CineWestern.fr@SD" tvg-logo="logos/CineWestern.fr-9972f5.webp" group-title="Movies",Cine Western (France) (1080p)
+https://amg00711-zylo-amg00711c8-rakuten-uk-2686.playouts.now.amagi.tv/playlist/amg00711-zylofast-cinewestern-rakutenuk/playlist.m3u8
+#EXTINF:-1 tvg-id="CineWestern.es@SD" tvg-logo="logos/CineWestern.es-af0c50.webp" group-title="Movies",Cine Western (Spain) (1080p)
+https://d2nq34q0i1r3la.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-awohw8g217ho8/CineWestern_ES.m3u8
+#EXTINF:-1 tvg-id="CineWesternbyPlutoTV.de@FR" tvg-logo="logos/CineWesternbyPlutoTV.de-65024a.webp" group-title="Movies",Cine Western by Pluto TV
+https://jmp2.uk/plu-65cca3e2ec452d0008af3a65.m3u8
+#EXTINF:-1 tvg-id="CinemaratonPlus.ro@HD" tvg-logo="logos/CinemaratonPlus.ro-341415.webp" group-title="Movies",Cinemaraton Plus (1080i)
+https://hls02ns.antenaplay.ro/hls/cinemaraton-plus-hd/index.m3u8
+#EXTINF:-1 tvg-id="CinemaxAsia.sg@SD" tvg-logo="logos/CinemaxAsia.sg-6f31ba.webp" group-title="Movies",Cinemax Asia (720p) [Geo-blocked]
+https://tinyurl.com/44efw2rx
+#EXTINF:-1 tvg-id="CinemaxLatinAmerica.us@SD" tvg-logo="logos/CinemaxLatinAmerica.us-b8cbca.webp" group-title="Movies",Cinemax Latin America (720p)
+https://streaming.onnethn.com/CINEMAX/playlist.m3u8
+#EXTINF:-1 tvg-id="Cinevault80s.us@SD" tvg-logo="logos/Cinevault80s.us-33a4ef.webp" group-title="Movies",Cinevault 80s (720p)
+https://aegis-cloudfront-1.tubi.video/ea1ab5d1-f554-4f6b-b03f-2611fcd94257/playlist.m3u8
+#EXTINF:-1 tvg-id="CineWow.ro@SD" tvg-logo="logos/CineWow.ro-edeca0.webp" group-title="Movies",CineWow (576i)
+https://hls01ns.antenaplay.ro/hls/cinewow-sd/index.m3u8
+#EXTINF:-1 tvg-id="CityEdenKinoAction.ru@HD" tvg-logo="logos/CityEdenKinoAction.ru-fdc257.webp" group-title="Movies",City Eden KinoAction [Not 24/7]
+https://cityeden.catcast.tv/content/41333/index.m3u8
+#EXTINF:-1 tvg-id="CityEdenKinoArt.ru@HD" tvg-logo="logos/CityEdenKinoArt.ru-53599e.webp" group-title="Movies",City Eden KinoArt [Not 24/7]
+https://cityeden.catcast.tv/content/38398/index.m3u8
+#EXTINF:-1 tvg-id="CityEdenKinoAsia.ru@HD" tvg-logo="logos/CityEdenKinoAsia.ru-cc3809.webp" group-title="Movies",City Eden KinoAsia [Not 24/7]
+https://cityeden.catcast.tv/content/34393/index.m3u8
+#EXTINF:-1 tvg-id="CityEdenKinoDetektiv.ru@HD" tvg-logo="logos/CityEdenKinoDetektiv.ru-cd4b04.webp" group-title="Movies",City Eden KinoDetektiv [Not 24/7]
+https://cityeden.catcast.tv/content/41327/index.m3u8
+#EXTINF:-1 tvg-id="CityEdenKinoDrama.ru@HD" tvg-logo="logos/CityEdenKinoDrama.ru-bfeacf.webp" group-title="Movies",City Eden KinoDrama [Not 24/7]
+https://cityeden.catcast.tv/content/45269/index.m3u8
+#EXTINF:-1 tvg-id="CityEdenKinoFantastika.ru@HD" tvg-logo="logos/CityEdenKinoFantastika.ru-59bbcc.webp" group-title="Movies",City Eden KinoFantastika [Not 24/7]
+https://cityeden.catcast.tv/content/45268/index.m3u8
+#EXTINF:-1 tvg-id="CityEdenKinoKlassika.ru@HD" tvg-logo="logos/CityEdenKinoKlassika.ru-beefef.webp" group-title="Movies",City Eden KinoKlassika [Not 24/7]
+https://cityeden.catcast.tv/content/34185/index.m3u8
+#EXTINF:-1 tvg-id="CityEdenKinoKomediya.ru@HD" tvg-logo="logos/CityEdenKinoKomediya.ru-bd4f4b.webp" group-title="Movies",City Eden KinoKomediya [Not 24/7]
+https://cityeden.catcast.tv/content/41331/index.m3u8
+#EXTINF:-1 tvg-id="CityEdenKinoMistika.ru@HD" tvg-logo="logos/CityEdenKinoMistika.ru-00ee12.webp" group-title="Movies",City Eden KinoMistika [Not 24/7]
+https://cityeden.catcast.tv/content/40783/index.m3u8
+#EXTINF:-1 tvg-id="CityEdenKinoSemya.ru@HD" tvg-logo="logos/CityEdenKinoSemya.ru-320907.webp" group-title="Movies",City Eden KinoSemya [Not 24/7]
+https://v2.catcast.tv/content/38128/index.m3u8
+#EXTINF:-1 tvg-id="ClassicCinema.us@SD" tvg-logo="logos/ClassicCinema.us-c10449.webp" group-title="Movies",Classic Cinema (240p) [Not 24/7]
+https://rpn.bozztv.com/gusa/gusa-classiccinema/index.m3u8
+#EXTINF:-1 tvg-id="ClassicMovieWesterns.us@SD" tvg-logo="logos/ClassicMovieWesterns.us-8faf08.webp" group-title="Movies;Series",Classic Movie Westerns
+https://jmp2.uk/plu-61f33318210549000806a530.m3u8
+#EXTINF:-1 tvg-id="ClassicMoviesChannel.us@SD" tvg-logo="logos/ClassicMoviesChannel.us-d7697b.webp" group-title="Movies",Classic Movies Channel
+https://jmp2.uk/plu-561c5b0dada51f8004c4d855.m3u8
+#EXTINF:-1 tvg-id="ClassiqueTV.br@SD" tvg-logo="logos/ClassiqueTV.br-ae02d4.webp" group-title="Movies",Classique TV (360p)
+https://stmv1.srvif.com/classique/classique/playlist.m3u8
+#EXTINF:-1 tvg-id="ColorsCineplex.in@SD" tvg-logo="logos/ColorsCineplex.in-d11309.webp" group-title="Movies",Colors Cineplex (576p)
+https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/gb/YuppTV/ColorsCineplexUK.m3u8
+#EXTINF:-1 tvg-id="CosmosTv.ar@HD" tvg-logo="" group-title="Movies;News",Cosmos Tv
+https://tv.mediacp.eu:19360/cosmos/cosmos.m3u8
+#EXTINF:-1 tvg-id="CosmosTv.ar@SD" tvg-logo="" group-title="Movies;News",Cosmos Tv SD
+https://canaletaplus.com:3922/live/cosmoslive.m3u8
+#EXTINF:-1 tvg-id="CTBPerthMoviesChannel.au@SD" tvg-logo="logos/CTBPerthMoviesChannel.au-e46267.webp" group-title="Movies",CTB Perth Movies Channel (720p)
+https://movies.ctbperth.net.au/hls/stream.m3u8
+#EXTINF:-1 tvg-id="Detskoekino.ru@International" tvg-logo="logos/Detskoekino.ru-8d4e6d.webp" group-title="Movies",Detskoe kino [Not 24/7]
+https://autopilot.catcast.tv/content/38720/index.m3u8
+#EXTINF:-1 tvg-id="Domkino.ru@International" tvg-logo="logos/Domkino.ru-ce9926.webp" group-title="Movies",Dom kino International (576p)
+https://fs.uplink.kz/dom_kino/mono.m3u8?token=onlinetv
+#EXTINF:-1 tvg-id="Dorama.ru@SD" tvg-logo="logos/Dorama.ru-728a10.webp" group-title="Movies",Dorama (576p)
+https://fs.uplink.kz/dorama/mono.m3u8?token=onlinetv
+#EXTINF:-1 tvg-id="DUST.us@SD" tvg-logo="logos/DUST.us-65817f.webp" group-title="Movies",DUST (1080p)
+https://dqi7ayt2o24fn.cloudfront.net/playlist.m3u8
+#EXTINF:-1 tvg-id="EbonyTVbyLionsgate.us@SD" tvg-logo="logos/EbonyTVbyLionsgate.us-8d4c3b.webp" group-title="Movies;Series",Ebony TV by Lionsgate (1080p)
+https://aegis-cloudfront-1.tubi.video/a0ad4b53-ab3a-48dd-be12-bc7f533c372c/playlist.m3u8
+#EXTINF:-1 tvg-id="EBSCinema.us@SD" tvg-logo="logos/EBSCinema.us-67b7dd.webp" group-title="Movies",EBS Cinema (720p)
+https://rpn.bozztv.com/ebstv/ebscinema/index.m3u8
+#EXTINF:-1 tvg-id="EkranMovies.ir@SD" tvg-logo="logos/EkranMovies.ir-a7a408.webp" group-title="Movies",Ekran Movies
+https://ca-rt.onetv.app/EkranMovies/index-0.m3u8?token=onetv202
+#EXTINF:-1 tvg-id="EmotionL.fr@SD" tvg-logo="logos/EmotionL.fr-697c51.webp" group-title="Movies",Emotion L (1080p)
+https://rakutenaa-zylo-emotional-rakuten-r1zkm.amagi.tv/playlist/rakutenAA-zylo-emotional-rakuten/playlist.m3u8
+#EXTINF:-1 tvg-id="EpicBhojpuri.in@Digital" tvg-logo="logos/EpicBhojpuri.in-cb91b8.webp" group-title="Movies",Epic Bhojpuri Digital (1080p)
+https://cc-8hy4a26pz2uos.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-8hy4a26pz2uos/playlist.m3u8
+#EXTINF:-1 tvg-id="ETVCinema.in@SD" tvg-logo="logos/ETVCinema.in-042757.webp" group-title="Movies",ETV Cinema (396p)
+https://yupplivegcpusa.yuppcdn.net/100823/smil:etvcinema.smil/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
+#EXTINF:-1 tvg-id="ETVCinema.in@HD" tvg-logo="logos/ETVCinema.in-042757.webp" group-title="Movies",ETV Cinema HD (1080p)
+https://d27zlkxhgwrfgo.cloudfront.net/v1/master/9d43eacaed199f8d5883927e7aef514a8a08e108/ETV_CINEMA_H264_cloud_in/index.m3u8
+#EXTINF:-1 tvg-id="Filmax.pk@SD" tvg-logo="logos/Filmax.pk-162ac3.webp" group-title="Movies",Filmax (576p)
+https://s3.ideationtec.live/Filmax/Filmax.m3u8
+#EXTINF:-1 tvg-id="FILMBOXPlusComedy.pl@Romania" tvg-logo="logos/FILMBOXPlusComedy.pl-e1120c.webp" group-title="Movies",FILMBOX+ Comedy Romania
+https://nosignal1.antenaplay.ro/hls/fb-comedy-hd/index.m3u8
+#EXTINF:-1 tvg-id="FILMBOXPlusFestival.pl@SD" tvg-logo="logos/FILMBOXPlusFestival.pl-610656.webp" group-title="Movies",FILMBOX+ Festival
+https://dash3.antik.sk/live/test_filmbox_arthouse_atk_1200/playlist.m3u8
+#EXTINF:-1 tvg-id="FILMBOXPlusFestival.pl@HD" tvg-logo="logos/FILMBOXPlusFestival.pl-610656.webp" group-title="Movies",FILMBOX+ Festival HD (1080p)
+https://nosignal1.antenaplay.ro/hls/fb-festival-hd/index.m3u8
+#EXTINF:-1 tvg-id="FILMBOXPlusHits.pl@Romania" tvg-logo="logos/FILMBOXPlusHits.pl-e991ba.webp" group-title="Movies",FILMBOX+ Hits Romania (576p)
+https://nosignal1.antenaplay.ro/hls/fb-hits-sd/index.m3u8
+#EXTINF:-1 tvg-id="FILMBOXPlusLoveCrime.pl@Romania" tvg-logo="logos/FILMBOXPlusLoveCrime.pl-4ee4e3.webp" group-title="Movies",FILMBOX+ Love & Crime Romania
+https://nosignal1.antenaplay.ro/hls/fb-love-and-crime-sd/index.m3u8
+#EXTINF:-1 tvg-id="FILMBOXPlusOne.pl@UkraineBaltics" tvg-logo="logos/FILMBOXPlusOne.pl-5fa186.webp" group-title="Movies",FILMBOX+ One Ukraine & Baltics (450p) [Geo-blocked]
+https://s70378.cdn.ngenix.net/filmbox/index.m3u8
+#EXTINF:-1 tvg-id="FilmesSuspense.us@BR" tvg-logo="logos/FilmesSuspense.us-44b8ba.webp" group-title="Movies",Filmes Suspense
+https://jmp2.uk/plu-5f171d3442a0500007362f22.m3u8
+#EXTINF:-1 tvg-id="Filmex.mx@SD" tvg-logo="logos/Filmex.mx-ecfb80.webp" group-title="Movies",Filmex (1080p) [Geo-blocked]
+https://filmex-filmex-xumo.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="FilmexClasico.mx@SD" tvg-logo="logos/FilmexClasico.mx-e4f2c7.webp" group-title="Movies",Filmex Clasico (1080p) [Geo-blocked]
+https://filmex-filmexclasico-xumo.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="FilmRiseForensicFiles.us@SD" tvg-logo="logos/FilmRiseForensicFiles.us-08fa3e.webp" group-title="Movies",FilmRise Forensic Files (720p) [Geo-blocked]
+https://pb-x9qsxrudiq9d2.akamaized.net/webvtt/v1/18584c3f3a2a4df8/88886014/master.m3u8
+#EXTINF:-1 tvg-id="FilmUALive.ua@SD" tvg-logo="logos/FilmUALive.ua-45851f.webp" group-title="Movies",FilmUA Live
+https://dash2.antik.sk/live/test_film_life_atktv/playlist.m3u8
+#EXTINF:-1 tvg-id="FilmUADrama.ua@SD" tvg-logo="logos/FilmUADrama.ua-c7a2a5.webp" group-title="Movies;Series",FilmUADrama
+https://dash2.antik.sk/live/test_film_drama_atktv/playlist.m3u8
+#EXTINF:-1 tvg-id="FlicksofFury.us@SD" tvg-logo="logos/FlicksofFury.us-5bec1d.webp" group-title="Movies",Flicks of Fury
+https://jmp2.uk/plu-58e55b14ad8e9c364d55f717.m3u8
+#EXTINF:-1 tvg-id="FrightFlix.us@SD" tvg-logo="logos/FrightFlix.us-8d849f.webp" group-title="Movies",FrightFlix (720p)
+https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=2229
+#EXTINF:-1 tvg-id="GEMBollywood.tr@SD" tvg-logo="logos/GEMBollywood.tr-6614a4.webp" group-title="Movies",GEM Bollywood
+https://ca-rt.onetv.app/gembollywood/index-0.m3u8?token=onetv202
+#EXTINF:-1 tvg-id="GEMDrama.tr@SD" tvg-logo="logos/GEMDrama.tr-62354b.webp" group-title="Movies",GEM Drama
+https://ca-rt.onetv.app/gemdrama/index-0.m3u8?token=onetv202
+#EXTINF:-1 tvg-id="GEMDramaPlus.tr@SD" tvg-logo="logos/GEMDramaPlus.tr-108d09.webp" group-title="Movies",GEM Drama +
+https://ca-rt.onetv.app/gemdramaplus/index-0.m3u8?token=onetv202
+#EXTINF:-1 tvg-id="GEMFilm.tr@SD" tvg-logo="logos/GEMFilm.tr-944835.webp" group-title="Movies",GEM Film
+https://ca-rt.onetv.app/gemfilm/index-0.m3u8?token=onetv202
+#EXTINF:-1 tvg-id="GEMOnyx.tr@SD" tvg-logo="logos/GEMOnyx.tr-ba94fa.webp" group-title="Movies",GEM Onyx
+https://ca-rt.onetv.app/gemonyx/index-0.m3u8?token=onetv202
+#EXTINF:-1 tvg-id="GEMPixel.tr@SD" tvg-logo="" group-title="Movies",GEM Pixel
+https://glserver1.tamashaland.com/live/aBCH96886YznRbGOiqTnnQ__/stream_0.m3u8
+#EXTINF:-1 tvg-id="GEMRubix.tr@SD" tvg-logo="logos/GEMRubix.tr-1cb050.webp" group-title="Movies",GEM Rubix
+https://ca-rt.onetv.app/gemrubix/index-0.m3u8?token=onetv202
+#EXTINF:-1 tvg-id="GEMRubixPlus.tr@SD" tvg-logo="logos/GEMRubixPlus.tr-48a6ee.webp" group-title="Movies",GEM Rubix +
+https://ca-rt.onetv.app/gemrubixplus/index-0.m3u8?token=onetv202
+#EXTINF:-1 tvg-id="GEMTV.tr@SD" tvg-logo="logos/GEMTV.tr-16f3b2.webp" group-title="Movies",GEM TV
+https://ca-rt.onetv.app/gem/index-0.m3u8?token=onetv202
+#EXTINF:-1 tvg-id="GEMTVPlus.tr@SD" tvg-logo="logos/GEMTVPlus.tr-5808d1.webp" group-title="Movies",GEM TV +
+https://ca-rt.onetv.app/gemtvplus/index-0.m3u8?token=onetv202
+#EXTINF:-1 tvg-id="GhostTV.br@SD" tvg-logo="logos/GhostTV.br-80e04c.webp" group-title="Movies",Ghost TV (712p) [Not 24/7]
+https://stmv.video.expressolider.com.br/ghostv/ghostv/playlist.m3u8
+#EXTINF:-1 tvg-id="GirlfriendsFilms.us@SD" tvg-logo="logos/GirlfriendsFilms.us-52c045.webp" group-title="Movies",Girlfriends Films
+https://jmp2.uk/plu-66ba1e4446762a000855cd87.m3u8
+#EXTINF:-1 tvg-id="GoldStar.ir@SD" tvg-logo="" group-title="Movies",Gold Star
+https://moviethls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="Goldmines2.in@SD" tvg-logo="" group-title="Movies",Goldmines 2 (576p)
+https://mumt03.tangotv.in/Dsly5z3HGOLDMINES2/index.m3u8
+#EXTINF:-1 tvg-id="Goldmines.in@SD" tvg-logo="logos/Goldmines.in-beee86.webp" group-title="Movies",Goldmines (576p)
+https://mumt04.tangotv.in/m18aqlK4GOLDMINES/index.m3u8
+#EXTINF:-1 tvg-id="GoldminesBollywood.in@SD" tvg-logo="logos/GoldminesBollywood.in-2c3690.webp" group-title="Movies",Goldmines Bollywood (576p)
+https://mumt03.tangotv.in/Dsly5z3HGOLDMINESBOLLYWOOD/index.m3u8
+#EXTINF:-1 tvg-id="GoldminesMovies.in@SD" tvg-logo="logos/GoldminesMovies.in-243dd2.webp" group-title="Movies",Goldmines Movies (576p)
+https://mumt04.tangotv.in/m18aqlK4GOLDMINEMOVIES/index.m3u8
+#EXTINF:-1 tvg-id="GrandCinema.tr@SD" tvg-logo="" group-title="Movies",Grand Cinema
+https://gcinemahls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="GravitasMovies.us@SD" tvg-logo="logos/GravitasMovies.us-4fc801.webp" group-title="Movies",Gravitas Movies (1080p)
+https://d6dg3ebeih71x.cloudfront.net/Gravitas_Movies.m3u8
+#EXTINF:-1 tvg-id="GREATmovies.uk@UK" tvg-logo="logos/GREATmovies.uk-315c3c.webp" group-title="Movies",GREAT! movies (1080p)
+https://amg01753-narrativeuk-amg01753c3-lg-gb-1833.playouts.now.amagi.tv/playlist/amg01753-narrativeuk-greatmovies-lggb/playlist.m3u8
+#EXTINF:-1 tvg-id="GREATromance.uk@UK" tvg-logo="logos/GREATromance.uk-a810e9.webp" group-title="Movies",GREAT! romance (1080p)
+https://amg01753-narrativeuk-amg01753c2-lg-gb-1832.playouts.now.amagi.tv/playlist/amg01753-narrativeuk-greatchristmas-lggb/playlist.m3u8
+#EXTINF:-1 tvg-id="GrjngoWesternMovies.de@SD" tvg-logo="logos/GrjngoWesternMovies.de-88e9ae.webp" group-title="Movies",Grjngo Western Movies (720p)
+https://amogonetworx-grjngo-3-dk.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="HallmarkMoviesMore.us@SD" tvg-logo="logos/HallmarkMoviesMore.us-4afa00.webp" group-title="Movies",Hallmark Movies & More (1080p)
+https://dbrb49pjoymg4.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod_default_xumo-ams-aws/master.m3u8?ads.xumo_channelId=99991709
+#EXTINF:-1 tvg-id="HarbinMovieChannel.cn@SD" tvg-logo="logos/HarbinMovieChannel.cn-d6d633.webp" group-title="Movies",Harbin Movie Channel
+https://stream.hrbtv.net/yspd/playlist.m3u8
+#EXTINF:-1 tvg-id="HBOAsia.sg@SD" tvg-logo="logos/HBOAsia.sg-096d02.webp" group-title="Movies",HBO Asia SD (720p) [Geo-blocked]
+https://tinyurl.com/yn3d3rmd
+#EXTINF:-1 tvg-id="Hero.fi@SD" tvg-logo="logos/Hero.fi-a508a9.webp" group-title="Movies",Hero (720p) [Not 24/7]
+https://live-fi.tvkaista.net/hero/live.m3u8?hd=true
+#EXTINF:-1 tvg-id="HomePlus.ir@SD" tvg-logo="" group-title="Movies",HomePlus
+https://homeplushls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="HorosheeKino.ru@SD" tvg-logo="logos/HorosheeKino.ru-10d8b3.webp" group-title="Movies",Horoshee Kino (720p)
+https://live-rian.cdnvideo.ru/rian/rus-radio/playlist.m3u8
+#EXTINF:-1 tvg-id="HTVCMovies.vn@SD" tvg-logo="logos/HTVCMovies.vn-8a3cd4.webp" group-title="Movies;Series",HTVC Movies (720p)
+https://dethich.pw/htvcphim/index.m3u8
+#EXTINF:-1 tvg-id="ICCplus.us@SD" tvg-logo="" group-title="Movies",ICC plus (1080p)
+https://icchls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="iFilm2.ir@SD" tvg-logo="logos/iFilm2.ir-e685d6.webp" group-title="Movies",iFilm 2
+https://live.presstv.co.uk/hls/ifilm2.m3u8
+#EXTINF:-1 tvg-id="iFilmArabic.ir@SD" tvg-logo="logos/iFilmArabic.ir-7e0b7c.webp" group-title="Movies",iFilm Arabic
+https://live.presstv.co.uk/hls/ifilmar.m3u8
+#EXTINF:-1 tvg-id="iFilmEnglish.ir@SD" tvg-logo="logos/iFilmEnglish.ir-7e0b7c.webp" group-title="Movies",iFilm English
+https://live.presstv.co.uk/hls/ifilmen.m3u8
+#EXTINF:-1 tvg-id="iFilmPersian.ir@SD" tvg-logo="logos/iFilmPersian.ir-7e0b7c.webp" group-title="Movies",iFilm Persian
+https://live.presstv.co.uk/hls/ifilmfa.m3u8
+#EXTINF:-1 tvg-id="IndiaTalkies.in@SD" tvg-logo="logos/IndiaTalkies.in-d434e3.webp" group-title="Movies",India Talkies (360p)
+https://samitaorigin.tangotv.in/INDIATALKIES/SAMITAORIGIN/index.m3u8
+#EXTINF:-1 tvg-id="IndywoodTV.in@SD" tvg-logo="logos/IndywoodTV.in-b9933e.webp" group-title="Movies;News",Indywood TV (720p)
+https://43wrzjnpqoxe-hls-live.wmncdn.net/indywood/indywoodtv/index.m3u8
+#EXTINF:-1 tvg-id="ItageTV.ng@SD" tvg-logo="logos/ItageTV.ng-b9d908.webp" group-title="Movies",Itage TV (480p)
+https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_011/Stream/playlist.m3u8
+#EXTINF:-1 tvg-id="JalshaMovies.in@SD" tvg-logo="logos/JalshaMovies.in-befa42.webp" group-title="Movies",Jalsha Movies (1080p)
+https://box.bbaria.net:8083/Jalsha_Movie/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-id="JiangxiMovieChannel.cn@SD" tvg-logo="logos/JiangxiMovieChannel.cn-da604d.webp" group-title="Movies",Jiangxi Movie Channel
+https://play-live-hls.jxtvcn.com.cn/live-city/tv_jxtv4.m3u8
+#EXTINF:-1 tvg-id="JilinMovieChannel.cn@SD" tvg-logo="logos/JilinMovieChannel.cn-58a96a.webp" group-title="Movies",Jilin Movie Channel
+https://lsfb.avap.jilintv.cn/zqvk7vpj/channel/906341e6f19b4c4bacdc89941eb85d12/index.m3u8
+#EXTINF:-1 tvg-id="KairaliWe.in@SD" tvg-logo="logos/KairaliWe.in-4e4202.webp" group-title="Movies",Kairali We (576p)
+https://mumt01.tangotv.in/O5aw8Zn3WETV/index.m3u8
+#EXTINF:-1 tvg-id="KantipurMax.np@SD" tvg-logo="logos/KantipurMax.np-36ae59.webp" group-title="Movies",Kantipur Max [Geo-blocked]
+https://ktvhdsg.ekantipur.com:8443/ktvmax2025/match2/playlist.m3u8
+#EXTINF:-1 tvg-id="KCM.sg@India" tvg-logo="logos/KCM.sg-26fa19.webp" group-title="Entertainment;Movies",KCM India (1080p) [Geo-blocked]
+https://amg02159-amg02159c7-samsung-in-4001.playouts.now.amagi.tv/playlist/amg02159-kcglobal-kcm-samsungin/playlist.m3u8
+#EXTINF:-1 tvg-id="KidsMovieClub.us@SD" tvg-logo="logos/KidsMovieClub.us-25a06c.webp" group-title="Kids;Movies",Kids Movie Club
+https://jmp2.uk/plu-5db0ad56edc89300090d2ebb.m3u8
+#EXTINF:-1 tvg-id="KidsFlix.us@SD" tvg-logo="logos/KidsFlix.us-4ba228.webp" group-title="Kids;Movies",KidsFlix (1080p) [Not 24/7]
+https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=50
+#EXTINF:-1 tvg-id="KinoBoevik.kz@SD" tvg-logo="logos/KinoBoevik.kz-7687cc.webp" group-title="Movies",KinoBoevik (1080p)
+https://fs.uplink.kz/kinoboevik/mono.m3u8?token=onlinetv
+#EXTINF:-1 tvg-id="Kinopremyera.ru@HD" tvg-logo="logos/Kinopremyera.ru-dd023c.webp" group-title="Movies",Kinopremyera HD (1080p)
+https://fs.uplink.kz/kinopremiera_hd/mono.m3u8?token=onlinetv
+#EXTINF:-1 tvg-id="Kinoseriya.ru@SD" tvg-logo="logos/Kinoseriya.ru-f5d732.webp" group-title="Movies",Kinoseriya (576p)
+https://fs.uplink.kz/kinoseria/mono.m3u8?token=onlinetv
+#EXTINF:-1 tvg-id="Kinoteatr.uz@SD" tvg-logo="logos/Kinoteatr.uz-e6c73b.webp" group-title="Movies",Kinoteatr (1080p)
+https://stream8.cinerama.uz/1009/tracks-v1a1/playlist.m3u8
+#EXTINF:-1 tvg-id="Klasik.hr@SD" tvg-logo="logos/Klasik.hr-e3f911.webp" group-title="Movies",Klasik (576p) [Not 24/7]
+https://178.253.194.105/klasiktv/playlist.m3u8
+#EXTINF:-1 tvg-id="KuriakosCine.pt@SD" tvg-logo="logos/KuriakosCine.pt-21041d.webp" group-title="Movies",Kuriakos Cine (1080p)
+https://w2.manasat.com/kcine/smil:kcine.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="LollywoodHDTV.cd@SD" tvg-logo="logos/LollywoodHDTV.cd-e7a7ce.webp" group-title="Movies",Lollywood HD TV
+https://stream.berosat.live/hls/lollywood-hd/lollywood-hd.m3u8
+#EXTINF:-1 tvg-id="MaahTV.my@SD" tvg-logo="logos/MaahTV.my-d67ce8.webp" group-title="Movies",Maah TV (720p)
+https://hls.maahtv.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="MadeInHollywood.us@SD" tvg-logo="logos/MadeInHollywood.us-ae6c68.webp" group-title="Movies",Made In Hollywood (720p)
+https://connection3-ent-nz.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="MagnificentMoviesNetwork.us@SD" tvg-logo="logos/MagnificentMoviesNetwork.us-81bb31.webp" group-title="Movies;Shop",Magnificent Movies Network
+https://mmn1.b-cdn.net/hls/MMN-HLS.m3u8
+#EXTINF:-1 tvg-id="MahuaPlay.in@SD" tvg-logo="logos/MahuaPlay.in-4c883b.webp" group-title="Movies",Mahua Play (1080p)
+https://cdn.ottlive.co.in/mahuaplay/index.m3u8
+#EXTINF:-1 tvg-id="ManoranjanGrand.in@SD" tvg-logo="logos/ManoranjanGrand.in-d1ce8b.webp" group-title="Movies",Manoranjan Grand (720p)
+https://cdn.pishow.tv/ott/live/1011/master.m3u8
+#EXTINF:-1 tvg-id="MaverickBlackCinema.us@SD" tvg-logo="logos/MaverickBlackCinema.us-b33728.webp" group-title="Movies",Maverick Black Cinema (1080p)
+https://maverick-maverick-black-cinema-3-us.roku.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="Maxcine2.us@HD" tvg-logo="logos/Maxcine2.us-27c4c6.webp" group-title="Movies",Maxcine 2 (720p)
+https://live20.bozztv.com/giatvplayout7/giatv-209163/playlist.m3u8
+#EXTINF:-1 tvg-id="Maxcine.us@HD" tvg-logo="logos/Maxcine.us-9be564.webp" group-title="Movies",Maxcine (720p)
+https://live20.bozztv.com/giatvplayout7/giatv-208138/playlist.m3u8
+#EXTINF:-1 tvg-id="MaxcineComedy.us@HD" tvg-logo="logos/MaxcineComedy.us-280f8f.webp" group-title="Movies",Maxcine Comedy (720p)
+https://live20.bozztv.com/giatvplayout7/giatv-208730/playlist.m3u8
+#EXTINF:-1 tvg-id="MaxcineFamily.us@HD" tvg-logo="logos/MaxcineFamily.us-793fc9.webp" group-title="Movies",Maxcine Family (720p)
+https://live20.bozztv.com/giatvplayout7/giatv-208817/playlist.m3u8
+#EXTINF:-1 tvg-id="MaxcineKids.us@HD" tvg-logo="logos/MaxcineKids.us-6ad6da.webp" group-title="Movies",Maxcine Kids (720p)
+https://live20.bozztv.com/giatvplayout7/giatv-209909/playlist.m3u8
+#EXTINF:-1 tvg-id="MBCBollywood.ae@SD" tvg-logo="logos/MBCBollywood.ae-3ed118.webp" group-title="Movies",MBC Bollywood (1080p) [Geo-blocked]
+https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-bollywood/546eb40d7dcf9a209255dd2496903764/index.m3u8
+#EXTINF:-1 tvg-id="MBCPlusDrama.sa@SD" tvg-logo="logos/MBCPlusDrama.sa-9556e1.webp" group-title="Movies",MBC+ Drama (1080p)
+https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-plus-drama/e37251ec2aac8f6c98f75cd0fa37cd28/index.m3u8
+#EXTINF:-1 tvg-id="MCITelevision.co@SD" tvg-logo="logos/MCITelevision.co-765ebd.webp" group-title="Family;General;Movies",MCI Television (1080p)
+https://video.ejeserver.com/live/mcitelevision.m3u8
+#EXTINF:-1 tvg-id="Medium.de@ES" tvg-logo="logos/Medium.de-b0ef03.webp" group-title="Movies;Series",Medium (Germany)
+https://jmp2.uk/plu-6578808014fbe400086e21bc.m3u8
+#EXTINF:-1 tvg-id="MegaCineTV.do@HD" tvg-logo="logos/MegaCineTV.do-c96b51.webp" group-title="Movies",Mega Cine TV (1080p)
+https://cnn.hostlagarto.com/megacinetv/playlist.m3u8
+#EXTINF:-1 tvg-id="MerryChristmasfromViafree.se@SE" tvg-logo="logos/MerryChristmasfromViafree.se-30f2f3.webp" group-title="Movies",Merry Christmas from Viafree
+https://jmp2.uk/plu-6304854ac6073d0007259fe1.m3u8
+#EXTINF:-1 tvg-id="MerryChristmasfromViafree.se@DK" tvg-logo="logos/MerryChristmasfromViafree.se-30f2f3.webp" group-title="Movies",Merry Christmas from Viafree DK
+https://jmp2.uk/plu-63048147b09fd60007847a08.m3u8
+#EXTINF:-1 tvg-id="MerryChristmasfromViafree.se@NO" tvg-logo="logos/MerryChristmasfromViafree.se-30f2f3.webp" group-title="Movies",Merry Christmas from Viafree NO
+https://jmp2.uk/plu-63047bd6b0726b000795341d.m3u8
+#EXTINF:-1 tvg-id="MetaFilmTV.ir@SD" tvg-logo="" group-title="Movies",Meta Film TV
+https://metafilmhls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="Mirovoekino.kz@SD" tvg-logo="logos/Mirovoekino.kz-3b1c65.webp" group-title="Movies",Mirovoe kino (1080p)
+https://fs.uplink.kz/mirovoe_kino/mono.m3u8?token=onlinetv
+#EXTINF:-1 tvg-id="MixHollywood.eg@SD" tvg-logo="logos/MixHollywood.eg-bbdb5a.webp" group-title="Movies",Mix Hollywood (1080p)
+https://ml-pull-hwc.myco.io/MixTV/hls/index.m3u8
+#EXTINF:-1 tvg-id="MoreTVScifi.de@GB" tvg-logo="logos/MoreTVScifi.de-2c767f.webp" group-title="Movies;Series",More TV Sci-fi
+https://jmp2.uk/plu-645e00d5d3fdde000829463a.m3u8
+#EXTINF:-1 tvg-id="MoviePunjab.in@SD" tvg-logo="logos/MoviePunjab.in-078db6.webp" group-title="Movies",Movie Punjab (720p)
+https://mumt01.tangotv.in/O5aw8Zn3MOVIEPUNJAB/index.m3u8
+#EXTINF:-1 tvg-id="Moviedome.us@Germany" tvg-logo="logos/Moviedome.us-40132f.webp" group-title="Movies",Moviedome (720p)
+https://jmp2.uk/plu-615c1e5ce3039400070a0547.m3u8
+#EXTINF:-1 tvg-id="MoviesAction.sa@SD" tvg-logo="logos/MoviesAction.sa-7ae3bd.webp" group-title="Movies",Movies Action (1080p)
+https://shd-amg-fast.edgenextcdn.net/tx011/playlist.m3u8
+#EXTINF:-1 tvg-id="MoviesThriller.sa@SD" tvg-logo="logos/MoviesThriller.sa-bf2814.webp" group-title="Movies",Movies Thriller (1080p)
+https://shd-amg-fast.edgenextcdn.net/tx012/playlist.m3u8
+#EXTINF:-1 tvg-id="Movies.us@SD" tvg-logo="logos/Movies.us-664a38.webp" group-title="Movies",Movies! (480p)
+https://bozztv.com/dvrfl03/hdirect/hdirect-ovair1-movies!/index.m3u8
+#EXTINF:-1 tvg-id="Movies.us@KPVMLD" tvg-logo="logos/Movies.us-664a38.webp" group-title="Movies",Movies! KPVM-LD (480p)
+https://2-fss-2.streamhoster.com/pl_120/206858-4412962-1/playlist.m3u8
+#EXTINF:-1 tvg-id="MovieSphere.us@US" tvg-logo="logos/MovieSphere.us-356bfb.webp" group-title="Movies",MovieSphere (1080p)
+https://amg00353-lionsgatestudio-moviesphere-xumo-zh5u0.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="MovieSphere.us@AU" tvg-logo="logos/MovieSphere.us-356bfb.webp" group-title="Movies",MovieSphere AU (1080p)
+https://amg00353-lionsgatefilmsi-moviesphereaus-samsungau-7qzhf.amagi.tv/playlist/amg00353-lionsgatefilmsi-moviesphereaus-samsungau/playlist.m3u8
+#EXTINF:-1 tvg-id="MovieSphere.us@CA" tvg-logo="logos/MovieSphere.us-356bfb.webp" group-title="Movies",MovieSphere CA
+https://jmp2.uk/plu-64a3d96f060e830008af6745.m3u8
+#EXTINF:-1 tvg-id="MovieSphere.us@UK" tvg-logo="logos/MovieSphere.us-356bfb.webp" group-title="Movies",MovieSphere UK (1080p)
+https://moviesphereuk-samsunguk.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="MovieSphereGold.us@WFXT" tvg-logo="logos/MovieSphereGold.us-0c5394.webp" group-title="Movies",MovieSphere Gold WFXT (1080p)
+https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01438-ewscrippscompan-ionmystery-tablo/playlist.m3u8
+#EXTINF:-1 tvg-id="Muzhskoy.ru@HD" tvg-logo="logos/Muzhskoy.ru-dcbf08.webp" group-title="Movies",Muzhskoy HD (1080p)
+https://fonbet.mediacdn.ru/live/muzhskoi/playlist.m3u8
+#EXTINF:-1 tvg-id="MyCinemaEurope.ch@SD" tvg-logo="logos/MyCinemaEurope.ch-cecc82.webp" group-title="Movies",My Cinema Europe
+https://op-group1-densxvisionhd-1.dens.tv/h/h18/index.m3u8
+#EXTINF:-1 tvg-id="MyTimeMovieNetwork.br@SD" tvg-logo="logos/MyTimeMovieNetwork.br-9d2f47.webp" group-title="Movies",MyTime Movie Network (Brazil) (720p)
+https://appletree-mytime-samsungbrazil.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="MyTimeMovieNetwork.mx@SD" tvg-logo="logos/MyTimeMovieNetwork.mx-541a05.webp" group-title="Movies",MyTime Movie Network (Mexico) (720p)
+https://appletree-mytime-samsungmexico.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="MyTimeMovieNetwork.es@SD" tvg-logo="logos/MyTimeMovieNetwork.es-541a05.webp" group-title="Movies",MyTime Movie Network (Spain) (1080p)
+https://appletree-mytimespain-rakuten.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="MyTimeMovieNetwork.uk@SD" tvg-logo="logos/MyTimeMovieNetwork.uk-541a05.webp" group-title="Movies",MyTime Movie Network (United Kingdom) (1080p)
+https://appletree-mytimeuk-rakuten.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="MyTimeMovieNetworkEast.us@SD" tvg-logo="logos/MyTimeMovieNetworkEast.us-578c58.webp" group-title="Movies",MyTime Movie Network East (1080p)
+https://appletree-mytimeau-samsung.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="NasheNovoeKino.ru@SD" tvg-logo="logos/NasheNovoeKino.ru-820648.webp" group-title="Movies",Nashe Novoe Kino
+https://stream8.cinerama.uz/1051/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-id="NEWKMOVIES.us@SD" tvg-logo="logos/NEWKMOVIES.us-a026aa.webp" group-title="Movies",NEW K.MOVIES (1080p)
+https://ads.its-newid.net/api/manifest.m3u8?ads.service_id=GB1700007PK&channel_id=newid_343&tp=samsung_tvplus
+#EXTINF:-1 tvg-id="NewFlix.ir@SD" tvg-logo="" group-title="Movies",NewFlix
+https://newfhls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="NextHD.py@SD" tvg-logo="logos/NextHD.py-6d5d9e.webp" group-title="Movies;Music",Next HD (480p)
+https://live.enhdtv.com:19360/nexthd/nexthd.m3u8
+#EXTINF:-1 tvg-id="NHBollyFlix.in@HD" tvg-logo="logos/NHBollyFlix.in-78e20c.webp" group-title="Movies",NH BollyFlix (1080p)
+https://jmp2.uk/stvp-IN46000140Q
+#EXTINF:-1 tvg-id="NHTamilGold.in@HD" tvg-logo="logos/NHTamilGold.in-6b4e39.webp" group-title="Movies",NH Tamil Gold (1080p)
+https://d3arbp6l7f096k.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/pb-gv6wgpbb4mgwk/playlist.m3u8?ads.ads_cdn=cf&ads.app_domain=APP_DOMAIN&ads.cdn=cf
+#EXTINF:-1 tvg-id="NollyAfrica.uk@SD" tvg-logo="logos/NollyAfrica.uk-559067.webp" group-title="Movies",Nolly Africa (1080p)
+https://amg02784-amg02784c2-amgplt0002.playout.now3.amagi.tv/ts-eu-w1-n2/playlist/amg02784-amg02784c2-amgplt0002/playlist.m3u8
+#EXTINF:-1 tvg-id="NonStopKungFu.se@SE" tvg-logo="logos/NonStopKungFu.se-00026f.webp" group-title="Movies",NonStop Kung Fu
+https://jmp2.uk/plu-6728d33f030a2c0008edf4be.m3u8
+#EXTINF:-1 tvg-id="NonStopKungFu.se@DK" tvg-logo="logos/NonStopKungFu.se-00026f.webp" group-title="Movies",NonStop Kung Fu DK
+https://jmp2.uk/plu-6728d2be529ac9000830dc15.m3u8
+#EXTINF:-1 tvg-id="NonStopKungFu.se@NO" tvg-logo="logos/NonStopKungFu.se-00026f.webp" group-title="Movies",NonStop Kung Fu NO
+https://jmp2.uk/plu-6728d30cdaad7f000881d979.m3u8
+#EXTINF:-1 tvg-id="NOST.us@SD" tvg-logo="logos/NOST.us-efa7fd.webp" group-title="Movies",NOST (720p)
+https://a-cdn.klowdtv.com/live2/nost_720p/playlist.m3u8
+#EXTINF:-1 tvg-id="NostalgiaTV.ro@HD" tvg-logo="logos/NostalgiaTV.ro-2d8a3b.webp" group-title="Movies",Nostalgia TV (1080p)
+https://hls02ns.antenaplay.ro/hls/nostalgia-hd/index.m3u8
+#EXTINF:-1 tvg-id="ONMovies.vn@SD" tvg-logo="logos/ONMovies.vn-e3bf4f.webp" group-title="Movies",ON Movies (720p)
+https://freem3u.xyz/api/live/play.m3u8?vid=181
+#EXTINF:-1 tvg-id="OscarMoviesBhojpuri.in@SD" tvg-logo="logos/OscarMoviesBhojpuri.in-8377df.webp" group-title="Movies",Oscar Movies Bhojpuri (720p)
+https://cdn.pishow.tv/ott/live/233/master.m3u8
+#EXTINF:-1 tvg-id="OuterSphere.us@SD" tvg-logo="logos/OuterSphere.us-67161a.webp" group-title="Movies;Series",OuterSphere (1080p)
+https://d3o593mz1glx8d.cloudfront.net/OuterSphere_US.m3u8
+#EXTINF:-1 tvg-id="PantallaClasicaEC.ec@SD" tvg-logo="logos/PantallaClasicaEC.ec-c409b7.webp" group-title="Movies;Series",Pantalla Clasica EC (512p) [Not 24/7]
+https://live21.bozztv.com/akamaissh101/ssh101/pantallaclasics/playlist.m3u8
+#EXTINF:-1 tvg-id="ParamountMovieChannel.us@SD" tvg-logo="logos/ParamountMovieChannel.us-ef2e79.webp" group-title="Movies",Paramount Movie Channel
+https://jmp2.uk/plu-5cb0cae7a461406ffe3f5213.m3u8
+#EXTINF:-1 tvg-id="ParamountPlusPicks.us@SD" tvg-logo="logos/ParamountPlusPicks.us-5b665d.webp" group-title="Movies",Paramount+ Picks
+https://jmp2.uk/plu-5ff8c708653d080007361b14.m3u8
+#EXTINF:-1 tvg-id="Patriot.ru@SD" tvg-logo="logos/Patriot.ru-68a1cb.webp" group-title="Movies",Patriot (720p)
+https://stream.smotrim.ru/hls2/static/playlist_4.m3u8
+#EXTINF:-1 tvg-id="PersianaCinema.fr@SD" tvg-logo="logos/PersianaCinema.fr-c66a17.webp" group-title="Movies",Persiana Cinema
+https://cinehls.persiana.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="PersianaFamily.fr@SD" tvg-logo="logos/PersianaFamily.fr-51fafa.webp" group-title="Movies",Persiana Family
+https://familyhls.persiana.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="PersianaIranian.fr@SD" tvg-logo="logos/PersianaIranian.fr-533599.webp" group-title="Movies",Persiana Iranian
+https://irhls.persiana.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="PersianaKorea.fr@SD" tvg-logo="logos/PersianaKorea.fr-358fe5.webp" group-title="Movies",Persiana Korea
+https://korhls.persiana.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="PersianaLatino.fr@SD" tvg-logo="" group-title="Movies",Persiana Latino
+https://latinohls.persiana.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="PersianaPlus.fr@SD" tvg-logo="logos/PersianaPlus.fr-72f360.webp" group-title="Movies",Persiana Plus
+https://euhls.persiana.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="Pitaara.in@SD" tvg-logo="logos/Pitaara.in-1e89f5.webp" group-title="Movies",Pitaara (1080p)
+https://d2lk5u59tns74c.cloudfront.net/out/v1/500a6b45f5ae41dda445d912b59eaa09/index.m3u8
+#EXTINF:-1 tvg-id="PlutoClassicMovieWesterns.us@CA" tvg-logo="logos/PlutoClassicMovieWesterns.us-2635c3.webp" group-title="Movies;Series",Pluto Classic Movie Westerns
+https://jmp2.uk/plu-66dad50215d2c60008d7afbd.m3u8
+#EXTINF:-1 tvg-id="PlutoTV90sClassics.de@FR" tvg-logo="logos/PlutoTV90sClassics.de-fea1fb.webp" group-title="Movies;Series",Pluto TV 90's Classics
+https://jmp2.uk/plu-66b4990746762a00084c2f78.m3u8
+#EXTINF:-1 tvg-id="PlutoTVALaMexicana.us@LatAm" tvg-logo="logos/PlutoTVALaMexicana.us-fc636b.webp" group-title="Movies",Pluto TV A La Mexicana
+https://jmp2.uk/plu-5dfcde52d28b09000a42d7a2.m3u8
+#EXTINF:-1 tvg-id="PlutoTVAction.se@SE" tvg-logo="logos/PlutoTVAction.se-b144ad.webp" group-title="Movies;Series",Pluto TV Action (Sweden)
+https://jmp2.uk/plu-61c0b0688a80a4000703fbcb.m3u8
+#EXTINF:-1 tvg-id="PlutoTVAction.se@DK" tvg-logo="logos/PlutoTVAction.se-b144ad.webp" group-title="Movies;Series",Pluto TV Action (Sweden) DK
+https://jmp2.uk/plu-61c095861782bd000780e0ba.m3u8
+#EXTINF:-1 tvg-id="PlutoTVAction.se@NO" tvg-logo="logos/PlutoTVAction.se-b144ad.webp" group-title="Movies;Series",Pluto TV Action (Sweden) NO
+https://jmp2.uk/plu-61c1e270489a9c000874d209.m3u8
+#EXTINF:-1 tvg-id="PlutoTVAction.us@US" tvg-logo="logos/PlutoTVAction.us-31ca6d.webp" group-title="Movies",Pluto TV Action (United States)
+https://jmp2.uk/plu-561d7d484dc7c8770484914a.m3u8
+#EXTINF:-1 tvg-id="PlutoTVActionMovies.us@CA" tvg-logo="logos/PlutoTVActionMovies.us-214e0d.webp" group-title="Movies",Pluto TV Action Movies
+https://jmp2.uk/plu-62ea3c2e4823db00072788ed.m3u8
+#EXTINF:-1 tvg-id="PlutoTVAlbertoSordi.de@IT" tvg-logo="logos/PlutoTVAlbertoSordi.de-a8865f.webp" group-title="Movies",Pluto TV Alberto Sordi
+https://jmp2.uk/plu-661f8f01801af800083d9d81.m3u8
+#EXTINF:-1 tvg-id="PlutoTVBangBang.us@BR" tvg-logo="logos/PlutoTVBangBang.us-b7586d.webp" group-title="Movies",Pluto TV Bang Bang
+https://jmp2.uk/plu-663b9dc7cb3ea10008f1a0ce.m3u8
+#EXTINF:-1 tvg-id="PlutoTVBudTerence.de@DACH" tvg-logo="logos/PlutoTVBudTerence.de-89795c.webp" group-title="Movies",Pluto TV Bud & Terence (Germany)
+https://jmp2.uk/plu-64be7398e4391c0008cdedfe.m3u8
+#EXTINF:-1 tvg-id="PlutoTVBudTerence.se@SE" tvg-logo="logos/PlutoTVBudTerence.se-89795c.webp" group-title="Movies",Pluto TV Bud & Terence (Sweden)
+https://jmp2.uk/plu-65b917720d9ab4000833f323.m3u8
+#EXTINF:-1 tvg-id="PlutoTVBudTerence.se@DK" tvg-logo="logos/PlutoTVBudTerence.se-89795c.webp" group-title="Movies",Pluto TV Bud & Terence (Sweden) DK
+https://jmp2.uk/plu-65b915b1dc10a40008d53797.m3u8
+#EXTINF:-1 tvg-id="PlutoTVBudTerence.se@NO" tvg-logo="logos/PlutoTVBudTerence.se-89795c.webp" group-title="Movies",Pluto TV Bud & Terence (Sweden) NO
+https://jmp2.uk/plu-65b916ec3af63d00084c5841.m3u8
+#EXTINF:-1 tvg-id="PlutoTVCatastrofes.de@ES" tvg-logo="logos/PlutoTVCatastrofes.de-f270f0.webp" group-title="Movies",Pluto TV Catastrofes
+https://jmp2.uk/plu-645a309c5a0cd5000873f609.m3u8
+#EXTINF:-1 tvg-id="PlutoTVChristmastuttolanno.de@IT" tvg-logo="logos/PlutoTVChristmastuttolanno.de-eff63d.webp" group-title="Movies",Pluto TV Christmas tutto l'anno
+https://jmp2.uk/plu-612e05b885183d0007958101.m3u8
+#EXTINF:-1 tvg-id="PlutoTVCineAccion.us@LatAm" tvg-logo="logos/PlutoTVCineAccion.us-150787.webp" group-title="Movies",Pluto TV Cine Accion
+https://jmp2.uk/plu-5dcb62e63d4d8f0009f36881.m3u8
+#EXTINF:-1 tvg-id="PlutoTVCineClasico.us@LatAm" tvg-logo="logos/PlutoTVCineClasico.us-9972f9.webp" group-title="Movies",Pluto TV Cine Clasico
+https://jmp2.uk/plu-609059dc63be6e0007b4eca6.m3u8
+#EXTINF:-1 tvg-id="PlutoTVCineClassicos.us@BR" tvg-logo="logos/PlutoTVCineClassicos.us-287f62.webp" group-title="Movies",Pluto TV Cine Classicos
+https://jmp2.uk/plu-5fa1612a669ba0000702017b.m3u8
+#EXTINF:-1 tvg-id="PlutoTVCineComedia.de@ES" tvg-logo="logos/PlutoTVCineComedia.de-b4dfec.webp" group-title="Movies",Pluto TV Cine Comedia (Germany)
+https://jmp2.uk/plu-5f1ac8099c49f600076579b2.m3u8
+#EXTINF:-1 tvg-id="PlutoTVCineComedia.us@US" tvg-logo="logos/PlutoTVCineComedia.us-0a7557.webp" group-title="Movies",Pluto TV Cine Comedia (United States)
+https://jmp2.uk/plu-5f513564e4622a0007c578c0.m3u8
+#EXTINF:-1 tvg-id="PlutoTVCineComedia.us@BR" tvg-logo="logos/PlutoTVCineComedia.us-0a7557.webp" group-title="Movies",Pluto TV Cine Comedia (United States) BR
+https://jmp2.uk/plu-5f12101f0b12f00007844c7c.m3u8
+#EXTINF:-1 tvg-id="PlutoTVCineComedia.us@LatAm" tvg-logo="logos/PlutoTVCineComedia.us-0a7557.webp" group-title="Movies",Pluto TV Cine Comedia (United States) LatAm
+https://jmp2.uk/plu-5dcdde78f080d900098550e4.m3u8
+#EXTINF:-1 tvg-id="PlutoTVCineComediaRomantica.us@BR" tvg-logo="logos/PlutoTVCineComediaRomantica.us-dc08d7.webp" group-title="Movies",Pluto TV Cine Comedia Romantica
+https://jmp2.uk/plu-62545ed3dab4380007582f7c.m3u8
+#EXTINF:-1 tvg-id="PlutoTVCineCrime.us@BR" tvg-logo="logos/PlutoTVCineCrime.us-af64ec.webp" group-title="Movies",Pluto TV Cine Crime
+https://jmp2.uk/plu-6479ff764f5ba5000878dfe2.m3u8
+#EXTINF:-1 tvg-id="PlutoTVCineCrimen.us@LatAm" tvg-logo="logos/PlutoTVCineCrimen.us-0c95f3.webp" group-title="Movies",Pluto TV Cine Crimen
+https://jmp2.uk/plu-624af40c004f8000079b784d.m3u8
+#EXTINF:-1 tvg-id="PlutoTVCinedeautor.de@ES" tvg-logo="logos/PlutoTVCinedeautor.de-f322bc.webp" group-title="Movies",Pluto TV Cine de autor
+https://jmp2.uk/plu-60cc807324d60a0007708dc8.m3u8
+#EXTINF:-1 tvg-id="PlutoTVCineDrama.us@BR" tvg-logo="logos/PlutoTVCineDrama.us-d2b9ec.webp" group-title="Movies",Pluto TV Cine Drama
+https://jmp2.uk/plu-5f1210d14ae1f80007bafb1d.m3u8
+#EXTINF:-1 tvg-id="PlutoTVCineDrama.us@LatAm" tvg-logo="logos/PlutoTVCineDrama.us-d2b9ec.webp" group-title="Movies",Pluto TV Cine Drama LatAm
+https://jmp2.uk/plu-5dcddfcb229eff00091b6bdf.m3u8
+#EXTINF:-1 tvg-id="PlutoTVCineEstelar.us@LatAm" tvg-logo="logos/PlutoTVCineEstelar.us-f029e1.webp" group-title="Movies",Pluto TV Cine Estelar
+https://jmp2.uk/plu-5dcde437229eff00091b6c30.m3u8
+#EXTINF:-1 tvg-id="PlutoTVCineFamilia.us@BR" tvg-logo="logos/PlutoTVCineFamilia.us-20285b.webp" group-title="Movies",Pluto TV Cine Familia
+https://jmp2.uk/plu-5f171f032cd22e0007f17f3d.m3u8
+#EXTINF:-1 tvg-id="PlutoTVCineFamilia.us@LatAm" tvg-logo="logos/PlutoTVCineFamilia.us-20285b.webp" group-title="Movies",Pluto TV Cine Familia LatAm
+https://jmp2.uk/plu-5dd6ddb30a1d8a000908ed4c.m3u8
+#EXTINF:-1 tvg-id="PlutoTVCineInspiracao.us@BR" tvg-logo="logos/PlutoTVCineInspiracao.us-d04c0f.webp" group-title="Movies",Pluto TV Cine Inspiracao
+https://jmp2.uk/plu-5fa991b1f09e020007e78626.m3u8
+#EXTINF:-1 tvg-id="PlutoTVCineInspirador.us@LatAm" tvg-logo="logos/PlutoTVCineInspirador.us-fcaa64.webp" group-title="Movies",Pluto TV Cine Inspirador
+https://jmp2.uk/plu-6806d519fea7414f33f57016.m3u8
+#EXTINF:-1 tvg-id="PlutoTVCineRomance.us@BR" tvg-logo="logos/PlutoTVCineRomance.us-732394.webp" group-title="Movies",Pluto TV Cine Romance
+https://jmp2.uk/plu-5f171f988ab9780007fa95ea.m3u8
+#EXTINF:-1 tvg-id="PlutoTVCineRomance.us@LatAm" tvg-logo="logos/PlutoTVCineRomance.us-732394.webp" group-title="Movies",Pluto TV Cine Romance LatAm
+https://jmp2.uk/plu-5dd7ea2aeab5230009986735.m3u8
+#EXTINF:-1 tvg-id="PlutoTVCineRomantico.de@ES" tvg-logo="logos/PlutoTVCineRomantico.de-328067.webp" group-title="Movies",Pluto TV Cine Romantico
+https://jmp2.uk/plu-5f1ac9a2d3611d0007a844bb.m3u8
+#EXTINF:-1 tvg-id="PlutoTVCineSucessos.us@BR" tvg-logo="logos/PlutoTVCineSucessos.us-12a941.webp" group-title="Movies",Pluto TV Cine Sucessos
+https://jmp2.uk/plu-5f120e94a5714d00074576a1.m3u8
+#EXTINF:-1 tvg-id="PlutoTVCineSuspenso.us@LatAm" tvg-logo="logos/PlutoTVCineSuspenso.us-0f6100.webp" group-title="Movies",Pluto TV Cine Suspenso
+https://jmp2.uk/plu-5ddc4e8bcbb9010009b4e84f.m3u8
+#EXTINF:-1 tvg-id="PlutoTVCinemaItaliano.de@IT" tvg-logo="logos/PlutoTVCinemaItaliano.de-eea470.webp" group-title="Movies",Pluto TV Cinema Italiano
+https://jmp2.uk/plu-608aa7d8359b270007861489.m3u8
+#EXTINF:-1 tvg-id="PlutoTVCinemaOrientale.de@IT" tvg-logo="logos/PlutoTVCinemaOrientale.de-8c24e9.webp" group-title="Movies",Pluto TV Cinema Orientale
+https://jmp2.uk/plu-6786235bd648bf0008c2780a.m3u8
+#EXTINF:-1 tvg-id="PlutoTVComediasRomanticas.de@ES" tvg-logo="logos/PlutoTVComediasRomanticas.de-289d7d.webp" group-title="Comedy;Movies",Pluto TV Comedias Romanticas
+https://jmp2.uk/plu-655b5d865812e80008843bd1.m3u8
+#EXTINF:-1 tvg-id="PlutoTVComediesCultes.de@FR" tvg-logo="logos/PlutoTVComediesCultes.de-4da581.webp" group-title="Comedy;Movies",Pluto TV Comedies Cultes
+https://jmp2.uk/plu-67b4b2d976a934282e92d71c.m3u8
+#EXTINF:-1 tvg-id="PlutoTVComedyMovies.us@CA" tvg-logo="logos/PlutoTVComedyMovies.us-a2fc31.webp" group-title="Comedy;Movies",Pluto TV Comedy Movies
+https://jmp2.uk/plu-62ea3d24b8e02600071fa296.m3u8
+#EXTINF:-1 tvg-id="PlutoTVCrimeDrama.us@SD" tvg-logo="logos/PlutoTVCrimeDrama.us-04a008.webp" group-title="Movies",Pluto TV Crime Drama
+https://jmp2.uk/plu-5f31fd1b4c510e00071c3103.m3u8
+#EXTINF:-1 tvg-id="PlutoTVCrimeDrama.us@CA" tvg-logo="logos/PlutoTVCrimeDrama.us-04a008.webp" group-title="Movies",Pluto TV Crime Drama CA
+https://jmp2.uk/plu-62e92708a7ce600007b2676a.m3u8
+#EXTINF:-1 tvg-id="PlutoTVCrimeMovies.us@SD" tvg-logo="logos/PlutoTVCrimeMovies.us-dcd2b8.webp" group-title="Movies",Pluto TV Crime Movies
+https://jmp2.uk/plu-5f4d8594eb979c0007706de7.m3u8
+#EXTINF:-1 tvg-id="PlutoTVCultFilms.de@GB" tvg-logo="logos/PlutoTVCultFilms.de-c42346.webp" group-title="Movies",Pluto TV Cult Films (Germany)
+https://jmp2.uk/plu-5c5c31f2f21b553c1f673fb0.m3u8
+#EXTINF:-1 tvg-id="PlutoTVCultFilms.us@US" tvg-logo="logos/PlutoTVCultFilms.us-ee1a84.webp" group-title="Movies",Pluto TV Cult Films (United States)
+https://jmp2.uk/plu-5c665db3e6c01b72c4977bc2.m3u8
+#EXTINF:-1 tvg-id="PlutoTVDanskeklassikere.se@DK" tvg-logo="logos/PlutoTVDanskeklassikere.se-7f40a5.webp" group-title="Classic;Movies",Pluto TV Danske klassikere
+https://jmp2.uk/plu-67d2b814fe36d6e7b1d2318a.m3u8
+#EXTINF:-1 tvg-id="PlutoTVDrama.us@US" tvg-logo="logos/PlutoTVDrama.us-3d4892.webp" group-title="Movies",Pluto TV Drama
+https://jmp2.uk/plu-5b4e92e4694c027be6ecece1.m3u8
+#EXTINF:-1 tvg-id="PlutoTVDramaMovies.us@CA" tvg-logo="logos/PlutoTVDramaMovies.us-58c47d.webp" group-title="Movies",Pluto TV Drama Movies
+https://jmp2.uk/plu-62bdb0bcd707b9000739d2e5.m3u8
+#EXTINF:-1 tvg-id="PlutoTVEstrellasdeAccion.us@SD" tvg-logo="logos/PlutoTVEstrellasdeAccion.us-12c8cb.webp" group-title="Movies",Pluto TV Estrellas de Accion
+https://jmp2.uk/plu-5e972a21ad709d00074195ba.m3u8
+#EXTINF:-1 tvg-id="PlutoTVFamilyMovieClub.de@GB" tvg-logo="logos/PlutoTVFamilyMovieClub.de-cf9b22.webp" group-title="Movies",Pluto TV Family Movie Club
+https://jmp2.uk/plu-5dc3fc6b9133f500099c7d98.m3u8
+#EXTINF:-1 tvg-id="PlutoTVFantasyHorror.de@GB" tvg-logo="logos/PlutoTVFantasyHorror.de-532158.webp" group-title="Movies",Pluto TV Fantasy & Horror
+https://jmp2.uk/plu-685041d936c9361b1921c26c.m3u8
+#EXTINF:-1 tvg-id="PlutoTVFerneGalaxien.de@DACH" tvg-logo="logos/PlutoTVFerneGalaxien.de-030a29.webp" group-title="Movies",Pluto TV Ferne Galaxien
+https://jmp2.uk/plu-68ada46d5190a45dc9c45af1.m3u8
+#EXTINF:-1 tvg-id="PlutoTVFiccaoCientifica.us@BR" tvg-logo="logos/PlutoTVFiccaoCientifica.us-e5adf8.webp" group-title="Movies",Pluto TV Ficcao Cientifica
+https://jmp2.uk/plu-5fa15ad6367e170007cdd098.m3u8
+#EXTINF:-1 tvg-id="PlutoTVFilm.de@IT" tvg-logo="logos/PlutoTVFilm.de-a42d03.webp" group-title="Movies",Pluto TV Film (Germany)
+https://jmp2.uk/plu-608aa17fb9f4490007e6419a.m3u8
+#EXTINF:-1 tvg-id="PlutoTVFilm.se@SE" tvg-logo="logos/PlutoTVFilm.se-e87372.webp" group-title="Movies",Pluto TV Film (Sweden)
+https://jmp2.uk/plu-61c0afa0a09bbe00078f8378.m3u8
+#EXTINF:-1 tvg-id="PlutoTVFilm.se@DK" tvg-logo="logos/PlutoTVFilm.se-e87372.webp" group-title="Movies",Pluto TV Film (Sweden) DK
+https://jmp2.uk/plu-61c09515fbb4b50007d221f5.m3u8
+#EXTINF:-1 tvg-id="PlutoTVFilm.se@NO" tvg-logo="logos/PlutoTVFilm.se-e87372.webp" group-title="Movies",Pluto TV Film (Sweden) NO
+https://jmp2.uk/plu-61c1e1e55deef000075aed0c.m3u8
+#EXTINF:-1 tvg-id="PlutoTVFilmAncoraPiuRomantici.de@IT" tvg-logo="logos/PlutoTVFilmAncoraPiuRomantici.de-c874a1.webp" group-title="Movies",Pluto TV Film Ancora Piu Romantici
+https://jmp2.uk/plu-699d87093d5dba980705cca8.m3u8
+#EXTINF:-1 tvg-id="PlutoTVFilmAzione.de@IT" tvg-logo="logos/PlutoTVFilmAzione.de-144ea7.webp" group-title="Movies",Pluto TV Film Azione
+https://jmp2.uk/plu-608aa20a2e7f270007c4878d.m3u8
+#EXTINF:-1 tvg-id="PlutoTVFilmCommedia.de@IT" tvg-logo="logos/PlutoTVFilmCommedia.de-6d2ce9.webp" group-title="Movies",Pluto TV Film Commedia
+https://jmp2.uk/plu-608aa512d67fd900072323db.m3u8
+#EXTINF:-1 tvg-id="PlutoTVFilmRomantici.de@IT" tvg-logo="logos/PlutoTVFilmRomantici.de-5eff4c.webp" group-title="Movies",Pluto TV Film Romantici
+https://jmp2.uk/plu-608aa4a4cc92820007b663af.m3u8
+#EXTINF:-1 tvg-id="PlutoTVFilmStorici.de@IT" tvg-logo="logos/PlutoTVFilmStorici.de-31475d.webp" group-title="Movies",Pluto TV Film Storici
+https://jmp2.uk/plu-68750875759366af05a151ce.m3u8
+#EXTINF:-1 tvg-id="PlutoTVFilmThriller.de@IT" tvg-logo="logos/PlutoTVFilmThriller.de-a1a037.webp" group-title="Movies",Pluto TV Film Thriller
+https://jmp2.uk/plu-608aa5e995132a00075f7005.m3u8
+#EXTINF:-1 tvg-id="PlutoTVFilmesAcao.us@BR" tvg-logo="logos/PlutoTVFilmesAcao.us-4d4dd7.webp" group-title="Movies",Pluto TV Filmes Acao
+https://jmp2.uk/plu-5f120f41b7d403000783a6d6.m3u8
+#EXTINF:-1 tvg-id="PlutoTVFilmesAventura.us@BR" tvg-logo="logos/PlutoTVFilmesAventura.us-3d56fc.webp" group-title="Movies",Pluto TV Filmes Aventura
+https://jmp2.uk/plu-66c79a4262e5510008ff68a5.m3u8
+#EXTINF:-1 tvg-id="PlutoTVFilmesdeLuta.us@BR" tvg-logo="logos/PlutoTVFilmesdeLuta.us-47820f.webp" group-title="Movies",Pluto TV Filmes de Luta
+https://jmp2.uk/plu-6806d62369aec5b19cd628c0.m3u8
+#EXTINF:-1 tvg-id="PlutoTVFilmesNacionais.us@BR" tvg-logo="logos/PlutoTVFilmesNacionais.us-6ca22b.webp" group-title="Movies",Pluto TV Filmes Nacionais
+https://jmp2.uk/plu-5f5a545d0dbf7f0007c09408.m3u8
+#EXTINF:-1 tvg-id="PlutoTVFranchiseFavorites.us@SD" tvg-logo="logos/PlutoTVFranchiseFavorites.us-a456ba.webp" group-title="Movies",Pluto TV Franchise Favorites
+https://jmp2.uk/plu-68fbf8101d26140175db8b58.m3u8
+#EXTINF:-1 tvg-id="PlutoTVHaialarm.de@DACH" tvg-logo="logos/PlutoTVHaialarm.de-643ed7.webp" group-title="Movies;Series",Pluto TV Haialarm
+https://jmp2.uk/plu-69b015c5d29cc97de7da4af8.m3u8
+#EXTINF:-1 tvg-id="PlutoTVHarlequin.se@SE" tvg-logo="logos/PlutoTVHarlequin.se-e0d776.webp" group-title="Movies",Pluto TV Harlequin
+https://jmp2.uk/plu-68c01bed508ba507f0d0dd60.m3u8
+#EXTINF:-1 tvg-id="PlutoTVHarlequin.se@DK" tvg-logo="logos/PlutoTVHarlequin.se-e0d776.webp" group-title="Movies",Pluto TV Harlequin DK
+https://jmp2.uk/plu-68c01afa3efb41cd9759dafb.m3u8
+#EXTINF:-1 tvg-id="PlutoTVHarlequin.se@NO" tvg-logo="logos/PlutoTVHarlequin.se-e0d776.webp" group-title="Movies",Pluto TV Harlequin NO
+https://jmp2.uk/plu-68c01b9a6bdcf3b9a64febcc.m3u8
+#EXTINF:-1 tvg-id="PlutoTVHorror.se@SE" tvg-logo="logos/PlutoTVHorror.se-b27251.webp" group-title="Movies;Series",Pluto TV Horror (Sweden)
+https://jmp2.uk/plu-63a19e1b9ab2df0007bef7a7.m3u8
+#EXTINF:-1 tvg-id="PlutoTVHorror.se@DK" tvg-logo="logos/PlutoTVHorror.se-b27251.webp" group-title="Movies;Series",Pluto TV Horror (Sweden) DK
+https://jmp2.uk/plu-63a1c9790cc44a0007dc8857.m3u8
+#EXTINF:-1 tvg-id="PlutoTVHorror.se@NO" tvg-logo="logos/PlutoTVHorror.se-b27251.webp" group-title="Movies;Series",Pluto TV Horror (Sweden) NO
+https://jmp2.uk/plu-63a19cb7847a090007f230d7.m3u8
+#EXTINF:-1 tvg-id="PlutoTVHorror.us@US" tvg-logo="logos/PlutoTVHorror.us-604763.webp" group-title="Movies;Series",Pluto TV Horror (United States)
+https://jmp2.uk/plu-569546031a619b8f07ce6e25.m3u8
+#EXTINF:-1 tvg-id="PlutoTVHorror.us@CA" tvg-logo="logos/PlutoTVHorror.us-604763.webp" group-title="Movies;Series",Pluto TV Horror (United States) CA
+https://jmp2.uk/plu-62ea3f8a38acc80007072d26.m3u8
+#EXTINF:-1 tvg-id="PlutoTVHumor.se@DK" tvg-logo="logos/PlutoTVHumor.se-7628c2.webp" group-title="Comedy;Movies",Pluto TV Humor (Sweden)
+https://jmp2.uk/plu-61c0974945b45d0007aaa5ac.m3u8
+#EXTINF:-1 tvg-id="PlutoTVIcons.us@SD" tvg-logo="logos/PlutoTVIcons.us-16a769.webp" group-title="Movies",Pluto TV Icons
+https://jmp2.uk/plu-64b585f84ea480000838e446.m3u8
+#EXTINF:-1 tvg-id="PlutoTVInvasionAlien.de@ES" tvg-logo="logos/PlutoTVInvasionAlien.de-28b259.webp" group-title="Movies",Pluto TV Invasion Alien
+https://jmp2.uk/plu-654a35ce346f420008d5c36e.m3u8
+#EXTINF:-1 tvg-id="PlutoTVJohnWayne.se@SE" tvg-logo="logos/PlutoTVJohnWayne.se-c7bcdf.webp" group-title="Movies",Pluto TV John Wayne
+https://jmp2.uk/plu-655caaaac0fc8800086f5d99.m3u8
+#EXTINF:-1 tvg-id="PlutoTVJohnWayne.se@DK" tvg-logo="logos/PlutoTVJohnWayne.se-c7bcdf.webp" group-title="Movies",Pluto TV John Wayne DK
+https://jmp2.uk/plu-655ca7aa635c3c000855d655.m3u8
+#EXTINF:-1 tvg-id="PlutoTVJohnWayne.se@NO" tvg-logo="logos/PlutoTVJohnWayne.se-c7bcdf.webp" group-title="Movies",Pluto TV John Wayne NO
+https://jmp2.uk/plu-655ca99dfbc15b00081f209c.m3u8
+#EXTINF:-1 tvg-id="PlutoTVKomedi.se@SE" tvg-logo="logos/PlutoTVKomedi.se-864515.webp" group-title="Comedy;Movies",Pluto TV Komedi
+https://jmp2.uk/plu-61c0b36d18447e000717d686.m3u8
+#EXTINF:-1 tvg-id="PlutoTVKomedie.se@NO" tvg-logo="logos/PlutoTVKomedie.se-83015e.webp" group-title="Comedy;Movies",Pluto TV Komedie
+https://jmp2.uk/plu-61c1e3a679a4390007c78136.m3u8
+#EXTINF:-1 tvg-id="PlutoTVKultComedies.de@DACH" tvg-logo="logos/PlutoTVKultComedies.de-30e0b2.webp" group-title="Comedy;Movies",Pluto TV Kult Comedies
+https://jmp2.uk/plu-66337de656fc840008ff7a65.m3u8
+#EXTINF:-1 tvg-id="PlutoTVKultfilm.se@DK" tvg-logo="logos/PlutoTVKultfilm.se-cee579.webp" group-title="Movies",Pluto TV Kultfilm
+https://jmp2.uk/plu-63dbe7ed51f5d000083e9499.m3u8
+#EXTINF:-1 tvg-id="PlutoTVKultfilme.de@DACH" tvg-logo="logos/PlutoTVKultfilme.de-6ae5eb.webp" group-title="Movies",Pluto TV Kultfilme
+https://jmp2.uk/plu-5dde47b63585b500099f74ec.m3u8
+#EXTINF:-1 tvg-id="PlutoTVKultfilmer.se@SE" tvg-logo="logos/PlutoTVKultfilmer.se-4be36f.webp" group-title="Movies",Pluto TV Kultfilmer
+https://jmp2.uk/plu-63dbe8c8a9957100087798a3.m3u8
+#EXTINF:-1 tvg-id="PlutoTVKultfilmer.se@NO" tvg-logo="logos/PlutoTVKultfilmer.se-4be36f.webp" group-title="Movies",Pluto TV Kultfilmer NO
+https://jmp2.uk/plu-63dbe80f60bc8f0008aa7c78.m3u8
+#EXTINF:-1 tvg-id="PlutoTVLegamiLetali.de@IT" tvg-logo="logos/PlutoTVLegamiLetali.de-4b0ac9.webp" group-title="Movies",Pluto TV Legami Letali
+https://jmp2.uk/plu-64808a8c536e0c0008a276d1.m3u8
+#EXTINF:-1 tvg-id="PlutoTVMovies.de@DACH" tvg-logo="logos/PlutoTVMovies.de-63a917.webp" group-title="Movies",Pluto TV Movies
+https://jmp2.uk/plu-5c5c3b948002db3c3e0b262e.m3u8
+#EXTINF:-1 tvg-id="PlutoTVMovies.de@GB" tvg-logo="logos/PlutoTVMovies.de-63a917.webp" group-title="Movies",Pluto TV Movies GB
+https://jmp2.uk/plu-5ad8d3a31b95267e225e4e09.m3u8
+#EXTINF:-1 tvg-id="PlutoTVNetmovies.us@BR" tvg-logo="logos/PlutoTVNetmovies.us-418f7c.webp" group-title="Movies",Pluto TV Netmovies
+https://jmp2.uk/plu-663b9de4f999220008230fa8.m3u8
+#EXTINF:-1 tvg-id="PlutoTVNottidiPassione.de@IT" tvg-logo="logos/PlutoTVNottidiPassione.de-fb7ea0.webp" group-title="Movies",Pluto TV Notti di Passione
+https://jmp2.uk/plu-6911c9704316999535eb21cf.m3u8
+#EXTINF:-1 tvg-id="PlutoTVNottidiSangue.de@IT" tvg-logo="logos/PlutoTVNottidiSangue.de-571b91.webp" group-title="Movies",Pluto TV Notti di Sangue
+https://jmp2.uk/plu-6911c92b4316999535eb1e08.m3u8
+#EXTINF:-1 tvg-id="PlutoTVNottidiTerrore.de@IT" tvg-logo="logos/PlutoTVNottidiTerrore.de-fadc68.webp" group-title="Movies",Pluto TV Notti di Terrore
+https://jmp2.uk/plu-6911c8dd8caba6f046c5c5d5.m3u8
+#EXTINF:-1 tvg-id="PlutoTVNuestroCine.us@LatAm" tvg-logo="logos/PlutoTVNuestroCine.us-e71302.webp" group-title="Movies",Pluto TV Nuestro Cine
+https://jmp2.uk/plu-5defde6d6c07b50009cf0757.m3u8
+#EXTINF:-1 tvg-id="PlutoTVParanormal.se@SE" tvg-logo="logos/PlutoTVParanormal.se-bfa242.webp" group-title="Movies",Pluto TV Paranormal (Sweden)
+https://jmp2.uk/plu-62b1e4189f5db20007ff03be.m3u8
+#EXTINF:-1 tvg-id="PlutoTVParanormal.se@DK" tvg-logo="logos/PlutoTVParanormal.se-bfa242.webp" group-title="Movies",Pluto TV Paranormal (Sweden) DK
+https://jmp2.uk/plu-62b30beb81f89900071fc7b9.m3u8
+#EXTINF:-1 tvg-id="PlutoTVPsycho.de@ES" tvg-logo="logos/PlutoTVPsycho.de-f62c6d.webp" group-title="Movies",Pluto TV Psycho
+https://jmp2.uk/plu-65ce480a78df2200131c597b.m3u8
+#EXTINF:-1 tvg-id="PlutoTVReaction.us@SD" tvg-logo="logos/PlutoTVReaction.us-002e3a.webp" group-title="Movies",Pluto TV Reaction
+https://jmp2.uk/plu-617b37b361e0fd0008cfd8c5.m3u8
+#EXTINF:-1 tvg-id="PlutoTVRetroActionMovies.us@CA" tvg-logo="logos/PlutoTVRetroActionMovies.us-6af2e0.webp" group-title="Classic;Movies",Pluto TV Retro Action Movies
+https://jmp2.uk/plu-69a9ae4d3bd16a4ed04240d7.m3u8
+#EXTINF:-1 tvg-id="PlutoTVRomance.us@US" tvg-logo="logos/PlutoTVRomance.us-197592.webp" group-title="Movies;Series",Pluto TV Romance
+https://jmp2.uk/plu-5a66795ef91fef2c7031c599.m3u8
+#EXTINF:-1 tvg-id="PlutoTVRomantik.se@SE" tvg-logo="logos/PlutoTVRomantik.se-958bbe.webp" group-title="Movies",Pluto TV Romantik
+https://jmp2.uk/plu-63a19da6847a090007f230da.m3u8
+#EXTINF:-1 tvg-id="PlutoTVRomantik.se@DK" tvg-logo="logos/PlutoTVRomantik.se-958bbe.webp" group-title="Movies",Pluto TV Romantik DK
+https://jmp2.uk/plu-63a1c954d3897300079fcb12.m3u8
+#EXTINF:-1 tvg-id="PlutoTVRomantikk.se@NO" tvg-logo="logos/PlutoTVRomantikk.se-8f0162.webp" group-title="Movies",Pluto TV Romantikk
+https://jmp2.uk/plu-63a19bb5e6914b000721b5c0.m3u8
+#EXTINF:-1 tvg-id="PlutoTVSciFi.se@SE" tvg-logo="logos/PlutoTVSciFi.se-ac675b.webp" group-title="Movies;Series",Pluto TV Sci-Fi (Sweden)
+https://jmp2.uk/plu-61f9597e78607000074f6c2a.m3u8
+#EXTINF:-1 tvg-id="PlutoTVSciFi.se@DK" tvg-logo="logos/PlutoTVSciFi.se-ac675b.webp" group-title="Movies;Series",Pluto TV Sci-Fi (Sweden) DK
+https://jmp2.uk/plu-61f9598588f86000078ee7d6.m3u8
+#EXTINF:-1 tvg-id="PlutoTVSciFi.se@NO" tvg-logo="logos/PlutoTVSciFi.se-ac675b.webp" group-title="Movies;Series",Pluto TV Sci-Fi (Sweden) NO
+https://jmp2.uk/plu-61f957e051cca800076f2358.m3u8
+#EXTINF:-1 tvg-id="PlutoTVSciFi.us@US" tvg-logo="logos/PlutoTVSciFi.us-5e57d8.webp" group-title="Movies;Series",Pluto TV Sci-Fi (United States)
+https://jmp2.uk/plu-5b4fc274694c027be6ed3eea.m3u8
+#EXTINF:-1 tvg-id="PlutoTVSciFi.us@CA" tvg-logo="logos/PlutoTVSciFi.us-5e57d8.webp" group-title="Movies;Series",Pluto TV Sci-Fi (United States) CA
+https://jmp2.uk/plu-66166cb1307fa30008f275e7.m3u8
+#EXTINF:-1 tvg-id="PlutoTVSciFi.us@LatAm" tvg-logo="logos/PlutoTVSciFi.us-5e57d8.webp" group-title="Movies;Series",Pluto TV Sci-Fi (United States) LatAm
+https://jmp2.uk/plu-5f2817d3d7573a00080f9175.m3u8
+#EXTINF:-1 tvg-id="PlutoTVSerieSciFi.de@IT" tvg-logo="logos/PlutoTVSerieSciFi.de-28f9dc.webp" group-title="Movies",Pluto TV Serie Sci-Fi
+https://jmp2.uk/plu-67ed14aaf7c5d70b9089c3bf.m3u8
+#EXTINF:-1 tvg-id="PlutoTVSpotlight.us@SD" tvg-logo="logos/PlutoTVSpotlight.us-41956e.webp" group-title="Movies",Pluto TV Spotlight
+https://jmp2.uk/plu-5ba3fb9c4b078e0f37ad34e8.m3u8
+#EXTINF:-1 tvg-id="PlutoTVStaffPicks.us@SD" tvg-logo="logos/PlutoTVStaffPicks.us-733156.webp" group-title="Movies",Pluto TV Staff Picks
+https://jmp2.uk/plu-5f4d863b98b41000076cd061.m3u8
+#EXTINF:-1 tvg-id="PlutoTVStarTrek.de@DACH" tvg-logo="logos/PlutoTVStarTrek.de-abf311.webp" group-title="Movies;Series",Pluto TV Star Trek (Germany)
+https://jmp2.uk/plu-6152ee71bf99590007893a11.m3u8
+#EXTINF:-1 tvg-id="PlutoTVStarTrek.se@DK" tvg-logo="logos/PlutoTVStarTrek.se-95c4e9.webp" group-title="Movies;Series",Pluto TV Star Trek (Sweden)
+https://jmp2.uk/plu-61c1979dfa307000070bbe4d.m3u8
+#EXTINF:-1 tvg-id="PlutoTVTerror.us@SD" tvg-logo="logos/PlutoTVTerror.us-c7bb36.webp" group-title="Movies",Pluto TV Terror
+https://jmp2.uk/plu-5c6dc88fcd232425a6e0f06e.m3u8
+#EXTINF:-1 tvg-id="PlutoTVTerrorTrash.us@BR" tvg-logo="logos/PlutoTVTerrorTrash.us-cffab1.webp" group-title="Movies",Pluto TV Terror Trash
+https://jmp2.uk/plu-66aa67493a4ad2000806d91b.m3u8
+#EXTINF:-1 tvg-id="PlutoTVThrillers.us@US" tvg-logo="logos/PlutoTVThrillers.us-b5437c.webp" group-title="Movies",Pluto TV Thrillers
+https://jmp2.uk/plu-5b4e69e08291147bd04a9fd7.m3u8
+#EXTINF:-1 tvg-id="PlutoTVToto.de@IT" tvg-logo="logos/PlutoTVToto.de-8c6abc.webp" group-title="Movies",Pluto TV Toto
+https://jmp2.uk/plu-65253f9881f942000833ccd5.m3u8
+#EXTINF:-1 tvg-id="PlutoTVTrendingNow.us@SD" tvg-logo="logos/PlutoTVTrendingNow.us-deb49e.webp" group-title="Movies",Pluto TV Trending Now
+https://jmp2.uk/plu-673247127d5da5000817b4d6.m3u8
+#EXTINF:-1 tvg-id="PlutoTVWeihnachtenimSommer.de@DACH" tvg-logo="logos/PlutoTVWeihnachtenimSommer.de-c25888.webp" group-title="Movies",Pluto TV Weihnachten im Sommer
+https://jmp2.uk/plu-642ad072283aa4000806148c.m3u8
+#EXTINF:-1 tvg-id="PlutoTVWestern.de@DACH" tvg-logo="logos/PlutoTVWestern.de-7598f2.webp" group-title="Movies",Pluto TV Western
+https://jmp2.uk/plu-630dd3b2605f140007e002f5.m3u8
+#EXTINF:-1 tvg-id="PlutoTVWestern.de@ES" tvg-logo="logos/PlutoTVWestern.de-7598f2.webp" group-title="Movies",Pluto TV Western ES
+https://jmp2.uk/plu-6385e82900ab2e000768a058.m3u8
+#EXTINF:-1 tvg-id="PlutoTVWestern.de@IT" tvg-logo="logos/PlutoTVWestern.de-7598f2.webp" group-title="Movies",Pluto TV Western IT
+https://jmp2.uk/plu-62e7fb67478a5b0007e6c50c.m3u8
+#EXTINF:-1 tvg-id="PlutoTVWesterns.de@GB" tvg-logo="logos/PlutoTVWesterns.de-458008.webp" group-title="Movies",Pluto TV Westerns (Germany)
+https://jmp2.uk/plu-5d4bdb635ce813b38639e6a3.m3u8
+#EXTINF:-1 tvg-id="PlutoTVWesterns.us@US" tvg-logo="logos/PlutoTVWesterns.us-396f71.webp" group-title="Movies",Pluto TV Westerns (United States)
+https://jmp2.uk/plu-5b4e94282d4ec87bdcbb87cd.m3u8
+#EXTINF:-1 tvg-id="PlutoTVWesterns.us@CA" tvg-logo="logos/PlutoTVWesterns.us-396f71.webp" group-title="Movies",Pluto TV Westerns (United States) CA
+https://jmp2.uk/plu-62bdacc96a3751000811842d.m3u8
+#EXTINF:-1 tvg-id="PlutoTVWildWest.se@SE" tvg-logo="logos/PlutoTVWildWest.se-dd0f63.webp" group-title="Movies;Series",Pluto TV Wild West
+https://jmp2.uk/plu-68c017bf337652ee75db201f.m3u8
+#EXTINF:-1 tvg-id="PlutoTVWildWest.se@DK" tvg-logo="logos/PlutoTVWildWest.se-dd0f63.webp" group-title="Movies;Series",Pluto TV Wild West DK
+https://jmp2.uk/plu-68c01732b3900870ec74766f.m3u8
+#EXTINF:-1 tvg-id="PlutoTVWildWest.se@NO" tvg-logo="logos/PlutoTVWildWest.se-dd0f63.webp" group-title="Movies;Series",Pluto TV Wild West NO
+https://jmp2.uk/plu-68c01785b3900870ec7480e4.m3u8
+#EXTINF:-1 tvg-id="PlutoTVZombies.de@ES" tvg-logo="logos/PlutoTVZombies.de-eab50c.webp" group-title="Movies;Series",Pluto TV Zombies
+https://jmp2.uk/plu-65786888b228b7000843ad9a.m3u8
+#EXTINF:-1 tvg-id="PocketFilms.in@SD" tvg-logo="logos/PocketFilms.in-6dfd17.webp" group-title="Movies",Pocket Films
+https://vglivessai.akamaized.net/sg/v1/manifest/611d79b11b77e2f571934fd80ca1413453772ac7/b8ada260-bb81-472b-b7c1-3a79213a84b8/e02a0ce5-6c42-4cca-bb53-e5cfecff74a9/0.m3u8
+#EXTINF:-1 tvg-id="PopcornCentral.mx@SD" tvg-logo="logos/PopcornCentral.mx-f47b92.webp" group-title="Movies",Popcorn Central (1080p)
+https://oly-ftvpc.otteravision.com/oly/ftvpc/ftvpc.m3u8
+#EXTINF:-1 tvg-id="PunjabiShorts.in@SD" tvg-logo="logos/PunjabiShorts.in-0ca1a0.webp" group-title="Movies",Punjabi Shorts (1080p)
+https://gtc.ottlive.co.in/punjabshort/index.m3u8
+#EXTINF:-1 tvg-id="RajDigitalPlus.in@SD" tvg-logo="logos/RajDigitalPlus.in-6c1e74.webp" group-title="Movies",Raj Digital Plus (1080p)
+https://livestream.rajtv.tv/hlslive/Admin/px08241087/live/RajTV_Digital_plus/master_1.m3u8
+#EXTINF:-1 tvg-id="RakutenTVActionMovies.es@Spain" tvg-logo="logos/RakutenTVActionMovies.es-293bf6.webp" group-title="Movies",Rakuten TV Action Movies (1080p)
+https://a9c57ec7ec5e4b7daeacc6316a0bb404.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6069/master.m3u8
+#EXTINF:-1 tvg-id="RakutenTVActionMovies.es@Austria" tvg-logo="logos/RakutenTVActionMovies.es-293bf6.webp" group-title="Movies",Rakuten TV Action Movies Austria (720p)
+https://0f846627524f4dd2995e93581379db82.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/Samsung-at_RakutenActionMovies-1/playlist.m3u8
+#EXTINF:-1 tvg-id="RakutenTVActionMovies.es@Finland" tvg-logo="logos/RakutenTVActionMovies.es-293bf6.webp" group-title="Movies",Rakuten TV Action Movies Finland (1080p)
+https://bca5a421a70c46ad911efd0a4767c4bf.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6075/master.m3u8
+#EXTINF:-1 tvg-id="RakutenTVActionMovies.es@Germany" tvg-logo="logos/RakutenTVActionMovies.es-293bf6.webp" group-title="Movies",Rakuten TV Action Movies Germany (1080p)
+https://284824cf70404fdfb6ddf9349009c710.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6066/master.m3u8
+#EXTINF:-1 tvg-id="RakutenTVActionMovies.es@Italy" tvg-logo="logos/RakutenTVActionMovies.es-293bf6.webp" group-title="Movies",Rakuten TV Action Movies Italy (1080p)
+https://87f2e2e5e7624e3bad85da1ca2ed31a7.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6067/master.m3u8
+#EXTINF:-1 tvg-id="RakutenTVActionMovies.es@UK" tvg-logo="logos/RakutenTVActionMovies.es-293bf6.webp" group-title="Movies",Rakuten TV Action Movies UK (1080p)
+https://54045f0c40fd442c8b06df076aaf1e85.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6065/master.m3u8
+#EXTINF:-1 tvg-id="RakutenTVComedyMovies.es@Spain" tvg-logo="logos/RakutenTVComedyMovies.es-293bf6.webp" group-title="Movies",Rakuten TV Comedy Movies (1080p)
+https://71db867f03ce4d71a29e92155f07ab87.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6180/master.m3u8
+#EXTINF:-1 tvg-id="RakutenTVComedyMovies.es@Austria" tvg-logo="logos/RakutenTVComedyMovies.es-293bf6.webp" group-title="Movies",Rakuten TV Comedy Movies Austria (720p)
+https://7ed752b220a441b7b22bdf697c6c4df8.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/Samsung-at_RakutenComedyMovies-1/playlist.m3u8
+#EXTINF:-1 tvg-id="RakutenTVComedyMovies.es@Finland" tvg-logo="logos/RakutenTVComedyMovies.es-293bf6.webp" group-title="Movies",Rakuten TV Comedy Movies Finland (1080p)
+https://a300af98e00746e2acf2346f43e47bd1.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6191/master.m3u8
+#EXTINF:-1 tvg-id="RakutenTVComedyMovies.es@Germany" tvg-logo="logos/RakutenTVComedyMovies.es-293bf6.webp" group-title="Movies",Rakuten TV Comedy Movies Germany (1080p)
+https://ecac08c9e2214375b907d6825aaf9a01.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6182/master.m3u8
+#EXTINF:-1 tvg-id="RakutenTVComedyMovies.es@Italy" tvg-logo="logos/RakutenTVComedyMovies.es-293bf6.webp" group-title="Movies",Rakuten TV Comedy Movies Italy (1080p)
+https://b8bc6c4b9be64bd6aeb3b92aa8521ed4.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6184/master.m3u8
+#EXTINF:-1 tvg-id="RakutenTVComedyMovies.es@UK" tvg-logo="logos/RakutenTVComedyMovies.es-293bf6.webp" group-title="Movies",Rakuten TV Comedy Movies UK (1080p)
+https://9be783d652cd4b099cf63e1dc134c4a3.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6181/master.m3u8
+#EXTINF:-1 tvg-id="RakutenTVDramaMovies.es@Spain" tvg-logo="logos/RakutenTVDramaMovies.es-293bf6.webp" group-title="Movies",Rakuten TV Drama Movies (1080p)
+https://a7089c89d85f453d850c4a1518b43076.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6092/master.m3u8
+#EXTINF:-1 tvg-id="RakutenTVDramaMovies.es@Austria" tvg-logo="logos/RakutenTVDramaMovies.es-293bf6.webp" group-title="Movies",Rakuten TV Drama Movies Austria (720p)
+https://df1aa472ff5b4780a8d91fe319778b4d.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/Samsung-at_RakutenTVShows-1/playlist.m3u8
+#EXTINF:-1 tvg-id="RakutenTVDramaMovies.es@Finland" tvg-logo="logos/RakutenTVDramaMovies.es-293bf6.webp" group-title="Movies",Rakuten TV Drama Movies Finland (1080p)
+https://d7e8ee3c924d4305a0c1840fe94c5d36.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6102/master.m3u8
+#EXTINF:-1 tvg-id="RakutenTVDramaMovies.es@Germany" tvg-logo="logos/RakutenTVDramaMovies.es-293bf6.webp" group-title="Movies",Rakuten TV Drama Movies Germany (1080p)
+https://968754c2483045c1a9a7f677caec35b6.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6096/master.m3u8
+#EXTINF:-1 tvg-id="RakutenTVDramaMovies.es@Italy" tvg-logo="logos/RakutenTVDramaMovies.es-293bf6.webp" group-title="Movies",Rakuten TV Drama Movies Italy (1080p)
+https://f84e0b1628464fab846160df957f269e.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6094/master.m3u8
+#EXTINF:-1 tvg-id="RakutenTVDramaMovies.es@UK" tvg-logo="logos/RakutenTVDramaMovies.es-293bf6.webp" group-title="Movies",Rakuten TV Drama Movies UK (1080p)
+https://fee09fd665814f51b939b6d106cf5f66.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6093/master.m3u8
+#EXTINF:-1 tvg-id="RakutenTVFamilyMovies.es@Spain" tvg-logo="logos/RakutenTVFamilyMovies.es-293bf6.webp" group-title="Family;Movies",Rakuten TV Family Movies (1080p)
+https://b0d59c8c98974e708e5ccb9a27cdfdfc.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6205/master.m3u8
+#EXTINF:-1 tvg-id="RakutenTVFamilyMovies.es@Austria" tvg-logo="logos/RakutenTVFamilyMovies.es-293bf6.webp" group-title="Family;Movies",Rakuten TV Family Movies Austria (720p)
+https://9fa8baba055e4a52b0a8d1ae7d78bed8.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/Samsung-at_RakutenFamily-1/playlist.m3u8
+#EXTINF:-1 tvg-id="RakutenTVFamilyMovies.es@Finland" tvg-logo="logos/RakutenTVFamilyMovies.es-293bf6.webp" group-title="Family;Movies",Rakuten TV Family Movies Finland (1080p)
+https://758ee983d61e400381dea6fa8154f4e0.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6227/master.m3u8
+#EXTINF:-1 tvg-id="RakutenTVFamilyMovies.es@Germany" tvg-logo="logos/RakutenTVFamilyMovies.es-293bf6.webp" group-title="Family;Movies",Rakuten TV Family Movies Germany (1080p)
+https://af230031eeac45f3b78d4f8a13265105.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6209/master.m3u8
+#EXTINF:-1 tvg-id="RakutenTVFamilyMovies.es@Italy" tvg-logo="logos/RakutenTVFamilyMovies.es-293bf6.webp" group-title="Family;Movies",Rakuten TV Family Movies Italy (1080p)
+https://3315fc3e7276420f895e19cf807dbee1.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6215/master.m3u8
+#EXTINF:-1 tvg-id="RakutenTVFamilyMovies.es@Switzerland" tvg-logo="logos/RakutenTVFamilyMovies.es-293bf6.webp" group-title="Family;Movies",Rakuten TV Family Movies Switzerland (720p)
+https://a24daf1125344b9cab66eed2fcff8821.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/Samsung-ch_RakutenFamily-1/playlist.m3u8
+#EXTINF:-1 tvg-id="RakutenTVFamilyMovies.es@UK" tvg-logo="logos/RakutenTVFamilyMovies.es-293bf6.webp" group-title="Family;Movies",Rakuten TV Family Movies UK (1080p)
+https://e3207568b726401995c25670faaf32e4.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6203/master.m3u8
+#EXTINF:-1 tvg-id="RakutenTVNordicFilms.es@Finland" tvg-logo="logos/RakutenTVNordicFilms.es-7e7e02.webp" group-title="Movies",Rakuten TV Nordic Films (1080p)
+https://4aa9ef08b70d4b0c8f3519c5950b1930.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6303/master.m3u8
+#EXTINF:-1 tvg-id="RakutenTVTopMovies.es@Spain" tvg-logo="logos/RakutenTVTopMovies.es-293bf6.webp" group-title="Movies",Rakuten TV Top Movies (1080p)
+https://ff335120300e4742a2b135ee9a9e7df8.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-5983/master.m3u8
+#EXTINF:-1 tvg-id="RakutenTVTopMovies.es@Finland" tvg-logo="logos/RakutenTVTopMovies.es-293bf6.webp" group-title="Movies",Rakuten TV Top Movies Finland (1080p)
+https://1d1b0d4cb6ae4c31985d13221795695b.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6057/master.m3u8
+#EXTINF:-1 tvg-id="RakutenTVTopMovies.es@Germany" tvg-logo="logos/RakutenTVTopMovies.es-293bf6.webp" group-title="Movies",Rakuten TV Top Movies Germany (1080p)
+https://cbb622b29f5d43b598991f3fa19de291.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-5985/master.m3u8
+#EXTINF:-1 tvg-id="RakutenTVTopMovies.es@Italy" tvg-logo="logos/RakutenTVTopMovies.es-293bf6.webp" group-title="Movies",Rakuten TV Top Movies Italy (1080p)
+https://d4a4999341764c67a67e9ec9eb3790ab.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-5984/master.m3u8
+#EXTINF:-1 tvg-id="RakutenTVTopMovies.es@UK" tvg-logo="logos/RakutenTVTopMovies.es-293bf6.webp" group-title="Movies",Rakuten TV Top Movies UK (1080p)
+https://0145451975a64b35866170fd2e8fa486.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-5987/master.m3u8
+#EXTINF:-1 tvg-id="Rawhide.us@SD" tvg-logo="logos/Rawhide.us-c0a661.webp" group-title="Movies;Series",Rawhide (United States)
+https://jmp2.uk/plu-634f307c7a068e00072c9982.m3u8
+#EXTINF:-1 tvg-id="Rawhide.us@CA" tvg-logo="logos/Rawhide.us-c0a661.webp" group-title="Movies;Series",Rawhide (United States) CA
+https://jmp2.uk/plu-65660223635c3c00086c2578.m3u8
+#EXTINF:-1 tvg-id="Runtime.us@SD" tvg-logo="logos/Runtime.us-793f26.webp" group-title="Movies",Runtime (720p)
+https://jmp2.uk/plu-6086d3f420fc8500075f8dbf.m3u8
+#EXTINF:-1 tvg-id="RuntimeEspanol.us@SD" tvg-logo="logos/RuntimeEspanol.us-50b242.webp" group-title="Movies",Runtime Espanol (720p)
+https://run-rt-uh-roku.otteravision.com/run/rt_uh/rt_uh.m3u8
+#EXTINF:-1 tvg-id="ScaresbyShudder.us@SD" tvg-logo="logos/ScaresbyShudder.us-097899.webp" group-title="Movies",Scares by Shudder (1080p)
+https://wurlrainbowmedia.global.transmit.live/hls/68c49e4709574e8405506cb3/v1/amc_scaresbyshudder_1/lg_us/latest/main/hls/playlist.m3u8
+#EXTINF:-1 tvg-id="ScreamIN.fr@SD" tvg-logo="logos/ScreamIN.fr-e6a296.webp" group-title="Movies",ScreamIN (1080p)
+https://rakutenaa-zylo-screamin-rakuten-p11ej.amagi.tv/playlist/rakutenAA-zylo-screamin-rakuten/playlist.m3u8
+#EXTINF:-1 tvg-id="SensaCineTVxPluto.de@ES" tvg-logo="logos/SensaCineTVxPluto.de-1b6452.webp" group-title="Movies",SensaCine TV x Pluto
+https://jmp2.uk/plu-676e7b4a4bd636000819c6a7.m3u8
+#EXTINF:-1 tvg-id="ServusTV.at@SD" tvg-logo="logos/ServusTV.at-3d5fe8.webp" group-title="Movies",ServusTV (576p)
+https://s6.hopslan.com/servuz1/index.m3u8
+#EXTINF:-1 tvg-id="ShemarooFilmiGaane.in@HD" tvg-logo="logos/ShemarooFilmiGaane.in-2809fd.webp" group-title="Movies;Music",Shemaroo Filmi Gaane (1080p)
+https://prod-runn.cdn.runn.tv/shemaroo/stream/smrfgn/playlist.m3u8
+#EXTINF:-1 tvg-id="ShemarooJosh.in@SD" tvg-logo="logos/ShemarooJosh.in-c01f7d.webp" group-title="Movies",Shemaroo Josh (576p)
+https://cdn.pishow.tv/ott/live/337/master.m3u8
+#EXTINF:-1 tvg-id="ShubhCinemaTV.in@SD" tvg-logo="logos/ShubhCinemaTV.in-34884b.webp" group-title="Movies",Shubh Cinema TV (720p)
+https://d393sxaxig6bax.cloudfront.net/out/v1/589cf2cf44bf42bb941e817a2240d62e/index.m3u8
+#EXTINF:-1 tvg-id="SilkWayCinema.kz@SD" tvg-logo="logos/SilkWayCinema.kz-0316f9.webp" group-title="Movies",Silk Way Cinema (1080p) [Geo-blocked]
+https://stream.qazcdn.net/ex6r514/silkwaycinema/index.m3u8
+#EXTINF:-1 tvg-id="SL1.ir@SD" tvg-logo="logos/SL1.ir-02a3af.webp" group-title="Movies",SL 1
+https://slonehls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="SL2.ir@SD" tvg-logo="logos/SL2.ir-994e00.webp" group-title="Movies",SL 2
+https://sltwohls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="Smotrim100Klassika.ru@SD" tvg-logo="logos/Smotrim100Klassika.ru-7984af.webp" group-title="Classic;Movies",Smotrim 100% Klassika (720p)
+https://stream.smotrim.ru/hls/fasttv03/playlist_3.m3u8
+#EXTINF:-1 tvg-id="SonarBangla.in@SD" tvg-logo="logos/SonarBangla.in-5c87e2.webp" group-title="Movies",Sonar Bangla (360p)
+https://samitaorigin.tangotv.in/SONARBANGLA/SAMITAORIGIN/index.m3u8
+#EXTINF:-1 tvg-id="SoneriCinema.in@SD" tvg-logo="logos/SoneriCinema.in-9a999d.webp" group-title="Movies",Soneri Cinema (360p)
+https://samitaorigin.tangotv.in/SONERICINEMA/SAMITAORIGIN/index.m3u8
+#EXTINF:-1 tvg-id="SonyCanalNovelas.us@SD" tvg-logo="" group-title="Movies",Sony Canal Novelas
+https://a89829b8dca2471ab52ea9a57bc28a35.mediatailor.us-east-1.amazonaws.com/v1/master/0fb304b2320b25f067414d481a779b77db81760d/CanelaTV_SonyCanalNovelas/playlist.m3u8
+#EXTINF:-1 tvg-id="SonyMovies.us@SD" tvg-logo="logos/SonyMovies.us-9d8fa4.webp" group-title="Movies",Sony Movies (United States) (720p)
+https://a-cdn.klowdtv.com/live1/smc_720p/playlist.m3u8
+#EXTINF:-1 tvg-id="SonyOneFavoris.fr@HD" tvg-logo="logos/SonyOneFavoris.fr-9d8b00.webp" group-title="Movies",Sony One Favoris (1080p)
+https://49d735318d6b4c30a24a7997ea594e1b.mediatailor.us-west-2.amazonaws.com/v1/master/ba62fe743df0fe93366eba3a257d792884136c7f/LINEAR-820-FR-SONYONEFAVORIS-LG_FR/playlist.m3u8
+#EXTINF:-1 tvg-id="SonyOneHitsAction.fr@HD" tvg-logo="logos/SonyOneHitsAction.fr-ce2058.webp" group-title="Movies",Sony One Hits Action (1080p)
+https://5098a8b860504a3690fd2e7c0a18d68f.mediatailor.us-west-2.amazonaws.com/v1/master/ba62fe743df0fe93366eba3a257d792884136c7f/LINEAR-817-FR-SONYONEHITSACTION-LG_FR/playlist.m3u8
+#EXTINF:-1 tvg-id="SonyOneHitsComedie.fr@HD" tvg-logo="logos/SonyOneHitsComedie.fr-1f0c2a.webp" group-title="Movies",Sony One Hits Comedie (1080p)
+https://7aa9671895264ec9a384dfed1b992171.mediatailor.us-west-2.amazonaws.com/v1/master/ba62fe743df0fe93366eba3a257d792884136c7f/LINEAR-818-FR-SONYONEHITSCOMDIE-LG_FR/playlist.m3u8
+#EXTINF:-1 tvg-id="SouthStation.in@HD" tvg-logo="logos/SouthStation.in-2f0a53.webp" group-title="Movies",South Station (1080p)
+https://cc-yw7ztecy8do3q.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-yw7ztecy8do3q/SS_IN.m3u8
+#EXTINF:-1 tvg-id="StarFamily.ru@SD" tvg-logo="logos/StarFamily.ru-461bd5.webp" group-title="Movies",Star Family (1080p)
+https://dash2.antik.sk/live/test_star_family_atktv/playlist.m3u8
+#EXTINF:-1 tvg-id="StarMaaMovies.in@HD" tvg-logo="logos/StarMaaMovies.in-7c0463.webp" group-title="Movies",Star Maa Movies HD (720p)
+https://da86m1sqpm3o0.cloudfront.net/28072023/smil:maamovies.smil/chunklist_b2628000.m3u8
+#EXTINF:-1 tvg-id="StarTamilTelevision.lk@SD" tvg-logo="logos/StarTamilTelevision.lk-50afa1.webp" group-title="Movies",Star Tamil Television (360p)
+https://edge4-moblive.yuppcdn.net/trans1sd/smil:strtml19.smil/playlist.m3u8?dvr=
+#EXTINF:-1 tvg-id="StarTrekMovies.se@SE" tvg-logo="logos/StarTrekMovies.se-d2cc53.webp" group-title="Movies",Star Trek Movies
+https://jmp2.uk/plu-6400c2a6cb41a40008dbe5bc.m3u8
+#EXTINF:-1 tvg-id="StarTrekMovies.se@DK" tvg-logo="logos/StarTrekMovies.se-d2cc53.webp" group-title="Movies",Star Trek Movies DK
+https://jmp2.uk/plu-6400c281dff38e00083f59da.m3u8
+#EXTINF:-1 tvg-id="StarTrekMovies.se@NO" tvg-logo="logos/StarTrekMovies.se-d2cc53.webp" group-title="Movies",Star Trek Movies NO
+https://jmp2.uk/plu-6400c228498393000878a9b7.m3u8
+#EXTINF:-1 tvg-id="StarTrekDeepSpaceNine.us@SD" tvg-logo="logos/StarTrekDeepSpaceNine.us-44b47a.webp" group-title="Movies;Series",Star Trek: Deep Space Nine
+https://jmp2.uk/plu-65c69bbfd77d450008c7ffee.m3u8
+#EXTINF:-1 tvg-id="StarTrekTheNextGeneration.de@DACH" tvg-logo="logos/StarTrekTheNextGeneration.de-8d9b17.webp" group-title="Movies;Series",Star Trek: The Next Generation (Germany)
+https://jmp2.uk/plu-69776ce979545c21a1220bff.m3u8
+#EXTINF:-1 tvg-id="StarTrekTheNextGeneration.us@SD" tvg-logo="logos/StarTrekTheNextGeneration.us-57c100.webp" group-title="Movies;Series",Star Trek: The Next Generation (United States)
+https://jmp2.uk/plu-695c32e61ca20bb8ca802eb9.m3u8
+#EXTINF:-1 tvg-id="StarTrekTheOriginalSeries.de@DACH" tvg-logo="logos/StarTrekTheOriginalSeries.de-264f77.webp" group-title="Movies;Series",Star Trek: The Original Series (Germany)
+https://jmp2.uk/plu-69776b58036e883f39e5ab8a.m3u8
+#EXTINF:-1 tvg-id="StarTrekTheOriginalSeries.se@SE" tvg-logo="logos/StarTrekTheOriginalSeries.se-5a69dd.webp" group-title="Movies;Series",Star Trek: The Original Series (Sweden)
+https://jmp2.uk/plu-693ade4d569386f93f235bb6.m3u8
+#EXTINF:-1 tvg-id="StarTrekTheOriginalSeries.se@DK" tvg-logo="logos/StarTrekTheOriginalSeries.se-5a69dd.webp" group-title="Movies;Series",Star Trek: The Original Series (Sweden) DK
+https://jmp2.uk/plu-693add137e308621c051e733.m3u8
+#EXTINF:-1 tvg-id="StarTrekTheOriginalSeries.se@NO" tvg-logo="logos/StarTrekTheOriginalSeries.se-5a69dd.webp" group-title="Movies;Series",Star Trek: The Original Series (Sweden) NO
+https://jmp2.uk/plu-693addd62bf6cf7414c4b2fc.m3u8
+#EXTINF:-1 tvg-id="StarTrekVoyager.de@ES" tvg-logo="logos/StarTrekVoyager.de-b2946d.webp" group-title="Movies;Series",Star Trek: Voyager (Germany)
+https://jmp2.uk/plu-65787f2eb228b7000843fa5c.m3u8
+#EXTINF:-1 tvg-id="StarTrekVoyager.de@IT" tvg-logo="logos/StarTrekVoyager.de-b2946d.webp" group-title="Movies;Series",Star Trek: Voyager (Germany) IT
+https://jmp2.uk/plu-65cb73d33ba51e00084cabad.m3u8
+#EXTINF:-1 tvg-id="StarTrekVoyager.us@SD" tvg-logo="logos/StarTrekVoyager.us-8e895d.webp" group-title="Movies;Series",Star Trek: Voyager (United States)
+https://jmp2.uk/plu-634dacf51d90320007fcd5fa.m3u8
+#EXTINF:-1 tvg-id="STARTWorld.ru@SD" tvg-logo="logos/STARTWorld.ru-ecc74b.webp" group-title="Movies",START World (576p)
+https://fs.uplink.kz/start_world/mono.m3u8?token=onlinetv
+#EXTINF:-1 tvg-id="StudioOnePlus.in@SD" tvg-logo="logos/StudioOnePlus.in-224ef0.webp" group-title="Movies",Studio One + (720p)
+https://cdn.pishow.tv/ott/live/276/master.m3u8
+#EXTINF:-1 tvg-id="SummerofMovies.us@CA" tvg-logo="logos/SummerofMovies.us-8a66d1.webp" group-title="Movies",Summer of Movies
+https://jmp2.uk/plu-6654adb1f99922000854388c.m3u8
+#EXTINF:-1 tvg-id="SuriyanTV.in@SD" tvg-logo="logos/SuriyanTV.in-05ab89.webp" group-title="Movies",Suriyan TV (576p)
+https://hlslive.olidigital.in/suriyantv/suriyantv/index.m3u8
+#EXTINF:-1 tvg-id="T2Movies.ir@SD" tvg-logo="" group-title="Movies",T2 Movies
+https://ca-rt.onetv.app/T2Movies/index-0.m3u8?token=onetv202
+#EXTINF:-1 tvg-id="TCM.us@East" tvg-logo="logos/TCM.us-a046df.webp" group-title="Classic;Movies",TCM (720p) [Geo-blocked]
+https://turnerlive.warnermediacdn.com/hls/live/2023186/tcmeast/noslate/VIDEO_1_5128000.m3u8
+#EXTINF:-1 tvg-id="TCM.us@West" tvg-logo="logos/TCM.us-a046df.webp" group-title="Classic;Movies",TCM West (720p) [Geo-blocked]
+https://turnerlive.warnermediacdn.com/hls/live/2023187/tcmwest/noslate/VIDEO_1_5128000.m3u8
+#EXTINF:-1 tvg-id="ThalaaTV.in@HD" tvg-logo="logos/ThalaaTV.in-1212c8.webp" group-title="Movies",Thalaa TV (1080p)
+https://streams2.sofast.tv/ptnr-khabriya/title-THALAA-TV-TAM_Khabriya/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/c9d5c8a0-8c52-47bc-954d-e64a11314de2/manifest.m3u8
+#EXTINF:-1 tvg-id="TheMovieClub.in@HD" tvg-logo="logos/TheMovieClub.in-d13f71.webp" group-title="Movies",The Movie Club (1080p)
+https://mumbai-edge.smartplaytv.in/TheMovieClub/index.m3u8
+#EXTINF:-1 tvg-id="TheMovieClub.in@Plus2" tvg-logo="logos/TheMovieClub.in-d13f71.webp" group-title="Movies",The Movie Club +2 (1080p)
+https://d3gnyty2vddhsg.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/pb-ytipwjqub3kf8/TMC2_IN.m3u8?ads.ads_cdn=cf&ads.cdn=cf
+#EXTINF:-1 tvg-id="TheTwilightZone.se@SE" tvg-logo="logos/TheTwilightZone.se-7f0859.webp" group-title="Movies;Series",The Twilight Zone
+https://jmp2.uk/plu-6512d6c92ce8e40008bd5c81.m3u8
+#EXTINF:-1 tvg-id="TheTwilightZone.se@DK" tvg-logo="logos/TheTwilightZone.se-7f0859.webp" group-title="Movies;Series",The Twilight Zone DK
+https://jmp2.uk/plu-6512ec9f3a0d700008db4f0c.m3u8
+#EXTINF:-1 tvg-id="TheTwilightZone.se@NO" tvg-logo="logos/TheTwilightZone.se-7f0859.webp" group-title="Movies;Series",The Twilight Zone NO
+https://jmp2.uk/plu-6512d3a0bdcb19000799cc82.m3u8
+#EXTINF:-1 tvg-id="TheWildWildWest.us@SD" tvg-logo="logos/TheWildWildWest.us-916eec.webp" group-title="Movies;Series",The Wild Wild West (United States)
+https://jmp2.uk/plu-664e640a0120f40008be4582.m3u8
+#EXTINF:-1 tvg-id="TollyTV.in@HD" tvg-logo="logos/TollyTV.in-a0eb8b.webp" group-title="Movies",Tolly TV (1080p)
+https://streams2.sofast.tv/ptnr-khabriya/title-TOLLY-TV-TEL_Khabriya/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/9bb55dff-7a74-43aa-bcf7-ea537e8b9e92/manifest.m3u8
+#EXTINF:-1 tvg-id="TVLandDrama.us@SD" tvg-logo="logos/TVLandDrama.us-3499e2.webp" group-title="Movies",TV Land Drama
+https://jmp2.uk/plu-5d40bebc5e3d2750a2239d7e.m3u8
+#EXTINF:-1 tvg-id="TVCARiBCinema.sx@SD" tvg-logo="logos/TVCARiBCinema.sx-5e9db3.webp" group-title="Movies",TVCARiB Cinema (720p) [Not 24/7]
+https://cdn.mycloudstream.io/hls/live/broadcast/l3vslw4i/index.m3u8
+#EXTINF:-1 tvg-id="TVSDriveInMovie.us@SD" tvg-logo="logos/TVSDriveInMovie.us-bada57.webp" group-title="Movies",TVS Drive In Movie (360p)
+https://rpn.bozztv.com/gusa/gusa-tvsdriveinmovie/index.m3u8
+#EXTINF:-1 tvg-id="TVSFilmNoirNetwork.us@SD" tvg-logo="logos/TVSFilmNoirNetwork.us-1e090e.webp" group-title="Movies",TVS Film Noir Network (720p)
+https://rpn.bozztv.com/trn01/gusa-TVSFilmNoir/index.m3u8
+#EXTINF:-1 tvg-id="VelvetEuropeanMovies.ru@HD" tvg-logo="logos/VelvetEuropeanMovies.ru-9f42dd.webp" group-title="Family;Movies",Velvet. European Movies (1080p)
+https://cdn.rostelekom-tv.xyz/live/LQ3j0n7j0Kq4OQm8.m3u8
+#EXTINF:-1 tvg-id="VelvetGoldenCollection.ru@HD" tvg-logo="logos/VelvetGoldenCollection.ru-bbbe0b.webp" group-title="Classic;Movies",Velvet. Golden Collection (1080p)
+https://cdn.rostelekom-tv.xyz/live/v804qFZr0QVQ1s9Z.m3u8
+#EXTINF:-1 tvg-id="VelvetScary.ru@HD" tvg-logo="logos/VelvetScary.ru-dedd1b.webp" group-title="Movies",Velvet. Scary (1080p)
+https://cdn.rostelekom-tv.xyz/live/NImhIFLevxCbtcP-.m3u8
+#EXTINF:-1 tvg-id="VelvetSovetskoeKino.ru@HD" tvg-logo="logos/VelvetSovetskoeKino.ru-88f607.webp" group-title="Classic;Movies",Velvet. Sovetskoe Kino (1080p)
+https://cdn.rostelekom-tv.xyz/live/nF4sFCa49nFPHSF_.m3u8
+#EXTINF:-1 tvg-id="ViafreeMovies.se@SE" tvg-logo="logos/ViafreeMovies.se-311c6e.webp" group-title="Movies",Viafree Movies
+https://jmp2.uk/plu-62f64ec9eb1045000728cad6.m3u8
+#EXTINF:-1 tvg-id="ViafreeMovies.se@DK" tvg-logo="logos/ViafreeMovies.se-311c6e.webp" group-title="Movies",Viafree Movies DK
+https://jmp2.uk/plu-62bebc3459624e00078209c3.m3u8
+#EXTINF:-1 tvg-id="ViafreeMovies.se@NO" tvg-logo="logos/ViafreeMovies.se-311c6e.webp" group-title="Movies",Viafree Movies NO
+https://jmp2.uk/plu-62beb44e3afd120007915d1b.m3u8
+#EXTINF:-1 tvg-id="VinhLongTV3.vn@SD" tvg-logo="logos/VinhLongTV3.vn-0b6adc.webp" group-title="Entertainment;Movies",Vinh Long TV 3 (720p)
+https://dethich.pw/thvl3/index.m3u8
+#EXTINF:-1 tvg-id="WatchitScream.us@SD" tvg-logo="logos/WatchitScream.us-d0da99.webp" group-title="Movies",Watch it Scream! (720p)
+https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=2246
+#EXTINF:-1 tvg-id="WhiplashCinema.us@SD" tvg-logo="logos/WhiplashCinema.us-356169.webp" group-title="Movies",Whiplash Cinema (480p)
+https://cdn.whiplash.cc/whiplash-cinema/index.m3u8
+#EXTINF:-1 tvg-id="WuTangCollection.us@SD" tvg-logo="logos/WuTangCollection.us-541aad.webp" group-title="Movies",Wu Tang Collection (720p)
+https://dbrb49pjoymg4.cloudfront.net/10001/99991745/hls/master.m3u8?ads.xumo_channelId=99991745
+#EXTINF:-1 tvg-id="ZBCinema.in@HD" tvg-logo="logos/ZBCinema.in-f20bff.webp" group-title="Classic;Movies",ZB Cinema (1080p)
+https://server.zillarbarta.com/ZBCINEMA/index.m3u8
+#EXTINF:-1 tvg-id="ZeeCinema.in@APAC" tvg-logo="logos/ZeeCinema.in-f69456.webp" group-title="Movies",Zee Cinema APAC (720p)
+https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/sg/YuppTV/ZeeCinemaAPAC.m3u8
+#EXTINF:-1 tvg-id="ZeeSouthFlix.in@HD" tvg-logo="logos/ZeeSouthFlix.in-2ea53d.webp" group-title="Movies",Zee South Flix (1080p)
+https://amg00862-amg00862c9-amgplt0173.playout.now3.amagi.tv/playlist/amg00862-amg00862c9-amgplt0173/playlist.m3u8
+#EXTINF:-1 tvg-id="3CatPlatsbruts.es@SD" tvg-logo="logos/3CatPlatsbruts.es-2f928f.webp" group-title="Classic;Comedy;Public;Series",3Cat Plats bruts (1080p)
+https://fast-tailor.3catdirectes.cat/v1/channel/ccma-channel2/hls.m3u8
+#EXTINF:-1 tvg-id="5Cops.us@UK" tvg-logo="logos/5Cops.us-150bbe.webp" group-title="Series",5 Cops
+https://jmp2.uk/plu-5d2c571faeb3e2738ae27933.m3u8
+#EXTINF:-1 tvg-id="5minuttishiny.ru@SD" tvg-logo="logos/5minuttishiny.ru-00a2f6.webp" group-title="Series",5 minut tishiny (1080p)
+https://cdn-dvr.ntv.ru/5_minut_tishiny/index.m3u8
+#EXTINF:-1 tvg-id="7thHeaven.se@SE" tvg-logo="logos/7thHeaven.se-75b7a1.webp" group-title="Series",7th Heaven
+https://jmp2.uk/plu-6728cab6e482950008b76d8c.m3u8
+#EXTINF:-1 tvg-id="7thHeaven.se@DK" tvg-logo="logos/7thHeaven.se-75b7a1.webp" group-title="Series",7th Heaven DK
+https://jmp2.uk/plu-6728c9c85534bb0008b320a4.m3u8
+#EXTINF:-1 tvg-id="7thHeaven.se@NO" tvg-logo="logos/7thHeaven.se-75b7a1.webp" group-title="Series",7th Heaven NO
+https://jmp2.uk/plu-6728ca75529ac9000830ab14.m3u8
+#EXTINF:-1 tvg-id="13T.cl@SD" tvg-logo="logos/13T.cl-5abe79.webp" group-title="Series",13T (720p)
+https://origin.dpsgo.com/ssai/event/f4TrySe8SoiGF8Lu3EIq1g/master.m3u8
+#EXTINF:-1 tvg-id="48Hours.us@US" tvg-logo="logos/48Hours.us-4e523d.webp" group-title="Series",48 Hours (1080p)
+https://dai.google.com/linear/hls/event/JUr94WL2QAiVpGNHY5n5dA/master.m3u8
+#EXTINF:-1 tvg-id="48Hours.us@CA" tvg-logo="logos/48Hours.us-4e523d.webp" group-title="Series",48 Hours CA
+https://jmp2.uk/plu-62e925bc68d18a00077bb990.m3u8
+#EXTINF:-1 tvg-id="2900Happiness.se@DK" tvg-logo="logos/2900Happiness.se-25b04e.webp" group-title="Series",2900 Happiness
+https://jmp2.uk/plu-6720bc6cdaad7f000872a6e2.m3u8
+#EXTINF:-1 tvg-id="90210.de@DACH" tvg-logo="logos/90210.de-c7423e.webp" group-title="Series",90210
+https://jmp2.uk/plu-65a67dd13af63d0008257f17.m3u8
+#EXTINF:-1 tvg-id="AcapulcoShore.us@LatAm" tvg-logo="logos/AcapulcoShore.us-5ce62c.webp" group-title="Series",Acapulco Shore
+https://jmp2.uk/plu-61a52615cbef2500072876e2.m3u8
+#EXTINF:-1 tvg-id="AcapulcoShore.us@US" tvg-logo="logos/AcapulcoShore.us-5ce62c.webp" group-title="Series",Acapulco Shore US
+https://jmp2.uk/plu-64dab1f835425100080e1e7b.m3u8
+#EXTINF:-1 tvg-id="AfraSeries.ir@SD" tvg-logo="" group-title="Series",Afra Series
+https://afrashls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="AlerteaMalibu.us@France" tvg-logo="logos/AlerteaMalibu.us-bf8f73.webp" group-title="Series",Alerte a Malibu
+https://jmp2.uk/plu-60afaa535580be0007ac9ee4.m3u8
+#EXTINF:-1 tvg-id="AllRealitybyWEtv.us@SD" tvg-logo="logos/AllRealitybyWEtv.us-2d05ca.webp" group-title="Series",All Reality by WE tv (720p)
+https://jmp2.uk/plu-5e82530945600e0007ca076c.m3u8
+#EXTINF:-1 tvg-id="AllWeddingsWEtv.us@SD" tvg-logo="logos/AllWeddingsWEtv.us-5a3d31.webp" group-title="Series",All Weddings WE tv (1080p)
+https://amc-allweddings-1-us.xumo.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="AlwaysFunnyVideos.us@SD" tvg-logo="logos/AlwaysFunnyVideos.us-dcdbcc.webp" group-title="Series",Always Funny Videos (720p)
+https://d24l3uppudokci.cloudfront.net/playlist.m3u8
+#EXTINF:-1 tvg-id="Anaylos7.us@Spain" tvg-logo="logos/Anaylos7.us-61c6a2.webp" group-title="Series",Ana y los 7
+https://jmp2.uk/plu-5f1acce7f17797000718f9be.m3u8
+#EXTINF:-1 tvg-id="Andromeda.us@Spain" tvg-logo="logos/Andromeda.us-93c2fa.webp" group-title="Series",Andromeda
+https://jmp2.uk/plu-6850335b5965a2fd49f7e36d.m3u8
+#EXTINF:-1 tvg-id="Andromeda.us@Italy" tvg-logo="logos/Andromeda.us-93c2fa.webp" group-title="Series",Andromeda Italy (720p)
+https://jmp2.uk/plu-60802d37ee238e0007c94e64.m3u8
+#EXTINF:-1 tvg-id="Andromeda.us@UK" tvg-logo="logos/Andromeda.us-93c2fa.webp" group-title="Series",Andromeda UK
+https://jmp2.uk/plu-5e8db96bccae160007c71eec.m3u8
+#EXTINF:-1 tvg-id="AngerManagementChannel.us@SD" tvg-logo="logos/AngerManagementChannel.us-7c3376.webp" group-title="Comedy;Series",Anger Management Channel (1080p)
+https://amg00353-lionsgatestudio-angermgmt-samsungau-o9jg9.amagi.tv/playlist/amg00353-lionsgatestudio-angermgmt-samsungau/playlist.m3u8
+#EXTINF:-1 tvg-id="AnthonyBourdainPartsUnknown.us@UK" tvg-logo="logos/AnthonyBourdainPartsUnknown.us-8e4e9e.webp" group-title="Series",Anthony Bourdain: Parts Unknown
+https://jmp2.uk/plu-69173ce8abd4703b27f71d44.m3u8
+#EXTINF:-1 tvg-id="AntiquesRoadshowUK.us@SD" tvg-logo="logos/AntiquesRoadshowUK.us-e97835.webp" group-title="Series",Antiques Roadshow UK (1080p)
+https://bbc-antiquesroadshowuk-1-us.roku.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="AreWeThereYet.us@SD" tvg-logo="logos/AreWeThereYet.us-cb6fc5.webp" group-title="Series",Are We There Yet? (1080p)
+https://amg00353-lionsgatestudio-arewethereyet-samsunguk-6h2ju.amagi.tv/playlist/amg00353-lionsgatestudio-arewethereyet-samsunguk/playlist.m3u8
+#EXTINF:-1 tvg-id="AtHomewithFamilyHandyman.us@SD" tvg-logo="logos/AtHomewithFamilyHandyman.us-3ad4bd.webp" group-title="Series",At Home with Family Handyman (720p)
+https://d1ik2p49apxqjf.cloudfront.net/playlist.m3u8
+#EXTINF:-1 tvg-id="AuctionHunters.se@SE" tvg-logo="logos/AuctionHunters.se-054236.webp" group-title="Series",Auction Hunters (Sweden)
+https://jmp2.uk/plu-62da7380478a5b0007e610d9.m3u8
+#EXTINF:-1 tvg-id="AuctionHunters.se@DK" tvg-logo="logos/AuctionHunters.se-054236.webp" group-title="Series",Auction Hunters (Sweden) DK
+https://jmp2.uk/plu-62da73c4ec46c000070f4cb1.m3u8
+#EXTINF:-1 tvg-id="AuctionHunters.se@NO" tvg-logo="logos/AuctionHunters.se-054236.webp" group-title="Series",Auction Hunters (Sweden) NO
+https://jmp2.uk/plu-62da7159ca8f220008032730.m3u8
+#EXTINF:-1 tvg-id="AVASeries.ir@SD" tvg-logo="logos/AVASeries.ir-ad2b78.webp" group-title="Series",AVA Series
+https://avaserieshls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="Avatar.de@GB" tvg-logo="logos/Avatar.de-753ea8.webp" group-title="Animation;Kids;Series",Avatar (Germany)
+https://jmp2.uk/plu-656df599c0fc8800089c75ab.m3u8
+#EXTINF:-1 tvg-id="Avatar.se@DK" tvg-logo="logos/Avatar.se-d2de97.webp" group-title="Animation;Kids;Series",Avatar (Sweden)
+https://jmp2.uk/plu-61c09b48d6d97900076e91c5.m3u8
+#EXTINF:-1 tvg-id="Awkward.de@DACH" tvg-logo="logos/Awkward.de-edfc9d.webp" group-title="Series",Awkward (Germany)
+https://jmp2.uk/plu-62bc1784120ba80007935aaa.m3u8
+#EXTINF:-1 tvg-id="BabAlHara.sa@SD" tvg-logo="logos/BabAlHara.sa-cd76c9.webp" group-title="Series",Bab Al Hara (1080p)
+https://shd-amg-fast.edgenextcdn.net/tx010/playlist.m3u8
+#EXTINF:-1 tvg-id="Balabol.ru@SD" tvg-logo="logos/Balabol.ru-99dab8.webp" group-title="Series",Balabol (1080p)
+https://cdn-dvr.ntv.ru/Balabol/index.m3u8
+#EXTINF:-1 tvg-id="BarRescue.us@SD" tvg-logo="logos/BarRescue.us-0a0d91.webp" group-title="Series",Bar Rescue
+https://jmp2.uk/plu-60a3d889a5b3690008dc7fe8.m3u8
+#EXTINF:-1 tvg-id="BarRescue.us@CA" tvg-logo="logos/BarRescue.us-0a0d91.webp" group-title="Series",Bar Rescue CA
+https://jmp2.uk/plu-655f2ee6c0fc88000877d26c.m3u8
+#EXTINF:-1 tvg-id="Baywatch.us@US" tvg-logo="logos/Baywatch.us-d6bc41.webp" group-title="Series",Baywatch (1080p)
+https://amg00145-fremantlemedian-baywatch-samsungau-gtsd6.amagi.tv/playlist/amg00145-fremantlemedian-baywatch-samsungau/playlist.m3u8
+#EXTINF:-1 tvg-id="BBCDrama.uk@Spain" tvg-logo="logos/BBCDrama.uk-3f8297.webp" group-title="Series",BBC Drama (1080p)
+https://amg00793-amg00793c40-rakuten-es-5444.playouts.now.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="Becker.se@SE" tvg-logo="logos/Becker.se-eed841.webp" group-title="Classic;Series",Becker (Sweden)
+https://jmp2.uk/plu-672e16f5daad7f0008929a0d.m3u8
+#EXTINF:-1 tvg-id="Becker.se@DK" tvg-logo="logos/Becker.se-eed841.webp" group-title="Classic;Series",Becker (Sweden) DK
+https://jmp2.uk/plu-672e157d7d5da5000812872d.m3u8
+#EXTINF:-1 tvg-id="Becker.se@NO" tvg-logo="logos/Becker.se-eed841.webp" group-title="Classic;Series",Becker (Sweden) NO
+https://jmp2.uk/plu-672e1634e482950008c759a5.m3u8
+#EXTINF:-1 tvg-id="BET.se@SE" tvg-logo="logos/BET.se-a46490.webp" group-title="Series",BET
+https://jmp2.uk/plu-61c187ef1efe1b0007571711.m3u8
+#EXTINF:-1 tvg-id="BET.se@DK" tvg-logo="logos/BET.se-a46490.webp" group-title="Series",BET DK
+https://jmp2.uk/plu-61c1939b8929e40007ff6382.m3u8
+#EXTINF:-1 tvg-id="BET.se@NO" tvg-logo="logos/BET.se-a46490.webp" group-title="Series",BET NO
+https://jmp2.uk/plu-61dd5bf8db0b8e00080804ff.m3u8
+#EXTINF:-1 tvg-id="BeverlyHills90210.us@SD" tvg-logo="logos/BeverlyHills90210.us-3b1abf.webp" group-title="Series",Beverly Hills 90210
+https://jmp2.uk/plu-5f4d83e0a382c00007bc02e7.m3u8
+#EXTINF:-1 tvg-id="BlackInkCrew.us@SD" tvg-logo="logos/BlackInkCrew.us-116dbf.webp" group-title="Series",Black Ink Crew
+https://jmp2.uk/plu-5d51e2bceca5b4b2c0e06c50.m3u8
+#EXTINF:-1 tvg-id="BlueBloods.us@SD" tvg-logo="logos/BlueBloods.us-d50759.webp" group-title="Series",Blue Bloods
+https://jmp2.uk/plu-61b3b8c645b45d0007a9bb8d.m3u8
+#EXTINF:-1 tvg-id="BondiRescue.se@SE" tvg-logo="logos/BondiRescue.se-bcf843.webp" group-title="Series",Bondi Rescue (Sweden) (720p)
+https://jmp2.uk/plu-660d67eec8311c0008b8c3f7.m3u8
+#EXTINF:-1 tvg-id="BondiRescue.se@DK" tvg-logo="logos/BondiRescue.se-bcf843.webp" group-title="Series",Bondi Rescue (Sweden) DK (720p)
+https://jmp2.uk/plu-660d66be7bcd8600087cfee5.m3u8
+#EXTINF:-1 tvg-id="BondiRescue.se@NO" tvg-logo="logos/BondiRescue.se-bcf843.webp" group-title="Series",Bondi Rescue (Sweden) NO (720p)
+https://jmp2.uk/plu-660d67c419ca71000849a4e9.m3u8
+#EXTINF:-1 tvg-id="BritainsNextTopModel.se@SE" tvg-logo="logos/BritainsNextTopModel.se-8b6dbb.webp" group-title="Series",Britain's Next Top Model
+https://jmp2.uk/plu-67a09e5921af38000808900a.m3u8
+#EXTINF:-1 tvg-id="BritainsNextTopModel.se@DK" tvg-logo="logos/BritainsNextTopModel.se-8b6dbb.webp" group-title="Series",Britain's Next Top Model DK
+https://jmp2.uk/plu-67a09ddc21af380008088dc3.m3u8
+#EXTINF:-1 tvg-id="BritainsNextTopModel.se@NO" tvg-logo="logos/BritainsNextTopModel.se-8b6dbb.webp" group-title="Series",Britain's Next Top Model NO
+https://jmp2.uk/plu-67a09e25c070cf00083c40fa.m3u8
+#EXTINF:-1 tvg-id="Bull.se@SE" tvg-logo="logos/Bull.se-a52bc6.webp" group-title="Series",Bull
+https://jmp2.uk/plu-6964b9e19bf57be1537fc7d7.m3u8
+#EXTINF:-1 tvg-id="Bull.se@DK" tvg-logo="logos/Bull.se-a52bc6.webp" group-title="Series",Bull DK
+https://jmp2.uk/plu-6964b982ca459f9b939da8e6.m3u8
+#EXTINF:-1 tvg-id="Bull.se@NO" tvg-logo="logos/Bull.se-a52bc6.webp" group-title="Series",Bull NO
+https://jmp2.uk/plu-6964b9b97d2afdec4f9390f6.m3u8
+#EXTINF:-1 tvg-id="CagneyLacey.de@GB" tvg-logo="logos/CagneyLacey.de-d5d1ce.webp" group-title="Series",Cagney & Lacey
+https://jmp2.uk/plu-6960c5a906d76f50db2816dc.m3u8
+#EXTINF:-1 tvg-id="CarChase.se@SE" tvg-logo="logos/CarChase.se-4c262b.webp" group-title="Series",Car Chase (Sweden) (720p)
+https://jmp2.uk/plu-65a93be02fac9c00083cbac4.m3u8
+#EXTINF:-1 tvg-id="CarChase.se@DK" tvg-logo="logos/CarChase.se-4c262b.webp" group-title="Series",Car Chase (Sweden) DK (720p)
+https://jmp2.uk/plu-65a93b0607e03a000895abda.m3u8
+#EXTINF:-1 tvg-id="CarChase.se@NO" tvg-logo="logos/CarChase.se-4c262b.webp" group-title="Series",Car Chase (Sweden) NO (720p)
+https://jmp2.uk/plu-65a93b870c7ff50008d1ca47.m3u8
+#EXTINF:-1 tvg-id="CelebrityNameGame.us@SD" tvg-logo="logos/CelebrityNameGame.us-b0932b.webp" group-title="Series",Celebrity Name Game (1080p) [Geo-blocked]
+https://amg00353-amg00353c19-xumo-us-2608.playouts.now.amagi.tv/lionsgate-clbng/playlist.m3u8
+#EXTINF:-1 tvg-id="ChaosCity.us@Germany" tvg-logo="logos/ChaosCity.us-5642a1.webp" group-title="Series",Chaos City
+https://jmp2.uk/plu-60afbad343e3840007164348.m3u8
+#EXTINF:-1 tvg-id="Cheers.us@CA" tvg-logo="logos/Cheers.us-42bf01.webp" group-title="Series",Cheers (United States)
+https://jmp2.uk/plu-62bdb7f0db2eb30007376d4d.m3u8
+#EXTINF:-1 tvg-id="Choppertown.us@SD" tvg-logo="logos/Choppertown.us-2aa20b.webp" group-title="Auto;Series",Choppertown (720p)
+https://linear-11.frequency.stream/dist/glewedtv/11/hls/master/playlist.m3u8
+#EXTINF:-1 tvg-id="CinCin.de@IT" tvg-logo="logos/CinCin.de-963ff8.webp" group-title="Classic;Series",Cin Cin
+https://jmp2.uk/plu-65cb78b83a116800079e2e35.m3u8
+#EXTINF:-1 tvg-id="CityEdenKinoDok.ru@HD" tvg-logo="logos/CityEdenKinoDok.ru-ed5b0f.webp" group-title="Documentary;Series",City Eden KinoDok [Not 24/7]
+https://cityeden.catcast.tv/content/38354/index.m3u8
+#EXTINF:-1 tvg-id="CityEdenTeleNovella.ru@HD" tvg-logo="logos/CityEdenTeleNovella.ru-b625dc.webp" group-title="Series",City Eden TeleNovella [Not 24/7]
+https://cityeden.catcast.tv/content/46209/index.m3u8
+#EXTINF:-1 tvg-id="CNBCe.tr@SD" tvg-logo="logos/CNBCe.tr-be75c1.webp" group-title="Business;Series",CNBC-e
+https://hnpsechtsc.turknet.ercdn.net/xpnvudnlsv/cnbc-e/cnbc-e.m3u8
+#EXTINF:-1 tvg-id="ColdCaseFiles.us@SD" tvg-logo="logos/ColdCaseFiles.us-b32ef3.webp" group-title="Series",Cold Case Files (1080p)
+https://aegis-cloudfront-1.tubi.video/1e764712-0649-4946-bd7e-f1bbba3be6fa/playlist.m3u8
+#EXTINF:-1 tvg-id="Cops.us@SD" tvg-logo="logos/Cops.us-a61c80.webp" group-title="Series",Cops (720p)
+https://langleyproductions-cops-2-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="CSI.se@DK" tvg-logo="logos/CSI.se-f13d32.webp" group-title="Series",CSI (Sweden)
+https://jmp2.uk/plu-6525419dc52b3600083db9c3.m3u8
+#EXTINF:-1 tvg-id="CSI.us@SD" tvg-logo="logos/CSI.us-a582b7.webp" group-title="Series",CSI (United States)
+https://jmp2.uk/plu-5efbd29e4aa26700076c0d06.m3u8
+#EXTINF:-1 tvg-id="CSICrimeSceneInvestigation.de@GB" tvg-logo="logos/CSICrimeSceneInvestigation.de-aa30e3.webp" group-title="Series",CSI: Crime Scene Investigation
+https://jmp2.uk/plu-6304f8d5ffb61000071ab478.m3u8
+#EXTINF:-1 tvg-id="CSIMiami.us@SD" tvg-logo="logos/CSIMiami.us-28c9b0.webp" group-title="Series",CSI: Miami
+https://jmp2.uk/plu-62f54c11b3af68000702c304.m3u8
+#EXTINF:-1 tvg-id="CSIMiami.us@BR" tvg-logo="logos/CSIMiami.us-28c9b0.webp" group-title="Series",CSI: Miami BR
+https://jmp2.uk/plu-63eb9c5351f5d000085e8d7e.m3u8
+#EXTINF:-1 tvg-id="CSIMiami.us@LatAm" tvg-logo="logos/CSIMiami.us-28c9b0.webp" group-title="Series",CSI: Miami LatAm
+https://jmp2.uk/plu-63eb9255c111bc0008fe6ec4.m3u8
+#EXTINF:-1 tvg-id="CSINY.us@SD" tvg-logo="logos/CSINY.us-878bb8.webp" group-title="Series",CSI: NY
+https://jmp2.uk/plu-62f54c6439183b000769fb8f.m3u8
+#EXTINF:-1 tvg-id="CurroJimenez.us@Spain" tvg-logo="logos/CurroJimenez.us-d9c602.webp" group-title="Series",Curro Jimenez
+https://jmp2.uk/plu-5f1acd36779de70007a680d1.m3u8
+#EXTINF:-1 tvg-id="DallasCowboysCheerleaders.se@SE" tvg-logo="logos/DallasCowboysCheerleaders.se-381e81.webp" group-title="Series",Dallas Cowboys Cheerleaders
+https://jmp2.uk/plu-64e7715c4c5ed800081230e4.m3u8
+#EXTINF:-1 tvg-id="DallasCowboysCheerleaders.se@DK" tvg-logo="logos/DallasCowboysCheerleaders.se-381e81.webp" group-title="Series",Dallas Cowboys Cheerleaders DK
+https://jmp2.uk/plu-64e87c6b28cec700088ceb55.m3u8
+#EXTINF:-1 tvg-id="DallasCowboysCheerleaders.se@NO" tvg-logo="logos/DallasCowboysCheerleaders.se-381e81.webp" group-title="Series",Dallas Cowboys Cheerleaders NO
+https://jmp2.uk/plu-64e77016324d190008291c13.m3u8
+#EXTINF:-1 tvg-id="DarkMatterTV.us@SD" tvg-logo="logos/DarkMatterTV.us-df262a.webp" group-title="Series",Dark Matter TV (720p)
+https://tricoast-tv-dark-matter-01-us.ono.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="DatingNakedUK.se@SE" tvg-logo="logos/DatingNakedUK.se-ca6c2f.webp" group-title="Series",Dating Naked UK
+https://jmp2.uk/plu-692edd6bdb8695f63e14f3b9.m3u8
+#EXTINF:-1 tvg-id="DatingNakedUK.se@DK" tvg-logo="logos/DatingNakedUK.se-ca6c2f.webp" group-title="Series",Dating Naked UK DK
+https://jmp2.uk/plu-692edc78d52ea9e4858cf78f.m3u8
+#EXTINF:-1 tvg-id="DatingNakedUK.se@NO" tvg-logo="logos/DatingNakedUK.se-ca6c2f.webp" group-title="Series",Dating Naked UK NO
+https://jmp2.uk/plu-692edcff77f0147d69f19498.m3u8
+#EXTINF:-1 tvg-id="DealorNoDeal.us@SD" tvg-logo="logos/DealorNoDeal.us-31c338.webp" group-title="Series",Deal or No Deal (1080p)
+https://amg00627-banijaygroup-dealornodeal-samsungau-si7xg.amagi.tv/playlist/amg00627-banijaygroup-dealornodeal-samsungau/playlist.m3u8
+#EXTINF:-1 tvg-id="Degrassi.us@US" tvg-logo="logos/Degrassi.us-827056.webp" group-title="Series",Degrassi (720p)
+https://d3537vnymvfque.cloudfront.net/playlist.m3u8
+#EXTINF:-1 tvg-id="DesignatedSurvivor.us@SD" tvg-logo="logos/DesignatedSurvivor.us-9d9d20.webp" group-title="Series",Designated Survivor (1080p) [Geo-blocked]
+https://amg00353-amg00353c40-xumo-us-4839.playouts.now.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="DiagnosisMurder.se@SE" tvg-logo="logos/DiagnosisMurder.se-a04a26.webp" group-title="Classic;Series",Diagnosis Murder
+https://jmp2.uk/plu-668bf9be0642e5000815102d.m3u8
+#EXTINF:-1 tvg-id="DiagnosisMurder.se@DK" tvg-logo="logos/DiagnosisMurder.se-a04a26.webp" group-title="Classic;Series",Diagnosis Murder DK
+https://jmp2.uk/plu-668bf7dd74f5ec000817e6d1.m3u8
+#EXTINF:-1 tvg-id="DiagnosisMurder.se@NO" tvg-logo="logos/DiagnosisMurder.se-a04a26.webp" group-title="Classic;Series",Diagnosis Murder NO
+https://jmp2.uk/plu-668bf91208d5490008065ffd.m3u8
+#EXTINF:-1 tvg-id="DiffrentStrokesArnold.us@Brazil" tvg-logo="logos/DiffrentStrokesArnold.us-261ec4.webp" group-title="Series",Diff'rent Strokes Arnold
+https://jmp2.uk/plu-61f1d27a189ed10007b7393e.m3u8
+#EXTINF:-1 tvg-id="DocMartin.se@SE" tvg-logo="logos/DocMartin.se-4c963c.webp" group-title="Series",Doc Martin (Sweden)
+https://jmp2.uk/plu-62b1e5e77d15410007f798c6.m3u8
+#EXTINF:-1 tvg-id="DocMartin.us@CA" tvg-logo="logos/DocMartin.us-1b97f4.webp" group-title="Series",Doc Martin (United States)
+https://jmp2.uk/plu-62e922f6675f71000736db3b.m3u8
+#EXTINF:-1 tvg-id="DoctorWhoClassic.us@US" tvg-logo="logos/DoctorWhoClassic.us-a581e8.webp" group-title="Series",Doctor Who Classic (1080p)
+https://bbc-classicdrwho-1-us.roku.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="DogtheBountyHunter.us@US" tvg-logo="logos/DogtheBountyHunter.us-cef227.webp" group-title="Series",Dog the Bounty Hunter (1080p)
+https://aegis-cloudfront-1.tubi.video/ff0ad399-75ed-42ba-8c60-75bb6cb8c929/playlist.m3u8
+#EXTINF:-1 tvg-id="DogtheBountyHunter.us@UK" tvg-logo="logos/DogtheBountyHunter.us-cef227.webp" group-title="Series",Dog the Bounty Hunter UK (1080p)
+https://amg00276-amg00276c11-rakuten-uk-3446.playouts.now.amagi.tv/playlist/amg00276-aetelevisionnetworksfast-dogthebountyhunterall-rakutenuk/playlist.m3u8
+#EXTINF:-1 tvg-id="DogWhisperer.us@UK" tvg-logo="logos/DogWhisperer.us-00fa0e.webp" group-title="Series",Dog Whisperer (1080p) [Geo-blocked]
+https://pb-ffpxvjshv4rxx.akamaized.net/Dog_Whisperer_with_Cesar_Millan.m3u8
+#EXTINF:-1 tvg-id="DontTellTheBride.uk@SD" tvg-logo="logos/DontTellTheBride.uk-db032d.webp" group-title="Series",Don't Tell The Bride (1080p)
+https://amg00426-lds-amg00426c15-samsung-au-3684.playouts.now.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="DonnaTV.it@SD" tvg-logo="logos/DonnaTV.it-54f744.webp" group-title="Series",Donna TV (480p)
+https://streaming.softwarecreation.it/DonnaTv/DonnaTv/playlist.m3u8
+#EXTINF:-1 tvg-id="DramaChannel.th@SD" tvg-logo="logos/DramaChannel.th-bd4919.webp" group-title="Series",Drama Channel (1080p)
+https://lb1-live-mv.v2h-cdn.com/hls/fdee/mvmalldd/mvmalldd.m3u8
+#EXTINF:-1 tvg-id="DuckDynasty.us@UK" tvg-logo="logos/DuckDynasty.us-80b69b.webp" group-title="Series",Duck Dynasty (1080p)
+https://amg00276-amg00276c2-rakuten-uk-3449.playouts.now.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="Dynasty.us@SD" tvg-logo="logos/Dynasty.us-c8c1fe.webp" group-title="Series",Dynasty
+https://jmp2.uk/plu-64d1606b4c5ed80008e3b8b9.m3u8
+#EXTINF:-1 tvg-id="ElComisario.us@Spain" tvg-logo="logos/ElComisario.us-fe9be8.webp" group-title="Series",El Comisario
+https://jmp2.uk/plu-60c343007bcabe0007242aa6.m3u8
+#EXTINF:-1 tvg-id="Elencantadordeperros.us@Spain" tvg-logo="logos/Elencantadordeperros.us-3e2b4c.webp" group-title="Series",El encantador de perros
+https://jmp2.uk/plu-60e45687313c5f0007bc8e94.m3u8
+#EXTINF:-1 tvg-id="Empenosalobestia.us@Spain" tvg-logo="logos/Empenosalobestia.us-beacd4.webp" group-title="Series",Empenos a lo bestia
+https://jmp2.uk/plu-60218baa464ef900073168c1.m3u8
+#EXTINF:-1 tvg-id="FamilyTies.us@SD" tvg-logo="logos/FamilyTies.us-64ffd9.webp" group-title="Series",Family Ties (United States)
+https://jmp2.uk/plu-5f77939a630f530007dde654.m3u8
+#EXTINF:-1 tvg-id="Farscape.us@SD" tvg-logo="logos/Farscape.us-6a3dcf.webp" group-title="Series",Farscape
+https://jmp2.uk/plu-699c1b4c9c3b075ecd513139.m3u8
+#EXTINF:-1 tvg-id="FBoyIsland.se@DK" tvg-logo="logos/FBoyIsland.se-617bf2.webp" group-title="Series",FBoy Island
+https://jmp2.uk/plu-6790d6c7bc03978b9bfbfd44.m3u8
+#EXTINF:-1 tvg-id="FearFactor.us@US" tvg-logo="logos/FearFactor.us-2771e7.webp" group-title="Series",Fear Factor (1080p)
+https://amg00627-banijaygroup-fearfactor-samsungau-9vdod.amagi.tv/playlist/amg00627-banijaygroup-fearfactor-samsungau/playlist.m3u8
+#EXTINF:-1 tvg-id="FeelGoodDrama.us@SD" tvg-logo="logos/FeelGoodDrama.us-0701cb.webp" group-title="Series",Feel Good Drama
+https://jmp2.uk/plu-65775af3b3801200084a3aa4.m3u8
+#EXTINF:-1 tvg-id="Frasier.us@CA" tvg-logo="logos/Frasier.us-94ef65.webp" group-title="Series",Frasier (United States)
+https://jmp2.uk/plu-62f4f90e39183b000769f12b.m3u8
+#EXTINF:-1 tvg-id="FrequenceNovelas.fr@SD" tvg-logo="logos/FrequenceNovelas.fr-0e933d.webp" group-title="Series",Frequence Novelas (1080p)
+https://d20oth1416y9a1.cloudfront.net/playlist/amg00711-zylofast-frequencenovelas-rakutenus/playlist.m3u8
+#EXTINF:-1 tvg-id="GEMSeriesPlus.tr@SD" tvg-logo="logos/GEMSeriesPlus.tr-7751ae.webp" group-title="Series",GEM Series +
+https://ca-rt.onetv.app/gemseriesplus/index-0.m3u8?token=onetv202
+#EXTINF:-1 tvg-id="GhostDimension.us@UK" tvg-logo="logos/GhostDimension.us-749231.webp" group-title="Series",Ghost Dimension
+https://jmp2.uk/plu-619e1bb3e9af5a0007f235ad.m3u8
+#EXTINF:-1 tvg-id="GhostHunters.us@UK" tvg-logo="logos/GhostHunters.us-5f577f.webp" group-title="Series",Ghost Hunters (1080p)
+https://amg00353-amg00353c30-samsung-au-3440.playouts.now.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="Gunsmoke.us@SD" tvg-logo="logos/Gunsmoke.us-ef172a.webp" group-title="Series",Gunsmoke
+https://jmp2.uk/plu-60f75771dfc72a00071fd0e0.m3u8
+#EXTINF:-1 tvg-id="GZT.tr@SD" tvg-logo="logos/GZT.tr-bca268.webp" group-title="Documentary;Series",GZT (1080p)
+https://gzttv-live.lg.mncdn.com/gzttv/gzttv/playlist.m3u8
+#EXTINF:-1 tvg-id="HappyDays.se@SE" tvg-logo="logos/HappyDays.se-8a7f43.webp" group-title="Classic;Series",Happy Days (Sweden)
+https://jmp2.uk/plu-654a52254d6d8f00084eacfc.m3u8
+#EXTINF:-1 tvg-id="HappyDays.se@DK" tvg-logo="logos/HappyDays.se-8a7f43.webp" group-title="Classic;Series",Happy Days (Sweden) DK
+https://jmp2.uk/plu-654a4e29ab05240008a18625.m3u8
+#EXTINF:-1 tvg-id="HappyDays.se@NO" tvg-logo="logos/HappyDays.se-8a7f43.webp" group-title="Classic;Series",Happy Days (Sweden) NO
+https://jmp2.uk/plu-654a508d986ad20008a456a5.m3u8
+#EXTINF:-1 tvg-id="HappyDays.us@SD" tvg-logo="logos/HappyDays.us-c11734.webp" group-title="Series",Happy Days (United States)
+https://jmp2.uk/plu-5f7794162a4559000781fc12.m3u8
+#EXTINF:-1 tvg-id="HappyDays.us@CA" tvg-logo="logos/HappyDays.us-c11734.webp" group-title="Series",Happy Days (United States) CA
+https://jmp2.uk/plu-62e917b5e354cf0007b97a67.m3u8
+#EXTINF:-1 tvg-id="HauntTV.ca@SD" tvg-logo="logos/HauntTV.ca-305535.webp" group-title="Series",HauntTV (1080p)
+https://amg01446-blueantmediacan-haunttvaussam-samsungau-vcnai.amagi.tv/playlist/amg01446-blueantmediacan-haunttvaussam-samsungau/playlist.m3u8
+#EXTINF:-1 tvg-id="HauntTV.ca@CA" tvg-logo="logos/HauntTV.ca-305535.webp" group-title="Series",HauntTV CA (720p)
+https://jmp2.uk/plu-63934c218ef524000757b122.m3u8
+#EXTINF:-1 tvg-id="Heleneetlesgarcons.us@France" tvg-logo="logos/Heleneetlesgarcons.us-f3025c.webp" group-title="Series",Helene et les garcons
+https://jmp2.uk/plu-604f8de01b479400078fb1e7.m3u8
+#EXTINF:-1 tvg-id="HellsKitchen.us@UK" tvg-logo="logos/HellsKitchen.us-e117bb.webp" group-title="Series",Hell's Kitchen (1080p)
+https://amg00654-itv-amg00654c1-samsung-au-1072.playouts.now.amagi.tv/itv-hellskitchen-samsung/playlist.m3u8
+#EXTINF:-1 tvg-id="HighwaytoHeaven.us@UK" tvg-logo="logos/HighwaytoHeaven.us-2117c1.webp" group-title="Series",Highway to Heaven
+https://jmp2.uk/plu-68bff9a63efb41cd97562e46.m3u8
+#EXTINF:-1 tvg-id="HomeMadeNation.us@SD" tvg-logo="logos/HomeMadeNation.us-f0deaa.webp" group-title="Series",Home.Made.Nation (720p)
+https://jmp2.uk/plu-5dc1cb279c91420009db261d.m3u8
+#EXTINF:-1 tvg-id="HomesUnderHammer.us@UK" tvg-logo="logos/HomesUnderHammer.us-abdc5a.webp" group-title="Series",Homes Under Hammer (720p)
+https://all3media-homes-under-the-hammer-1-au.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="HomicideHunter.us@UK" tvg-logo="logos/HomicideHunter.us-01b6da.webp" group-title="Series",Homicide Hunter
+https://jmp2.uk/plu-619e21b213ef6b0007d8c17a.m3u8
+#EXTINF:-1 tvg-id="HouseofLies.se@SE" tvg-logo="logos/HouseofLies.se-c6c098.webp" group-title="Series",House of Lies
+https://jmp2.uk/plu-693ae6bf0ddf7d2a40b7fd35.m3u8
+#EXTINF:-1 tvg-id="HouseofLies.se@DK" tvg-logo="logos/HouseofLies.se-c6c098.webp" group-title="Series",House of Lies DK
+https://jmp2.uk/plu-693ae62a43fe00a023e76e0d.m3u8
+#EXTINF:-1 tvg-id="HouseofLies.se@NO" tvg-logo="logos/HouseofLies.se-c6c098.webp" group-title="Series",House of Lies NO
+https://jmp2.uk/plu-693ae65fab5959c036fa6c1e.m3u8
+#EXTINF:-1 tvg-id="HTV3.vn@SD" tvg-logo="logos/HTV3.vn-cc07f2.webp" group-title="Entertainment;General;Series",HTV3 (720p)
+https://dethich.pw/htv3/index.m3u8
+#EXTINF:-1 tvg-id="iCarly.us@BR" tvg-logo="logos/iCarly.us-113cc3.webp" group-title="Series",iCarly (United States)
+https://jmp2.uk/plu-620ff46e0a576e0007dc2f89.m3u8
+#EXTINF:-1 tvg-id="iCarly.us@LatAm" tvg-logo="logos/iCarly.us-113cc3.webp" group-title="Series",iCarly (United States) LatAm
+https://jmp2.uk/plu-620ff0a01f9e8700076c6f9d.m3u8
+#EXTINF:-1 tvg-id="iCarly.us@SD" tvg-logo="logos/iCarly.us-113cc3.webp" group-title="Series",iCarly (United States) SD
+https://jmp2.uk/plu-6450209d939a5900084dba1d.m3u8
+#EXTINF:-1 tvg-id="IcePilots.us@Germany" tvg-logo="logos/IcePilots.us-7d43f4.webp" group-title="Series",Ice Pilots
+https://jmp2.uk/plu-5ce40f42ba7f7f5ea9518fe1.m3u8
+#EXTINF:-1 tvg-id="ImpossibleQuizShow.us@SD" tvg-logo="logos/ImpossibleQuizShow.us-d1b395.webp" group-title="Series",Impossible Quiz Show (1080p)
+https://bbc-impossible-1-us.roku.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="InazumaEleven.us@France" tvg-logo="logos/InazumaEleven.us-5bbea6.webp" group-title="Kids;Series",Inazuma Eleven
+https://jmp2.uk/plu-632c6df43d2bc5000751f621.m3u8
+#EXTINF:-1 tvg-id="InsideCrime.us@UK" tvg-logo="logos/InsideCrime.us-9f9af2.webp" group-title="Series",Inside Crime (1080p)
+https://aenetworks-insidecrime-rakuten.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="InstantSaga.us@US" tvg-logo="logos/InstantSaga.us-f6f7c5.webp" group-title="Series",Instant Saga
+https://jmp2.uk/plu-60549e98061b5f000776866a.m3u8
+#EXTINF:-1 tvg-id="Investiga.us@LatAm" tvg-logo="logos/Investiga.us-bfa1c4.webp" group-title="Series",Investiga
+https://jmp2.uk/plu-5dcde27ffae9520009c0c75a.m3u8
+#EXTINF:-1 tvg-id="Investiga.us@US" tvg-logo="logos/Investiga.us-bfa1c4.webp" group-title="Series",Investiga US
+https://jmp2.uk/plu-5cf96b8f4f1ca3f0629f4bf1.m3u8
+#EXTINF:-1 tvg-id="InvestigationbyPlutoTV.de@FR" tvg-logo="logos/InvestigationbyPlutoTV.de-69148a.webp" group-title="Series",Investigation by Pluto TV
+https://jmp2.uk/plu-6683cd2fca74680008772545.m3u8
+#EXTINF:-1 tvg-id="IronChef.us@US" tvg-logo="logos/IronChef.us-edeec5.webp" group-title="Series",Iron Chef
+https://jmp2.uk/plu-6582f8dadfed030008e5a93d.m3u8
+#EXTINF:-1 tvg-id="JAG.se@SE" tvg-logo="logos/JAG.se-22dc83.webp" group-title="Classic;Series",JAG (Sweden)
+https://jmp2.uk/plu-654a515f986ad20008a4593b.m3u8
+#EXTINF:-1 tvg-id="JAG.se@DK" tvg-logo="logos/JAG.se-22dc83.webp" group-title="Classic;Series",JAG (Sweden) DK
+https://jmp2.uk/plu-654a4ab92c1d330008657ae5.m3u8
+#EXTINF:-1 tvg-id="JAG.se@NO" tvg-logo="logos/JAG.se-22dc83.webp" group-title="Classic;Series",JAG (Sweden) NO
+https://jmp2.uk/plu-654a4fc753fc9700083ae79f.m3u8
+#EXTINF:-1 tvg-id="JAG.us@CA" tvg-logo="logos/JAG.us-2b65ca.webp" group-title="Series",JAG (United States)
+https://jmp2.uk/plu-66a105f4a79dea0008aa5e0f.m3u8
+#EXTINF:-1 tvg-id="JerseyShore.us@SD" tvg-logo="logos/JerseyShore.us-1b4081.webp" group-title="Series",Jersey Shore (United States)
+https://jmp2.uk/plu-609bfa51fbecc1000733152e.m3u8
+#EXTINF:-1 tvg-id="JohnnyCarsonTV.us@SD" tvg-logo="logos/JohnnyCarsonTV.us-84b002.webp" group-title="Series",Johnny Carson TV (720p)
+https://aegis-cloudfront-1.tubi.video/475550ae-8708-46a5-a7c3-54acb3d91480/playlist.m3u8
+#EXTINF:-1 tvg-id="JornadanasEstrelasANovaGeracao.us@BR" tvg-logo="logos/JornadanasEstrelasANovaGeracao.us-9f72c4.webp" group-title="Series",Jornada nas Estrelas: A Nova Geracao
+https://jmp2.uk/plu-69162ad79505d0f3b1ebf07d.m3u8
+#EXTINF:-1 tvg-id="JornadanasEstrelasDeepSpaceNine.us@BR" tvg-logo="logos/JornadanasEstrelasDeepSpaceNine.us-8b74de.webp" group-title="Series",Jornada nas Estrelas: Deep Space Nine
+https://jmp2.uk/plu-69162af591700f4c4c135c95.m3u8
+#EXTINF:-1 tvg-id="JornadanasEstrelasVoyager.us@BR" tvg-logo="logos/JornadanasEstrelasVoyager.us-5876aa.webp" group-title="Series",Jornada nas Estrelas: Voyager
+https://jmp2.uk/plu-69162b1ef189e235142b17ab.m3u8
+#EXTINF:-1 tvg-id="JudgeJudy.se@SE" tvg-logo="logos/JudgeJudy.se-9143f7.webp" group-title="Series",Judge Judy (Sweden)
+https://jmp2.uk/plu-6380c4ab81c8d2000790fbf3.m3u8
+#EXTINF:-1 tvg-id="JudgeJudy.se@DK" tvg-logo="logos/JudgeJudy.se-9143f7.webp" group-title="Series",Judge Judy (Sweden) DK
+https://jmp2.uk/plu-6380c36389eccc000858c50f.m3u8
+#EXTINF:-1 tvg-id="JudgeJudy.se@NO" tvg-logo="logos/JudgeJudy.se-9143f7.webp" group-title="Series",Judge Judy (Sweden) NO
+https://jmp2.uk/plu-6380c428dd0f47000799907c.m3u8
+#EXTINF:-1 tvg-id="JudgeNosey.us@US" tvg-logo="logos/JudgeNosey.us-1adbf4.webp" group-title="Series",Judge Nosey (1080p)
+https://amg00514-noseybaxterllc-realnosey-cineverse-tqbpv.amagi.tv/playlist/amg00514-noseybaxterllc-realnosey-cineverse/playlist.m3u8
+#EXTINF:-1 tvg-id="KenanKel.us@LatAm" tvg-logo="logos/KenanKel.us-01d544.webp" group-title="Series",Kenan & Kel
+https://jmp2.uk/plu-5fcea93ffcf94500071c4b2f.m3u8
+#EXTINF:-1 tvg-id="KenanKel.us@BR" tvg-logo="logos/KenanKel.us-01d544.webp" group-title="Series",Kenan & Kel BR
+https://jmp2.uk/plu-5ffcc5130fd98c0007f2e216.m3u8
+#EXTINF:-1 tvg-id="LaRosadeGuadalupe.us@SD" tvg-logo="logos/LaRosadeGuadalupe.us-e35188.webp" group-title="Series",La Rosa de Guadalupe (360p)
+https://app.viloud.tv/hls/channel/9c88161fe675b59d4b008c776f033960.m3u8
+#EXTINF:-1 tvg-id="Lemiracledelamour.us@France" tvg-logo="logos/Lemiracledelamour.us-0942c3.webp" group-title="Series",Le miracle de l'amour
+https://jmp2.uk/plu-60549c238c3f21000753d3e0.m3u8
+#EXTINF:-1 tvg-id="LesorelleMcLeod.us@Italy" tvg-logo="logos/LesorelleMcLeod.us-52bfa0.webp" group-title="Series",Le sorelle McLeod
+https://jmp2.uk/plu-60a2837f8154ab0007c4dcdf.m3u8
+#EXTINF:-1 tvg-id="LesAnneesfac.us@France" tvg-logo="logos/LesAnneesfac.us-5e88d9.webp" group-title="Series",Les Annees fac
+https://jmp2.uk/plu-60afae68a7fc50000737186d.m3u8
+#EXTINF:-1 tvg-id="Lesfillesdacote.us@France" tvg-logo="logos/Lesfillesdacote.us-d1b9c3.webp" group-title="Series",Les filles d'a cote
+https://jmp2.uk/plu-60549d97cd7b090007c73314.m3u8
+#EXTINF:-1 tvg-id="LesNouveauxDetectives.us@France" tvg-logo="logos/LesNouveauxDetectives.us-a782df.webp" group-title="Series",Les Nouveaux Detectives
+https://jmp2.uk/plu-5f8edb6df1ebb800072edf10.m3u8
+#EXTINF:-1 tvg-id="LosarchivosdelFBI.us@Spain" tvg-logo="logos/LosarchivosdelFBI.us-d5b453.webp" group-title="Series",Los archivos del FBI
+https://jmp2.uk/plu-5f1acbed25948a0007ffbe65.m3u8
+#EXTINF:-1 tvg-id="LosAsesinatosdeMidsomer.us@Spain" tvg-logo="logos/LosAsesinatosdeMidsomer.us-1ce4a1.webp" group-title="Series",Los Asesinatos de Midsomer
+https://jmp2.uk/plu-5f1aca8310a30e00074fab92.m3u8
+#EXTINF:-1 tvg-id="LouisLaBrocante.us@France" tvg-logo="logos/LouisLaBrocante.us-424166.webp" group-title="Series",Louis La Brocante
+https://jmp2.uk/plu-5f8ed6d569d2d4000864a976.m3u8
+#EXTINF:-1 tvg-id="LoveHipHop.us@SD" tvg-logo="logos/LoveHipHop.us-7aa596.webp" group-title="Series",Love & Hip Hop
+https://jmp2.uk/plu-5d51ddf0369acdb278dfb05e.m3u8
+#EXTINF:-1 tvg-id="LuksusfellenSverige.se@NO" tvg-logo="logos/LuksusfellenSverige.se-75719c.webp" group-title="Series",Luksusfellen Sverige
+https://jmp2.uk/plu-61c1e0f1d6d97900076ea16f.m3u8
+#EXTINF:-1 tvg-id="MacGyver.se@SE" tvg-logo="logos/MacGyver.se-a35503.webp" group-title="Classic;Series",MacGyver (Sweden)
+https://jmp2.uk/plu-63a19eceb3d0eb0007439c34.m3u8
+#EXTINF:-1 tvg-id="MacGyver.se@DK" tvg-logo="logos/MacGyver.se-a35503.webp" group-title="Classic;Series",MacGyver (Sweden) DK
+https://jmp2.uk/plu-654a59742c1d33000865a797.m3u8
+#EXTINF:-1 tvg-id="MacGyver.se@NO" tvg-logo="logos/MacGyver.se-a35503.webp" group-title="Classic;Series",MacGyver (Sweden) NO
+https://jmp2.uk/plu-654a59d483595c0008187514.m3u8
+#EXTINF:-1 tvg-id="Maraya.sa@HD" tvg-logo="logos/Maraya.sa-18dd45.webp" group-title="Series",Maraya (1080p)
+https://shd-amg-fast.edgenextcdn.net/tx008/playlist.m3u8
+#EXTINF:-1 tvg-id="MarriedwithChildren.us@UK" tvg-logo="logos/MarriedwithChildren.us-3f991d.webp" group-title="Series",Married with Children
+https://jmp2.uk/plu-66bb3212fe11e5000883ea6b.m3u8
+#EXTINF:-1 tvg-id="MasterChef.us@Brazil" tvg-logo="logos/MasterChef.us-f19d46.webp" group-title="Series",MasterChef
+https://jmp2.uk/plu-6077045b6031bd00078de127.m3u8
+#EXTINF:-1 tvg-id="Matlock.se@SE" tvg-logo="logos/Matlock.se-e21a59.webp" group-title="Classic;Series",Matlock (Sweden)
+https://jmp2.uk/plu-66290c12801af8000850c1a9.m3u8
+#EXTINF:-1 tvg-id="Matlock.se@DK" tvg-logo="logos/Matlock.se-e21a59.webp" group-title="Classic;Series",Matlock (Sweden) DK
+https://jmp2.uk/plu-66290a779e68c20008a18cf3.m3u8
+#EXTINF:-1 tvg-id="Matlock.se@NO" tvg-logo="logos/Matlock.se-e21a59.webp" group-title="Classic;Series",Matlock (Sweden) NO
+https://jmp2.uk/plu-66290b7523e24f000832cc17.m3u8
+#EXTINF:-1 tvg-id="Matlock.us@SD" tvg-logo="logos/Matlock.us-23926e.webp" group-title="Series",Matlock (United States)
+https://jmp2.uk/plu-60f754f98185580007eb0754.m3u8
+#EXTINF:-1 tvg-id="Matlock.us@CA" tvg-logo="logos/Matlock.us-23926e.webp" group-title="Series",Matlock (United States) CA
+https://jmp2.uk/plu-63da365f60bc8f0008a50f44.m3u8
+#EXTINF:-1 tvg-id="MBCDramaUSA.us@SD" tvg-logo="logos/MBCDramaUSA.us-88c7fe.webp" group-title="Series",MBC Drama USA (1080p)
+https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-drama-usa/ea2f5db904aff224b7066e59c7f585a2/index.m3u8
+#EXTINF:-1 tvg-id="MBCMasrDrama.sa@SD" tvg-logo="logos/MBCMasrDrama.sa-08267a.webp" group-title="Series",MBC Masr Drama (1080p)
+https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-masr-drama/567b703c19ede6598222de81b0e4508b/index.m3u8
+#EXTINF:-1 tvg-id="McLeodsDaughters.us@UK" tvg-logo="logos/McLeodsDaughters.us-935964.webp" group-title="Series",McLeod's Daughters (1080p)
+https://amg00627-amg00627c5-samsung-nz-2807.playouts.now.amagi.tv/playlist/amg00627-banijayfast-mcleodsdaughters-samsungnz/playlist.m3u8
+#EXTINF:-1 tvg-id="McLeodsTochter.de@DACH" tvg-logo="logos/McLeodsTochter.de-cf9b55.webp" group-title="Series",McLeods Tochter
+https://jmp2.uk/plu-66c6fcfc6838ee00085beb1a.m3u8
+#EXTINF:-1 tvg-id="Medium.se@SE" tvg-logo="logos/Medium.se-9f8a75.webp" group-title="Series",Medium (Sweden)
+https://jmp2.uk/plu-68f0f642a25ba0aab3e64e66.m3u8
+#EXTINF:-1 tvg-id="Medium.se@DK" tvg-logo="logos/Medium.se-9f8a75.webp" group-title="Series",Medium (Sweden) DK
+https://jmp2.uk/plu-68f0f54ca362b63a8df4d5a9.m3u8
+#EXTINF:-1 tvg-id="Medium.se@NO" tvg-logo="logos/Medium.se-9f8a75.webp" group-title="Series",Medium (Sweden) NO
+https://jmp2.uk/plu-68f0f602a362b63a8df4efb4.m3u8
+#EXTINF:-1 tvg-id="MiExtranaObsesion.us@Spain" tvg-logo="logos/MiExtranaObsesion.us-f99c1b.webp" group-title="Series",Mi Extrana Obsesion
+https://jmp2.uk/plu-60e4573c9f963e00077ecf25.m3u8
+#EXTINF:-1 tvg-id="MidsomerMurders.us@SD" tvg-logo="logos/MidsomerMurders.us-d3d2f2.webp" group-title="Series",Midsomer Murders (1080p)
+https://all3media-midsomer-1-us.roku.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="Mireasa.ro@SD" tvg-logo="logos/Mireasa.ro-22717e.webp" group-title="Series",Mireasa (720p)
+https://stream1.antenaplay.ro/live/MireasaExtra/playlist.m3u8
+#EXTINF:-1 tvg-id="MissionImpossible.se@SE" tvg-logo="logos/MissionImpossible.se-5ef87a.webp" group-title="Classic;Series",Mission Impossible (Sweden)
+https://jmp2.uk/plu-639b4f14be012600070fe1be.m3u8
+#EXTINF:-1 tvg-id="MissionImpossible.se@DK" tvg-logo="logos/MissionImpossible.se-5ef87a.webp" group-title="Classic;Series",Mission Impossible (Sweden) DK
+https://jmp2.uk/plu-6478a9e4f77b61000817034b.m3u8
+#EXTINF:-1 tvg-id="MissionImpossible.se@NO" tvg-logo="logos/MissionImpossible.se-5ef87a.webp" group-title="Classic;Series",Mission Impossible (Sweden) NO
+https://jmp2.uk/plu-639b4eb4da3fda0008036f6e.m3u8
+#EXTINF:-1 tvg-id="MissionImpossible.us@SD" tvg-logo="logos/MissionImpossible.us-9cfb48.webp" group-title="Series",Mission Impossible (United States)
+https://jmp2.uk/plu-5f77977bd924d80007eee60c.m3u8
+#EXTINF:-1 tvg-id="MissionImpossible.us@CA" tvg-logo="logos/MissionImpossible.us-9cfb48.webp" group-title="Series",Mission Impossible (United States) CA
+https://jmp2.uk/plu-62ea43aa0c43540007f2db96.m3u8
+#EXTINF:-1 tvg-id="Misteriossinresolver.us@SD" tvg-logo="logos/Misteriossinresolver.us-6adeb1.webp" group-title="Series",Misterios sin resolver
+https://jmp2.uk/plu-5f610042272f68000867685b.m3u8
+#EXTINF:-1 tvg-id="MoreTrueCrime.us@SD" tvg-logo="logos/MoreTrueCrime.us-71b318.webp" group-title="Series",More True Crime
+https://jmp2.uk/plu-6532e6a9bdf3cf000887ab29.m3u8
+#EXTINF:-1 tvg-id="MoreTVCrime.de@GB" tvg-logo="logos/MoreTVCrime.de-532f31.webp" group-title="Series",More TV Crime
+https://jmp2.uk/plu-639b558c73423d00071ce624.m3u8
+#EXTINF:-1 tvg-id="MostHaunted.uk@UK" tvg-logo="logos/MostHaunted.uk-984ab2.webp" group-title="Series",Most Haunted (1080p)
+https://amg00426-lds-amg00426c17-samsung-gb-10157.playouts.now.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="MST3K.us@US" tvg-logo="logos/MST3K.us-302697.webp" group-title="Series",MST3K (1080p)
+https://mst3k-roku.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="MTVAreyoutheOne.us@BR" tvg-logo="logos/MTVAreyoutheOne.us-7e2444.webp" group-title="Series",MTV Are you the One?
+https://jmp2.uk/plu-5f6108d8cc331900075e98e4.m3u8
+#EXTINF:-1 tvg-id="MTVComoEx.us@BR" tvg-logo="logos/MTVComoEx.us-199082.webp" group-title="Series",MTV Com o Ex
+https://jmp2.uk/plu-61a528267e1b8b0007357920.m3u8
+#EXTINF:-1 tvg-id="MTVDating.us@BR" tvg-logo="logos/MTVDating.us-82222c.webp" group-title="Series",MTV Dating (United States)
+https://jmp2.uk/plu-6851bb3426beced4f2f67ee6.m3u8
+#EXTINF:-1 tvg-id="MTVDating.us@CA" tvg-logo="logos/MTVDating.us-82222c.webp" group-title="Series",MTV Dating (United States) CA
+https://jmp2.uk/plu-64f8a0c230ab3300084369b8.m3u8
+#EXTINF:-1 tvg-id="MTVDating.us@LatAm" tvg-logo="logos/MTVDating.us-82222c.webp" group-title="Series",MTV Dating (United States) LatAm (720p)
+https://jmp2.uk/plu-6851b909954170e0128bc71d.m3u8
+#EXTINF:-1 tvg-id="MTVTeenMom.us@LatAm" tvg-logo="logos/MTVTeenMom.us-a011c1.webp" group-title="Series",MTV Teen Mom (United States) (720p)
+https://jmp2.uk/plu-620fd9f4afb9a80007a9c6d5.m3u8
+#EXTINF:-1 tvg-id="Mythbusters.us@UK" tvg-logo="logos/Mythbusters.us-637548.webp" group-title="Series",Mythbusters (1080p)
+https://d2bog959vw5xq.cloudfront.net/playlist/amg00627-banijayfast-mythbusters-samsungau/playlist.m3u8
+#EXTINF:-1 tvg-id="NashBridges.us@SD" tvg-logo="logos/NashBridges.us-3168e6.webp" group-title="Series",Nash Bridges (720p)
+https://jmp2.uk/plu-666021cccb3ea10008406866.m3u8
+#EXTINF:-1 tvg-id="Nashville.us@CA" tvg-logo="logos/Nashville.us-c05d72.webp" group-title="Series",Nashville CA
+https://jmp2.uk/plu-65cf8d7428730900087c5907.m3u8
+#EXTINF:-1 tvg-id="NCIS.se@DK" tvg-logo="logos/NCIS.se-0e42cf.webp" group-title="Series",NCIS (Sweden)
+https://jmp2.uk/plu-6319ec31c62c3f00075c90b1.m3u8
+#EXTINF:-1 tvg-id="NCIS.us@BR" tvg-logo="logos/NCIS.us-01ecd2.webp" group-title="Series",NCIS (United States)
+https://jmp2.uk/plu-63eb9fdda995710008991c54.m3u8
+#EXTINF:-1 tvg-id="NCIS.us@CA" tvg-logo="logos/NCIS.us-01ecd2.webp" group-title="Series",NCIS (United States) CA
+https://jmp2.uk/plu-62f4f5de1c100100075665ef.m3u8
+#EXTINF:-1 tvg-id="NCIS.us@LatAm" tvg-logo="logos/NCIS.us-01ecd2.webp" group-title="Series",NCIS (United States) LatAm
+https://jmp2.uk/plu-63eb947c4e83e70008ab877b.m3u8
+#EXTINF:-1 tvg-id="NCISDetbedstemedGibbs.se@DK" tvg-logo="logos/NCISDetbedstemedGibbs.se-074b19.webp" group-title="Series",NCIS: Det bedste med Gibbs
+https://jmp2.uk/plu-6901d952ec12c3c759fdc7cd.m3u8
+#EXTINF:-1 tvg-id="NCISDetbedstemedTonyZiva.se@DK" tvg-logo="logos/NCISDetbedstemedTonyZiva.se-d07061.webp" group-title="Series",NCIS: Det bedste med Tony & Ziva
+https://jmp2.uk/plu-68921b2f4fa995eff24df6c8.m3u8
+#EXTINF:-1 tvg-id="NCISLosAngeles.se@DK" tvg-logo="logos/NCISLosAngeles.se-c37050.webp" group-title="Series",NCIS: Los Angeles (Sweden)
+https://jmp2.uk/plu-66fbf4d3d7de140008d41f5b.m3u8
+#EXTINF:-1 tvg-id="NCISLosAngeles.us@CA" tvg-logo="logos/NCISLosAngeles.us-f5d78c.webp" group-title="Series",NCIS: Los Angeles (United States)
+https://jmp2.uk/plu-66a106c8a79dea0008aa5ef3.m3u8
+#EXTINF:-1 tvg-id="Nevskiy.ru@SD" tvg-logo="logos/Nevskiy.ru-b3a950.webp" group-title="Series",Nevskiy (1080p)
+https://cdn-dvr.ntv.ru/Nevskiy/index.m3u8
+#EXTINF:-1 tvg-id="NordiskkrimfraViaplay.se@NO" tvg-logo="logos/NordiskkrimfraViaplay.se-f85545.webp" group-title="Series",Nordisk krim fra Viaplay
+https://jmp2.uk/plu-64eca23c9c1e390008524ae6.m3u8
+#EXTINF:-1 tvg-id="Nosey.us@US" tvg-logo="logos/Nosey.us-17f37e.webp" group-title="Series",Nosey (1080p)
+https://nosey-intl-1-samsungau.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="Nosey.us@UK" tvg-logo="logos/Nosey.us-17f37e.webp" group-title="Series",Nosey UK
+https://jmp2.uk/plu-5dc2ba1a9c91420009db4858.m3u8
+#EXTINF:-1 tvg-id="NovelaChannel.ci@SD" tvg-logo="logos/NovelaChannel.ci-40e9c1.webp" group-title="Series",Novela Channel (720p) [Not 24/7]
+https://video1.getstreamhosting.com:1936/8284/8284/playlist.m3u8
+#EXTINF:-1 tvg-id="Numb3rs.se@SE" tvg-logo="logos/Numb3rs.se-1ddc2a.webp" group-title="Series",Numb3rs
+https://jmp2.uk/plu-63dbe8a1c111bc0008dec8b8.m3u8
+#EXTINF:-1 tvg-id="Numb3rs.se@NO" tvg-logo="logos/Numb3rs.se-1ddc2a.webp" group-title="Series",Numb3rs NO
+https://jmp2.uk/plu-63dbe78051f5d000083e9249.m3u8
+#EXTINF:-1 tvg-id="Numbers.se@DK" tvg-logo="logos/Numbers.se-a3f7e5.webp" group-title="Series",Numbers (Sweden)
+https://jmp2.uk/plu-62bebb3a67307900077a7f9d.m3u8
+#EXTINF:-1 tvg-id="Numbers.us@BR" tvg-logo="logos/Numbers.us-2c040d.webp" group-title="Series",Numbers (United States)
+https://jmp2.uk/plu-67f960c5441853fe50e7afc1.m3u8
+#EXTINF:-1 tvg-id="Numeros.us@LatAm" tvg-logo="logos/Numeros.us-5d8a6e.webp" group-title="Series",Numeros
+https://jmp2.uk/plu-67f960680072d6b187a0682e.m3u8
+#EXTINF:-1 tvg-id="ONCine.vn@SD" tvg-logo="logos/ONCine.vn-52b771.webp" group-title="Series",ON Cine
+https://freem3u.xyz/api/live/play.m3u8?vid=176
+#EXTINF:-1 tvg-id="ONPhimViet.vn@SD" tvg-logo="logos/ONPhimViet.vn-33a2da.webp" group-title="Series",ON Phim Viet (1080p)
+https://vmttv.dpdns.org/tv360?id=175
+#EXTINF:-1 tvg-id="PBSAntiquesRoadshow.us@SD" tvg-logo="logos/PBSAntiquesRoadshow.us-b3a014.webp" group-title="Series",PBS Antiques Roadshow (1080p)
+https://amg00953-pbsusa-antiroadshow-xumo-x6ud5.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="PBSNature.us@SD" tvg-logo="logos/PBSNature.us-10b54b.webp" group-title="Series",PBS Nature (1080p)
+https://d3mr43kyql7wgk.cloudfront.net/PBS_Nature.m3u8
+#EXTINF:-1 tvg-id="PerryMason.us@SD" tvg-logo="logos/PerryMason.us-819d0f.webp" group-title="Series",Perry Mason
+https://jmp2.uk/plu-6197086891ddd4000739941a.m3u8
+#EXTINF:-1 tvg-id="PerryMason.us@CA" tvg-logo="logos/PerryMason.us-819d0f.webp" group-title="Series",Perry Mason CA
+https://jmp2.uk/plu-63e20bd160bc8f0008b4c949.m3u8
+#EXTINF:-1 tvg-id="PersianaSeries.fr@HD" tvg-logo="" group-title="Series",Persiana Series
+https://onehls.persiana.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="Perviyotdel.ru@SD" tvg-logo="logos/Perviyotdel.ru-021f88.webp" group-title="Series",Perviy otdel (1080p)
+https://cdn-dvr.ntv.ru/Perviy_otdel/index.m3u8
+#EXTINF:-1 tvg-id="Pes.ru@SD" tvg-logo="logos/Pes.ru-e35233.webp" group-title="Series",Pes (1080p)
+https://cdn-dvr.ntv.ru/Pes/index.m3u8
+#EXTINF:-1 tvg-id="PlutoTVAdventure.us@US" tvg-logo="logos/PlutoTVAdventure.us-345fb8.webp" group-title="Entertainment;Outdoor;Series",Pluto TV Adventure
+https://jmp2.uk/plu-69d7ebb726eeec84158e28cb.m3u8
+#EXTINF:-1 tvg-id="PlutoTVAdventure.us@CA" tvg-logo="logos/PlutoTVAdventure.us-345fb8.webp" group-title="Entertainment;Outdoor;Series",Pluto TV Adventure CA
+https://jmp2.uk/plu-653bdb0fbdf3cf00089cc395.m3u8
+#EXTINF:-1 tvg-id="PlutoTVAliens.us@BR" tvg-logo="logos/PlutoTVAliens.us-aa5733.webp" group-title="Documentary;Series",Pluto TV Aliens
+https://jmp2.uk/plu-6806d65e84f24b70109485fa.m3u8
+#EXTINF:-1 tvg-id="PlutoTVAmericanTrueCrime.de@GB" tvg-logo="logos/PlutoTVAmericanTrueCrime.de-e462d4.webp" group-title="Documentary;Series",Pluto TV American True Crime
+https://jmp2.uk/plu-692ebafce72f03e07e7df985.m3u8
+#EXTINF:-1 tvg-id="PlutoTVAventura.us@LatAm" tvg-logo="logos/PlutoTVAventura.us-dfd645.webp" group-title="Series",Pluto TV Aventura
+https://jmp2.uk/plu-5ddc266f80e3550009136843.m3u8
+#EXTINF:-1 tvg-id="PlutoTVBrigadeCriminelle.de@FR" tvg-logo="logos/PlutoTVBrigadeCriminelle.de-c95398.webp" group-title="Series",Pluto TV Brigade Criminelle
+https://jmp2.uk/plu-684bf01df7d8b74b625b7dd1.m3u8
+#EXTINF:-1 tvg-id="PlutoTVBritischeSerien.de@DACH" tvg-logo="logos/PlutoTVBritischeSerien.de-2d9265.webp" group-title="Series",Pluto TV Britische Serien
+https://jmp2.uk/plu-677e5a3d7bffa6000808dbf2.m3u8
+#EXTINF:-1 tvg-id="PlutoTVCrime.de@DACH" tvg-logo="logos/PlutoTVCrime.de-32a5d4.webp" group-title="Series",Pluto TV Crime
+https://jmp2.uk/plu-5e7b6c60fd20c50007910bf5.m3u8
+#EXTINF:-1 tvg-id="PlutoTVCrime.de@GB" tvg-logo="logos/PlutoTVCrime.de-32a5d4.webp" group-title="Series",Pluto TV Crime GB
+https://jmp2.uk/plu-5d767790d0438aceb41d03ae.m3u8
+#EXTINF:-1 tvg-id="PlutoTVDating.de@FR" tvg-logo="logos/PlutoTVDating.de-94a3f6.webp" group-title="Series",Pluto TV Dating (720p)
+https://jmp2.uk/plu-682318568e6c0f2f6c6e0038.m3u8
+#EXTINF:-1 tvg-id="PlutoTVDogelcazarrecompensas.us@SD" tvg-logo="logos/PlutoTVDogelcazarrecompensas.us-5f0e58.webp" group-title="Series",Pluto TV Dog el cazarrecompensas
+https://jmp2.uk/plu-5f9992c685a2a80007fa414a.m3u8
+#EXTINF:-1 tvg-id="PlutoTVDramasCoreanos.us@LatAm" tvg-logo="logos/PlutoTVDramasCoreanos.us-364de7.webp" group-title="Series",Pluto TV Dramas Coreanos
+https://jmp2.uk/plu-6185a9a88b2ce30007de5128.m3u8
+#EXTINF:-1 tvg-id="PlutoTVDramasCoreanosTeen.us@LatAm" tvg-logo="logos/PlutoTVDramasCoreanosTeen.us-b239d5.webp" group-title="Series",Pluto TV Dramas Coreanos Teen
+https://jmp2.uk/plu-6661d5424b10960008599fa3.m3u8
+#EXTINF:-1 tvg-id="PlutoTVFantastic.us@SD" tvg-logo="logos/PlutoTVFantastic.us-e317ba.webp" group-title="Series",Pluto TV Fantastic
+https://jmp2.uk/plu-5b64a245a202b3337f09e51d.m3u8
+#EXTINF:-1 tvg-id="PlutoTVFBI.us@CA" tvg-logo="logos/PlutoTVFBI.us-3f88aa.webp" group-title="Series",Pluto TV FBI
+https://jmp2.uk/plu-693adae77f21340ef9746f56.m3u8
+#EXTINF:-1 tvg-id="PlutoTVHistorischeSerien.de@DACH" tvg-logo="logos/PlutoTVHistorischeSerien.de-2de968.webp" group-title="Series",Pluto TV Historische Serien
+https://jmp2.uk/plu-68ada3395190a45dc9c445cf.m3u8
+#EXTINF:-1 tvg-id="PlutoTVHometownDrama.us@SD" tvg-logo="logos/PlutoTVHometownDrama.us-f84e3c.webp" group-title="Series",Pluto TV Hometown Drama
+https://jmp2.uk/plu-69d6c7befde57cd5ba0160c3.m3u8
+#EXTINF:-1 tvg-id="PlutoTVHorrorSerien.de@DACH" tvg-logo="logos/PlutoTVHorrorSerien.de-d26955.webp" group-title="Series",Pluto TV Horror-Serien
+https://jmp2.uk/plu-67ff7d9c7fc25e0e72451bc9.m3u8
+#EXTINF:-1 tvg-id="PlutoTVInvestigation.de@GB" tvg-logo="logos/PlutoTVInvestigation.de-585265.webp" group-title="Series",Pluto TV Investigation
+https://jmp2.uk/plu-63808dc806aa4700075f319a.m3u8
+#EXTINF:-1 tvg-id="PlutoTVKDrama.de@ES" tvg-logo="logos/PlutoTVKDrama.de-126abc.webp" group-title="Series",Pluto TV K-Drama
+https://jmp2.uk/plu-6475bfec536e0c0008858e9f.m3u8
+#EXTINF:-1 tvg-id="PlutoTVLives.us@US" tvg-logo="logos/PlutoTVLives.us-90af11.webp" group-title="Series",Pluto TV Lives
+https://jmp2.uk/plu-5d8beeb39b5d5d5f8c672530.m3u8
+#EXTINF:-1 tvg-id="PlutoTVMilitary.us@SD" tvg-logo="logos/PlutoTVMilitary.us-f963d5.webp" group-title="Series",Pluto TV Military
+https://jmp2.uk/plu-5bb3fea0f711fd76340eebff.m3u8
+#EXTINF:-1 tvg-id="PlutoTVMinutoParaGanar.us@SD" tvg-logo="logos/PlutoTVMinutoParaGanar.us-078f44.webp" group-title="Series",Pluto TV Minuto Para Ganar
+https://jmp2.uk/plu-5e46e64dc73db400094b5f0b.m3u8
+#EXTINF:-1 tvg-id="PlutoTVMisteriosMedicos.us@SD" tvg-logo="logos/PlutoTVMisteriosMedicos.us-5898f3.webp" group-title="Series",Pluto TV Misterios Medicos
+https://jmp2.uk/plu-5f230e416b68ff00075b0139.m3u8
+#EXTINF:-1 tvg-id="PlutoTVNordicCrime.de@DACH" tvg-logo="logos/PlutoTVNordicCrime.de-8662f2.webp" group-title="Series",Pluto TV Nordic Crime
+https://jmp2.uk/plu-67d984408d8dc3d7754dccf2.m3u8
+#EXTINF:-1 tvg-id="PlutoTVNovelas.us@US" tvg-logo="logos/PlutoTVNovelas.us-a07601.webp" group-title="Series",Pluto TV Novelas
+https://jmp2.uk/plu-5cf96c0222df39f1a338d163.m3u8
+#EXTINF:-1 tvg-id="PlutoTVNovelas.us@BR" tvg-logo="logos/PlutoTVNovelas.us-a07601.webp" group-title="Series",Pluto TV Novelas BR
+https://jmp2.uk/plu-5f512365abe1f50007d3ff56.m3u8
+#EXTINF:-1 tvg-id="PlutoTVNovelas.us@LatAm" tvg-logo="logos/PlutoTVNovelas.us-a07601.webp" group-title="Series",Pluto TV Novelas LatAm
+https://jmp2.uk/plu-5dcde0cc2efd2700090b7ff4.m3u8
+#EXTINF:-1 tvg-id="PlutoTVNovelasdeMexico.us@LatAm" tvg-logo="logos/PlutoTVNovelasdeMexico.us-6c3401.webp" group-title="Series",Pluto TV Novelas de Mexico
+https://jmp2.uk/plu-6474a7958e3c0a0008b97cae.m3u8
+#EXTINF:-1 tvg-id="PlutoTVNovelasdeOtrosContinentes.us@LatAm" tvg-logo="logos/PlutoTVNovelasdeOtrosContinentes.us-cb30b1.webp" group-title="Series",Pluto TV Novelas de Otros Continentes
+https://jmp2.uk/plu-686eed4c677f2f98b4a1ccd4.m3u8
+#EXTINF:-1 tvg-id="PlutoTVNovelasdeVenezuela.us@LatAm" tvg-logo="logos/PlutoTVNovelasdeVenezuela.us-4a219c.webp" group-title="Series",Pluto TV Novelas de Venezuela
+https://jmp2.uk/plu-6474a86917f5e100089a0c1c.m3u8
+#EXTINF:-1 tvg-id="PlutoTVOvernaturlig.se@NO" tvg-logo="logos/PlutoTVOvernaturlig.se-48446c.webp" group-title="Series",Pluto TV Overnaturlig
+https://jmp2.uk/plu-61c1e74354d923000731bf7c.m3u8
+#EXTINF:-1 tvg-id="PlutoTVPolar.de@FR" tvg-logo="logos/PlutoTVPolar.de-2db65a.webp" group-title="Series",Pluto TV Polar
+https://jmp2.uk/plu-5f8ed4dbf6bb0800071ffbcb.m3u8
+#EXTINF:-1 tvg-id="PlutoTVPolizeiserien.de@DACH" tvg-logo="logos/PlutoTVPolizeiserien.de-4348db.webp" group-title="Series",Pluto TV Polizeiserien
+https://jmp2.uk/plu-64be64445dc166000899ce75.m3u8
+#EXTINF:-1 tvg-id="PlutoTVSanctuary.us@SD" tvg-logo="logos/PlutoTVSanctuary.us-5f6cbb.webp" group-title="Series",Pluto TV Sanctuary
+https://jmp2.uk/plu-63eb57d6c111bc0008fe2658.m3u8
+#EXTINF:-1 tvg-id="PlutoTVScifiSeries.de@GB" tvg-logo="logos/PlutoTVScifiSeries.de-f20494.webp" group-title="Series",Pluto TV Sci-fi Series
+https://jmp2.uk/plu-619247c34a270700077c8415.m3u8
+#EXTINF:-1 tvg-id="PlutoTVSerie.de@DACH" tvg-logo="logos/PlutoTVSerie.de-071c76.webp" group-title="Series",Pluto TV Serie
+https://jmp2.uk/plu-5dc190f7bfed110009d934c3.m3u8
+#EXTINF:-1 tvg-id="PlutoTVSerie.de@IT" tvg-logo="logos/PlutoTVSerie.de-071c76.webp" group-title="Series",Pluto TV Serie IT
+https://jmp2.uk/plu-60b9ff2722bfa400072676ef.m3u8
+#EXTINF:-1 tvg-id="PlutoTVSerieCrime.de@IT" tvg-logo="logos/PlutoTVSerieCrime.de-ba6944.webp" group-title="Series",Pluto TV Serie Crime
+https://jmp2.uk/plu-608aa777b907770007e5d05d.m3u8
+#EXTINF:-1 tvg-id="PlutoTVSeries.us@LatAm" tvg-logo="logos/PlutoTVSeries.us-7d2441.webp" group-title="Series",Pluto TV Series
+https://jmp2.uk/plu-5dcde1317578340009b751d0.m3u8
+#EXTINF:-1 tvg-id="PlutoTVSeriesAcao.us@BR" tvg-logo="logos/PlutoTVSeriesAcao.us-bd5395.webp" group-title="Series",Pluto TV Series Acao
+https://jmp2.uk/plu-6474ab1da51cb80008bfb5f4.m3u8
+#EXTINF:-1 tvg-id="PlutoTVSeriesComedia.us@BR" tvg-logo="logos/PlutoTVSeriesComedia.us-c3b190.webp" group-title="Comedy;Series",Pluto TV Series Comedia
+https://jmp2.uk/plu-655e5bc94261ca000810cb17.m3u8
+#EXTINF:-1 tvg-id="PlutoTVSeriesCriminais.us@BR" tvg-logo="logos/PlutoTVSeriesCriminais.us-02d560.webp" group-title="Series",Pluto TV Series Criminais
+https://jmp2.uk/plu-6474ab5cdc7a760008745008.m3u8
+#EXTINF:-1 tvg-id="PlutoTVSeriescriminales.de@ES" tvg-logo="logos/PlutoTVSeriescriminales.de-97ad50.webp" group-title="Series",Pluto TV Series criminales
+https://jmp2.uk/plu-65cf6ab58145cb0008129ca8.m3u8
+#EXTINF:-1 tvg-id="PlutoTVSeriesdeAccion.us@LatAm" tvg-logo="logos/PlutoTVSeriesdeAccion.us-2a52b4.webp" group-title="Series",Pluto TV Series de Accion
+https://jmp2.uk/plu-6479ff1c17f5e10008ad2797.m3u8
+#EXTINF:-1 tvg-id="PlutoTVSeriesdeComedia.us@LatAm" tvg-logo="logos/PlutoTVSeriesdeComedia.us-f44cfa.webp" group-title="Series",Pluto TV Series de Comedia
+https://jmp2.uk/plu-655f626d57fe4a00085c7c3e.m3u8
+#EXTINF:-1 tvg-id="PlutoTVSeriesdeCrimen.us@LatAm" tvg-logo="logos/PlutoTVSeriesdeCrimen.us-c4417e.webp" group-title="Series",Pluto TV Series de Crimen
+https://jmp2.uk/plu-655f62ff954b020008c91ec6.m3u8
+#EXTINF:-1 tvg-id="PlutoTVSeriesdeDrama.us@LatAm" tvg-logo="logos/PlutoTVSeriesdeDrama.us-9e52a8.webp" group-title="Series",Pluto TV Series de Drama
+https://jmp2.uk/plu-655f636d954b020008c93299.m3u8
+#EXTINF:-1 tvg-id="PlutoTVSeriesdeOtrosContinentes.us@LatAm" tvg-logo="logos/PlutoTVSeriesdeOtrosContinentes.us-807e97.webp" group-title="Series",Pluto TV Series de Otros Continentes
+https://jmp2.uk/plu-6806d570c178637410ae4962.m3u8
+#EXTINF:-1 tvg-id="PlutoTVSeriesdeSciFi.us@LatAm" tvg-logo="logos/PlutoTVSeriesdeSciFi.us-b0c240.webp" group-title="Series",Pluto TV Series de Sci-Fi
+https://jmp2.uk/plu-65662f8a2c46f300088a84cc.m3u8
+#EXTINF:-1 tvg-id="PlutoTVSeriesDrama.us@BR" tvg-logo="logos/PlutoTVSeriesDrama.us-5a81fa.webp" group-title="Series",Pluto TV Series Drama
+https://jmp2.uk/plu-65f060d84e01740008d7421f.m3u8
+#EXTINF:-1 tvg-id="PlutoTVSeriesFantastiques.de@FR" tvg-logo="logos/PlutoTVSeriesFantastiques.de-64032a.webp" group-title="Series",Pluto TV Series Fantastiques
+https://jmp2.uk/plu-625ec7a1c853fd00073b38fd.m3u8
+#EXTINF:-1 tvg-id="PlutoTVSeriesLatinas.us@LatAm" tvg-logo="logos/PlutoTVSeriesLatinas.us-b02215.webp" group-title="Series",Pluto TV Series Latinas
+https://jmp2.uk/plu-5dd837642c6e9300098ad484.m3u8
+#EXTINF:-1 tvg-id="PlutoTVSeriesNovelescas.us@BR" tvg-logo="logos/PlutoTVSeriesNovelescas.us-5f5807.webp" group-title="Series",Pluto TV Series Novelescas
+https://jmp2.uk/plu-691627e4a29a6123e400b3e0.m3u8
+#EXTINF:-1 tvg-id="PlutoTVSeriesSciFi.us@BR" tvg-logo="logos/PlutoTVSeriesSciFi.us-0216cd.webp" group-title="Series",Pluto TV Series Sci-Fi
+https://jmp2.uk/plu-63d2ba2f60bc8f0008981a0e.m3u8
+#EXTINF:-1 tvg-id="PlutoTVSitcoms.de@DACH" tvg-logo="logos/PlutoTVSitcoms.de-385d05.webp" group-title="Comedy;Series",Pluto TV Sitcoms
+https://jmp2.uk/plu-5d767ab2b456c8cf265ce921.m3u8
+#EXTINF:-1 tvg-id="PlutoTVSitcoms.de@GB" tvg-logo="logos/PlutoTVSitcoms.de-385d05.webp" group-title="Comedy;Series",Pluto TV Sitcoms GB
+https://jmp2.uk/plu-62f53dc6ee9a0400071dc22b.m3u8
+#EXTINF:-1 tvg-id="PlutoTVStorageWars.us@SD" tvg-logo="logos/PlutoTVStorageWars.us-d33fb9.webp" group-title="Series",Pluto TV Storage Wars (720p)
+https://jmp2.uk/plu-6887aaf4e3703b7d42b71a1e.m3u8
+#EXTINF:-1 tvg-id="PlutoTVTelenovelasClasicas.de@ES" tvg-logo="logos/PlutoTVTelenovelasClasicas.de-49fcba.webp" group-title="Series",Pluto TV Telenovelas Clasicas
+https://jmp2.uk/plu-662a69daa0a74e00087a1c72.m3u8
+#EXTINF:-1 tvg-id="PlutoTVTheTwilightZone.us@SD" tvg-logo="logos/PlutoTVTheTwilightZone.us-b1fe03.webp" group-title="Classic;Series",Pluto TV The Twilight Zone
+https://jmp2.uk/plu-67352ed93a61d4000881f9fa.m3u8
+#EXTINF:-1 tvg-id="PlutoTVToughJobs.de@GB" tvg-logo="logos/PlutoTVToughJobs.de-3dfdef.webp" group-title="Documentary;Series",Pluto TV Tough Jobs
+https://jmp2.uk/plu-600acaff5f2d6e000745effb.m3u8
+#EXTINF:-1 tvg-id="PlutoTVTrueCrime.se@SE" tvg-logo="logos/PlutoTVTrueCrime.se-7c2b8e.webp" group-title="Documentary;Series",Pluto TV True Crime (Sweden)
+https://jmp2.uk/plu-61c0b438244e50000758083b.m3u8
+#EXTINF:-1 tvg-id="PlutoTVTrueCrime.se@DK" tvg-logo="logos/PlutoTVTrueCrime.se-7c2b8e.webp" group-title="Documentary;Series",Pluto TV True Crime (Sweden) DK
+https://jmp2.uk/plu-61c097ec8bb1830008e3f962.m3u8
+#EXTINF:-1 tvg-id="PlutoTVTrueCrime.se@NO" tvg-logo="logos/PlutoTVTrueCrime.se-7c2b8e.webp" group-title="Documentary;Series",Pluto TV True Crime (Sweden) NO
+https://jmp2.uk/plu-61c1e51354d923000731bf78.m3u8
+#EXTINF:-1 tvg-id="PlutoTVTrueCrime.us@US" tvg-logo="logos/PlutoTVTrueCrime.us-e5e3ea.webp" group-title="Documentary;Series",Pluto TV True Crime (United States)
+https://jmp2.uk/plu-5812be1c249444e05d09cc50.m3u8
+#EXTINF:-1 tvg-id="PlutoTVTrueCrime.us@CA" tvg-logo="logos/PlutoTVTrueCrime.us-e5e3ea.webp" group-title="Documentary;Series",Pluto TV True Crime (United States) CA
+https://jmp2.uk/plu-62e9289f8d467f0007fbc701.m3u8
+#EXTINF:-1 tvg-id="PlutoTVWesternSerien.de@DACH" tvg-logo="logos/PlutoTVWesternSerien.de-d8446b.webp" group-title="Series",Pluto TV Western Serien
+https://jmp2.uk/plu-682453215c646751955e1204.m3u8
+#EXTINF:-1 tvg-id="PlutoTVWipeout.us@SD" tvg-logo="logos/PlutoTVWipeout.us-441f12.webp" group-title="Series",Pluto TV Wipeout
+https://jmp2.uk/plu-6909e5c3a3a4b49706b8373b.m3u8
+#EXTINF:-1 tvg-id="RakutenViki.us@Spain" tvg-logo="logos/RakutenViki.us-94d2bb.webp" group-title="Entertainment;Series",Rakuten Viki (1080p)
+https://newidco-rakutenviki-2-eu.xiaomi.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="RakutenViki.us@Poland" tvg-logo="logos/RakutenViki.us-94d2bb.webp" group-title="Entertainment;Series",Rakuten Viki Poland (720p)
+https://fd18f1cadd404894a31a3362c5f319bd.mediatailor.us-east-1.amazonaws.com/v1/master/04fd913bb278d8775298c26fdca9d9841f37601f/RakutenTV-eu_RakutenViki-1/playlist.m3u8
+#EXTINF:-1 tvg-id="Rawhide.se@SE" tvg-logo="logos/Rawhide.se-2a16c4.webp" group-title="Classic;Series",Rawhide (Sweden)
+https://jmp2.uk/plu-6964bb3640c8de392514a0c6.m3u8
+#EXTINF:-1 tvg-id="Rawhide.se@DK" tvg-logo="logos/Rawhide.se-2a16c4.webp" group-title="Classic;Series",Rawhide (Sweden) DK
+https://jmp2.uk/plu-6964ba787e92438c2754e924.m3u8
+#EXTINF:-1 tvg-id="Rawhide.se@NO" tvg-logo="logos/Rawhide.se-2a16c4.webp" group-title="Classic;Series",Rawhide (Sweden) NO
+https://jmp2.uk/plu-6964baa63dfd98e10945ac51.m3u8
+#EXTINF:-1 tvg-id="REVNAction.us@SD" tvg-logo="logos/REVNAction.us-5af9a4.webp" group-title="Auto;Outdoor;Series;Sports",REV'N Action (720p) [Geo-blocked]
+https://freecast-lukentvlive.vgcdn.net/out/v1/a4f31f297fc5440f814bd2cffd77e689/index.m3u8
+#EXTINF:-1 tvg-id="RTSDrama.rs@SD" tvg-logo="logos/RTSDrama.rs-2ab5f4.webp" group-title="Series",RTS Drama (576p)
+https://de1.dstv.cx/RTSDrama/index.m3u8
+#EXTINF:-1 tvg-id="Scorpion.de@GB" tvg-logo="logos/Scorpion.de-f645ca.webp" group-title="Series",Scorpion (Germany)
+https://jmp2.uk/plu-63d000ef4e83e700086e0d6c.m3u8
+#EXTINF:-1 tvg-id="Scorpion.se@SE" tvg-logo="logos/Scorpion.se-b58893.webp" group-title="Series",Scorpion (Sweden)
+https://jmp2.uk/plu-63a1c9c2847a090007f248da.m3u8
+#EXTINF:-1 tvg-id="Scorpion.se@DK" tvg-logo="logos/Scorpion.se-b58893.webp" group-title="Series",Scorpion (Sweden) DK
+https://jmp2.uk/plu-63a1caefc8d285000799e8af.m3u8
+#EXTINF:-1 tvg-id="Scorpion.se@NO" tvg-logo="logos/Scorpion.se-b58893.webp" group-title="Series",Scorpion (Sweden) NO
+https://jmp2.uk/plu-63a1c959d9dd51000825d659.m3u8
+#EXTINF:-1 tvg-id="SerieMax.ci@SD" tvg-logo="logos/SerieMax.ci-0ab7f1.webp" group-title="Series",Serie Max (720p)
+https://video1.getstreamhosting.com:1936/8330/8330/playlist.m3u8
+#EXTINF:-1 tvg-id="SeriesbyPlutoTV.de@FR" tvg-logo="logos/SeriesbyPlutoTV.de-82b996.webp" group-title="Series",Series by Pluto TV
+https://jmp2.uk/plu-5f8ed2d1c34c2300073bf02c.m3u8
+#EXTINF:-1 tvg-id="SeriesClassic.br@SD" tvg-logo="" group-title="Series",Series Classic (720p)
+https://cdn-tiva-video10-logicahost-com-br.smartbit.co/serieclassic/serieclassic/playlist.m3u8
+#EXTINF:-1 tvg-id="Shef.ru@SD" tvg-logo="logos/Shef.ru-c38afd.webp" group-title="Series",Shef (1080p)
+https://cdn-dvr.ntv.ru/Shef/index.m3u8
+#EXTINF:-1 tvg-id="Sintetasnohayparaiso.us@Spain" tvg-logo="logos/Sintetasnohayparaiso.us-2282b0.webp" group-title="Series",Sin tetas no hay paraiso
+https://jmp2.uk/plu-604bdf4e6d0abc0007ba77ad.m3u8
+#EXTINF:-1 tvg-id="SkjonnhetsfellenDanmark.se@NO" tvg-logo="logos/SkjonnhetsfellenDanmark.se-e918ef.webp" group-title="Series",Skjonnhetsfellen Danmark
+https://jmp2.uk/plu-643810f2e8a4aa0008ccf575.m3u8
+#EXTINF:-1 tvg-id="Skorayapomoshch.ru@SD" tvg-logo="logos/Skorayapomoshch.ru-00af74.webp" group-title="Series",Skoraya pomoshch (1080p)
+https://cdn-dvr.ntv.ru/Skoraja_pomosh/index.m3u8
+#EXTINF:-1 tvg-id="Smotrim100Lyubov.ru@SD" tvg-logo="logos/Smotrim100Lyubov.ru-64ef1b.webp" group-title="Series",Smotrim 100% Lyubov (720p)
+https://stream.smotrim.ru/hls/fasttv01/playlist_2.m3u8
+#EXTINF:-1 tvg-id="Smotrim100Muzhskoe.ru@SD" tvg-logo="logos/Smotrim100Muzhskoe.ru-a2c82f.webp" group-title="Series",Smotrim 100% Muzhskoe (720p)
+https://stream.smotrim.ru/hls/fasttv02/playlist_3.m3u8
+#EXTINF:-1 tvg-id="SmotrimChestnyyDetektiv.ru@SD" tvg-logo="logos/SmotrimChestnyyDetektiv.ru-3f66db.webp" group-title="Series",Smotrim Chestnyy Detektiv (1080p)
+https://live-vgtrksmotrim.cdnvideo.ru/vgtrksmotrim/smotrim-live-01.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="SonyOneBlacklist.fr@HD" tvg-logo="logos/SonyOneBlacklist.fr-083966.webp" group-title="Series",Sony One Blacklist (1080p)
+https://06cb85ad6ccb4a6b97f561e62d16ad3f.mediatailor.us-west-2.amazonaws.com/v1/master/ba62fe743df0fe93366eba3a257d792884136c7f/LINEAR-822-FR-SONYONETHEBLACKLIST-LG_FR/playlist.m3u8
+#EXTINF:-1 tvg-id="StarTrek.us@BR" tvg-logo="logos/StarTrek.us-bb9593.webp" group-title="Series",Star Trek
+https://jmp2.uk/plu-5f99ac4fded33000078f29ab.m3u8
+#EXTINF:-1 tvg-id="StarTrek.us@LatAm" tvg-logo="logos/StarTrek.us-bb9593.webp" group-title="Series",Star Trek LatAm
+https://jmp2.uk/plu-5ec5761aabe4690007f6e047.m3u8
+#EXTINF:-1 tvg-id="StarTrek.us@US" tvg-logo="logos/StarTrek.us-bb9593.webp" group-title="Series",Star Trek US
+https://jmp2.uk/plu-5efbd39f8c4ce900075d7698.m3u8
+#EXTINF:-1 tvg-id="SupernaturalDrama.us@SD" tvg-logo="logos/SupernaturalDrama.us-dcac05.webp" group-title="Series",Supernatural Drama
+https://jmp2.uk/plu-5f24662bebe0f0000767de32.m3u8
+#EXTINF:-1 tvg-id="Survivor.us@SD" tvg-logo="logos/Survivor.us-cbf620.webp" group-title="Series",Survivor (1080p)
+https://amg00627-amg00627c16-samsung-nz-2811.playouts.now.amagi.tv/playlist/amg00627-banijayfast-survivor-samsungnz/playlist.m3u8
+#EXTINF:-1 tvg-id="Telecyan.us@HD" tvg-logo="logos/Telecyan.us-fc76ea.webp" group-title="Comedy;Series",Telecyan (720p)
+https://183.giatvcdn.com/giatvplayout7/giatv-211227/playlist.m3u8
+#EXTINF:-1 tvg-id="TelemundoTelenovelasClasicas.us@SD" tvg-logo="logos/TelemundoTelenovelasClasicas.us-4ea8f0.webp" group-title="Series",Telemundo Telenovelas Clasicas
+https://jmp2.uk/plu-5cf96cc422df39f1a338d165.m3u8
+#EXTINF:-1 tvg-id="TheAddamsFamily.us@SD" tvg-logo="logos/TheAddamsFamily.us-2ca5bc.webp" group-title="Series",The Addams Family
+https://jmp2.uk/plu-5d81607ab737153ea3c1c80e.m3u8
+#EXTINF:-1 tvg-id="TheAmazingRace.us@SD" tvg-logo="logos/TheAmazingRace.us-e1ad12.webp" group-title="Series",The Amazing Race
+https://jmp2.uk/plu-5f21e8a6e2f12b000755afdb.m3u8
+#EXTINF:-1 tvg-id="TheAsylum.us@US" tvg-logo="logos/TheAsylum.us-a9ac96.webp" group-title="Series",The Asylum (1080p)
+https://d1i3g4v4xlfhad.cloudfront.net/The_Asylum.m3u8
+#EXTINF:-1 tvg-id="TheBobRossChannel.us@SD" tvg-logo="logos/TheBobRossChannel.us-a93eb0.webp" group-title="Series",The Bob Ross Channel (720p)
+https://aegis-cloudfront-1.tubi.video/45301c94-0d40-4cbb-b342-f5dc7949d76c/playlist.m3u8
+#EXTINF:-1 tvg-id="TheChallenge.us@SD" tvg-logo="logos/TheChallenge.us-5adea8.webp" group-title="Series",The Challenge
+https://jmp2.uk/plu-5d48685da7e9f476aa8a1888.m3u8
+#EXTINF:-1 tvg-id="TheChallenge.us@CA" tvg-logo="logos/TheChallenge.us-5adea8.webp" group-title="Series",The Challenge CA
+https://jmp2.uk/plu-64f8a22a3efb510008245df0.m3u8
+#EXTINF:-1 tvg-id="TheChatShowChannel.uk@SD" tvg-logo="logos/TheChatShowChannel.uk-bbe2ae.webp" group-title="Comedy;Series",The Chat Show Channel (1080p)
+https://amg00426-littledotstudio-thechatshow-samsungnz-uqmtt.amagi.tv/playlist/amg00426-littledotstudio-thechatshow-samsungnz/playlist.m3u8
+#EXTINF:-1 tvg-id="TheConners.us@SD" tvg-logo="logos/TheConners.us-9a8ec5.webp" group-title="Comedy;Series",The Conners
+https://jmp2.uk/plu-66e2a94d167a8b000813485d.m3u8
+#EXTINF:-1 tvg-id="TheDoctors.us@HD" tvg-logo="logos/TheDoctors.us-351f9e.webp" group-title="Series",The Doctors (720p) [Geo-blocked]
+https://lukentvlive.vgcdn.net/v1/master/cef183924f24adfa3d5d7601c3a17769082c0c2b/Doctors/index.m3u8
+#EXTINF:-1 tvg-id="TheJudgeJudyChannel.us@SD" tvg-logo="logos/TheJudgeJudyChannel.us-62ccf1.webp" group-title="Series",The Judge Judy Channel (720p)
+https://jmp2.uk/plu-6283d51144ad8f0007fa382d.m3u8
+#EXTINF:-1 tvg-id="TheJudgeJudyChannel.us@CA" tvg-logo="logos/TheJudgeJudyChannel.us-62ccf1.webp" group-title="Series",The Judge Judy Channel CA
+https://jmp2.uk/plu-62e92e536f28870007fa9b3a.m3u8
+#EXTINF:-1 tvg-id="TheLWordWennFrauenlieben.de@DACH" tvg-logo="logos/TheLWordWennFrauenlieben.de-81ef59.webp" group-title="Series",The L Word – Wenn Frauen lieben
+https://jmp2.uk/plu-68d2759a59fd82da3226492d.m3u8
+#EXTINF:-1 tvg-id="TheLWord.se@SE" tvg-logo="logos/TheLWord.se-6d6873.webp" group-title="Series",The L Word
+https://jmp2.uk/plu-693ae4ee25e9a6646b198fb0.m3u8
+#EXTINF:-1 tvg-id="TheLWord.se@DK" tvg-logo="logos/TheLWord.se-6d6873.webp" group-title="Series",The L Word DK
+https://jmp2.uk/plu-693ae48864476d678e9b6235.m3u8
+#EXTINF:-1 tvg-id="TheLWord.se@NO" tvg-logo="logos/TheLWord.se-6d6873.webp" group-title="Series",The L Word NO
+https://jmp2.uk/plu-693ae4b616c2bba998852c21.m3u8
+#EXTINF:-1 tvg-id="TheLoop.us@SD" tvg-logo="logos/TheLoop.us-2b1925.webp" group-title="Classic;Series",The Loop (1080p)
+https://tgn.bozztv.com/watc57/watc57-theloop/watc57-theloop/index.m3u8
+#EXTINF:-1 tvg-id="TheNewDetectives.de@GB" tvg-logo="logos/TheNewDetectives.de-910e8b.webp" group-title="Series",The New Detectives (Germany)
+https://jmp2.uk/plu-5e393d5c696b3b0009775c8b.m3u8
+#EXTINF:-1 tvg-id="TheNewDetectives.se@SE" tvg-logo="logos/TheNewDetectives.se-784d2d.webp" group-title="Series",The New Detectives (Sweden)
+https://jmp2.uk/plu-61814dd68a368d0007d78c53.m3u8
+#EXTINF:-1 tvg-id="TheNewDetectives.se@DK" tvg-logo="logos/TheNewDetectives.se-784d2d.webp" group-title="Series",The New Detectives (Sweden) DK
+https://jmp2.uk/plu-618147d2a814250007b42916.m3u8
+#EXTINF:-1 tvg-id="TheNewDetectives.se@NO" tvg-logo="logos/TheNewDetectives.se-784d2d.webp" group-title="Series",The New Detectives (Sweden) NO
+https://jmp2.uk/plu-6181511c1e13690007b143c2.m3u8
+#EXTINF:-1 tvg-id="TheNewDetectives.us@US" tvg-logo="logos/TheNewDetectives.us-b26111.webp" group-title="Series",The New Detectives (United States)
+https://jmp2.uk/plu-5aea40b35126c2157123aa64.m3u8
+#EXTINF:-1 tvg-id="TheNewDetectives.us@CA" tvg-logo="logos/TheNewDetectives.us-b26111.webp" group-title="Series",The New Detectives (United States) CA
+https://jmp2.uk/plu-62bdabbc5611f2000761ca30.m3u8
+#EXTINF:-1 tvg-id="TheNewDetectives.us@LatAm" tvg-logo="logos/TheNewDetectives.us-b26111.webp" group-title="Series",The New Detectives (United States) LatAm
+https://jmp2.uk/plu-5ea71d48af1d0b0007d837f4.m3u8
+#EXTINF:-1 tvg-id="TheRifleman.us@SD" tvg-logo="logos/TheRifleman.us-6a77e5.webp" group-title="Series",The Rifleman
+https://jmp2.uk/plu-5e825550e758c700077b0aef.m3u8
+#EXTINF:-1 tvg-id="TheWalkingDeadUniverse.us@SD" tvg-logo="logos/TheWalkingDeadUniverse.us-61c4a8.webp" group-title="Series",The Walking Dead Universe (1080p)
+https://amc-twdfanexperience-1-us.xumo.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="TheWildWildWest.se@SE" tvg-logo="logos/TheWildWildWest.se-f59f6d.webp" group-title="Classic;Series",The Wild Wild West (Sweden)
+https://jmp2.uk/plu-6964bcf9ae33e24d911d7e1c.m3u8
+#EXTINF:-1 tvg-id="TheWildWildWest.se@DK" tvg-logo="logos/TheWildWildWest.se-f59f6d.webp" group-title="Classic;Series",The Wild Wild West (Sweden) DK
+https://jmp2.uk/plu-6964bc3806d76f50db3e315e.m3u8
+#EXTINF:-1 tvg-id="TheWildWildWest.se@NO" tvg-logo="logos/TheWildWildWest.se-f59f6d.webp" group-title="Classic;Series",The Wild Wild West (Sweden) NO
+https://jmp2.uk/plu-6964bca2a6c400fd418854a2.m3u8
+#EXTINF:-1 tvg-id="ThisOldHouse.us@SD" tvg-logo="logos/ThisOldHouse.us-f46cff.webp" group-title="Series",This Old House (1080p)
+https://thisoldhouse-2-us.roku.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="ThreesCompany.us@SD" tvg-logo="logos/ThreesCompany.us-e44cef.webp" group-title="Series",Three's Company
+https://jmp2.uk/plu-5ef3977e5d773400077de284.m3u8
+#EXTINF:-1 tvg-id="ThreesCompany.us@CA" tvg-logo="logos/ThreesCompany.us-e44cef.webp" group-title="Series",Three's Company CA (720p)
+https://jmp2.uk/plu-64ca723a2bc49300081a8966.m3u8
+#EXTINF:-1 tvg-id="TinyHouseNation.us@SD" tvg-logo="logos/TinyHouseNation.us-c00c9e.webp" group-title="Series",Tiny House Nation (720p)
+https://jmp2.uk/plu-6540ff4f7312a40008297b59.m3u8
+#EXTINF:-1 tvg-id="TodoNovelas.es@SD" tvg-logo="logos/TodoNovelas.es-323f72.webp" group-title="Series",Todo Novelas (1080p)
+https://dtsszjrztq9ti.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-yshah5p4v45g1/ToDoNovelas_ES.m3u8
+#EXTINF:-1 tvg-id="TopCrime.it@SD" tvg-logo="logos/TopCrime.it-67f087.webp" group-title="Series",Top Crime [Geo-blocked]
+https://live3-mediaset-it.akamaized.net/content/hls_h0_clr_vos/live/channel(lt)/index.m3u8
+#EXTINF:-1 tvg-id="Tosh0.us@SD" tvg-logo="logos/Tosh0.us-63845d.webp" group-title="Series",Tosh.0 (United States)
+https://jmp2.uk/plu-5dae084727c8af0009fe40a4.m3u8
+#EXTINF:-1 tvg-id="ToutlemondedetesteChris.de@FR" tvg-logo="logos/ToutlemondedetesteChris.de-dd5933.webp" group-title="Series",Tout le monde deteste Chris
+https://jmp2.uk/plu-67b4b4a21a5ca760802d25fd.m3u8
+#EXTINF:-1 tvg-id="TrueCrime.uk@SD" tvg-logo="logos/TrueCrime.uk-c5730d.webp" group-title="Series",True Crime (1080p)
+https://b6cca454.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/U2Ftc3VuZy1nYl9UcnVlQ3JpbWVVS2Zyb21DQlNSZWFsaXR5X0hMUw/playlist.m3u8
+#EXTINF:-1 tvg-id="TrueCrimebyPlutoTV.de@FR" tvg-logo="logos/TrueCrimebyPlutoTV.de-f78795.webp" group-title="Series",True Crime by Pluto TV
+https://jmp2.uk/plu-5f914f4b36d67d0007a91a04.m3u8
+#EXTINF:-1 tvg-id="TruecrimefranViaplay.se@SE" tvg-logo="logos/TruecrimefranViaplay.se-74211d.webp" group-title="Series",True crime fran Viaplay
+https://jmp2.uk/plu-645cb7857cb4b1000859c57c.m3u8
+#EXTINF:-1 tvg-id="TrueCrimeNetwork.us@SD" tvg-logo="logos/TrueCrimeNetwork.us-f1959f.webp" group-title="Series",True Crime Network (1080p) [Geo-blocked]
+https://amg00979-amg00979c1-firetv-us-3622.playouts.now.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="TrueCrimeNetwork.us@WCVBTV" tvg-logo="logos/TrueCrimeNetwork.us-f1959f.webp" group-title="Series",True Crime Network WCVB-TV (720p)
+https://aegis-cloudfront-1.tubi.video/c2e3094d-ad56-4c5f-9655-cd80df71fbab/playlist.m3u8
+#EXTINF:-1 tvg-id="TVSeries.br@SD" tvg-logo="logos/TVSeries.br-005313.webp" group-title="Series",TV Series (480p)
+https://stmv1.srvif.com/tvserie/tvserie/playlist.m3u8
+#EXTINF:-1 tvg-id="TVEStar.es@SD" tvg-logo="logos/TVEStar.es-7dc68b.webp" group-title="Series",TVE Star (576p)
+https://rtvelivestream-rtveplayplus.rtve.es/rtvesec/int/star_main_576.m3u8
+#EXTINF:-1 tvg-id="TVEStar.es@HD" tvg-logo="logos/TVEStar.es-7dc68b.webp" group-title="Series",TVE Star HD (1080p)
+https://rtvelivestream-rtveplayplus.rtve.es/rtvesec/int/star_main_1080.m3u8
+#EXTINF:-1 tvg-id="TVIFiccao.pt@SD" tvg-logo="logos/TVIFiccao.pt-37911d.webp" group-title="Series",TVI Ficcao (720p)
+https://raw.githubusercontent.com/thomraider12/canaistvpt/main/m3u8s/tvificcao.m3u8
+#EXTINF:-1 tvg-id="UngaMammor.se@SE" tvg-logo="logos/UngaMammor.se-2e6157.webp" group-title="Series",Unga Mammor
+https://jmp2.uk/plu-61c1900995f417000731a002.m3u8
+#EXTINF:-1 tvg-id="UngaMammor.se@NO" tvg-logo="logos/UngaMammor.se-2e6157.webp" group-title="Series",Unga Mammor NO
+https://jmp2.uk/plu-61c1e1c445b45d0007aad03e.m3u8
+#EXTINF:-1 tvg-id="UnsolvedMysteries.us@US" tvg-logo="logos/UnsolvedMysteries.us-73e8f1.webp" group-title="Series",Unsolved Mysteries (720p)
+https://d31z96rdrmwfsp.cloudfront.net/master.m3u8
+#EXTINF:-1 tvg-id="UnsolvedMysteries.us@UK" tvg-logo="logos/UnsolvedMysteries.us-73e8f1.webp" group-title="Series",Unsolved Mysteries UK
+https://jmp2.uk/plu-5bd05b4694d45d266bc951f2.m3u8
+#EXTINF:-1 tvg-id="VelvetMentovskiyeSerialy.ru@HD" tvg-logo="logos/VelvetMentovskiyeSerialy.ru-8cddf3.webp" group-title="Series",Velvet. Mentovskiye Serialy (1080p)
+https://cdn.rostelekom-tv.xyz/live/tWQ0ge9rspBQhRst.m3u8
+#EXTINF:-1 tvg-id="VelvetSeriesHits.ru@HD" tvg-logo="logos/VelvetSeriesHits.ru-9ff7fc.webp" group-title="Comedy;Family;Series",Velvet. Series Hits (1080p)
+https://cdn.rostelekom-tv.xyz/live/DeWr3Sgw1Aj2lJd0.m3u8
+#EXTINF:-1 tvg-id="VelvetSvaty.ru@HD" tvg-logo="logos/VelvetSvaty.ru-7f7378.webp" group-title="Family;Series",Velvet. Svaty (1080p)
+https://cdn.rostelekom-tv.xyz/live/HSxyMqDlSVR54UTN.m3u8
+#EXTINF:-1 tvg-id="VelvetWorldSeries.ru@HD" tvg-logo="logos/VelvetWorldSeries.ru-3a5b5b.webp" group-title="Comedy;Family;Series",Velvet. World Series (1080p)
+https://cdn.rostelekom-tv.xyz/live/2RR44py-yGlIWQIp.m3u8
+#EXTINF:-1 tvg-id="WalkerTexasRanger.us@France" tvg-logo="logos/WalkerTexasRanger.us-2860ef.webp" group-title="Series",Walker Texas Ranger
+https://jmp2.uk/plu-635659445b4c4700076d2ad1.m3u8
+#EXTINF:-1 tvg-id="WeedsNurseJackie.us@SD" tvg-logo="logos/WeedsNurseJackie.us-811b06.webp" group-title="Series",Weeds & Nurse Jackie (720p)
+https://jmp2.uk/plu-688a44cf5d73ec0a3f49718b.m3u8
+#EXTINF:-1 tvg-id="WildNOut.us@SD" tvg-logo="" group-title="Series",Wild 'N Out
+https://jmp2.uk/plu-5d48678d34ceb37d3c458a55.m3u8
+#EXTINF:-1 tvg-id="WildatHeart.us@UK" tvg-logo="logos/WildatHeart.us-bc2502.webp" group-title="Series",Wild at Heart
+https://jmp2.uk/plu-60817936fd2d70000763d2b2.m3u8
+#EXTINF:-1 tvg-id="Wildfire.se@SE" tvg-logo="logos/Wildfire.se-33c1ac.webp" group-title="Series",Wildfire
+https://jmp2.uk/plu-62beb0de371e6c000775930c.m3u8
+#EXTINF:-1 tvg-id="Wildfire.se@DK" tvg-logo="logos/Wildfire.se-33c1ac.webp" group-title="Series",Wildfire DK
+https://jmp2.uk/plu-62b9b63d3bbe9000073c0a2d.m3u8
+#EXTINF:-1 tvg-id="Wildfire.se@NO" tvg-logo="logos/Wildfire.se-33c1ac.webp" group-title="Series",Wildfire NO
+https://jmp2.uk/plu-62beb7d7fbf54600076abc7b.m3u8
+#EXTINF:-1 tvg-id="XPTVUS.es@SD" tvg-logo="logos/XPTVUS.es-6f6ca5.webp" group-title="Series",XPTV US (720p)
+https://janus.xpbroadcasting.com:8443/hls/xptvUS.m3u8
