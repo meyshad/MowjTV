@@ -69,7 +69,11 @@ test("ships a self-hosted TV folder", async () => {
   assert.match(script, /var DATA = "data\/";/);
   assert.match(script, /PROVINCIAL_NAMES/);
   const categoryKeys = [...script.matchAll(/\{ key: "(\w+)"/g)].map((m) => m[1]).filter((key) => key !== "fav");
-  assert.ok(categoryKeys.length >= 14);
+  assert.ok(categoryKeys.length >= 30, "a broad set of categories");
+  const buildScript = await readFile(new URL("../scripts/build-data.mjs", import.meta.url), "utf8");
+  for (const key of categoryKeys) {
+    assert.match(buildScript, new RegExp(`^  ${key}: \\[`, "m"), `the data build makes ${key}`);
+  }
   for (const key of categoryKeys) {
     await access(new URL(`../public/tv/data/${key}.m3u`, import.meta.url));
   }
@@ -100,9 +104,15 @@ test("ships a self-hosted TV folder", async () => {
   assert.match(script, /function turnPage\(delta\)/);
   assert.doesNotMatch(script, /scrollTop/, "the channel list must not rely on scrolling");
   assert.match(styles, /\.list \{[^}]*overflow: hidden;/);
-  assert.match(styles, /\.cat-items \{[^}]*flex-wrap: wrap;/);
-  assert.match(script, /function showGroup\(group\)/, "a segmented control picks the group");
-  assert.match(script, /className = "seg-btn"/);
+  // Category sidebar: headings with their categories, paged instead of scrolled
+  assert.match(html, /<nav class="catbar" id="cats"/);
+  for (const id of ["catList", "catPager", "catPrev", "catNext", "catPageInfo"]) {
+    assert.match(html, new RegExp(`id="${id}"`), `missing #${id}`);
+  }
+  assert.match(styles, /\.cat-list \{[^}]*overflow: hidden;/);
+  assert.match(script, /function paginate\(\)/);
+  assert.match(script, /catbar\.step\(target/, "Up/Down walk the sidebar across its pages");
+  assert.match(script, /Back from the list or the player goes to the category sidebar/);
 
   // Dark only, with glass as an enhancement and a lifted focus state
   assert.doesNotMatch(styles, /prefers-color-scheme|data-theme/, "there is no light theme");
@@ -156,7 +166,7 @@ test("ships a self-hosted TV folder", async () => {
   for (const file of await readdir(new URL("../public/tv/data/", import.meta.url))) {
     dataBytes += (await stat(new URL(`../public/tv/data/${file}`, import.meta.url))).size;
   }
-  assert.ok(dataBytes < 4000000, "bundled channel lists should stay small");
+  assert.ok(dataBytes < 6000000, "bundled channel lists should stay small");
   assert.ok(styleInfo.size < 40000, "TV stylesheet should stay lightweight");
 });
 

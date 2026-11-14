@@ -7,9 +7,9 @@
     <meta name="color-scheme" content="dark" />
     <meta name="description" content="تلویزیون زنده، سبک و کم‌مصرف، سازگار با ریموت تلویزیون" />
     <title>موج — تلویزیون زنده</title>
-    <link rel="stylesheet" href="./assets/app.css?v=20261115" />
+    <link rel="stylesheet" href="./assets/app.css?v=20261116" />
     <script defer src="./assets/vendor/hls.min.js?v=1.6.16"></script>
-    <script defer src="./assets/app.js?v=20261115"></script>
+    <script defer src="./assets/app.js?v=20261116"></script>
   </head>
   <body>
     <svg class="sprite" aria-hidden="true" focusable="false">
@@ -37,7 +37,6 @@
           <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
           <strong>موج</strong>
         </div>
-        <nav class="cats" id="cats" aria-label="دسته‌ها"></nav>
         <div class="top-actions">
           <time class="clock" id="clock">--:--</time>
           <button class="icon-btn" id="sleepBtn" type="button" aria-label="تایمر خواب">
@@ -50,6 +49,18 @@
       </header>
 
       <main class="main">
+        <nav class="catbar" id="cats" aria-label="دسته‌ها">
+          <div class="cat-list" id="catList"></div>
+          <div class="cat-pager" id="catPager">
+            <button class="cat-page" id="catPrev" type="button" data-nav aria-label="دسته‌های قبلی">
+              <svg aria-hidden="true"><use xlink:href="#i-up" /></svg>
+            </button>
+            <span class="cat-page-info" id="catPageInfo"></span>
+            <button class="cat-page" id="catNext" type="button" data-nav aria-label="دسته‌های بعدی">
+              <svg aria-hidden="true"><use xlink:href="#i-down" /></svg>
+            </button>
+          </div>
+        </nav>
         <aside class="side" aria-label="فهرست شبکه‌ها">
           <div class="search">
             <svg aria-hidden="true"><use xlink:href="#i-search" /></svg>
@@ -138,11 +149,11 @@
         <h2 id="helpTitle">راهنمای ریموت</h2>
         <dl class="keys">
           <dt>▲ ▼</dt><dd>حرکت در فهرست (بعد از آخرین ردیف، صفحه عوض می‌شود) · در تمام‌صفحه: شبکه قبل/بعد</dd>
-          <dt>◀ ▶</dt><dd>جابه‌جایی بین فهرست، پخش‌کننده و دکمه‌ها</dd>
+          <dt>◀ ▶</dt><dd>جابه‌جایی بین دسته‌ها، فهرست، پخش‌کننده و دکمه‌ها</dd>
           <dt>OK</dt><dd>پخش شبکه · روی شبکهٔ در حال پخش: تمام‌صفحه</dd>
           <dt>۰–۹</dt><dd>رفتن مستقیم به شمارهٔ شبکه</dd>
           <dt>CH+ CH−</dt><dd>شبکه بعد/قبل (از شبکه‌های کم‌رنگ رد می‌شود)</dd>
-          <dt>Back</dt><dd>بستن پنجره یا خروج از تمام‌صفحه</dd>
+          <dt>Back</dt><dd>بستن پنجره، خروج از تمام‌صفحه، یا برگشت به دسته‌ها</dd>
         </dl>
         <p class="note">
           کیفیت «خودکار» تا ۴۸۰p است تا اینترنت کمتری مصرف شود؛ از دکمهٔ کیفیت
