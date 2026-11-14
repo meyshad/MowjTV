@@ -30,7 +30,7 @@ This downloads the IPTV-ORG playlists again, drops channels that no browser can 
 
 - Up/Down: move through the channel list (walking past the first or last row turns the page); in fullscreen, previous/next channel
 - Page buttons under the list: show the previous or next page of channels; they also work with a TV pointer or a mouse wheel
-- Left/Right: move between the list, the player, the controls and the category row
+- Left/Right: move between the list, the player and the controls; in the header, move across the three category groups (the categories below change as you go) or across the categories of a group
 - OK/Enter: play the focused channel; on the channel that is already playing, open fullscreen
 - 0-9: type a channel number to jump to it
 - CH+/CH-: next/previous channel
