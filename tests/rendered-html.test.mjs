@@ -73,7 +73,7 @@ test("ships a self-hosted TV folder", async () => {
   for (const key of categoryKeys) {
     await access(new URL(`../public/tv/data/${key}.m3u`, import.meta.url));
   }
-  assert.match(script, /CATEGORY_GROUPS = \{ topic: "موضوع", region: "منطقه" \}/);
+  assert.match(script, /CATEGORY_GROUPS = \{ persian: "فارسی", topic: "موضوع", region: "منطقه" \}/);
   assert.match(script, /"GZT\.tr": \["https:\/\/gzttv-live\.lg\.mncdn\.com\/gzttv-live\/gzttv\/playlist\.m3u8"\]/);
   assert.match(script, /CORS_LOCKED_HOSTS = \["ncdn\.telewebion\.ir"\]/);
   assert.doesNotMatch(script, /api\/streams\.json/, "the 4 MB streams index must not be downloaded");
@@ -100,8 +100,15 @@ test("ships a self-hosted TV folder", async () => {
   assert.match(script, /function turnPage\(delta\)/);
   assert.doesNotMatch(script, /scrollTop/, "the channel list must not rely on scrolling");
   assert.match(styles, /\.list \{[^}]*overflow: hidden;/);
-  assert.match(styles, /\.cats-row \{[^}]*flex-wrap: wrap;/);
-  assert.match(script, /group === "region" \? rows\.region : rows\.main/, "regions get their own row");
+  assert.match(styles, /\.cat-items \{[^}]*flex-wrap: wrap;/);
+  assert.match(script, /function showGroup\(group\)/, "a segmented control picks the group");
+  assert.match(script, /className = "seg-btn"/);
+
+  // Dark only, with glass as an enhancement and a lifted focus state
+  assert.doesNotMatch(styles, /prefers-color-scheme|data-theme/, "there is no light theme");
+  assert.match(styles, /@supports \(\(-webkit-backdrop-filter: blur\(1px\)\) or \(backdrop-filter: blur\(1px\)\)\)/);
+  assert.match(styles, /\.row:focus \{[^}]*transform: scale\(/);
+  assert.doesNotMatch(styles, /SF Pro|San Francisco/, "no bundled or named Apple fonts");
   assert.match(styles, /@media \(hover: hover\) \{/, "hover hints for TV pointers too");
 
   // Fully self-hosted: nothing but the video streams comes from another host

@@ -12,15 +12,16 @@
    * from IPTV-ORG), so everything but the video streams comes from this host. */
   var DATA = "data/";
 
-  /* Three short groups so the chip row stays easy to walk with a remote:
-   * Persian first, then topics, then regions. "note" marks the big downloads
-   * (IPTV-ORG serves the playlists uncompressed). */
-  var CATEGORY_GROUPS = { topic: "موضوع", region: "منطقه" };
+  /* Three groups in a segmented control (Persian, topics, regions); the
+   * categories of the chosen group sit right below it, so every category is
+   * on screen in two short rows. "note" marks the bigger downloads. */
+  var CATEGORY_GROUPS = { persian: "فارسی", topic: "موضوع", region: "منطقه" };
+  var GROUP_ORDER = ["persian", "topic", "region"];
 
   var CATEGORIES = [
-    { key: "fav", title: "محبوب‌ها", favorites: true },
-    { key: "fas", title: "فارسی" },
-    { key: "provinces", title: "استانی", provincialOnly: true },
+    { key: "fav", group: "persian", title: "محبوب‌ها", favorites: true },
+    { key: "fas", group: "persian", title: "شبکه‌های فارسی" },
+    { key: "provinces", group: "persian", title: "استانی", provincialOnly: true },
     { key: "news", group: "topic", title: "خبری" },
     { key: "sports", group: "topic", title: "ورزشی" },
     { key: "music", group: "topic", title: "موسیقی" },
@@ -721,7 +722,8 @@
 
     function layout() {
       if (!rowHeight) measure();
-      perPage = Math.max(1, Math.floor((el.clientHeight || rowHeight * 8) / rowHeight));
+      // Rows sit a little below the top edge (margin-top in the CSS); keep that much spare.
+      perPage = Math.max(1, Math.floor(((el.clientHeight || rowHeight * 8) - rowHeight * 0.2) / rowHeight));
     }
 
     function pageCount() {
@@ -2271,51 +2273,99 @@
    * Categories, search and loading
    * ------------------------------------------------------------------ */
 
-  /* Two fixed rows on a TV: Persian lists and topics first, regions below.
-   * (Phones show both rows side by side in one swipeable strip.) */
-  function renderCategories() {
-    var nav = $("cats");
-    nav.textContent = "";
-    var rows = { main: document.createElement("div"), region: document.createElement("div") };
-    rows.main.className = "cats-row";
-    rows.region.className = "cats-row";
-    var lastGroup = "";
+  var shownGroup = "";
+
+  function groupOf(cat) {
+    return (cat && cat.group) || "persian";
+  }
+
+  function makeChip(cat) {
+    var chip = document.createElement("button");
+    chip.type = "button";
+    chip.className = "chip" + (state.cat && state.cat.key === cat.key ? " is-active" : "");
+    chip.setAttribute("data-nav", "");
+    chip.setAttribute("data-cat", cat.key);
+    chip.textContent = (cat.favorites ? "★ " : "") + cat.title;
+    chip.setAttribute("aria-label", CATEGORY_GROUPS[groupOf(cat)] + ": " + cat.title);
+    if (cat.note) {
+      var small = document.createElement("small");
+      small.textContent = cat.note;
+      chip.appendChild(small);
+    }
+    chip.addEventListener("click", function () {
+      loadCategory(cat.key, false);
+    });
+    return chip;
+  }
+
+  function fillCategoryItems() {
+    var items = $("catItems");
+    if (!items) return;
+    items.textContent = "";
     CATEGORIES.forEach(function (cat) {
       if (cat.favorites && !prefs.favorites.length) return;
-      var group = cat.group || "";
-      var row = group === "region" ? rows.region : rows.main;
-      if (group && group !== lastGroup) {
-        // Topics follow the Persian lists after a thin divider; the region row gets a label.
-        var mark = document.createElement("span");
-        mark.setAttribute("aria-hidden", "true");
-        if (row.childNodes.length) {
-          mark.className = "cats-sep";
-        } else {
-          mark.className = "cats-label";
-          mark.textContent = CATEGORY_GROUPS[group];
-        }
-        row.appendChild(mark);
-      }
-      lastGroup = group;
-      var chip = document.createElement("button");
-      chip.type = "button";
-      chip.className = "chip" + (state.cat && state.cat.key === cat.key ? " is-active" : "");
-      chip.setAttribute("data-nav", "");
-      chip.setAttribute("data-cat", cat.key);
-      chip.textContent = (cat.favorites ? "★ " : "") + cat.title;
-      if (group) chip.setAttribute("aria-label", CATEGORY_GROUPS[group] + ": " + cat.title);
-      if (cat.note) {
-        var small = document.createElement("small");
-        small.textContent = cat.note;
-        chip.appendChild(small);
-      }
-      chip.addEventListener("click", function () {
-        loadCategory(cat.key, false);
-      });
-      row.appendChild(chip);
+      if (groupOf(cat) === shownGroup) items.appendChild(makeChip(cat));
     });
-    nav.appendChild(rows.main);
-    nav.appendChild(rows.region);
+  }
+
+  // Focusing (or clicking) a segment shows its categories; the list only
+  // changes when a category is chosen.
+  function showGroup(group) {
+    if (group === shownGroup) return;
+    shownGroup = group;
+    var buttons = $("cats").querySelectorAll(".seg-btn");
+    for (var i = 0; i < buttons.length; i += 1) {
+      var on = buttons[i].getAttribute("data-group") === group;
+      buttons[i].classList.toggle("is-shown", on);
+      buttons[i].setAttribute("aria-selected", on ? "true" : "false");
+    }
+    fillCategoryItems();
+  }
+
+  document.addEventListener("focusin", function (event) {
+    var nav = $("cats");
+    if (shownGroup && nav && !nav.contains(event.target)) showGroup(groupOf(state.cat));
+  });
+
+  function renderCategories() {
+    var nav = $("cats");
+    var focused = document.activeElement;
+    var refocus = focused && nav.contains(focused)
+      ? (focused.getAttribute("data-cat") ? '[data-cat="' + focused.getAttribute("data-cat") + '"]'
+        : '[data-group="' + focused.getAttribute("data-group") + '"]')
+      : "";
+    if (!shownGroup) shownGroup = groupOf(state.cat);
+    nav.textContent = "";
+    var seg = document.createElement("div");
+    seg.className = "seg";
+    seg.setAttribute("role", "tablist");
+    GROUP_ORDER.forEach(function (group) {
+      var button = document.createElement("button");
+      button.type = "button";
+      button.className = "seg-btn" + (group === shownGroup ? " is-shown" : "") +
+        (state.cat && groupOf(state.cat) === group ? " has-active" : "");
+      button.setAttribute("data-nav", "");
+      button.setAttribute("data-group", group);
+      button.setAttribute("role", "tab");
+      button.setAttribute("aria-selected", group === shownGroup ? "true" : "false");
+      button.textContent = CATEGORY_GROUPS[group];
+      button.addEventListener("focus", function () {
+        showGroup(group);
+      });
+      button.addEventListener("click", function () {
+        showGroup(group);
+      });
+      seg.appendChild(button);
+    });
+    var items = document.createElement("div");
+    items.className = "cat-items";
+    items.id = "catItems";
+    items.setAttribute("role", "tabpanel");
+    nav.appendChild(seg);
+    nav.appendChild(items);
+    fillCategoryItems();
+    var again = refocus && nav.querySelector(refocus);
+    if (again) again.focus();
   }
 
   function showListMessage(title, text, withRetry) {
@@ -2430,6 +2480,7 @@
     $("search").value = "";
     prefs.cat = cat.key;
     savePrefs();
+    shownGroup = groupOf(cat);
     renderCategories();
     state.loadToken += 1;
     var token = state.loadToken;
@@ -2633,11 +2684,23 @@
       }
     });
     if (!best) return false;
-    // Entering the category row from below lands on the selected category.
+    // Entering the category row lands on the selected category, and entering
+    // the segmented control lands on the group being shown.
     if ((direction === "up" || direction === "down") && best.classList.contains("chip") &&
       !from.classList.contains("chip")) {
       best = $("cats").querySelector(".chip.is-active") || best;
     }
+    if ((direction === "up" || direction === "down") && best.classList.contains("seg-btn") &&
+      !from.classList.contains("seg-btn")) {
+      best = $("cats").querySelector(".seg-btn.is-shown") || best;
+    }
+    // Going up into the header from the list or the player: the category row comes first.
+    if (direction === "up" && $("cats").contains(best) && !$("cats").contains(from)) {
+      best = $("cats").querySelector(".chip.is-active") || $("cats").querySelector(".chip") || best;
+    }
+    if (best.getAttribute("data-group")) showGroup(best.getAttribute("data-group"));
+    // Leaving the header without choosing: show the group of the open list again.
+    if ($("cats").contains(from) && !$("cats").contains(best)) showGroup(groupOf(state.cat));
     if (best === list.el) list.focusCurrent();
     else best.focus();
     return true;
