@@ -51,7 +51,8 @@ jobs:
         run: |
           git fetch origin gh-pages
           git worktree add -B gh-pages ../site origin/gh-pages
-          rsync -a --delete --exclude .git --exclude CNAME --exclude .nojekyll public/tv/ ../site/
+          # Same layout as the hosting package: a root page that redirects to tv/, and the app in tv/.
+          rsync -a --delete --exclude .git --exclude CNAME --exclude .nojekyll --exclude tv.zip release/ ../site/
           touch ../site/.nojekyll
           cd ../site
           git add -A

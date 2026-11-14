@@ -9,7 +9,7 @@
 ## Features
 
 - A dark, glassy 10-foot interface: the focused item lifts, grows slightly and turns bright so it is easy to spot from the sofa
-- Categories in a sidebar under three headings: Persian (favorites, Persian, Afghanistan and Tajikistan, provincial), 15 topics (news, sports, music, entertainment, movies and series, documentary and science, kids and animation, education, culture, religious, comedy, lifestyle and travel, business, classic, legislative) and 14 regions (from Turkey and the Arab world to Europe, Africa, the Americas and Oceania); the sidebar pages instead of scrolling when it does not fit
+- A short category sidebar that always fits on one screen, with simple icons: Persian first (with favorites), seven topics (news, sports, music, movies and series, kids, documentary and science, entertainment) and regions (Turkey, Middle East and the Arab world, Europe, Asia, the Americas, other regions, all channels); IPTV-ORG's many small categories are folded into these, and big lists keep the 1,200 channels most likely to work
 - Playable-first lists: channels that played on this connection move to the top, and channels that usually fail here are dimmed, moved to the end and skipped by CH+/CH-
 - Built for TV browsers: nothing scrolls inside the page; the channel list turns whole pages with large buttons (or by walking past the last row), and every category is visible at once, so both the D-pad and a remote-controlled pointer work well
 - Hands-free fullscreen: after 30 seconds of playback with no key, pointer, click, wheel or touch, the channel goes fullscreen (never while a menu is open, paused or failed; leaving fullscreen starts a fresh 30 seconds)
@@ -17,9 +17,10 @@
 - Data-saving playback: automatic quality is capped at 480p; a higher quality can be chosen from the quality menu and is remembered
 - Cautious adaptive bitrate tuned for slow, unstable connections, with bounded reconnects and no download while paused or hidden
 - Lazy availability check: one small request for the channel the remote rests on, and an opt-in "check channels" button that checks a whole list (a few KB per channel); never an automatic background scan
-- Fully self-hosted: the page, hls.js, the font, the channel lists and 64px WebP logos (about 1-2 KB each) all load from the host the package is uploaded to; only the video streams come from each channel's own server
+- Works on any host, even where GitHub is blocked: the page, hls.js, the font, the channel lists and 64px WebP logos (about 1-2 KB each) all ship with the site; only the video streams come from each channel's own server
+- Online first for the small lists: Persian, Turkey, sports, music, kids and documentary are read from IPTV-ORG with one 4.5-second try, through the same parser the build uses; if that host does not answer, the bundled copy is used at once and the online try is skipped for a day. Big lists always come from the bundled copy
 - Channels a browser cannot play (HTTP-only, CORS-locked, or needing custom headers) are removed when the package is built, which keeps the bundled lists small
-- Channel lists are cached for 12 hours, so opening the app normally costs no list traffic
+- Channel lists are cached until the data changes: opening the app costs one small version check, and an old cached list is never shown after an update
 - `npm run refresh-data` (and a weekly GitHub Action) refreshes the lists and logos and rebuilds the package
 - Responsive layout for TVs, desktops and phones
 
@@ -46,7 +47,7 @@ npm run lint
 - `public/tv/`: the primary, standalone TV interface
 - `app/`: the entry page that redirects visitors to `/tv/`
 - `tests/`: build, compatibility, behavior, and output-size checks
-- `scripts/build-data.mjs`: downloads the IPTV-ORG playlists, keeps browser-playable channels in `public/tv/data/` and builds the logos in `public/tv/logos/`
+- `scripts/build-data.mjs`: downloads the IPTV-ORG playlists, keeps browser-playable channels as compact JSON in `public/tv/data/` (with `index.json` naming the data version) and builds the logos in `public/tv/logos/`
 - `scripts/build-release.mjs`: builds `release/` (the site, a root redirect to `tv/`, and `tv.zip`)
 - `release/`: the ready-to-upload hosting package
 

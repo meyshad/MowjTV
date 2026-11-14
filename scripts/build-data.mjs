@@ -3,7 +3,8 @@
  * Builds the channel data that ships with Mowj TV, so the app reads nothing
  * from third-party hosts at runtime (only the video streams themselves).
  *
- *   public/tv/data/<category>.m3u   browser-playable channels of each category
+ *   public/tv/data/<category>.json  browser-playable channels of each category
+ *   public/tv/data/index.json       data version and list sizes
  *   public/tv/logos/<channel>-<hash>.webp   64px logos of 1-2 KB
  *   scripts/logo-sources.json       which original logo each file came from
  *
@@ -18,13 +19,16 @@
  * fetched again.
  *
  * usage: node scripts/build-data.mjs [--no-logos] [--force-logos]
+ *   --no-logos: fetch no new logos (unused ones are still removed)
  */
 import { createHash } from "node:crypto";
-import { mkdir, readdir, readFile, unlink, writeFile } from "node:fs/promises";
+import { mkdir, readdir, readFile, rename, unlink, writeFile } from "node:fs/promises";
+import { runInNewContext } from "node:vm";
 
 const IPTV = "https://iptv-org.github.io/iptv/";
 const TV = new URL("../public/tv/", import.meta.url);
 const DATA_DIR = new URL("data/", TV);
+const DATA_FORMAT = 2; // bump when the JSON layout changes
 const LOGO_DIR = new URL("logos/", TV);
 const LOGO_STATE = new URL("logo-sources.json", import.meta.url);
 const LOGO_SIZE = 64;
@@ -34,98 +38,46 @@ const LOGO_MAX_PER_RUN = 1500;  // the weekly run fills in the rest gradually
 
 // Category key (as used by the app) -> IPTV-ORG playlists. Order sets logo priority.
 const SOURCES = {
-  fas: ["languages/fas"],
-  afghan: ["countries/af", "countries/tj"],
-  provinces: ["countries/ir"],
-  news: ["categories/news"],
+  // Persian
+  fas: ["languages/fas", "countries/af", "countries/tj"],
+  // Topics: thin IPTV-ORG categories are folded into broader ones
+  news: ["categories/news", "categories/business", "categories/legislative"],
   sports: ["categories/sports"],
   music: ["categories/music"],
-  entertainment: ["categories/entertainment"],
   movies: ["categories/movies", "categories/series"],
-  documentary: ["categories/documentary", "categories/science"],
   kids: ["categories/kids", "categories/animation"],
-  education: ["categories/education"],
-  culture: ["categories/culture"],
-  religious: ["categories/religious"],
-  comedy: ["categories/comedy"],
-  lifestyle: ["categories/lifestyle", "categories/cooking", "categories/travel", "categories/outdoor", "categories/auto"],
-  business: ["categories/business"],
-  classic: ["categories/classic"],
-  legislative: ["categories/legislative"],
+  documentary: ["categories/documentary", "categories/science", "categories/education"],
+  entertainment: [
+    "categories/entertainment", "categories/comedy", "categories/lifestyle", "categories/cooking",
+    "categories/travel", "categories/outdoor", "categories/auto", "categories/classic", "categories/culture",
+  ],
+  // Regions
   tr: ["countries/tr"],
-  mideast: ["regions/mideast"],
-  arab: ["regions/arab"],
-  cas: ["regions/cas"],
-  sas: ["regions/sas"],
-  eas: ["regions/eas"],
-  sea: ["regions/sea"],
-  cis: ["regions/cis"],
+  mideast: ["regions/mideast", "regions/arab"],
   eur: ["regions/eur"],
-  afr: ["regions/afr"],
-  noram: ["regions/noram"],
-  latam: ["regions/latam"],
-  oce: ["regions/oce"],
+  asia: ["regions/eas", "regions/sea", "regions/sas", "regions/cas"],
+  amer: ["regions/noram", "regions/latam"],
+  other: ["regions/afr", "regions/oce", "regions/cis"],
   all: ["index"],
 };
+
+// Parsing, filtering, merging and the per-list cap live in public/tv/assets/lists.js,
+// which the app also uses for lists it reads online, so both always agree.
+const lists = (() => {
+  const sandbox = {};
+  sandbox.window = sandbox;
+  return sandbox;
+})();
 
 const args = process.argv.slice(2);
 const withLogos = !args.includes("--no-logos");
 const forceLogos = args.includes("--force-logos");
 
 const app = await readFile(new URL("assets/app.js", TV), "utf8");
-// Same lists as the app, read from it so the two never disagree.
+// Same list as the app, read from it so the two never disagree.
 const CORS_LOCKED_HOSTS = JSON.parse(app.match(/CORS_LOCKED_HOSTS = (\[[^\]]*\])/)[1]);
-const PROVINCIAL_IDS = new Set(
-  [...app.match(/PROVINCIAL_NAMES = \{([\s\S]*?)\n {2}\};/)[1].matchAll(/"([^"]+)":/g)].map((m) => m[1]),
-);
-
-function playable(url, ref, ua) {
-  if (!/^https:\/\//i.test(url)) return false; // HTTP is blocked on an HTTPS page
-  if (ref || ua) return false; // browsers cannot send these headers
-  if (/\.mpd(?:$|[?#])/i.test(url)) return false; // DASH is not supported
-  const host = (url.split("/")[2] || "").toLowerCase();
-  return !CORS_LOCKED_HOSTS.includes(host);
-}
-
-function attr(line, name) {
-  const match = line.match(new RegExp(`${name}="([^"]*)"`));
-  return match ? match[1] : "";
-}
-
-function parse(text) {
-  const entries = [];
-  let cur = null;
-  for (const raw of text.split(/\r?\n/)) {
-    const line = raw.trim();
-    if (!line) continue;
-    if (line.startsWith("#EXTINF")) {
-      const comma = line.lastIndexOf(",");
-      cur = {
-        id: attr(line, "tvg-id"),
-        logo: attr(line, "tvg-logo"),
-        group: attr(line, "group-title"),
-        title: comma >= 0 ? line.slice(comma + 1).trim() : "",
-        ref: attr(line, "http-referrer"),
-        ua: attr(line, "http-user-agent"),
-      };
-      continue;
-    }
-    if (!cur) continue;
-    if (line.startsWith("#EXTVLCOPT:http-referrer=")) cur.ref = line.slice(line.indexOf("=") + 1);
-    else if (line.startsWith("#EXTVLCOPT:http-user-agent=")) cur.ua = line.slice(line.indexOf("=") + 1);
-    else if (!line.startsWith("#")) {
-      entries.push({ ...cur, url: line });
-      cur = null;
-    }
-  }
-  return entries;
-}
-
-const channelKey = (e) => e.id || `n:${e.title.toLowerCase()}`;
-const baseId = (id) => id.split("@")[0];
-const clean = (value) => String(value).replace(/["\r\n]/g, "").trim();
-const logoFile = (base, url) =>
-  `${base.replace(/[^A-Za-z0-9._-]/g, "_")}-${createHash("sha1").update(url).digest("hex").slice(0, 6)}.webp`;
+runInNewContext(await readFile(new URL("assets/lists.js", TV), "utf8"), lists);
+const { parseM3u, buildRows, baseId, logoName } = lists.MowjLists;
 
 async function getText(url) {
   for (let attempt = 1; ; attempt += 1) {
@@ -186,17 +138,25 @@ async function buildLogos(logoWanted) {
   } catch {
     state = {};
   }
+  // Logos are named after the channel only, so a list the app reads online finds them too.
+  for (const [base, entry] of Object.entries(state)) {
+    if (entry.file && entry.file !== logoName(base)) {
+      await rename(new URL(entry.file, LOGO_DIR), new URL(logoName(base), LOGO_DIR)).catch(() => {});
+      entry.file = logoName(base);
+    }
+  }
   const existing = new Set(await readdir(LOGO_DIR));
   const jobs = [];
   for (const [base, url] of logoWanted) {
-    const file = logoFile(base, url);
-    if (!forceLogos && state[base] && state[base].file === file && existing.has(file)) continue;
+    const file = logoName(base);
+    const known = state[base] && state[base].url === url && state[base].file === file && existing.has(file);
+    if (!forceLogos && known) continue;
     jobs.push({ base, url, file });
   }
   // New logos first, then earlier failures; at most LOGO_MAX_PER_RUN per run.
   jobs.sort((a, b) => Number(Boolean(state[a.base] && state[a.base].failed)) - Number(Boolean(state[b.base] && state[b.base].failed)));
   const pending = jobs.length;
-  jobs.splice(LOGO_MAX_PER_RUN);
+  jobs.splice(withLogos ? LOGO_MAX_PER_RUN : 0); // --no-logos: only drop logos nobody uses
   console.log(`logos: ${logoWanted.size} wanted, ${pending} missing, fetching ${jobs.length} this run`);
 
   let done = 0;
@@ -244,50 +204,47 @@ async function main() {
     const entries = [];
     for (const path of paths) {
       text[path] = text[path] || (await getText(`${IPTV}${path}.m3u`));
-      entries.push(...parse(text[path]));
+      entries.push(...parseM3u(text[path]));
     }
-    const channels = new Map();
-    for (const entry of entries) {
-      if (key === "provinces" && !PROVINCIAL_IDS.has(baseId(entry.id))) continue;
-      const ck = channelKey(entry);
-      if (!channels.has(ck)) channels.set(ck, { head: entry, urls: [] });
-      const channel = channels.get(ck);
-      if (!channel.head.logo && entry.logo) channel.head.logo = entry.logo;
-      if (playable(entry.url, entry.ref, entry.ua) && !channel.urls.some((u) => u.url === entry.url)) {
-        channel.urls.push(entry);
-      }
-    }
-    const kept = [...channels.values()].filter((c) => c.urls.length);
-    for (const channel of kept) {
+    categories[key] = entries;
+    const first = buildRows(entries, { corsLockedHosts: CORS_LOCKED_HOSTS });
+    for (const channel of first.kept) {
       const base = baseId(channel.head.id);
-      if (base && /^https:\/\//i.test(channel.head.logo) && !logoWanted.has(base)) logoWanted.set(base, channel.head.logo);
+      if (base && /^https:\/\//i.test(channel.logo) && !logoWanted.has(base)) logoWanted.set(base, channel.logo);
     }
-    categories[key] = { kept, hidden: channels.size - kept.length };
   }
 
-  const logos = withLogos ? await buildLogos(logoWanted) : JSON.parse(await readFile(LOGO_STATE, "utf8").catch(() => "{}"));
+  const logos = await buildLogos(logoWanted);
 
-  const written = new Set();
-  for (const [key, { kept, hidden }] of Object.entries(categories)) {
-    const lines = [`#EXTM3U x-mowj-hidden="${hidden}"`];
-    for (const channel of kept) {
-      const base = baseId(channel.head.id);
-      const logo = base && logos[base] && logos[base].file ? `logos/${logos[base].file}` : "";
-      for (const entry of channel.urls) {
-        // One line per source; the app merges them by tvg-id (the first title wins).
-        lines.push(
-          `#EXTINF:-1 tvg-id="${clean(channel.head.id)}" tvg-logo="${logo}" group-title="${clean(channel.head.group)}",${clean(entry.title || channel.head.title)}`,
-          entry.url,
-        );
-      }
-    }
-    await writeFile(new URL(`${key}.m3u`, DATA_DIR), `${lines.join("\n")}\n`);
-    written.add(`${key}.m3u`);
-    console.log(`${key.padEnd(12)} ${String(kept.length).padStart(5)} channels, ${hidden} hidden`);
+  // Compact JSON (any static host serves .json correctly, unlike .m3u):
+  // [id, name, logo file, group, height, flags (1 geo-blocked, 2 not 24/7), [urls]]
+  const lists = {};
+  const bodies = {};
+  for (const [key, entries] of Object.entries(categories)) {
+    const built = buildRows(entries, {
+      corsLockedHosts: CORS_LOCKED_HOSTS,
+      logoFor: (base) => (logos[base] && logos[base].file ? logos[base].file : ""),
+    });
+    const { hidden, playable: playableCount } = built;
+    const rows = built.c;
+    bodies[key] = { hidden, playable: playableCount, c: rows };
+    console.log(`${key.padEnd(14)} ${String(rows.length).padStart(5)} channels (${playableCount} playable, ${hidden} hidden)`);
   }
+  const version = `${new Date().toISOString().slice(0, 10).replace(/-/g, "")}-${createHash("sha1")
+    .update(JSON.stringify(bodies)).digest("hex").slice(0, 8)}`;
+  const written = new Set(["index.json"]);
+  for (const [key, body] of Object.entries(bodies)) {
+    const json = JSON.stringify({ format: DATA_FORMAT, v: version, ...body });
+    await writeFile(new URL(`${key}.json`, DATA_DIR), `${json}\n`);
+    written.add(`${key}.json`);
+    lists[key] = { n: body.c.length, kb: Math.round(json.length / 1024) };
+  }
+  // Read first by the app (a few hundred bytes): when "v" changes, cached lists are dropped.
+  await writeFile(new URL("index.json", DATA_DIR), `${JSON.stringify({ format: DATA_FORMAT, v: version, lists })}\n`);
   for (const file of await readdir(DATA_DIR)) {
-    if (file.endsWith(".m3u") && !written.has(file)) await unlink(new URL(file, DATA_DIR));
+    if (!written.has(file)) await unlink(new URL(file, DATA_DIR));
   }
+  console.log(`data version ${version}`);
 }
 
 main().catch((error) => {
