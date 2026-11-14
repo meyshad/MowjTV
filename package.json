@@ -20,7 +20,9 @@
     "start": "WRANGLER_LOG_PATH=.wrangler/wrangler.log vinext start",
     "test": "npm run build && node --test tests/rendered-html.test.mjs",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
-    "db:generate": "drizzle-kit generate"
+    "db:generate": "drizzle-kit generate",
+    "refresh-data": "node scripts/build-data.mjs && node scripts/build-release.mjs",
+    "build-release": "node scripts/build-release.mjs"
   },
   "dependencies": {
     "drizzle-orm": "0.45.2",

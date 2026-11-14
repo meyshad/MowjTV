@@ -1,0 +1,61 @@
+name: Refresh channel data
+
+# Once a week: download the IPTV-ORG playlists again, keep only browser-playable
+# channels, fetch new or changed logos, rebuild release/tv.zip and publish the
+# site to the gh-pages branch. Nothing is committed when nothing changed.
+on:
+  schedule:
+    - cron: "17 2 * * 0"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-data
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Build channel data and logos
+        run: node scripts/build-data.mjs
+
+      - name: Build the hosting package
+        run: node scripts/build-release.mjs
+
+      - name: Commit the refreshed data
+        id: commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/tv/data public/tv/logos scripts/logo-sources.json release
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            git commit -m "chore(data): refresh channel lists and logos"
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Publish to gh-pages
+        if: steps.commit.outputs.changed == 'true'
+        run: |
+          git fetch origin gh-pages
+          git worktree add -B gh-pages ../site origin/gh-pages
+          rsync -a --delete --exclude .git --exclude CNAME --exclude .nojekyll public/tv/ ../site/
+          touch ../site/.nojekyll
+          cd ../site
+          git add -A
+          if ! git diff --cached --quiet; then
+            git commit -m "Deploy refreshed channel data"
+            git push origin gh-pages
+          fi

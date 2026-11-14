@@ -1,0 +1,401 @@
+#EXTM3U x-mowj-hidden="226"
+#EXTINF:-1 tvg-id="3ABNInternational.us@SD" tvg-logo="logos/3ABNInternational.us-910831.webp" group-title="Religious",3ABN International (720p)
+https://3abn.bozztv.com/3abn2/Int_live/smil:Int_live.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="24Horas.es@SD" tvg-logo="logos/24Horas.es-11be8a.webp" group-title="News;Public",24 Horas (720p)
+https://ztnr.rtve.es/ztnr/1694255.m3u8
+#EXTINF:-1 tvg-id="AndTV.in@International" tvg-logo="logos/AndTV.in-4d5a7a.webp" group-title="Movies",&TV International (1080p)
+https://amg01117-amg01117c1-amgplt0029.playout.now3.amagi.tv/playlist/amg01117-amg01117c1-amgplt0029/playlist.m3u8
+#EXTINF:-1 tvg-id="ABCNewsLive.us@SD" tvg-logo="logos/ABCNewsLive.us-b25df0.webp" group-title="News",ABC News Live (720p)
+https://jmp2.uk/plu-6508be683a0d700008c534e4.m3u8
+#EXTINF:-1 tvg-id="AbejalesTV.ve@HD" tvg-logo="logos/AbejalesTV.ve-6f88ad.webp" group-title="Entertainment",AbejalesTV (720p)
+https://183.bozztv.com/giatv/giatv-AbejalesTV/AbejalesTV/playlist.m3u8
+#EXTINF:-1 tvg-id="ABN.kr@SD" tvg-logo="logos/ABN.kr-d79152.webp" group-title="General",ABN (720p)
+https://vod2.abn.co.kr/IPHONE/abn.m3u8
+#EXTINF:-1 tvg-id="ABNChina.us@SD" tvg-logo="logos/ABNChina.us-fbbc46.webp" group-title="Religious",ABN China (720p)
+https://mediaserver.abnvideos.com/streams/abnchina.m3u8
+#EXTINF:-1 tvg-id="AlJazeera.qa@English" tvg-logo="logos/AlJazeera.qa-a59d92.webp" group-title="News",Al Jazeera English (1080p)
+https://live-hls-apps-aje-fa.getaj.net/AJE/index.m3u8
+#EXTINF:-1 tvg-id="AngelTV.in@Chinese" tvg-logo="logos/AngelTV.in-813c14.webp" group-title="Religious",Angel TV Chinese (720p)
+https://janya-digimix.akamaized.net/vglive-sk-999451/chinese/ngrp:angelchinese_all/playlist.m3u8
+#EXTINF:-1 tvg-id="AnhuiTV.cn@SD" tvg-logo="logos/AnhuiTV.cn-9dbb7b.webp" group-title="Undefined",Anhui TV
+https://restream.pdtvhd.com/memfs/c1cd2ed0-3b2b-4c25-af98-a7fb0b1eb130.m3u8
+#EXTINF:-1 tvg-id="AnshunComprehensiveNewsChannel.cn@SD" tvg-logo="logos/AnshunComprehensiveNewsChannel.cn-680626.webp" group-title="News",Anshun Comprehensive News Channel
+https://hplayer1.juyun.tv/camera/154379194.m3u8
+#EXTINF:-1 tvg-id="ArirangTV.kr@HD" tvg-logo="logos/ArirangTV.kr-aab1ad.webp" group-title="General;News",Arirang TV HD (1080p)
+https://freem3u.xyz/api/live/play.m3u8?vid=111
+#EXTINF:-1 tvg-id="ArirangUN.kr@SD" tvg-logo="logos/ArirangUN.kr-f09059.webp" group-title="News",Arirang UN (1080p)
+https://amdlive-ch02-ctnd-com.akamaized.net/arirang_2ch/smil:arirang_2ch.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="Armenia1.am@Sattelite" tvg-logo="logos/Armenia1.am-2cb0db.webp" group-title="General",Armenia 1 Sattelite (1080p)
+https://amtv.tulixcdn.com/amtv2/am2abr/index.m3u8
+#EXTINF:-1 tvg-id="AsiaTV.lk@HD" tvg-logo="" group-title="Entertainment;Family;General",Asia TV (720p)
+https://stream.asiatvnet.com/1/live/master.m3u8
+#EXTINF:-1 tvg-id="AznewsTV.se@SD" tvg-logo="logos/AznewsTV.se-7d1a51.webp" group-title="News",Aznews TV (720p) [Not 24/7]
+https://edge1.socialsmart.tv/aznews/smil/playlist.m3u8
+#EXTINF:-1 tvg-id="BaichengTV.cn@SD" tvg-logo="logos/BaichengTV.cn-5464c7.webp" group-title="General",Baicheng TV [Geo-blocked]
+https://stream2.jlntv.cn/baicheng1/sd/live.m3u8
+#EXTINF:-1 tvg-id="BeautifulLifeTV.tw@SD" tvg-logo="logos/BeautifulLifeTV.tw-c9c4ec.webp" group-title="Religious",Beautiful Life TV (720p)
+https://5ddce30eb4b55.streamlock.net/bltvhd/bltv1/playlist.m3u8
+#EXTINF:-1 tvg-id="BloombergTV.us@Plus" tvg-logo="logos/BloombergTV.us-1dd52b.webp" group-title="Business",Bloomberg TV + (2160p)
+https://d8975dc3.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/U2Ftc3VuZy1nYl9CbG9vbWJlcmdUVlBsdXNfSExT/playlist.m3u8
+#EXTINF:-1 tvg-id="BloombergTV.us@Asia" tvg-logo="logos/BloombergTV.us-1dd52b.webp" group-title="Business",Bloomberg TV Asia (720p)
+https://bloomberg.com/media-manifest/streams/asia.m3u8
+#EXTINF:-1 tvg-id="BloombergTV.us@AsiaLiveEvent" tvg-logo="logos/BloombergTV.us-1dd52b.webp" group-title="Business",Bloomberg TV Asia Live Event (720p)
+https://bloomberg.com/media-manifest/streams/asia-event.m3u8
+#EXTINF:-1 tvg-id="BreadTV.cn@SD" tvg-logo="logos/BreadTV.cn-2ab9aa.webp" group-title="Undefined",Bread TV (720p)
+https://video.bread-tv.com:8091/hls-live24/online/index.m3u8
+#EXTINF:-1 tvg-id="BTNTV.kr@SD" tvg-logo="logos/BTNTV.kr-5821f6.webp" group-title="Religious",BTN TV (South Korea) (1080p)
+https://btn.nowcdn.co.kr/btn/btnlive2m/playlist.m3u8
+#EXTINF:-1 tvg-id="CanalMacau.mo@SD" tvg-logo="logos/CanalMacau.mo-194ca1.webp" group-title="General",Canal Macau (720p) [Not 24/7]
+https://live3.tdm.com.mo/ch2/ch2.live/playlist.m3u8
+#EXTINF:-1 tvg-id="CCTVPlus1.cn@SD" tvg-logo="logos/CCTVPlus1.cn-3d899e.webp" group-title="News",CCTV+ 1 (600p) [Not 24/7]
+https://cd-live-stream.news.cctvplus.com/live/smil:CHANNEL1.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="CCTVPlus2.cn@SD" tvg-logo="logos/CCTVPlus2.cn-7bb54a.webp" group-title="News",CCTV+ 2 (600p) [Not 24/7]
+https://cd-live-stream.news.cctvplus.com/live/smil:CHANNEL2.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="CCTV5Plus.cn@SD" tvg-logo="logos/CCTV5Plus.cn-81753d.webp" group-title="Sports",CCTV-5+ (1080p)
+https://php.jdshipin.com/TVOD/iptv.php?id=cctv5p
+#EXTINF:-1 tvg-id="CCTV6.cn@SD" tvg-logo="logos/CCTV6.cn-1f9777.webp" group-title="Movies",CCTV-6 [Geo-blocked]
+https://live.eac-news.com/CCTV/streams/cctv6.m3u8
+#EXTINF:-1 tvg-id="CCTV9.cn@SD" tvg-logo="logos/CCTV9.cn-6e442a.webp" group-title="Documentary",CCTV-9 (576i)
+https://xykt-fix.github.io/Y77.m3u8
+#EXTINF:-1 tvg-id="CGNTVChinese.tw@SD" tvg-logo="logos/CGNTVChinese.tw-8d165d.webp" group-title="Religious",CGNTV Chinese (1080p)
+https://d3e05csss9c272.cloudfront.net/out/v1/f0bf71c57581470fb9379f603e8f5d83/CGNWebLiveCN.m3u8
+#EXTINF:-1 tvg-id="CGTN.cn@SD" tvg-logo="logos/CGTN.cn-e3f7f0.webp" group-title="News",CGTN (1080p)
+https://amg00405-rakutentv-cgtn-rakuten-i9tar.amagi.tv/master.m3u8
+#EXTINF:-1 tvg-id="CGTNDocumentary.cn@SD" tvg-logo="logos/CGTNDocumentary.cn-e7ced1.webp" group-title="Documentary",CGTN Documentary (1080p)
+https://amg00405-rakutentv-cgtndocumentary-rakuten-0ql8j.amagi.tv/master.m3u8
+#EXTINF:-1 tvg-id="CGTNGlobalBiz.cn@SD" tvg-logo="logos/CGTNGlobalBiz.cn-0b1441.webp" group-title="Business",CGTN Global Biz (1080p)
+https://fastlive.cctvplus.com/out/v1/2b3d8a0c805d437f9dc85b764c2ac599/index.m3u8
+#EXTINF:-1 tvg-id="ChinaTravel.cn@SD" tvg-logo="logos/ChinaTravel.cn-ce464d.webp" group-title="Culture;Documentary;Travel",China Travel (1080p)
+https://fastlive.cctvplus.com/out/v1/ca6f9297b7314a63959435028af287fc/index.m3u8
+#EXTINF:-1 tvg-id="CJOnStyle.kr@SD" tvg-logo="logos/CJOnStyle.kr-8658cc.webp" group-title="Shop",CJ OnStyle (540p)
+https://live-ch1.cjonstyle.net/cjmalllive/stream2/playlist.m3u8
+#EXTINF:-1 tvg-id="CJOnStylePlus.kr@SD" tvg-logo="logos/CJOnStylePlus.kr-b33537.webp" group-title="Shop",CJ OnStyle+ (540p)
+https://live-ch2.cjonstyle.net/cjosplus/live2/playlist.m3u8
+#EXTINF:-1 tvg-id="CNAInternational.sg@SD" tvg-logo="logos/CNAInternational.sg-e79c92.webp" group-title="News",CNA International (1080p)
+https://freem3u.xyz/api/live/play.m3u8?vid=112
+#EXTINF:-1 tvg-id="CNAOriginals.sg@SD" tvg-logo="logos/CNAOriginals.sg-e37907.webp" group-title="Documentary",CNA Originals (1080p)
+https://amg01082-cna-amg01082c1-rlaxx-us-11304.playouts.now.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="CNBCAsia.sg@HD" tvg-logo="logos/CNBCAsia.sg-d8070d.webp" group-title="Business",CNBC Asia HD (1080p)
+https://freem3u.xyz/api/live/play.m3u8?vid=9855
+#EXTINF:-1 tvg-id="DaAi1.tw@SD" tvg-logo="logos/DaAi1.tw-e917bb.webp" group-title="General",DaAi 1 (720p)
+https://pulltv1.wanfudaluye.com/live/tv1.m3u8
+#EXTINF:-1 tvg-id="DGRadio.au@HD" tvg-logo="logos/DGRadio.au-9c99b6.webp" group-title="Music;Religious",DG:Radio (1080p)
+https://mdn.dg.church/683c0cb036885-1/index.m3u8
+#EXTINF:-1 tvg-id="DGTV.au@HD" tvg-logo="" group-title="Religious",DG:TV (1080p)
+https://mdn.dg.church/673ac57a073a4-1/index.m3u8
+#EXTINF:-1 tvg-id="DiscoveringChina.cn@SD" tvg-logo="logos/DiscoveringChina.cn-ebf92a.webp" group-title="Culture;Documentary",Discovering China (1080p)
+https://fastlive.cctvplus.com/out/v1/8442c3bfd4c64a3984389328f6087879/index.m3u8
+#EXTINF:-1 tvg-id="DocuBox.nl@SD" tvg-logo="logos/DocuBox.nl-5c919c.webp" group-title="Documentary",DocuBox
+https://dash3.antik.sk/live/test_docubox_medium_atk/playlist.m3u8
+#EXTINF:-1 tvg-id="DocumentaryPlus.us@International" tvg-logo="logos/DocumentaryPlus.us-c54a85.webp" group-title="Documentary",Documentary+ International (1080p)
+https://1d153317c8db4250b3789601274e2402.mediatailor.us-west-2.amazonaws.com/v1/master/ba62fe743df0fe93366eba3a257d792884136c7f/LINEAR-887-DOCUMENTARYINTERNATIONAL-DOCUMENTARYPLUS/mt/documentaryplus/887/hls/master/playlist.m3u8
+#EXTINF:-1 tvg-id="DragonTVInternational.cn@SD" tvg-logo="logos/DragonTVInternational.cn-732c9b.webp" group-title="General",Dragon TV International
+https://restream.pdtvhd.com/memfs/0b1b95c9-3543-4af9-9fdb-cf45f1602f17.m3u8
+#EXTINF:-1 tvg-id="DroneTV.us@SD" tvg-logo="logos/DroneTV.us-6626a1.webp" group-title="Relax;Travel",DroneTV (1080p)
+https://airvuz-dronetv-1-us.ohlscdn.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="DUST.us@SD" tvg-logo="logos/DUST.us-65817f.webp" group-title="Movies",DUST (1080p)
+https://dqi7ayt2o24fn.cloudfront.net/playlist.m3u8
+#EXTINF:-1 tvg-id="DW.de@English" tvg-logo="logos/DW.de-4acfe8.webp" group-title="News",DW English (1080p)
+https://amg01644-amg01644c1-amgplt0343.playout.now3.amagi.tv/ts-eu-w1-n2/playlist/amg01644-amg01644c1-amgplt0343/playlist.m3u8
+#EXTINF:-1 tvg-id="EBS1TV.kr@SD" tvg-logo="logos/EBS1TV.kr-26c138.webp" group-title="Education",EBS 1TV (400p) [Not 24/7]
+https://ebsonair.ebs.co.kr/ebs1familypc/familypc1m/playlist.m3u8
+#EXTINF:-1 tvg-id="EBS2TV.kr@SD" tvg-logo="logos/EBS2TV.kr-4609c6.webp" group-title="Education",EBS 2TV (400p) [Not 24/7]
+https://ebsonair.ebs.co.kr/ebs2familypc/familypc1m/playlist.m3u8
+#EXTINF:-1 tvg-id="EBSEnglish.kr@SD" tvg-logo="logos/EBSEnglish.kr-50070a.webp" group-title="Education",EBS English (400p) [Not 24/7]
+https://ebsonair.ebs.co.kr/plus3familypc/familypc1m/playlist.m3u8
+#EXTINF:-1 tvg-id="EBSKids.kr@SD" tvg-logo="logos/EBSKids.kr-ef457a.webp" group-title="Kids",EBS Kids (400p) [Not 24/7]
+https://ebsonair.ebs.co.kr/ebsufamilypc/familypc1m/playlist.m3u8
+#EXTINF:-1 tvg-id="EBSPlus1.kr@SD" tvg-logo="logos/EBSPlus1.kr-14a8e1.webp" group-title="Education",EBS Plus 1 (400p)
+https://ebsonair.ebs.co.kr/plus1familypc/familypc1m/playlist.m3u8
+#EXTINF:-1 tvg-id="EBSPlus2.kr@SD" tvg-logo="logos/EBSPlus2.kr-51c816.webp" group-title="Education",EBS Plus 2 (400p)
+https://ebsonair.ebs.co.kr/plus2familypc/familypc1m/playlist.m3u8
+#EXTINF:-1 tvg-id="ElyssaTV.tn@HD" tvg-logo="logos/ElyssaTV.tn-bfffab.webp" group-title="News",Elyssa TV (1080p)
+https://tv.elyssatv.com/live/master.m3u8
+#EXTINF:-1 tvg-id="EuronewsEnglish.fr@SD" tvg-logo="logos/EuronewsEnglish.fr-4697c3.webp" group-title="News",Euronews English (720p)
+https://jmp2.uk/plu-61de96114757070008d33cae.m3u8
+#EXTINF:-1 tvg-id="EuronewsEnglish.fr@HD" tvg-logo="logos/EuronewsEnglish.fr-4697c3.webp" group-title="News",Euronews English HD
+https://dash4.antik.sk/live/test_euronews/playlist.m3u8
+#EXTINF:-1 tvg-id="EWTN.us@AsiaPacific" tvg-logo="logos/EWTN.us-7ec68a.webp" group-title="Religious",EWTN (United States) Asia-Pacific (720p)
+https://cdn3.wowza.com/1/QmVNUVhTNTZSS3Uz/YWQ0aHpi/hls/live/playlist.m3u8
+#EXTINF:-1 tvg-id="FashionBox.nl@SD" tvg-logo="logos/FashionBox.nl-49c237.webp" group-title="Lifestyle",FashionBox
+https://dash2.antik.sk/live/test_fashionbox_medium_atk/playlist.m3u8
+#EXTINF:-1 tvg-id="FastFunBox.nl@SD" tvg-logo="logos/FastFunBox.nl-84c90c.webp" group-title="Sports",Fast&FunBox
+https://dash3.antik.sk/live/test_fast_and_funbox_medium_atk/playlist.m3u8
+#EXTINF:-1 tvg-id="FGTV.kr@SD" tvg-logo="logos/FGTV.kr-03fa33.webp" group-title="Religious",FGTV (South Korea) (720p)
+https://fgtvlive.fgtv.com/smil:fgtv.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="FIFAPlus.uk@English" tvg-logo="logos/FIFAPlus.uk-6ebca4.webp" group-title="Sports",FIFA+ (720p)
+https://jmp2.uk/plu-660c29b5aec9680008f5b4a4.m3u8
+#EXTINF:-1 tvg-id="FightBox.nl@HD" tvg-logo="logos/FightBox.nl-625904.webp" group-title="Sports",FightBox HD
+https://nosignal1.antenaplay.ro/hls/fightbox-hd/index.m3u8
+#EXTINF:-1 tvg-id="FILMBOXPlusFestival.pl@SD" tvg-logo="logos/FILMBOXPlusFestival.pl-610656.webp" group-title="Movies",FILMBOX+ Festival
+https://dash3.antik.sk/live/test_filmbox_arthouse_atk_1200/playlist.m3u8
+#EXTINF:-1 tvg-id="FILMBOXPlusFestival.pl@HD" tvg-logo="logos/FILMBOXPlusFestival.pl-610656.webp" group-title="Movies",FILMBOX+ Festival HD (1080p)
+https://nosignal1.antenaplay.ro/hls/fb-festival-hd/index.m3u8
+#EXTINF:-1 tvg-id="France24.fr@French" tvg-logo="logos/France24.fr-188446.webp" group-title="News",France 24 (1080p)
+https://freem3u.xyz/api/live/play.m3u8?vid=10007
+#EXTINF:-1 tvg-id="France24.fr@English" tvg-logo="logos/France24.fr-188446.webp" group-title="News",France 24 English (1080p)
+https://freem3u.xyz/api/live/play.m3u8?vid=96
+#EXTINF:-1 tvg-id="FUELTV.pt@AU" tvg-logo="logos/FUELTV.pt-b8d26c.webp" group-title="Sports",FUEL TV AU (1080p)
+https://amg01074-fueltv-fueltvau-samsungau-g09kq.amagi.tv/playlist/amg01074-fueltv-fueltvau-samsungau/playlist.m3u8
+#EXTINF:-1 tvg-id="GODTVAsia.uk@SD" tvg-logo="logos/GODTVAsia.uk-62ab03.webp" group-title="Religious",GOD TV Asia (576p)
+https://d1msejlow1t3l4.cloudfront.net/211125/godtv/playlist.m3u8
+#EXTINF:-1 tvg-id="GongyoungHomeShopping.kr@SD" tvg-logo="logos/GongyoungHomeShopping.kr-be7e52.webp" group-title="Shop",Gongyoung Home Shopping (720p)
+https://etv.publichs.com/live5.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="Good2.tw@SD" tvg-logo="logos/Good2.tw-1756b9.webp" group-title="Religious",Good 2 (720p)
+https://live.streamingfast.net/osmflivech2.m3u8
+#EXTINF:-1 tvg-id="GoodTV.tw@SD" tvg-logo="logos/GoodTV.tw-bf3e98.webp" group-title="Religious",Good TV (Taiwan) (720p) [Not 24/7]
+https://live.streamingfast.net/osmflivech1.m3u8
+#EXTINF:-1 tvg-id="GSMyShop.kr@SD" tvg-logo="logos/GSMyShop.kr-5932d5.webp" group-title="Shop",GS My Shop (1080p)
+https://gstv-myshop.gsshop.com/myshop_hd/myshop_hd.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="GSShop.kr@SD" tvg-logo="logos/GSShop.kr-2bdce9.webp" group-title="Shop",GS Shop (1080p)
+https://gstv-gsshop.gsshop.com/gsshop_hd/gsshop_hd.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="GSTV.jp@SD" tvg-logo="logos/GSTV.jp-46d05a.webp" group-title="Shop",GSTV (720p)
+https://japaneast.av.mk.io/mediakindcdn-mediakind/ca01a143-f823-4432-b670-c22ff9643ce4/index.qfm/manifest(format=m3u8-cmaf)
+#EXTINF:-1 tvg-id="GuangdongSatelliteTV.cn@SD" tvg-logo="logos/GuangdongSatelliteTV.cn-26eece.webp" group-title="Undefined",Guangdong Satellite TV
+https://h5cul1yar48um3t.wcetv.com/hls/gdsatellite.m3u8
+#EXTINF:-1 tvg-id="GuangzhouTV.cn@SD" tvg-logo="logos/GuangzhouTV.cn-fcb463.webp" group-title="General",Guangzhou TV
+https://tencentplaybusiness.gztv.com/live/zonghes.m3u8
+#EXTINF:-1 tvg-id="GugakTV.kr@SD" tvg-logo="logos/GugakTV.kr-ccd1bb.webp" group-title="Music",Gugak TV (1080p)
+https://mgugaklive.nowcdn.co.kr/gugakvideo/gugakvideo.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="HakkaTV.tw@SD" tvg-logo="logos/HakkaTV.tw-b4e364.webp" group-title="Culture",Hakka TV
+https://h5cul1yar48um3t.wcetv.com/hls/hakkatv.m3u8
+#EXTINF:-1 tvg-id="HarbinComprehensiveNewsChannel.cn@SD" tvg-logo="logos/HarbinComprehensiveNewsChannel.cn-d6d633.webp" group-title="News",Harbin Comprehensive News Channel
+https://stream.hrbtv.net/xwzh/playlist.m3u8?_upt=ef41dd531755913594
+#EXTINF:-1 tvg-id="HarbinMovieChannel.cn@SD" tvg-logo="logos/HarbinMovieChannel.cn-d6d633.webp" group-title="Movies",Harbin Movie Channel
+https://stream.hrbtv.net/yspd/playlist.m3u8
+#EXTINF:-1 tvg-id="HebeiTV.cn@SD" tvg-logo="logos/HebeiTV.cn-519cae.webp" group-title="General",Hebei TV (2160p)
+https://event.pull.hebtv.com/live/live101.m3u8
+#EXTINF:-1 tvg-id="HLAJDTV.kr@SD" tvg-logo="logos/HLAJDTV.kr-14a30a.webp" group-title="General",HLAJ-DTV (352p) [Not 24/7]
+https://wowza.jejumbc.com/live/tv_jejumbc/playlist.m3u8
+#EXTINF:-1 tvg-id="HLANDTV.kr@SD" tvg-logo="logos/HLANDTV.kr-1a5dd9.webp" group-title="General",HLAN-DTV (480p) [Not 24/7]
+https://stream.chmbc.co.kr/TV/myStream/playlist.m3u8
+#EXTINF:-1 tvg-id="HLATDTV.kr@SD" tvg-logo="logos/HLATDTV.kr-992bb8.webp" group-title="General",HLAT-DTV (1080p) [Not 24/7]
+https://5c3639aa99149.streamlock.net/live_TV/tv/playlist.m3u8
+#EXTINF:-1 tvg-id="HLCNDTV.kr@SD" tvg-logo="logos/HLCNDTV.kr-6ba3e6.webp" group-title="General",HLCN-DTV (1080p)
+https://media.kjmbc.co.kr/hls/live/stream/playlist.m3u8
+#EXTINF:-1 tvg-id="HLCQDTV.kr@SD" tvg-logo="logos/HLCQDTV.kr-38e1f0.webp" group-title="General",HLCQ-DTV (720p) [Not 24/7]
+https://ns1.tjmbc.co.kr/live/myStream.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="HLCTDTV.kr@SD" tvg-logo="logos/HLCTDTV.kr-ab7687.webp" group-title="General",HLCT-DTV (480p) [Not 24/7]
+https://5ee1ec6f32118.streamlock.net/live/livetv/playlist.m3u8
+#EXTINF:-1 tvg-id="HLCXDTV.kr@SD" tvg-logo="logos/HLCXDTV.kr-868833.webp" group-title="General",HLCX-DTV (450p)
+https://5ee9633b25727.streamlock.net/jmbc_tv/_definst_/jmbc_tv.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="HLDGDTV.kr@SD" tvg-logo="logos/HLDGDTV.kr-712d2e.webp" group-title="General",HLDG-DTV (1080p) [Not 24/7]
+https://stream1.knn.co.kr/hls/9ly4534y7dm2xfa123r2_tv/index.m3u8
+#EXTINF:-1 tvg-id="HLDHDTV.kr@SD" tvg-logo="logos/HLDHDTV.kr-486338.webp" group-title="General",HLDH-DTV (1080p) [Not 24/7]
+https://vod.ikbc.co.kr/KBCTV/tv/playlist.m3u8
+#EXTINF:-1 tvg-id="HLDPDTV.kr@SD" tvg-logo="logos/HLDPDTV.kr-30aaa7.webp" group-title="General",HLDP-DTV (540p) [Not 24/7]
+https://stream.ubc.co.kr/hls/ubctvstream/index.m3u8
+#EXTINF:-1 tvg-id="HLKUDTV.kr@SD" tvg-logo="logos/HLKUDTV.kr-01c9d5.webp" group-title="General",HLKU-DTV (360p) [Not 24/7]
+https://stream.bsmbc.com/livetv/BusanMBC_TV_onairstream/playlist.m3u8
+#EXTINF:-1 tvg-id="HLQSDTV.kr@SD" tvg-logo="logos/HLQSDTV.kr-15ddfa.webp" group-title="General",HLQS-DTV (540p) [Not 24/7]
+https://vod.obs.co.kr:444/live/obsstream1/tv.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="HomeShopping.kr@SD" tvg-logo="logos/HomeShopping.kr-986ab3.webp" group-title="Shop",Home & Shopping (720p)
+https://s28.qtcdn.co.kr/media/liveM3U8/idx/518045142/enc/1860408350/playlist.m3u8
+#EXTINF:-1 tvg-id="HomePlus.ir@SD" tvg-logo="" group-title="Movies",HomePlus
+https://homeplushls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="HongKongInternationalBusinessChannel.hk@SD" tvg-logo="logos/HongKongInternationalBusinessChannel.hk-c35e55.webp" group-title="Business",Hong Kong International Business Channel (1080p) [Geo-blocked]
+https://hoytv-live-stream.hoy.tv/ch76/index-fhd.m3u8
+#EXTINF:-1 tvg-id="HOYInfotainment.hk@HD" tvg-logo="logos/HOYInfotainment.hk-c19b20.webp" group-title="Undefined",HOY Infotainment (1080p) [Geo-blocked]
+https://hoytv-live-stream.hoy.tv/ch78/index.m3u8
+#EXTINF:-1 tvg-id="HOYTV.hk@SD" tvg-logo="logos/HOYTV.hk-79dfb4.webp" group-title="General",HOY TV (1080p) [Geo-blocked]
+https://hoytv-live-stream.hoy.tv/ch77/index.m3u8
+#EXTINF:-1 tvg-id="HunanEconomyChannel.cn@SD" tvg-logo="logos/HunanEconomyChannel.cn-f5dc2d.webp" group-title="General",Hunan Economy Channel
+https://p8.vzan.com/slowlive/415983998730568937/live.m3u8
+#EXTINF:-1 tvg-id="HyundaiHomeShopping.kr@SD" tvg-logo="logos/HyundaiHomeShopping.kr-aa943f.webp" group-title="Shop",Hyundai Home Shopping (720p)
+https://livejj.hyundaihmall.com:8443/live/ngrp:hmall.stream_pc/playlist.m3u8
+#EXTINF:-1 tvg-id="HyundaiHomeShoppingPlusShop.kr@SD" tvg-logo="logos/HyundaiHomeShoppingPlusShop.kr-2c08d0.webp" group-title="Shop",Hyundai Home Shopping + Shop (720p)
+https://dtvstreaming.hyundaihmall.com/newcjp3/_definst_/newcjpstream.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="i24NEWSEnglishWorld.il@SD" tvg-logo="logos/i24NEWSEnglishWorld.il-25b2f3.webp" group-title="News",i24NEWS English World (1080p)
+https://hlspackager.akamaized.net/live/DB/i24_ENGLISH/HLS/i24_ENGLISH.m3u8
+#EXTINF:-1 tvg-id="JiangxiChildrensChannel.cn@SD" tvg-logo="logos/JiangxiChildrensChannel.cn-977a66.webp" group-title="Animation;Kids",Jiangxi Children's Channel
+https://play-live-hls.jxtvcn.com.cn/live-city/tv_jxtv6.m3u8
+#EXTINF:-1 tvg-id="JiangxiCityChannel.cn@SD" tvg-logo="logos/JiangxiCityChannel.cn-feded5.webp" group-title="General",Jiangxi City Channel
+https://play-live-hls.jxtvcn.com.cn/live-city/tv_jxtv2.m3u8
+#EXTINF:-1 tvg-id="JiangxiEconomyLifeChannel.cn@SD" tvg-logo="logos/JiangxiEconomyLifeChannel.cn-72567b.webp" group-title="Business",Jiangxi Economy & Life Channel
+https://play-live-hls.jxtvcn.com.cn/live-city/tv_jxtv3.m3u8
+#EXTINF:-1 tvg-id="JiangxiMovieChannel.cn@SD" tvg-logo="logos/JiangxiMovieChannel.cn-da604d.webp" group-title="Movies",Jiangxi Movie Channel
+https://play-live-hls.jxtvcn.com.cn/live-city/tv_jxtv4.m3u8
+#EXTINF:-1 tvg-id="JiangxiPublicAgricultureChannel.cn@SD" tvg-logo="logos/JiangxiPublicAgricultureChannel.cn-3c2358.webp" group-title="General",Jiangxi Public & Agriculture Channel
+https://play-live-hls.jxtvcn.com.cn/live-city/tv_jxtv5.m3u8
+#EXTINF:-1 tvg-id="JilinCityChannel.cn@SD" tvg-logo="logos/JilinCityChannel.cn-adbf90.webp" group-title="Lifestyle",Jilin City Channel
+https://lsfb.avap.jilintv.cn/zqvk7vpj/channel/7e8474e6daea44ccaa5aa2300191439e/index.m3u8
+#EXTINF:-1 tvg-id="JilinLifestyleChannel.cn@SD" tvg-logo="logos/JilinLifestyleChannel.cn-6302d7.webp" group-title="Lifestyle",Jilin Lifestyle Channel
+https://lsfb.avap.jilintv.cn/zqvk7vpj/channel/0a76740c72b74fabae611845aa21e06a/index.m3u8
+#EXTINF:-1 tvg-id="JilinMovieChannel.cn@SD" tvg-logo="logos/JilinMovieChannel.cn-58a96a.webp" group-title="Movies",Jilin Movie Channel
+https://lsfb.avap.jilintv.cn/zqvk7vpj/channel/906341e6f19b4c4bacdc89941eb85d12/index.m3u8
+#EXTINF:-1 tvg-id="JilinRuralChannel.cn@SD" tvg-logo="logos/JilinRuralChannel.cn-ec3ac5.webp" group-title="Education;Lifestyle;Science",Jilin Rural Channel
+https://lsfb.avap.jilintv.cn/zqvk7vpj/channel/3ffc4824dce54b92be185555923ce382/index.m3u8
+#EXTINF:-1 tvg-id="JingmenComprehensiveNewsChannel.cn@SD" tvg-logo="logos/JingmenComprehensiveNewsChannel.cn-26e6d5.webp" group-title="News",Jingmen Comprehensive News Channel
+https://stream.jmtv.com.cn/xwzh/sd/live.m3u8?_upt=341f4b8e1791883036
+#EXTINF:-1 tvg-id="KShopping.kr@SD" tvg-logo="logos/KShopping.kr-12dfff.webp" group-title="Shop",K Shopping (1080p)
+https://fhs8036.bd-61.ktcdn.co.kr/klive/smil:klive.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="KaloopyTV.us@SD" tvg-logo="logos/KaloopyTV.us-019787.webp" group-title="Lifestyle",Kaloopy TV (1080p)
+https://streamingserver000.viewtv.cloud/VIEWTVNETWORK-KALOOPY/index.m3u8
+#EXTINF:-1 tvg-id="KoreanCentralTelevision.kp@HD" tvg-logo="logos/KoreanCentralTelevision.kp-9c12ef.webp" group-title="General",Korean Central Television (1080p) [Not 24/7]
+https://live.koryocdn.org/kctv/index.m3u8
+#EXTINF:-1 tvg-id="KTV.kr@SD" tvg-logo="logos/KTV.kr-b76a02.webp" group-title="Legislative;News",KTV (South Korea) (1080p)
+https://hlive.ktv.go.kr/live/klive_h.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="LanzhouComprehensiveNewsChannel.cn@SD" tvg-logo="logos/LanzhouComprehensiveNewsChannel.cn-1d6342.webp" group-title="News",Lanzhou Comprehensive News Channel
+https://liveplus.lzr.com.cn/xwzh/HD/live.m3u8
+#EXTINF:-1 tvg-id="LanzhouCultureTourismChannel.cn@SD" tvg-logo="logos/LanzhouCultureTourismChannel.cn-caad00.webp" group-title="Culture",Lanzhou Culture & Tourism Channel
+https://liveplus.lzr.com.cn/wlpd/HD/live.m3u8
+#EXTINF:-1 tvg-id="LotteHomeShopping.kr@SD" tvg-logo="logos/LotteHomeShopping.kr-eb159b.webp" group-title="Shop",Lotte Home Shopping (720p)
+https://pchlslivesw.lotteimall.com/live/livestream/lotteimalllive_mp4.m3u8
+#EXTINF:-1 tvg-id="LotteOneTV.kr@SD" tvg-logo="logos/LotteOneTV.kr-063a82.webp" group-title="Shop",Lotte OneTV (720p)
+https://onetvhlslive.lotteimall.com/lotteonetvlive/lotteonetvlive.mp4.m3u8
+#EXTINF:-1 tvg-id="MasterChefsAcademyTV.uk@HD" tvg-logo="logos/MasterChefsAcademyTV.uk-fa5049.webp" group-title="Cooking;Education",Master Chefs Academy TV (720p)
+https://platform-iuoamc.uk/iptv/mca-tv/index.m3u8
+#EXTINF:-1 tvg-id="MBCGyeongnamTV.kr@SD" tvg-logo="logos/MBCGyeongnamTV.kr-de6f0f.webp" group-title="General",MBC Gyeongnam TV (1080p) [Not 24/7]
+https://624a79c87201d.streamlock.net/MBCTV/TV1.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="MNBSport.mn@SD" tvg-logo="logos/MNBSport.mn-191f62.webp" group-title="Sports",MNB Sport (1080p)
+https://live.mnb.mn/hls/mnb_sport.stream.m3u8
+#EXTINF:-1 tvg-id="Motorvision.de@SD" tvg-logo="logos/Motorvision.de-4d27a5.webp" group-title="Auto",Motorvision (1080i)
+https://mvg-mv.otteravision.com/mvg/mv/mv_1080p.m3u8
+#EXTINF:-1 tvg-id="NanchangNewsGeneralistChannel.cn@SD" tvg-logo="logos/NanchangNewsGeneralistChannel.cn-940b94.webp" group-title="General",Nanchang News & Generalist Channel
+https://play-live-hls.jxtvcn.com.cn/live-city/tv_nanchang.m3u8
+#EXTINF:-1 tvg-id="NationalAssemblyTV.kr@SD" tvg-logo="logos/NationalAssemblyTV.kr-6618e6.webp" group-title="Legislative",National Assembly TV (720p)
+https://github.com/BellezaEmporium/IPTV_Exception/raw/master/channels/kr/natv.m3u8
+#EXTINF:-1 tvg-id="NBS.kr@SD" tvg-logo="logos/NBS.kr-be2a92.webp" group-title="Education",NBS (720p)
+https://media.joycorp.co.kr:4443/live/ngrp:live_all/playlist.m3u8
+#EXTINF:-1 tvg-id="NBTWorld.th@SD" tvg-logo="logos/NBTWorld.th-aacb05.webp" group-title="General",NBT World (1080p)
+https://cdn-edge.iiptvcdn.com/live_event/smil:d36f-93c1-9c58-fdcc-427f.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="NewsoftheWorld.us@Global" tvg-logo="logos/NewsoftheWorld.us-69e144.webp" group-title="News",News of the World (720p)
+https://nowhls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="NHKGeneralTV.jp@JOJGDTV" tvg-logo="logos/NHKGeneralTV.jp-2401b1.webp" group-title="General",NHK General TV JOJG-DTV (1080i)
+https://tv-stream-test.daydreamer-json.cc/fe8bf835820fb530467f75a9cb761504/master.m3u8
+#EXTINF:-1 tvg-id="NHKWorldPremium.jp@SD" tvg-logo="logos/NHKWorldPremium.jp-729d76.webp" group-title="Entertainment",NHK World Premium (720p)
+https://media-tyo.hls.nhkworld.jp/hls/wp/live/master.m3u8
+#EXTINF:-1 tvg-id="NHKWorldJapan.jp@SD" tvg-logo="logos/NHKWorldJapan.jp-3058a8.webp" group-title="Culture;News",NHK World-Japan (1080p)
+https://cdn.pishow.tv/ott/live/455/master.m3u8
+#EXTINF:-1 tvg-id="NHKWorldJapan.jp@HD" tvg-logo="logos/NHKWorldJapan.jp-3058a8.webp" group-title="Culture;News",NHK World-Japan HD (1080p)
+https://freem3u.xyz/api/live/play.m3u8?vid=106
+#EXTINF:-1 tvg-id="NowMediaTelevision.us@HD" tvg-logo="logos/NowMediaTelevision.us-3ac43a.webp" group-title="Lifestyle;News",NowMedia Television (1080p)
+https://stream-204968.castr.net/64e0c91d08bff3041638aee3/live_a4243540d4b911f0b624bda5e9a32aa9/index.m3u8
+#EXTINF:-1 tvg-id="NowMediaTelevision.us@Spanish" tvg-logo="logos/NowMediaTelevision.us-3ac43a.webp" group-title="Lifestyle;News",NowMedia Television Spanish (1080p)
+https://stream-204968.castr.net/64e0c91d08bff3041638aee3/live_a16fa020f4c411f09ddaa1978319689a/index.m3u8
+#EXTINF:-1 tvg-id="NSHomeShopping.kr@SD" tvg-logo="logos/NSHomeShopping.kr-612039.webp" group-title="Shop",NS Home Shopping (720p)
+https://livestream.nsmall.com/IPHONE/nsmallMobile.m3u8
+#EXTINF:-1 tvg-id="NSShopPlus.kr@SD" tvg-logo="logos/NSShopPlus.kr-d20a66.webp" group-title="Shop",NS Shop+ (720p)
+https://shoppstream.nsmall.com/IPHONE/mobile.m3u8
+#EXTINF:-1 tvg-id="NTDTVAsiaPacific.us@SD" tvg-logo="logos/NTDTVAsiaPacific.us-11d5b5.webp" group-title="General",NTD TV Asia-Pacific
+https://live.ntdtv.com/aplive200/playlist.m3u8
+#EXTINF:-1 tvg-id="NTDTVChina.us@SD" tvg-logo="logos/NTDTVChina.us-accac5.webp" group-title="General",NTD TV China
+https://live.ntdtv.com/cnlive900/playlist.m3u8
+#EXTINF:-1 tvg-id="OUN.kr@SD" tvg-logo="logos/OUN.kr-10e823.webp" group-title="Education",OUN (1080p)
+https://live.knou.ac.kr/knou1/live1/playlist.m3u8
+#EXTINF:-1 tvg-id="PeaceTVEnglish.ae@SD" tvg-logo="logos/PeaceTVEnglish.ae-992e2f.webp" group-title="Religious",Peace TV English (1080p)
+https://dzkyvlfyge.erbvr.com/PeaceTvEnglish/index.m3u8
+#EXTINF:-1 tvg-id="PetClubTV.hk@SD" tvg-logo="logos/PetClubTV.hk-c8abac.webp" group-title="Entertainment",Pet Club TV (1080p)
+https://petclub-samsungaus.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="QVC.jp@SD" tvg-logo="logos/QVC.jp-47735e.webp" group-title="Shop",QVC (Japan) (1080p)
+https://d1flvb4iqlercm.cloudfront.net/live/live_1080p_2nd.m3u8
+#EXTINF:-1 tvg-id="RacerNetwork.us@SD" tvg-logo="logos/RacerNetwork.us-38aad2.webp" group-title="Sports",Racer Network (1080p)
+https://amg00378-mavtv-amg00378c2-samsung-au-1790.playouts.now.amagi.tv/playlist/amg00378-mavtvfast-motorsportsnetwork-samsungau/playlist.m3u8
+#EXTINF:-1 tvg-id="RacerSelect.us@SD" tvg-logo="logos/RacerSelect.us-f7a6b5.webp" group-title="Sports",Racer Select (1080p)
+https://amg00378-amg00378c4-freelivesports-emea-5637.playouts.now.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="RedBullTV.at@SD" tvg-logo="logos/RedBullTV.at-be0bc3.webp" group-title="Outdoor;Sports",Red Bull TV SD (1080p)
+https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8
+#EXTINF:-1 tvg-id="RTDocumentary.ru@English" tvg-logo="logos/RTDocumentary.ru-e1ea72.webp" group-title="Documentary",RT Documentary (1080p) [Geo-blocked]
+https://rt-rtd.rttv.com/dvr/rtdoc/playlist.m3u8
+#EXTINF:-1 tvg-id="RTIndia.in@HD" tvg-logo="logos/RTIndia.in-9d2d1a.webp" group-title="News",RT India (1080p)
+https://mumbai-edge.smartplaytv.in/RTIndia/index.m3u8
+#EXTINF:-1 tvg-id="RTHKTV31.hk@SD" tvg-logo="logos/RTHKTV31.hk-91104d.webp" group-title="Undefined",RTHK TV 31 (1080p) [Geo-blocked]
+https://rthktv31-live.akamaized.net/hls/live/2036818/RTHKTV31/master.m3u8
+#EXTINF:-1 tvg-id="RTHKTV32.hk@SD" tvg-logo="logos/RTHKTV32.hk-ec460e.webp" group-title="Undefined",RTHK TV 32 (1080p) [Geo-blocked]
+https://rthktv32-live.akamaized.net/hls/live/2036819/RTHKTV32/master.m3u8
+#EXTINF:-1 tvg-id="RTHKTV33.hk@SD" tvg-logo="logos/RTHKTV33.hk-325c31.webp" group-title="Undefined",RTHK TV 33 (1080p) [Geo-blocked]
+https://rthktv33-live.akamaized.net/hls/live/2101641/RTHKTV33/master.m3u8
+#EXTINF:-1 tvg-id="RTHKTV34.hk@SD" tvg-logo="logos/RTHKTV34.hk-929828.webp" group-title="Undefined",RTHK TV 34 (1080p) [Geo-blocked]
+https://rthktv34-live.akamaized.net/hls/live/2101642/RTHKTV34/master.m3u8
+#EXTINF:-1 tvg-id="RTHKTV35.hk@HD" tvg-logo="logos/RTHKTV35.hk-73138b.webp" group-title="News",RTHK TV 35 (1080p) [Geo-blocked]
+https://rthktv35-live.akamaized.net/hls/live/2101643/RTHKTV35/master.m3u8
+#EXTINF:-1 tvg-id="RTRPlaneta.ru@Asia" tvg-logo="logos/RTRPlaneta.ru-ee83b2.webp" group-title="General",RTR-Planeta Asia (576p)
+https://streaming.televizor-24-tochka.ru/live/211.m3u8
+#EXTINF:-1 tvg-id="RTV.kr@SD" tvg-logo="logos/RTV.kr-f7539a.webp" group-title="Undefined",RTV (South Korea) (720p)
+https://rtv-stream2.a04f922e9e85c8d25ebfeae3dfd22a67.com/rtv/rtv.m3u8
+#EXTINF:-1 tvg-id="RyongnamsanTelevision.kp@HD" tvg-logo="logos/RyongnamsanTelevision.kp-75e6d9.webp" group-title="Education",Ryongnamsan Television (720p) [Not 24/7]
+https://live.koryocdn.org/ryongnamsan/index.m3u8
+#EXTINF:-1 tvg-id="SBNTVInternational.us@SD" tvg-logo="logos/SBNTVInternational.us-ccb2a2.webp" group-title="Religious",SBN TV International (720p)
+https://watch.sardius.media/channels/Ea867F3e1F56B06/site_09a4778E89/live.m3u8
+#EXTINF:-1 tvg-id="ShenzhenSatelliteTV.cn@SD" tvg-logo="" group-title="Undefined",Shenzhen Satellite TV (2160p)
+https://livepull-tcms.sztv.com.cn/live/sz4Kpgm.m3u8
+#EXTINF:-1 tvg-id="ShinsegaeTVShopping.kr@SD" tvg-logo="logos/ShinsegaeTVShopping.kr-108a8a.webp" group-title="Shop",Shinsegae TV Shopping (720p)
+https://liveout.catenoid.net/live-02-shinsegaetvshopping/shinsegaetvshopping_720p/playlist.m3u8
+#EXTINF:-1 tvg-id="ShopChannel.jp@SD" tvg-logo="logos/ShopChannel.jp-8ee1de.webp" group-title="Shop",Shop Channel (1080p) [Not 24/7]
+https://stream3.shopch.jp/HLS/master.m3u8
+#EXTINF:-1 tvg-id="ShoppingNT.kr@SD" tvg-logo="logos/ShoppingNT.kr-a73727.webp" group-title="Shop",Shopping NT (720p)
+https://live.shoppingntmall.com/live/10011.m3u8
+#EXTINF:-1 tvg-id="SKITV.ch@SD" tvg-logo="logos/SKITV.ch-e62110.webp" group-title="Sports",SKI TV (1080p) [Not 24/7]
+https://d2xeo83q8fcni6.cloudfront.net/v1/master/9d062541f2ff39b5c0f48b743c6411d25f62fc25/SkiTV-SportsTribal/193.m3u8
+#EXTINF:-1 tvg-id="SportsTelevision.kp@HD" tvg-logo="logos/SportsTelevision.kp-932c27.webp" group-title="Sports",Sports Television (720p) [Not 24/7]
+https://live.koryocdn.org/sports/index.m3u8
+#EXTINF:-1 tvg-id="SuperyachtTV.mc@SD" tvg-logo="logos/SuperyachtTV.mc-23ee60.webp" group-title="Lifestyle",Superyacht TV (1080p)
+https://sy.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="SupremeMasterTV.tw@SD" tvg-logo="logos/SupremeMasterTV.tw-22e9e9.webp" group-title="Undefined",Supreme Master TV (720p)
+https://lbs-us1.suprememastertv.com/720p.m3u8
+#EXTINF:-1 tvg-id="TaiwanIndigenousTV.tw@SD" tvg-logo="logos/TaiwanIndigenousTV.tw-54ae56.webp" group-title="General",Taiwan Indigenous TV (720p)
+https://streamipcfapp.akamaized.net/live/_definst_/live_720/key_b1500.m3u8
+#EXTINF:-1 tvg-id="TBSTV.kr@SD" tvg-logo="logos/TBSTV.kr-ffcf8a.webp" group-title="Undefined",TBS TV (720p)
+https://cdntv.tbs.seoul.kr/tbs/tbs_tv_web.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="TDMEntertainment.mo@SD" tvg-logo="logos/TDMEntertainment.mo-b920cf.webp" group-title="Entertainment",TDM Entertainment (720p)
+https://live3.tdm.com.mo/ch6/hd_ch6.live/playlist.m3u8
+#EXTINF:-1 tvg-id="TDMInformation.mo@SD" tvg-logo="logos/TDMInformation.mo-9c8dbc.webp" group-title="News",TDM Information (720p) [Not 24/7]
+https://live3.tdm.com.mo/ch5/info_ch5.live/playlist.m3u8
+#EXTINF:-1 tvg-id="TDMSports.mo@SD" tvg-logo="logos/TDMSports.mo-8e22eb.webp" group-title="Sports",TDM Sports (720p)
+https://live3.tdm.com.mo/ch4/sport_ch4.live/playlist.m3u8
+#EXTINF:-1 tvg-id="TDMMacauSatellite.mo@SD" tvg-logo="logos/TDMMacauSatellite.mo-8c36a0.webp" group-title="General",TDM-Macau Satellite (720p)
+https://live3.tdm.com.mo/ch3/ch3.live/playlist.m3u8
+#EXTINF:-1 tvg-id="TelevisionCaribe.us@HD" tvg-logo="logos/TelevisionCaribe.us-c71df6.webp" group-title="Entertainment;General",Television Caribe (1080p)
+https://televisioncaribe.com/index.m3u8
+#EXTINF:-1 tvg-id="TOIGlobal.in@SD" tvg-logo="logos/TOIGlobal.in-d3fc59.webp" group-title="News",TOI Global (1080p)
+https://live.sli.ke/live/npnhm84gz9/master.m3u8
+#EXTINF:-1 tvg-id="TRTWorld.tr@SD" tvg-logo="logos/TRTWorld.tr-06c11d.webp" group-title="News",TRT World (720p)
+https://mumbai-edge.smartplaytv.in/TRTWorld/index.m3u8
+#EXTINF:-1 tvg-id="TRTWorld.tr@HD" tvg-logo="logos/TRTWorld.tr-06c11d.webp" group-title="News",TRT World HD
+https://dash2.antik.sk/live/test_trt_world_atktv/playlist.m3u8
+#EXTINF:-1 tvg-id="TTVNews.tw@SD" tvg-logo="logos/TTVNews.tw-bc8763.webp" group-title="News",TTV News
+https://live.wcetv.com/hls/master-ttvnews.m3u8
+#EXTINF:-1 tvg-id="TV5MONDEChefs.fr@SD" tvg-logo="logos/TV5MONDEChefs.fr-1a11d2.webp" group-title="Cooking;Lifestyle",TV5MONDE Chefs (1080p)
+https://tvf-tv5ch.otteravision.com/tvf/tv5ch/tv5ch.m3u8
+#EXTINF:-1 tvg-id="TV5MondeFranceBelgiumSwitzerlandMonaco.fr@SD" tvg-logo="logos/TV5MondeFranceBelgiumSwitzerlandMonaco.fr-4b62a9.webp" group-title="General",TV5Monde France Belgium Switzerland Monaco (1080p) [Geo-blocked]
+https://ott.tv5monde.com/Content/HLS/Live/channel(fbs)/variant.m3u8
+#EXTINF:-1 tvg-id="TVBozsikeHamburgHD.de@HD" tvg-logo="logos/TVBozsikeHamburgHD.de-1e8fc8.webp" group-title="Music",TV Bozsike Hamburg HD (1080p)
+https://rtmp.radiobozsike.com/hls/stream1.m3u8
+#EXTINF:-1 tvg-id="TVBRICSChinese.cn@SD" tvg-logo="logos/TVBRICSChinese.cn-b3b955.webp" group-title="General",TV BRICS Chinese (1080p)
+https://chibrics.mediacdn.ru/cdn/brics/chinese/playlist.m3u8
+#EXTINF:-1 tvg-id="TVUYamagata.jp@JOWIDTV" tvg-logo="logos/TVUYamagata.jp-957acc.webp" group-title="General",TV-U Yamagata (1080i)
+https://tv-stream-test.daydreamer-json.cc/stream/1668b5a43560598b385ccf33fd2d5f43/master.m3u8
+#EXTINF:-1 tvg-id="UNWebTV.us@SD" tvg-logo="logos/UNWebTV.us-d20c5a.webp" group-title="News",UN Web TV (540p)
+https://cdnapi.kaltura.com/p/2503451/sp/250345100/playManifest/entryId/1_gb6tjmle/protocol/https/format/applehttp/a.m3u8
+#EXTINF:-1 tvg-id="VoATVChina.cn@SD" tvg-logo="logos/VoATVChina.cn-a9f817.webp" group-title="Undefined",VoA TV China (1080p)
+https://voa-ingest.akamaized.net/hls/live/2033878/tvmc08/playlist.m3u8
+#EXTINF:-1 tvg-id="WShopping.kr@SD" tvg-logo="logos/WShopping.kr-eea5eb.webp" group-title="Shop",W Shopping (720p)
+https://liveout.catenoid.net/live-05-wshopping/wshopping_1500k/playlist.m3u8
+#EXTINF:-1 tvg-id="Weathernews.jp@SD" tvg-logo="logos/Weathernews.jp-08e63c.webp" group-title="Weather",Weathernews (720p)
+https://rch01e-alive-hls.akamaized.net/38fb45b25cdb05a1/out/v1/4e907bfabc684a1dae10df8431a84d21/index.m3u8
+#EXTINF:-1 tvg-id="WildEarth.za@SD" tvg-logo="logos/WildEarth.za-e90948.webp" group-title="Documentary;Education;Outdoor;Relax",WildEarth (1080p)
+https://dqga3jatxofgx.cloudfront.net/WildEarth.m3u8
+#EXTINF:-1 tvg-id="WXTV.tw@SD" tvg-logo="logos/WXTV.tw-324667.webp" group-title="Religious",WXTV (480p)
+https://mobile.ccdntech.com/transcoder/_definst_/vod164_Live/live/chunklist_w1177047531.m3u8
+#EXTINF:-1 tvg-id="XinjiangTV1.cn@SD" tvg-logo="logos/XinjiangTV1.cn-0c16d4.webp" group-title="Undefined",Xinjiang TV 1
+https://klmysjtzb.rcsxzx.com/hls/klmy2.m3u8
+#EXTINF:-1 tvg-id="XizangTVChinese.cn@SD" tvg-logo="logos/XizangTVChinese.cn-21b9e0.webp" group-title="Undefined",Xizang TV Chinese
+https://pili-live-hls-zdzz-tv.zzxwcm.cn/zdzz-tv/nqzh.m3u8
+#EXTINF:-1 tvg-id="XizangTVTibetan.cn@SD" tvg-logo="logos/XizangTVTibetan.cn-f6e989.webp" group-title="Undefined",Xizang TV Tibetan
+https://live.vtibet.cn/live/ZYWS20261016.stream.m3u8
+#EXTINF:-1 tvg-id="YichangSanxiaGeneralChannel.cn@SD" tvg-logo="logos/YichangSanxiaGeneralChannel.cn-d4c936.webp" group-title="General",Yichang Sanxia General Channel
+https://liveplay.ycrmt.cn/sxgd/zhpd.m3u8
+#EXTINF:-1 tvg-id="YichangSanxiaTravelLifeChannel.cn@SD" tvg-logo="logos/YichangSanxiaTravelLifeChannel.cn-730127.webp" group-title="Travel",Yichang Sanxia Travel & Life Channel
+https://liveplay.ycrmt.cn/sxgd/lysh.m3u8
+#EXTINF:-1 tvg-id="YOYInternational.id@HD" tvg-logo="" group-title="General",YOY International (576p)
+https://gist.githubusercontent.com/iptvonlinetv/8a6b2f12e5e968537378f1245cea02c9/raw/78bf84476f8e24cc8ea9d5ac24855078c61b18db/udp305.575.530:3030.m3u8
+#EXTINF:-1 tvg-id="YunnanSatelliteTV.cn@SD" tvg-logo="logos/YunnanSatelliteTV.cn-3b867b.webp" group-title="General",Yunnan Satellite TV (1080p)
+https://hwapi.yunshicloud.com/8xughf/e0bx15.m3u8
+#EXTINF:-1 tvg-id="ZeeCinema.in@APAC" tvg-logo="logos/ZeeCinema.in-f69456.webp" group-title="Movies",Zee Cinema APAC (720p)
+https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/sg/YuppTV/ZeeCinemaAPAC.m3u8
+#EXTINF:-1 tvg-id="ZeeTVAsiaPacific.sg@SD" tvg-logo="logos/ZeeTVAsiaPacific.sg-69f74f.webp" group-title="Undefined",Zee TV Asia Pacific (720p)
+https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/sg/YuppTV/ZeeTVHDAPAC.m3u8
+#EXTINF:-1 tvg-id="ZhejiangInternationalChannel.cn@SD" tvg-logo="logos/ZhejiangInternationalChannel.cn-cd32db.webp" group-title="Undefined",Zhejiang International Channel
+https://ali-m-l.cztv.com/channels/lantian/channel10/1080p.m3u8
+#EXTINF:-1 tvg-id="ZooMoo.sg@SD" tvg-logo="logos/ZooMoo.sg-c04f8d.webp" group-title="Kids",ZooMoo (1080p)
+https://zoomoo-samsungau.amagi.tv/playlist.m3u8

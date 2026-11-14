@@ -37,7 +37,7 @@ test("renders a static launch page for the TV experience", async () => {
   assert.doesNotMatch(html, /SkeletonPreview|react-loading-skeleton/);
 });
 
-test("ships a small standalone TV folder with CDN playback", async () => {
+test("ships a self-hosted TV folder", async () => {
   const [html, script, styles, scriptInfo, styleInfo] = await Promise.all([
     readFile(new URL("../public/tv/index.html", import.meta.url), "utf8"),
     readFile(new URL("../public/tv/assets/app.js", import.meta.url), "utf8"),
@@ -48,7 +48,7 @@ test("ships a small standalone TV folder with CDN playback", async () => {
 
   // Page structure
   assert.match(html, /<html lang="fa" dir="rtl">/i);
-  assert.match(html, /hls\.js@1\.6\.16\/dist\/hls\.min\.js/);
+  assert.match(html, /<script defer src="\.\/assets\/vendor\/hls\.min\.js\?v=1\.6\.16"><\/script>/);
   for (const id of [
     "cats", "search", "list", "player", "video", "status", "retryBtn", "skipBtn", "osd", "numpad",
     "playBtn", "prevBtn", "nextBtn", "muteBtn", "volUpBtn", "volDownBtn", "qualityBtn", "favBtn",
@@ -65,16 +65,13 @@ test("ships a small standalone TV folder with CDN playback", async () => {
   assert.doesNotMatch(script, /catch \{/, "optional catch binding breaks older TV browsers");
   assert.doesNotMatch(script, /^\s*(?:let|const)\s/m);
 
-  // Channel sources
-  assert.match(script, /languages\/fas\.m3u/);
-  assert.match(script, /countries\/ir\.m3u/);
-  assert.match(script, /countries\/tr\.m3u/);
+  // Channel sources: bundled lists, read with relative URLs
+  assert.match(script, /var DATA = "data\/";/);
   assert.match(script, /PROVINCIAL_NAMES/);
-  for (const playlist of [
-    "categories/music", "categories/movies", "categories/series", "regions/mideast", "regions/eas",
-    "regions/eur", "regions/amer",
-  ]) {
-    assert.match(script, new RegExp(`${playlist}\\.m3u`), `missing ${playlist} playlist`);
+  const categoryKeys = [...script.matchAll(/\{ key: "(\w+)"/g)].map((m) => m[1]).filter((key) => key !== "fav");
+  assert.ok(categoryKeys.length >= 14);
+  for (const key of categoryKeys) {
+    await access(new URL(`../public/tv/data/${key}.m3u`, import.meta.url));
   }
   assert.match(script, /CATEGORY_GROUPS = \{ topic: "موضوع", region: "منطقه" \}/);
   assert.match(script, /"GZT\.tr": \["https:\/\/gzttv-live\.lg\.mncdn\.com\/gzttv-live\/gzttv\/playlist\.m3u8"\]/);
@@ -107,18 +104,28 @@ test("ships a small standalone TV folder with CDN playback", async () => {
   assert.match(script, /group === "region" \? rows\.region : rows\.main/, "regions get their own row");
   assert.match(styles, /@media \(hover: hover\) \{/, "hover hints for TV pointers too");
 
-  // Self-hosted logos, with the original URL as a fallback
-  assert.match(html, /<script defer src="\.\/assets\/logos\.js\?v=\d+"><\/script>\s*<script defer src="\.\/assets\/app\.js/);
-  assert.match(script, /window\.MOWJ_LOGOS/);
-  assert.match(script, /"logos\/" \+ base/);
-  const logos = await readFile(new URL("../public/tv/assets/logos.js", import.meta.url), "utf8");
-  const logoIds = logos.match(/ids: "([^"]*)"/)[1].split(" ");
-  assert.ok(logoIds.length > 200, "the main lists should have local logos");
-  for (const id of ["GZT.tr", "IranInternational.uk", "TehranTV.ir"]) {
-    if (logoIds.includes(id)) await access(new URL(`../public/tv/logos/${id}.webp`, import.meta.url));
-  }
-  const logoFiles = (await readdir(new URL("../public/tv/logos/", import.meta.url))).filter((f) => f.endsWith(".webp"));
-  assert.equal(logoFiles.length, logoIds.length, "every listed logo has a file and vice versa");
+  // Fully self-hosted: nothing but the video streams comes from another host
+  assert.doesNotMatch(html, /https?:\/\//, "the page loads nothing from other hosts");
+  assert.doesNotMatch(styles, /https?:\/\//, "fonts are bundled");
+  assert.match(styles, /url\("fonts\/Vazirmatn-Regular\.woff2"\)/);
+  const external = script.split("\n").filter((line) => /https?:\/\//.test(line) &&
+    !/^\s*("[\w.]+": \["https:\/\/[^"]+\.m3u8"\],|\*|\/\/|var XLINK = "http:\/\/www\.w3\.org\/1999\/xlink";)/.test(line));
+  assert.deepEqual(external, [], "only stream fixes may name another host");
+  assert.match(script, /return \/\^logos\\\/\[\\w\.-\]\+\\\.webp\$\/\.test\(url\)/, "only bundled logos are shown");
+  await access(new URL("../public/tv/assets/vendor/hls.min.js", import.meta.url));
+  await access(new URL("../public/tv/assets/fonts/Vazirmatn-Bold.woff2", import.meta.url));
+
+  // Bundled lists hold only browser-playable links and point at logos that exist
+  const fas = await readFile(new URL("../public/tv/data/fas.m3u", import.meta.url), "utf8");
+  assert.match(fas, /^#EXTM3U x-mowj-hidden="\d+"/);
+  const links = fas.split("\n").filter((line) => line && !line.startsWith("#"));
+  assert.ok(links.length > 50);
+  for (const link of links) assert.match(link, /^https:\/\//);
+  assert.doesNotMatch(fas, /ncdn\.telewebion\.ir|http-referrer|http-user-agent/);
+  const logoFiles = new Set(await readdir(new URL("../public/tv/logos/", import.meta.url)));
+  const referenced = [...fas.matchAll(/tvg-logo="logos\/([^"]+)"/g)].map((m) => m[1]);
+  assert.ok(referenced.length > 50, "most Persian channels have a logo");
+  for (const file of referenced) assert.ok(logoFiles.has(file), `missing logo ${file}`);
 
   // Retries are bounded
   assert.match(script, /RECONNECT_DELAYS = \[1000, 3000, 6000, 12000, 20000, 30000\]/);
@@ -138,7 +145,21 @@ test("ships a small standalone TV folder with CDN playback", async () => {
   assert.match(styles, /@media \(max-width: 820px\)/);
 
   assert.ok(scriptInfo.size < 120000, "TV JavaScript should stay lightweight");
+  let dataBytes = 0;
+  for (const file of await readdir(new URL("../public/tv/data/", import.meta.url))) {
+    dataBytes += (await stat(new URL(`../public/tv/data/${file}`, import.meta.url))).size;
+  }
+  assert.ok(dataBytes < 4000000, "bundled channel lists should stay small");
   assert.ok(styleInfo.size < 40000, "TV stylesheet should stay lightweight");
+});
+
+test("packages a self-contained release with a root redirect", async () => {
+  const redirect = await readFile(new URL("../release/index.html", import.meta.url), "utf8");
+  assert.match(redirect, /url=tv\//);
+  await access(new URL("../release/tv/index.html", import.meta.url));
+  await access(new URL("../release/tv/data/fas.m3u", import.meta.url));
+  await access(new URL("../release/tv/assets/vendor/hls.min.js", import.meta.url));
+  await access(new URL("../release/tv.zip", import.meta.url));
 });
 
 test("copies the standalone folder into the static build", async () => {

@@ -8,7 +8,9 @@
    * Configuration
    * ------------------------------------------------------------------ */
 
-  var IPTV = "https://iptv-org.github.io/iptv/";
+  /* Channel lists ship with the app (data/, built by scripts/build-data.mjs
+   * from IPTV-ORG), so everything but the video streams comes from this host. */
+  var DATA = "data/";
 
   /* Three short groups so the chip row stays easy to walk with a remote:
    * Persian first, then topics, then regions. "note" marks the big downloads
@@ -17,23 +19,20 @@
 
   var CATEGORIES = [
     { key: "fav", title: "محبوب‌ها", favorites: true },
-    { key: "fas", title: "فارسی", url: IPTV + "languages/fas.m3u" },
-    { key: "provinces", title: "استانی", url: IPTV + "countries/ir.m3u", provincialOnly: true },
-    { key: "news", group: "topic", title: "خبری", url: IPTV + "categories/news.m3u" },
-    { key: "sports", group: "topic", title: "ورزشی", url: IPTV + "categories/sports.m3u" },
-    { key: "music", group: "topic", title: "موسیقی", url: IPTV + "categories/music.m3u" },
-    { key: "documentary", group: "topic", title: "مستند", url: IPTV + "categories/documentary.m3u" },
-    { key: "kids", group: "topic", title: "کودک", url: IPTV + "categories/kids.m3u" },
-    {
-      key: "movies", group: "topic", title: "فیلم و سریال", cacheKey: "movies+series",
-      urls: [IPTV + "categories/movies.m3u", IPTV + "categories/series.m3u"],
-    },
-    { key: "tr", group: "region", title: "ترکیه", url: IPTV + "countries/tr.m3u" },
-    { key: "mideast", group: "region", title: "خاورمیانه", url: IPTV + "regions/mideast.m3u" },
-    { key: "eas", group: "region", title: "آسیای شرقی", url: IPTV + "regions/eas.m3u" },
-    { key: "eur", group: "region", title: "اروپا", url: IPTV + "regions/eur.m3u", note: "۱MB", timeout: 60000 },
-    { key: "amer", group: "region", title: "آمریکا", url: IPTV + "regions/amer.m3u", note: "۰٫۹MB", timeout: 60000 },
-    { key: "all", group: "region", title: "همه", url: IPTV + "index.m3u", note: "۲٫۶MB", timeout: 60000 },
+    { key: "fas", title: "فارسی" },
+    { key: "provinces", title: "استانی", provincialOnly: true },
+    { key: "news", group: "topic", title: "خبری" },
+    { key: "sports", group: "topic", title: "ورزشی" },
+    { key: "music", group: "topic", title: "موسیقی" },
+    { key: "documentary", group: "topic", title: "مستند" },
+    { key: "kids", group: "topic", title: "کودک" },
+    { key: "movies", group: "topic", title: "فیلم و سریال" },
+    { key: "tr", group: "region", title: "ترکیه" },
+    { key: "mideast", group: "region", title: "خاورمیانه" },
+    { key: "eas", group: "region", title: "آسیای شرقی" },
+    { key: "eur", group: "region", title: "اروپا", note: "۰٫۶MB" },
+    { key: "amer", group: "region", title: "آمریکا", note: "۰٫۶MB" },
+    { key: "all", group: "region", title: "همه", note: "۱٫۵MB", timeout: 60000 },
   ];
 
   var PROVINCIAL_NAMES = {
@@ -99,6 +98,7 @@
 
   var PREFS_KEY = "mowj-tv-prefs-v2";
   var STATUS_KEY = "mowj-tv-status-v2";
+  var CACHE_PREFIX = "local:";              // lists cached before the app shipped its own data are ignored
   var LIST_FRESH_MS = 12 * 3600 * 1000;      // reuse a cached playlist for 12h without any network
   var STATUS_OK_TTL = 12 * 3600 * 1000;
   var STATUS_BAD_TTL = 3 * 3600 * 1000;
@@ -120,7 +120,7 @@
   var STALL_LOWER_MS = 7000;
   var STALL_RECONNECT_MS = 25000;
   var AUTO_MAX_HEIGHT = 480;
-  var HLS_FALLBACK_URL = "https://unpkg.com/hls.js@1.6.16/dist/hls.min.js";
+  var HLS_RETRY_URL = "assets/vendor/hls.min.js?retry=1"; // same file, in case the first load failed
   var XLINK = "http://www.w3.org/1999/xlink";
 
   /* ------------------------------------------------------------------ *
@@ -252,13 +252,17 @@
       var stale = [];
       for (var i = 0; i < localStorage.length; i += 1) {
         var key = localStorage.key(i);
-        if (key && (key.indexOf("mowj-tv-playlist-v1-") === 0 || key.indexOf("mowj-tv-health-v1-") === 0)) {
+        if (key && (key.indexOf("mowj-tv-playlist-v1-") === 0 || key.indexOf("mowj-tv-health-v1-") === 0 ||
+          (key.indexOf("mowj-tv-list-") === 0 && key.indexOf("mowj-tv-list-" + CACHE_PREFIX) !== 0))) {
           stale.push(key);
         }
       }
       stale.forEach(removeKey);
       removeKey("mowj-tv-preferences-v1");
-      if (window.indexedDB && indexedDB.deleteDatabase) indexedDB.deleteDatabase("mowj-tv-cache-v2");
+      if (window.indexedDB && indexedDB.deleteDatabase) {
+        indexedDB.deleteDatabase("mowj-tv-cache-v2");
+        indexedDB.deleteDatabase("mowj-tv"); // lists downloaded from IPTV-ORG by earlier versions
+      }
     } catch (e) {
       /* best effort */
     }
@@ -358,7 +362,7 @@
         finish(null);
       }, 4000);
       try {
-        var req = indexedDB.open("mowj-tv", 1);
+        var req = indexedDB.open("mowj-tv-local", 1);
         req.onupgradeneeded = function () {
           req.result.createObjectStore("lists", { keyPath: "k" });
         };
@@ -428,14 +432,8 @@
     });
   }
 
-  // A category may combine several playlists (e.g. movies + series); duplicates merge by tvg-id.
   function fetchCategory(cat, reload) {
-    var urls = cat.urls || [cat.url];
-    return Promise.all(urls.map(function (url) {
-      return fetchText(url, cat.timeout || 25000, reload);
-    })).then(function (texts) {
-      return texts.join("\n");
-    });
+    return fetchText(DATA + cat.key + ".m3u", cat.timeout || 25000, reload);
   }
 
   /* ------------------------------------------------------------------ *
@@ -464,11 +462,10 @@
       .trim();
   }
 
-  function smallLogo(url) {
-    if (!url) return "";
-    // Wikimedia serves ready-made thumbnails; a 120px logo is a fraction of a 960px one.
-    if (/upload\.wikimedia\.org\/.*\/thumb\//.test(url)) return url.replace(/\/\d+px-([^/]+)$/, "/120px-$1");
-    return url;
+  // Only logos that ship with the app (logos/...); never a request to another host.
+  function localLogo(url) {
+    url = String(url || "");
+    return /^logos\/[\w.-]+\.webp$/.test(url) ? url : "";
   }
 
   function groupLabel(group) {
@@ -486,6 +483,12 @@
     for (var i = 0; i < lines.length; i += 1) {
       var line = lines[i].trim();
       if (!line) continue;
+      if (line.indexOf("#EXTM3U") === 0) {
+        // Channels dropped at build time because no browser can play them.
+        var dropped = line.match(/x-mowj-hidden="(\d+)"/);
+        if (dropped) hiddenCount += Number(dropped[1]);
+        continue;
+      }
       if (line.indexOf("#EXTINF") === 0) {
         var comma = line.lastIndexOf(",");
         var meta = comma >= 0 ? line.slice(0, comma) : line;
@@ -499,7 +502,7 @@
         pending = {
           tvgId: attrs["tvg-id"] || "",
           name: cleanTitle(title) || "بدون نام",
-          logo: smallLogo(attrs["tvg-logo"] || ""),
+          logo: localLogo(attrs["tvg-logo"]),
           group: attrs["group-title"] || "",
           quality: q ? Number(q[1]) : 0,
           geo: /\[Geo-blocked\]/i.test(title),
@@ -895,47 +898,24 @@
     };
   })();
 
-  /* Small local copies of the main lists' logos (scripts/build-logos.mjs).
-   * Many original logos sit on hosts that refuse or throttle viewers and weigh
-   * 50-200 KB; the local ones are 1-3 KB and come from the same site. */
-  var LOCAL_LOGOS = (function () {
-    var data = window.MOWJ_LOGOS || {};
-    var set = Object.create(null);
-    String(data.ids || "").split(" ").forEach(function (id) {
-      if (id) set[id] = true;
-    });
-    return { v: data.v || "", set: set };
-  })();
-
-  function localLogo(base) {
-    if (!base || !LOCAL_LOGOS.set[base]) return "";
-    return "logos/" + base.replace(/[^A-Za-z0-9._-]/g, "_") + ".webp?v=" + LOCAL_LOGOS.v;
-  }
-
   function paintLogo(container, channel) {
     container.textContent = "";
     var initial = document.createElement("span");
     initial.textContent = (channel.name || "؟").charAt(0).toUpperCase();
     container.appendChild(initial);
-    // Local copy first, then the original (older TVs without WebP still get a logo).
-    var urls = [];
-    var local = localLogo(channel.base);
-    if (local) urls.push(local);
-    if (channel.logo) urls.push(channel.logo);
-    if (!urls.length) return;
+    // Favorites saved by older versions may hold an outside URL: show the initial instead.
+    var url = localLogo(channel.logo);
+    if (!url) return;
     var img = document.createElement("img");
     img.alt = "";
     img.decoding = "async";
-    img.referrerPolicy = "no-referrer";
     img.onerror = function () {
-      urls.shift();
-      if (urls.length) img.src = urls[0];
-      else if (img.parentNode) img.parentNode.removeChild(img);
+      if (img.parentNode) img.parentNode.removeChild(img);
     };
     img.onload = function () {
       initial.style.visibility = "hidden";
     };
-    img.src = urls[0];
+    img.src = url;
     container.appendChild(img);
   }
 
@@ -1824,7 +1804,7 @@
       });
     }
     var script = document.createElement("script");
-    script.src = HLS_FALLBACK_URL;
+    script.src = HLS_RETRY_URL;
     script.onload = flush;
     script.onerror = flush;
     setTimeout(flush, 15000);
@@ -2462,7 +2442,7 @@
 
     showListMessage("در حال دریافت فهرست «" + cat.title + "»…", "", false);
     $("count").textContent = "";
-    return cacheGet(cat.cacheKey || cat.key).then(function (cached) {
+    return cacheGet(CACHE_PREFIX + cat.key).then(function (cached) {
       if (token !== state.loadToken) return null;
       var fresh = cached && cached.text && now() - cached.t < LIST_FRESH_MS;
       if (cached && cached.text) {
@@ -2475,8 +2455,8 @@
       }
       return fetchCategory(cat, forceRefresh).then(function (text) {
         if (token !== state.loadToken) return;
-        if (text.indexOf("#EXTINF") === -1) throw new Error("bad playlist");
-        cachePut(cat.cacheKey || cat.key, text);
+        if (text.indexOf("#EXTM3U") === -1) throw new Error("bad playlist"); // an empty list is valid
+        cachePut(CACHE_PREFIX + cat.key, text);
         if (cached && cached.text === text) {
           updateFoot(now());
           return;
