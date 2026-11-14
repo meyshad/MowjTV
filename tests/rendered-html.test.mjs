@@ -68,15 +68,16 @@ test("ships a self-hosted TV folder", async () => {
 
   // Channel sources: bundled lists, read with relative URLs
   assert.match(script, /var DATA = "data\/";/);
-  assert.match(script, /PROVINCIAL_NAMES/);
+  assert.doesNotMatch(script, /PROVINCIAL_NAMES|provincialOnly/, "the empty provincial list is gone");
   const categoryKeys = [...script.matchAll(/\{ key: "(\w+)"/g)].map((m) => m[1]).filter((key) => key !== "fav");
-  assert.ok(categoryKeys.length >= 30, "a broad set of categories");
+  assert.ok(categoryKeys.length >= 12 && categoryKeys.length <= 16, "a short, tidy category list");
+  assert.equal(categoryKeys[0], "fas", "Persian comes first");
   const buildScript = await readFile(new URL("../scripts/build-data.mjs", import.meta.url), "utf8");
   for (const key of categoryKeys) {
     assert.match(buildScript, new RegExp(`^  ${key}: \\[`, "m"), `the data build makes ${key}`);
   }
   for (const key of categoryKeys) {
-    await access(new URL(`../public/tv/data/${key}.m3u`, import.meta.url));
+    await access(new URL(`../public/tv/data/${key}.json`, import.meta.url));
   }
   assert.match(script, /CATEGORY_GROUPS = \{ persian: "فارسی", topic: "موضوع", region: "منطقه" \}/);
   assert.match(script, /"GZT\.tr": \["https:\/\/gzttv-live\.lg\.mncdn\.com\/gzttv-live\/gzttv\/playlist\.m3u8"\]/);
@@ -88,7 +89,12 @@ test("ships a self-hosted TV folder", async () => {
   assert.match(script, /quality: "auto"/);
   assert.match(script, /autoLevelCapping/);
   assert.match(script, /hls\.stopLoad\(\)/, "pausing must stop downloading");
-  assert.match(script, /LIST_FRESH_MS = 12 \* 3600 \* 1000/);
+  // Data versioning, fetch fallback and a visible error with Retry
+  assert.match(script, /DATA \+ "index\.json"/);
+  assert.match(script, /cached\.v === index\.v/, "lists cached from another data version are not used");
+  assert.match(script, /typeof fetch !== "function"\) return xhrText/);
+  assert.match(script, /"فهرست شبکه‌ها باز نشد"/);
+  assert.match(script, /console\.warn\("\[mowj\] could not load " \+ url/);
   assert.doesNotMatch(script, /setInterval\([^)]*probe/i, "no periodic background probing");
   assert.match(script, /PROBE_DWELL_MS = 900/);
 
@@ -127,21 +133,27 @@ test("ships a self-hosted TV folder", async () => {
   assert.doesNotMatch(styles, /https?:\/\//, "fonts are bundled");
   assert.match(styles, /url\("fonts\/Vazirmatn-Regular\.woff2"\)/);
   const external = script.split("\n").filter((line) => /https?:\/\//.test(line) &&
-    !/^\s*("[\w.]+": \["https:\/\/[^"]+\.m3u8"\],|\*|\/\/|var XLINK = "http:\/\/www\.w3\.org\/1999\/xlink";)/.test(line));
+    !/^\s*("[\w.]+": \["https:\/\/[^"]+\.m3u8"\],|\*|\/\/|var (XLINK|SVG_NS) = "http:\/\/www\.w3\.org\/[\w/]+";)/.test(line));
   assert.deepEqual(external, [], "only stream fixes may name another host");
   assert.match(script, /return \/\^logos\\\/\[\\w\.-\]\+\\\.webp\$\/\.test\(url\)/, "only bundled logos are shown");
   await access(new URL("../public/tv/assets/vendor/hls.min.js", import.meta.url));
   await access(new URL("../public/tv/assets/fonts/Vazirmatn-Bold.woff2", import.meta.url));
 
-  // Bundled lists hold only browser-playable links and point at logos that exist
-  const fas = await readFile(new URL("../public/tv/data/fas.m3u", import.meta.url), "utf8");
-  assert.match(fas, /^#EXTM3U x-mowj-hidden="\d+"/);
-  const links = fas.split("\n").filter((line) => line && !line.startsWith("#"));
-  assert.ok(links.length > 50);
-  for (const link of links) assert.match(link, /^https:\/\//);
-  assert.doesNotMatch(fas, /ncdn\.telewebion\.ir|http-referrer|http-user-agent/);
+  // Bundled lists (JSON, which every host serves correctly) hold only
+  // browser-playable links and point at logos that exist
+  const index = JSON.parse(await readFile(new URL("../public/tv/data/index.json", import.meta.url), "utf8"));
+  assert.match(index.v, /^\d{8}-[0-9a-f]{8}$/);
+  const fas = JSON.parse(await readFile(new URL("../public/tv/data/fas.json", import.meta.url), "utf8"));
+  assert.equal(fas.v, index.v);
+  assert.ok(fas.c.length > 100);
+  for (const row of fas.c) {
+    assert.equal(row.length, 7);
+    for (const link of row[6]) assert.match(link, /^https:\/\//);
+  }
+  assert.doesNotMatch(JSON.stringify(fas), /ncdn\.telewebion\.ir/);
+  for (const key of Object.keys(index.lists)) assert.ok(index.lists[key].n <= 1200, `${key} is capped for a TV`);
   const logoFiles = new Set(await readdir(new URL("../public/tv/logos/", import.meta.url)));
-  const referenced = [...fas.matchAll(/tvg-logo="logos\/([^"]+)"/g)].map((m) => m[1]);
+  const referenced = fas.c.map((row) => row[2]).filter(Boolean);
   assert.ok(referenced.length > 50, "most Persian channels have a logo");
   for (const file of referenced) assert.ok(logoFiles.has(file), `missing logo ${file}`);
 
@@ -167,7 +179,7 @@ test("ships a self-hosted TV folder", async () => {
   for (const file of await readdir(new URL("../public/tv/data/", import.meta.url))) {
     dataBytes += (await stat(new URL(`../public/tv/data/${file}`, import.meta.url))).size;
   }
-  assert.ok(dataBytes < 6000000, "bundled channel lists should stay small");
+  assert.ok(dataBytes < 3000000, "bundled channel lists should stay small");
   assert.ok(styleInfo.size < 40000, "TV stylesheet should stay lightweight");
 });
 
@@ -255,7 +267,7 @@ test("packages a self-contained release with a root redirect", async () => {
   const redirect = await readFile(new URL("../release/index.html", import.meta.url), "utf8");
   assert.match(redirect, /url=tv\//);
   await access(new URL("../release/tv/index.html", import.meta.url));
-  await access(new URL("../release/tv/data/fas.m3u", import.meta.url));
+  await access(new URL("../release/tv/data/fas.json", import.meta.url));
   await access(new URL("../release/tv/assets/vendor/hls.min.js", import.meta.url));
   await access(new URL("../release/tv.zip", import.meta.url));
 });
