@@ -8,32 +8,50 @@
    * Configuration
    * ------------------------------------------------------------------ */
 
-  var IPTV = "https://iptv-org.github.io/iptv/";
+  /* Channel lists ship with the app (data/, built by scripts/build-data.mjs
+   * from IPTV-ORG), so everything but the video streams comes from this host. */
+  var DATA = "data/";
 
-  /* Three short groups so the chip row stays easy to walk with a remote:
-   * Persian first, then topics, then regions. "note" marks the big downloads
-   * (IPTV-ORG serves the playlists uncompressed). */
-  var CATEGORY_GROUPS = { topic: "موضوع", region: "منطقه" };
+  /* Categories live in a sidebar under three headings: Persian, topics and
+   * regions. Small IPTV-ORG lists are merged into broader ones by the data
+   * build. "note" marks the bigger downloads. */
+  var CATEGORY_GROUPS = { persian: "فارسی", topic: "موضوع", region: "منطقه" };
+  var GROUP_ORDER = ["persian", "topic", "region"];
 
   var CATEGORIES = [
-    { key: "fav", title: "محبوب‌ها", favorites: true },
-    { key: "fas", title: "فارسی", url: IPTV + "languages/fas.m3u" },
-    { key: "provinces", title: "استانی", url: IPTV + "countries/ir.m3u", provincialOnly: true },
-    { key: "news", group: "topic", title: "خبری", url: IPTV + "categories/news.m3u" },
-    { key: "sports", group: "topic", title: "ورزشی", url: IPTV + "categories/sports.m3u" },
-    { key: "music", group: "topic", title: "موسیقی", url: IPTV + "categories/music.m3u" },
-    { key: "documentary", group: "topic", title: "مستند", url: IPTV + "categories/documentary.m3u" },
-    { key: "kids", group: "topic", title: "کودک", url: IPTV + "categories/kids.m3u" },
-    {
-      key: "movies", group: "topic", title: "فیلم و سریال", cacheKey: "movies+series",
-      urls: [IPTV + "categories/movies.m3u", IPTV + "categories/series.m3u"],
-    },
-    { key: "tr", group: "region", title: "ترکیه", url: IPTV + "countries/tr.m3u" },
-    { key: "mideast", group: "region", title: "خاورمیانه", url: IPTV + "regions/mideast.m3u" },
-    { key: "eas", group: "region", title: "آسیای شرقی", url: IPTV + "regions/eas.m3u" },
-    { key: "eur", group: "region", title: "اروپا", url: IPTV + "regions/eur.m3u", note: "۱MB", timeout: 60000 },
-    { key: "amer", group: "region", title: "آمریکا", url: IPTV + "regions/amer.m3u", note: "۰٫۹MB", timeout: 60000 },
-    { key: "all", group: "region", title: "همه", url: IPTV + "index.m3u", note: "۲٫۶MB", timeout: 60000 },
+    { key: "fav", group: "persian", title: "محبوب‌ها", favorites: true },
+    { key: "fas", group: "persian", title: "شبکه‌های فارسی" },
+    { key: "afghan", group: "persian", title: "افغانستان و تاجیکستان" },
+    { key: "provinces", group: "persian", title: "استانی", provincialOnly: true },
+    { key: "news", group: "topic", title: "خبری" },
+    { key: "sports", group: "topic", title: "ورزشی" },
+    { key: "music", group: "topic", title: "موسیقی" },
+    { key: "entertainment", group: "topic", title: "سرگرمی" },
+    { key: "movies", group: "topic", title: "فیلم و سریال" },
+    { key: "documentary", group: "topic", title: "مستند و علمی" },
+    { key: "kids", group: "topic", title: "کودک و انیمیشن" },
+    { key: "education", group: "topic", title: "آموزشی" },
+    { key: "culture", group: "topic", title: "فرهنگی" },
+    { key: "religious", group: "topic", title: "مذهبی" },
+    { key: "comedy", group: "topic", title: "کمدی" },
+    { key: "lifestyle", group: "topic", title: "سبک زندگی و سفر" },
+    { key: "business", group: "topic", title: "اقتصادی" },
+    { key: "classic", group: "topic", title: "کلاسیک" },
+    { key: "legislative", group: "topic", title: "پارلمانی و دولتی" },
+    { key: "tr", group: "region", title: "ترکیه" },
+    { key: "mideast", group: "region", title: "خاورمیانه" },
+    { key: "arab", group: "region", title: "کشورهای عربی" },
+    { key: "cas", group: "region", title: "آسیای میانه" },
+    { key: "sas", group: "region", title: "آسیای جنوبی" },
+    { key: "eas", group: "region", title: "آسیای شرقی" },
+    { key: "sea", group: "region", title: "جنوب شرق آسیا" },
+    { key: "cis", group: "region", title: "روسیه و همسایگان" },
+    { key: "eur", group: "region", title: "اروپا", note: "۰٫۶MB" },
+    { key: "afr", group: "region", title: "آفریقا" },
+    { key: "noram", group: "region", title: "آمریکای شمالی", note: "۰٫۴MB" },
+    { key: "latam", group: "region", title: "آمریکای لاتین", note: "۰٫۳MB" },
+    { key: "oce", group: "region", title: "اقیانوسیه" },
+    { key: "all", group: "region", title: "همه", note: "۱٫۵MB", timeout: 60000 },
   ];
 
   var PROVINCIAL_NAMES = {
@@ -99,6 +117,7 @@
 
   var PREFS_KEY = "mowj-tv-prefs-v2";
   var STATUS_KEY = "mowj-tv-status-v2";
+  var CACHE_PREFIX = "local:";              // lists cached before the app shipped its own data are ignored
   var LIST_FRESH_MS = 12 * 3600 * 1000;      // reuse a cached playlist for 12h without any network
   var STATUS_OK_TTL = 12 * 3600 * 1000;
   var STATUS_BAD_TTL = 3 * 3600 * 1000;
@@ -120,7 +139,8 @@
   var STALL_LOWER_MS = 7000;
   var STALL_RECONNECT_MS = 25000;
   var AUTO_MAX_HEIGHT = 480;
-  var HLS_FALLBACK_URL = "https://unpkg.com/hls.js@1.6.16/dist/hls.min.js";
+  var AUTO_FULLSCREEN_MS = 30000;            // playing and no input for this long: go fullscreen
+  var HLS_RETRY_URL = "assets/vendor/hls.min.js?retry=1"; // same file, in case the first load failed
   var XLINK = "http://www.w3.org/1999/xlink";
 
   /* ------------------------------------------------------------------ *
@@ -252,13 +272,17 @@
       var stale = [];
       for (var i = 0; i < localStorage.length; i += 1) {
         var key = localStorage.key(i);
-        if (key && (key.indexOf("mowj-tv-playlist-v1-") === 0 || key.indexOf("mowj-tv-health-v1-") === 0)) {
+        if (key && (key.indexOf("mowj-tv-playlist-v1-") === 0 || key.indexOf("mowj-tv-health-v1-") === 0 ||
+          (key.indexOf("mowj-tv-list-") === 0 && key.indexOf("mowj-tv-list-" + CACHE_PREFIX) !== 0))) {
           stale.push(key);
         }
       }
       stale.forEach(removeKey);
       removeKey("mowj-tv-preferences-v1");
-      if (window.indexedDB && indexedDB.deleteDatabase) indexedDB.deleteDatabase("mowj-tv-cache-v2");
+      if (window.indexedDB && indexedDB.deleteDatabase) {
+        indexedDB.deleteDatabase("mowj-tv-cache-v2");
+        indexedDB.deleteDatabase("mowj-tv"); // lists downloaded from IPTV-ORG by earlier versions
+      }
     } catch (e) {
       /* best effort */
     }
@@ -358,7 +382,7 @@
         finish(null);
       }, 4000);
       try {
-        var req = indexedDB.open("mowj-tv", 1);
+        var req = indexedDB.open("mowj-tv-local", 1);
         req.onupgradeneeded = function () {
           req.result.createObjectStore("lists", { keyPath: "k" });
         };
@@ -428,14 +452,8 @@
     });
   }
 
-  // A category may combine several playlists (e.g. movies + series); duplicates merge by tvg-id.
   function fetchCategory(cat, reload) {
-    var urls = cat.urls || [cat.url];
-    return Promise.all(urls.map(function (url) {
-      return fetchText(url, cat.timeout || 25000, reload);
-    })).then(function (texts) {
-      return texts.join("\n");
-    });
+    return fetchText(DATA + cat.key + ".m3u", cat.timeout || 25000, reload);
   }
 
   /* ------------------------------------------------------------------ *
@@ -464,11 +482,10 @@
       .trim();
   }
 
-  function smallLogo(url) {
-    if (!url) return "";
-    // Wikimedia serves ready-made thumbnails; a 120px logo is a fraction of a 960px one.
-    if (/upload\.wikimedia\.org\/.*\/thumb\//.test(url)) return url.replace(/\/\d+px-([^/]+)$/, "/120px-$1");
-    return url;
+  // Only logos that ship with the app (logos/...); never a request to another host.
+  function localLogo(url) {
+    url = String(url || "");
+    return /^logos\/[\w.-]+\.webp$/.test(url) ? url : "";
   }
 
   function groupLabel(group) {
@@ -486,6 +503,12 @@
     for (var i = 0; i < lines.length; i += 1) {
       var line = lines[i].trim();
       if (!line) continue;
+      if (line.indexOf("#EXTM3U") === 0) {
+        // Channels dropped at build time because no browser can play them.
+        var dropped = line.match(/x-mowj-hidden="(\d+)"/);
+        if (dropped) hiddenCount += Number(dropped[1]);
+        continue;
+      }
       if (line.indexOf("#EXTINF") === 0) {
         var comma = line.lastIndexOf(",");
         var meta = comma >= 0 ? line.slice(0, comma) : line;
@@ -499,7 +522,7 @@
         pending = {
           tvgId: attrs["tvg-id"] || "",
           name: cleanTitle(title) || "بدون نام",
-          logo: smallLogo(attrs["tvg-logo"] || ""),
+          logo: localLogo(attrs["tvg-logo"]),
           group: attrs["group-title"] || "",
           quality: q ? Number(q[1]) : 0,
           geo: /\[Geo-blocked\]/i.test(title),
@@ -718,7 +741,8 @@
 
     function layout() {
       if (!rowHeight) measure();
-      perPage = Math.max(1, Math.floor((el.clientHeight || rowHeight * 8) / rowHeight));
+      // Rows sit a little below the top edge (margin-top in the CSS); keep that much spare.
+      perPage = Math.max(1, Math.floor(((el.clientHeight || rowHeight * 8) - rowHeight * 0.2) / rowHeight));
     }
 
     function pageCount() {
@@ -895,47 +919,24 @@
     };
   })();
 
-  /* Small local copies of the main lists' logos (scripts/build-logos.mjs).
-   * Many original logos sit on hosts that refuse or throttle viewers and weigh
-   * 50-200 KB; the local ones are 1-3 KB and come from the same site. */
-  var LOCAL_LOGOS = (function () {
-    var data = window.MOWJ_LOGOS || {};
-    var set = Object.create(null);
-    String(data.ids || "").split(" ").forEach(function (id) {
-      if (id) set[id] = true;
-    });
-    return { v: data.v || "", set: set };
-  })();
-
-  function localLogo(base) {
-    if (!base || !LOCAL_LOGOS.set[base]) return "";
-    return "logos/" + base.replace(/[^A-Za-z0-9._-]/g, "_") + ".webp?v=" + LOCAL_LOGOS.v;
-  }
-
   function paintLogo(container, channel) {
     container.textContent = "";
     var initial = document.createElement("span");
     initial.textContent = (channel.name || "؟").charAt(0).toUpperCase();
     container.appendChild(initial);
-    // Local copy first, then the original (older TVs without WebP still get a logo).
-    var urls = [];
-    var local = localLogo(channel.base);
-    if (local) urls.push(local);
-    if (channel.logo) urls.push(channel.logo);
-    if (!urls.length) return;
+    // Favorites saved by older versions may hold an outside URL: show the initial instead.
+    var url = localLogo(channel.logo);
+    if (!url) return;
     var img = document.createElement("img");
     img.alt = "";
     img.decoding = "async";
-    img.referrerPolicy = "no-referrer";
     img.onerror = function () {
-      urls.shift();
-      if (urls.length) img.src = urls[0];
-      else if (img.parentNode) img.parentNode.removeChild(img);
+      if (img.parentNode) img.parentNode.removeChild(img);
     };
     img.onload = function () {
       initial.style.visibility = "hidden";
     };
-    img.src = urls[0];
+    img.src = url;
     container.appendChild(img);
   }
 
@@ -1766,6 +1767,11 @@
       isActive: function () {
         return Boolean(P.channel && (P.started || P.timers.start || P.timers.reconnect));
       },
+      // Really playing: started, not paused by the user, not reconnecting or failed.
+      isPlayingNow: function () {
+        return Boolean(P.channel && P.started && !P.userPaused && !P.timers.reconnect &&
+          !video.paused && !video.ended);
+      },
       isPaused: function () {
         return P.userPaused;
       },
@@ -1824,7 +1830,7 @@
       });
     }
     var script = document.createElement("script");
-    script.src = HLS_FALLBACK_URL;
+    script.src = HLS_RETRY_URL;
     script.onload = flush;
     script.onerror = flush;
     setTimeout(flush, 15000);
@@ -2034,6 +2040,7 @@
       }
       nativeRequested = false;
       list.focusCurrent();
+      autoFull.arm(); // a new full idle period, never straight back into fullscreen
     }
 
     api.enter = function () {
@@ -2083,6 +2090,56 @@
     $("player").addEventListener("touchstart", api.showUi);
     $("player").addEventListener("dblclick", api.toggle);
     return api;
+  })();
+
+  /* ------------------------------------------------------------------ *
+   * Idle auto-fullscreen: a channel that has been playing for 30 seconds
+   * with no key, pointer, click, wheel or touch goes fullscreen, through the
+   * same path as the fullscreen button (in-page fullscreen when the browser
+   * refuses the native one without a gesture).
+   * ------------------------------------------------------------------ */
+
+  var autoFull = (function () {
+    var idle = window.MowjIdle ? window.MowjIdle({
+      delay: AUTO_FULLSCREEN_MS,
+      eligible: function () {
+        return player.isPlayingNow() && !fullscreen.active && !layers.top() &&
+          document.visibilityState !== "hidden";
+      },
+      fire: function () {
+        fullscreen.enter();
+      },
+    }) : { arm: function () {}, cancel: function () {} };
+
+    var lastMove = 0;
+    function onInput() {
+      idle.arm();
+    }
+    function onMove() {
+      // Pointer movement arrives in bursts; re-arming twice a second is plenty.
+      if (now() - lastMove < 500) return;
+      lastMove = now();
+      idle.arm();
+    }
+
+    ["keydown", "mousedown", "click", "wheel", "touchstart", "focusin"].forEach(function (type) {
+      document.addEventListener(type, onInput, true);
+    });
+    ["mousemove", "pointermove"].forEach(function (type) {
+      document.addEventListener(type, onMove, true);
+    });
+    video.addEventListener("playing", onInput);
+    ["pause", "ended", "error", "emptied"].forEach(function (type) {
+      video.addEventListener(type, function () {
+        idle.cancel();
+      });
+    });
+    document.addEventListener("visibilitychange", function () {
+      if (document.visibilityState === "hidden") idle.cancel();
+      else idle.arm();
+    });
+
+    return idle;
   })();
 
   /* ---------- Quality menu ---------- */
@@ -2291,51 +2348,231 @@
    * Categories, search and loading
    * ------------------------------------------------------------------ */
 
-  /* Two fixed rows on a TV: Persian lists and topics first, regions below.
-   * (Phones show both rows side by side in one swipeable strip.) */
-  function renderCategories() {
+  /* ------------------------------------------------------------------ *
+   * Category sidebar: headings with their categories, paged like the
+   * channel list when they do not all fit (never scrolled).
+   * ------------------------------------------------------------------ */
+
+  var MOBILE_QUERY = "(max-width: 820px), (orientation: portrait) and (max-width: 1100px)";
+
+  function groupOf(cat) {
+    return (cat && cat.group) || "persian";
+  }
+
+  var catbar = (function () {
     var nav = $("cats");
-    nav.textContent = "";
-    var rows = { main: document.createElement("div"), region: document.createElement("div") };
-    rows.main.className = "cats-row";
-    rows.region.className = "cats-row";
-    var lastGroup = "";
-    CATEGORIES.forEach(function (cat) {
-      if (cat.favorites && !prefs.favorites.length) return;
-      var group = cat.group || "";
-      var row = group === "region" ? rows.region : rows.main;
-      if (group && group !== lastGroup) {
-        // Topics follow the Persian lists after a thin divider; the region row gets a label.
-        var mark = document.createElement("span");
-        mark.setAttribute("aria-hidden", "true");
-        if (row.childNodes.length) {
-          mark.className = "cats-sep";
-        } else {
-          mark.className = "cats-label";
-          mark.textContent = CATEGORY_GROUPS[group];
-        }
-        row.appendChild(mark);
+    var box = $("catList");
+    var entries = [];   // { head: group } or { cat: category }
+    var pages = [];     // [first, last] entry indexes
+    var page = 0;
+    var heights = null;
+
+    function stacked() {
+      return !(window.matchMedia && window.matchMedia(MOBILE_QUERY).matches);
+    }
+
+    function buildEntries() {
+      entries = [];
+      GROUP_ORDER.forEach(function (group) {
+        entries.push({ head: group });
+        CATEGORIES.forEach(function (cat) {
+          if (cat.favorites && !prefs.favorites.length) return;
+          if (groupOf(cat) === group) entries.push({ cat: cat });
+        });
+      });
+    }
+
+    function makeHead(group) {
+      var head = document.createElement("div");
+      head.className = "cat-head";
+      head.setAttribute("aria-hidden", "true");
+      head.textContent = CATEGORY_GROUPS[group];
+      return head;
+    }
+
+    function makeItem(cat, index) {
+      var item = document.createElement("button");
+      item.type = "button";
+      item.className = "cat-item" + (state.cat && state.cat.key === cat.key ? " is-active" : "");
+      item.setAttribute("data-nav", "");
+      item.setAttribute("data-cat", cat.key);
+      item.setAttribute("data-e", String(index));
+      item.setAttribute("aria-label", CATEGORY_GROUPS[groupOf(cat)] + ": " + cat.title);
+      if (cat.favorites) {
+        var star = document.createElement("span");
+        star.className = "cat-star";
+        star.textContent = "★";
+        item.appendChild(star);
       }
-      lastGroup = group;
-      var chip = document.createElement("button");
-      chip.type = "button";
-      chip.className = "chip" + (state.cat && state.cat.key === cat.key ? " is-active" : "");
-      chip.setAttribute("data-nav", "");
-      chip.setAttribute("data-cat", cat.key);
-      chip.textContent = (cat.favorites ? "★ " : "") + cat.title;
-      if (group) chip.setAttribute("aria-label", CATEGORY_GROUPS[group] + ": " + cat.title);
+      var label = document.createElement("span");
+      label.className = "cat-label";
+      label.textContent = cat.title;
+      item.appendChild(label);
       if (cat.note) {
         var small = document.createElement("small");
         small.textContent = cat.note;
-        chip.appendChild(small);
+        item.appendChild(small);
       }
-      chip.addEventListener("click", function () {
+      item.addEventListener("click", function () {
         loadCategory(cat.key, false);
       });
-      row.appendChild(chip);
+      return item;
+    }
+
+    function measure() {
+      box.textContent = "";
+      var head = makeHead("persian");
+      var item = makeItem(CATEGORIES[1], 0);
+      box.appendChild(head);
+      box.appendChild(item);
+      var hs = getComputedStyle(head);
+      var is = getComputedStyle(item);
+      heights = {
+        head: head.offsetHeight + parseFloat(hs.marginTop) + parseFloat(hs.marginBottom),
+        item: item.offsetHeight + parseFloat(is.marginTop) + parseFloat(is.marginBottom),
+      };
+      box.textContent = "";
+    }
+
+    // Greedy pages by height; a heading never ends a page.
+    function paginate() {
+      pages = [];
+      if (!stacked()) {
+        pages.push([0, entries.length - 1]);
+        return;
+      }
+      if (!heights) measure();
+      var room = box.clientHeight || 600;
+      var start = 0;
+      var used = 0;
+      for (var i = 0; i < entries.length; i += 1) {
+        var h = entries[i].head ? heights.head : heights.item;
+        if (used + h > room && i > start) {
+          var end = i - 1;
+          if (entries[end].head && end > start) end -= 1;
+          pages.push([start, end]);
+          start = end + 1;
+          // A page that starts inside a group repeats the group heading.
+          used = entries[start].cat ? heights.head : 0;
+          for (var j = start; j <= i; j += 1) used += entries[j].head ? heights.head : heights.item;
+          continue;
+        }
+        used += h;
+      }
+      pages.push([start, entries.length - 1]);
+    }
+
+    function pageOfEntry(index) {
+      for (var p = 0; p < pages.length; p += 1) {
+        if (index >= pages[p][0] && index <= pages[p][1]) return p;
+      }
+      return 0;
+    }
+
+    function entryOfCat(key) {
+      for (var i = 0; i < entries.length; i += 1) {
+        if (entries[i].cat && entries[i].cat.key === key) return i;
+      }
+      return -1;
+    }
+
+    function draw() {
+      box.textContent = "";
+      var range = pages[page] || [0, -1];
+      if (entries[range[0]] && entries[range[0]].cat) box.appendChild(makeHead(groupOf(entries[range[0]].cat)));
+      for (var i = range[0]; i <= range[1]; i += 1) {
+        box.appendChild(entries[i].head ? makeHead(entries[i].head) : makeItem(entries[i].cat, i));
+      }
+      // The pager keeps its space even with one page, so the page size never changes under it.
+      $("catPager").style.visibility = pages.length > 1 ? "" : "hidden";
+      $("catPrev").classList.toggle("is-off", page === 0);
+      $("catNext").classList.toggle("is-off", page >= pages.length - 1);
+      $("catPageInfo").textContent = fa(page + 1) + " / " + fa(pages.length);
+    }
+
+    function render() {
+      var focused = document.activeElement;
+      var focusKey = focused && nav.contains(focused) ? focused.getAttribute("data-cat") : "";
+      buildEntries();
+      paginate();
+      var at = entryOfCat(focusKey || (state.cat ? state.cat.key : ""));
+      page = at >= 0 ? pageOfEntry(at) : Math.min(page, pages.length - 1);
+      draw();
+      if (focusKey) focusCat(focusKey);
+    }
+
+    function focusEntry(index) {
+      var p = pageOfEntry(index);
+      if (p !== page) {
+        page = p;
+        draw();
+      }
+      var el = box.querySelector('[data-e="' + index + '"]');
+      if (el) el.focus();
+      return Boolean(el);
+    }
+
+    function focusCat(key) {
+      var at = entryOfCat(key);
+      return at >= 0 && focusEntry(at);
+    }
+
+    // Up/Down inside the sidebar, across pages; false at either end.
+    function step(from, delta) {
+      var index = Number(from.getAttribute("data-e"));
+      for (var i = index + delta; i >= 0 && i < entries.length; i += delta) {
+        if (entries[i].cat) return focusEntry(i);
+      }
+      return false;
+    }
+
+    function turn(delta) {
+      var target = page + delta;
+      if (target < 0 || target >= pages.length) return;
+      var inBar = nav.contains(document.activeElement) && document.activeElement.getAttribute("data-e");
+      page = target;
+      draw();
+      if (inBar) {
+        var first = box.querySelector(".cat-item");
+        if (first) first.focus();
+      }
+    }
+
+    $("catPrev").addEventListener("click", function () {
+      turn(-1);
     });
-    nav.appendChild(rows.main);
-    nav.appendChild(rows.region);
+    $("catNext").addEventListener("click", function () {
+      turn(1);
+    });
+    var wheelAt = 0;
+    box.addEventListener("wheel", function (event) {
+      if (!stacked()) return;
+      event.preventDefault();
+      if (now() - wheelAt < 280 || !event.deltaY) return;
+      wheelAt = now();
+      turn(event.deltaY > 0 ? 1 : -1);
+    }, { passive: false });
+    var resizeTimer = null;
+    window.addEventListener("resize", function () {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(function () {
+        heights = null;
+        render();
+      }, 150);
+    });
+
+    return {
+      el: nav,
+      render: render,
+      step: step,
+      focusActive: function () {
+        return focusCat(state.cat ? state.cat.key : "fas") || Boolean(box.querySelector(".cat-item") && box.querySelector(".cat-item").focus());
+      },
+    };
+  })();
+
+  function renderCategories() {
+    catbar.render();
   }
 
   function showListMessage(title, text, withRetry) {
@@ -2462,7 +2699,7 @@
 
     showListMessage("در حال دریافت فهرست «" + cat.title + "»…", "", false);
     $("count").textContent = "";
-    return cacheGet(cat.cacheKey || cat.key).then(function (cached) {
+    return cacheGet(CACHE_PREFIX + cat.key).then(function (cached) {
       if (token !== state.loadToken) return null;
       var fresh = cached && cached.text && now() - cached.t < LIST_FRESH_MS;
       if (cached && cached.text) {
@@ -2475,8 +2712,8 @@
       }
       return fetchCategory(cat, forceRefresh).then(function (text) {
         if (token !== state.loadToken) return;
-        if (text.indexOf("#EXTINF") === -1) throw new Error("bad playlist");
-        cachePut(cat.cacheKey || cat.key, text);
+        if (text.indexOf("#EXTM3U") === -1) throw new Error("bad playlist"); // an empty list is valid
+        cachePut(CACHE_PREFIX + cat.key, text);
         if (cached && cached.text === text) {
           updateFoot(now());
           return;
@@ -2653,10 +2890,10 @@
       }
     });
     if (!best) return false;
-    // Entering the category row from below lands on the selected category.
-    if ((direction === "up" || direction === "down") && best.classList.contains("chip") &&
-      !from.classList.contains("chip")) {
-      best = $("cats").querySelector(".chip.is-active") || best;
+    // Entering the sidebar from the list or the player lands on the open category.
+    if (catbar.el.contains(best) && !catbar.el.contains(from) && best.classList.contains("cat-item")) {
+      catbar.focusActive();
+      return true;
     }
     if (best === list.el) list.focusCurrent();
     else best.focus();
@@ -2755,6 +2992,12 @@
         applyView(true);
         return;
       }
+      if (!catbar.el.contains(target) && !fullscreen.active) {
+        // Back from the list or the player goes to the category sidebar first.
+        event.preventDefault();
+        catbar.focusActive();
+        return;
+      }
       if (code === 8) event.preventDefault(); // never navigate away on Backspace
       return; // let the TV close the browser / go back
     }
@@ -2835,6 +3078,17 @@
       if (inBar && direction) {
         event.preventDefault();
         moveFocus(direction);
+      }
+      return;
+    }
+
+    // Category sidebar: up/down walk the categories (turning its pages), OK opens one.
+    if (target && target.classList && target.classList.contains("cat-item") &&
+      (direction === "up" || direction === "down")) {
+      event.preventDefault();
+      if (!catbar.step(target, direction === "down" ? 1 : -1) && direction === "down" &&
+        $("catPager").style.visibility !== "hidden" && isVisible($("catPager"))) {
+        $("catNext").focus(); // past the last category: the sidebar's page buttons
       }
       return;
     }

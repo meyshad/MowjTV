@@ -1,0 +1,893 @@
+#EXTM3U x-mowj-hidden="76"
+#EXTINF:-1 tvg-id="1KZNTV.za@SD" tvg-logo="" group-title="Entertainment;Family;General",1KZN TV (576p)
+https://cdn.freevisiontv.co.za/sttv/smil:1kzn.stream.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="2MMonde.ma@Plus1" tvg-logo="" group-title="General",2M Monde +1 (1080p)
+https://d2qh3gh0k5vp3v.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-n6pess5lwbghr/2M_ES.m3u8
+#EXTINF:-1 tvg-id="3ABNInternational.us@SD" tvg-logo="logos/3ABNInternational.us-910831.webp" group-title="Religious",3ABN International (720p)
+https://3abn.bozztv.com/3abn2/Int_live/smil:Int_live.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="3ABNTVUganda.ug@SD" tvg-logo="" group-title="Religious",3ABN TV Uganda (720p) [Not 24/7]
+https://3abn.bozztv.com/3abn/3abn_uganda_live/index.m3u8
+#EXTINF:-1 tvg-id="3StonesTV.ke@SD" tvg-logo="" group-title="General",3 Stones TV (240p) [Not 24/7]
+https://goliveafrica.media:9998/live/64d21e682fd26/index.m3u8
+#EXTINF:-1 tvg-id="7Info.ci@SD" tvg-logo="logos/7Info.ci-8967e1.webp" group-title="News",7 Info
+https://video1.getstreamhosting.com:1936/8042/8042/playlist.m3u8
+#EXTINF:-1 tvg-id="24Horas.es@SD" tvg-logo="logos/24Horas.es-11be8a.webp" group-title="News;Public",24 Horas (720p)
+https://ztnr.rtve.es/ztnr/1694255.m3u8
+#EXTINF:-1 tvg-id="AndTV.in@International" tvg-logo="logos/AndTV.in-4d5a7a.webp" group-title="Movies",&TV International (1080p)
+https://amg01117-amg01117c1-amgplt0029.playout.now3.amagi.tv/playlist/amg01117-amg01117c1-amgplt0029/playlist.m3u8
+#EXTINF:-1 tvg-id="A2iMusic.sn@SD" tvg-logo="logos/A2iMusic.sn-98ca35.webp" group-title="Music",A2i Music (720p) [Not 24/7]
+https://stream.sen-gt.com/A2iMusic/myStream/playlist.m3u8
+#EXTINF:-1 tvg-id="A2iNaija.sn@SD" tvg-logo="" group-title="Education",A2i Naija (720p) [Not 24/7]
+https://stream.sen-gt.com/A2iNaija/myStream/playlist.m3u8
+#EXTINF:-1 tvg-id="A2iReligion.sn@SD" tvg-logo="" group-title="Religious",A2i Religion (720p) [Not 24/7]
+https://stream.sen-gt.com/A2iReligion/myStream/playlist.m3u8
+#EXTINF:-1 tvg-id="A2iTV.it@SD" tvg-logo="logos/A2iTV.it-7f6e45.webp" group-title="General",A2i TV (1080p)
+https://stream.sen-gt.com/A2itv/myStream/playlist.m3u8
+#EXTINF:-1 tvg-id="A12TV.ci@SD" tvg-logo="" group-title="General",A12 TV
+https://video1.getstreamhosting.com:1936/8250/8250/manifest.m3u8
+#EXTINF:-1 tvg-id="ABCNewsLive.us@SD" tvg-logo="logos/ABCNewsLive.us-b25df0.webp" group-title="News",ABC News Live (720p)
+https://jmp2.uk/plu-6508be683a0d700008c534e4.m3u8
+#EXTINF:-1 tvg-id="AbejalesTV.ve@HD" tvg-logo="logos/AbejalesTV.ve-6f88ad.webp" group-title="Entertainment",AbejalesTV (720p)
+https://183.bozztv.com/giatv/giatv-AbejalesTV/AbejalesTV/playlist.m3u8
+#EXTINF:-1 tvg-id="ABNAfrica.us@SD" tvg-logo="logos/ABNAfrica.us-d301b2.webp" group-title="Religious",ABN Africa (480p)
+https://mediaserver.abnvideos.com/streams/abnafrica.m3u8
+#EXTINF:-1 tvg-id="ACTV.tg@SD" tvg-logo="" group-title="Religious",AC TV (480p) [Not 24/7]
+https://ssh101stream.ssh101.com/akamaissh101/ssh101/actvstream/playlist.m3u8
+#EXTINF:-1 tvg-id="ACNN.ng@SD" tvg-logo="" group-title="Religious",ACNN (480p)
+https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_014/Stream/playlist.m3u8
+#EXTINF:-1 tvg-id="ACWUGTV.ug@SD" tvg-logo="logos/ACWUGTV.ug-a0553b.webp" group-title="General;Music",ACW UG TV (480p)
+https://live.acwugtv.com/hls/stream.m3u8
+#EXTINF:-1 tvg-id="AddisTV.et@SD" tvg-logo="" group-title="General",Addis TV (720p)
+https://rrsatrtmp.tulix.tv/addis1/addis1multi.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="AdinkraTV.gh@SD" tvg-logo="" group-title="Undefined",Adinkra TV (1080p)
+https://59d39900ebfb8.streamlock.net/adinkratvny/adinkratvny/playlist.m3u8
+#EXTINF:-1 tvg-id="ADOTV.bj@SD" tvg-logo="logos/ADOTV.bj-6c7132.webp" group-title="Kids;Sports",ADO TV (720p)
+https://strhls.streamakaci.tv/ortb/ortb2-multi/playlist.m3u8
+#EXTINF:-1 tvg-id="Africa24.fr@SD" tvg-logo="logos/Africa24.fr-b44318.webp" group-title="News",Africa 24 (1080p)
+https://africa24.vedge.infomaniak.com/livecast/ik:africa24/manifest.m3u8
+#EXTINF:-1 tvg-id="Africa24English.fr@SD" tvg-logo="logos/Africa24English.fr-fe3129.webp" group-title="News",Africa 24 English (1080p)
+https://edge20.vedge.infomaniak.com/livecast/ik:africa24english/manifest.m3u8
+#EXTINF:-1 tvg-id="Africa24Sport.fr@SD" tvg-logo="logos/Africa24Sport.fr-5456c8.webp" group-title="News;Sports",Africa 24 Sport (1080p)
+https://africa24.vedge.infomaniak.com/livecast/ik:africa24sport/manifest.m3u8
+#EXTINF:-1 tvg-id="AfricanewsEnglish.fr@SD" tvg-logo="logos/AfricanewsEnglish.fr-eaaea5.webp" group-title="News",Africanews English (720p)
+https://cdn-euronews.akamaized.net/live/eds/africanews-en/25049/index.m3u8
+#EXTINF:-1 tvg-id="AfricanewsFrench.fr@SD" tvg-logo="logos/AfricanewsFrench.fr-eaaea5.webp" group-title="News",Africanews French (720p)
+https://cdn-euronews.akamaized.net/live/eds/africanews-fr/25050/index.m3u8
+#EXTINF:-1 tvg-id="AfrikInfoTV.gn@SD" tvg-logo="logos/AfrikInfoTV.gn-e9d4e0.webp" group-title="News",Afrik Info TV
+https://kali.vdopanel.com:3119/hybrid/play.m3u8
+#EXTINF:-1 tvg-id="Afrique54TV.cm@SD" tvg-logo="logos/Afrique54TV.cm-34e807.webp" group-title="News",Afrique54 TV (720p)
+https://video1.getstreamhosting.com:1936/8318/8318/playlist.m3u8
+#EXTINF:-1 tvg-id="AfroMagicChannel.ci@SD" tvg-logo="" group-title="Culture",Afro Magic Channel
+https://video1.getstreamhosting.com:1936/8306/8306/playlist.m3u8
+#EXTINF:-1 tvg-id="AfrocultureTV.ci@SD" tvg-logo="" group-title="Culture",Afroculture TV
+https://streamtv.cmediahosthosting.net:3836/live/myafroculturelive.m3u8
+#EXTINF:-1 tvg-id="AfroturkTV.tr@SD" tvg-logo="logos/AfroturkTV.tr-5d2950.webp" group-title="General",Afroturk TV (1080p)
+https://edge.socialsmart.tv/naturaltv/bant1/playlist.m3u8
+#EXTINF:-1 tvg-id="AghapyTV.eg@SD" tvg-logo="logos/AghapyTV.eg-18a8a4.webp" group-title="Religious",Aghapy TV (1080p) [Not 24/7]
+https://5b622f07944df.streamlock.net/aghapy.tv/aghapy.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="AkiliKids.ke@SD" tvg-logo="logos/AkiliKids.ke-70d596.webp" group-title="Kids",Akili Kids! (720p)
+https://m6.livecdn.io/akilikids.co.ke/akilikids.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="AL24News.dz@SD" tvg-logo="logos/AL24News.dz-a41305.webp" group-title="News",AL24 News
+https://cdn.live.easybroadcast.io/abr_corp/66_al24_u4yga6h/corp/66_al24_u4yga6h_240p/chunks.m3u8
+#EXTINF:-1 tvg-id="AlArabiyaBusiness.ae@SD" tvg-logo="logos/AlArabiyaBusiness.ae-e560b4.webp" group-title="Business",Al Arabiya Business (1080p)
+https://live.alarabiya.net/alarabiapublish/aswaaq.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="AlArabiyaEnglish.sa@SD" tvg-logo="logos/AlArabiyaEnglish.sa-25de97.webp" group-title="News",Al Arabiya English (1080p)
+https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
+#EXTINF:-1 tvg-id="AlArabiyaPrograms.ae@SD" tvg-logo="logos/AlArabiyaPrograms.ae-50b903.webp" group-title="Documentary;News",Al Arabiya Programs (1280p)
+https://live.alarabiya.net/alarabiapublish/aaprograms.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="AlArabyTV2.qa@SD" tvg-logo="logos/AlArabyTV2.qa-ab1e5a.webp" group-title="News",Al Araby TV 2 (1080p)
+https://live.kwikmotion.com/alaraby2live/alaraby2.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="AlArabyTV.qa@SD" tvg-logo="logos/AlArabyTV.qa-121f41.webp" group-title="News",Al Araby TV (1080p)
+https://live.kwikmotion.com/alaraby1live/alaraby_abr/playlist.m3u8
+#EXTINF:-1 tvg-id="AlGhadTV.eg@SD" tvg-logo="logos/AlGhadTV.eg-8ef7cf.webp" group-title="News",Al Ghad TV (1080p)
+https://eazyvwqssi.erbvr.com/alghadtv/alghadtv.m3u8
+#EXTINF:-1 tvg-id="AlHadath.sa@SD" tvg-logo="logos/AlHadath.sa-32806b.webp" group-title="News",Al Hadath (1080p)
+https://shd-gcp-live.edgenextcdn.net/live/bitmovin-hadath/2ff87ec4c2f3ede35295a20637d9f8fd/index.m3u8
+#EXTINF:-1 tvg-id="AlHayatTV.us@SD" tvg-logo="logos/AlHayatTV.us-29573c.webp" group-title="Religious",Al Hayat TV (720p)
+https://cdn3.wowza.com/5/OE5HREpIcEkySlNT/alhayat-live/ngrp:livestream_all/playlist.m3u8
+#EXTINF:-1 tvg-id="AlJazeera2.qa@HD" tvg-logo="logos/AlJazeera2.qa-e44e5b.webp" group-title="News",Al Jazeera 2 (1080p)
+https://live-hls-web-aja2-gcp.thehlive.com/AJA2/index.m3u8
+#EXTINF:-1 tvg-id="AlJazeera.qa@Arabic" tvg-logo="logos/AlJazeera.qa-a59d92.webp" group-title="News",Al Jazeera (1080p)
+https://live-hls-apps-aja-fa.getaj.net/AJA/01.m3u8
+#EXTINF:-1 tvg-id="AlJazeera.qa@English" tvg-logo="logos/AlJazeera.qa-a59d92.webp" group-title="News",Al Jazeera English (1080p)
+https://live-hls-apps-aje-fa.getaj.net/AJE/index.m3u8
+#EXTINF:-1 tvg-id="AlJazeeraDocumentary.qa@SD" tvg-logo="logos/AlJazeeraDocumentary.qa-70621f.webp" group-title="Documentary",Al Jazeera Documentary (1080p) [Geo-blocked]
+https://live-hls-apps-ajd-fa.getaj.net/AJD/index.m3u8
+#EXTINF:-1 tvg-id="AlJazeeraMubasher24.qa@SD" tvg-logo="logos/AlJazeeraMubasher24.qa-60a44f.webp" group-title="News",Al Jazeera Mubasher 24 (1080p)
+https://live-hls-apps-ajm24-fa.getaj.net/AJM24/index.m3u8
+#EXTINF:-1 tvg-id="AlJazeeraMubasher.qa@SD" tvg-logo="logos/AlJazeeraMubasher.qa-5935b3.webp" group-title="News",Al Jazeera Mubasher (1080p)
+https://live-hls-apps-ajm-fa.getaj.net/AJM/index.m3u8
+#EXTINF:-1 tvg-id="AlJazeeraMubasherBroadcast2.qa@SD" tvg-logo="logos/AlJazeeraMubasherBroadcast2.qa-d4ea2f.webp" group-title="News",Al Jazeera Mubasher Broadcast 2 (1080p)
+https://live-hls-apps-ajm2-fa.getaj.net/AJM2/index.m3u8
+#EXTINF:-1 tvg-id="AlMasarTV.ly@SD" tvg-logo="logos/AlMasarTV.ly-aa9ffd.webp" group-title="News",Al Masar TV (576p)
+https://starmenajo.com/hls/almasar/index.m3u8
+#EXTINF:-1 tvg-id="AlQamarTV.ae@SD" tvg-logo="logos/AlQamarTV.ae-dc2d8e.webp" group-title="Undefined",Al Qamar TV (1080p)
+https://streamer3.premio.link/alqamar/playlist.m3u8
+#EXTINF:-1 tvg-id="Alarabiya.ae@SD" tvg-logo="logos/Alarabiya.ae-015267.webp" group-title="News",Alarabiya (1080p)
+https://live.alarabiya.net/alarabiapublish/alarabiya.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="AlloCine.cm@SD" tvg-logo="logos/AlloCine.cm-506dde.webp" group-title="Movies",Allo Cine (1080p)
+https://d1yl6bf4hrzbr0.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-5km3zs4zs9sp0/allo.m3u8
+#EXTINF:-1 tvg-id="AlphaDigital.ug@SD" tvg-logo="" group-title="Religious",Alpha Digital (480p)
+https://streamfi-alphatvdgtl1.zettawiseroutes.com:8181/hls/stream.m3u8
+#EXTINF:-1 tvg-id="AmaniTV.sn@SD" tvg-logo="logos/AmaniTV.sn-4a4592.webp" group-title="Culture",Amani TV (1080p) [Not 24/7]
+https://goccn.cloud/hls/amanitv/index.m3u8
+#EXTINF:-1 tvg-id="AngelTV.in@Africa" tvg-logo="logos/AngelTV.in-813c14.webp" group-title="Religious",Angel TV Africa (720p)
+https://janya-digimix.akamaized.net/vglive-sk-904559/africa/ngrp:angelafrica_all/playlist.m3u8
+#EXTINF:-1 tvg-id="AngelTV.in@Arabia" tvg-logo="logos/AngelTV.in-813c14.webp" group-title="Religious",Angel TV Arabia (720p)
+https://janya-digimix.akamaized.net/vglive-sk-213167/arabia/ngrp:angelarabia_all/playlist.m3u8
+#EXTINF:-1 tvg-id="AntenneReunion.fr@SD" tvg-logo="logos/AntenneReunion.fr-459035.webp" group-title="General",Antenne Reunion (720p) [Not 24/7]
+https://live-antenne-reunion.zeop.tv/live/c3eds/antreunihd/hls_fta/antreunihd.m3u8?location=ZEOP01
+#EXTINF:-1 tvg-id="APTV.gh@SD" tvg-logo="" group-title="Entertainment",AP TV (720p)
+https://59nyqg8elwap-hls-live.5centscdn.com/APTV/85c20905211659d143febd7c32592ee0.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="ArirangUN.kr@SD" tvg-logo="logos/ArirangUN.kr-f09059.webp" group-title="News",Arirang UN (1080p)
+https://amdlive-ch02-ctnd-com.akamaized.net/arirang_2ch/smil:arirang_2ch.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="ArkTV.ug@SD" tvg-logo="" group-title="Religious",Ark TV (1080p) [Not 24/7]
+https://stream.hydeinnovations.com/arktv-international/index.fmp4.m3u8
+#EXTINF:-1 tvg-id="ArlaadiTV.so@SD" tvg-logo="" group-title="General",Arlaadi TV
+https://ap02.iqplay.tv:8082/iqb8002/alr114iapp/playlist.m3u8
+#EXTINF:-1 tvg-id="Armenia1.am@Sattelite" tvg-logo="logos/Armenia1.am-2cb0db.webp" group-title="General",Armenia 1 Sattelite (1080p)
+https://amtv.tulixcdn.com/amtv2/am2abr/index.m3u8
+#EXTINF:-1 tvg-id="AsharqDiscovery.sa@SD" tvg-logo="logos/AsharqDiscovery.sa-6f61fc.webp" group-title="Documentary;Education",Asharq Discovery (1080p)
+https://svs.itworkscdn.net/asharqdiscoverylive/asharqd.smil/playlist_dvr.m3u8
+#EXTINF:-1 tvg-id="AsharqDocumentary.sa@SD" tvg-logo="logos/AsharqDocumentary.sa-00a25d.webp" group-title="Documentary",Asharq Documentary (1080p)
+https://svs.itworkscdn.net/asharqdocumentarylive/asharqdocumentary.smil/playlist_dvr.m3u8
+#EXTINF:-1 tvg-id="ATV.gn@SD" tvg-logo="" group-title="General",ATV (Guinea) (400p) [Not 24/7]
+https://guineetvdirect.online:3320/live/atvguineelive.m3u8
+#EXTINF:-1 tvg-id="ATVSat.us@SD" tvg-logo="logos/ATVSat.us-cd4f6e.webp" group-title="Religious",ATVSat (1080p) [Not 24/7]
+https://stream.atvsat.com/atvsatlive/smil:atvsatlive.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="AznewsTV.se@SD" tvg-logo="logos/AznewsTV.se-7d1a51.webp" group-title="News",Aznews TV (720p) [Not 24/7]
+https://edge1.socialsmart.tv/aznews/smil/playlist.m3u8
+#EXTINF:-1 tvg-id="BahrainInternational.bh@SD" tvg-logo="logos/BahrainInternational.bh-8d237a.webp" group-title="General",Bahrain International (720p) [Not 24/7]
+https://5c7b683162943.streamlock.net/live/ngrp:bahraininternational_all/playlist.m3u8
+#EXTINF:-1 tvg-id="BalafonTV.cm@SD" tvg-logo="logos/BalafonTV.cm-51df94.webp" group-title="News",Balafon TV [Geo-blocked]
+https://broadcasting-channels.com:9044/hls/test.m3u8
+#EXTINF:-1 tvg-id="BarakaTelevision.cd@SD" tvg-logo="logos/BarakaTelevision.cd-12f0cd.webp" group-title="News",Baraka Television (720p) [Not 24/7]
+https://stream.berosat.live:19360/baraka-hd/baraka-hd.m3u8
+#EXTINF:-1 tvg-id="BBSTV.ug@SD" tvg-logo="" group-title="General",BBS TV (Uganda)
+https://bbstv.ug/hls/ch01/index.m3u8
+#EXTINF:-1 tvg-id="BCSStarCrossTV.ng@SD" tvg-logo="" group-title="General",BCS StarCross TV (576p)
+https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_001/Stream/playlist.m3u8
+#EXTINF:-1 tvg-id="BebTV.cg@SD" tvg-logo="" group-title="General",Beb TV (720p)
+https://live-hls-qunv.livepush.io/live_cdn/em8A-kbzIfHqu73/index.m3u8
+#EXTINF:-1 tvg-id="beINSports1.qa@MENA" tvg-logo="logos/beINSports1.qa-b57d5c.webp" group-title="Sports",beIN Sports 1
+https://vg162.adcdsd123321.shop/7.m3u8
+#EXTINF:-1 tvg-id="BenieTV.ci@SD" tvg-logo="" group-title="Religious",Benie TV (720p)
+https://tv.voozmedia.fun/benietv/index.m3u8
+#EXTINF:-1 tvg-id="BeninTVJunior.bj@SD" tvg-logo="logos/BeninTVJunior.bj-864d20.webp" group-title="Kids",Benin TV Junior (720p)
+https://srtblive.streamakaci.tv/ortb/ortb2-multi/playlist_dvr.m3u8
+#EXTINF:-1 tvg-id="BeninWebTV.bj@SD" tvg-logo="logos/BeninWebTV.bj-d83436.webp" group-title="News",Benin Web TV (720p)
+https://stream.beninwebtv.bj/2/live/stream.m3u8
+#EXTINF:-1 tvg-id="BloombergTV.us@Plus" tvg-logo="logos/BloombergTV.us-1dd52b.webp" group-title="Business",Bloomberg TV + (2160p)
+https://d8975dc3.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/U2Ftc3VuZy1nYl9CbG9vbWJlcmdUVlBsdXNfSExT/playlist.m3u8
+#EXTINF:-1 tvg-id="BloombergTV.us@EMEALiveEvent" tvg-logo="logos/BloombergTV.us-1dd52b.webp" group-title="Business",Bloomberg TV EMEA Live Event (720p)
+https://bloomberg.com/media-manifest/streams/eu-event.m3u8
+#EXTINF:-1 tvg-id="BOKTV.za@SD" tvg-logo="logos/BOKTV.za-5b0681.webp" group-title="Music",BOKTV (720p) [Not 24/7]
+https://livestream2.bokradio.co.za/hls/Bok5c.m3u8
+#EXTINF:-1 tvg-id="BrideTV.ng@SD" tvg-logo="" group-title="Undefined",Bride TV (576p)
+https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_013/Stream/playlist.m3u8
+#EXTINF:-1 tvg-id="BTLTV.ke@SD" tvg-logo="" group-title="Religious",BTL TV (Kenya) (720p) [Not 24/7]
+https://goliveafrica.media:9998/live/638da5440743c/index.m3u8
+#EXTINF:-1 tvg-id="BTLTV.nl@SD" tvg-logo="logos/BTLTV.nl-22a56e.webp" group-title="Religious",BTL TV (Netherlands) (1080p)
+https://cdn.liveplustv.com/v1/live/btl-tv/master.m3u8
+#EXTINF:-1 tvg-id="BTMTV.ug@SD" tvg-logo="" group-title="General",BTM TV (480p) [Not 24/7]
+https://btmug.zerocdn.org/hls/stream.m3u8
+#EXTINF:-1 tvg-id="BTNTV.rw@SD" tvg-logo="" group-title="General",BTN TV (Rwanda)
+https://tv.btnrwanda.com:3973/live/btnv2live.m3u8
+#EXTINF:-1 tvg-id="BTV.ug@SD" tvg-logo="" group-title="Entertainment",BTV (Uganda) (480p)
+https://streamfi-alphadgtl1.zettawiseroutes.com:8181/hls/stream.m3u8
+#EXTINF:-1 tvg-id="BukeddeTV1.ug@SD" tvg-logo="" group-title="General",Bukedde TV 1 (576p)
+https://stream.hydeinnovations.com/bukedde1flussonic/index.m3u8
+#EXTINF:-1 tvg-id="BukeddeTV2.ug@SD" tvg-logo="" group-title="General",Bukedde TV 2 (576p) [Not 24/7]
+https://stream.hydeinnovations.com/bukedde2flussonic/index.m3u8
+#EXTINF:-1 tvg-id="CAM10TV.cm@SD" tvg-logo="" group-title="General",CAM 10 TV (720p)
+https://stream.it-innov.com/cam10tv/index.m3u8
+#EXTINF:-1 tvg-id="Canaf54TV.uk@SD" tvg-logo="logos/Canaf54TV.uk-000c7a.webp" group-title="General",Canaf54 TV (480p)
+https://5caf24a595d94.streamlock.net:1937/pvyugfkzkc/pvyugfkzkc/playlist.m3u8
+#EXTINF:-1 tvg-id="Canal3.bf@SD" tvg-logo="" group-title="General",Canal 3 (Burkina Faso)
+https://cs2.push2stream.com/CANAL3BENIN/playlist.m3u8
+#EXTINF:-1 tvg-id="CapeTownTV.za@SD" tvg-logo="" group-title="General",Cape Town TV (576p)
+https://cdn.freevisiontv.co.za/sttv/smil:ctv.stream.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="CapuchinTV.ke@SD" tvg-logo="" group-title="Religious",Capuchin TV
+https://goliveafrica.media:9998/live/64227f58b8413/index.m3u8
+#EXTINF:-1 tvg-id="CaughtUpTV.ng@SD" tvg-logo="" group-title="Religious",Caught-Up TV (480p) [Not 24/7]
+https://webstreaming-3.viewmedia.tv/web_031/Stream/playlist.m3u8
+#EXTINF:-1 tvg-id="CGTN.cn@SD" tvg-logo="logos/CGTN.cn-e3f7f0.webp" group-title="News",CGTN (1080p)
+https://amg00405-rakutentv-cgtn-rakuten-i9tar.amagi.tv/master.m3u8
+#EXTINF:-1 tvg-id="CGTNArabic.cn@SD" tvg-logo="logos/CGTNArabic.cn-d7aff3.webp" group-title="News",CGTN Arabic
+https://dash3.antik.sk/live/test_cgtn_arb_tizen/playlist.m3u8
+#EXTINF:-1 tvg-id="CGTNDocumentary.cn@SD" tvg-logo="logos/CGTNDocumentary.cn-e7ced1.webp" group-title="Documentary",CGTN Documentary (1080p)
+https://amg00405-rakutentv-cgtndocumentary-rakuten-0ql8j.amagi.tv/master.m3u8
+#EXTINF:-1 tvg-id="CGTNFrench.cn@SD" tvg-logo="logos/CGTNFrench.cn-1617e0.webp" group-title="News",CGTN French (1080p)
+https://amg01314-cgtn-amg01314c2-rakuten-us-1319.playouts.now.amagi.tv/cgtn-fr-rakuten/playlist.m3u8
+#EXTINF:-1 tvg-id="CGTNGlobalBiz.cn@SD" tvg-logo="logos/CGTNGlobalBiz.cn-0b1441.webp" group-title="Business",CGTN Global Biz (1080p)
+https://fastlive.cctvplus.com/out/v1/2b3d8a0c805d437f9dc85b764c2ac599/index.m3u8
+#EXTINF:-1 tvg-id="ChabibaTV.sn@SD" tvg-logo="" group-title="Religious",Chabiba TV (360p) [Not 24/7]
+https://endour.net/hls/RUgLAPCbPdF5oPSTX2Hvl/index.m3u8
+#EXTINF:-1 tvg-id="ChadaTV.ma@SD" tvg-logo="" group-title="General",Chada TV (720p)
+https://edge13.vedge.infomaniak.com/livecast/ik:chadatv/manifest.m3u8
+#EXTINF:-1 tvg-id="ChampionTV.ci@SD" tvg-logo="" group-title="Business",Champion TV
+https://stream.berosat.live/hls/champion-tv/champion-tv.m3u8
+#EXTINF:-1 tvg-id="ChandelTV.tg@SD" tvg-logo="" group-title="Entertainment",Chandel TV (720p)
+https://kali.vdopanel.com:3660/live/vj6jlam1rlive.m3u8
+#EXTINF:-1 tvg-id="Channels24.ng@SD" tvg-logo="logos/Channels24.ng-3c2dc2.webp" group-title="News",Channels 24
+https://live20.bozztv.com/dvrfl06/astv/astv-channel24africa/index.m3u8
+#EXTINF:-1 tvg-id="ChannelsTV.ng@SD" tvg-logo="logos/ChannelsTV.ng-bf88e4.webp" group-title="News",Channels TV
+https://cs2.push2stream.com/CHANNELSTV-DVR/playlist.m3u8
+#EXTINF:-1 tvg-id="ChinaTravel.cn@SD" tvg-logo="logos/ChinaTravel.cn-ce464d.webp" group-title="Culture;Documentary;Travel",China Travel (1080p)
+https://fastlive.cctvplus.com/out/v1/ca6f9297b7314a63959435028af287fc/index.m3u8
+#EXTINF:-1 tvg-id="ChosenTVEnglish.ng@SD" tvg-logo="" group-title="Religious",Chosen TV English (360p)
+https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_024/Stream/playlist.m3u8
+#EXTINF:-1 tvg-id="ClergyTV.ke@SD" tvg-logo="" group-title="Religious",Clergy TV (720p) [Not 24/7]
+https://goliveafrica.media:9998/live/650452cf2ddb2/index.m3u8
+#EXTINF:-1 tvg-id="cLoveworldTV.ng@SD" tvg-logo="" group-title="Religious",cLoveworld TV (480p)
+https://live-hls-5rxy.livepush.io/live_cdn/em_LJ5aZjqp0LdiQ/index.m3u8
+#EXTINF:-1 tvg-id="CMTvKenya.ke@SD" tvg-logo="" group-title="General",CMTv Kenya (576p) [Not 24/7]
+https://goliveafrica.media:9998/live/64ede813cfe1a/index.m3u8
+#EXTINF:-1 tvg-id="CNA.dz@SD" tvg-logo="" group-title="Religious",CNA (Algeria) (360p) [Not 24/7]
+https://live.creacast.com/cna/stream/playlist.m3u8
+#EXTINF:-1 tvg-id="CNBCArabiya.ae@SD" tvg-logo="logos/CNBCArabiya.ae-0f74b2.webp" group-title="Business",CNBC Arabiya (1080p)
+https://cnbc-live.akamaized.net/cnbc/master.m3u8
+#EXTINF:-1 tvg-id="CNMTV.sn@SD" tvg-logo="" group-title="General",CNM TV (720p) [Not 24/7]
+https://stream.sen-gt.com/cnmtv/myStream/playlist.m3u8
+#EXTINF:-1 tvg-id="ColorsMENA.in@HD" tvg-logo="logos/ColorsMENA.in-542dd7.webp" group-title="Entertainment",Colors MENA HD (720p)
+https://da86m1sqpm3o0.cloudfront.net/28072023/smil:colorsme.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="CongoPlanetTelevision.cd@SD" tvg-logo="" group-title="General",Congo Planet Television (1080p) [Not 24/7]
+https://radio.congoplanet.com/Congo_Planet_TV.sdp/Congo_Planet_TV/playlist.m3u8
+#EXTINF:-1 tvg-id="CopticTV.eg@SD" tvg-logo="logos/CopticTV.eg-817ad7.webp" group-title="Religious",Coptic TV (720p) [Not 24/7]
+https://ctv.icopts.app/CTV/index.fmp4.m3u8
+#EXTINF:-1 tvg-id="CozaTV.ng@SD" tvg-logo="" group-title="Religious",Coza TV (576p)
+https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_019/Stream/playlist.m3u8
+#EXTINF:-1 tvg-id="CrimeandEvidence.za@SD" tvg-logo="" group-title="Undefined",Crime and Evidence (720p)
+https://afxporigin.telemedia.co.za/afxp/abr_crimeandevidence/playlist.m3u8
+#EXTINF:-1 tvg-id="CRTV.cm@SD" tvg-logo="" group-title="General",CRTV (Cameroon) (1080p)
+https://10gb1.acangroup.org:1929/crtv/crtv_all/playlist.m3u8
+#EXTINF:-1 tvg-id="CRTVNews.cm@SD" tvg-logo="logos/CRTVNews.cm-c7cdbc.webp" group-title="News",CRTV News (1080p)
+https://live1.acangroup.org:1929/publiclive/crtv_news/playlist.m3u8
+#EXTINF:-1 tvg-id="D3TV.ml@SD" tvg-logo="" group-title="Entertainment",D3 TV (720p)
+https://lbgo.bozztv.com/ssh101/ssh101/d3tvnet/playlist.m3u8
+#EXTINF:-1 tvg-id="DabangaTV.sd@SD" tvg-logo="logos/DabangaTV.sd-68e6aa.webp" group-title="Education;News",Dabanga TV (1080p)
+https://hls.dabangasudan.org/hls/stream.m3u8
+#EXTINF:-1 tvg-id="DacwaTV.ke@SD" tvg-logo="" group-title="Religious",Dacwa TV (576p) [Not 24/7]
+https://ap02.iqplay.tv:8082/iqb8002/d13w1/playlist.m3u8
+#EXTINF:-1 tvg-id="DGRadio.au@HD" tvg-logo="logos/DGRadio.au-9c99b6.webp" group-title="Music;Religious",DG:Radio (1080p)
+https://mdn.dg.church/683c0cb036885-1/index.m3u8
+#EXTINF:-1 tvg-id="DGTV.au@HD" tvg-logo="" group-title="Religious",DG:TV (1080p)
+https://mdn.dg.church/673ac57a073a4-1/index.m3u8
+#EXTINF:-1 tvg-id="Diaspora24.sn@SD" tvg-logo="" group-title="Undefined",Diaspora 24 [Geo-blocked]
+https://vdo3.pro-fhi.net:3218/stream/play.m3u8
+#EXTINF:-1 tvg-id="DigitalChannel.bj@SD" tvg-logo="" group-title="General",Digital Channel (480p)
+https://stream.digitalchannel.bj/live/ds_64de185c18c9d786a760f01e0e592348.m3u8
+#EXTINF:-1 tvg-id="DiscoveringChina.cn@SD" tvg-logo="logos/DiscoveringChina.cn-ebf92a.webp" group-title="Culture;Documentary",Discovering China (1080p)
+https://fastlive.cctvplus.com/out/v1/8442c3bfd4c64a3984389328f6087879/index.m3u8
+#EXTINF:-1 tvg-id="DocuBox.nl@SD" tvg-logo="logos/DocuBox.nl-5c919c.webp" group-title="Documentary",DocuBox
+https://dash3.antik.sk/live/test_docubox_medium_atk/playlist.m3u8
+#EXTINF:-1 tvg-id="DocumentaryPlus.us@International" tvg-logo="logos/DocumentaryPlus.us-c54a85.webp" group-title="Documentary",Documentary+ International (1080p)
+https://1d153317c8db4250b3789601274e2402.mediatailor.us-west-2.amazonaws.com/v1/master/ba62fe743df0fe93366eba3a257d792884136c7f/LINEAR-887-DOCUMENTARYINTERNATIONAL-DOCUMENTARYPLUS/mt/documentaryplus/887/hls/master/playlist.m3u8
+#EXTINF:-1 tvg-id="DodomaTV.tz@SD" tvg-logo="" group-title="General",Dodoma TV (360p) [Not 24/7]
+https://goliveafrica.media:9998/live/625965017ed69/index.m3u8
+#EXTINF:-1 tvg-id="DouniaTV.ne@SD" tvg-logo="" group-title="General",Dounia TV
+https://live20.bozztv.com/dvrfl06/astv/astv-douniatv/index.m3u8
+#EXTINF:-1 tvg-id="DreamTV.ug@SD" tvg-logo="" group-title="Religious",Dream TV (480p)
+https://streamfi-dreamtv1.zettawiseroutes.com:8181/hls/stream.m3u8
+#EXTINF:-1 tvg-id="DroneTV.us@SD" tvg-logo="logos/DroneTV.us-6626a1.webp" group-title="Relax;Travel",DroneTV (1080p)
+https://airvuz-dronetv-1-us.ohlscdn.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="DRTVInternational.cg@SD" tvg-logo="" group-title="General",DRTV International
+https://vps122407.serveur-vps.net/hls/drtv.m3u8
+#EXTINF:-1 tvg-id="ducktv.sk@SD" tvg-logo="logos/ducktv.sk-63ab99.webp" group-title="Kids",ducktv (720p)
+https://jmp2.uk/stvp-ESBC4700001GR
+#EXTINF:-1 tvg-id="ducktv.sk@HD" tvg-logo="logos/ducktv.sk-63ab99.webp" group-title="Kids",ducktv HD
+https://dash3.antik.sk/live/duck_tv/index.m3u8
+#EXTINF:-1 tvg-id="DunamisTV.ng@SD" tvg-logo="" group-title="Religious",Dunamis TV (576p) [Not 24/7]
+https://atechgroupuk.site/DTV.m3u8
+#EXTINF:-1 tvg-id="DUST.us@SD" tvg-logo="logos/DUST.us-65817f.webp" group-title="Movies",DUST (1080p)
+https://dqi7ayt2o24fn.cloudfront.net/playlist.m3u8
+#EXTINF:-1 tvg-id="DW.de@Arabic" tvg-logo="logos/DW.de-4acfe8.webp" group-title="News",DW Arabic (1080p)
+https://dwamdstream103.akamaized.net/hls/live/2015526/dwstream103/master.m3u8
+#EXTINF:-1 tvg-id="DW.de@English" tvg-logo="logos/DW.de-4acfe8.webp" group-title="News",DW English (1080p)
+https://amg01644-amg01644c1-amgplt0343.playout.now3.amagi.tv/ts-eu-w1-n2/playlist/amg01644-amg01644c1-amgplt0343/playlist.m3u8
+#EXTINF:-1 tvg-id="DynamicGospelTV.tg@SD" tvg-logo="" group-title="Religious",Dynamic Gospel TV (480p) [Not 24/7]
+https://ssh101stream.ssh101.com/akamaissh101/ssh101/tvdynamicstream/playlist.m3u8
+#EXTINF:-1 tvg-id="etvNewsSport.za@SD" tvg-logo="logos/etvNewsSport.za-df2e95.webp" group-title="News",e.tv News & Sport (720p)
+https://origin2.afxp.telemedia.co.za/abr_kapang/enterepreneur/playlist.m3u8
+#EXTINF:-1 tvg-id="EBNTV.ke@SD" tvg-logo="" group-title="Religious",EBN TV (720p) [Not 24/7]
+https://goliveafrica.media:9998/live/65d8475d1e6cb/index.m3u8
+#EXTINF:-1 tvg-id="EBS.us@HD" tvg-logo="" group-title="Culture",EBS HD (1080p)
+https://rpn.bozztv.com/ebstv/ebstv/index.m3u8
+#EXTINF:-1 tvg-id="EcclesiaTV.ci@SD" tvg-logo="" group-title="Religious",Ecclesia TV (Ivory Coast)
+https://video1.getstreamhosting.com:1936/8294/8294/playlist.m3u8
+#EXTINF:-1 tvg-id="EdenTV.bj@SD" tvg-logo="" group-title="General",Eden TV (540p) [Not 24/7]
+https://rtmp.edentv.bj/hls/stream.m3u8
+#EXTINF:-1 tvg-id="ElRadio9090FM.eg@SD" tvg-logo="logos/ElRadio9090FM.eg-e245be.webp" group-title="Music",El Radio 9090 FM (480p)
+https://9090video.mobtada.com/hls/stream.m3u8
+#EXTINF:-1 tvg-id="ElWatania1.tn@SD" tvg-logo="" group-title="General",El Watania 1 (1080i)
+https://sw1.tanitweb.net/TunisiaTV/_definst_/watania1/chunklist.m3u8
+#EXTINF:-1 tvg-id="ElWatania2.tn@SD" tvg-logo="" group-title="General",El Watania 2 (1080p)
+https://sw1.tanitweb.net/TunisiaTV/_definst_/watania2/playlist.m3u8?DVR
+#EXTINF:-1 tvg-id="ElHeddafTV.dz@SD" tvg-logo="logos/ElHeddafTV.dz-0919cd.webp" group-title="Sports",El-Heddaf TV (1080p)
+https://live.elheddaftv.com:8081/elheddaftv/index.m3u8
+#EXTINF:-1 tvg-id="ElevateTV.ke@SD" tvg-logo="" group-title="Religious",Elevate TV (720p) [Not 24/7]
+https://goliveafrica.media:9998/live/64a98a7eac12a/index.m3u8
+#EXTINF:-1 tvg-id="ElwataniaTV.dz@SD" tvg-logo="" group-title="General",Elwatania TV (1080i)
+https://livesstream.work.gd:5443/WebRTCApp/streams/stream.m3u8
+#EXTINF:-1 tvg-id="ElyssaTV.tn@HD" tvg-logo="logos/ElyssaTV.tn-bfffab.webp" group-title="News",Elyssa TV (1080p)
+https://tv.elyssatv.com/live/master.m3u8
+#EXTINF:-1 tvg-id="ERiTV1.er@SD" tvg-logo="" group-title="General",ERi-TV 1 (576p)
+https://jmc-live.ercdn.net/eritreatv/eritreatv.m3u8
+#EXTINF:-1 tvg-id="ERTCosmos.gr@SD" tvg-logo="logos/ERTCosmos.gr-b53217.webp" group-title="General",ERT Cosmos (1080p)
+https://ert-ucdn.broadpeak-aas.com/bpk-tv/ERTCosmos/default/index.m3u8
+#EXTINF:-1 tvg-id="Esaie45Tele.cg@SD" tvg-logo="" group-title="Religious",Esaie 45 Tele
+https://stream.berosat.live/hls/esaie45-tv/esaie45-tv.m3u8
+#EXTINF:-1 tvg-id="EspaceTV.gn@SD" tvg-logo="logos/EspaceTV.gn-c615d0.webp" group-title="News",Espace TV (1080p)
+https://edge11.vedge.infomaniak.com/livecast/ik:espacetv/manifest.m3u8
+#EXTINF:-1 tvg-id="EuronewsEnglish.fr@SD" tvg-logo="logos/EuronewsEnglish.fr-4697c3.webp" group-title="News",Euronews English (720p)
+https://jmp2.uk/plu-61de96114757070008d33cae.m3u8
+#EXTINF:-1 tvg-id="EuronewsEnglish.fr@HD" tvg-logo="logos/EuronewsEnglish.fr-4697c3.webp" group-title="News",Euronews English HD
+https://dash4.antik.sk/live/test_euronews/playlist.m3u8
+#EXTINF:-1 tvg-id="EuronewsFrench.fr@SD" tvg-logo="logos/EuronewsFrench.fr-080033.webp" group-title="News",Euronews French (720p)
+https://2f6c5bf4.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmxheHhUVi1ldV9FdXJvbmV3c0ZyYW5jYWlzX0hMUw/playlist.m3u8
+#EXTINF:-1 tvg-id="EuronewsGerman.fr@SD" tvg-logo="logos/EuronewsGerman.fr-c1fb42.webp" group-title="News",Euronews German (720p)
+https://jmp2.uk/plu-6639d7d4b18d700008da5316.m3u8
+#EXTINF:-1 tvg-id="EuronewsGreek.fr@SD" tvg-logo="logos/EuronewsGreek.fr-080033.webp" group-title="News",Euronews Greek (720p)
+https://cdn-euronews.akamaized.net/live/eds/euronews-el/25068/index.m3u8
+#EXTINF:-1 tvg-id="EuronewsItalian.fr@SD" tvg-logo="logos/EuronewsItalian.fr-080033.webp" group-title="News",Euronews Italian (720p)
+https://acb6ca89.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmxheHhUVi1ldV9FdXJvbmV3c0l0YWxpYW5vX0hMUw/playlist.m3u8
+#EXTINF:-1 tvg-id="Evtele.cg@SD" tvg-logo="" group-title="Culture",Ev-tele (720p)
+https://playtv4k.live/live/EVTELE/index.m3u8
+#EXTINF:-1 tvg-id="EvasionTV.gn@SD" tvg-logo="" group-title="General",Evasion TV
+https://kali.vdopanel.com:3788/hybrid/play.m3u8
+#EXTINF:-1 tvg-id="EVITV.cd@SD" tvg-logo="" group-title="Entertainment",EVI TV (720p)
+https://mistserver.evi-tv.com/hls/evi_tv_live/index.m3u8
+#EXTINF:-1 tvg-id="EWTN.us@AfricaAsia" tvg-logo="logos/EWTN.us-7ec68a.webp" group-title="Religious",EWTN (United States) Africa-Asia (720p)
+https://cdn3.wowza.com/1/ZVBYYXFLLzE0c3NC/Qk1FMURC/hls/live/playlist.m3u8
+#EXTINF:-1 tvg-id="ExploitsTV.ci@SD" tvg-logo="" group-title="Religious",Exploits TV
+https://stream.berosat.live/hls/exploits-tv/exploits-tv.m3u8
+#EXTINF:-1 tvg-id="FaithAfrica.za@SD" tvg-logo="logos/FaithAfrica.za-b4f8e9.webp" group-title="Religious",Faith Africa (1080p)
+https://faithnow-hls.secdn.net/faithnow-holland-channel/play/FaithAfrica.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="FarajaTelevision.ug@SD" tvg-logo="" group-title="General",Faraja Television (1080p) [Not 24/7]
+https://panel.freedomflixtv.org:3868/hybrid/play.m3u8
+#EXTINF:-1 tvg-id="FashionBox.nl@SD" tvg-logo="logos/FashionBox.nl-49c237.webp" group-title="Lifestyle",FashionBox
+https://dash2.antik.sk/live/test_fashionbox_medium_atk/playlist.m3u8
+#EXTINF:-1 tvg-id="FastFunBox.nl@SD" tvg-logo="logos/FastFunBox.nl-84c90c.webp" group-title="Sports",Fast&FunBox
+https://dash3.antik.sk/live/test_fast_and_funbox_medium_atk/playlist.m3u8
+#EXTINF:-1 tvg-id="FIFAPlus.uk@English" tvg-logo="logos/FIFAPlus.uk-6ebca4.webp" group-title="Sports",FIFA+ (720p)
+https://jmp2.uk/plu-660c29b5aec9680008f5b4a4.m3u8
+#EXTINF:-1 tvg-id="FightBox.nl@HD" tvg-logo="logos/FightBox.nl-625904.webp" group-title="Sports",FightBox HD
+https://nosignal1.antenaplay.ro/hls/fightbox-hd/index.m3u8
+#EXTINF:-1 tvg-id="FilinfoTV.bf@SD" tvg-logo="logos/FilinfoTV.bf-039643.webp" group-title="News",Filinfo TV (1080p)
+https://d2iqjnqfr8pv3b.cloudfront.net/out/v1/d09d2fc718404cd8bccd3eba2444dd70/index.m3u8
+#EXTINF:-1 tvg-id="FILMBOXPlusFestival.pl@SD" tvg-logo="logos/FILMBOXPlusFestival.pl-610656.webp" group-title="Movies",FILMBOX+ Festival
+https://dash3.antik.sk/live/test_filmbox_arthouse_atk_1200/playlist.m3u8
+#EXTINF:-1 tvg-id="FILMBOXPlusFestival.pl@HD" tvg-logo="logos/FILMBOXPlusFestival.pl-610656.webp" group-title="Movies",FILMBOX+ Festival HD (1080p)
+https://nosignal1.antenaplay.ro/hls/fb-festival-hd/index.m3u8
+#EXTINF:-1 tvg-id="FlameTV.ng@SD" tvg-logo="" group-title="Religious",Flame TV (576p)
+https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_010/Stream/playlist.m3u8
+#EXTINF:-1 tvg-id="ForYouTV.cm@SD" tvg-logo="logos/ForYouTV.cm-4dcd9b.webp" group-title="News",For You TV
+https://stream.az-multimedia.com:3325/live/foryoutvlive.m3u8
+#EXTINF:-1 tvg-id="FORTTV.ug@SD" tvg-logo="" group-title="Entertainment",FORT TV (480p)
+https://fort.co-works.org/memfs/87017643-274a-4bc0-a786-7767a0d159c2.m3u8
+#EXTINF:-1 tvg-id="FortisTV.ng@SD" tvg-logo="" group-title="General",Fortis TV
+https://stream.fortistv.com/hls/fortis-news/index.m3u8
+#EXTINF:-1 tvg-id="FoursquareTV.ng@SD" tvg-logo="" group-title="Religious",Foursquare TV (360p) [Not 24/7]
+https://webstreaming-3.viewmedia.tv/web_033/Stream/playlist.m3u8
+#EXTINF:-1 tvg-id="France24.fr@French" tvg-logo="logos/France24.fr-188446.webp" group-title="News",France 24 (1080p)
+https://freem3u.xyz/api/live/play.m3u8?vid=10007
+#EXTINF:-1 tvg-id="France24.fr@Arabic" tvg-logo="logos/France24.fr-188446.webp" group-title="News",France 24 Arabic (1080p)
+https://live.france24.com/hls/live/2037222-b/F24_AR_HI_HLS/master_5000.m3u8
+#EXTINF:-1 tvg-id="France24.fr@English" tvg-logo="logos/France24.fr-188446.webp" group-title="News",France 24 English (1080p)
+https://freem3u.xyz/api/live/play.m3u8?vid=96
+#EXTINF:-1 tvg-id="FUELTV.pt@EMEA" tvg-logo="logos/FUELTV.pt-b8d26c.webp" group-title="Sports",FUEL TV (1080p)
+https://amg01074-fueltv-fueltvemeaen-rakuten-b6j62.amagi.tv/hls/amagi_hls_data_rakutenAA-fueltvemeaen/CDN/master.m3u8
+#EXTINF:-1 tvg-id="GBSTV.ke@SD" tvg-logo="" group-title="General",GBS TV (720p) [Not 24/7]
+https://goliveafrica.media:9998/live/647460ac1ddd6/index.m3u8
+#EXTINF:-1 tvg-id="GMSTV.sn@SD" tvg-logo="" group-title="General",GMS TV (1080p)
+https://acasmedia6.acangroup.org/gmstv/gmstv_output/playlist.m3u8
+#EXTINF:-1 tvg-id="GNFTV.za@SD" tvg-logo="" group-title="Religious",GNF TV (576p)
+https://oqgdrb8my4rm-hls-live.5centscdn.com/GNF02/bcea197d8b00f79cb716c6288a861000.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="GreatCommissionTV.ke@SD" tvg-logo="" group-title="General",Great Commission TV
+https://stream-server9-jupiter.muxlive.com/hls/gctvghana/index.m3u8
+#EXTINF:-1 tvg-id="GTNTV.ke@SD" tvg-logo="" group-title="General",GTN TV (1080p) [Not 24/7]
+https://goliveafrica.media:9998/live/644e07abdc1d3/index.m3u8
+#EXTINF:-1 tvg-id="GuguddeTV.ug@SD" tvg-logo="" group-title="Religious",Gugudde TV (480p)
+https://jk3lzqq4lw79-hls-live.5centscdn.com/gugudde/c9a1fdac6e082dd89e7173244f34d7b3.sdp/chunks.m3u8
+#EXTINF:-1 tvg-id="GuideLoveTV.ci@SD" tvg-logo="" group-title="Lifestyle",Guide Love TV (720p)
+https://video1.getstreamhosting.com:1936/8056/8056/playlist.m3u8
+#EXTINF:-1 tvg-id="HC2TV.bj@SD" tvg-logo="logos/HC2TV.bj-b40361.webp" group-title="News",HC2 TV
+https://stream.hc2tv.bj/2/live/stream.m3u8
+#EXTINF:-1 tvg-id="HeavenBoundTV.ke@SD" tvg-logo="" group-title="Religious",Heaven Bound TV (480p) [Not 24/7]
+https://goliveafrica.media:9998/live/62580b337c021/index.m3u8
+#EXTINF:-1 tvg-id="HisGraceTV.ke@SD" tvg-logo="" group-title="Religious",His Grace TV (480p) [Not 24/7]
+https://goliveafrica.media:9998/live/6593c35f9c090/index.m3u8
+#EXTINF:-1 tvg-id="HLCTV.ke@SD" tvg-logo="" group-title="General",HLC TV (480p) [Not 24/7]
+https://goliveafrica.media:9998/live/627d06e001aaf/index.m3u8
+#EXTINF:-1 tvg-id="HMTV.ng@SD" tvg-logo="" group-title="Music",HMTV (Nigeria) (720p)
+https://customer-yzxu6n447dx2x45h.cloudflarestream.com/f255a1e5ef17a8277e15e5f409951e98/manifest/video.m3u8
+#EXTINF:-1 tvg-id="HomebaseTV.za@SD" tvg-logo="" group-title="Religious",Homebase TV (480p)
+https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_022/Stream/playlist.m3u8
+#EXTINF:-1 tvg-id="HopeChannelAfrica.za@SD" tvg-logo="logos/HopeChannelAfrica.za-d23c18.webp" group-title="Religious",Hope Channel Africa (1080p)
+https://jstre.am/live/jsl:i1onRBELcGV.m3u8
+#EXTINF:-1 tvg-id="HopeChannelGhana.gh@SD" tvg-logo="" group-title="Religious",Hope Channel Ghana (480p)
+https://videodelivery.net/dfbdca87f2a6291aa4fdc8fe3290769b/manifest/video.m3u8
+#EXTINF:-1 tvg-id="HudaTV.eg@SD" tvg-logo="logos/HudaTV.eg-bec528.webp" group-title="Religious",Huda TV (720p) [Not 24/7]
+https://cdn.bestream.io:19360/elfaro1/elfaro1.m3u8
+#EXTINF:-1 tvg-id="HyaTV.eg@SD" tvg-logo="logos/HyaTV.eg-1912d7.webp" group-title="Entertainment",Hya TV (1080p)
+https://freem3u.xyz/api/live/play.m3u8?vid=187
+#EXTINF:-1 tvg-id="i24NEWSEnglishWorld.il@SD" tvg-logo="logos/i24NEWSEnglishWorld.il-25b2f3.webp" group-title="News",i24NEWS English World (1080p)
+https://hlspackager.akamaized.net/live/DB/i24_ENGLISH/HLS/i24_ENGLISH.m3u8
+#EXTINF:-1 tvg-id="ICONETV.bj@SD" tvg-logo="logos/ICONETV.bj-c662f8.webp" group-title="News",ICONE TV
+https://lecteur.iconetv.bj/hls/stream.m3u8
+#EXTINF:-1 tvg-id="ICTV.ke@SD" tvg-logo="" group-title="Religious",ICTV (Kenya) (480p) [Not 24/7]
+https://goliveafrica.media:9998/live/659a7f33bed3f/index.m3u8
+#EXTINF:-1 tvg-id="ImpactTV.bf@SD" tvg-logo="" group-title="Religious",Impact TV (Burkina Faso)
+https://edge11.vedge.infomaniak.com/livecast/ik:impacttv-2/manifest.m3u8
+#EXTINF:-1 tvg-id="InooroTV.ke@SD" tvg-logo="" group-title="General",Inooro TV
+https://live-onesignal.royalmedia.co.ke/live/T-MxRsFebq6zx7k2QFMbLw.m3u8
+#EXTINF:-1 tvg-id="IsiboTV.rw@SD" tvg-logo="" group-title="General",Isibo TV
+https://5c46fa289c89f.streamlock.net/pub2live/myStream/playlist.m3u8
+#EXTINF:-1 tvg-id="ItageTV.ng@SD" tvg-logo="logos/ItageTV.ng-b9d908.webp" group-title="Movies",Itage TV (480p)
+https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_011/Stream/playlist.m3u8
+#EXTINF:-1 tvg-id="IvoireChannel.ci@SD" tvg-logo="logos/IvoireChannel.ci-cb54a6.webp" group-title="Music",Ivoire Channel (720p)
+https://video1.getstreamhosting.com:1936/8244/8244/playlist.m3u8
+#EXTINF:-1 tvg-id="JCMTV.ke@SD" tvg-logo="" group-title="Religious",JCM TV (720p) [Not 24/7]
+https://goliveafrica.media:9998/live/646c92d07b16c/index.m3u8
+#EXTINF:-1 tvg-id="K24.ke@SD" tvg-logo="" group-title="General",K24 (1080p)
+https://livecdn.premiumfree.tv/afxpstr/K24Backup/index.m3u8
+#EXTINF:-1 tvg-id="KairaliArabia.in@SD" tvg-logo="logos/KairaliArabia.in-59ed43.webp" group-title="General",Kairali Arabia (576p)
+https://mumt03.tangotv.in/Dsly5z3HKAIRALIARABIA/index.m3u8
+#EXTINF:-1 tvg-id="KalacTV.gn@SD" tvg-logo="" group-title="General",Kalac TV (1080p)
+https://edge13.vedge.infomaniak.com/livecast/ik:kalactv/chunklist_w280736538.m3u8
+#EXTINF:-1 tvg-id="KaloopyTV.us@SD" tvg-logo="logos/KaloopyTV.us-019787.webp" group-title="Lifestyle",Kaloopy TV (1080p)
+https://streamingserver000.viewtv.cloud/VIEWTVNETWORK-KALOOPY/index.m3u8
+#EXTINF:-1 tvg-id="KarbalaDocumentary.iq@HD" tvg-logo="" group-title="Documentary;Religious",Karbala Documentary
+https://ktvlive.online/stream/hls/ch3.m3u8
+#EXTINF:-1 tvg-id="KassTV.ke@SD" tvg-logo="" group-title="General",Kass TV (720p) [Not 24/7]
+https://goliveafrica.media:9998/live/62f643cdca8cf/index.m3u8
+#EXTINF:-1 tvg-id="KassouaTV.bj@SD" tvg-logo="" group-title="General",KassouaTV (720p)
+https://playtv4k.live/live/kassouatv/index.m3u8
+#EXTINF:-1 tvg-id="KemetTV.cm@SD" tvg-logo="" group-title="Culture",Kemet TV
+https://kemettv.cm/memfs/4e7fb105-9f92-4e8d-a7cd-09923f17a577.m3u8
+#EXTINF:-1 tvg-id="KingsviewTV.ng@SD" tvg-logo="" group-title="Entertainment",Kingsview TV (1080p)
+https://j78dp6reyq5r-hls-live.5centscdn.com/4896_push_1963_001/00cb1f2e4ff89048f2e77e26940c00e6.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="KKTV.ao@SD" tvg-logo="" group-title="Religious",KK TV (1080p)
+https://w1.manasat.com/ktv-angola/smil:ktv-angola.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="KoogiTV.eg@SD" tvg-logo="logos/KoogiTV.eg-ba769b.webp" group-title="Kids;Religious",Koogi TV (1080p)
+https://5d658d7e9f562.streamlock.net/koogi.tv/koogi.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="KRCTV.ug@SD" tvg-logo="" group-title="General",KRC TV
+https://channels.ad-ug.com/live/ch03/index.m3u8
+#EXTINF:-1 tvg-id="KSTVUganda.ug@SD" tvg-logo="" group-title="Religious",KSTV Uganda
+https://live.esteem.africa/kstv/hls/0/stream.m3u8
+#EXTINF:-1 tvg-id="LauraDaveMediaTV.cm@SD" tvg-logo="" group-title="General",Laura Dave Media TV (720p)
+https://streaming.lauradavemedia.com/ldm/index.m3u8
+#EXTINF:-1 tvg-id="LBFDRTV.cd@SD" tvg-logo="" group-title="Religious",LBFD RTV (1080p)
+https://tnt-television.com/LBFD_RTV/index.m3u8
+#EXTINF:-1 tvg-id="LeMondeen24h.cd@SD" tvg-logo="logos/LeMondeen24h.cd-08d007.webp" group-title="News",Le Monde en 24h
+https://stream.berosat.live/hls/monde24h-tv-index/monde24h-tv-index.m3u8
+#EXTINF:-1 tvg-id="LeNouveauManagerTV.bj@SD" tvg-logo="" group-title="Business",Le Nouveau Manager TV
+https://lnmlive.com/live/lnmtv.m3u8
+#EXTINF:-1 tvg-id="LibyaAlWataniya.ly@SD" tvg-logo="" group-title="General",Libya Al Wataniya (360p)
+https://cdn-globecast.akamaized.net/live/eds/libya_al_watanya/hls_roku/index.m3u8
+#EXTINF:-1 tvg-id="LMTVFrench.ci@SD" tvg-logo="" group-title="Religious",LM TV French (720p) [Not 24/7]
+https://video1.getstreamhosting.com:1936/8282/8282/playlist.m3u8
+#EXTINF:-1 tvg-id="LN24SA.za@SD" tvg-logo="logos/LN24SA.za-c4a71e.webp" group-title="News",LN24SA (1080p)
+https://cdnstack.internetmultimediaonline.org/ln24/ln24.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="LN247.ng@SD" tvg-logo="logos/LN247.ng-ec291e.webp" group-title="News",LN247 (1080p)
+https://go5lmb6oyawb-hls-live.5centscdn.com/station/3dfd3752af3d7aec5c53992c2da3a316.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="LollywoodHDTV.cd@SD" tvg-logo="logos/LollywoodHDTV.cd-e7a7ce.webp" group-title="Movies",Lollywood HD TV
+https://stream.berosat.live/hls/lollywood-hd/lollywood-hd.m3u8
+#EXTINF:-1 tvg-id="LolweTV.ke@SD" tvg-logo="logos/LolweTV.ke-3ce91a.webp" group-title="News",Lolwe TV (576p) [Not 24/7]
+https://goliveafrica.media:9998/live/62580e144eb43/index.m3u8
+#EXTINF:-1 tvg-id="LougaTV.sn@SD" tvg-logo="" group-title="General",Louga TV (480p)
+https://stream.sen-gt.com/Mbacke/myStream/playlist.m3u8
+#EXTINF:-1 tvg-id="LoveWorldArabic.ng@SD" tvg-logo="" group-title="Religious",LoveWorld Arabic (360p)
+https://go5lm6a6dawb-hls-live.5centscdn.com/lwarabic/53132d996b4263ec0d7b602292c46eaf.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="LoveWorldPersia.ng@SD" tvg-logo="logos/LoveWorldPersia.ng-fad6e2.webp" group-title="Religious",LoveWorld Persia (720p)
+https://cdn3.wowza.com/5/aVJETlF0UFdmYTFu/LWPP/ngrp:persia.stream_all/playlist.m3u8
+#EXTINF:-1 tvg-id="LoveWorldUK.ng@SD" tvg-logo="logos/LoveWorldUK.ng-bd064a.webp" group-title="Religious",LoveWorld UK (1080p) [Not 24/7]
+https://cdn3.wowza.com/5/L1Uzd2FrbVlLRG1W/live/smil:lwukweb.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="LoveWorldUSA.ng@SD" tvg-logo="" group-title="Religious",LoveWorld USA (720p)
+https://cdn3.wowza.com/5/RGtVZkFxL3FOQkxX/LWU/ngrp:lwu.stream_all/playlist.m3u8
+#EXTINF:-1 tvg-id="LoveworldSAT.ng@SD" tvg-logo="" group-title="Religious",LoveworldSAT (1080p)
+https://cdnstack.internetmultimediaonline.org/lwsat/lwsat.stream/index.m3u8
+#EXTINF:-1 tvg-id="LuyaaTV.ke@SD" tvg-logo="" group-title="General",Luyaa TV (480p) [Not 24/7]
+https://goliveafrica.media:9998/live/659e7c6432815/index.m3u8
+#EXTINF:-1 tvg-id="MahaasinTV.tz@SD" tvg-logo="" group-title="Religious",Mahaasin TV
+https://mahaasintv.livebox.co.in/mahaasintvhls/mahaasintv.m3u8
+#EXTINF:-1 tvg-id="MahdawiounTV.iq@HD" tvg-logo="logos/MahdawiounTV.iq-c1a128.webp" group-title="Religious",MahdawiounTV (1080p) [Geo-blocked]
+https://live.mahdawioun.tv/stream/mahdawioun/playlist.m3u8
+#EXTINF:-1 tvg-id="MasharikiTV.ke@SD" tvg-logo="" group-title="General",Mashariki TV (720p) [Not 24/7]
+https://goliveafrica.media:9998/live/634adc0806f2b/index.m3u8
+#EXTINF:-1 tvg-id="MasterChefsAcademyTV.uk@HD" tvg-logo="logos/MasterChefsAcademyTV.uk-fa5049.webp" group-title="Cooking;Education",Master Chefs Academy TV (720p)
+https://platform-iuoamc.uk/iptv/mca-tv/index.m3u8
+#EXTINF:-1 tvg-id="MastersTV.ng@SD" tvg-logo="" group-title="Religious",Master's TV (720p)
+https://mn-nl.mncdn.com/commectv_live/masterstv/index.m3u8
+#EXTINF:-1 tvg-id="MBC1.ae@SD" tvg-logo="logos/MBC1.ae-1490d7.webp" group-title="General",MBC 1 (1080p)
+https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-1/15cf99af5de54063fdabfefe66adc075/index.m3u8
+#EXTINF:-1 tvg-id="MBC1Egypt.eg@HD" tvg-logo="logos/MBC1Egypt.eg-1490d7.webp" group-title="General",MBC 1 Egypt (1080p)
+https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-1-na/eec141533c90dd34722c503a296dd0d8/index.m3u8
+#EXTINF:-1 tvg-id="MBC4.ae@SD" tvg-logo="logos/MBC4.ae-ac975a.webp" group-title="Entertainment",MBC 4 (1080p)
+https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-4/24f134f1cd63db9346439e96b86ca6ed/index.m3u8
+#EXTINF:-1 tvg-id="MBC5.ae@SD" tvg-logo="logos/MBC5.ae-517c52.webp" group-title="Family",MBC 5 (1080p)
+https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-5/ee6b000cee0629411b666ab26cb13e9b/index.m3u8
+#EXTINF:-1 tvg-id="MBCBollywood.ae@SD" tvg-logo="logos/MBCBollywood.ae-3ed118.webp" group-title="Movies",MBC Bollywood (1080p) [Geo-blocked]
+https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-bollywood/546eb40d7dcf9a209255dd2496903764/index.m3u8
+#EXTINF:-1 tvg-id="MBCDrama.ae@SD" tvg-logo="logos/MBCDrama.ae-88c7fe.webp" group-title="Entertainment",MBC Drama (United Arab Emirates) (1080p)
+https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-drama/2c28a458e2f3253e678b07ac7d13fe71/index.m3u8
+#EXTINF:-1 tvg-id="MBCFM.ae@SD" tvg-logo="logos/MBCFM.ae-215053.webp" group-title="Music",MBC FM (1080p)
+https://dbbv9umqcd7cs.cloudfront.net/out/v1/db15b75c3cc0400c91961468d6a232ac/index.m3u8
+#EXTINF:-1 tvg-id="MBCMasr2.eg@SD" tvg-logo="logos/MBCMasr2.eg-5d276f.webp" group-title="General",MBC Masr 2 (1080p)
+https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-masr-2/754931856515075b0aabf0e583495c68/index.m3u8
+#EXTINF:-1 tvg-id="MBCMasr.eg@SD" tvg-logo="logos/MBCMasr.eg-ba4567.webp" group-title="General",MBC Masr (1080p)
+https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-masr/956eac069c78a35d47245db6cdbb1575/index.m3u8
+#EXTINF:-1 tvg-id="MBCMasrDrama.sa@SD" tvg-logo="logos/MBCMasrDrama.sa-08267a.webp" group-title="Series",MBC Masr Drama (1080p)
+https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-masr-drama/567b703c19ede6598222de81b0e4508b/index.m3u8
+#EXTINF:-1 tvg-id="MBCPlusDrama.sa@SD" tvg-logo="logos/MBCPlusDrama.sa-9556e1.webp" group-title="Movies",MBC+ Drama (1080p)
+https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-plus-drama/e37251ec2aac8f6c98f75cd0fa37cd28/index.m3u8
+#EXTINF:-1 tvg-id="Medi1TVAfrique.ma@SD" tvg-logo="logos/Medi1TVAfrique.ma-1a9a08.webp" group-title="News",Medi1TV Afrique (1080p)
+https://cdn.live.easybroadcast.io/abr_corp/83_medi1tv-afrique_tm7tu45/playlist.m3u8
+#EXTINF:-1 tvg-id="Medi1TVArabic.ma@SD" tvg-logo="logos/Medi1TVArabic.ma-751ce4.webp" group-title="News",Medi1TV Arabic (1080p)
+https://cdn.live.easybroadcast.io/abr_corp/83_medi1tv-arabic_g90v4ec/playlist.m3u8
+#EXTINF:-1 tvg-id="Medi1TVMaghreb.ma@SD" tvg-logo="logos/Medi1TVMaghreb.ma-8c5ed0.webp" group-title="News",Medi1TV Maghreb (1080p)
+https://cdn.live.easybroadcast.io/abr_corp/83_medi1tv-maghreb_jnbspmg/playlist.m3u8
+#EXTINF:-1 tvg-id="MekameleenTV.tr@SD" tvg-logo="logos/MekameleenTV.tr-1b2716.webp" group-title="News",Mekameleen TV (1080p)
+https://mn-nl.mncdn.com/mekameleen/smil:mekameleentv.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="MercyTV.sl@SD" tvg-logo="" group-title="Religious",Mercy TV (Sierra Leone) (720p)
+https://cdn-cloudfront.eu-central-1.prod.ingest.aws-infra.dacast.com/live/bff8bd53-ee89-2c76-6a51-95a0003f7d96/master.m3u8
+#EXTINF:-1 tvg-id="MerejaTV.et@SD" tvg-logo="logos/MerejaTV.et-39b321.webp" group-title="News",Mereja TV
+https://g4wlkqp8l23a-hls-live.5centscdn.com/MerejaTV/955ad3298db330b5ee880c2c9e6f23a0.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="MERUTV.ke@SD" tvg-logo="" group-title="General",MERU TV (720p) [Not 24/7]
+https://goliveafrica.media:9998/live/628e5c1991061/index.m3u8
+#EXTINF:-1 tvg-id="MiracleTVPlus.ci@SD" tvg-logo="" group-title="Religious",Miracle TV+ (720p)
+https://strhlslb01.streamakaci.tv/str_mtv_mtv/str_mtv_multi/playlist.m3u8
+#EXTINF:-1 tvg-id="MixHollywood.eg@SD" tvg-logo="logos/MixHollywood.eg-bbdb5a.webp" group-title="Movies",Mix Hollywood (1080p)
+https://ml-pull-hwc.myco.io/MixTV/hls/index.m3u8
+#EXTINF:-1 tvg-id="MNTV.mz@SD" tvg-logo="" group-title="Business",MNTV
+https://www.khuwemultimedia.com/hls/mntv/mntv.m3u8
+#EXTINF:-1 tvg-id="MOFTV.ke@SD" tvg-logo="" group-title="Religious",MOF TV
+https://goliveafrica.media:9998/live/6425a6efa15c8/index.m3u8
+#EXTINF:-1 tvg-id="MOGPATV.gh@SD" tvg-logo="" group-title="Religious",MOGPA TV
+https://bk7l2r2nyx53-hls-live.5centscdn.com/ablazetv/f7b44cfafd5c52223d5498196c8a2e7b.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="MOGPATVPlus.gh@SD" tvg-logo="" group-title="Religious",MOGPA TV Plus
+https://bk7l2r2nyx53-hls-live.5centscdn.com/mogpatvplus/2567a5ec9705eb7ac2c984033e06189d.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="MoreGraceTV.ng@SD" tvg-logo="" group-title="Religious",More Grace TV (410p) [Not 24/7]
+https://atechgroupuk.site/ETV.m3u8
+#EXTINF:-1 tvg-id="MorningCloudTV.ke@SD" tvg-logo="" group-title="Religious",Morning Cloud TV (720p)
+https://livecdn.live247stream.com/mc/tv/playlist.m3u8
+#EXTINF:-1 tvg-id="MosaiqueFM.tn@SD" tvg-logo="logos/MosaiqueFM.tn-101688.webp" group-title="Music",Mosaique FM (1080p)
+https://webcam.mosaiquefm.net/mosatv/_definst_/studio/playlist.m3u8?DVR
+#EXTINF:-1 tvg-id="Motorvision.de@SD" tvg-logo="logos/Motorvision.de-4d27a5.webp" group-title="Auto",Motorvision (1080i)
+https://mvg-mv.otteravision.com/mvg/mv/mv_1080p.m3u8
+#EXTINF:-1 tvg-id="MTVLebanon.lb@SD" tvg-logo="logos/MTVLebanon.lb-92a6fa.webp" group-title="General",MTV Lebanon (1080p)
+https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mtv-lebanon/b8ebb2a5affb812f1541712adde10e26/index.m3u8
+#EXTINF:-1 tvg-id="MuugiTV.ke@SD" tvg-logo="" group-title="Religious",Muugi TV (480p) [Not 24/7]
+https://goliveafrica.media:9998/live/62b3ffb71a3d6/index.m3u8
+#EXTINF:-1 tvg-id="MuzangalaTV.ao@SD" tvg-logo="logos/MuzangalaTV.ao-c3c053.webp" group-title="Music",Muzangala TV (1080p)
+https://5cf4a2c2512a2.streamlock.net/tvmuzangala/tvmuzangala/playlist.m3u8
+#EXTINF:-1 tvg-id="MwangazaTV.ke@SD" tvg-logo="" group-title="Religious",Mwangaza TV (720p) [Not 24/7]
+https://goliveafrica.media:9998/live/6516be24a6bac/index.m3u8
+#EXTINF:-1 tvg-id="MyRighteousTV.cm@SD" tvg-logo="" group-title="Religious",My Righteous TV
+https://live20.bozztv.com/ssh101/ssh101/myrighteous/playlist.m3u8
+#EXTINF:-1 tvg-id="NBC1.na@SD" tvg-logo="" group-title="General",NBC 1 [Not 24/7]
+https://hls2.nbcplus.na/hls/high_nbc1.m3u8
+#EXTINF:-1 tvg-id="NBTWorld.th@SD" tvg-logo="logos/NBTWorld.th-aacb05.webp" group-title="General",NBT World (1080p)
+https://cdn-edge.iiptvcdn.com/live_event/smil:d36f-93c1-9c58-fdcc-427f.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="NdurumeniTV.ke@SD" tvg-logo="" group-title="Religious",Ndurumeni TV (480p) [Not 24/7]
+https://goliveafrica.media:9998/live/6389d571d20af/index.m3u8
+#EXTINF:-1 tvg-id="NesihaTV.et@SD" tvg-logo="" group-title="Religious",Nesiha TV (720p)
+https://stream.cisk.tech/nasihatv/index.m3u8
+#EXTINF:-1 tvg-id="NewVisionTV.ng@SD" tvg-logo="" group-title="Religious",New Vision TV (360p)
+https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_027/Stream/playlist.m3u8
+#EXTINF:-1 tvg-id="NewsCentral.ng@SD" tvg-logo="logos/NewsCentral.ng-e44023.webp" group-title="News",News Central
+https://wf.newscentral.ng:8443/hls/stream.m3u8
+#EXTINF:-1 tvg-id="NewsoftheWorld.us@Global" tvg-logo="logos/NewsoftheWorld.us-69e144.webp" group-title="News",News of the World (720p)
+https://nowhls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="NewsoftheWorld.us@Arabic" tvg-logo="logos/NewsoftheWorld.us-69e144.webp" group-title="News",News of the World Arabic (720p)
+https://live.nowtelly.com/now_arabic/live/playlist.m3u8
+#EXTINF:-1 tvg-id="NHKWorldPremium.jp@SD" tvg-logo="logos/NHKWorldPremium.jp-729d76.webp" group-title="Entertainment",NHK World Premium (720p)
+https://media-tyo.hls.nhkworld.jp/hls/wp/live/master.m3u8
+#EXTINF:-1 tvg-id="NHKWorldJapan.jp@SD" tvg-logo="logos/NHKWorldJapan.jp-3058a8.webp" group-title="Culture;News",NHK World-Japan (1080p)
+https://cdn.pishow.tv/ott/live/455/master.m3u8
+#EXTINF:-1 tvg-id="NHKWorldJapan.jp@HD" tvg-logo="logos/NHKWorldJapan.jp-3058a8.webp" group-title="Culture;News",NHK World-Japan HD (1080p)
+https://freem3u.xyz/api/live/play.m3u8?vid=106
+#EXTINF:-1 tvg-id="NiceTVKenya.ke@SD" tvg-logo="" group-title="General",Nice TV Kenya (720p) [Not 24/7]
+https://goliveafrica.media:9998/live/64ada04aa7678/index.m3u8
+#EXTINF:-1 tvg-id="Nigbati.ng@SD" tvg-logo="" group-title="Culture",Nigbati (720p) [Not 24/7]
+https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_023/Stream/playlist.m3u8
+#EXTINF:-1 tvg-id="NjataTV.ke@SD" tvg-logo="" group-title="General",Njata TV (576p) [Not 24/7]
+https://goliveafrica.media:9998/live/625816e585a2b/index.m3u8
+#EXTINF:-1 tvg-id="NogoumFMTV.eg@SD" tvg-logo="logos/NogoumFMTV.eg-24c182.webp" group-title="Music",NogoumFMTV (672p) [Not 24/7]
+https://nogoumtv.nrpstream.com/hls/stream.m3u8
+#EXTINF:-1 tvg-id="NovelaChannel.ci@SD" tvg-logo="logos/NovelaChannel.ci-40e9c1.webp" group-title="Series",Novela Channel (720p) [Not 24/7]
+https://video1.getstreamhosting.com:1936/8284/8284/playlist.m3u8
+#EXTINF:-1 tvg-id="NowMediaTelevision.us@HD" tvg-logo="logos/NowMediaTelevision.us-3ac43a.webp" group-title="Lifestyle;News",NowMedia Television (1080p)
+https://stream-204968.castr.net/64e0c91d08bff3041638aee3/live_a4243540d4b911f0b624bda5e9a32aa9/index.m3u8
+#EXTINF:-1 tvg-id="NowMediaTelevision.us@Spanish" tvg-logo="logos/NowMediaTelevision.us-3ac43a.webp" group-title="Lifestyle;News",NowMedia Television Spanish (1080p)
+https://stream-204968.castr.net/64e0c91d08bff3041638aee3/live_a16fa020f4c411f09ddaa1978319689a/index.m3u8
+#EXTINF:-1 tvg-id="NTAInternational.ng@SD" tvg-logo="" group-title="Culture",NTA International (576p) [Not 24/7]
+https://api.visionip.tv/live/ASHTTP/visiontvuk-entertainment-ntai-hsslive-25f-4x3-MB/playlist.m3u8
+#EXTINF:-1 tvg-id="NTV.ci@SD" tvg-logo="" group-title="General",NTV (Ivory Coast) (1080p) [Not 24/7]
+https://strhlslb01.streamakaci.tv/str_ntv_ntv/str_ntv_ntv_multi/playlist.m3u8
+#EXTINF:-1 tvg-id="NuViewTV.za@SD" tvg-logo="" group-title="Entertainment",NuView TV (360p)
+https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_002/Stream/playlist.m3u8
+#EXTINF:-1 tvg-id="NWEconomie.tg@SD" tvg-logo="" group-title="Business",NW Economie (576p)
+https://hls.newworldtv.com/nw-economie/video/live.m3u8
+#EXTINF:-1 tvg-id="NWInfo2.tg@SD" tvg-logo="logos/NWInfo2.tg-32b538.webp" group-title="News",NW Info 2 (576p)
+https://hls.newworldtv.com/nw-info-2/video/live.m3u8
+#EXTINF:-1 tvg-id="NWInfo.tg@SD" tvg-logo="logos/NWInfo.tg-4015bb.webp" group-title="News",NW Info (576p)
+https://hls.newworldtv.com/nw-info/video/live.m3u8
+#EXTINF:-1 tvg-id="NWMagazine.tg@SD" tvg-logo="" group-title="Entertainment",NW Magazine (576p)
+https://hls.newworldtv.com/nw-magazine/video/live.m3u8
+#EXTINF:-1 tvg-id="OneNationTV.sn@SD" tvg-logo="" group-title="Culture",One Nation TV (720p) [Not 24/7]
+https://endour.net/hls/One_nationtv/index.m3u8
+#EXTINF:-1 tvg-id="ONETV.cd@SD" tvg-logo="" group-title="Religious",ONE-TV (720p) [Not 24/7]
+https://core.live-apc.eu:5443/LiveApp/streams/backup.m3u8
+#EXTINF:-1 tvg-id="ORTM1.ml@SD" tvg-logo="" group-title="General",ORTM 1
+https://cs2.push2stream.com/ORTM-DVR/playlist.m3u8
+#EXTINF:-1 tvg-id="OTV.gh@SD" tvg-logo="" group-title="Entertainment",OTV (Ghana) (720p)
+https://5dcabf026b188.streamlock.net/OceansTV/livestream/playlist.m3u8
+#EXTINF:-1 tvg-id="PanafricanMediaTV.cm@SD" tvg-logo="logos/PanafricanMediaTV.cm-1c0525.webp" group-title="News",Panafrican Media TV (480p)
+https://live20.bozztv.com/giatv/giatv-pmtv/pmtv/playlist.m3u8
+#EXTINF:-1 tvg-id="PeaceTVEnglish.ae@SD" tvg-logo="logos/PeaceTVEnglish.ae-992e2f.webp" group-title="Religious",Peace TV English (1080p)
+https://dzkyvlfyge.erbvr.com/PeaceTvEnglish/index.m3u8
+#EXTINF:-1 tvg-id="PentTV.gh@SD" tvg-logo="" group-title="Religious",Pent TV (720p)
+https://playlist.dacast.com/live/a72117af-d78e-7ffe-7c12-1af6cd4a8483-live-42172a86-494b-a866-498f-dbaff4b5e3c0/master.m3u8
+#EXTINF:-1 tvg-id="PhenomenalLifeTV.ng@SD" tvg-logo="" group-title="Religious",Phenomenal Life TV (1080p)
+https://5be80bd118c27.streamlock.net:433/phenomenaltv/phenomenal/playlist.m3u8
+#EXTINF:-1 tvg-id="PillarTV.ke@SD" tvg-logo="" group-title="Religious",Pillar TV (720p) [Not 24/7]
+https://goliveafrica.media:9998/live/627e198474bd1/index.m3u8
+#EXTINF:-1 tvg-id="PlusTVAfrica.ng@SD" tvg-logo="" group-title="Undefined",Plus TV Africa (720p) [Not 24/7]
+https://5c0740dba62b3.streamlock.net/plustv/myStream/playlist.m3u8
+#EXTINF:-1 tvg-id="PMC.ae@SD" tvg-logo="logos/PMC.ae-0b88f1.webp" group-title="Music",PMC
+https://pmchls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="PMCRoyale.ae@SD" tvg-logo="" group-title="Music",PMC Royale (1080p)
+https://pmcrohls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="QausainTV.ng@SD" tvg-logo="" group-title="Culture",Qausain TV (720p)
+https://acasmedia3.acangroup.org/qausaintv/qausaintv_output/playlist.m3u8
+#EXTINF:-1 tvg-id="QTVGambia.gm@SD" tvg-logo="" group-title="General",QTV Gambia (720p) [Not 24/7]
+https://player.qtv.gm/hls/live.stream.m3u8
+#EXTINF:-1 tvg-id="QuestTV.ng@SD" tvg-logo="" group-title="Undefined",Quest TV (240p) [Not 24/7]
+https://media2.streambrothers.com:19360/8028/8028.m3u8
+#EXTINF:-1 tvg-id="QwestTV.fr@SD" tvg-logo="logos/QwestTV.fr-544d24.webp" group-title="Music",Qwest TV (1080p)
+https://qwestjazz-rakuten.amagi.tv/hls/amagi_hls_data_rakutenAA-qwestjazz-rakuten/CDN/master.m3u8
+#EXTINF:-1 tvg-id="RacerNetwork.us@SD" tvg-logo="logos/RacerNetwork.us-38aad2.webp" group-title="Sports",Racer Network (1080p)
+https://amg00378-mavtv-amg00378c2-samsung-au-1790.playouts.now.amagi.tv/playlist/amg00378-mavtvfast-motorsportsnetwork-samsungau/playlist.m3u8
+#EXTINF:-1 tvg-id="RacerSelect.us@SD" tvg-logo="logos/RacerSelect.us-f7a6b5.webp" group-title="Sports",Racer Select (1080p)
+https://amg00378-amg00378c4-freelivesports-emea-5637.playouts.now.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="RaiaTV.ke@SD" tvg-logo="" group-title="Undefined",Raia TV (720p) [Not 24/7]
+https://goliveafrica.media:9998/live/64873b6222c93/index.m3u8
+#EXTINF:-1 tvg-id="RapidTV.ng@SD" tvg-logo="" group-title="General",Rapid TV (480p)
+https://stream-hls.castr-cdn.com/6a05a899db0ebd344a759542/live_9655bc604f8211f19e748901a3f596d0/index.m3u8
+#EXTINF:-1 tvg-id="RASDTV.eh@SD" tvg-logo="" group-title="General",RASD TV (1080i)
+https://cloud.streamingconnect.tv/hls/rasdtv2/rasdtv.m3u8
+#EXTINF:-1 tvg-id="RaveTV.ng@SD" tvg-logo="" group-title="Undefined",Rave TV (576p)
+https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_039/Stream/playlist.m3u8
+#EXTINF:-1 tvg-id="RedBullTV.at@EUMENA" tvg-logo="logos/RedBullTV.at-be0bc3.webp" group-title="Outdoor;Sports",Red Bull TV (1080p)
+https://3ea22335.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWdiX1JlZEJ1bGxUVl9ITFM/playlist.m3u8
+#EXTINF:-1 tvg-id="RedBullTV.at@SD" tvg-logo="logos/RedBullTV.at-be0bc3.webp" group-title="Outdoor;Sports",Red Bull TV SD (1080p)
+https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8
+#EXTINF:-1 tvg-id="RefletTV.ci@SD" tvg-logo="logos/RefletTV.ci-2226e4.webp" group-title="General",Reflet TV (1080p)
+https://edge-a3.evrideo.tv/8f37c9f0-fe22-44f4-b64a-76ad11730daf_1000026630_HLS/manifest.m3u8
+#EXTINF:-1 tvg-id="ReinoInfantil.mz@SD" tvg-logo="logos/ReinoInfantil.mz-a10956.webp" group-title="Kids",Reino Infantil
+https://www.khuwemultimedia.com/hls/reinoinfantiltv/reinoinfantiltv.m3u8
+#EXTINF:-1 tvg-id="ResurrectionTV.gh@SD" tvg-logo="" group-title="Undefined",Resurrection TV (720p)
+https://1681360479.rsc.cdn77.org/1681360479/index.m3u8
+#EXTINF:-1 tvg-id="RLPROTV.cd@SD" tvg-logo="logos/RLPROTV.cd-b0a4e8.webp" group-title="Documentary",RL PRO TV
+https://stream.berosat.live:19360/rlpro-tv/rlpro-tv.m3u8
+#EXTINF:-1 tvg-id="RLWTV.za@SD" tvg-logo="" group-title="Religious",RLW TV (576p) [Not 24/7]
+https://webstreaming-8.viewmedia.tv/web_119/Stream/playlist.m3u8
+#EXTINF:-1 tvg-id="ROVTV.za@SD" tvg-logo="" group-title="Undefined",ROV TV (576p)
+https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_012/Stream/playlist.m3u8
+#EXTINF:-1 tvg-id="RTArabic.ru@SD" tvg-logo="logos/RTArabic.ru-4e37a0.webp" group-title="News",RT Arabic (1080p) [Geo-blocked]
+https://rt-arb.rttv.com/dvr/rtarab/playlist.m3u8
+#EXTINF:-1 tvg-id="RTDocumentary.ru@English" tvg-logo="logos/RTDocumentary.ru-e1ea72.webp" group-title="Documentary",RT Documentary (1080p) [Geo-blocked]
+https://rt-rtd.rttv.com/dvr/rtdoc/playlist.m3u8
+#EXTINF:-1 tvg-id="RTJVA.tg@SD" tvg-logo="" group-title="Religious",RT JVA (720p) [Not 24/7]
+https://cdn140m.panaccess.com/HLS/RTVJA/index.m3u8
+#EXTINF:-1 tvg-id="RTB3.bf@SD" tvg-logo="" group-title="Culture",RTB 3
+https://edge13.vedge.infomaniak.com/livecast/ik:rtb3-1/manifest.m3u8
+#EXTINF:-1 tvg-id="RTB.bf@SD" tvg-logo="" group-title="Undefined",RTB (360p) [Not 24/7]
+https://edge12.vedge.infomaniak.com/livecast/ik:rtblive1_8/manifest.m3u8
+#EXTINF:-1 tvg-id="RTI1.ci@SD" tvg-logo="" group-title="General",RTI 1 (1080p)
+https://video1.getstreamhosting.com:1936/8336/8336/playlist.m3u8
+#EXTINF:-1 tvg-id="RTNBDivertissement.bi@SD" tvg-logo="" group-title="Entertainment",RTNB Divertissement
+https://tv2-stream.rtnb.bi/hls/master.m3u8
+#EXTINF:-1 tvg-id="RTNBTV.bi@SD" tvg-logo="" group-title="General",RTNB TV
+https://tv1-stream.rtnb.bi/hls/master.m3u8
+#EXTINF:-1 tvg-id="RTNC.cd@SD" tvg-logo="" group-title="General",RTNC (1080p)
+https://kali.vdopanel.com:3850/live/masterlive.m3u8
+#EXTINF:-1 tvg-id="RTVC.ci@SD" tvg-logo="" group-title="Religious",RTVC (720p)
+https://cdn140m.panaccess.com/HLS/RTVC/index.m3u8
+#EXTINF:-1 tvg-id="RwenzoriTV.ug@SD" tvg-logo="" group-title="General",Rwenzori TV
+https://stream.rwenzoritv.com:3232/live/rwenzoritvlive.m3u8
+#EXTINF:-1 tvg-id="SaabTV.so@SD" tvg-logo="" group-title="General",Saab TV (576p)
+https://ap02.iqplay.tv:8082/iqb8002/s03btv/playlist.m3u8
+#EXTINF:-1 tvg-id="SABC1.za@SD" tvg-logo="" group-title="Undefined",SABC 1 (720p) [Geo-blocked]
+https://sabconeta.cdn.mangomolo.com/sabc1/smil:sabc1.stream.smil/master.m3u8
+#EXTINF:-1 tvg-id="SABC2.za@SD" tvg-logo="" group-title="Undefined",SABC 2 [Geo-blocked]
+https://sabctwota.cdn.mangomolo.com/sabc2/smil:sabc2.stream.smil/master.m3u8
+#EXTINF:-1 tvg-id="SABC3.za@SD" tvg-logo="" group-title="Undefined",SABC 3 (576i) [Geo-blocked]
+https://sabctreta.cdn.mangomolo.com/sabc3/smil:sabc3.stream.smil/master.m3u8
+#EXTINF:-1 tvg-id="SABCLehae.za@SD" tvg-logo="logos/SABCLehae.za-0ae987.webp" group-title="News",SABC Lehae [Geo-blocked]
+https://sabctretalh.cdn.mangomolo.com/lehae/smil:lehae.stream.smil/master.m3u8
+#EXTINF:-1 tvg-id="SABCNews.za@SD" tvg-logo="logos/SABCNews.za-313a3d.webp" group-title="News",SABC News (720p) [Geo-blocked]
+https://sabconetanw.cdn.mangomolo.com/news/smil:news.stream.smil/master.m3u8
+#EXTINF:-1 tvg-id="Sahara24.mr@HD" tvg-logo="logos/Sahara24.mr-e71843.webp" group-title="News",Sahara 24 (1080p)
+https://live.saharamedias.net:3317/live/shara24live.m3u8
+#EXTINF:-1 tvg-id="SaltTV.ug@SD" tvg-logo="" group-title="Religious",Salt TV (Uganda)
+https://stream.salttelevision.com/hls/stream.m3u8
+#EXTINF:-1 tvg-id="SalvationTV.ng@SD" tvg-logo="" group-title="Undefined",Salvation TV (Nigeria) (576p)
+https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_017/Stream/playlist.m3u8
+#EXTINF:-1 tvg-id="SaraouniaTV.ne@SD" tvg-logo="" group-title="General",Saraounia TV
+https://live20.bozztv.com/dvrfl06/astv/astv-saraouna/index.m3u8
+#EXTINF:-1 tvg-id="SavaneTV.bf@SD" tvg-logo="" group-title="General",Savane TV
+https://savane24.tv:5443/LiveApp/streams/Y4fyif69Q0ll6MeH2190896734859843.m3u8
+#EXTINF:-1 tvg-id="SayareTV.ke@SD" tvg-logo="" group-title="Religious",Sayare TV (720p) [Not 24/7]
+https://goliveafrica.media:9998/live/636dedfa327d7/index.m3u8
+#EXTINF:-1 tvg-id="SBNTVGlobal.us@SD" tvg-logo="logos/SBNTVGlobal.us-ccb2a2.webp" group-title="Religious",SBN TV Global (720p)
+https://watch.sardius.media/channels/Ea867F3e1F56B06/site_8D363D13Eb/live.m3u8
+#EXTINF:-1 tvg-id="SBNTVInternational.us@SD" tvg-logo="logos/SBNTVInternational.us-ccb2a2.webp" group-title="Religious",SBN TV International (720p)
+https://watch.sardius.media/channels/Ea867F3e1F56B06/site_09a4778E89/live.m3u8
+#EXTINF:-1 tvg-id="SenewebTV.sn@SD" tvg-logo="" group-title="General",Seneweb TV [Geo-blocked]
+https://vdo2.pro-fhi.net:3297/stream/play.m3u8
+#EXTINF:-1 tvg-id="SenJeunesTV.sn@SD" tvg-logo="" group-title="General",SenJeunes TV (480p) [Not 24/7]
+https://stream.sen-gt.com/senjeunestv/myStream/playlist.m3u8
+#EXTINF:-1 tvg-id="SeraphimTV.za@SD" tvg-logo="" group-title="Religious",Seraphim TV [Not 24/7]
+https://restream.churchtv247.co.za/Apostle/Hggc@24/1.m3u8
+#EXTINF:-1 tvg-id="SerieMax.ci@SD" tvg-logo="logos/SerieMax.ci-0ab7f1.webp" group-title="Series",Serie Max (720p)
+https://video1.getstreamhosting.com:1936/8330/8330/playlist.m3u8
+#EXTINF:-1 tvg-id="SilverbirdNews24.ng@SD" tvg-logo="logos/SilverbirdNews24.ng-d8dba1.webp" group-title="News",Silverbird News 24 (576p)
+https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_029/Stream/playlist.m3u8
+#EXTINF:-1 tvg-id="SKITV.ch@SD" tvg-logo="logos/SKITV.ch-e62110.webp" group-title="Sports",SKI TV (1080p) [Not 24/7]
+https://d2xeo83q8fcni6.cloudfront.net/v1/master/9d062541f2ff39b5c0f48b743c6411d25f62fc25/SkiTV-SportsTribal/193.m3u8
+#EXTINF:-1 tvg-id="SkyNewsArabia.ae@HD" tvg-logo="logos/SkyNewsArabia.ae-3f2936.webp" group-title="News",Sky News Arabia (1080p)
+https://live-stream.skynewsarabia.com/c-horizontal-channel/horizontal-stream/index.m3u8
+#EXTINF:-1 tvg-id="SkyNewsArabia.ae@SD" tvg-logo="logos/SkyNewsArabia.ae-3f2936.webp" group-title="News",Sky News Arabia SD (1080p) [Not 24/7]
+https://stream.skynewsarabia.com/ott/ott.m3u8
+#EXTINF:-1 tvg-id="SkyNewsArabiaVertical.ae@HD" tvg-logo="logos/SkyNewsArabiaVertical.ae-24c80c.webp" group-title="News",Sky News Arabia Vertical (1080p)
+https://live-stream.skynewsarabia.com/c-vertical-channel/vertical-stream/index.m3u8
+#EXTINF:-1 tvg-id="SkyNewsArabiaVertical.ae@SD" tvg-logo="logos/SkyNewsArabiaVertical.ae-24c80c.webp" group-title="News",Sky News Arabia Vertical SD (1280p) [Not 24/7]
+https://stream.skynewsarabia.com/vertical/vertical.m3u8
+#EXTINF:-1 tvg-id="SNTVDaljir.so@SD" tvg-logo="" group-title="General",SNTV Daljir (576p)
+https://ap02.iqplay.tv:8082/iqb8002/s2tve/playlist.m3u8
+#EXTINF:-1 tvg-id="SolTV.gq@SD" tvg-logo="" group-title="Entertainment",SolTV (Equatorial Guinea) (720p)
+https://stream.solmediaeg.com/soltv/soltv.m3u8
+#EXTINF:-1 tvg-id="SomaliNationalTV.so@SD" tvg-logo="" group-title="General",Somali National TV (576p)
+https://ap02.iqplay.tv:8082/iqb8002/s4ne/playlist.m3u8
+#EXTINF:-1 tvg-id="SOSDocteurTV.tg@SD" tvg-logo="" group-title="Lifestyle",SOS Docteur TV (480p) [Not 24/7]
+https://wmoy82n4y2a7-hls-live.5centscdn.com/sostv/live.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="SoundcityTV.ng@SD" tvg-logo="" group-title="Undefined",Soundcity TV
+https://cs2.push2stream.com/SOUNDCITY/playlist.m3u8
+#EXTINF:-1 tvg-id="SowetoTV.za@SD" tvg-logo="" group-title="Entertainment;Family",Soweto TV (576p)
+https://cdn.freevisiontv.co.za/sttv/smil:soweto.stream.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="SpeedlineTV.bj@SD" tvg-logo="" group-title="General",Speedline TV
+https://cdn-us-east-prod-ingest-infra-dacast-com.akamaized.net/dbe59037-07a0-4f1c-82a2-7de94b4b62d2/index.m3u8
+#EXTINF:-1 tvg-id="StoryChannelTV.ma@SD" tvg-logo="" group-title="Culture",StoryChannel TV (720p)
+https://136044159.r.cdnsun.net/storychannel.m3u8
+#EXTINF:-1 tvg-id="SudanTV.sd@SD" tvg-logo="" group-title="Undefined",Sudan TV (360p)
+https://cdn-globecast.akamaized.net/live/eds/sudan_tv/hls_roku/index.m3u8
+#EXTINF:-1 tvg-id="SunnaTV.ng@SD" tvg-logo="" group-title="Undefined",Sunna TV (576p)
+https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_015/Stream/playlist.m3u8
+#EXTINF:-1 tvg-id="SunuLabelTV.sn@SD" tvg-logo="logos/SunuLabelTV.sn-91c8c1.webp" group-title="News",SunuLabel TV (480p) [Not 24/7]
+https://live3.acangroup.org:1929/publiclive/sunulabel/playlist.m3u8
+#EXTINF:-1 tvg-id="SuperscreenTV.ng@SD" tvg-logo="" group-title="Culture;Family",Superscreen TV (412p)
+https://video1.getstreamhosting.com:1936/8398/8398/playlist.m3u8
+#EXTINF:-1 tvg-id="SuperyachtTV.mc@SD" tvg-logo="logos/SuperyachtTV.mc-23ee60.webp" group-title="Lifestyle",Superyacht TV (1080p)
+https://sy.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="SynagogueTV.ng@SD" tvg-logo="" group-title="Undefined",Synagogue TV (576p)
+https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_038/Stream/playlist.m3u8
+#EXTINF:-1 tvg-id="TalTV.ne@SD" tvg-logo="" group-title="Entertainment",Tal TV (1080p)
+https://mediaserver1.castpin.com/hls/taltv/index.m3u8
+#EXTINF:-1 tvg-id="TanasuhTV.ly@HD" tvg-logo="" group-title="General",Tanasuh TV (1080p)
+https://kilolink.pulsarstarsolutions.com/live/smil:tanasuhtv.smil/manifest.m3u8
+#EXTINF:-1 tvg-id="TanzaniaSafariChannel.tz@SD" tvg-logo="" group-title="Travel",Tanzania Safari Channel (576p)
+https://stream-134630.castr.net/5fe35eae8c53540cab83659a/live_31dabe40323511f08b8efff0016f3b67/index.m3u8
+#EXTINF:-1 tvg-id="TayariWestTV.ug@SD" tvg-logo="" group-title="General",Tayari West TV (1080p)
+https://stream.hydeinnovations.com/tarari-west/index.m3u8
+#EXTINF:-1 tvg-id="TBC1.tz@SD" tvg-logo="" group-title="General",TBC1
+https://tbc.maintek.co/LiveApp/streams/YF43nTzH0duMyUA2130641323343587.m3u8
+#EXTINF:-1 tvg-id="TBC2.tz@SD" tvg-logo="" group-title="Entertainment",TBC2 (1080p)
+https://stream-134630.castr.net/5fe35eae8c53540cab83659a/live_44ed95e05b6d11f18d5d85805abbdd6f/index.m3u8
+#EXTINF:-1 tvg-id="TeleRegencyTV.ng@SD" tvg-logo="" group-title="General",Tele Regency TV (576p)
+https://streams.playtv.com.ng/Tele-Regency_TRTV/index.m3u8
+#EXTINF:-1 tvg-id="TeleSahel.ne@SD" tvg-logo="" group-title="General",Tele Sahel (1080p)
+https://mediaserver1.castpin.com/hls/telesahel/index.m3u8
+#EXTINF:-1 tvg-id="TeleTchad.td@SD" tvg-logo="" group-title="General",Tele Tchad (1080p)
+https://strhlslb01.streamakaci.tv/str_tchad_tchad/str_tchad_multi/playlist.m3u8
+#EXTINF:-1 tvg-id="TeleMusikSenegal.sn@SD" tvg-logo="logos/TeleMusikSenegal.sn-dbcb26.webp" group-title="Music",TeleMusik Senegal (720p)
+https://58c04fb1d143f.streamlock.net/rezopropartner_1_live/rezopropartner_1_live/playlist.m3u8
+#EXTINF:-1 tvg-id="Telesur.ve@English" tvg-logo="logos/Telesur.ve-db653a.webp" group-title="News",Telesur English (480p)
+https://mblenmain01.telesur.ultrabase.net/mblivev3/480p/playlist.m3u8
+#EXTINF:-1 tvg-id="Telesur.ve@EnglishHD" tvg-logo="logos/Telesur.ve-db653a.webp" group-title="News",Telesur English HD (1080p)
+https://mblenmain01.telesur.ultrabase.net/mblivev3/hd/playlist.m3u8
+#EXTINF:-1 tvg-id="TelevisionCaribe.us@HD" tvg-logo="logos/TelevisionCaribe.us-c71df6.webp" group-title="Entertainment;General",Television Caribe (1080p)
+https://televisioncaribe.com/index.m3u8
+#EXTINF:-1 tvg-id="TelevisionEspoir47.tg@SD" tvg-logo="" group-title="General",Television Espoir 47 (720p)
+https://cdn140m.panaccess.com/HLS/Espoir47/index.m3u8
+#EXTINF:-1 tvg-id="TjilTV.na@SD" tvg-logo="logos/TjilTV.na-7d970f.webp" group-title="Music",Tjil TV (720p)
+https://hls-1zdhtxpm-livepush.akamaized.net/live_cdn/nsM12Xw0C1xXdJ/em0Wx71z-ec6EWJb/rewind-3600.m3u8
+#EXTINF:-1 tvg-id="TOIGlobal.in@SD" tvg-logo="logos/TOIGlobal.in-d3fc59.webp" group-title="News",TOI Global (1080p)
+https://live.sli.ke/live/npnhm84gz9/master.m3u8
+#EXTINF:-1 tvg-id="TR24Television.cm@SD" tvg-logo="" group-title="Entertainment",TR24 Television (720p)
+https://stream.it-innov.com/tr24/index.m3u8
+#EXTINF:-1 tvg-id="TraceGospel.fr@NigeriaandEastAfrica" tvg-logo="logos/TraceGospel.fr-5ac09b.webp" group-title="Music;Religious",Trace Gospel Nigeria and East Africa (1080p)
+https://channels.trace.plus/Traceprod/GOSPEL_ROA_hd/index.m3u8
+#EXTINF:-1 tvg-id="TraceGospel.fr@SouthernAfrica" tvg-logo="logos/TraceGospel.fr-5ac09b.webp" group-title="Music;Religious",Trace Gospel Southern Africa (1080p)
+https://channels.trace.plus/Traceprod/GOSPEL_SA_hd/index.m3u8
+#EXTINF:-1 tvg-id="TraceIvoire.fr@SD" tvg-logo="logos/TraceIvoire.fr-189ee7.webp" group-title="Music",Trace Ivoire (1080p)
+https://channels.trace.plus/Traceprod/TRACE_IVOIRE_hd/index.m3u8
+#EXTINF:-1 tvg-id="TraceNgoma.fr@SD" tvg-logo="logos/TraceNgoma.fr-469918.webp" group-title="Music",Trace Ngoma (1080p)
+https://channels.trace.plus/Traceprod/AFRICA_EN_hd/index.m3u8
+#EXTINF:-1 tvg-id="TraceToca.fr@SD" tvg-logo="logos/TraceToca.fr-4d4357.webp" group-title="Music",Trace Toca (1080p)
+https://channels.trace.plus/Traceprod/TOCA_hd/index.m3u8
+#EXTINF:-1 tvg-id="TraceUrban.fr@AfricaFranco" tvg-logo="logos/TraceUrban.fr-8a241c.webp" group-title="Music",Trace Urban Africa Franco (1080p)
+https://channels.trace.plus/Traceprod/URBAN_AFRIC_FR_hd/index.m3u8
+#EXTINF:-1 tvg-id="TraceUrban.fr@SouthernAfrica" tvg-logo="logos/TraceUrban.fr-8a241c.webp" group-title="Music",Trace Urban Southern Africa (1080p)
+https://channels.trace.plus/Traceprod/URBAN_SA_hd/index.m3u8
+#EXTINF:-1 tvg-id="Trigger.za@SD" tvg-logo="" group-title="Undefined",Trigger
+https://origin2.afxp.telemedia.co.za/abr/trigger/playlist.m3u8
+#EXTINF:-1 tvg-id="TRTArabi.tr@SD" tvg-logo="logos/TRTArabi.tr-832c99.webp" group-title="News",TRT Arabi (1080p) [Not 24/7]
+https://tv-trtarabi.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 tvg-id="TRTWorld.tr@SD" tvg-logo="logos/TRTWorld.tr-06c11d.webp" group-title="News",TRT World (720p)
+https://mumbai-edge.smartplaytv.in/TRTWorld/index.m3u8
+#EXTINF:-1 tvg-id="TRTWorld.tr@HD" tvg-logo="logos/TRTWorld.tr-06c11d.webp" group-title="News",TRT World HD
+https://dash2.antik.sk/live/test_trt_world_atktv/playlist.m3u8
+#EXTINF:-1 tvg-id="TshwaneTV.za@SD" tvg-logo="" group-title="Entertainment;Family;General",Tshwane TV (576p)
+https://cdn.freevisiontv.co.za/sttv/smil:tshwane.stream.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="TV1.rw@SD" tvg-logo="" group-title="General",TV1 (Rwanda) (480p)
+https://live.tv1.rw/index.m3u8
+#EXTINF:-1 tvg-id="TV5MONDEChefs.fr@SD" tvg-logo="logos/TV5MONDEChefs.fr-1a11d2.webp" group-title="Cooking;Lifestyle",TV5MONDE Chefs (1080p)
+https://tvf-tv5ch.otteravision.com/tvf/tv5ch/tv5ch.m3u8
+#EXTINF:-1 tvg-id="TV10.rw@SD" tvg-logo="" group-title="General",TV10 (720p)
+https://5c46fa289c89f.streamlock.net/pub1live/mystream/playlist.m3u8
+#EXTINF:-1 tvg-id="TVBozsikeHamburgHD.de@HD" tvg-logo="logos/TVBozsikeHamburgHD.de-1e8fc8.webp" group-title="Music",TV Bozsike Hamburg HD (1080p)
+https://rtmp.radiobozsike.com/hls/stream1.m3u8
+#EXTINF:-1 tvg-id="TVBRICSAfrica.za@SD" tvg-logo="logos/TVBRICSAfrica.za-ea9c72.webp" group-title="General",TV BRICS Africa (1080p)
+https://cdn.freevisiontv.co.za/sttv/smil:brics.stream.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="TVBRICSEnglish.in@SD" tvg-logo="" group-title="General",TV BRICS English (1080p)
+https://engbrics.mediacdn.ru/cdn/brics/english/playlist.m3u8
+#EXTINF:-1 tvg-id="TVCidade.cv@SD" tvg-logo="logos/TVCidade.cv-02cfb8.webp" group-title="Music",TV Cidade
+https://stmv1.srvif.com/tvcidade/tvcidade/playlist.m3u8
+#EXTINF:-1 tvg-id="TVManaMocambique.mz@SD" tvg-logo="" group-title="Religious",TV Mana Mocambique (1080p)
+https://w2.manasat.com/tvmana-mz/smil:tvmana-mz.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="TVVitoria.mz@SD" tvg-logo="" group-title="Entertainment",TV Vitoria (720p)
+https://stmv1.srvif.com/tvvitoriamz/tvvitoriamz/playlist.m3u8
+#EXTINF:-1 tvg-id="TVWest.ug@SD" tvg-logo="" group-title="General",TV West (720p)
+https://stream.hydeinnovations.com/tvwest-flussonic/index.m3u8
+#EXTINF:-1 tvg-id="TVZimbo.ao@SD" tvg-logo="" group-title="General",TV Zimbo (1080p)
+https://sgn-cdn-video.vods2africa.com/Tv-Zimbo/index.fmp4.m3u8
+#EXTINF:-1 tvg-id="TVWEST.ng@HD" tvg-logo="" group-title="General",TV-WEST (720p) [Not 24/7]
+https://tv-west.lg.mncdn.com/tv_west/tv_west.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="TVC.ng@SD" tvg-logo="" group-title="Undefined",TVC (Nigeria) (1080p)
+https://tvce.gridpapaservers.com/TVCSEPT/ngrp:myStream_all/playlist.m3u8
+#EXTINF:-1 tvg-id="TVCBenin.bj@SD" tvg-logo="" group-title="General",TVC Benin (720p)
+https://live.tvcbenin.com/direct/729c37a1d3319ee21991227b1f84c687.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="UNWebTV.us@SD" tvg-logo="logos/UNWebTV.us-d20c5a.webp" group-title="News",UN Web TV (540p)
+https://cdnapi.kaltura.com/p/2503451/sp/250345100/playManifest/entryId/1_gb6tjmle/protocol/https/format/applehttp/a.m3u8
+#EXTINF:-1 tvg-id="UrejeshoTVAfrica.ke@SD" tvg-logo="" group-title="Religious",Urejesho TV Africa (360p) [Not 24/7]
+https://goliveafrica.media:9998/live/64a26e4dd21a3/index.m3u8
+#EXTINF:-1 tvg-id="UTV.ke@SD" tvg-logo="" group-title="General",UTV (Kenya) (240p) [Not 24/7]
+https://goliveafrica.media:9998/live/62580d78ac508/index.m3u8
+#EXTINF:-1 tvg-id="UTVAfrica.ng@SD" tvg-logo="" group-title="General",UTV Africa (720p)
+https://oqgdro3xd4rm-hls-live.5centscdn.com/tfmediacastlivestreamUTV/8f263182c36c7e5c56a986bf770091e3.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="WaffiTV.ng@SD" tvg-logo="" group-title="General",Waffi TV (240p)
+https://oqgdro3xd4rm-hls-live.5centscdn.com/waffiitvstreaminglivetfmediacast/e0885d428bea69e372309657f3bd895f.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="WanLuoTV.ug@SD" tvg-logo="" group-title="General",Wan Luo TV (576p)
+https://stream.hydeinnovations.com/luotv-flussonic/index.m3u8
+#EXTINF:-1 tvg-id="WapTV.ng@SD" tvg-logo="" group-title="Undefined",Wap TV (720p) [Not 24/7]
+https://newproxy3.vidivu.tv/waptv/index.m3u8
+#EXTINF:-1 tvg-id="WatanTV.eg@SD" tvg-logo="logos/WatanTV.eg-29d03c.webp" group-title="General",Watan TV (1080p)
+https://rp.tactivemedia.com/watantv_source/live/playlist.m3u8
+#EXTINF:-1 tvg-id="WazobiaMaxTVNigeria.ng@SD" tvg-logo="" group-title="Undefined",Wazobia Max TV Nigeria (720p)
+https://wazobia.live:8333/channel/wmax.m3u8
+#EXTINF:-1 tvg-id="WazobiaMaxTVPortHarcourt.ng@SD" tvg-logo="" group-title="Undefined",Wazobia Max TV Port-Harcourt (720p)
+https://wazobia.live:8333/channel/wmaxph.m3u8
+#EXTINF:-1 tvg-id="WholeWordTV.ng@SD" tvg-logo="" group-title="Religious",Whole Word TV (720p)
+https://mn-nl.mncdn.com/wholewordtv/wholewordtv/index.m3u8
+#EXTINF:-1 tvg-id="WildEarth.za@SD" tvg-logo="logos/WildEarth.za-e90948.webp" group-title="Documentary;Education;Outdoor;Relax",WildEarth (1080p)
+https://dqga3jatxofgx.cloudfront.net/WildEarth.m3u8
+#EXTINF:-1 tvg-id="YadahTV.zw@SD" tvg-logo="" group-title="Religious",Yadah TV (576p) [Not 24/7]
+https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_018/Stream/playlist.m3u8
+#EXTINF:-1 tvg-id="YobeTV.ng@SD" tvg-logo="" group-title="General",Yobe TV (720p)
+https://oqgdro3xd4rm-hls-live.5centscdn.com/tfmediacastlivestream24/60414fd886a863e5851f4559fb86e7f6.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="YOUNIBMediaTV.ke@SD" tvg-logo="" group-title="Religious",YOUNIB Media TV (720p) [Not 24/7]
+https://goliveafrica.media:9998/live/6257fbe7383d6/index.m3u8
+#EXTINF:-1 tvg-id="ZooMoo.sg@SD" tvg-logo="logos/ZooMoo.sg-c04f8d.webp" group-title="Kids",ZooMoo (1080p)
+https://zoomoo-samsungau.amagi.tv/playlist.m3u8
