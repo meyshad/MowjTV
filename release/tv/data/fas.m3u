@@ -1,0 +1,263 @@
+#EXTM3U x-mowj-hidden="71"
+#EXTINF:-1 tvg-id="4Kurd.fr@SD" tvg-logo="" group-title="Music",4Kurd
+https://4kuhls.persiana.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="4Music.fr@SD" tvg-logo="" group-title="Music",4 Music
+https://musichls.persiana.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="4UTV.tr@SD" tvg-logo="logos/4UTV.tr-1bdda7.webp" group-title="Entertainment",4U TV (720p)
+https://hls.4utv.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="247BoxTV.ir@SD" tvg-logo="logos/247BoxTV.ir-c0affd.webp" group-title="Entertainment",247 Box TV
+https://hls.247box.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="AFNTV.ir@SD" tvg-logo="logos/AFNTV.ir-deecad.webp" group-title="Music",AFN TV (720p)
+https://bozztv.com/1gbw5/tintv2/tintv2/playlist.m3u8
+#EXTINF:-1 tvg-id="AfraFilm.ir@SD" tvg-logo="" group-title="Movies",Afra Film
+https://afrafhls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="AfraSeries.ir@SD" tvg-logo="" group-title="Series",Afra Series
+https://afrashls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="AlMahdiTV.us@SD" tvg-logo="logos/AlMahdiTV.us-d6b4ad.webp" group-title="Religious",Al-Mahdi TV (1080p)
+https://iptv.almahditv.com/almahditv/playlist.m3u8
+#EXTINF:-1 tvg-id="AraxTV.ir@SD" tvg-logo="" group-title="Undefined",Arax TV
+https://araxhls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="ArkoTV.ir@SD" tvg-logo="" group-title="Undefined",Arko TV
+https://arkhls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="ArvanTV.ir@SD" tvg-logo="" group-title="Undefined",Arvan TV
+https://arvhls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="AtrinaTV.ir@SD" tvg-logo="" group-title="Undefined",Atrina TV
+https://atrihls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="AVAFamily.ir@SD" tvg-logo="" group-title="Family",AVA Family
+https://familyhls.avatv.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="AVASeries.ir@SD" tvg-logo="logos/AVASeries.ir-ad2b78.webp" group-title="Series",AVA Series
+https://avaserieshls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="AvangTV.us@SD" tvg-logo="logos/AvangTV.us-6e4140.webp" group-title="Music",Avang TV (1080p)
+https://hls.avang.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="BravoFarsiTV.ir@SD" tvg-logo="logos/BravoFarsiTV.ir-13094a.webp" group-title="Movies",Bravo Farsi TV (360p)
+https://bravoohls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="CafeFilm.ir@SD" tvg-logo="" group-title="Movies",Cafe Film
+https://cafefhls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="CafeTradeTV.ir@SD" tvg-logo="logos/CafeTradeTV.ir-4e473e.webp" group-title="Business",Cafe Trade TV
+https://cafetradehls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="ChannelOne.us@SD" tvg-logo="logos/ChannelOne.us-763405.webp" group-title="Culture;News",Channel One (United States)
+https://pemirateshls.persiana.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="ClassicTV.ir@SD" tvg-logo="" group-title="Classic",Classic TV
+https://clshls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="DatisTV.ir@SD" tvg-logo="" group-title="Undefined",Datis TV
+https://ronhls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="DidgahTV.us@SD" tvg-logo="logos/DidgahTV.us-593b9b.webp" group-title="News",Didgah TV (576p)
+https://media.streambrothers.com:1936/8276/8276/playlist.m3u8
+#EXTINF:-1 tvg-id="EkranMovies.ir@SD" tvg-logo="logos/EkranMovies.ir-a7a408.webp" group-title="Movies",Ekran Movies
+https://ca-rt.onetv.app/EkranMovies/index-0.m3u8?token=onetv202
+#EXTINF:-1 tvg-id="EPlanetTV.ir@SD" tvg-logo="" group-title="Documentary",EPlanet TV
+https://eplhls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="ErfanHalghehTV.ca@SD" tvg-logo="logos/ErfanHalghehTV.ca-b380cc.webp" group-title="Religious",Erfan Halgheh TV (720p)
+https://hls.erfanhalgheh.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="FX1.ir@SD" tvg-logo="" group-title="Entertainment",FX 1
+https://fxtvhls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="FX2.ir@SD" tvg-logo="" group-title="Entertainment",FX 2
+https://toonixhls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="GanjeHozourTV.us@SD" tvg-logo="logos/GanjeHozourTV.us-f9e87b.webp" group-title="General",Ganj e Hozour TV (1080p)
+https://media.parvizshahbazi.com/ganjehozour/Main_tv/playlist.m3u8
+#EXTINF:-1 tvg-id="GEM24B.tr@SD" tvg-logo="logos/GEM24B.tr-6acb7a.webp" group-title="Music",GEM 24B
+https://ca-rt.onetv.app/gem24b/index-0.m3u8?token=onetv202
+#EXTINF:-1 tvg-id="GEMBollywood.tr@SD" tvg-logo="logos/GEMBollywood.tr-6614a4.webp" group-title="Movies",GEM Bollywood
+https://ca-rt.onetv.app/gembollywood/index-0.m3u8?token=onetv202
+#EXTINF:-1 tvg-id="GEMClassic.tr@SD" tvg-logo="logos/GEMClassic.tr-f544ec.webp" group-title="Classic",GEM Classic
+https://ca-rt.onetv.app/gemclassic/index-0.m3u8?token=onetv202
+#EXTINF:-1 tvg-id="GEMComedy.tr@SD" tvg-logo="logos/GEMComedy.tr-f84b49.webp" group-title="Comedy",GEM Comedy
+https://ca-rt.onetv.app/gemcomedy/index-0.m3u8?token=onetv202
+#EXTINF:-1 tvg-id="GEMDrama.tr@SD" tvg-logo="logos/GEMDrama.tr-62354b.webp" group-title="Movies",GEM Drama
+https://ca-rt.onetv.app/gemdrama/index-0.m3u8?token=onetv202
+#EXTINF:-1 tvg-id="GEMDramaPlus.tr@SD" tvg-logo="logos/GEMDramaPlus.tr-108d09.webp" group-title="Movies",GEM Drama +
+https://ca-rt.onetv.app/gemdramaplus/index-0.m3u8?token=onetv202
+#EXTINF:-1 tvg-id="GEMEntertainment.tr@SD" tvg-logo="logos/GEMEntertainment.tr-260ae3.webp" group-title="Entertainment",GEM Entertainment
+https://ca-rt.onetv.app/gementertainment/index-0.m3u8?token=onetv202
+#EXTINF:-1 tvg-id="GEMFilm.tr@SD" tvg-logo="logos/GEMFilm.tr-944835.webp" group-title="Movies",GEM Film
+https://ca-rt.onetv.app/gemfilm/index-0.m3u8?token=onetv202
+#EXTINF:-1 tvg-id="GEMFit.tr@SD" tvg-logo="logos/GEMFit.tr-52098e.webp" group-title="Sports",GEM Fit
+https://ca-rt.onetv.app/gemfit/index-0.m3u8?token=onetv202
+#EXTINF:-1 tvg-id="GEMFood.tr@SD" tvg-logo="logos/GEMFood.tr-97dbf8.webp" group-title="Cooking",GEM Food
+https://ca-rt.onetv.app/gemfood/index-0.m3u8?token=onetv202
+#EXTINF:-1 tvg-id="GEMJunior.tr@SD" tvg-logo="logos/GEMJunior.tr-a40654.webp" group-title="Kids",GEM Junior
+https://ca-rt.onetv.app/gemjunior/index-0.m3u8?token=onetv202
+#EXTINF:-1 tvg-id="GEMKids.tr@SD" tvg-logo="logos/GEMKids.tr-9907c1.webp" group-title="Kids",GEM Kids
+https://ca-rt.onetv.app/gemkids/index-0.m3u8?token=onetv202
+#EXTINF:-1 tvg-id="GEMLife.tr@SD" tvg-logo="logos/GEMLife.tr-de2e48.webp" group-title="Lifestyle",GEM Life
+https://ca-rt.onetv.app/gemlife/index-0.m3u8?token=onetv202
+#EXTINF:-1 tvg-id="GEMMifa.tr@SD" tvg-logo="logos/GEMMifa.tr-450b99.webp" group-title="Music",GEM Mifa
+https://ca-rt.onetv.app/gemmifa/index-0.m3u8?token=onetv202
+#EXTINF:-1 tvg-id="GEMMifaPlus.tr@SD" tvg-logo="logos/GEMMifaPlus.tr-f12316.webp" group-title="Music",GEM Mifa +
+https://ca-rt.onetv.app/gemmifaplus/index-0.m3u8?token=onetv202
+#EXTINF:-1 tvg-id="GEMNature.tr@SD" tvg-logo="logos/GEMNature.tr-aa383c.webp" group-title="Documentary",GEM Nature
+https://ca-rt.onetv.app/gemnature/index-0.m3u8?token=onetv202
+#EXTINF:-1 tvg-id="GEMOnyx.tr@SD" tvg-logo="logos/GEMOnyx.tr-ba94fa.webp" group-title="Movies",GEM Onyx
+https://ca-rt.onetv.app/gemonyx/index-0.m3u8?token=onetv202
+#EXTINF:-1 tvg-id="GEMPixel.tr@SD" tvg-logo="" group-title="Movies",GEM Pixel
+https://glserver1.tamashaland.com/live/aBCH96886YznRbGOiqTnnQ__/stream_0.m3u8
+#EXTINF:-1 tvg-id="GEMRiver.tr@SD" tvg-logo="logos/GEMRiver.tr-0e1c8e.webp" group-title="Entertainment",GEM River
+https://ca-rt.onetv.app/gemriver/index-0.m3u8?token=onetv202
+#EXTINF:-1 tvg-id="GEMRiverPlus.tr@SD" tvg-logo="logos/GEMRiverPlus.tr-9cb12c.webp" group-title="Entertainment",GEM River +
+https://ca-rt.onetv.app/gemriverplus/index-0.m3u8?token=onetv202
+#EXTINF:-1 tvg-id="GEMRubix.tr@SD" tvg-logo="logos/GEMRubix.tr-1cb050.webp" group-title="Movies",GEM Rubix
+https://ca-rt.onetv.app/gemrubix/index-0.m3u8?token=onetv202
+#EXTINF:-1 tvg-id="GEMRubixPlus.tr@SD" tvg-logo="logos/GEMRubixPlus.tr-48a6ee.webp" group-title="Movies",GEM Rubix +
+https://ca-rt.onetv.app/gemrubixplus/index-0.m3u8?token=onetv202
+#EXTINF:-1 tvg-id="GEMSeriesPlus.tr@SD" tvg-logo="logos/GEMSeriesPlus.tr-7751ae.webp" group-title="Series",GEM Series +
+https://ca-rt.onetv.app/gemseriesplus/index-0.m3u8?token=onetv202
+#EXTINF:-1 tvg-id="GEMSport.tr@SD" tvg-logo="logos/GEMSport.tr-8f16ce.webp" group-title="Sports",GEM Sport
+https://steep-wildflower-284d.nhhwkiszzzvcuojxdo.workers.dev/?url=https://gg.hls2.xyz/live/IR+-+GEM+Sport/chunks.m3u8
+#EXTINF:-1 tvg-id="GEMTV.tr@SD" tvg-logo="logos/GEMTV.tr-16f3b2.webp" group-title="Movies",GEM TV
+https://ca-rt.onetv.app/gem/index-0.m3u8?token=onetv202
+#EXTINF:-1 tvg-id="GEMTVPlus.tr@SD" tvg-logo="logos/GEMTVPlus.tr-5808d1.webp" group-title="Movies",GEM TV +
+https://ca-rt.onetv.app/gemtvplus/index-0.m3u8?token=onetv202
+#EXTINF:-1 tvg-id="GoldStar.ir@SD" tvg-logo="" group-title="Movies",Gold Star
+https://moviethls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="GrandCinema.tr@SD" tvg-logo="" group-title="Movies",Grand Cinema
+https://gcinemahls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="HighVisionTV.us@SD" tvg-logo="logos/HighVisionTV.us-a3e7e3.webp" group-title="Music",High Vision TV (1080p) [Not 24/7]
+https://streamer1.connectto.com/HIGHVISION_WEB_1205/index.m3u8
+#EXTINF:-1 tvg-id="HodHodFarsiTV.ir@SD" tvg-logo="logos/HodHodFarsiTV.ir-8479b2.webp" group-title="Kids",HodHod Farsi TV (1080p)
+https://northtelecom.b-cdn.net/hodhodtv.m3u8
+#EXTINF:-1 tvg-id="HomePlus.ir@SD" tvg-logo="" group-title="Movies",HomePlus
+https://homeplushls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="ICCplus.us@SD" tvg-logo="" group-title="Movies",ICC plus (1080p)
+https://icchls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="ICnet1.ca@SD" tvg-logo="logos/ICnet1.ca-f1cce3.webp" group-title="Religious",ICnet 1
+https://icnet1hls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="ICnet2.ca@SD" tvg-logo="logos/ICnet2.ca-46c635.webp" group-title="Religious",ICnet 2
+https://icnet2hls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="icnet3.ca@SD" tvg-logo="" group-title="Religious",icnet 3
+https://ic3hls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="iFilm2.ir@SD" tvg-logo="logos/iFilm2.ir-e685d6.webp" group-title="Movies",iFilm 2
+https://live.presstv.co.uk/hls/ifilm2.m3u8
+#EXTINF:-1 tvg-id="iFilmPersian.ir@SD" tvg-logo="logos/iFilmPersian.ir-7e0b7c.webp" group-title="Movies",iFilm Persian
+https://live.presstv.co.uk/hls/ifilmfa.m3u8
+#EXTINF:-1 tvg-id="IranInternational.uk@SD" tvg-logo="logos/IranInternational.uk-2ee869.webp" group-title="News",Iran International (1080p)
+https://hlspackager.akamaized.net/live/DB/IRAN_INTERNATIONAL/HLS/IRAN_INTERNATIONAL.m3u8
+#EXTINF:-1 tvg-id="IranNama.fr@SD" tvg-logo="" group-title="Undefined",Iran Nama
+https://iran613hls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="IranNationalRevolutionTV.us@HD" tvg-logo="" group-title="Undefined",Iran National Revolution TV
+https://hls.irannrtv.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="IranPress.ir@SD" tvg-logo="logos/IranPress.ir-375798.webp" group-title="News",Iran Press
+https://live.presstv.ir/hls/presstv_5_482/index.m3u8
+#EXTINF:-1 tvg-id="IraneFardaTV.uk@SD" tvg-logo="logos/IraneFardaTV.uk-6e7c29.webp" group-title="News",IraneFarda TV
+https://iranefardalive.com/stream/live.m3u8
+#EXTINF:-1 tvg-id="KalemehTV.uk@SD" tvg-logo="logos/KalemehTV.uk-de2f09.webp" group-title="Religious",Kalemeh TV
+https://kalemeh.tv/live/hls/gate.php?p=/live/ngrp:kalemeh_all/playlist.m3u8
+#EXTINF:-1 tvg-id="KanalJadid.uk@SD" tvg-logo="logos/KanalJadid.uk-d90751.webp" group-title="General",Kanal Jadid
+https://kjhls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="LoveWorldPersia.ng@SD" tvg-logo="logos/LoveWorldPersia.ng-fad6e2.webp" group-title="Religious",LoveWorld Persia (720p)
+https://cdn3.wowza.com/5/aVJETlF0UFdmYTFu/LWPP/ngrp:persia.stream_all/playlist.m3u8
+#EXTINF:-1 tvg-id="MaahTV.my@SD" tvg-logo="logos/MaahTV.my-d67ce8.webp" group-title="Movies",Maah TV (720p)
+https://hls.maahtv.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="Manoto.uk@SD" tvg-logo="logos/Manoto.uk-bd52bf.webp" group-title="Entertainment",Manoto
+https://ca-rt.onetv.app/manototv/index-0.m3u8?token=onetv202
+#EXTINF:-1 tvg-id="MarjaeyatTVPersian.iq@SD" tvg-logo="logos/MarjaeyatTVPersian.iq-c88f6b.webp" group-title="Religious",Marjaeyat TV Persian (240p) [Not 24/7]
+https://livefa.marjaeyattv.com/mtv_fa/playlist.m3u8
+#EXTINF:-1 tvg-id="MBCPersia.ae@SD" tvg-logo="logos/MBCPersia.ae-392d39.webp" group-title="Entertainment",MBC Persia (1080p)
+https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-persia/818ee8e4b592dc497608f066d825bfb4/index.m3u8
+#EXTINF:-1 tvg-id="MetaFilmTV.ir@SD" tvg-logo="" group-title="Movies",Meta Film TV
+https://metafilmhls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="MihanTV.ir@SD" tvg-logo="logos/MihanTV.ir-f74551.webp" group-title="News",Mihan TV
+https://iptv.mihantv.com/mihantv/playlist.m3u8
+#EXTINF:-1 tvg-id="MTC.us@SD" tvg-logo="logos/MTC.us-fe9d77.webp" group-title="Undefined",MTC
+https://mtchls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="NationalIranianCongressTV.us@SD" tvg-logo="logos/NationalIranianCongressTV.us-1fdb9b.webp" group-title="News",National Iranian Congress TV
+https://tv.iraniancongress.com/stream/tv.m3u8
+#EXTINF:-1 tvg-id="NavahangTV.fi@SD" tvg-logo="logos/NavahangTV.fi-31579e.webp" group-title="Music",Navahang TV (720p)
+https://hls.navahang.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="NewFlix.ir@SD" tvg-logo="" group-title="Movies",NewFlix
+https://newfhls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="NourTV.ae@SD" tvg-logo="logos/NourTV.ae-bdad95.webp" group-title="Religious",Nour TV
+https://cdn.bestream.io:19360/elfaro4/elfaro4.m3u8
+#EXTINF:-1 tvg-id="OmideIranTV.us@SD" tvg-logo="logos/OmideIranTV.us-1aa827.webp" group-title="Entertainment",Omid e Iran TV
+https://oitnhls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="OXIRTV.ir@SD" tvg-logo="logos/OXIRTV.ir-8974bd.webp" group-title="Entertainment",OXIR TV
+https://hls.oxir.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="ParsTV.us@SD" tvg-logo="logos/ParsTV.us-03e197.webp" group-title="General",Pars TV
+https://parshls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="PayamJavanTV.us@SD" tvg-logo="logos/PayamJavanTV.us-ffaecc.webp" group-title="Education",Payam Javan TV (720p) [Not 24/7]
+https://uni01rtmp.tulix.tv/kensecure/pjtv.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="PayameArameshTV.us@SD" tvg-logo="logos/PayameArameshTV.us-e0cc44.webp" group-title="Religious",Payame Aramesh TV (720p)
+https://hls.keshishhamid.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="PayvandTV.ir@SD" tvg-logo="logos/PayvandTV.ir-426495.webp" group-title="Religious",Payvand TV (Iran) (720p) [Not 24/7]
+https://uni6rtmp.tulix.tv/ucur1/Payvand/playlist.m3u8
+#EXTINF:-1 tvg-id="PBCTapeshTV.us@SD" tvg-logo="logos/PBCTapeshTV.us-709bef.webp" group-title="General",PBC Tapesh TV (720p)
+https://iptv.tapesh.tv/tapesh/playlist.m3u8
+#EXTINF:-1 tvg-id="PersianaCinema.fr@SD" tvg-logo="logos/PersianaCinema.fr-c66a17.webp" group-title="Movies",Persiana Cinema
+https://cinehls.persiana.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="PersianaComedy.fr@SD" tvg-logo="logos/PersianaComedy.fr-842baf.webp" group-title="Comedy",Persiana Comedy
+https://comedyhls.persiana.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="PersianaDocs.fr@HD" tvg-logo="" group-title="Documentary",Persiana Docs
+https://scihls.persiana.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="PersianaFamily.fr@SD" tvg-logo="logos/PersianaFamily.fr-51fafa.webp" group-title="Movies",Persiana Family
+https://familyhls.persiana.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="PersianaFight.fr@HD" tvg-logo="" group-title="Sports",Persiana Fight
+https://fighthls.persiana.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="PersianaFolk.fr@HD" tvg-logo="" group-title="Music",Persiana Folk
+https://sonhls.persiana.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="PersianaIranian.fr@SD" tvg-logo="logos/PersianaIranian.fr-533599.webp" group-title="Movies",Persiana Iranian
+https://irhls.persiana.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="PersianaJunior.fr@SD" tvg-logo="logos/PersianaJunior.fr-6edbf6.webp" group-title="Kids",Persiana Junior
+https://junhls.persiana.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="PersianaKorea.fr@SD" tvg-logo="logos/PersianaKorea.fr-358fe5.webp" group-title="Movies",Persiana Korea
+https://korhls.persiana.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="PersianaLatino.fr@SD" tvg-logo="" group-title="Movies",Persiana Latino
+https://latinohls.persiana.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="PersianaMedical.fr@SD" tvg-logo="" group-title="Education",Persiana Medical
+https://phd2hls.persiana.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="PersianaNostalgia.fr@SD" tvg-logo="logos/PersianaNostalgia.fr-347f4c.webp" group-title="Classic;Music",Persiana Nostalgia
+https://noshls.persiana.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="PersianaPlus.fr@SD" tvg-logo="logos/PersianaPlus.fr-72f360.webp" group-title="Movies",Persiana Plus
+https://euhls.persiana.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="PersianaReality.fr@HD" tvg-logo="" group-title="Entertainment",Persiana Reality
+https://twohls.persiana.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="PersianaSeries.fr@HD" tvg-logo="" group-title="Series",Persiana Series
+https://onehls.persiana.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="PersianaTeen.fr@SD" tvg-logo="" group-title="Kids",Persiana Teen
+https://kphls.persiana.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="PersianaTravel.fr@SD" tvg-logo="" group-title="Documentary",Persiana Travel
+https://ptravelhls.persiana.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="PersianaTurkiye.fr@SD" tvg-logo="" group-title="Entertainment",Persiana Turkiye
+https://turkhls.persiana.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="PersianaVibe.fr@HD" tvg-logo="" group-title="Music",Persiana Vibe
+https://raphls.persiana.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="PMC.ae@SD" tvg-logo="logos/PMC.ae-0b88f1.webp" group-title="Music",PMC
+https://pmchls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="PMCRoyale.ae@SD" tvg-logo="" group-title="Music",PMC Royale (1080p)
+https://pmcrohls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="PooyaTV.ir@SD" tvg-logo="logos/PooyaTV.ir-57f8f9.webp" group-title="Kids",Pooya TV
+https://tgn.bozztv.com/eshgtv-dvrfl05/gin-iribpooya/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-id="RasoulallahTv.ir@HD" tvg-logo="logos/RasoulallahTv.ir-ee79e3.webp" group-title="Religious",RasoulallahTv (1080p)
+https://avr.host247.net/live/rasoulallahtv/playlist.m3u8
+#EXTINF:-1 tvg-id="RJTV.us@SD" tvg-logo="logos/RJTV.us-c86da5.webp" group-title="Music",RJTV (1080p)
+https://rjtvhls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="Sat7Pars.cy@SD" tvg-logo="logos/Sat7Pars.cy-af5184.webp" group-title="Religious",Sat 7 Pars
+https://sat7phls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="Shabakeh7.us@SD" tvg-logo="logos/Shabakeh7.us-25b2b9.webp" group-title="Entertainment",Shabakeh 7
+https://sh7hls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="SimayeAzadi.uk@SD" tvg-logo="logos/SimayeAzadi.uk-cb613a.webp" group-title="General",Simaye Azadi (1080p)
+https://simaytv.akamaized.net/hls/live/2043550/simayhls/index.m3u8
+#EXTINF:-1 tvg-id="SL1.ir@SD" tvg-logo="logos/SL1.ir-02a3af.webp" group-title="Movies",SL 1
+https://slonehls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="SL2.ir@SD" tvg-logo="logos/SL2.ir-994e00.webp" group-title="Movies",SL 2
+https://sltwohls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="SNNTV.ir@SD" tvg-logo="logos/SNNTV.ir-7b96c9.webp" group-title="News",SNN TV [Not 24/7]
+https://live2.snn.ir/hls/snn2_hd720/index.m3u8
+#EXTINF:-1 tvg-id="T2Movies.ir@SD" tvg-logo="" group-title="Movies",T2 Movies
+https://ca-rt.onetv.app/T2Movies/index-0.m3u8?token=onetv202
+#EXTINF:-1 tvg-id="T2TV.ir@SD" tvg-logo="logos/T2TV.ir-911cf2.webp" group-title="Music",T2 TV
+https://t2hls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="Tapesh2.us@SD" tvg-logo="logos/Tapesh2.us-2bc93e.webp" group-title="Undefined",Tapesh 2
+https://maxtvhls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="TBNNejatTV.ir@SD" tvg-logo="logos/TBNNejatTV.ir-23b3f0.webp" group-title="Undefined",TBN Nejat TV
+https://hls.nejat.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="TinTV.us@SD" tvg-logo="logos/TinTV.us-f2c209.webp" group-title="Entertainment",Tin TV (720p)
+https://tulixcdn.akamaized.net/tintv6/tintv/tintv/playlist.m3u8
+#EXTINF:-1 tvg-id="TMTV.us@SD" tvg-logo="" group-title="General",TM TV (United States) (720p)
+https://hls.tmtv.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="TVITN.ir@SD" tvg-logo="logos/TVITN.ir-f534bc.webp" group-title="Entertainment",TV ITN
+https://itnhls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="VelayatTVNetwork.us@SD" tvg-logo="logos/VelayatTVNetwork.us-6c55e5.webp" group-title="Religious",Velayat TV Network (480p)
+https://nl.livekadeh.com/hls2/velayattv.m3u8
+#EXTINF:-1 tvg-id="VoATVPersian.us@SD" tvg-logo="logos/VoATVPersian.us-8dc7db.webp" group-title="News",VoA TV Persian (1080p)
+https://voa-ingest.akamaized.net/hls/live/2033876/tvmc07/playlist.m3u8
+#EXTINF:-1 tvg-id="YourTimeTV.ir@SD" tvg-logo="logos/YourTimeTV.ir-bc9760.webp" group-title="Entertainment",YourTime TV
+https://hls.yourtime.live/hls/stream.m3u8
