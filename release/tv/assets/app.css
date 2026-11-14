@@ -129,10 +129,10 @@ svg {
 
 /* ---------- Glass panels ---------- */
 
+.catbar,
 .search,
 .list,
 .list-msg,
-.seg,
 .now,
 .menu,
 .card,
@@ -143,10 +143,10 @@ svg {
 }
 
 @supports ((-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))) {
+  .catbar,
   .search,
   .list,
   .list-msg,
-  .seg,
   .now,
   .menu,
   .card,
@@ -172,7 +172,8 @@ svg {
 .topbar {
   display: flex;
   align-items: center;
-  min-height: 3.4rem;
+  justify-content: space-between;
+  min-height: 3.2rem;
   flex-shrink: 0;
   margin-bottom: 1.1rem;
 }
@@ -181,7 +182,6 @@ svg {
   display: flex;
   align-items: center;
   flex-shrink: 0;
-  width: 11rem;
   font-size: 1.4rem;
   font-weight: 700;
   letter-spacing: -0.01em;
@@ -219,84 +219,70 @@ svg {
   margin-left: 0.4rem;
 }
 
-/* ---------- Categories: a segmented control for the three groups, and the
-   categories of the chosen group right below it. Nothing to scroll. ---------- */
+/* ---------- Category sidebar: headings with their categories, paged
+   (never scrolled) when they do not all fit. ---------- */
 
-.cats {
+.catbar {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  flex: 1;
-  min-width: 0;
-}
-
-.seg {
-  display: flex;
   flex-shrink: 0;
-  padding: 0.25rem;
-  border-radius: 1.5rem;
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.06);
+  width: 14.5rem;
+  min-height: 0;
+  margin-left: 1.4rem;
+  padding: 0.55rem;
+  border-radius: var(--radius-lg);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05);
 }
 
-.seg-btn {
-  position: relative;
-  min-width: 7.2rem;
-  height: 2.5rem;
-  margin: 0 0.1rem;
-  padding: 0 1.2rem;
-  border-radius: 1.25rem;
-  color: var(--muted);
-  font-size: 1rem;
+.cat-list {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.cat-head {
+  flex-shrink: 0;
+  height: 2rem;
+  padding: 0.55rem 0.8rem 0;
+  color: var(--muted-2);
+  font-size: 0.78rem;
   font-weight: 700;
   white-space: nowrap;
-  transition: transform 0.18s var(--ease), background-color 0.18s, color 0.18s, box-shadow 0.18s;
 }
 
-/* The group whose categories are shown. */
-.seg-btn.is-shown {
-  background: var(--fill-3);
-  color: var(--text);
-  box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 0.35);
-}
-
-/* A small dot marks the group of the category that is playing in the list. */
-.seg-btn.has-active::after {
-  content: "";
-  position: absolute;
-  bottom: 0.3rem;
-  right: 50%;
-  width: 0.3rem;
-  height: 0.3rem;
-  margin-right: -0.15rem;
-  border-radius: 50%;
-  background: var(--accent);
-}
-
-.cat-items {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  min-height: 2.6rem;
-  margin-top: 0.55rem;
-}
-
-.chip {
+.cat-item {
   position: relative;
+  display: flex;
+  align-items: center;
   flex-shrink: 0;
-  height: 2.4rem;
-  margin: 0 0.25rem;
-  padding: 0 1.05rem;
-  border-radius: 1.2rem;
-  color: var(--muted);
+  width: 100%;
+  height: 2.35rem;
+  margin: 0.08rem 0;
+  padding: 0 0.85rem;
+  border-radius: 0.75rem;
+  color: var(--text);
   font-size: 0.95rem;
+  text-align: right;
   white-space: nowrap;
   transition: transform 0.18s var(--ease), background-color 0.18s, color 0.18s, box-shadow 0.18s;
 }
 
-/* Download size of the big lists, as a quiet badge. */
-.chip small {
-  margin-right: 0.45rem;
+.cat-label {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cat-star {
+  margin-left: 0.4rem;
+  color: var(--warn);
+}
+
+/* Download size of the bigger lists, as a quiet badge at the far end. */
+.cat-item small {
+  flex-shrink: 0;
+  margin-right: auto;
   padding: 0.05rem 0.45rem;
   border-radius: 0.6rem;
   background: rgba(255, 255, 255, 0.08);
@@ -304,15 +290,55 @@ svg {
   font-size: 0.68em;
 }
 
-.chip.is-active {
+.cat-item.is-active {
   background: var(--accent);
   color: var(--accent-ink);
   font-weight: 700;
 }
 
-.chip.is-active small {
+.cat-item.is-active small {
   background: rgba(0, 0, 0, 0.2);
   color: inherit;
+}
+
+.cat-item.is-active .cat-star {
+  color: inherit;
+}
+
+.cat-pager {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  margin-top: 0.45rem;
+}
+
+.cat-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  height: 2.2rem;
+  border-radius: 1.1rem;
+  background: var(--fill);
+  color: var(--text);
+  transition: transform 0.18s var(--ease), background-color 0.18s, color 0.18s, box-shadow 0.18s;
+}
+
+.cat-page svg {
+  width: 1.1rem;
+  height: 1.1rem;
+}
+
+.cat-page.is-off {
+  opacity: 0.35;
+}
+
+.cat-page-info {
+  flex-shrink: 0;
+  min-width: 3.6rem;
+  color: var(--muted);
+  font-size: 0.8rem;
+  text-align: center;
 }
 
 .top-actions {
@@ -320,7 +346,6 @@ svg {
   align-items: center;
   justify-content: flex-end;
   flex-shrink: 0;
-  width: 11rem;
 }
 
 .clock {
@@ -1123,8 +1148,8 @@ svg {
 /* ---------- Focus: the focused item lifts, grows a little and turns bright,
    so it is easy to find from across the room. ---------- */
 
-.seg-btn:focus,
-.chip:focus,
+.cat-item:focus,
+.cat-page:focus,
 .foot-btn:focus,
 .page-btn:focus,
 .icon-btn:focus,
@@ -1139,10 +1164,19 @@ svg {
   transform: scale(1.08);
 }
 
-.chip:focus small,
+.cat-item:focus small,
 .menu-item:focus small {
   background: rgba(0, 0, 0, 0.08);
   color: #3a3a3c;
+}
+
+.cat-item:focus {
+  -webkit-transform: scale(1.04);
+  transform: scale(1.04);
+}
+
+.cat-item:focus .cat-star {
+  color: #b38600;
 }
 
 .row:focus {
@@ -1180,8 +1214,8 @@ svg {
 /* Pointer users (mouse, or a TV remote's on-screen pointer) get hover hints
  * without stealing remote focus. */
 @media (hover: hover) {
-  .seg-btn:hover,
-  .chip:hover,
+  .cat-item:hover,
+  .cat-page:hover,
   .foot-btn:hover,
   .page-btn:hover,
   .icon-btn:hover,
@@ -1193,7 +1227,7 @@ svg {
     color: var(--text);
   }
 
-  .chip.is-active:hover,
+  .cat-item.is-active:hover,
   .btn.primary:hover {
     background: var(--accent);
     color: var(--accent-ink);
@@ -1228,31 +1262,42 @@ svg {
     width: auto;
   }
 
-  .cats {
-    order: 3;
-    width: 100%;
-    flex: none;
-    align-items: stretch;
-    margin-top: 0.6rem;
+  /* On a phone the categories become one strip that slides sideways. */
+  .catbar {
+    width: auto;
+    margin: 0 0 0.7rem;
+    padding: 0.35rem;
   }
 
-  .seg-btn {
-    flex: 1;
-    min-width: 0;
-    padding: 0 0.5rem;
-  }
-
-  /* On a phone the categories of a group slide sideways; a swipe is natural there. */
-  .cat-items {
-    flex-wrap: nowrap;
-    justify-content: flex-start;
+  .cat-list {
+    flex-direction: row;
+    align-items: center;
     overflow-x: auto;
     overflow-y: hidden;
     scrollbar-width: none;
-    padding: 0.3rem 0.2rem;
   }
 
-  .cat-items::-webkit-scrollbar {
+  .cat-list::-webkit-scrollbar {
+    display: none;
+  }
+
+  .cat-head {
+    height: auto;
+    padding: 0 0.9rem 0 0.5rem;
+    border-right: 1px solid var(--sep);
+  }
+
+  .cat-head:first-child {
+    padding-right: 0.4rem;
+    border-right: 0;
+  }
+
+  .cat-item {
+    width: auto;
+    margin: 0 0.15rem;
+  }
+
+  .cat-pager {
     display: none;
   }
 
@@ -1312,8 +1357,7 @@ svg {
 
 /* Less motion when the device asks for it. */
 @media (prefers-reduced-motion: reduce) {
-  .seg-btn,
-  .chip,
+  .cat-item,
   .row,
   .ctl,
   .btn,

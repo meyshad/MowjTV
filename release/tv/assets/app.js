@@ -12,27 +12,45 @@
    * from IPTV-ORG), so everything but the video streams comes from this host. */
   var DATA = "data/";
 
-  /* Three groups in a segmented control (Persian, topics, regions); the
-   * categories of the chosen group sit right below it, so every category is
-   * on screen in two short rows. "note" marks the bigger downloads. */
+  /* Categories live in a sidebar under three headings: Persian, topics and
+   * regions. Small IPTV-ORG lists are merged into broader ones by the data
+   * build. "note" marks the bigger downloads. */
   var CATEGORY_GROUPS = { persian: "فارسی", topic: "موضوع", region: "منطقه" };
   var GROUP_ORDER = ["persian", "topic", "region"];
 
   var CATEGORIES = [
     { key: "fav", group: "persian", title: "محبوب‌ها", favorites: true },
     { key: "fas", group: "persian", title: "شبکه‌های فارسی" },
+    { key: "afghan", group: "persian", title: "افغانستان و تاجیکستان" },
     { key: "provinces", group: "persian", title: "استانی", provincialOnly: true },
     { key: "news", group: "topic", title: "خبری" },
     { key: "sports", group: "topic", title: "ورزشی" },
     { key: "music", group: "topic", title: "موسیقی" },
-    { key: "documentary", group: "topic", title: "مستند" },
-    { key: "kids", group: "topic", title: "کودک" },
+    { key: "entertainment", group: "topic", title: "سرگرمی" },
     { key: "movies", group: "topic", title: "فیلم و سریال" },
+    { key: "documentary", group: "topic", title: "مستند و علمی" },
+    { key: "kids", group: "topic", title: "کودک و انیمیشن" },
+    { key: "education", group: "topic", title: "آموزشی" },
+    { key: "culture", group: "topic", title: "فرهنگی" },
+    { key: "religious", group: "topic", title: "مذهبی" },
+    { key: "comedy", group: "topic", title: "کمدی" },
+    { key: "lifestyle", group: "topic", title: "سبک زندگی و سفر" },
+    { key: "business", group: "topic", title: "اقتصادی" },
+    { key: "classic", group: "topic", title: "کلاسیک" },
+    { key: "legislative", group: "topic", title: "پارلمانی و دولتی" },
     { key: "tr", group: "region", title: "ترکیه" },
     { key: "mideast", group: "region", title: "خاورمیانه" },
+    { key: "arab", group: "region", title: "کشورهای عربی" },
+    { key: "cas", group: "region", title: "آسیای میانه" },
+    { key: "sas", group: "region", title: "آسیای جنوبی" },
     { key: "eas", group: "region", title: "آسیای شرقی" },
+    { key: "sea", group: "region", title: "جنوب شرق آسیا" },
+    { key: "cis", group: "region", title: "روسیه و همسایگان" },
     { key: "eur", group: "region", title: "اروپا", note: "۰٫۶MB" },
-    { key: "amer", group: "region", title: "آمریکا", note: "۰٫۶MB" },
+    { key: "afr", group: "region", title: "آفریقا" },
+    { key: "noram", group: "region", title: "آمریکای شمالی", note: "۰٫۴MB" },
+    { key: "latam", group: "region", title: "آمریکای لاتین", note: "۰٫۳MB" },
+    { key: "oce", group: "region", title: "اقیانوسیه" },
     { key: "all", group: "region", title: "همه", note: "۱٫۵MB", timeout: 60000 },
   ];
 
@@ -2273,99 +2291,231 @@
    * Categories, search and loading
    * ------------------------------------------------------------------ */
 
-  var shownGroup = "";
+  /* ------------------------------------------------------------------ *
+   * Category sidebar: headings with their categories, paged like the
+   * channel list when they do not all fit (never scrolled).
+   * ------------------------------------------------------------------ */
+
+  var MOBILE_QUERY = "(max-width: 820px), (orientation: portrait) and (max-width: 1100px)";
 
   function groupOf(cat) {
     return (cat && cat.group) || "persian";
   }
 
-  function makeChip(cat) {
-    var chip = document.createElement("button");
-    chip.type = "button";
-    chip.className = "chip" + (state.cat && state.cat.key === cat.key ? " is-active" : "");
-    chip.setAttribute("data-nav", "");
-    chip.setAttribute("data-cat", cat.key);
-    chip.textContent = (cat.favorites ? "★ " : "") + cat.title;
-    chip.setAttribute("aria-label", CATEGORY_GROUPS[groupOf(cat)] + ": " + cat.title);
-    if (cat.note) {
-      var small = document.createElement("small");
-      small.textContent = cat.note;
-      chip.appendChild(small);
-    }
-    chip.addEventListener("click", function () {
-      loadCategory(cat.key, false);
-    });
-    return chip;
-  }
-
-  function fillCategoryItems() {
-    var items = $("catItems");
-    if (!items) return;
-    items.textContent = "";
-    CATEGORIES.forEach(function (cat) {
-      if (cat.favorites && !prefs.favorites.length) return;
-      if (groupOf(cat) === shownGroup) items.appendChild(makeChip(cat));
-    });
-  }
-
-  // Focusing (or clicking) a segment shows its categories; the list only
-  // changes when a category is chosen.
-  function showGroup(group) {
-    if (group === shownGroup) return;
-    shownGroup = group;
-    var buttons = $("cats").querySelectorAll(".seg-btn");
-    for (var i = 0; i < buttons.length; i += 1) {
-      var on = buttons[i].getAttribute("data-group") === group;
-      buttons[i].classList.toggle("is-shown", on);
-      buttons[i].setAttribute("aria-selected", on ? "true" : "false");
-    }
-    fillCategoryItems();
-  }
-
-  document.addEventListener("focusin", function (event) {
+  var catbar = (function () {
     var nav = $("cats");
-    if (shownGroup && nav && !nav.contains(event.target)) showGroup(groupOf(state.cat));
-  });
+    var box = $("catList");
+    var entries = [];   // { head: group } or { cat: category }
+    var pages = [];     // [first, last] entry indexes
+    var page = 0;
+    var heights = null;
+
+    function stacked() {
+      return !(window.matchMedia && window.matchMedia(MOBILE_QUERY).matches);
+    }
+
+    function buildEntries() {
+      entries = [];
+      GROUP_ORDER.forEach(function (group) {
+        entries.push({ head: group });
+        CATEGORIES.forEach(function (cat) {
+          if (cat.favorites && !prefs.favorites.length) return;
+          if (groupOf(cat) === group) entries.push({ cat: cat });
+        });
+      });
+    }
+
+    function makeHead(group) {
+      var head = document.createElement("div");
+      head.className = "cat-head";
+      head.setAttribute("aria-hidden", "true");
+      head.textContent = CATEGORY_GROUPS[group];
+      return head;
+    }
+
+    function makeItem(cat, index) {
+      var item = document.createElement("button");
+      item.type = "button";
+      item.className = "cat-item" + (state.cat && state.cat.key === cat.key ? " is-active" : "");
+      item.setAttribute("data-nav", "");
+      item.setAttribute("data-cat", cat.key);
+      item.setAttribute("data-e", String(index));
+      item.setAttribute("aria-label", CATEGORY_GROUPS[groupOf(cat)] + ": " + cat.title);
+      if (cat.favorites) {
+        var star = document.createElement("span");
+        star.className = "cat-star";
+        star.textContent = "★";
+        item.appendChild(star);
+      }
+      var label = document.createElement("span");
+      label.className = "cat-label";
+      label.textContent = cat.title;
+      item.appendChild(label);
+      if (cat.note) {
+        var small = document.createElement("small");
+        small.textContent = cat.note;
+        item.appendChild(small);
+      }
+      item.addEventListener("click", function () {
+        loadCategory(cat.key, false);
+      });
+      return item;
+    }
+
+    function measure() {
+      box.textContent = "";
+      var head = makeHead("persian");
+      var item = makeItem(CATEGORIES[1], 0);
+      box.appendChild(head);
+      box.appendChild(item);
+      var hs = getComputedStyle(head);
+      var is = getComputedStyle(item);
+      heights = {
+        head: head.offsetHeight + parseFloat(hs.marginTop) + parseFloat(hs.marginBottom),
+        item: item.offsetHeight + parseFloat(is.marginTop) + parseFloat(is.marginBottom),
+      };
+      box.textContent = "";
+    }
+
+    // Greedy pages by height; a heading never ends a page.
+    function paginate() {
+      pages = [];
+      if (!stacked()) {
+        pages.push([0, entries.length - 1]);
+        return;
+      }
+      if (!heights) measure();
+      var room = box.clientHeight || 600;
+      var start = 0;
+      var used = 0;
+      for (var i = 0; i < entries.length; i += 1) {
+        var h = entries[i].head ? heights.head : heights.item;
+        if (used + h > room && i > start) {
+          var end = i - 1;
+          if (entries[end].head && end > start) end -= 1;
+          pages.push([start, end]);
+          start = end + 1;
+          // A page that starts inside a group repeats the group heading.
+          used = entries[start].cat ? heights.head : 0;
+          for (var j = start; j <= i; j += 1) used += entries[j].head ? heights.head : heights.item;
+          continue;
+        }
+        used += h;
+      }
+      pages.push([start, entries.length - 1]);
+    }
+
+    function pageOfEntry(index) {
+      for (var p = 0; p < pages.length; p += 1) {
+        if (index >= pages[p][0] && index <= pages[p][1]) return p;
+      }
+      return 0;
+    }
+
+    function entryOfCat(key) {
+      for (var i = 0; i < entries.length; i += 1) {
+        if (entries[i].cat && entries[i].cat.key === key) return i;
+      }
+      return -1;
+    }
+
+    function draw() {
+      box.textContent = "";
+      var range = pages[page] || [0, -1];
+      if (entries[range[0]] && entries[range[0]].cat) box.appendChild(makeHead(groupOf(entries[range[0]].cat)));
+      for (var i = range[0]; i <= range[1]; i += 1) {
+        box.appendChild(entries[i].head ? makeHead(entries[i].head) : makeItem(entries[i].cat, i));
+      }
+      // The pager keeps its space even with one page, so the page size never changes under it.
+      $("catPager").style.visibility = pages.length > 1 ? "" : "hidden";
+      $("catPrev").classList.toggle("is-off", page === 0);
+      $("catNext").classList.toggle("is-off", page >= pages.length - 1);
+      $("catPageInfo").textContent = fa(page + 1) + " / " + fa(pages.length);
+    }
+
+    function render() {
+      var focused = document.activeElement;
+      var focusKey = focused && nav.contains(focused) ? focused.getAttribute("data-cat") : "";
+      buildEntries();
+      paginate();
+      var at = entryOfCat(focusKey || (state.cat ? state.cat.key : ""));
+      page = at >= 0 ? pageOfEntry(at) : Math.min(page, pages.length - 1);
+      draw();
+      if (focusKey) focusCat(focusKey);
+    }
+
+    function focusEntry(index) {
+      var p = pageOfEntry(index);
+      if (p !== page) {
+        page = p;
+        draw();
+      }
+      var el = box.querySelector('[data-e="' + index + '"]');
+      if (el) el.focus();
+      return Boolean(el);
+    }
+
+    function focusCat(key) {
+      var at = entryOfCat(key);
+      return at >= 0 && focusEntry(at);
+    }
+
+    // Up/Down inside the sidebar, across pages; false at either end.
+    function step(from, delta) {
+      var index = Number(from.getAttribute("data-e"));
+      for (var i = index + delta; i >= 0 && i < entries.length; i += delta) {
+        if (entries[i].cat) return focusEntry(i);
+      }
+      return false;
+    }
+
+    function turn(delta) {
+      var target = page + delta;
+      if (target < 0 || target >= pages.length) return;
+      var inBar = nav.contains(document.activeElement) && document.activeElement.getAttribute("data-e");
+      page = target;
+      draw();
+      if (inBar) {
+        var first = box.querySelector(".cat-item");
+        if (first) first.focus();
+      }
+    }
+
+    $("catPrev").addEventListener("click", function () {
+      turn(-1);
+    });
+    $("catNext").addEventListener("click", function () {
+      turn(1);
+    });
+    var wheelAt = 0;
+    box.addEventListener("wheel", function (event) {
+      if (!stacked()) return;
+      event.preventDefault();
+      if (now() - wheelAt < 280 || !event.deltaY) return;
+      wheelAt = now();
+      turn(event.deltaY > 0 ? 1 : -1);
+    }, { passive: false });
+    var resizeTimer = null;
+    window.addEventListener("resize", function () {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(function () {
+        heights = null;
+        render();
+      }, 150);
+    });
+
+    return {
+      el: nav,
+      render: render,
+      step: step,
+      focusActive: function () {
+        return focusCat(state.cat ? state.cat.key : "fas") || Boolean(box.querySelector(".cat-item") && box.querySelector(".cat-item").focus());
+      },
+    };
+  })();
 
   function renderCategories() {
-    var nav = $("cats");
-    var focused = document.activeElement;
-    var refocus = focused && nav.contains(focused)
-      ? (focused.getAttribute("data-cat") ? '[data-cat="' + focused.getAttribute("data-cat") + '"]'
-        : '[data-group="' + focused.getAttribute("data-group") + '"]')
-      : "";
-    if (!shownGroup) shownGroup = groupOf(state.cat);
-    nav.textContent = "";
-    var seg = document.createElement("div");
-    seg.className = "seg";
-    seg.setAttribute("role", "tablist");
-    GROUP_ORDER.forEach(function (group) {
-      var button = document.createElement("button");
-      button.type = "button";
-      button.className = "seg-btn" + (group === shownGroup ? " is-shown" : "") +
-        (state.cat && groupOf(state.cat) === group ? " has-active" : "");
-      button.setAttribute("data-nav", "");
-      button.setAttribute("data-group", group);
-      button.setAttribute("role", "tab");
-      button.setAttribute("aria-selected", group === shownGroup ? "true" : "false");
-      button.textContent = CATEGORY_GROUPS[group];
-      button.addEventListener("focus", function () {
-        showGroup(group);
-      });
-      button.addEventListener("click", function () {
-        showGroup(group);
-      });
-      seg.appendChild(button);
-    });
-    var items = document.createElement("div");
-    items.className = "cat-items";
-    items.id = "catItems";
-    items.setAttribute("role", "tabpanel");
-    nav.appendChild(seg);
-    nav.appendChild(items);
-    fillCategoryItems();
-    var again = refocus && nav.querySelector(refocus);
-    if (again) again.focus();
+    catbar.render();
   }
 
   function showListMessage(title, text, withRetry) {
@@ -2480,7 +2630,6 @@
     $("search").value = "";
     prefs.cat = cat.key;
     savePrefs();
-    shownGroup = groupOf(cat);
     renderCategories();
     state.loadToken += 1;
     var token = state.loadToken;
@@ -2684,23 +2833,11 @@
       }
     });
     if (!best) return false;
-    // Entering the category row lands on the selected category, and entering
-    // the segmented control lands on the group being shown.
-    if ((direction === "up" || direction === "down") && best.classList.contains("chip") &&
-      !from.classList.contains("chip")) {
-      best = $("cats").querySelector(".chip.is-active") || best;
+    // Entering the sidebar from the list or the player lands on the open category.
+    if (catbar.el.contains(best) && !catbar.el.contains(from) && best.classList.contains("cat-item")) {
+      catbar.focusActive();
+      return true;
     }
-    if ((direction === "up" || direction === "down") && best.classList.contains("seg-btn") &&
-      !from.classList.contains("seg-btn")) {
-      best = $("cats").querySelector(".seg-btn.is-shown") || best;
-    }
-    // Going up into the header from the list or the player: the category row comes first.
-    if (direction === "up" && $("cats").contains(best) && !$("cats").contains(from)) {
-      best = $("cats").querySelector(".chip.is-active") || $("cats").querySelector(".chip") || best;
-    }
-    if (best.getAttribute("data-group")) showGroup(best.getAttribute("data-group"));
-    // Leaving the header without choosing: show the group of the open list again.
-    if ($("cats").contains(from) && !$("cats").contains(best)) showGroup(groupOf(state.cat));
     if (best === list.el) list.focusCurrent();
     else best.focus();
     return true;
@@ -2798,6 +2935,12 @@
         applyView(true);
         return;
       }
+      if (!catbar.el.contains(target) && !fullscreen.active) {
+        // Back from the list or the player goes to the category sidebar first.
+        event.preventDefault();
+        catbar.focusActive();
+        return;
+      }
       if (code === 8) event.preventDefault(); // never navigate away on Backspace
       return; // let the TV close the browser / go back
     }
@@ -2878,6 +3021,17 @@
       if (inBar && direction) {
         event.preventDefault();
         moveFocus(direction);
+      }
+      return;
+    }
+
+    // Category sidebar: up/down walk the categories (turning its pages), OK opens one.
+    if (target && target.classList && target.classList.contains("cat-item") &&
+      (direction === "up" || direction === "down")) {
+      event.preventDefault();
+      if (!catbar.step(target, direction === "down" ? 1 : -1) && direction === "down" &&
+        $("catPager").style.visibility !== "hidden" && isVisible($("catPager"))) {
+        $("catNext").focus(); // past the last category: the sidebar's page buttons
       }
       return;
     }
