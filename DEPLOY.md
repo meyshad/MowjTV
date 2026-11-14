@@ -30,16 +30,19 @@ This downloads the IPTV-ORG playlists again, drops channels that no browser can 
 
 - Up/Down: move through the channel list (walking past the first or last row turns the page); in fullscreen, previous/next channel
 - Page buttons under the list: show the previous or next page of channels; they also work with a TV pointer or a mouse wheel
-- Left/Right: move between the list, the player, the controls and the category row
+- Left/Right: move between the category sidebar, the channel list, the player and the controls
+- Up/Down in the sidebar: move through the categories; walking past the last one on a page turns the sidebar's page
 - OK/Enter: play the focused channel; on the channel that is already playing, open fullscreen
 - 0-9: type a channel number to jump to it
 - CH+/CH-: next/previous channel
 - Play/Pause media keys: pause or resume (pausing stops all downloading)
-- Back: close a menu or dialog, or leave fullscreen; on the main screen the TV's normal Back behaviour is kept
+- Back: close a menu or dialog, leave fullscreen, or return from the list or the player to the category sidebar; in the sidebar the TV's normal Back behaviour is kept
 
 ## Playback Behavior
 
 Channel lists come from IPTV-ORG and are bundled with the site when the package is built, while each stream is delivered by its own upstream host. A channel may fail because its stream is offline, region-restricted, blocked by CORS, or served over insecure HTTP. These are upstream limitations that a fully static site cannot bypass. Channels whose links can never work in a browser on an HTTPS site (HTTP-only links, hosts that only allow their own website through CORS, and links that need a custom Referer or User-Agent) are removed when the package is built, and the list footer shows how many were removed.
+
+When a channel has been playing for 30 seconds with no input at all, it switches to fullscreen through the same path as the fullscreen button; Back leaves fullscreen as usual, and the next switch needs another full 30 seconds without input.
 
 Automatic quality is capped at 480p. When a channel offers several renditions the player starts low and climbs to the cap only when the connection allows it, and it lowers the cap for the session after a long stall. Viewers can pick 720p or 1080p from the quality menu; the choice is saved and applied to every channel that offers it. Channels that only publish one high-quality rendition are marked as data-heavy.
 

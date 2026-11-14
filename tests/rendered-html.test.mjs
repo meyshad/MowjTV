@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { access, readdir, readFile, stat } from "node:fs/promises";
 import test from "node:test";
+import { runInNewContext } from "node:vm";
 
 const projectRoot = new URL("../", import.meta.url);
 
@@ -69,11 +70,15 @@ test("ships a self-hosted TV folder", async () => {
   assert.match(script, /var DATA = "data\/";/);
   assert.match(script, /PROVINCIAL_NAMES/);
   const categoryKeys = [...script.matchAll(/\{ key: "(\w+)"/g)].map((m) => m[1]).filter((key) => key !== "fav");
-  assert.ok(categoryKeys.length >= 14);
+  assert.ok(categoryKeys.length >= 30, "a broad set of categories");
+  const buildScript = await readFile(new URL("../scripts/build-data.mjs", import.meta.url), "utf8");
+  for (const key of categoryKeys) {
+    assert.match(buildScript, new RegExp(`^  ${key}: \\[`, "m"), `the data build makes ${key}`);
+  }
   for (const key of categoryKeys) {
     await access(new URL(`../public/tv/data/${key}.m3u`, import.meta.url));
   }
-  assert.match(script, /CATEGORY_GROUPS = \{ topic: "موضوع", region: "منطقه" \}/);
+  assert.match(script, /CATEGORY_GROUPS = \{ persian: "فارسی", topic: "موضوع", region: "منطقه" \}/);
   assert.match(script, /"GZT\.tr": \["https:\/\/gzttv-live\.lg\.mncdn\.com\/gzttv-live\/gzttv\/playlist\.m3u8"\]/);
   assert.match(script, /CORS_LOCKED_HOSTS = \["ncdn\.telewebion\.ir"\]/);
   assert.doesNotMatch(script, /api\/streams\.json/, "the 4 MB streams index must not be downloaded");
@@ -100,8 +105,21 @@ test("ships a self-hosted TV folder", async () => {
   assert.match(script, /function turnPage\(delta\)/);
   assert.doesNotMatch(script, /scrollTop/, "the channel list must not rely on scrolling");
   assert.match(styles, /\.list \{[^}]*overflow: hidden;/);
-  assert.match(styles, /\.cats-row \{[^}]*flex-wrap: wrap;/);
-  assert.match(script, /group === "region" \? rows\.region : rows\.main/, "regions get their own row");
+  // Category sidebar: headings with their categories, paged instead of scrolled
+  assert.match(html, /<nav class="catbar" id="cats"/);
+  for (const id of ["catList", "catPager", "catPrev", "catNext", "catPageInfo"]) {
+    assert.match(html, new RegExp(`id="${id}"`), `missing #${id}`);
+  }
+  assert.match(styles, /\.cat-list \{[^}]*overflow: hidden;/);
+  assert.match(script, /function paginate\(\)/);
+  assert.match(script, /catbar\.step\(target/, "Up/Down walk the sidebar across its pages");
+  assert.match(script, /Back from the list or the player goes to the category sidebar/);
+
+  // Dark only, with glass as an enhancement and a lifted focus state
+  assert.doesNotMatch(styles, /prefers-color-scheme|data-theme/, "there is no light theme");
+  assert.match(styles, /@supports \(\(-webkit-backdrop-filter: blur\(1px\)\) or \(backdrop-filter: blur\(1px\)\)\)/);
+  assert.match(styles, /\.row:focus \{[^}]*transform: scale\(/);
+  assert.doesNotMatch(styles, /SF Pro|San Francisco/, "no bundled or named Apple fonts");
   assert.match(styles, /@media \(hover: hover\) \{/, "hover hints for TV pointers too");
 
   // Fully self-hosted: nothing but the video streams comes from another host
@@ -149,8 +167,88 @@ test("ships a self-hosted TV folder", async () => {
   for (const file of await readdir(new URL("../public/tv/data/", import.meta.url))) {
     dataBytes += (await stat(new URL(`../public/tv/data/${file}`, import.meta.url))).size;
   }
-  assert.ok(dataBytes < 4000000, "bundled channel lists should stay small");
+  assert.ok(dataBytes < 6000000, "bundled channel lists should stay small");
   assert.ok(styleInfo.size < 40000, "TV stylesheet should stay lightweight");
+});
+
+async function loadIdle() {
+  const source = await readFile(new URL("../public/tv/assets/idle.js", import.meta.url), "utf8");
+  const sandbox = { setTimeout, clearTimeout };
+  sandbox.window = sandbox;
+  runInNewContext(source, sandbox);
+  return sandbox.MowjIdle;
+}
+
+test("goes fullscreen after 30 idle seconds of playback, never sooner", async (t) => {
+  const MowjIdle = await loadIdle();
+  t.mock.timers.enable({ apis: ["setTimeout"] });
+  const state = { playing: true, fullscreen: false, menu: false };
+  let fired = 0;
+  const idle = MowjIdle({
+    delay: 30000,
+    eligible: () => state.playing && !state.fullscreen && !state.menu,
+    fire: () => {
+      fired += 1;
+      state.fullscreen = true;
+    },
+    setTimeout: (fn, ms) => setTimeout(fn, ms),
+    clearTimeout: (id) => clearTimeout(id),
+  });
+
+  // A full 30 seconds of no input
+  idle.arm();
+  t.mock.timers.tick(29999);
+  assert.equal(fired, 0);
+  t.mock.timers.tick(1);
+  assert.equal(fired, 1);
+
+  // Leaving fullscreen starts a fresh period instead of re-entering at once
+  state.fullscreen = false;
+  idle.arm();
+  t.mock.timers.tick(29000);
+  assert.equal(fired, 1);
+
+  // Any input restarts the count
+  idle.arm();
+  t.mock.timers.tick(20000);
+  idle.arm();
+  t.mock.timers.tick(20000);
+  assert.equal(fired, 1);
+  t.mock.timers.tick(10000);
+  assert.equal(fired, 2);
+
+  // A menu opened meanwhile, a pause, or a failed stream stops it
+  state.fullscreen = false;
+  idle.arm();
+  state.menu = true;
+  t.mock.timers.tick(30000);
+  assert.equal(fired, 2);
+  state.menu = false;
+  state.playing = false;
+  idle.arm();
+  assert.equal(idle.pending(), false, "no timer while nothing is playing");
+  state.playing = true;
+  idle.arm();
+  idle.cancel();
+  t.mock.timers.tick(60000);
+  assert.equal(fired, 2);
+});
+
+test("wires the idle fullscreen to input, playback and visibility", async () => {
+  const [script, html] = await Promise.all([
+    readFile(new URL("../public/tv/assets/app.js", import.meta.url), "utf8"),
+    readFile(new URL("../public/tv/index.html", import.meta.url), "utf8"),
+  ]);
+  assert.match(html, /<script defer src="\.\/assets\/idle\.js\?v=\d+"><\/script>\s*<script defer src="\.\/assets\/app\.js/);
+  assert.match(script, /AUTO_FULLSCREEN_MS = 30000/);
+  assert.match(script, /fire: function \(\) \{\s*fullscreen\.enter\(\);/, "same path as the fullscreen button");
+  assert.match(script, /player\.isPlayingNow\(\) && !fullscreen\.active && !layers\.top\(\)/);
+  for (const type of ["keydown", "mousedown", "click", "wheel", "touchstart", "focusin", "mousemove", "pointermove"]) {
+    assert.match(script, new RegExp(`"${type}"`), `resets on ${type}`);
+  }
+  assert.match(script, /\["pause", "ended", "error", "emptied"\]/);
+  assert.match(script, /if \(document\.visibilityState === "hidden"\) idle\.cancel\(\);/);
+  assert.match(script, /autoFull\.arm\(\); \/\/ a new full idle period/);
 });
 
 test("packages a self-contained release with a root redirect", async () => {

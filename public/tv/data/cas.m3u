@@ -1,0 +1,417 @@
+#EXTM3U x-mowj-hidden="61"
+#EXTINF:-1 tvg-id="3ABNInternational.us@SD" tvg-logo="logos/3ABNInternational.us-910831.webp" group-title="Religious",3ABN International (720p)
+https://3abn.bozztv.com/3abn2/Int_live/smil:Int_live.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="24Horas.es@SD" tvg-logo="logos/24Horas.es-11be8a.webp" group-title="News;Public",24 Horas (720p)
+https://ztnr.rtve.es/ztnr/1694255.m3u8
+#EXTINF:-1 tvg-id="24KZ.kz@SD" tvg-logo="logos/24KZ.kz-39a2af.webp" group-title="News",24KZ (576p)
+https://fs.uplink.kz/24KZ/mono.m3u8?token=onlinetv
+#EXTINF:-1 tvg-id="AndTV.in@International" tvg-logo="logos/AndTV.in-4d5a7a.webp" group-title="Movies",&TV International (1080p)
+https://amg01117-amg01117c1-amgplt0029.playout.now3.amagi.tv/playlist/amg01117-amg01117c1-amgplt0029/playlist.m3u8
+#EXTINF:-1 tvg-id="AbaiTV.kz@SD" tvg-logo="logos/AbaiTV.kz-2c6197.webp" group-title="Culture",Abai TV (720p)
+https://abaitv-stream.qazcdn.com/abaitv/abaitv/playlist.m3u8
+#EXTINF:-1 tvg-id="ABCNewsLive.us@SD" tvg-logo="logos/ABCNewsLive.us-b25df0.webp" group-title="News",ABC News Live (720p)
+https://jmp2.uk/plu-6508be683a0d700008c534e4.m3u8
+#EXTINF:-1 tvg-id="AbejalesTV.ve@HD" tvg-logo="logos/AbejalesTV.ve-6f88ad.webp" group-title="Entertainment",AbejalesTV (720p)
+https://183.bozztv.com/giatv/giatv-AbejalesTV/AbejalesTV/playlist.m3u8
+#EXTINF:-1 tvg-id="AlJazeera.qa@English" tvg-logo="logos/AlJazeera.qa-a59d92.webp" group-title="News",Al Jazeera English (1080p)
+https://live-hls-apps-aje-fa.getaj.net/AJE/index.m3u8
+#EXTINF:-1 tvg-id="AlaToo24.kg@SD" tvg-logo="logos/AlaToo24.kg-9db431.webp" group-title="News",Ala-Too 24 (480p) [Not 24/7]
+https://st2.mediabay.tv/KG_KTRK-Ala-too/playlist.m3u8
+#EXTINF:-1 tvg-id="AlauTV.kz@SD" tvg-logo="logos/AlauTV.kz-d76f3d.webp" group-title="Undefined",Alau TV (576p)
+https://otv.wotom.net/alau/stream.m3u8
+#EXTINF:-1 tvg-id="AlmatyTV.kz@SD" tvg-logo="logos/AlmatyTV.kz-e4a7a0.webp" group-title="General",Almaty TV (576p)
+https://fs.uplink.kz/almaty/mono.m3u8?token=onlinetv
+#EXTINF:-1 tvg-id="AltynAsyr.tm@SD" tvg-logo="" group-title="General",Altyn Asyr (406p) [Not 24/7]
+https://alpha.tv.online.tm/hls/ch001.m3u8
+#EXTINF:-1 tvg-id="AngelTV.in@Europe" tvg-logo="logos/AngelTV.in-813c14.webp" group-title="Religious",Angel TV Europe (720p)
+https://janya-digimix.akamaized.net/vglive-sk-512011/europe/ngrp:angeleurope_all/playlist.m3u8
+#EXTINF:-1 tvg-id="Aqjaiyq.kz@SD" tvg-logo="logos/Aqjaiyq.kz-d3e9a3.webp" group-title="General",Aqjaiyq (576p)
+https://stream.kaztrk.kz/regional/oraltv/index.m3u8
+#EXTINF:-1 tvg-id="Aqlvoy.uz@SD" tvg-logo="logos/Aqlvoy.uz-a711c1.webp" group-title="Kids",Aqlvoy
+https://stream8.cinerama.uz/1205/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-id="Aqtobe.kz@SD" tvg-logo="logos/Aqtobe.kz-e15e15.webp" group-title="General",Aqtobe (576p)
+https://stream.kaztrk.kz/regional/aktobetv/index.m3u8
+#EXTINF:-1 tvg-id="AragonTVInternacional.es@SD" tvg-logo="" group-title="General;Public",Aragon TV Internacional (720p) [Not 24/7]
+https://cartv.streaming.aranova.es/hls/live/aragontv_canal1.m3u8
+#EXTINF:-1 tvg-id="ArirangUN.kr@SD" tvg-logo="logos/ArirangUN.kr-f09059.webp" group-title="News",Arirang UN (1080p)
+https://amdlive-ch02-ctnd-com.akamaized.net/arirang_2ch/smil:arirang_2ch.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="ArkadagTV.tm@SD" tvg-logo="" group-title="General",Arkadag TV (406p) [Not 24/7]
+https://alpha.tv.online.tm/hls/ch000.m3u8
+#EXTINF:-1 tvg-id="Armenia1.am@Sattelite" tvg-logo="logos/Armenia1.am-2cb0db.webp" group-title="General",Armenia 1 Sattelite (1080p)
+https://amtv.tulixcdn.com/amtv2/am2abr/index.m3u8
+#EXTINF:-1 tvg-id="Asgabat.tm@SD" tvg-logo="" group-title="General",Asgabat (406p) [Not 24/7]
+https://alpha.tv.online.tm/hls/ch006.m3u8
+#EXTINF:-1 tvg-id="AtamekenBusiness.kz@SD" tvg-logo="logos/AtamekenBusiness.kz-eb4dfb.webp" group-title="Business",Atameken Business (576p)
+https://fs.uplink.kz/atameken/mono.m3u8?token=onlinetv
+#EXTINF:-1 tvg-id="Atyray.kz@SD" tvg-logo="logos/Atyray.kz-e1d9e0.webp" group-title="General",Atyray (720p)
+https://stream.kaztrk.kz/regional/atyrautv/index.m3u8
+#EXTINF:-1 tvg-id="AutenticHistory.de@SD" tvg-logo="logos/AutenticHistory.de-016088.webp" group-title="Documentary",Autentic History (1080p)
+https://9e754fa707344ccca6d84955c8fcaf36.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RlaxxTV-eu_AutenticHistory/playlist.m3u8
+#EXTINF:-1 tvg-id="AutenticTravel.de@SD" tvg-logo="logos/AutenticTravel.de-1b12c6.webp" group-title="Lifestyle",Autentic Travel (1080p)
+https://cb0c87cc605942ff9766a4e6744bbadc.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RlaxxTV-eu_AutenticTravel/playlist.m3u8
+#EXTINF:-1 tvg-id="AznewsTV.se@SD" tvg-logo="logos/AznewsTV.se-7d1a51.webp" group-title="News",Aznews TV (720p) [Not 24/7]
+https://edge1.socialsmart.tv/aznews/smil/playlist.m3u8
+#EXTINF:-1 tvg-id="BahrainInternational.bh@SD" tvg-logo="logos/BahrainInternational.bh-8d237a.webp" group-title="General",Bahrain International (720p) [Not 24/7]
+https://5c7b683162943.streamlock.net/live/ngrp:bahraininternational_all/playlist.m3u8
+#EXTINF:-1 tvg-id="Balapan.kz@SD" tvg-logo="" group-title="Kids",Balapan (576p)
+https://fs.uplink.kz/balapan/mono.m3u8?token=onlinetv
+#EXTINF:-1 tvg-id="Balapan.kz@HD" tvg-logo="" group-title="Kids",Balapan HD (1080p)
+https://balapantv-stream.qazcdn.com/balapantv/balapantv/playlist.m3u8
+#EXTINF:-1 tvg-id="BalapanInternational.kz@SD" tvg-logo="logos/BalapanInternational.kz-bad87c.webp" group-title="Kids",Balapan International (1080p)
+https://live-3.otcnet.ru/Balapan/index.m3u8
+#EXTINF:-1 tvg-id="BIZCinema.uz@SD" tvg-logo="logos/BIZCinema.uz-bd6feb.webp" group-title="Movies",BIZ Cinema (1080p)
+https://fl.biztv.media/cinema_720_EMfSyXgoRdiIHgldXTZICucKTIeCKO/index.m3u8
+#EXTINF:-1 tvg-id="BIZMusic.uz@SD" tvg-logo="logos/BIZMusic.uz-46c378.webp" group-title="Music",BIZ Music (1080p)
+https://fl.biztv.media/music_720_QAKpGmVUjaPApCNjpsgBxrdqNihAkl/index.m3u8
+#EXTINF:-1 tvg-id="BIZTV.uz@SD" tvg-logo="" group-title="Entertainment",BIZ TV (1080p)
+https://fl.biztv.media/biz_tv_720_uni8jhub4h8fub4idejswh8dh3j94finbu4nidj39inwsj92in3d/index.m3u8
+#EXTINF:-1 tvg-id="BloombergTV.us@Plus" tvg-logo="logos/BloombergTV.us-1dd52b.webp" group-title="Business",Bloomberg TV + (2160p)
+https://d8975dc3.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/U2Ftc3VuZy1nYl9CbG9vbWJlcmdUVlBsdXNfSExT/playlist.m3u8
+#EXTINF:-1 tvg-id="BloombergTV.us@EMEALiveEvent" tvg-logo="logos/BloombergTV.us-1dd52b.webp" group-title="Business",Bloomberg TV EMEA Live Event (720p)
+https://bloomberg.com/media-manifest/streams/eu-event.m3u8
+#EXTINF:-1 tvg-id="BloombergTV.us@Europe" tvg-logo="logos/BloombergTV.us-1dd52b.webp" group-title="Business",Bloomberg TV Europe (720p)
+https://bloomberg.com/media-manifest/streams/eu.m3u8
+#EXTINF:-1 tvg-id="Bolajon.uz@SD" tvg-logo="logos/Bolajon.uz-8cd1e1.webp" group-title="Kids",Bolajon (576p)
+https://stream8.cinerama.uz/1007/playlist.m3u8
+#EXTINF:-1 tvg-id="BuzzfeedUnsolved.pl@FAST" tvg-logo="logos/BuzzfeedUnsolved.pl-ec6d15.webp" group-title="Undefined",Buzzfeed Unsolved (720p)
+https://d39g1vxj2ef6in.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-rakuten-stitched/master.m3u8?ads.xumo_channelId=88883099
+#EXTINF:-1 tvg-id="CarouselInternational.ru@SD" tvg-logo="logos/CarouselInternational.ru-2e17f8.webp" group-title="Kids",Carousel International (576p)
+https://fs.uplink.kz/karusel/mono.m3u8?token=onlinetv
+#EXTINF:-1 tvg-id="CartoonClassics.pl@FAST" tvg-logo="logos/CartoonClassics.pl-94fe90.webp" group-title="Animation;Kids",Cartoon Classics (Poland)
+https://daiconnect.com/live/hls/tvup/rk-cartoonclassics/578f4b7eb725168349ec0af81b21d388/index.m3u8
+#EXTINF:-1 tvg-id="CCTV4Europe.cn@SD" tvg-logo="logos/CCTV4Europe.cn-77c3a4.webp" group-title="General",CCTV-4 Europe
+https://dash2.antik.sk/live/test_cctv_tizen/playlist.m3u8
+#EXTINF:-1 tvg-id="CGTN.cn@SD" tvg-logo="logos/CGTN.cn-e3f7f0.webp" group-title="News",CGTN (1080p)
+https://amg00405-rakutentv-cgtn-rakuten-i9tar.amagi.tv/master.m3u8
+#EXTINF:-1 tvg-id="CGTNDocumentary.cn@SD" tvg-logo="logos/CGTNDocumentary.cn-e7ced1.webp" group-title="Documentary",CGTN Documentary (1080p)
+https://amg00405-rakutentv-cgtndocumentary-rakuten-0ql8j.amagi.tv/master.m3u8
+#EXTINF:-1 tvg-id="CGTNFrench.cn@SD" tvg-logo="logos/CGTNFrench.cn-1617e0.webp" group-title="News",CGTN French (1080p)
+https://amg01314-cgtn-amg01314c2-rakuten-us-1319.playouts.now.amagi.tv/cgtn-fr-rakuten/playlist.m3u8
+#EXTINF:-1 tvg-id="CGTNGlobalBiz.cn@SD" tvg-logo="logos/CGTNGlobalBiz.cn-0b1441.webp" group-title="Business",CGTN Global Biz (1080p)
+https://fastlive.cctvplus.com/out/v1/2b3d8a0c805d437f9dc85b764c2ac599/index.m3u8
+#EXTINF:-1 tvg-id="CGTNRussian.cn@SD" tvg-logo="logos/CGTNRussian.cn-dbcae5.webp" group-title="News",CGTN Russian (1080p)
+https://russian-livews.cgtn.com/hls/LSvexABhNipibK5KRuUkvHZ7220802LSTeze9o8tdFXMHsb1VosgoT220802cd/playlist.m3u8
+#EXTINF:-1 tvg-id="ChannelOneCIS.ru@SD" tvg-logo="logos/ChannelOneCIS.ru-80a231.webp" group-title="General",Channel One CIS (576p)
+https://fs.uplink.kz/perviy_kanal_sng/mono.m3u8?token=onlinetv
+#EXTINF:-1 tvg-id="ChannelOneEurasia.kz@SD" tvg-logo="logos/ChannelOneEurasia.kz-b6a661.webp" group-title="General",Channel One Eurasia (576p)
+https://fs.uplink.kz/perviy_kanal_evrasia/mono.m3u8?token=onlinetv
+#EXTINF:-1 tvg-id="CheksizTV.uz@SD" tvg-logo="" group-title="Entertainment",Cheksiz TV
+https://fl.biztv.media/cheksiz_tv_480_unif7hujidth7f4du83jrhuid3k94j8hfj8d93eubych8eju93n4ubt/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-id="ChinaTravel.cn@SD" tvg-logo="logos/ChinaTravel.cn-ce464d.webp" group-title="Culture;Documentary;Travel",China Travel (1080p)
+https://fastlive.cctvplus.com/out/v1/ca6f9297b7314a63959435028af287fc/index.m3u8
+#EXTINF:-1 tvg-id="CNAInternational.sg@SD" tvg-logo="logos/CNAInternational.sg-e79c92.webp" group-title="News",CNA International (1080p)
+https://freem3u.xyz/api/live/play.m3u8?vid=112
+#EXTINF:-1 tvg-id="CNAOriginals.sg@SD" tvg-logo="logos/CNAOriginals.sg-e37907.webp" group-title="Documentary",CNA Originals (1080p)
+https://amg01082-cna-amg01082c1-rlaxx-us-11304.playouts.now.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="DasturxonTV.uz@SD" tvg-logo="" group-title="General",Dasturxon TV (576p)
+https://stream8.cinerama.uz/1206/tracks-v1a1/playlist.m3u8
+#EXTINF:-1 tvg-id="DGRadio.au@HD" tvg-logo="logos/DGRadio.au-9c99b6.webp" group-title="Music;Religious",DG:Radio (1080p)
+https://mdn.dg.church/683c0cb036885-1/index.m3u8
+#EXTINF:-1 tvg-id="DGTV.au@HD" tvg-logo="" group-title="Religious",DG:TV (1080p)
+https://mdn.dg.church/673ac57a073a4-1/index.m3u8
+#EXTINF:-1 tvg-id="DiscoveringChina.cn@SD" tvg-logo="logos/DiscoveringChina.cn-ebf92a.webp" group-title="Culture;Documentary",Discovering China (1080p)
+https://fastlive.cctvplus.com/out/v1/8442c3bfd4c64a3984389328f6087879/index.m3u8
+#EXTINF:-1 tvg-id="DocuBox.nl@SD" tvg-logo="logos/DocuBox.nl-5c919c.webp" group-title="Documentary",DocuBox
+https://dash3.antik.sk/live/test_docubox_medium_atk/playlist.m3u8
+#EXTINF:-1 tvg-id="DocumentaryPlus.us@International" tvg-logo="logos/DocumentaryPlus.us-c54a85.webp" group-title="Documentary",Documentary+ International (1080p)
+https://1d153317c8db4250b3789601274e2402.mediatailor.us-west-2.amazonaws.com/v1/master/ba62fe743df0fe93366eba3a257d792884136c7f/LINEAR-887-DOCUMENTARYINTERNATIONAL-DOCUMENTARYPLUS/mt/documentaryplus/887/hls/master/playlist.m3u8
+#EXTINF:-1 tvg-id="DroneTV.us@SD" tvg-logo="logos/DroneTV.us-6626a1.webp" group-title="Relax;Travel",DroneTV (1080p)
+https://airvuz-dronetv-1-us.ohlscdn.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="ducktv.sk@SD" tvg-logo="logos/ducktv.sk-63ab99.webp" group-title="Kids",ducktv (720p)
+https://jmp2.uk/stvp-ESBC4700001GR
+#EXTINF:-1 tvg-id="ducktv.sk@HD" tvg-logo="logos/ducktv.sk-63ab99.webp" group-title="Kids",ducktv HD
+https://dash3.antik.sk/live/duck_tv/index.m3u8
+#EXTINF:-1 tvg-id="Dunyoboylab.uz@SD" tvg-logo="" group-title="General",Dunyo bo'ylab (1080p)
+https://stream8.cinerama.uz/1006/tracks-v1a1/playlist.m3u8
+#EXTINF:-1 tvg-id="DUST.us@SD" tvg-logo="logos/DUST.us-65817f.webp" group-title="Movies",DUST (1080p)
+https://dqi7ayt2o24fn.cloudfront.net/playlist.m3u8
+#EXTINF:-1 tvg-id="DW.de@English" tvg-logo="logos/DW.de-4acfe8.webp" group-title="News",DW English (1080p)
+https://amg01644-amg01644c1-amgplt0343.playout.now3.amagi.tv/ts-eu-w1-n2/playlist/amg01644-amg01644c1-amgplt0343/playlist.m3u8
+#EXTINF:-1 tvg-id="ElyssaTV.tn@HD" tvg-logo="logos/ElyssaTV.tn-bfffab.webp" group-title="News",Elyssa TV (1080p)
+https://tv.elyssatv.com/live/master.m3u8
+#EXTINF:-1 tvg-id="ERTCosmos.gr@SD" tvg-logo="logos/ERTCosmos.gr-b53217.webp" group-title="General",ERT Cosmos (1080p)
+https://ert-ucdn.broadpeak-aas.com/bpk-tv/ERTCosmos/default/index.m3u8
+#EXTINF:-1 tvg-id="Ertis.kz@SD" tvg-logo="logos/Ertis.kz-8ae2f5.webp" group-title="General",Ertis (1080p) [Not 24/7]
+https://stream.kaztrk.kz/regional/pavlodartv/index.m3u8
+#EXTINF:-1 tvg-id="EuronewsEnglish.fr@SD" tvg-logo="logos/EuronewsEnglish.fr-4697c3.webp" group-title="News",Euronews English (720p)
+https://jmp2.uk/plu-61de96114757070008d33cae.m3u8
+#EXTINF:-1 tvg-id="EuronewsEnglish.fr@HD" tvg-logo="logos/EuronewsEnglish.fr-4697c3.webp" group-title="News",Euronews English HD
+https://dash4.antik.sk/live/test_euronews/playlist.m3u8
+#EXTINF:-1 tvg-id="EuronewsGerman.fr@SD" tvg-logo="logos/EuronewsGerman.fr-c1fb42.webp" group-title="News",Euronews German (720p)
+https://jmp2.uk/plu-6639d7d4b18d700008da5316.m3u8
+#EXTINF:-1 tvg-id="EuronewsItalian.fr@SD" tvg-logo="logos/EuronewsItalian.fr-080033.webp" group-title="News",Euronews Italian (720p)
+https://acb6ca89.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmxheHhUVi1ldV9FdXJvbmV3c0l0YWxpYW5vX0hMUw/playlist.m3u8
+#EXTINF:-1 tvg-id="EuronewsSpanish.fr@SD" tvg-logo="logos/EuronewsSpanish.fr-080033.webp" group-title="News",Euronews Spanish (1080p)
+https://iptv.bitred.cl/euronews/index.m3u8
+#EXTINF:-1 tvg-id="EurovisionSport.uk@Europe" tvg-logo="logos/EurovisionSport.uk-8c8994.webp" group-title="Sports",Eurovision Sport (1080p)
+https://amg26268-amg26268c34-amgplt0018.playout.now3.amagi.tv/ts-us-e2-n1/playlist/amg26268-amg26268c34-amgplt0018/playlist.m3u8
+#EXTINF:-1 tvg-id="EWTN.us@Europe" tvg-logo="logos/EWTN.us-7ec68a.webp" group-title="Religious",EWTN (United States) Europe (720p)
+https://cdn3.wowza.com/1/T2NXeHF6UGlGbHY3/WFluRldQ/hls/live/playlist.m3u8
+#EXTINF:-1 tvg-id="FargonaMTRK.uz@SD" tvg-logo="" group-title="General",Farg'ona MTRK
+https://stream8.cinerama.uz/1458/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-id="FashionBox.nl@SD" tvg-logo="logos/FashionBox.nl-49c237.webp" group-title="Lifestyle",FashionBox
+https://dash2.antik.sk/live/test_fashionbox_medium_atk/playlist.m3u8
+#EXTINF:-1 tvg-id="FashionTVEurope.fr@SD" tvg-logo="logos/FashionTVEurope.fr-027ed4.webp" group-title="Lifestyle",FashionTV Europe (1080p)
+https://68f1accef2154d2195cae87dec183843.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenTV-eu_FashionTV/playlist.m3u8
+#EXTINF:-1 tvg-id="FashionTVSecrets.fr@HD" tvg-logo="logos/FashionTVSecrets.fr-809196.webp" group-title="Lifestyle",FashionTV Secrets (1080p)
+https://ssai.aniview.com/api/v1/hls/stream.m3u8?AVS_SSAIID=67c0c39764ad6f7dab07aa0b&AV_APPNAME=[ADS.APP_NAME]&AV_APPPKGNAME=[ADS.APP_BUNDLE]&AV_APPSTOREURL=[ADS.APP_STORE_URL]&AV_CCPA=[ADS.US_PRIVACY]&AV_CLIENT_SECTION=ftv_secrets&AV_CONSENT=[ADS.GDPR_CONSENT]&AV_CONTENT_CAT=IAB7&AV_CONTENT_CHANNEL=&AV_CONTENT_CONTEXT=&AV_CONTENT_EPISODE=&AV_CONTENT_GENRE=fashion+and+lifestyle&AV_CONTENT_ID=[ADS.VIDAA_ADS_CONTENTID]&AV_CONTENT_KEYWORDS=&AV_CONTENT_LANGUAGE=en&AV_CONTENT_LENGTH=&AV_CONTENT_NETWORK=&AV_CONTENT_PROVIDER=FTV&AV_CONTENT_RATING=R&AV_CONTENT_SEASON=&AV_CONTENT_SERIES=&AV_CONTENT_TITLE=&AV_CONTENT_URL=&AV_DNT=[ADS.DNT]&AV_GDPR=[ADS.GDPR]&AV_HEIGHT=[ADS.H]&AV_IDFA=[ADS.IFA]&AV_IFA_TYPE=[ADS.IFA_TYPE]&AV_LANGUAGE=[ADS.DEVICE_LANGUAGE]&AV_OSVERS=[ADS.DEVICE_OSV]&AV_RTB_DEVICE_TYPE=[ADS.DEVICE_TYPE]&AV_VAUTH=[ADS.VAUTH]&AV_WIDTH=[ADS.W]&Content_Id=[ADS.ADS_CONTENTID]&ads.vidaa_ads_param=1191723366&cb=[CACHEBUSTER]&content_channel_name=ftv+-fashiontv+Secrets&content_livestream=1
+#EXTINF:-1 tvg-id="FastFunBox.nl@SD" tvg-logo="logos/FastFunBox.nl-84c90c.webp" group-title="Sports",Fast&FunBox
+https://dash3.antik.sk/live/test_fast_and_funbox_medium_atk/playlist.m3u8
+#EXTINF:-1 tvg-id="FIFAPlus.uk@English" tvg-logo="logos/FIFAPlus.uk-6ebca4.webp" group-title="Sports",FIFA+ (720p)
+https://jmp2.uk/plu-660c29b5aec9680008f5b4a4.m3u8
+#EXTINF:-1 tvg-id="FIFAPlus.uk@Spain" tvg-logo="logos/FIFAPlus.uk-6ebca4.webp" group-title="Sports",FIFA+ Spain (720p)
+https://d63fabad.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWVzX0ZJRkFQbHVzU3BhbmlzaF9ITFM/playlist.m3u8
+#EXTINF:-1 tvg-id="FIFAPlusWomen.uk@English" tvg-logo="logos/FIFAPlusWomen.uk-788c29.webp" group-title="Sports",FIFA+ Women (720p)
+https://cffda8ff.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/U2Ftc3VuZy1nYl9GSUZBUGx1c3dvbWVuX0hMUw/playlist.m3u8
+#EXTINF:-1 tvg-id="FightBox.nl@HD" tvg-logo="logos/FightBox.nl-625904.webp" group-title="Sports",FightBox HD
+https://nosignal1.antenaplay.ro/hls/fightbox-hd/index.m3u8
+#EXTINF:-1 tvg-id="FILMBOXPlusFestival.pl@SD" tvg-logo="logos/FILMBOXPlusFestival.pl-610656.webp" group-title="Movies",FILMBOX+ Festival
+https://dash3.antik.sk/live/test_filmbox_arthouse_atk_1200/playlist.m3u8
+#EXTINF:-1 tvg-id="FILMBOXPlusFestival.pl@HD" tvg-logo="logos/FILMBOXPlusFestival.pl-610656.webp" group-title="Movies",FILMBOX+ Festival HD (1080p)
+https://nosignal1.antenaplay.ro/hls/fb-festival-hd/index.m3u8
+#EXTINF:-1 tvg-id="France24.fr@French" tvg-logo="logos/France24.fr-188446.webp" group-title="News",France 24 (1080p)
+https://freem3u.xyz/api/live/play.m3u8?vid=10007
+#EXTINF:-1 tvg-id="France24.fr@English" tvg-logo="logos/France24.fr-188446.webp" group-title="News",France 24 English (1080p)
+https://freem3u.xyz/api/live/play.m3u8?vid=96
+#EXTINF:-1 tvg-id="FTV.uz@SD" tvg-logo="logos/FTV.uz-bf128d.webp" group-title="Music",FTV (Uzbekistan) (576p)
+https://stream8.cinerama.uz/1018/playlist.m3u8
+#EXTINF:-1 tvg-id="FUELTV.pt@EMEA" tvg-logo="logos/FUELTV.pt-b8d26c.webp" group-title="Sports",FUEL TV (1080p)
+https://amg01074-fueltv-fueltvemeaen-rakuten-b6j62.amagi.tv/hls/amagi_hls_data_rakutenAA-fueltvemeaen/CDN/master.m3u8
+#EXTINF:-1 tvg-id="GloryKickboxing.us@Poland" tvg-logo="logos/GloryKickboxing.us-c21309.webp" group-title="Sports",Glory Kickboxing Poland (720p)
+https://6f972d29.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWV1X0dsb3J5S2lja2JveGluZ19ITFM/playlist.m3u8
+#EXTINF:-1 tvg-id="HuzurTV.ru@SD" tvg-logo="logos/HuzurTV.ru-c696e6.webp" group-title="Religious",Huzur TV (1080p) [Not 24/7]
+https://hls-mycdn08724960135.cdnvideo.ru/mycdn08724960135/stream1/playlist.m3u8
+#EXTINF:-1 tvg-id="i24NEWSEnglishWorld.il@SD" tvg-logo="logos/i24NEWSEnglishWorld.il-25b2f3.webp" group-title="News",i24NEWS English World (1080p)
+https://hlspackager.akamaized.net/live/DB/i24_ENGLISH/HLS/i24_ENGLISH.m3u8
+#EXTINF:-1 tvg-id="IlmvaTabiat.tj@SD" tvg-logo="" group-title="Science",Ilm va Tabiat (1080p)
+https://live.teleradiocom.tj/15/3m.m3u8
+#EXTINF:-1 tvg-id="InsaytTV.ru@4K" tvg-logo="logos/InsaytTV.ru-3c1a11.webp" group-title="Undefined",Insayt TV (2160p)
+https://stream8.cinerama.uz/1416/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-id="Jahonnamo.tj@SD" tvg-logo="" group-title="General",Jahonnamo (1080p)
+https://live.teleradiocom.tj/4/3m.m3u8
+#EXTINF:-1 tvg-id="Jambyl.kz@SD" tvg-logo="logos/Jambyl.kz-ad3bed.webp" group-title="General",Jambyl (360p) [Not 24/7]
+https://stream.kaztrk.kz/regional/taraztv/index.m3u8
+#EXTINF:-1 tvg-id="JibekJoly.kz@SD" tvg-logo="logos/JibekJoly.kz-cb5ac5.webp" group-title="General",Jibek Joly (576p)
+https://fs.uplink.kz/jibek_joly/mono.m3u8?token=onlinetv
+#EXTINF:-1 tvg-id="JibekJoly.kz@HD" tvg-logo="logos/JibekJoly.kz-cb5ac5.webp" group-title="General",Jibek Joly HD (1080p)
+https://stream.qazcdn.net/ex6r514/jjtv/playlist.m3u8
+#EXTINF:-1 tvg-id="KaloopyTV.us@SD" tvg-logo="logos/KaloopyTV.us-019787.webp" group-title="Lifestyle",Kaloopy TV (1080p)
+https://streamingserver000.viewtv.cloud/VIEWTVNETWORK-KALOOPY/index.m3u8
+#EXTINF:-1 tvg-id="Khabar.kz@SD" tvg-logo="logos/Khabar.kz-0c352f.webp" group-title="General",Khabar (576p)
+https://fs.uplink.kz/habar/mono.m3u8?token=onlinetv
+#EXTINF:-1 tvg-id="Khatlon.tj@SD" tvg-logo="" group-title="General",Khatlon (576p)
+https://live.teleradiocom.tj/10/3m.m3u8
+#EXTINF:-1 tvg-id="KinoBoevik.kz@SD" tvg-logo="logos/KinoBoevik.kz-7687cc.webp" group-title="Movies",KinoBoevik (1080p)
+https://fs.uplink.kz/kinoboevik/mono.m3u8?token=onlinetv
+#EXTINF:-1 tvg-id="Kinoteatr.uz@SD" tvg-logo="logos/Kinoteatr.uz-e6c73b.webp" group-title="Movies",Kinoteatr (1080p)
+https://stream8.cinerama.uz/1009/tracks-v1a1/playlist.m3u8
+#EXTINF:-1 tvg-id="Kokshe.kz@SD" tvg-logo="logos/Kokshe.kz-f67989.webp" group-title="General",Kokshe (720p) [Not 24/7]
+https://stream.kaztrk.kz/regional/kokshetautv/index.m3u8
+#EXTINF:-1 tvg-id="KoreanCentralTelevision.kp@HD" tvg-logo="logos/KoreanCentralTelevision.kp-9c12ef.webp" group-title="General",Korean Central Television (1080p) [Not 24/7]
+https://live.koryocdn.org/kctv/index.m3u8
+#EXTINF:-1 tvg-id="LoveThePlanet.es@EN" tvg-logo="logos/LoveThePlanet.es-9f6e42.webp" group-title="Documentary",Love The Planet (1080p)
+https://amg01821-lovetvchannels-lovetheplanetuksamsung-samsunguk-apopw.amagi.tv/playlist/amg01821-lovetvchannels-lovetheplanetuksamsung-samsunguk/playlist.m3u8
+#EXTINF:-1 tvg-id="Madaniyatvamarifat.uz@SD" tvg-logo="" group-title="General",Madaniyat va ma'rifat (576p)
+https://stream8.cinerama.uz/1005/tracks-v1a1/playlist.m3u8
+#EXTINF:-1 tvg-id="Mahalla.uz@SD" tvg-logo="" group-title="Undefined",Mahalla (576p)
+https://stream8.cinerama.uz/1013/tracks-v1a1/playlist.m3u8
+#EXTINF:-1 tvg-id="MakonTV.uz@SD" tvg-logo="" group-title="Entertainment",Makon TV (576i)
+https://stream8.cinerama.uz/1497/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-id="Mangystay.kz@SD" tvg-logo="logos/Mangystay.kz-6db485.webp" group-title="General",Mangystay (540p) [Not 24/7]
+https://stream.kaztrk.kz/regional/mangystautv/index.m3u8
+#EXTINF:-1 tvg-id="MasterChefsAcademyTV.uk@HD" tvg-logo="logos/MasterChefsAcademyTV.uk-fa5049.webp" group-title="Cooking;Education",Master Chefs Academy TV (720p)
+https://platform-iuoamc.uk/iptv/mca-tv/index.m3u8
+#EXTINF:-1 tvg-id="Milliy.uz@SD" tvg-logo="" group-title="General",Milliy (1080p)
+https://stream8.cinerama.uz/1014/tracks-v1a1/playlist.m3u8
+#EXTINF:-1 tvg-id="MiMiTV.uz@SD" tvg-logo="logos/MiMiTV.uz-7c1558.webp" group-title="Kids",MiMi TV (720p)
+https://fl.biztv.media/MiMiTV_720/playlist.m3u8
+#EXTINF:-1 tvg-id="Miras.tm@SD" tvg-logo="" group-title="Culture",Miras (406p) [Not 24/7]
+https://alpha.tv.online.tm/hls/ch003.m3u8
+#EXTINF:-1 tvg-id="Mirovoekino.kz@SD" tvg-logo="logos/Mirovoekino.kz-3b1c65.webp" group-title="Movies",Mirovoe kino (1080p)
+https://fs.uplink.kz/mirovoe_kino/mono.m3u8?token=onlinetv
+#EXTINF:-1 tvg-id="Motorvision.de@SD" tvg-logo="logos/Motorvision.de-4d27a5.webp" group-title="Auto",Motorvision (1080i)
+https://mvg-mv.otteravision.com/mvg/mv/mv_1080p.m3u8
+#EXTINF:-1 tvg-id="MTRK.kz@SD" tvg-logo="logos/MTRK.kz-4637cf.webp" group-title="General",MTRK (576p)
+https://tvcdn01.esilnet.kz/tv/mtrk/index.m3u8
+#EXTINF:-1 tvg-id="MTVLebanon.lb@SD" tvg-logo="logos/MTVLebanon.lb-92a6fa.webp" group-title="General",MTV Lebanon (1080p)
+https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mtv-lebanon/b8ebb2a5affb812f1541712adde10e26/index.m3u8
+#EXTINF:-1 tvg-id="Multilandia.ru@SD" tvg-logo="logos/Multilandia.ru-df8940.webp" group-title="Kids",Multilandia (576p)
+https://fs.uplink.kz/multilandia/mono.m3u8?token=onlinetv
+#EXTINF:-1 tvg-id="Music.kg@SD" tvg-logo="logos/Music.kg-55f53c.webp" group-title="Music",Music (480p) [Not 24/7]
+https://st2.mediabay.tv/KG_KTRK-Muzika/index.m3u8
+#EXTINF:-1 tvg-id="MuzTVUzbekistan.uz@SD" tvg-logo="logos/MuzTVUzbekistan.uz-d9759c.webp" group-title="Music",Muz TV Uzbekistan
+https://stream8.cinerama.uz/1063/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-id="MY5.uz@SD" tvg-logo="" group-title="Entertainment",MY5 (576p)
+https://stream8.cinerama.uz/1217/tracks-v1a1/playlist.m3u8
+#EXTINF:-1 tvg-id="Navo.uz@SD" tvg-logo="" group-title="General",Navo (576p)
+https://stream8.cinerama.uz/1008/tracks-v1a1/playlist.m3u8
+#EXTINF:-1 tvg-id="NavoiyMTRK.uz@SD" tvg-logo="" group-title="General",Navoiy MTRK (576i)
+https://stream8.cinerama.uz/1460/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-id="NBTWorld.th@SD" tvg-logo="logos/NBTWorld.th-aacb05.webp" group-title="General",NBT World (1080p)
+https://cdn-edge.iiptvcdn.com/live_event/smil:d36f-93c1-9c58-fdcc-427f.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="NewsoftheWorld.us@Global" tvg-logo="logos/NewsoftheWorld.us-69e144.webp" group-title="News",News of the World (720p)
+https://nowhls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="NewsWorld.hk@FAST" tvg-logo="logos/NewsWorld.hk-ac5cda.webp" group-title="News",NewsWorld (1080p)
+https://amg01076-lightning-amg01076c5-rakuten-us-1788.playouts.now.amagi.tv/playlist/amg01076-lightning-newsworld-rakutenus/playlist.m3u8
+#EXTINF:-1 tvg-id="NHKWorldPremium.jp@SD" tvg-logo="logos/NHKWorldPremium.jp-729d76.webp" group-title="Entertainment",NHK World Premium (720p)
+https://media-tyo.hls.nhkworld.jp/hls/wp/live/master.m3u8
+#EXTINF:-1 tvg-id="NHKWorldJapan.jp@SD" tvg-logo="logos/NHKWorldJapan.jp-3058a8.webp" group-title="Culture;News",NHK World-Japan (1080p)
+https://cdn.pishow.tv/ott/live/455/master.m3u8
+#EXTINF:-1 tvg-id="NHKWorldJapan.jp@HD" tvg-logo="logos/NHKWorldJapan.jp-3058a8.webp" group-title="Culture;News",NHK World-Japan HD (1080p)
+https://freem3u.xyz/api/live/play.m3u8?vid=106
+#EXTINF:-1 tvg-id="NickelodeonCIS.kz@SD" tvg-logo="logos/NickelodeonCIS.kz-d3d933.webp" group-title="Kids",Nickelodeon CIS (1080p)
+https://stream8.cinerama.uz/1500/playlist.m3u8
+#EXTINF:-1 tvg-id="NicktoonsCIS.ru@SD" tvg-logo="logos/NicktoonsCIS.ru-7090e8.webp" group-title="Kids",Nicktoons CIS (1080p)
+https://stream8.cinerama.uz/1502/playlist.m3u8
+#EXTINF:-1 tvg-id="Novoetelevidenie.kz@SD" tvg-logo="logos/Novoetelevidenie.kz-228787.webp" group-title="General",Novoe televidenie (576p)
+https://fs.uplink.kz/novoe_tv/mono.m3u8?token=onlinetv
+#EXTINF:-1 tvg-id="NowMediaTelevision.us@HD" tvg-logo="logos/NowMediaTelevision.us-3ac43a.webp" group-title="Lifestyle;News",NowMedia Television (1080p)
+https://stream-204968.castr.net/64e0c91d08bff3041638aee3/live_a4243540d4b911f0b624bda5e9a32aa9/index.m3u8
+#EXTINF:-1 tvg-id="NowMediaTelevision.us@Spanish" tvg-logo="logos/NowMediaTelevision.us-3ac43a.webp" group-title="Lifestyle;News",NowMedia Television Spanish (1080p)
+https://stream-204968.castr.net/64e0c91d08bff3041638aee3/live_a16fa020f4c411f09ddaa1978319689a/index.m3u8
+#EXTINF:-1 tvg-id="NTDTVAsiaPacific.us@SD" tvg-logo="logos/NTDTVAsiaPacific.us-11d5b5.webp" group-title="General",NTD TV Asia-Pacific
+https://live.ntdtv.com/aplive200/playlist.m3u8
+#EXTINF:-1 tvg-id="NTDTVChina.us@SD" tvg-logo="logos/NTDTVChina.us-accac5.webp" group-title="General",NTD TV China
+https://live.ntdtv.com/cnlive900/playlist.m3u8
+#EXTINF:-1 tvg-id="NurafshonTV.uz@SD" tvg-logo="" group-title="General",Nurafshon TV
+https://stream8.cinerama.uz/1220/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-id="Ozbekiston24.uz@SD" tvg-logo="logos/Ozbekiston24.uz-6d44b6.webp" group-title="News",O'zbekiston 24 (1080p)
+https://stream8.cinerama.uz/1011/tracks-v1a1/playlist.m3u8
+#EXTINF:-1 tvg-id="Ozbekiston.uz@SD" tvg-logo="" group-title="General",O'zbekiston (576p)
+https://stream8.cinerama.uz/1001/tracks-v1a1/playlist.m3u8
+#EXTINF:-1 tvg-id="OzbekistonTarixi.uz@SD" tvg-logo="logos/OzbekistonTarixi.uz-a90955.webp" group-title="Documentary",O'zbekiston Tarixi (1080p)
+https://stream8.cinerama.uz/1209/tracks-v1a1/playlist.m3u8
+#EXTINF:-1 tvg-id="Ontustik.kz@SD" tvg-logo="" group-title="General",Ontustik (360p)
+https://stream.kaztrk.kz/regional/shymkenttv/index.m3u8
+#EXTINF:-1 tvg-id="PeaceTVEnglish.ae@SD" tvg-logo="logos/PeaceTVEnglish.ae-992e2f.webp" group-title="Religious",Peace TV English (1080p)
+https://dzkyvlfyge.erbvr.com/PeaceTvEnglish/index.m3u8
+#EXTINF:-1 tvg-id="Qaraqalpaqstan.uz@SD" tvg-logo="" group-title="General",Qaraqalpaqstan (720p)
+https://stream8.cinerama.uz/1467/playlist.m3u8
+#EXTINF:-1 tvg-id="QazaqstanInternational.kz@SD" tvg-logo="" group-title="General",Qazaqstan International
+https://stream8.cinerama.uz/1431/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-id="QonaevMedia.kz@SD" tvg-logo="" group-title="Entertainment",Qonaev Media
+https://s.qonaevtv.kz/live/qonaev/playlist.m3u8
+#EXTINF:-1 tvg-id="Qostanai.kz@SD" tvg-logo="" group-title="Undefined",Qostanai (576p) [Not 24/7]
+https://stream.kaztrk.kz/regional/kostanaytv/index.m3u8
+#EXTINF:-1 tvg-id="Qyzyljar.kz@SD" tvg-logo="" group-title="Undefined",Qyzyljar (720p)
+https://stream.kaztrk.kz/regional/petropavltv/index.m3u8
+#EXTINF:-1 tvg-id="Qyzylorda.kz@SD" tvg-logo="" group-title="General",Qyzylorda (720p)
+https://stream.kaztrk.kz/regional/kyzylordatv/index.m3u8
+#EXTINF:-1 tvg-id="RacerNetwork.us@SD" tvg-logo="logos/RacerNetwork.us-38aad2.webp" group-title="Sports",Racer Network (1080p)
+https://amg00378-mavtv-amg00378c2-samsung-au-1790.playouts.now.amagi.tv/playlist/amg00378-mavtvfast-motorsportsnetwork-samsungau/playlist.m3u8
+#EXTINF:-1 tvg-id="RacerSelect.us@SD" tvg-logo="logos/RacerSelect.us-f7a6b5.webp" group-title="Sports",Racer Select (1080p)
+https://amg00378-amg00378c4-freelivesports-emea-5637.playouts.now.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="RedBullTV.at@SD" tvg-logo="logos/RedBullTV.at-be0bc3.webp" group-title="Outdoor;Sports",Red Bull TV SD (1080p)
+https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8
+#EXTINF:-1 tvg-id="RenessansTV.uz@SD" tvg-logo="" group-title="General",Renessans TV (576p)
+https://stream8.cinerama.uz/1221/tracks-v1a1/playlist.m3u8
+#EXTINF:-1 tvg-id="RikaTV.kz@SD" tvg-logo="" group-title="General",Rika TV (480p)
+https://live-rikatv.cdnvideo.ru/rikatv/rikatv_tcode.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="RTDocumentary.ru@English" tvg-logo="logos/RTDocumentary.ru-e1ea72.webp" group-title="Documentary",RT Documentary (1080p) [Geo-blocked]
+https://rt-rtd.rttv.com/dvr/rtdoc/playlist.m3u8
+#EXTINF:-1 tvg-id="RTRPlaneta.ru@CIS" tvg-logo="logos/RTRPlaneta.ru-ee83b2.webp" group-title="General",RTR-Planeta (720p) [Geo-blocked]
+https://stream.smotrim.ru/hls/planeta_rtr_sng/playlist.m3u8?entity=channel&id=512&sign=2abaa592de074d65809a10b6bacc4410
+#EXTINF:-1 tvg-id="RTRPlaneta.ru@Asia" tvg-logo="logos/RTRPlaneta.ru-ee83b2.webp" group-title="General",RTR-Planeta Asia (576p)
+https://streaming.televizor-24-tochka.ru/live/211.m3u8
+#EXTINF:-1 tvg-id="RTRPlaneta.ru@Europe" tvg-logo="logos/RTRPlaneta.ru-ee83b2.webp" group-title="General",RTR-Planeta Europe (720p) [Geo-blocked]
+https://stream.smotrim.ru/hls/planeta_rtr_euro/playlist.m3u8?entity=channel&id=510&sign=5c0ac65d75140fac2fd938d77c92138d
+#EXTINF:-1 tvg-id="Saryarqa.kz@SD" tvg-logo="" group-title="General",Saryarqa (720p) [Not 24/7]
+https://stream.kaztrk.kz/regional/karagandytv/index.m3u8
+#EXTINF:-1 tvg-id="SBNTVGlobal.us@SD" tvg-logo="logos/SBNTVGlobal.us-ccb2a2.webp" group-title="Religious",SBN TV Global (720p)
+https://watch.sardius.media/channels/Ea867F3e1F56B06/site_8D363D13Eb/live.m3u8
+#EXTINF:-1 tvg-id="SBNTVInternational.us@SD" tvg-logo="logos/SBNTVInternational.us-ccb2a2.webp" group-title="Religious",SBN TV International (720p)
+https://watch.sardius.media/channels/Ea867F3e1F56B06/site_09a4778E89/live.m3u8
+#EXTINF:-1 tvg-id="SevimliTV.uz@SD" tvg-logo="" group-title="Family",Sevimli TV (1080p)
+https://stream8.cinerama.uz/1017/tracks-v1a1/playlist.m3u8
+#EXTINF:-1 tvg-id="Shalom.in@Global" tvg-logo="logos/Shalom.in-4a207c.webp" group-title="Religious",Shalom Global (1080p)
+https://d28xtgmk9tfk6b.cloudfront.net/master.m3u8
+#EXTINF:-1 tvg-id="ShalomWorld.us@Europe" tvg-logo="logos/ShalomWorld.us-3f3f01.webp" group-title="Religious",Shalom World Europe (1080p)
+https://broadcaster-1.cclouds.in/srt/channel1_abr/playlist.m3u8
+#EXTINF:-1 tvg-id="ShalomWorldPrayer.us@SD" tvg-logo="logos/ShalomWorldPrayer.us-750a3a.webp" group-title="Religious",Shalom World Prayer (1080p)
+https://broadcaster-1.cclouds.in/srt-4/channel4_abr/playlist.m3u8
+#EXTINF:-1 tvg-id="SilkWay.kz@SD" tvg-logo="" group-title="General",Silk Way (1080p)
+https://hlspackager.akamaized.net/live/DB/SILKWAY/SILKWAY/SILKWAY.m3u8
+#EXTINF:-1 tvg-id="SilkWayCinema.kz@SD" tvg-logo="logos/SilkWayCinema.kz-0316f9.webp" group-title="Movies",Silk Way Cinema (1080p) [Geo-blocked]
+https://stream.qazcdn.net/ex6r514/silkwaycinema/index.m3u8
+#EXTINF:-1 tvg-id="SKITV.ch@SD" tvg-logo="logos/SKITV.ch-e62110.webp" group-title="Sports",SKI TV (1080p) [Not 24/7]
+https://d2xeo83q8fcni6.cloudfront.net/v1/master/9d062541f2ff39b5c0f48b743c6411d25f62fc25/SkiTV-SportsTribal/193.m3u8
+#EXTINF:-1 tvg-id="SpaceLivepoweredbysen.uk@SD" tvg-logo="logos/SpaceLivepoweredbysen.uk-98f27e.webp" group-title="Relax;Travel",Space Live powered by sen (1080p)
+https://linear-1224.frequency.stream/dist/lg-uk/1224/hls/master/playlist.m3u8
+#EXTINF:-1 tvg-id="Sport.kg@SD" tvg-logo="logos/Sport.kg-19f2ad.webp" group-title="Sports",Sport (Kyrgyzstan) (480p) [Not 24/7]
+https://st2.mediabay.tv/KG_KTRK-Sport/index.m3u8
+#EXTINF:-1 tvg-id="Sport.uz@SD" tvg-logo="logos/Sport.uz-f82c3e.webp" group-title="Sports",Sport (Uzbekistan)
+https://stream8.cinerama.uz/1004/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-id="SportPlusQazaqstan.kz@SD" tvg-logo="logos/SportPlusQazaqstan.kz-269d77.webp" group-title="Sports",Sport+ Qazaqstan (1080p)
+https://fs.uplink.kz/sport+/mono.m3u8?token=onlinetv
+#EXTINF:-1 tvg-id="StreamForce360.co@Main" tvg-logo="" group-title="Entertainment;General",StreamForce 360 (1080p)
+https://sistemastr.tropicalmoonmedia.com/live/9E495C5FDA503D7F71037F2D2C5D3FA3/16.m3u8
+#EXTINF:-1 tvg-id="SuperyachtTV.mc@SD" tvg-logo="logos/SuperyachtTV.mc-23ee60.webp" group-title="Lifestyle",Superyacht TV (1080p)
+https://sy.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="TaraqqiyotTV.uz@SD" tvg-logo="" group-title="General",Taraqqiyot TV
+https://stream8.cinerama.uz/1204/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-id="TDK42.kz@SD" tvg-logo="" group-title="Undefined",TDK 42
+https://live-tdk42kz.cdnvideo.ru/tdk42kz/tdk42kz_720.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="Telesur.ve@English" tvg-logo="logos/Telesur.ve-db653a.webp" group-title="News",Telesur English (480p)
+https://mblenmain01.telesur.ultrabase.net/mblivev3/480p/playlist.m3u8
+#EXTINF:-1 tvg-id="Telesur.ve@EnglishHD" tvg-logo="logos/Telesur.ve-db653a.webp" group-title="News",Telesur English HD (1080p)
+https://mblenmain01.telesur.ultrabase.net/mblivev3/hd/playlist.m3u8
+#EXTINF:-1 tvg-id="TelevisionCaribe.us@HD" tvg-logo="logos/TelevisionCaribe.us-c71df6.webp" group-title="Entertainment;General",Television Caribe (1080p)
+https://televisioncaribe.com/index.m3u8
+#EXTINF:-1 tvg-id="TMT.tj@SD" tvg-logo="" group-title="General",TMT (1080p)
+https://live.teleradiocom.tj/9/3m.m3u8
+#EXTINF:-1 tvg-id="TOIGlobal.in@SD" tvg-logo="logos/TOIGlobal.in-d3fc59.webp" group-title="News",TOI Global (1080p)
+https://live.sli.ke/live/npnhm84gz9/master.m3u8
+#EXTINF:-1 tvg-id="Tojikiston.tj@SD" tvg-logo="" group-title="General",Tojikiston (1080p)
+https://live.teleradiocom.tj/1/3m.m3u8
+#EXTINF:-1 tvg-id="Toshkent.uz@SD" tvg-logo="" group-title="General",Toshkent (576p)
+https://stream8.cinerama.uz/1003/tracks-v1a1/playlist.m3u8
+#EXTINF:-1 tvg-id="TRTWorld.tr@SD" tvg-logo="logos/TRTWorld.tr-06c11d.webp" group-title="News",TRT World (720p)
+https://mumbai-edge.smartplaytv.in/TRTWorld/index.m3u8
+#EXTINF:-1 tvg-id="TRTWorld.tr@HD" tvg-logo="logos/TRTWorld.tr-06c11d.webp" group-title="News",TRT World HD
+https://dash2.antik.sk/live/test_trt_world_atktv/playlist.m3u8
+#EXTINF:-1 tvg-id="TuranTV.kz@SD" tvg-logo="" group-title="Undefined",Turan TV (576p)
+https://fs.uplink.kz/turan_tv/mono.m3u8?token=onlinetv
+#EXTINF:-1 tvg-id="TurkmenOwazy.tm@SD" tvg-logo="logos/TurkmenOwazy.tm-42830a.webp" group-title="Music",Turkmen Owazy (406p) [Not 24/7]
+https://alpha.tv.online.tm/hls/ch005.m3u8
+#EXTINF:-1 tvg-id="Turkmenistan.tm@SD" tvg-logo="" group-title="General",Turkmenistan (406p) [Not 24/7]
+https://alpha.tv.online.tm/hls/ch007.m3u8
+#EXTINF:-1 tvg-id="TurkmenistanSport.tm@SD" tvg-logo="logos/TurkmenistanSport.tm-ba4593.webp" group-title="Sports",Turkmenistan Sport (406p) [Not 24/7]
+https://alpha.tv.online.tm/hls/ch004.m3u8
+#EXTINF:-1 tvg-id="TV5MONDEChefs.fr@SD" tvg-logo="logos/TV5MONDEChefs.fr-1a11d2.webp" group-title="Cooking;Lifestyle",TV5MONDE Chefs (1080p)
+https://tvf-tv5ch.otteravision.com/tvf/tv5ch/tv5ch.m3u8
+#EXTINF:-1 tvg-id="TVBahoriston.tj@SD" tvg-logo="logos/TVBahoriston.tj-08394a.webp" group-title="Kids",TV Bahoriston (1080p)
+https://live.teleradiocom.tj/3/3m.m3u8
+#EXTINF:-1 tvg-id="TVBozsikeHamburgHD.de@HD" tvg-logo="logos/TVBozsikeHamburgHD.de-1e8fc8.webp" group-title="Music",TV Bozsike Hamburg HD (1080p)
+https://rtmp.radiobozsike.com/hls/stream1.m3u8
+#EXTINF:-1 tvg-id="TVKulob.tj@SD" tvg-logo="" group-title="General",TV Kulob (576p)
+https://live.teleradiocom.tj/12/3m.m3u8
+#EXTINF:-1 tvg-id="TVSafina.tj@SD" tvg-logo="" group-title="Undefined",TV Safina (1080p)
+https://live.teleradiocom.tj/2/3m.m3u8
+#EXTINF:-1 tvg-id="TVSayohi.tj@SD" tvg-logo="" group-title="Travel",TV Sayohi (1080p)
+https://live.teleradiocom.tj/16/3m.m3u8
+#EXTINF:-1 tvg-id="TVSinamo.tj@SD" tvg-logo="" group-title="Undefined",TV Sinamo (1080p)
+https://live.teleradiocom.tj/6/3m.m3u8
+#EXTINF:-1 tvg-id="TVSugd.tj@SD" tvg-logo="" group-title="General",TV Sugd (1080p)
+https://live.teleradiocom.tj/14/3m.m3u8
+#EXTINF:-1 tvg-id="TVEInternacionalEurope.es@HD" tvg-logo="logos/TVEInternacionalEurope.es-bf0c53.webp" group-title="Undefined",TVE Internacional Europe HD (1080p) [Geo-blocked]
+https://rtvelivestream-rtveplayplus.rtve.es/rtvesec/int/tvei_eu_main_1080.m3u8
+#EXTINF:-1 tvg-id="Ulytau.kz@SD" tvg-logo="" group-title="General",Ulytau
+https://ulytau.tv/hls/master.m3u8
+#EXTINF:-1 tvg-id="UNWebTV.us@SD" tvg-logo="logos/UNWebTV.us-d20c5a.webp" group-title="News",UN Web TV (540p)
+https://cdnapi.kaltura.com/p/2503451/sp/250345100/playManifest/entryId/1_gb6tjmle/protocol/https/format/applehttp/a.m3u8
+#EXTINF:-1 tvg-id="UzReportTV.uz@SD" tvg-logo="logos/UzReportTV.uz-4c455f.webp" group-title="News",UzReport TV (1080p)
+https://stream8.cinerama.uz/1015/tracks-v1a1/playlist.m3u8
+#EXTINF:-1 tvg-id="WildEarth.za@SD" tvg-logo="logos/WildEarth.za-e90948.webp" group-title="Documentary;Education;Outdoor;Relax",WildEarth (1080p)
+https://dqga3jatxofgx.cloudfront.net/WildEarth.m3u8
+#EXTINF:-1 tvg-id="Yaslyk.tm@SD" tvg-logo="" group-title="Education",Yaslyk (406p) [Not 24/7]
+https://alpha.tv.online.tm/hls/ch002.m3u8
+#EXTINF:-1 tvg-id="Yoshlar.uz@SD" tvg-logo="" group-title="General",Yoshlar (1080p)
+https://stream8.cinerama.uz/1002/tracks-v1a1/playlist.m3u8
+#EXTINF:-1 tvg-id="YOYInternational.id@HD" tvg-logo="" group-title="General",YOY International (576p)
+https://gist.githubusercontent.com/iptvonlinetv/8a6b2f12e5e968537378f1245cea02c9/raw/78bf84476f8e24cc8ea9d5ac24855078c61b18db/udp305.575.530:3030.m3u8
+#EXTINF:-1 tvg-id="ZeeOne.uk@UK" tvg-logo="logos/ZeeOne.uk-9dbc80.webp" group-title="Entertainment",Zee One (1080p)
+https://amg17931-zee-amg17931c6-samsung-au-8872.playouts.now.amagi.tv/playlist/amg17931-asiatvusaltdfast-zeeworld-samsungau/playlist.m3u8
+#EXTINF:-1 tvg-id="ZorTV.uz@SD" tvg-logo="logos/ZorTV.uz-90c320.webp" group-title="Entertainment;Music",Zo'r TV (576p)
+https://stream8.cinerama.uz/1016/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-id="ZooMoo.sg@SD" tvg-logo="logos/ZooMoo.sg-c04f8d.webp" group-title="Kids",ZooMoo (1080p)
+https://zoomoo-samsungau.amagi.tv/playlist.m3u8
