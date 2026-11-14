@@ -12,85 +12,29 @@
    * from IPTV-ORG), so everything but the video streams comes from this host. */
   var DATA = "data/";
 
-  /* Categories live in a sidebar under three headings: Persian, topics and
-   * regions. Small IPTV-ORG lists are merged into broader ones by the data
-   * build. "note" marks the bigger downloads. */
+  /* A short, tidy sidebar: Persian first, then seven topics and the regions.
+   * The data build folds IPTV-ORG's many small categories into these. */
   var CATEGORY_GROUPS = { persian: "فارسی", topic: "موضوع", region: "منطقه" };
   var GROUP_ORDER = ["persian", "topic", "region"];
 
   var CATEGORIES = [
-    { key: "fav", group: "persian", title: "محبوب‌ها", favorites: true },
-    { key: "fas", group: "persian", title: "شبکه‌های فارسی" },
-    { key: "afghan", group: "persian", title: "افغانستان و تاجیکستان" },
-    { key: "provinces", group: "persian", title: "استانی", provincialOnly: true },
-    { key: "news", group: "topic", title: "خبری" },
-    { key: "sports", group: "topic", title: "ورزشی" },
-    { key: "music", group: "topic", title: "موسیقی" },
-    { key: "entertainment", group: "topic", title: "سرگرمی" },
-    { key: "movies", group: "topic", title: "فیلم و سریال" },
-    { key: "documentary", group: "topic", title: "مستند و علمی" },
-    { key: "kids", group: "topic", title: "کودک و انیمیشن" },
-    { key: "education", group: "topic", title: "آموزشی" },
-    { key: "culture", group: "topic", title: "فرهنگی" },
-    { key: "religious", group: "topic", title: "مذهبی" },
-    { key: "comedy", group: "topic", title: "کمدی" },
-    { key: "lifestyle", group: "topic", title: "سبک زندگی و سفر" },
-    { key: "business", group: "topic", title: "اقتصادی" },
-    { key: "classic", group: "topic", title: "کلاسیک" },
-    { key: "legislative", group: "topic", title: "پارلمانی و دولتی" },
-    { key: "tr", group: "region", title: "ترکیه" },
-    { key: "mideast", group: "region", title: "خاورمیانه" },
-    { key: "arab", group: "region", title: "کشورهای عربی" },
-    { key: "cas", group: "region", title: "آسیای میانه" },
-    { key: "sas", group: "region", title: "آسیای جنوبی" },
-    { key: "eas", group: "region", title: "آسیای شرقی" },
-    { key: "sea", group: "region", title: "جنوب شرق آسیا" },
-    { key: "cis", group: "region", title: "روسیه و همسایگان" },
-    { key: "eur", group: "region", title: "اروپا", note: "۰٫۶MB" },
-    { key: "afr", group: "region", title: "آفریقا" },
-    { key: "noram", group: "region", title: "آمریکای شمالی", note: "۰٫۴MB" },
-    { key: "latam", group: "region", title: "آمریکای لاتین", note: "۰٫۳MB" },
-    { key: "oce", group: "region", title: "اقیانوسیه" },
-    { key: "all", group: "region", title: "همه", note: "۱٫۵MB", timeout: 60000 },
+    { key: "fav", group: "persian", title: "محبوب‌ها", icon: "star", favorites: true },
+    { key: "fas", group: "persian", title: "شبکه‌های فارسی", icon: "tv" },
+    { key: "news", group: "topic", title: "خبری", icon: "news" },
+    { key: "sports", group: "topic", title: "ورزشی", icon: "ball" },
+    { key: "music", group: "topic", title: "موسیقی", icon: "music" },
+    { key: "movies", group: "topic", title: "فیلم و سریال", icon: "film" },
+    { key: "kids", group: "topic", title: "کودک", icon: "kids" },
+    { key: "documentary", group: "topic", title: "مستند و علمی", icon: "leaf" },
+    { key: "entertainment", group: "topic", title: "سرگرمی", icon: "spark" },
+    { key: "tr", group: "region", title: "ترکیه", icon: "pin" },
+    { key: "mideast", group: "region", title: "خاورمیانه و عربی", icon: "pin" },
+    { key: "eur", group: "region", title: "اروپا", icon: "pin" },
+    { key: "asia", group: "region", title: "آسیا", icon: "pin" },
+    { key: "amer", group: "region", title: "آمریکا", icon: "pin" },
+    { key: "other", group: "region", title: "سایر مناطق", icon: "globe" },
+    { key: "all", group: "region", title: "همهٔ شبکه‌ها", icon: "grid", timeout: 60000 },
   ];
-
-  var PROVINCIAL_NAMES = {
-    "AbadanTV.ir": "شبکه آبادان",
-    "AflakTV.ir": "شبکه افلاک · لرستان",
-    "AftabTV.ir": "شبکه آفتاب · مرکزی",
-    "AlborzTV.ir": "شبکه البرز",
-    "AtrakTV.ir": "شبکه اترک · خراسان شمالی",
-    "WestAzerbaijanTV.ir": "شبکه آذربایجان غربی",
-    "BaranTV.ir": "شبکه باران · گیلان",
-    "BoushehrTV.ir": "شبکه بوشهر",
-    "DenaTV.ir": "شبکه دنا · کهگیلویه و بویراحمد",
-    "EshraghNetwork.ir": "شبکه اشراق · زنجان",
-    "FarsTV.ir": "شبکه فارس",
-    "HamedanTV.ir": "شبکه همدان",
-    "HamoonTV.ir": "شبکه هامون · سیستان و بلوچستان",
-    "IlamTV.ir": "شبکه ایلام",
-    "IsfahanTV.ir": "شبکه اصفهان",
-    "JahanbinTV.ir": "شبکه جهان‌بین · چهارمحال و بختیاری",
-    "KermanTV.ir": "شبکه کرمان",
-    "KhalijeFarsTV.ir": "شبکه خلیج فارس · هرمزگان",
-    "KaroonTV.ir": "شبکه کارون · خوزستان (محلی)",
-    "KhavaranTV.ir": "شبکه خاوران · خراسان جنوبی",
-    "KhorasanRazaviTV.ir": "شبکه خراسان رضوی",
-    "KhozestanTV.ir": "شبکه خوزستان",
-    "KishTV.ir": "شبکه کیش",
-    "KordestanTV.ir": "شبکه کردستان",
-    "MahabadTV.ir": "شبکه مهاباد",
-    "NoorTV.ir": "شبکه نور · قم",
-    "QazvinTV.ir": "شبکه قزوین",
-    "SabalanTV.ir": "شبکه سبلان · اردبیل",
-    "SabzTV.ir": "شبکه سبز · گلستان",
-    "SahandTV.ir": "شبکه سهند · آذربایجان شرقی",
-    "SemnanTV.ir": "شبکه سمنان",
-    "TabarestanTV.ir": "شبکه تبرستان · مازندران",
-    "TehranTV.ir": "شبکه تهران",
-    "YazdTV.ir": "شبکه تابان · یزد",
-    "ZagrosTV.ir": "شبکه زاگرس · کرمانشاه",
-  };
 
   /* Upstream playlist URLs that have moved. Each replacement was taken from
    * the broadcaster's own live page and verified to answer with CORS. The
@@ -117,8 +61,7 @@
 
   var PREFS_KEY = "mowj-tv-prefs-v2";
   var STATUS_KEY = "mowj-tv-status-v2";
-  var CACHE_PREFIX = "local:";              // lists cached before the app shipped its own data are ignored
-  var LIST_FRESH_MS = 12 * 3600 * 1000;      // reuse a cached playlist for 12h without any network
+  var CACHE_PREFIX = "v2:";                 // lists cached by earlier versions are ignored and removed
   var STATUS_OK_TTL = 12 * 3600 * 1000;
   var STATUS_BAD_TTL = 3 * 3600 * 1000;
   var STATUS_UNREACHABLE_TTL = 20 * 60 * 1000;
@@ -142,6 +85,7 @@
   var AUTO_FULLSCREEN_MS = 30000;            // playing and no input for this long: go fullscreen
   var HLS_RETRY_URL = "assets/vendor/hls.min.js?retry=1"; // same file, in case the first load failed
   var XLINK = "http://www.w3.org/1999/xlink";
+  var SVG_NS = "http://www.w3.org/2000/svg";
 
   /* ------------------------------------------------------------------ *
    * Small helpers
@@ -282,6 +226,7 @@
       if (window.indexedDB && indexedDB.deleteDatabase) {
         indexedDB.deleteDatabase("mowj-tv-cache-v2");
         indexedDB.deleteDatabase("mowj-tv"); // lists downloaded from IPTV-ORG by earlier versions
+        indexedDB.deleteDatabase("mowj-tv-local"); // M3U lists of the first self-hosted version
       }
     } catch (e) {
       /* best effort */
@@ -382,7 +327,7 @@
         finish(null);
       }, 4000);
       try {
-        var req = indexedDB.open("mowj-tv-local", 1);
+        var req = indexedDB.open("mowj-tv-data", 1);
         req.onupgradeneeded = function () {
           req.result.createObjectStore("lists", { keyPath: "k" });
         };
@@ -420,8 +365,8 @@
     });
   }
 
-  function cachePut(key, text) {
-    var record = { k: key, t: now(), text: text };
+  function cachePut(key, text, version) {
+    var record = { k: key, t: now(), v: version || "", text: text };
     openDb().then(function (db) {
       if (db) {
         try {
@@ -435,7 +380,29 @@
     });
   }
 
+  // Older TV browsers have no fetch(); XMLHttpRequest works everywhere.
+  function xhrText(url, timeoutMs) {
+    return new Promise(function (resolve, reject) {
+      var xhr = new XMLHttpRequest();
+      xhr.open("GET", url, true);
+      xhr.timeout = timeoutMs;
+      xhr.onload = function () {
+        // status 0 with a body: a page opened from a file or a local WebView
+        if ((xhr.status >= 200 && xhr.status < 300) || (xhr.status === 0 && xhr.responseText)) resolve(xhr.responseText);
+        else reject(new Error("HTTP " + xhr.status));
+      };
+      xhr.onerror = function () {
+        reject(new Error("network"));
+      };
+      xhr.ontimeout = function () {
+        reject(new Error("timeout"));
+      };
+      xhr.send();
+    });
+  }
+
   function fetchText(url, timeoutMs, reload) {
+    if (typeof fetch !== "function") return xhrText(url, timeoutMs);
     var controller = typeof AbortController !== "undefined" ? new AbortController() : null;
     var timer = setTimeout(function () {
       if (controller) controller.abort();
@@ -448,16 +415,35 @@
       return response.text();
     }, function (error) {
       clearTimeout(timer);
-      throw error;
+      if (location.protocol === "file:") return xhrText(url, timeoutMs);
+      throw error.name === "AbortError" ? new Error("timeout") : new Error("network");
     });
   }
 
-  function fetchCategory(cat, reload) {
-    return fetchText(DATA + cat.key + ".m3u", cat.timeout || 25000, reload);
+  /* data/index.json names the data version; a cached list from another
+   * version is dropped, and list URLs carry the version so no proxy or
+   * browser cache can serve an old file. */
+  var dataIndexPromise = null;
+  function loadDataIndex() {
+    if (!dataIndexPromise) {
+      dataIndexPromise = fetchText(DATA + "index.json", 10000, true).then(function (text) {
+        var index = JSON.parse(text);
+        return index && index.v ? index : null;
+      }).catch(function (error) {
+        if (window.console) console.warn("[mowj] " + DATA + "index.json: " + error.message);
+        dataIndexPromise = null; // try again on the next category
+        return null;
+      });
+    }
+    return dataIndexPromise;
+  }
+
+  function listUrl(cat, index) {
+    return DATA + cat.key + ".json" + (index ? "?v=" + encodeURIComponent(index.v) : "");
   }
 
   /* ------------------------------------------------------------------ *
-   * M3U parsing
+   * Channel lists (JSON built by scripts/build-data.mjs)
    * ------------------------------------------------------------------ */
 
   // "?strict=1" lets a local http:// preview behave like the HTTPS site.
@@ -474,133 +460,52 @@
     return true;
   }
 
-  function cleanTitle(title) {
-    return String(title || "")
-      .replace(/\s*\(\d{3,4}[pi]\)/gi, "")
-      .replace(/\s*\[[^\]]*\]/g, "")
-      .replace(/\s+/g, " ")
-      .trim();
-  }
-
   // Only logos that ship with the app (logos/...); never a request to another host.
   function localLogo(url) {
     url = String(url || "");
     return /^logos\/[\w.-]+\.webp$/.test(url) ? url : "";
   }
 
-  function groupLabel(group) {
-    var first = String(group || "").split(";")[0].trim().toLowerCase();
-    return GROUPS[first] || "";
-  }
-
-  function parseM3u(text, category) {
-    var lines = String(text || "").split(/\r?\n/);
+  // Row layout: [id, name, logo file, group, height, flags (1 geo, 2 not 24/7), [urls]]
+  function parseList(data) {
+    if (!data || !Array.isArray(data.c)) throw new Error("bad list");
+    hiddenCount = Number(data.hidden) || 0;
     var channels = [];
-    var byKey = Object.create(null);
-    var pending = null;
-    hiddenCount = 0;
-
-    for (var i = 0; i < lines.length; i += 1) {
-      var line = lines[i].trim();
-      if (!line) continue;
-      if (line.indexOf("#EXTM3U") === 0) {
-        // Channels dropped at build time because no browser can play them.
-        var dropped = line.match(/x-mowj-hidden="(\d+)"/);
-        if (dropped) hiddenCount += Number(dropped[1]);
-        continue;
+    for (var i = 0; i < data.c.length; i += 1) {
+      var row = data.c[i];
+      var base = String(row[0] || "").split("@")[0];
+      var sources = [];
+      var urls = row[6] || [];
+      for (var u = 0; u < urls.length; u += 1) {
+        if (sourcePlayable({ url: urls[u] })) sources.push({ url: urls[u] });
       }
-      if (line.indexOf("#EXTINF") === 0) {
-        var comma = line.lastIndexOf(",");
-        var meta = comma >= 0 ? line.slice(0, comma) : line;
-        var title = comma >= 0 ? line.slice(comma + 1).trim() : "";
-        var attrs = {};
-        meta.replace(/([\w-]+)="([^"]*)"/g, function (m, k, v) {
-          attrs[k.toLowerCase()] = v;
-          return m;
-        });
-        var q = title.match(/\((\d{3,4})[pi]\)/i);
-        pending = {
-          tvgId: attrs["tvg-id"] || "",
-          name: cleanTitle(title) || "بدون نام",
-          logo: localLogo(attrs["tvg-logo"]),
-          group: attrs["group-title"] || "",
-          quality: q ? Number(q[1]) : 0,
-          geo: /\[Geo-blocked\]/i.test(title),
-          part: /\[Not 24\/7\]/i.test(title),
-          ref: attrs["http-referrer"] || "",
-          ua: attrs["http-user-agent"] || "",
-        };
-        continue;
-      }
-      if (!pending) continue;
-      if (line.indexOf("#EXTVLCOPT:http-referrer=") === 0) {
-        pending.ref = line.slice(line.indexOf("=") + 1);
-        continue;
-      }
-      if (line.indexOf("#EXTVLCOPT:http-user-agent=") === 0) {
-        pending.ua = line.slice(line.indexOf("=") + 1);
-        continue;
-      }
-      if (line.charAt(0) === "#") continue;
-
-      var entry = pending;
-      pending = null;
-      var base = entry.tvgId.split("@")[0];
-      if (category.provincialOnly) {
-        if (!PROVINCIAL_NAMES[base]) continue;
-        entry.name = PROVINCIAL_NAMES[base];
-        entry.group = "";
-      }
-      var source = { url: line, ref: entry.ref, ua: entry.ua };
-      var key = entry.tvgId || "n:" + normalize(entry.name);
-      var channel = byKey[key];
-      if (!channel) {
-        channel = {
-          id: key,
-          base: base,
-          name: entry.name,
-          logo: entry.logo,
-          group: groupLabel(entry.group),
-          quality: entry.quality,
-          geo: entry.geo,
-          part: entry.part,
-          sources: [],
-          rejected: 0,
-        };
-        byKey[key] = channel;
-        channels.push(channel);
-      }
-      if (!channel.logo && entry.logo) channel.logo = entry.logo;
-      if (sourcePlayable(source)) {
-        var dup = false;
-        for (var s = 0; s < channel.sources.length; s += 1) {
-          if (channel.sources[s].url === source.url) dup = true;
-        }
-        if (!dup) channel.sources.push({ url: source.url });
-      } else {
-        channel.rejected += 1;
-      }
-    }
-
-    var playable = [];
-    channels.forEach(function (channel) {
-      var fixes = STREAM_FIXES[channel.base];
+      var fixes = STREAM_FIXES[base];
       if (fixes) {
-        channel.sources = fixes.map(function (url) {
+        sources = fixes.map(function (url) {
           return { url: url };
-        }).concat(channel.sources.filter(function (src) {
+        }).concat(sources.filter(function (src) {
           return fixes.indexOf(src.url) === -1;
         }));
       }
-      if (channel.sources.length) playable.push(channel);
-      else hiddenCount += 1;
-    });
-    if (category.provincialOnly) {
-      playable.sort(function (a, b) {
-        return a.name.localeCompare(b.name, "fa");
+      if (!sources.length) {
+        hiddenCount += 1;
+        continue;
+      }
+      var flags = Number(row[5]) || 0;
+      channels.push({
+        id: row[0] || "n:" + normalize(row[1]),
+        base: base,
+        name: row[1] || "بدون نام",
+        logo: row[2] ? localLogo("logos/" + row[2]) : "",
+        group: GROUPS[row[3]] || "",
+        quality: Number(row[4]) || 0,
+        geo: (flags & 1) === 1,
+        part: (flags & 2) === 2,
+        sources: sources,
+        rejected: 0,
       });
     }
-    return playable;
+    return channels;
   }
 
   /* ------------------------------------------------------------------ *
@@ -2398,11 +2303,14 @@
       item.setAttribute("data-cat", cat.key);
       item.setAttribute("data-e", String(index));
       item.setAttribute("aria-label", CATEGORY_GROUPS[groupOf(cat)] + ": " + cat.title);
-      if (cat.favorites) {
-        var star = document.createElement("span");
-        star.className = "cat-star";
-        star.textContent = "★";
-        item.appendChild(star);
+      if (cat.icon) {
+        var icon = document.createElementNS(SVG_NS, "svg");
+        icon.setAttribute("class", "cat-icon" + (cat.favorites ? " is-star" : ""));
+        icon.setAttribute("aria-hidden", "true");
+        var use = document.createElementNS(SVG_NS, "use");
+        use.setAttributeNS(XLINK, "xlink:href", "#i-" + (cat.icon === "star" ? "star-fill" : cat.icon));
+        icon.appendChild(use);
+        item.appendChild(icon);
       }
       var label = document.createElement("span");
       label.className = "cat-label";
@@ -2442,6 +2350,15 @@
         return;
       }
       if (!heights) measure();
+      // Everything on one page when it fits without the page buttons (the usual case).
+      setHidden($("catPager"), true);
+      var total = 0;
+      for (var k = 0; k < entries.length; k += 1) total += entries[k].head ? heights.head : heights.item;
+      if (total <= box.clientHeight) {
+        pages.push([0, entries.length - 1]);
+        return;
+      }
+      setHidden($("catPager"), false);
       var room = box.clientHeight || 600;
       var start = 0;
       var used = 0;
@@ -2483,8 +2400,7 @@
       for (var i = range[0]; i <= range[1]; i += 1) {
         box.appendChild(entries[i].head ? makeHead(entries[i].head) : makeItem(entries[i].cat, i));
       }
-      // The pager keeps its space even with one page, so the page size never changes under it.
-      $("catPager").style.visibility = pages.length > 1 ? "" : "hidden";
+      setHidden($("catPager"), pages.length < 2);
       $("catPrev").classList.toggle("is-off", page === 0);
       $("catNext").classList.toggle("is-off", page >= pages.length - 1);
       $("catPageInfo").textContent = fa(page + 1) + " / " + fa(pages.length);
@@ -2499,6 +2415,10 @@
       page = at >= 0 ? pageOfEntry(at) : Math.min(page, pages.length - 1);
       draw();
       if (focusKey) focusCat(focusKey);
+      // Phones: the sideways strip shows the open category.
+      var active = !stacked() && box.querySelector(".cat-item.is-active");
+      if (active) box.scrollLeft += active.getBoundingClientRect().left - box.getBoundingClientRect().left -
+        (box.clientWidth - active.offsetWidth) / 2;
     }
 
     function focusEntry(index) {
@@ -2697,36 +2617,57 @@
       return Promise.resolve();
     }
 
-    showListMessage("در حال دریافت فهرست «" + cat.title + "»…", "", false);
+    showListMessage("در حال باز کردن فهرست «" + cat.title + "»…", "", false);
     $("count").textContent = "";
-    return cacheGet(CACHE_PREFIX + cat.key).then(function (cached) {
+
+    function show(text, savedAt, refocus) {
+      setChannels(parseList(JSON.parse(text)), refocus, savedAt);
+    }
+
+    return Promise.all([cacheGet(CACHE_PREFIX + cat.key), loadDataIndex()]).then(function (results) {
       if (token !== state.loadToken) return null;
-      var fresh = cached && cached.text && now() - cached.t < LIST_FRESH_MS;
-      if (cached && cached.text) {
-        setChannels(parseM3u(cached.text, cat), focusInList, cached.t);
-        if (fresh && !forceRefresh) return null; // no network at all
+      var cached = results[0] && results[0].text ? results[0] : null;
+      var index = results[1];
+      // Same data version as on the server (or the server cannot be asked): no download at all.
+      if (cached && !forceRefresh && (!index || cached.v === index.v)) {
+        try {
+          show(cached.text, cached.t, focusInList);
+          return null;
+        } catch (e) {
+          cached = null; // unreadable cache from an older version
+        }
       }
-      if (navigator.onLine === false) {
-        if (!cached) showListMessage("اینترنت وصل نیست", "پس از اتصال دوباره تلاش کن", true);
+      if (navigator.onLine === false && !cached) {
+        showListMessage("اینترنت وصل نیست", "پس از اتصال دوباره تلاش کن", true);
         return null;
       }
-      return fetchCategory(cat, forceRefresh).then(function (text) {
+      var url = listUrl(cat, index);
+      return fetchText(url, cat.timeout || 25000, forceRefresh).then(function (text) {
         if (token !== state.loadToken) return;
-        if (text.indexOf("#EXTM3U") === -1) throw new Error("bad playlist"); // an empty list is valid
-        cachePut(CACHE_PREFIX + cat.key, text);
-        if (cached && cached.text === text) {
-          updateFoot(now());
-          return;
-        }
-        var refocus = list.hasFocus();
-        setChannels(parseM3u(text, cat), refocus || (!cached && focusInList), now());
-      }).catch(function () {
+        var data = JSON.parse(text);
+        var channels = parseList(data);
+        cachePut(CACHE_PREFIX + cat.key, text, data.v || (index && index.v));
+        setChannels(channels, list.hasFocus() || focusInList, now());
+      }).catch(function (error) {
         if (token !== state.loadToken) return;
-        if (cached && cached.text) {
-          toast("فهرست تازه دریافت نشد؛ نسخهٔ ذخیره‌شده نمایش داده می‌شود");
-          return;
+        var reason = error instanceof SyntaxError || error.message === "bad list" ? "فایل خراب است"
+          : error.message === "timeout" ? "پاسخ نیامد"
+          : error.message === "network" ? "اتصال برقرار نشد" : error.message;
+        if (window.console) console.warn("[mowj] could not load " + url + ": " + error.message);
+        if (cached) {
+          try {
+            show(cached.text, cached.t, focusInList);
+            toast("فهرست تازه باز نشد؛ نسخهٔ ذخیره‌شده نمایش داده می‌شود");
+            return;
+          } catch (e) {
+            /* fall through to the message */
+          }
         }
-        showListMessage("فهرست دریافت نشد", "اتصال اینترنت را بررسی کن", true);
+        showListMessage(
+          "فهرست شبکه‌ها باز نشد",
+          "فایل " + url.split("?")[0] + " خوانده نشد (" + reason + "). اگر سایت روی هاست خودت است، مطمئن شو پوشهٔ tv/data کامل آپلود شده است.",
+          true,
+        );
       });
     });
   }
@@ -3087,7 +3028,7 @@
       (direction === "up" || direction === "down")) {
       event.preventDefault();
       if (!catbar.step(target, direction === "down" ? 1 : -1) && direction === "down" &&
-        $("catPager").style.visibility !== "hidden" && isVisible($("catPager"))) {
+        isVisible($("catPager"))) {
         $("catNext").focus(); // past the last category: the sidebar's page buttons
       }
       return;
