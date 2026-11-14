@@ -1,12 +1,18 @@
-/* Mowj TV — 10-foot UI. Kept compatible with older TV engines:
-   flexbox + margins only (no flex or grid gap, no CSS math functions, no focus-visible). */
+/* Mowj TV — dark, 10-foot UI in a calm, glassy style.
+   Kept compatible with older TV engines: flexbox + margins only (no flex or
+   grid gap, no CSS math functions, no focus-visible). Translucent "glass"
+   panels are an enhancement behind @supports; every panel has a solid
+   colour first, so engines without backdrop-filter still look right. */
 
+/* Persian letters and digits come from the bundled font; Latin text (most
+   channel names) uses the device's own system font. */
 @font-face {
   font-family: "Vazirmatn";
   font-weight: 400;
   font-style: normal;
   font-display: swap;
   src: url("fonts/Vazirmatn-Regular.woff2") format("woff2");
+  unicode-range: U+0600-06FF, U+0750-077F, U+08A0-08FF, U+200C-200F, U+FB50-FDFF, U+FE70-FEFF;
 }
 
 @font-face {
@@ -15,25 +21,34 @@
   font-style: normal;
   font-display: swap;
   src: url("fonts/Vazirmatn-Bold.woff2") format("woff2");
+  unicode-range: U+0600-06FF, U+0750-077F, U+08A0-08FF, U+200C-200F, U+FB50-FDFF, U+FE70-FEFF;
 }
 
 :root {
-  --bg: #0b0f17;
-  --surface: #141a25;
-  --surface-2: #1b2331;
-  --line: rgba(255, 255, 255, 0.08);
-  --text: #eef2f7;
-  --muted: #8b97a8;
-  --accent: #2dd4bf;
-  --accent-ink: #062b27;
-  --warn: #fbbf24;
-  --bad: #f87171;
-  --focus-bg: #f4f6fa;
-  --focus-ink: #0b0f17;
-  --radius: 0.7rem;
-  --row: 3.5rem;
-  --bar: 3.6rem;
-  --font: "Vazirmatn", Tahoma, "Segoe UI", Arial, sans-serif;
+  --bg: #000;
+  --panel: #1c1c1e;            /* solid fallback for every glass panel */
+  --glass: rgba(44, 44, 46, 0.62);
+  --fill: #2c2c2e;
+  --fill-2: #3a3a3c;
+  --fill-3: #48484a;
+  --sep: rgba(84, 84, 88, 0.5);
+  --text: #f5f5f7;
+  --muted: #a1a1a6;
+  --muted-2: #6e6e73;
+  --accent: #0a84ff;
+  --accent-ink: #fff;
+  --ok: #30d158;
+  --warn: #ffd60a;
+  --bad: #ff453a;
+  --focus-bg: #f5f5f7;
+  --focus-ink: #000;
+  --lift: 0 0.9rem 2.2rem rgba(0, 0, 0, 0.65);
+  --radius: 1rem;
+  --radius-lg: 1.4rem;
+  --row: 3.6rem;
+  --bar: 3.8rem;
+  --font: "Vazirmatn", -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Tahoma, Arial, sans-serif;
+  --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 html {
@@ -72,6 +87,9 @@ body {
 
 body {
   overflow: hidden;
+  /* A soft graphite glow behind the glass, like a dimmed wallpaper. */
+  background: radial-gradient(ellipse at 70% -10%, #2a2d36 0%, #121318 45%, #000 85%);
+  background-color: var(--bg);
   -webkit-font-smoothing: antialiased;
 }
 
@@ -109,6 +127,38 @@ svg {
   display: none !important;
 }
 
+/* ---------- Glass panels ---------- */
+
+.catbar,
+.search,
+.list,
+.list-msg,
+.now,
+.menu,
+.card,
+.osd,
+.numpad,
+.toast {
+  background: var(--panel);
+}
+
+@supports ((-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))) {
+  .catbar,
+  .search,
+  .list,
+  .list-msg,
+  .now,
+  .menu,
+  .card,
+  .osd,
+  .numpad,
+  .is-full .bar {
+    background: var(--glass);
+    -webkit-backdrop-filter: blur(28px) saturate(170%);
+    backdrop-filter: blur(28px) saturate(170%);
+  }
+}
+
 /* ---------- Layout ---------- */
 
 .app {
@@ -122,21 +172,23 @@ svg {
 .topbar {
   display: flex;
   align-items: center;
-  min-height: 3.4rem;
+  justify-content: space-between;
+  min-height: 3.2rem;
   flex-shrink: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 1.1rem;
 }
 
 .brand {
   display: flex;
   align-items: center;
   flex-shrink: 0;
-  margin-left: 1.4rem;
-  font-size: 1.35rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
 }
 
 .brand strong {
-  margin-right: 0.5rem;
+  margin-right: 0.55rem;
 }
 
 .brand-mark {
@@ -150,16 +202,16 @@ svg {
   width: 0.3rem;
   margin-left: 0.18rem;
   border-radius: 0.2rem;
-  background: var(--accent);
+  background: var(--text);
 }
 
-.brand-mark i:nth-child(1) { height: 45%; }
+.brand-mark i:nth-child(1) { height: 45%; opacity: 0.55; }
 .brand-mark i:nth-child(2) { height: 100%; }
-.brand-mark i:nth-child(3) { height: 70%; }
+.brand-mark i:nth-child(3) { height: 70%; opacity: 0.8; }
 
 .brand-mark.big {
   height: 3rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.1rem;
 }
 
 .brand-mark.big i {
@@ -167,85 +219,138 @@ svg {
   margin-left: 0.4rem;
 }
 
-/* Every category stays on screen: Persian and topics on the first row,
- * regions on the second. Nothing to scroll. */
-.cats {
+/* ---------- Category sidebar: headings with their categories, paged
+   (never scrolled) when they do not all fit. ---------- */
+
+.catbar {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  width: 14.5rem;
+  min-height: 0;
+  margin-left: 1.4rem;
+  padding: 0.55rem;
+  border-radius: var(--radius-lg);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+}
+
+.cat-list {
   display: flex;
   flex-direction: column;
   flex: 1;
-  min-width: 0;
-  padding: 0.3rem 0.2rem 0;
+  min-height: 0;
+  overflow: hidden;
 }
 
-.cats-row {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.chip {
+.cat-head {
   flex-shrink: 0;
-  height: 2.4rem;
-  margin-left: 0.45rem;
-  margin-bottom: 0.45rem;
-  padding: 0 0.95rem;
-  border-radius: 1.2rem;
-  background: var(--surface);
-  color: var(--text);
-  font-size: 0.92rem;
+  height: 2rem;
+  padding: 0.55rem 0.8rem 0;
+  color: var(--muted-2);
+  font-size: 0.78rem;
+  font-weight: 700;
   white-space: nowrap;
 }
 
-/* Download size of the big lists, as a quiet badge. */
-.chip small {
-  margin-right: 0.45rem;
-  padding: 0.05rem 0.4rem;
+.cat-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  width: 100%;
+  height: 2.35rem;
+  margin: 0.08rem 0;
+  padding: 0 0.85rem;
+  border-radius: 0.75rem;
+  color: var(--text);
+  font-size: 0.95rem;
+  text-align: right;
+  white-space: nowrap;
+  transition: transform 0.18s var(--ease), background-color 0.18s, color 0.18s, box-shadow 0.18s;
+}
+
+.cat-label {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cat-star {
+  margin-left: 0.4rem;
+  color: var(--warn);
+}
+
+/* Download size of the bigger lists, as a quiet badge at the far end. */
+.cat-item small {
+  flex-shrink: 0;
+  margin-right: auto;
+  padding: 0.05rem 0.45rem;
   border-radius: 0.6rem;
-  background: var(--surface-2);
+  background: rgba(255, 255, 255, 0.08);
   color: var(--muted);
   font-size: 0.68em;
 }
 
-.cats-label {
-  flex-shrink: 0;
-  width: 3.6rem;
-  margin: 0 0 0.45rem 0.45rem;
-  color: var(--muted);
-  font-size: 0.78rem;
-  white-space: nowrap;
-}
-
-/* A thin divider between the Persian lists and the topics. */
-.cats-sep {
-  flex-shrink: 0;
-  width: 1px;
-  height: 1.6rem;
-  margin: 0 0.35rem 0.45rem 0.8rem;
-  background: var(--muted);
-  opacity: 0.45;
-}
-
-.chip.is-active {
+.cat-item.is-active {
   background: var(--accent);
   color: var(--accent-ink);
   font-weight: 700;
 }
 
-.chip.is-active small {
-  background: rgba(0, 0, 0, 0.18);
+.cat-item.is-active small {
+  background: rgba(0, 0, 0, 0.2);
   color: inherit;
+}
+
+.cat-item.is-active .cat-star {
+  color: inherit;
+}
+
+.cat-pager {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  margin-top: 0.45rem;
+}
+
+.cat-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  height: 2.2rem;
+  border-radius: 1.1rem;
+  background: var(--fill);
+  color: var(--text);
+  transition: transform 0.18s var(--ease), background-color 0.18s, color 0.18s, box-shadow 0.18s;
+}
+
+.cat-page svg {
+  width: 1.1rem;
+  height: 1.1rem;
+}
+
+.cat-page.is-off {
+  opacity: 0.35;
+}
+
+.cat-page-info {
+  flex-shrink: 0;
+  min-width: 3.6rem;
+  color: var(--muted);
+  font-size: 0.8rem;
+  text-align: center;
 }
 
 .top-actions {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   flex-shrink: 0;
-  margin-right: 1rem;
 }
 
 .clock {
   margin-left: 0.8rem;
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   font-weight: 700;
   font-variant-numeric: tabular-nums;
 }
@@ -259,8 +364,9 @@ svg {
   margin-right: 0.45rem;
   padding: 0 0.65rem;
   border-radius: 1.3rem;
-  background: var(--surface);
+  background: var(--fill);
   color: var(--muted);
+  transition: transform 0.18s var(--ease), background-color 0.18s, color 0.18s, box-shadow 0.18s;
 }
 
 .icon-btn span:not(:empty) {
@@ -284,7 +390,7 @@ svg {
   width: 31%;
   min-width: 17rem;
   max-width: 30rem;
-  margin-left: 1.2rem;
+  margin-left: 1.4rem;
   min-height: 0;
 }
 
@@ -304,11 +410,11 @@ svg {
   align-items: center;
   flex-shrink: 0;
   height: 2.9rem;
-  margin-bottom: 0.6rem;
-  padding: 0 0.9rem;
-  border-radius: var(--radius);
-  background: var(--surface);
+  margin-bottom: 0.7rem;
+  padding: 0 1rem;
+  border-radius: 1.45rem;
   color: var(--muted);
+  transition: background-color 0.18s, color 0.18s, box-shadow 0.18s;
 }
 
 .search input {
@@ -324,12 +430,13 @@ svg {
 }
 
 .search input::placeholder {
-  color: var(--muted);
+  color: var(--muted-2);
 }
 
 .search.is-focus {
   background: var(--focus-bg);
   color: var(--focus-ink);
+  box-shadow: var(--lift);
 }
 
 .search.is-focus input,
@@ -347,8 +454,7 @@ svg {
   flex: 1;
   min-height: 0;
   overflow: hidden;
-  border-radius: var(--radius);
-  background: var(--surface);
+  border-radius: var(--radius-lg);
 }
 
 /* Page buttons under the list: large targets for a D-pad or a TV pointer. */
@@ -356,7 +462,7 @@ svg {
   display: flex;
   align-items: center;
   flex-shrink: 0;
-  margin-top: 0.5rem;
+  margin-top: 0.7rem;
 }
 
 .page-btn {
@@ -365,10 +471,11 @@ svg {
   justify-content: center;
   flex: 1;
   height: 2.9rem;
-  border-radius: var(--radius);
-  background: var(--surface);
+  border-radius: 1.45rem;
+  background: var(--fill);
   color: var(--text);
   font-size: 0.95rem;
+  transition: transform 0.18s var(--ease), background-color 0.18s, color 0.18s, box-shadow 0.18s;
 }
 
 .page-btn svg {
@@ -393,20 +500,22 @@ svg {
 
 .row {
   position: absolute;
-  right: 0;
-  left: 0;
+  right: 0.4rem;
+  left: 0.4rem;
   display: flex;
   align-items: center;
   height: var(--row);
-  padding: 0 0.7rem 0 0.9rem;
-  border-radius: calc(var(--radius) - 0.15rem);
+  margin-top: 0.4rem;
+  padding: 0 0.6rem 0 0.9rem;
+  border-radius: 0.8rem;
   text-align: right;
+  transition: transform 0.16s var(--ease), background-color 0.16s, box-shadow 0.16s;
 }
 
 .row-num {
   width: 2.1rem;
   flex-shrink: 0;
-  color: var(--muted);
+  color: var(--muted-2);
   font-size: 0.85rem;
   font-variant-numeric: tabular-nums;
   text-align: center;
@@ -419,25 +528,25 @@ svg {
   justify-content: center;
   flex-shrink: 0;
   overflow: hidden;
-  border-radius: 0.45rem;
-  background: var(--surface-2);
+  border-radius: 0.6rem;
+  background: var(--fill);
   color: var(--muted);
   font-weight: 700;
 }
 
 .logo img {
   position: absolute;
-  top: 8%;
-  right: 8%;
-  width: 84%;
-  height: 84%;
+  top: 10%;
+  right: 10%;
+  width: 80%;
+  height: 80%;
   object-fit: contain;
 }
 
 .row .logo {
-  width: 2.5rem;
-  height: 2.5rem;
-  margin: 0 0.35rem 0 0.75rem;
+  width: 2.6rem;
+  height: 2.6rem;
+  margin: 0 0.35rem 0 0.8rem;
 }
 
 .row-copy {
@@ -465,21 +574,21 @@ svg {
 .row-tag {
   flex-shrink: 0;
   margin-right: 0.5rem;
-  color: var(--muted);
+  color: var(--muted-2);
   font-size: 0.72rem;
   direction: ltr;
 }
 
 .dot {
-  width: 0.55rem;
-  height: 0.55rem;
+  width: 0.5rem;
+  height: 0.5rem;
   flex-shrink: 0;
   margin-right: 0.55rem;
   border-radius: 50%;
   background: transparent;
 }
 
-.row.s-ok .dot { background: var(--accent); }
+.row.s-ok .dot { background: var(--ok); }
 .row.s-bad .dot { background: var(--bad); }
 .row.s-checking .dot { background: var(--warn); }
 .row.s-bad .row-name { opacity: 0.6; }
@@ -489,7 +598,7 @@ svg {
 .row.is-dim .logo,
 .row.is-dim .row-copy,
 .row.is-dim .row-tag {
-  opacity: 0.42;
+  opacity: 0.4;
 }
 
 .row.is-dim:focus .row-num,
@@ -499,20 +608,13 @@ svg {
   opacity: 1;
 }
 
-.row.is-playing .row-name {
-  color: var(--accent);
-  font-weight: 700;
+.row.is-playing {
+  background: rgba(10, 132, 255, 0.16);
 }
 
-.row.is-playing::before {
-  content: "";
-  position: absolute;
-  top: 22%;
-  right: 0;
-  bottom: 22%;
-  width: 0.22rem;
-  border-radius: 0.2rem;
-  background: var(--accent);
+.row.is-playing .row-name {
+  color: #64b5ff;
+  font-weight: 700;
 }
 
 .list-msg {
@@ -523,8 +625,7 @@ svg {
   align-items: center;
   justify-content: center;
   padding: 1.5rem;
-  border-radius: var(--radius);
-  background: var(--surface);
+  border-radius: var(--radius-lg);
   color: var(--muted);
   text-align: center;
 }
@@ -544,8 +645,8 @@ svg {
   align-items: flex-start;
   flex-shrink: 0;
   min-height: 1.6rem;
-  padding: 0.35rem 0.3rem 0;
-  color: var(--muted);
+  padding: 0.45rem 0.4rem 0;
+  color: var(--muted-2);
   font-size: 0.75rem;
 }
 
@@ -558,12 +659,13 @@ svg {
   flex-shrink: 0;
   height: 2rem;
   margin-right: 0.6rem;
-  padding: 0 0.8rem;
+  padding: 0 0.9rem;
   border-radius: 1rem;
-  background: var(--surface);
+  background: var(--fill);
   color: var(--text);
   font-size: 0.8rem;
   white-space: nowrap;
+  transition: transform 0.18s var(--ease), background-color 0.18s, color 0.18s, box-shadow 0.18s;
 }
 
 .foot-btn.is-busy {
@@ -579,8 +681,10 @@ svg {
   flex: 1;
   min-height: 0;
   overflow: hidden;
-  border-radius: var(--radius);
+  border-radius: var(--radius-lg);
   background: #000;
+  box-shadow: 0 1.2rem 3rem rgba(0, 0, 0, 0.55), inset 0 0 0 1px rgba(255, 255, 255, 0.06);
+  transition: box-shadow 0.18s;
 }
 
 .player video {
@@ -608,11 +712,11 @@ svg {
 }
 
 .idle {
-  background: radial-gradient(circle at 50% 40%, #172131 0%, #05070b 70%);
+  background: radial-gradient(ellipse at 50% 35%, #26272c 0%, #0b0b0d 70%);
 }
 
 .idle strong {
-  font-size: 1.35rem;
+  font-size: 1.4rem;
 }
 
 .idle small,
@@ -623,11 +727,11 @@ svg {
 }
 
 .status {
-  background: rgba(5, 7, 11, 0.6);
+  background: rgba(0, 0, 0, 0.55);
 }
 
 .status.is-error {
-  background: rgba(5, 7, 11, 0.88);
+  background: rgba(0, 0, 0, 0.85);
 }
 
 .status strong {
@@ -643,8 +747,8 @@ svg {
   width: 2.6rem;
   height: 2.6rem;
   margin-bottom: 1rem;
-  border: 0.28rem solid rgba(255, 255, 255, 0.18);
-  border-top-color: var(--accent);
+  border: 0.26rem solid rgba(255, 255, 255, 0.16);
+  border-top-color: var(--text);
   border-radius: 50%;
   animation: spin 0.9s linear infinite;
 }
@@ -667,11 +771,12 @@ svg {
   align-items: center;
   justify-content: center;
   height: 2.8rem;
-  padding: 0 1.3rem;
+  padding: 0 1.4rem;
   border-radius: 1.4rem;
-  background: var(--surface-2);
+  background: var(--fill-2);
   font-size: 1rem;
   white-space: nowrap;
+  transition: transform 0.18s var(--ease), background-color 0.18s, color 0.18s, box-shadow 0.18s;
 }
 
 .btn svg {
@@ -691,14 +796,14 @@ svg {
   display: flex;
   align-items: center;
   max-width: 80%;
-  padding: 0.6rem 0.8rem;
-  border-radius: var(--radius);
-  background: rgba(11, 15, 23, 0.86);
+  padding: 0.7rem 1rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--lift);
 }
 
 .osd-num {
-  margin-left: 0.8rem;
-  color: var(--accent);
+  margin-left: 0.9rem;
+  color: var(--text);
   font-size: 1.6rem;
   font-weight: 700;
   font-variant-numeric: tabular-nums;
@@ -743,14 +848,14 @@ svg {
   top: 1rem;
   left: 1rem;
   min-width: 5rem;
-  padding: 0.3rem 1rem;
-  border-radius: var(--radius);
-  background: rgba(11, 15, 23, 0.9);
-  color: var(--accent);
+  padding: 0.3rem 1.1rem;
+  border-radius: var(--radius-lg);
+  color: var(--text);
   font-size: 2.6rem;
   font-weight: 700;
   text-align: center;
   font-variant-numeric: tabular-nums;
+  box-shadow: var(--lift);
 }
 
 .bar {
@@ -759,8 +864,9 @@ svg {
   align-items: center;
   flex-shrink: 0;
   height: var(--bar);
-  padding: 0 0.6rem;
-  background: var(--surface);
+  padding: 0 0.7rem;
+  background: #111113;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
 }
 
 .bar-gap {
@@ -779,6 +885,7 @@ svg {
   padding: 0 0.55rem;
   border-radius: 1.35rem;
   color: var(--text);
+  transition: transform 0.18s var(--ease), background-color 0.18s, color 0.18s, box-shadow 0.18s;
 }
 
 .ctl.wide span,
@@ -804,9 +911,10 @@ svg {
   display: flex;
   align-items: center;
   flex-shrink: 0;
-  height: 4.2rem;
+  height: 4.4rem;
   margin-top: 0.8rem;
-  padding: 0 0.3rem;
+  padding: 0 0.9rem;
+  border-radius: var(--radius-lg);
 }
 
 .now-logo {
@@ -829,20 +937,20 @@ svg {
 }
 
 .now-copy strong {
-  font-size: 1.3rem;
+  font-size: 1.25rem;
 }
 
 .now-copy small {
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: 0.88rem;
 }
 
 .now-badge {
   flex-shrink: 0;
   margin-right: 0.8rem;
-  padding: 0.25rem 0.75rem;
+  padding: 0.25rem 0.8rem;
   border-radius: 1rem;
-  background: var(--surface);
+  background: var(--fill);
   color: var(--muted);
   font-size: 0.85rem;
 }
@@ -865,6 +973,7 @@ svg {
   bottom: 0;
   left: 0;
   border-radius: 0;
+  box-shadow: none;
 }
 
 .is-full .idle,
@@ -877,8 +986,9 @@ svg {
   right: 5vw;
   bottom: 5vh;
   left: 5vw;
-  border-radius: 1.8rem;
-  background: rgba(20, 26, 37, 0.92);
+  border-radius: 1.9rem;
+  background: rgba(28, 28, 30, 0.92);
+  box-shadow: var(--lift);
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.2s;
@@ -926,10 +1036,9 @@ svg {
   position: fixed;
   z-index: 40;
   min-width: 15rem;
-  padding: 0.4rem;
-  border-radius: var(--radius);
-  background: var(--surface-2);
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.6);
+  padding: 0.45rem;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 1.2rem 3rem rgba(0, 0, 0, 0.7), inset 0 0 0 1px rgba(255, 255, 255, 0.07);
 }
 
 .menu-title {
@@ -943,9 +1052,10 @@ svg {
   align-items: center;
   width: 100%;
   height: 2.8rem;
-  padding: 0 0.8rem;
-  border-radius: 0.5rem;
+  padding: 0 0.9rem;
+  border-radius: 0.8rem;
   text-align: right;
+  transition: transform 0.16s var(--ease), background-color 0.16s, color 0.16s;
 }
 
 .menu-item span {
@@ -975,7 +1085,7 @@ svg {
   align-items: center;
   justify-content: center;
   padding: 5vh 5vw;
-  background: rgba(0, 0, 0, 0.72);
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .card {
@@ -983,9 +1093,9 @@ svg {
   max-width: 40rem;
   max-height: 100%;
   overflow-y: auto;
-  padding: 1.6rem 1.8rem;
-  border-radius: 1rem;
-  background: var(--surface);
+  padding: 1.7rem 1.9rem;
+  border-radius: 1.6rem;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.7), inset 0 0 0 1px rgba(255, 255, 255, 0.07);
 }
 
 .card h2 {
@@ -1002,7 +1112,7 @@ svg {
 .keys dt {
   width: 26%;
   margin: 0 0 0.6rem;
-  color: var(--accent);
+  color: var(--text);
   font-weight: 700;
   direction: ltr;
   text-align: right;
@@ -1011,6 +1121,7 @@ svg {
 .keys dd {
   width: 74%;
   margin: 0 0 0.6rem;
+  color: var(--muted);
 }
 
 .note {
@@ -1025,45 +1136,75 @@ svg {
   right: 50%;
   bottom: 7vh;
   max-width: 80vw;
-  padding: 0.7rem 1.3rem;
-  border-radius: 1.5rem;
+  padding: 0.75rem 1.4rem;
+  border-radius: 1.6rem;
   background: var(--focus-bg);
   color: var(--focus-ink);
   font-size: 1rem;
   transform: translateX(50%);
-  box-shadow: 0 0.6rem 2rem rgba(0, 0, 0, 0.5);
+  box-shadow: var(--lift);
 }
 
-/* ---------- Focus: one clear, high-contrast style everywhere ---------- */
+/* ---------- Focus: the focused item lifts, grows a little and turns bright,
+   so it is easy to find from across the room. ---------- */
 
-.chip:focus,
+.cat-item:focus,
+.cat-page:focus,
 .foot-btn:focus,
 .page-btn:focus,
 .icon-btn:focus,
-.row:focus,
 .ctl:focus,
 .btn:focus,
 .menu-item:focus {
+  z-index: 2;
   background: var(--focus-bg);
   color: var(--focus-ink);
-  box-shadow: 0 0 0 0.2rem var(--accent);
+  box-shadow: var(--lift);
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+}
+
+.cat-item:focus small,
+.menu-item:focus small {
+  background: rgba(0, 0, 0, 0.08);
+  color: #3a3a3c;
+}
+
+.cat-item:focus {
+  -webkit-transform: scale(1.04);
+  transform: scale(1.04);
+}
+
+.cat-item:focus .cat-star {
+  color: #b38600;
+}
+
+.row:focus {
+  z-index: 2;
+  background: var(--focus-bg);
+  color: var(--focus-ink);
+  box-shadow: var(--lift);
+  -webkit-transform: scale(1.025);
+  transform: scale(1.025);
 }
 
 .row:focus .row-num,
 .row:focus .row-meta,
 .row:focus .row-tag,
-.menu-item:focus small,
 .row.is-playing:focus .row-name {
-  color: var(--focus-ink);
+  color: #3a3a3c;
 }
 
-.row:focus {
-  z-index: 1;
-  box-shadow: inset 0 0 0 0.2rem var(--accent);
+.row.is-playing:focus .row-name {
+  color: #0060df;
+}
+
+.row:focus .logo {
+  background: #e5e5ea;
 }
 
 .player:focus {
-  box-shadow: inset 0 0 0 0.22rem var(--accent);
+  box-shadow: 0 0 0 0.22rem var(--focus-bg), 0 1.2rem 3rem rgba(0, 0, 0, 0.6);
 }
 
 .is-full .player:focus {
@@ -1073,7 +1214,8 @@ svg {
 /* Pointer users (mouse, or a TV remote's on-screen pointer) get hover hints
  * without stealing remote focus. */
 @media (hover: hover) {
-  .chip:hover,
+  .cat-item:hover,
+  .cat-page:hover,
   .foot-btn:hover,
   .page-btn:hover,
   .icon-btn:hover,
@@ -1081,11 +1223,14 @@ svg {
   .btn:hover,
   .menu-item:hover,
   .row:hover {
-    background: var(--surface-2);
+    background: var(--fill-2);
+    color: var(--text);
   }
 
+  .cat-item.is-active:hover,
   .btn.primary:hover {
     background: var(--accent);
+    color: var(--accent-ink);
   }
 }
 
@@ -1105,38 +1250,55 @@ svg {
   .topbar {
     flex-wrap: wrap;
     height: auto;
-    margin-bottom: 0.6rem;
+    margin-bottom: 0.7rem;
   }
 
   .brand {
+    width: auto;
     margin-left: auto;
   }
 
-  .cats {
-    order: 3;
-    width: 100%;
-    flex: none;
+  .top-actions {
+    width: auto;
+  }
+
+  /* On a phone the categories become one strip that slides sideways. */
+  .catbar {
+    width: auto;
+    margin: 0 0 0.7rem;
+    padding: 0.35rem;
+  }
+
+  .cat-list {
     flex-direction: row;
+    align-items: center;
     overflow-x: auto;
     overflow-y: hidden;
     scrollbar-width: none;
-    margin-top: 0.5rem;
   }
 
-  .cats::-webkit-scrollbar {
+  .cat-list::-webkit-scrollbar {
     display: none;
   }
 
-  .cats-row {
-    flex-wrap: nowrap;
-    flex-shrink: 0;
+  .cat-head {
+    height: auto;
+    padding: 0 0.9rem 0 0.5rem;
+    border-right: 1px solid var(--sep);
   }
 
-  .cats-label {
+  .cat-head:first-child {
+    padding-right: 0.4rem;
+    border-right: 0;
+  }
+
+  .cat-item {
     width: auto;
-    margin-right: 0.8rem;
-    padding-right: 0.8rem;
-    border-right: 1px solid var(--surface-2);
+    margin: 0 0.15rem;
+  }
+
+  .cat-pager {
+    display: none;
   }
 
   .main {
@@ -1183,11 +1345,26 @@ svg {
 
   .now {
     height: auto;
-    margin-top: 0.5rem;
+    min-height: 4rem;
+    margin-top: 0.6rem;
   }
 
   .is-full .player video {
     height: 100%;
     max-height: none;
+  }
+}
+
+/* Less motion when the device asks for it. */
+@media (prefers-reduced-motion: reduce) {
+  .cat-item,
+  .row,
+  .ctl,
+  .btn,
+  .page-btn,
+  .icon-btn,
+  .foot-btn,
+  .menu-item {
+    transition: none;
   }
 }

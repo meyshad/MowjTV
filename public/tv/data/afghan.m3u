@@ -1,0 +1,71 @@
+#EXTM3U x-mowj-hidden="4"
+#EXTINF:-1 tvg-id="4Afghanistan.fr@SD" tvg-logo="" group-title="Undefined",4 Afghanistan
+https://4afghls.persiana.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="ABNAfghanistan.us@SD" tvg-logo="" group-title="Religious",ABN Afghanistan (540p)
+https://mediaserver.abnvideos.com/streams/abnafghanistan.m3u8
+#EXTINF:-1 tvg-id="AfghanNobelMovies.ca@SD" tvg-logo="logos/AfghanNobelMovies.ca-c052e2.webp" group-title="Movies",Afghan Nobel Movies (720p)
+https://live.relentlessinnovations.net:1936/afghannobel/afghannobel/playlist.m3u8
+#EXTINF:-1 tvg-id="AfghanNobelTV.ca@SD" tvg-logo="" group-title="General",Afghan Nobel TV (720p)
+https://live.relentlessinnovations.net:1936/afghannobeltv/afghannobeltv/playlist.m3u8
+#EXTINF:-1 tvg-id="AfghanistanInternational.uk@SD" tvg-logo="logos/AfghanistanInternational.uk-6f2b53.webp" group-title="News",Afghanistan International (720p)
+https://hls.afintl.com/hls/stream.m3u8
+#EXTINF:-1 tvg-id="AMC.af@SD" tvg-logo="logos/AMC.af-5be75f.webp" group-title="Music",AMC (Afghanistan) (1080p)
+https://amchls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="AmuTV.us@SD" tvg-logo="logos/AmuTV.us-702343.webp" group-title="News",Amu TV
+https://jmc-live.ercdn.net/amutv/amutv.m3u8
+#EXTINF:-1 tvg-id="BaharTV.af@SD" tvg-logo="" group-title="General",Bahar TV (720p) [Not 24/7]
+https://59d39900ebfb8.streamlock.net/bahartv/bahartv/playlist.m3u8
+#EXTINF:-1 tvg-id="DunyaNawTV.af@SD" tvg-logo="" group-title="General",Dunya Naw TV (576p)
+https://dunyanhls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="EslahTV.af@SD" tvg-logo="" group-title="Religious",Eslah TV (720p)
+https://eslahtvhls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="ImanTV.us@SD" tvg-logo="" group-title="Religious",Iman TV (480p)
+https://live.relentlessinnovations.net:1936/imantv/imantv/playlist.m3u8
+#EXTINF:-1 tvg-id="KayhanTV.af@SD" tvg-logo="logos/KayhanTV.af-bf4672.webp" group-title="Music",Kayhan TV (720p)
+https://playout395.livestreamingcdn.com/live/Stream1/playlist.m3u8
+#EXTINF:-1 tvg-id="LemarTV.af@SD" tvg-logo="" group-title="Entertainment",Lemar TV (720p)
+https://tgn.bozztv.com/eshgtv-dvrfl05/gin-lemar/index.m3u8
+#EXTINF:-1 tvg-id="MaahTV.my@SD" tvg-logo="logos/MaahTV.my-d67ce8.webp" group-title="Movies",Maah TV (720p)
+https://hls.maahtv.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="PayameAfghanTV.us@SD" tvg-logo="" group-title="General",Payam-e-Afghan TV (480p) [Not 24/7]
+https://g5nl6xx5lpq6-hls-live.5centscdn.com/live1234/2621b29e501b445fabf227b086123b70.sdp/mono.m3u8
+#EXTINF:-1 tvg-id="RTA.af@SD" tvg-logo="" group-title="General",RTA (1080p)
+https://rta-tv.akamaized.net/live/SD/RTA-1/RTA/RTA-1.m3u8
+#EXTINF:-1 tvg-id="RTAEducation.af@SD" tvg-logo="" group-title="Undefined",RTA Education (1080p)
+https://rta-tv.akamaized.net/live/SD/RTA-4/RTA/RTA-4.m3u8
+#EXTINF:-1 tvg-id="ShamsTV.af@SD" tvg-logo="" group-title="Education",Shams TV (Afghanistan) (1080p)
+https://fflive-darya-educationtv.b-cdn.net/master.m3u8
+#EXTINF:-1 tvg-id="ShamshadTV.af@SD" tvg-logo="" group-title="Entertainment",Shamshad TV [Not 24/7]
+https://5a1178b42cc03.streamlock.net/shamshadtelevision/shamshadtelevision/playlist.m3u8
+#EXTINF:-1 tvg-id="SharqRadioTV.af@SD" tvg-logo="" group-title="General",Sharq Radio TV (1080p)
+https://59nyqa5elwap-hls-live.5centscdn.com/Sharq/eec89088ee408b80387155272b113256.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="SohailTV.ca@SD" tvg-logo="" group-title="General",Sohail TV (1080p)
+https://iptv.sohailtv.com/sohail/playlist/index.m3u8
+#EXTINF:-1 tvg-id="TamadonTV.af@SD" tvg-logo="" group-title="Undefined",Tamadon TV (720p)
+https://hls.tamadon.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="ToloTV.af@SD" tvg-logo="" group-title="General",Tolo TV
+https://tgn.bozztv.com/eshgtv-dvrfl05/gin-tolohd/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-id="TOLOnews.af@SD" tvg-logo="logos/TOLOnews.af-aa97bc.webp" group-title="News",TOLOnews (720p)
+https://tgn.bozztv.com/eshgtv-dvrfl05/gin-tolonews/index.m3u8
+#EXTINF:-1 tvg-id="IlmvaTabiat.tj@SD" tvg-logo="" group-title="Science",Ilm va Tabiat (1080p)
+https://live.teleradiocom.tj/15/3m.m3u8
+#EXTINF:-1 tvg-id="Jahonnamo.tj@SD" tvg-logo="" group-title="General",Jahonnamo (1080p)
+https://live.teleradiocom.tj/4/3m.m3u8
+#EXTINF:-1 tvg-id="Khatlon.tj@SD" tvg-logo="" group-title="General",Khatlon (576p)
+https://live.teleradiocom.tj/10/3m.m3u8
+#EXTINF:-1 tvg-id="TMT.tj@SD" tvg-logo="" group-title="General",TMT (1080p)
+https://live.teleradiocom.tj/9/3m.m3u8
+#EXTINF:-1 tvg-id="Tojikiston.tj@SD" tvg-logo="" group-title="General",Tojikiston (1080p)
+https://live.teleradiocom.tj/1/3m.m3u8
+#EXTINF:-1 tvg-id="TVBahoriston.tj@SD" tvg-logo="logos/TVBahoriston.tj-08394a.webp" group-title="Kids",TV Bahoriston (1080p)
+https://live.teleradiocom.tj/3/3m.m3u8
+#EXTINF:-1 tvg-id="TVKulob.tj@SD" tvg-logo="" group-title="General",TV Kulob (576p)
+https://live.teleradiocom.tj/12/3m.m3u8
+#EXTINF:-1 tvg-id="TVSafina.tj@SD" tvg-logo="" group-title="Undefined",TV Safina (1080p)
+https://live.teleradiocom.tj/2/3m.m3u8
+#EXTINF:-1 tvg-id="TVSayohi.tj@SD" tvg-logo="" group-title="Travel",TV Sayohi (1080p)
+https://live.teleradiocom.tj/16/3m.m3u8
+#EXTINF:-1 tvg-id="TVSinamo.tj@SD" tvg-logo="" group-title="Undefined",TV Sinamo (1080p)
+https://live.teleradiocom.tj/6/3m.m3u8
+#EXTINF:-1 tvg-id="TVSugd.tj@SD" tvg-logo="" group-title="General",TV Sugd (1080p)
+https://live.teleradiocom.tj/14/3m.m3u8
