@@ -139,6 +139,7 @@
   var STALL_LOWER_MS = 7000;
   var STALL_RECONNECT_MS = 25000;
   var AUTO_MAX_HEIGHT = 480;
+  var AUTO_FULLSCREEN_MS = 30000;            // playing and no input for this long: go fullscreen
   var HLS_RETRY_URL = "assets/vendor/hls.min.js?retry=1"; // same file, in case the first load failed
   var XLINK = "http://www.w3.org/1999/xlink";
 
@@ -1766,6 +1767,11 @@
       isActive: function () {
         return Boolean(P.channel && (P.started || P.timers.start || P.timers.reconnect));
       },
+      // Really playing: started, not paused by the user, not reconnecting or failed.
+      isPlayingNow: function () {
+        return Boolean(P.channel && P.started && !P.userPaused && !P.timers.reconnect &&
+          !video.paused && !video.ended);
+      },
       isPaused: function () {
         return P.userPaused;
       },
@@ -2034,6 +2040,7 @@
       }
       nativeRequested = false;
       list.focusCurrent();
+      autoFull.arm(); // a new full idle period, never straight back into fullscreen
     }
 
     api.enter = function () {
@@ -2083,6 +2090,56 @@
     $("player").addEventListener("touchstart", api.showUi);
     $("player").addEventListener("dblclick", api.toggle);
     return api;
+  })();
+
+  /* ------------------------------------------------------------------ *
+   * Idle auto-fullscreen: a channel that has been playing for 30 seconds
+   * with no key, pointer, click, wheel or touch goes fullscreen, through the
+   * same path as the fullscreen button (in-page fullscreen when the browser
+   * refuses the native one without a gesture).
+   * ------------------------------------------------------------------ */
+
+  var autoFull = (function () {
+    var idle = window.MowjIdle ? window.MowjIdle({
+      delay: AUTO_FULLSCREEN_MS,
+      eligible: function () {
+        return player.isPlayingNow() && !fullscreen.active && !layers.top() &&
+          document.visibilityState !== "hidden";
+      },
+      fire: function () {
+        fullscreen.enter();
+      },
+    }) : { arm: function () {}, cancel: function () {} };
+
+    var lastMove = 0;
+    function onInput() {
+      idle.arm();
+    }
+    function onMove() {
+      // Pointer movement arrives in bursts; re-arming twice a second is plenty.
+      if (now() - lastMove < 500) return;
+      lastMove = now();
+      idle.arm();
+    }
+
+    ["keydown", "mousedown", "click", "wheel", "touchstart", "focusin"].forEach(function (type) {
+      document.addEventListener(type, onInput, true);
+    });
+    ["mousemove", "pointermove"].forEach(function (type) {
+      document.addEventListener(type, onMove, true);
+    });
+    video.addEventListener("playing", onInput);
+    ["pause", "ended", "error", "emptied"].forEach(function (type) {
+      video.addEventListener(type, function () {
+        idle.cancel();
+      });
+    });
+    document.addEventListener("visibilitychange", function () {
+      if (document.visibilityState === "hidden") idle.cancel();
+      else idle.arm();
+    });
+
+    return idle;
   })();
 
   /* ---------- Quality menu ---------- */

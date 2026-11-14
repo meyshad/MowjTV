@@ -42,6 +42,8 @@ This downloads the IPTV-ORG playlists again, drops channels that no browser can 
 
 Channel lists come from IPTV-ORG and are bundled with the site when the package is built, while each stream is delivered by its own upstream host. A channel may fail because its stream is offline, region-restricted, blocked by CORS, or served over insecure HTTP. These are upstream limitations that a fully static site cannot bypass. Channels whose links can never work in a browser on an HTTPS site (HTTP-only links, hosts that only allow their own website through CORS, and links that need a custom Referer or User-Agent) are removed when the package is built, and the list footer shows how many were removed.
 
+When a channel has been playing for 30 seconds with no input at all, it switches to fullscreen through the same path as the fullscreen button; Back leaves fullscreen as usual, and the next switch needs another full 30 seconds without input.
+
 Automatic quality is capped at 480p. When a channel offers several renditions the player starts low and climbs to the cap only when the connection allows it, and it lowers the cap for the session after a long stall. Viewers can pick 720p or 1080p from the quality menu; the choice is saved and applied to every channel that offers it. Channels that only publish one high-quality rendition are marked as data-heavy.
 
 There is no automatic background scanning. When the remote rests on a channel for about a second, a single small playlist request checks whether it answers. The "check channels" button under the list does the same for every channel in the list that has no recent result, two requests at a time and only while playback has spare bandwidth; it shows the expected cost before it starts.
