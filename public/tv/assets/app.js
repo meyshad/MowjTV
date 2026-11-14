@@ -12,6 +12,23 @@
    * from IPTV-ORG), so everything but the video streams comes from this host. */
   var DATA = "data/";
 
+  /* Small categories are read online first (fresher), from the same IPTV-ORG
+   * playlists the data build uses; when that host does not answer quickly,
+   * the copy bundled with the site is used. Big lists are always local. */
+  var REMOTE_BASE = "https://iptv-org.github.io/iptv/";
+  var REMOTE_SOURCES = {
+    fas: ["languages/fas", "countries/af", "countries/tj"],
+    tr: ["countries/tr"],
+    sports: ["categories/sports"],
+    music: ["categories/music"],
+    kids: ["categories/kids", "categories/animation"],
+    documentary: ["categories/documentary", "categories/science", "categories/education"],
+  };
+  var REMOTE_TIMEOUT_MS = 4500;
+  var REMOTE_FRESH_MS = 12 * 3600 * 1000;   // a list read online is reused for 12h without any network
+  var REMOTE_DOWN_MS = 24 * 3600 * 1000;    // after a failed try, go straight to the bundled copy for a day
+  var REMOTE_DOWN_KEY = "mowj-tv-remote-down";
+
   /* A short, tidy sidebar: Persian first, then seven topics and the regions.
    * The data build folds IPTV-ORG's many small categories into these. */
   var CATEGORY_GROUPS = { persian: "فارسی", topic: "موضوع", region: "منطقه" };
@@ -519,6 +536,7 @@
     query: "",
     loadToken: 0,
     savedAt: 0,
+    source: "",
     current: null,
   };
 
@@ -2531,6 +2549,9 @@
     state.channels.forEach(function (channel) {
       if (rankOf(channel.id) === 2) dimmed += 1;
     });
+    if (state.cat && !state.cat.favorites && state.source) {
+      parts.push(state.source === "remote" ? "فهرست آنلاین" : "نسخهٔ همراه سایت");
+    }
     if (dimmed) parts.push(fa(dimmed) + " شبکهٔ کم‌رنگ این‌جا معمولاً پخش نمی‌شود");
     if (hiddenCount && state.cat && !state.cat.favorites) {
       parts.push(fa(hiddenCount) + " شبکهٔ غیرقابل‌پخش در مرورگر پنهان شد");
@@ -2624,50 +2645,157 @@
       setChannels(parseList(JSON.parse(text)), refocus, savedAt);
     }
 
-    return Promise.all([cacheGet(CACHE_PREFIX + cat.key), loadDataIndex()]).then(function (results) {
+    return cacheGet(CACHE_PREFIX + cat.key).then(function (stored) {
       if (token !== state.loadToken) return null;
-      var cached = results[0] && results[0].text ? results[0] : null;
-      var index = results[1];
-      // Same data version as on the server (or the server cannot be asked): no download at all.
-      if (cached && !forceRefresh && (!index || cached.v === index.v)) {
+      var cached = stored && stored.text ? stored : null;
+      // Read online less than 12 hours ago: no network at all.
+      if (cached && cached.v === "remote" && now() - cached.t < REMOTE_FRESH_MS && !forceRefresh) {
         try {
+          state.source = "remote";
           show(cached.text, cached.t, focusInList);
           return null;
         } catch (e) {
-          cached = null; // unreadable cache from an older version
+          cached = null;
         }
       }
-      if (navigator.onLine === false && !cached) {
-        showListMessage("اینترنت وصل نیست", "پس از اتصال دوباره تلاش کن", true);
-        return null;
-      }
-      var url = listUrl(cat, index);
-      return fetchText(url, cat.timeout || 25000, forceRefresh).then(function (text) {
+      if (forceRefresh) remoteDown(false); // "Retry" gives the online source another chance
+      var request = { cancel: function () {} };
+      var lists = window.MowjLists;
+      var job = {
+        remote: lists && REMOTE_SOURCES[cat.key] ? function () {
+          return loadRemote(cat, request);
+        } : null,
+        local: function () {
+          return loadLocal(cat, cached, forceRefresh);
+        },
+        isUnreachable: function () {
+          return remoteDown();
+        },
+        markUnreachable: function () {
+          remoteDown(true);
+        },
+        cancelRemote: function () {
+          request.cancel();
+        },
+        timeoutMs: REMOTE_TIMEOUT_MS,
+      };
+      var load = lists ? lists.loadWithFallback(job) : job.local().then(function (value) {
+        return { source: "local", value: value };
+      });
+      return load.then(function (result) {
         if (token !== state.loadToken) return;
-        var data = JSON.parse(text);
-        var channels = parseList(data);
-        cachePut(CACHE_PREFIX + cat.key, text, data.v || (index && index.v));
-        setChannels(channels, list.hasFocus() || focusInList, now());
+        state.source = result.source;
+        var value = result.value;
+        if (result.source === "remote") cachePut(CACHE_PREFIX + cat.key, value.text, "remote");
+        else if (!value.fromCache) cachePut(CACHE_PREFIX + cat.key, value.text, value.version);
+        if (value.fromCache && value.stale) toast("فهرست تازه باز نشد؛ نسخهٔ ذخیره‌شده نمایش داده می‌شود");
+        setChannels(parseList(value.data), list.hasFocus() || focusInList, value.savedAt || now());
       }).catch(function (error) {
         if (token !== state.loadToken) return;
+        var url = error.url || listUrl(cat, null);
         var reason = error instanceof SyntaxError || error.message === "bad list" ? "فایل خراب است"
           : error.message === "timeout" ? "پاسخ نیامد"
           : error.message === "network" ? "اتصال برقرار نشد" : error.message;
         if (window.console) console.warn("[mowj] could not load " + url + ": " + error.message);
-        if (cached) {
-          try {
-            show(cached.text, cached.t, focusInList);
-            toast("فهرست تازه باز نشد؛ نسخهٔ ذخیره‌شده نمایش داده می‌شود");
-            return;
-          } catch (e) {
-            /* fall through to the message */
-          }
-        }
         showListMessage(
           "فهرست شبکه‌ها باز نشد",
           "فایل " + url.split("?")[0] + " خوانده نشد (" + reason + "). اگر سایت روی هاست خودت است، مطمئن شو پوشهٔ tv/data کامل آپلود شده است.",
           true,
         );
+      });
+    });
+  }
+
+  // "Online source did not answer" is remembered for a day.
+  function remoteDown(value) {
+    if (value === true) {
+      writeJson(REMOTE_DOWN_KEY, now());
+      return true;
+    }
+    if (value === false) {
+      removeKey(REMOTE_DOWN_KEY);
+      return false;
+    }
+    var since = Number(readJson(REMOTE_DOWN_KEY, 0)) || 0;
+    return now() - since < REMOTE_DOWN_MS;
+  }
+
+  // One try at the online playlists of a category, cut off after REMOTE_TIMEOUT_MS.
+  function loadRemote(cat, request) {
+    var lists = window.MowjLists;
+    var controller = typeof AbortController !== "undefined" ? new AbortController() : null;
+    var xhrs = [];
+    request.cancel = function () {
+      if (controller) controller.abort();
+      xhrs.forEach(function (xhr) {
+        xhr.abort();
+      });
+    };
+    var texts = REMOTE_SOURCES[cat.key].map(function (path) {
+      var url = REMOTE_BASE + path + ".m3u";
+      if (controller && typeof fetch === "function") {
+        return fetch(url, { credentials: "omit", signal: controller.signal }).then(function (response) {
+          if (!response.ok) throw new Error("HTTP " + response.status);
+          return response.text();
+        });
+      }
+      return new Promise(function (resolve, reject) {
+        var xhr = new XMLHttpRequest();
+        xhrs.push(xhr);
+        xhr.open("GET", url, true);
+        xhr.timeout = REMOTE_TIMEOUT_MS; // TV browsers without AbortController
+        xhr.onload = function () {
+          if (xhr.status >= 200 && xhr.status < 300) resolve(xhr.responseText);
+          else reject(new Error("HTTP " + xhr.status));
+        };
+        xhr.onerror = xhr.ontimeout = xhr.onabort = function () {
+          reject(new Error("network"));
+        };
+        xhr.send();
+      });
+    });
+    return Promise.all(texts).then(function (bodies) {
+      var entries = [];
+      bodies.forEach(function (text) {
+        entries = entries.concat(lists.parseM3u(text));
+      });
+      var built = lists.buildRows(entries, {
+        corsLockedHosts: CORS_LOCKED_HOSTS,
+        logoFor: function (base, logoUrl) {
+          return logoUrl ? lists.logoName(base) : "";
+        },
+      });
+      if (!built.c.length) throw new Error("bad list"); // empty or not a playlist: use the bundled copy
+      var data = { format: 2, v: "remote", hidden: built.hidden, playable: built.playable, c: built.c };
+      return { data: data, text: JSON.stringify(data) };
+    });
+  }
+
+  // The copy bundled with the site, checked against data/index.json.
+  function loadLocal(cat, cached, forceRefresh) {
+    return loadDataIndex().then(function (index) {
+      if (cached && cached.v !== "remote" && !forceRefresh && (!index || cached.v === index.v)) {
+        try {
+          return { data: JSON.parse(cached.text), text: cached.text, fromCache: true, savedAt: cached.t };
+        } catch (e) {
+          cached = null;
+        }
+      }
+      var url = listUrl(cat, index);
+      return fetchText(url, cat.timeout || 25000, forceRefresh).then(function (text) {
+        var data = JSON.parse(text);
+        parseList(data); // throws on a broken file
+        return { data: data, text: text, version: data.v || (index && index.v) };
+      }).catch(function (error) {
+        if (cached) {
+          try {
+            return { data: JSON.parse(cached.text), text: cached.text, fromCache: true, stale: true, savedAt: cached.t };
+          } catch (e) {
+            /* report the original error */
+          }
+        }
+        error.url = url;
+        throw error;
       });
     });
   }

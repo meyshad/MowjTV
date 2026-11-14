@@ -133,8 +133,8 @@ test("ships a self-hosted TV folder", async () => {
   assert.doesNotMatch(styles, /https?:\/\//, "fonts are bundled");
   assert.match(styles, /url\("fonts\/Vazirmatn-Regular\.woff2"\)/);
   const external = script.split("\n").filter((line) => /https?:\/\//.test(line) &&
-    !/^\s*("[\w.]+": \["https:\/\/[^"]+\.m3u8"\],|\*|\/\/|var (XLINK|SVG_NS) = "http:\/\/www\.w3\.org\/[\w/]+";)/.test(line));
-  assert.deepEqual(external, [], "only stream fixes may name another host");
+    !/^\s*("[\w.]+": \["https:\/\/[^"]+\.m3u8"\],|\*|\/\/|var (XLINK|SVG_NS) = "http:\/\/www\.w3\.org\/[\w/]+";|var REMOTE_BASE = "https:\/\/iptv-org\.github\.io\/iptv\/";)/.test(line));
+  assert.deepEqual(external, [], "only stream fixes and the optional online list source may name another host");
   assert.match(script, /return \/\^logos\\\/\[\\w\.-\]\+\\\.webp\$\/\.test\(url\)/, "only bundled logos are shown");
   await access(new URL("../public/tv/assets/vendor/hls.min.js", import.meta.url));
   await access(new URL("../public/tv/assets/fonts/Vazirmatn-Bold.woff2", import.meta.url));
@@ -190,6 +190,130 @@ async function loadIdle() {
   runInNewContext(source, sandbox);
   return sandbox.MowjIdle;
 }
+
+// Objects made inside the sandbox have their own prototypes; compare them as plain data.
+const plain = (value) => JSON.parse(JSON.stringify(value));
+
+async function loadLists() {
+  const source = await readFile(new URL("../public/tv/assets/lists.js", import.meta.url), "utf8");
+  const sandbox = { setTimeout, clearTimeout, Promise };
+  sandbox.window = sandbox;
+  runInNewContext(source, sandbox);
+  return sandbox.MowjLists;
+}
+
+function fallbackJob(t, overrides) {
+  const calls = { remote: 0, local: 0, marked: 0, cancelled: 0 };
+  let down = false;
+  const job = {
+    remote: () => {
+      calls.remote += 1;
+      return Promise.resolve("online list");
+    },
+    local: () => {
+      calls.local += 1;
+      return Promise.resolve("bundled list");
+    },
+    isUnreachable: () => down,
+    markUnreachable: () => {
+      calls.marked += 1;
+      down = true;
+    },
+    cancelRemote: () => {
+      calls.cancelled += 1;
+    },
+    timeoutMs: 4500,
+    setTimeout: (fn, ms) => setTimeout(fn, ms),
+    clearTimeout: (id) => clearTimeout(id),
+    ...overrides,
+  };
+  return { job, calls, setDown: (value) => (down = value) };
+}
+
+test("reads a list online first and keeps the bundled copy as the fallback", async (t) => {
+  const { loadWithFallback } = await loadLists();
+  t.mock.timers.enable({ apis: ["setTimeout"] });
+
+  // 1. The online source answers: no local request at all
+  let run = fallbackJob(t);
+  assert.deepEqual(plain(await loadWithFallback(run.job)), { source: "remote", value: "online list" });
+  assert.equal(run.calls.local, 0);
+
+  // 2. The online source hangs: after 4.5 s the bundled copy is used and the try is remembered
+  run = fallbackJob(t, { remote: () => new Promise(() => {}) });
+  const pending = loadWithFallback(run.job);
+  t.mock.timers.tick(4499);
+  await Promise.resolve();
+  assert.equal(run.calls.local, 0, "no fallback before the timeout");
+  t.mock.timers.tick(1);
+  assert.deepEqual(plain(await pending), { source: "local", value: "bundled list" });
+  assert.equal(run.calls.cancelled, 1, "the slow download is stopped");
+  assert.equal(run.calls.marked, 1);
+
+  // A network error falls back at once as well
+  run = fallbackJob(t, { remote: () => Promise.reject(new Error("network")) });
+  assert.deepEqual(plain(await loadWithFallback(run.job)), { source: "local", value: "bundled list" });
+
+  // 3. Remembered as unreachable: straight to the bundled copy, no waiting
+  run = fallbackJob(t);
+  run.setDown(true);
+  assert.deepEqual(plain(await loadWithFallback(run.job)), { source: "local", value: "bundled list" });
+  assert.equal(run.calls.remote, 0);
+
+  // 4. Both fail: the caller gets the local error (shown with a Retry button)
+  run = fallbackJob(t, {
+    remote: () => Promise.reject(new Error("network")),
+    local: () => Promise.reject(new Error("HTTP 404")),
+  });
+  await assert.rejects(loadWithFallback(run.job), /HTTP 404/);
+});
+
+test("filters and merges playlists the same way online and at build time", async () => {
+  const lists = await loadLists();
+  const m3u = [
+    "#EXTM3U",
+    '#EXTINF:-1 tvg-id="One.ir@SD" tvg-logo="https://x/1.png" group-title="News",One (720p) [Geo-blocked]',
+    "https://a.example/one.m3u8",
+    '#EXTINF:-1 tvg-id="One.ir@HD" group-title="News",One',
+    "https://b.example/one-hd.m3u8",
+    '#EXTINF:-1 tvg-id="Plain.ir" group-title="News",Plain',
+    "http://insecure.example/plain.m3u8",
+    '#EXTINF:-1 tvg-id="Head.ir" http-referrer="https://x" group-title="News",Head',
+    "https://c.example/head.m3u8",
+    '#EXTINF:-1 tvg-id="Locked.ir" group-title="News",Locked',
+    "https://ncdn.telewebion.ir/x/live.m3u8",
+  ].join("\n");
+  const built = lists.buildRows(lists.parseM3u(m3u), {
+    corsLockedHosts: ["ncdn.telewebion.ir"],
+    logoFor: (base, url) => (url ? lists.logoName(base) : ""),
+  });
+  assert.equal(built.c.length, 2, "HTTP-only, header-needing and CORS-locked channels are dropped");
+  assert.equal(built.hidden, 3);
+  assert.deepEqual(plain(built.c[0]), ["One.ir@SD", "One", "One.ir.webp", "news", 720, 1, ["https://a.example/one.m3u8"]]);
+  const build = await readFile(new URL("../scripts/build-data.mjs", import.meta.url), "utf8");
+  assert.match(build, /runInNewContext\(await readFile\(new URL\("assets\/lists\.js", TV\)/, "the build uses the same parser");
+});
+
+test("reads online only the small categories, from the same playlists as the build", async () => {
+  const [script, build, html] = await Promise.all([
+    readFile(new URL("../public/tv/assets/app.js", import.meta.url), "utf8"),
+    readFile(new URL("../scripts/build-data.mjs", import.meta.url), "utf8"),
+    readFile(new URL("../public/tv/index.html", import.meta.url), "utf8"),
+  ]);
+  assert.match(html, /<script defer src="\.\/assets\/lists\.js\?v=\d+"><\/script>[\s\S]*<script defer src="\.\/assets\/app\.js/);
+  const remote = script.match(/var REMOTE_SOURCES = \{([\s\S]*?)\n {2}\};/)[1];
+  const keys = [...remote.matchAll(/^ {4}(\w+): (\[[^\]]*\])/gm)];
+  assert.ok(keys.length >= 4);
+  for (const [, key, paths] of keys) {
+    assert.ok(!["all", "eur", "amer", "asia", "entertainment"].includes(key), `${key} is too big to read online`);
+    const inBuild = build.match(new RegExp(`^  ${key}: (\\[[^\\]]*\\])`, "m"));
+    assert.ok(inBuild, `${key} is built too`);
+    assert.deepEqual(JSON.parse(paths), JSON.parse(inBuild[1]), `${key} reads the same playlists online and at build time`);
+  }
+  assert.match(script, /REMOTE_TIMEOUT_MS = 4500/);
+  assert.match(script, /REMOTE_DOWN_MS = 24 \* 3600 \* 1000/);
+  assert.match(script, /xhr\.timeout = REMOTE_TIMEOUT_MS/, "XHR timeout where AbortController is missing");
+});
 
 test("goes fullscreen after 30 idle seconds of playback, never sooner", async (t) => {
   const MowjIdle = await loadIdle();
