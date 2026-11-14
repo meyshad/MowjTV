@@ -17,7 +17,8 @@
 - Data-saving playback: automatic quality is capped at 480p; a higher quality can be chosen from the quality menu and is remembered
 - Cautious adaptive bitrate tuned for slow, unstable connections, with bounded reconnects and no download while paused or hidden
 - Lazy availability check: one small request for the channel the remote rests on, and an opt-in "check channels" button that checks a whole list (a few KB per channel); never an automatic background scan
-- Fully self-hosted: the page, hls.js, the font, the channel lists and 64px WebP logos (about 1-2 KB each) all load from the host the package is uploaded to; only the video streams come from each channel's own server
+- Works on any host, even where GitHub is blocked: the page, hls.js, the font, the channel lists and 64px WebP logos (about 1-2 KB each) all ship with the site; only the video streams come from each channel's own server
+- Online first for the small lists: Persian, Turkey, sports, music, kids and documentary are read from IPTV-ORG with one 4.5-second try, through the same parser the build uses; if that host does not answer, the bundled copy is used at once and the online try is skipped for a day. Big lists always come from the bundled copy
 - Channels a browser cannot play (HTTP-only, CORS-locked, or needing custom headers) are removed when the package is built, which keeps the bundled lists small
 - Channel lists are cached until the data changes: opening the app costs one small version check, and an old cached list is never shown after an update
 - `npm run refresh-data` (and a weekly GitHub Action) refreshes the lists and logos and rebuilds the package
