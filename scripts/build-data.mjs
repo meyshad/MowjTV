@@ -22,7 +22,8 @@
  *   --no-logos: fetch no new logos (unused ones are still removed)
  */
 import { createHash } from "node:crypto";
-import { mkdir, readdir, readFile, unlink, writeFile } from "node:fs/promises";
+import { mkdir, readdir, readFile, rename, unlink, writeFile } from "node:fs/promises";
+import { runInNewContext } from "node:vm";
 
 const IPTV = "https://iptv-org.github.io/iptv/";
 const TV = new URL("../public/tv/", import.meta.url);
@@ -60,10 +61,13 @@ const SOURCES = {
   all: ["index"],
 };
 
-// A TV list is browsed page by page; past this size it stops being useful.
-// Bigger lists keep the channels most likely to work (24/7, not geo-blocked,
-// with a logo) and are otherwise in playlist (alphabetical) order.
-const MAX_CHANNELS = 1200;
+// Parsing, filtering, merging and the per-list cap live in public/tv/assets/lists.js,
+// which the app also uses for lists it reads online, so both always agree.
+const lists = (() => {
+  const sandbox = {};
+  sandbox.window = sandbox;
+  return sandbox;
+})();
 
 const args = process.argv.slice(2);
 const withLogos = !args.includes("--no-logos");
@@ -72,54 +76,8 @@ const forceLogos = args.includes("--force-logos");
 const app = await readFile(new URL("assets/app.js", TV), "utf8");
 // Same list as the app, read from it so the two never disagree.
 const CORS_LOCKED_HOSTS = JSON.parse(app.match(/CORS_LOCKED_HOSTS = (\[[^\]]*\])/)[1]);
-
-function playable(url, ref, ua) {
-  if (!/^https:\/\//i.test(url)) return false; // HTTP is blocked on an HTTPS page
-  if (ref || ua) return false; // browsers cannot send these headers
-  if (/\.mpd(?:$|[?#])/i.test(url)) return false; // DASH is not supported
-  const host = (url.split("/")[2] || "").toLowerCase();
-  return !CORS_LOCKED_HOSTS.includes(host);
-}
-
-function attr(line, name) {
-  const match = line.match(new RegExp(`${name}="([^"]*)"`));
-  return match ? match[1] : "";
-}
-
-function parse(text) {
-  const entries = [];
-  let cur = null;
-  for (const raw of text.split(/\r?\n/)) {
-    const line = raw.trim();
-    if (!line) continue;
-    if (line.startsWith("#EXTINF")) {
-      const comma = line.lastIndexOf(",");
-      cur = {
-        id: attr(line, "tvg-id"),
-        logo: attr(line, "tvg-logo"),
-        group: attr(line, "group-title"),
-        title: comma >= 0 ? line.slice(comma + 1).trim() : "",
-        ref: attr(line, "http-referrer"),
-        ua: attr(line, "http-user-agent"),
-      };
-      continue;
-    }
-    if (!cur) continue;
-    if (line.startsWith("#EXTVLCOPT:http-referrer=")) cur.ref = line.slice(line.indexOf("=") + 1);
-    else if (line.startsWith("#EXTVLCOPT:http-user-agent=")) cur.ua = line.slice(line.indexOf("=") + 1);
-    else if (!line.startsWith("#")) {
-      entries.push({ ...cur, url: line });
-      cur = null;
-    }
-  }
-  return entries;
-}
-
-const channelKey = (e) => e.id || `n:${e.title.toLowerCase()}`;
-const baseId = (id) => id.split("@")[0];
-const clean = (value) => String(value).replace(/["\r\n]/g, "").trim();
-const logoFile = (base, url) =>
-  `${base.replace(/[^A-Za-z0-9._-]/g, "_")}-${createHash("sha1").update(url).digest("hex").slice(0, 6)}.webp`;
+runInNewContext(await readFile(new URL("assets/lists.js", TV), "utf8"), lists);
+const { parseM3u, buildRows, baseId, logoName } = lists.MowjLists;
 
 async function getText(url) {
   for (let attempt = 1; ; attempt += 1) {
@@ -180,11 +138,19 @@ async function buildLogos(logoWanted) {
   } catch {
     state = {};
   }
+  // Logos are named after the channel only, so a list the app reads online finds them too.
+  for (const [base, entry] of Object.entries(state)) {
+    if (entry.file && entry.file !== logoName(base)) {
+      await rename(new URL(entry.file, LOGO_DIR), new URL(logoName(base), LOGO_DIR)).catch(() => {});
+      entry.file = logoName(base);
+    }
+  }
   const existing = new Set(await readdir(LOGO_DIR));
   const jobs = [];
   for (const [base, url] of logoWanted) {
-    const file = logoFile(base, url);
-    if (!forceLogos && state[base] && state[base].file === file && existing.has(file)) continue;
+    const file = logoName(base);
+    const known = state[base] && state[base].url === url && state[base].file === file && existing.has(file);
+    if (!forceLogos && known) continue;
     jobs.push({ base, url, file });
   }
   // New logos first, then earlier failures; at most LOGO_MAX_PER_RUN per run.
@@ -238,32 +204,14 @@ async function main() {
     const entries = [];
     for (const path of paths) {
       text[path] = text[path] || (await getText(`${IPTV}${path}.m3u`));
-      entries.push(...parse(text[path]));
+      entries.push(...parseM3u(text[path]));
     }
-    const channels = new Map();
-    for (const entry of entries) {
-      const ck = channelKey(entry);
-      if (!channels.has(ck)) channels.set(ck, { head: entry, urls: [] });
-      const channel = channels.get(ck);
-      if (!channel.head.logo && entry.logo) channel.head.logo = entry.logo;
-      if (playable(entry.url, entry.ref, entry.ua) && !channel.urls.some((u) => u.url === entry.url)) {
-        channel.urls.push(entry);
-      }
-    }
-    let kept = [...channels.values()].filter((c) => c.urls.length);
-    const playableCount = kept.length;
-    if (kept.length > MAX_CHANNELS) {
-      const score = (c) => (/\[Geo-blocked\]/i.test(c.head.title) ? 0 : 4) +
-        (/\[Not 24\/7\]/i.test(c.head.title) ? 0 : 2) + (c.head.logo ? 1 : 0);
-      const order = new Map(kept.map((c, i) => [c, i]));
-      const best = new Set([...kept].sort((a, b) => score(b) - score(a) || order.get(a) - order.get(b)).slice(0, MAX_CHANNELS));
-      kept = kept.filter((c) => best.has(c));
-    }
-    for (const channel of kept) {
+    categories[key] = entries;
+    const first = buildRows(entries, { corsLockedHosts: CORS_LOCKED_HOSTS });
+    for (const channel of first.kept) {
       const base = baseId(channel.head.id);
-      if (base && /^https:\/\//i.test(channel.head.logo) && !logoWanted.has(base)) logoWanted.set(base, channel.head.logo);
+      if (base && /^https:\/\//i.test(channel.logo) && !logoWanted.has(base)) logoWanted.set(base, channel.logo);
     }
-    categories[key] = { kept, hidden: channels.size - playableCount, playable: playableCount };
   }
 
   const logos = await buildLogos(logoWanted);
@@ -272,23 +220,13 @@ async function main() {
   // [id, name, logo file, group, height, flags (1 geo-blocked, 2 not 24/7), [urls]]
   const lists = {};
   const bodies = {};
-  for (const [key, { kept, hidden, playable: playableCount }] of Object.entries(categories)) {
-    const rows = kept.map((channel) => {
-      const base = baseId(channel.head.id);
-      const title = channel.head.title || channel.urls[0].title || "";
-      const quality = (title.match(/\((\d{3,4})[pi]\)/i) || [])[1];
-      const flags = (/\[Geo-blocked\]/i.test(title) ? 1 : 0) | (/\[Not 24\/7\]/i.test(title) ? 2 : 0);
-      const name = title.replace(/\s*\(\d{3,4}[pi]\)/gi, "").replace(/\s*\[[^\]]*\]/g, "").replace(/\s+/g, " ").trim();
-      return [
-        clean(channel.head.id),
-        clean(name),
-        base && logos[base] && logos[base].file ? logos[base].file : "",
-        clean(channel.head.group.split(";")[0]).toLowerCase(),
-        quality ? Number(quality) : 0,
-        flags,
-        channel.urls.map((entry) => entry.url),
-      ];
+  for (const [key, entries] of Object.entries(categories)) {
+    const built = buildRows(entries, {
+      corsLockedHosts: CORS_LOCKED_HOSTS,
+      logoFor: (base) => (logos[base] && logos[base].file ? logos[base].file : ""),
     });
+    const { hidden, playable: playableCount } = built;
+    const rows = built.c;
     bodies[key] = { hidden, playable: playableCount, c: rows };
     console.log(`${key.padEnd(14)} ${String(rows.length).padStart(5)} channels (${playableCount} playable, ${hidden} hidden)`);
   }
